@@ -64,6 +64,7 @@ class NHIIndexer:
 
         direct_terms = set([query_clean.lower()])
         expanded_terms = set([query_clean.lower()])
+        exact_target_terms = set([query_clean.lower()])
         matched_class_names = set()
         matched_disease_names = set()
         matched_ingredients = set()
@@ -91,20 +92,27 @@ class NHIIndexer:
             matched_class_names.add(exp["class_name_tc"].lower())
             
             for alias in exp.get("aliases", []):
-                # Don't pollute direct drug terms with broad umbrellas like 骨質疏鬆
                 if alias.lower() not in ['骨質疏鬆', '糖尿病', '高血壓', '心臟病']:
                     expanded_terms.add(alias.lower())
                 
             for ing in exp["ingredients"]:
-                matched_ingredients.add(ing["en"].lower())
-                matched_ingredients.add(ing["tc"].lower())
-                direct_terms.add(ing["en"].lower())
-                direct_terms.add(ing["tc"].lower())
-                brand_str = ing.get("brand", "")
-                if brand_str:
-                    for b in re.findall(r'[a-zA-Z0-9\-]+|[\u4e00-\u9fa5]+', brand_str):
-                        if len(b) > 1:
-                            direct_terms.add(b.lower())
+                ing_en = ing["en"].lower()
+                ing_tc = ing["tc"].lower()
+                brand_str = ing.get("brand", "").lower()
+                
+                # Precise filter: only isolate ingredient if query matches this specific ingredient/brand
+                if query_clean.lower() in brand_str or query_clean.lower() in ing_en or query_clean.lower() in ing_tc or query_clean.lower() == ing.get("atc7", "").lower():
+                    exact_target_terms.add(ing_en)
+                    exact_target_terms.add(ing_tc)
+                    if brand_str:
+                        for b in re.findall(r'[a-zA-Z0-9\-]+|[\u4e00-\u9fa5]+', brand_str):
+                            if len(b) > 1:
+                                exact_target_terms.add(b.lower())
+
+                matched_ingredients.add(ing_en)
+                matched_ingredients.add(ing_tc)
+                direct_terms.add(ing_en)
+                direct_terms.add(ing_tc)
 
         # Disease Expansion
         disease_expansions = self.disease_engine.expand_query(query_clean)
@@ -142,15 +150,22 @@ class NHIIndexer:
             
             score = 0
             if query_clean.lower() == reg["section_number"].lower():
-                score += 300
+                score += 2000
 
-            # Huge bonus for direct ingredient or brand matches in section title or text
+            # Unbeatable priority boost for exact isolated brand/molecule matches in title or text
+            for et in exact_target_terms:
+                if et and len(et) > 1:
+                    if et in reg["section_title"].lower():
+                        score += 1200
+                    elif et in full_text:
+                        score += 500
+
             for dt in direct_terms:
                 if dt and len(dt) > 1:
                     if dt in reg["section_title"].lower():
-                        score += 200
+                        score += 100
                     elif dt in full_text:
-                        score += 80
+                        score += 40
 
             for mdn in matched_disease_names:
                 if any(mdn in ind for ind in reg_indications):
@@ -158,9 +173,8 @@ class NHIIndexer:
 
             for mc in matched_class_names:
                 if any(mc in rc or rc in mc for rc in reg_classes):
-                    score += 80
+                    score += 50
 
-            # Universal Alphanumeric Matching Check for Labs/Biomarkers (e.g. pdl1, ntprobnp, fib4, das28, egfr, hba1c)
             if len(norm_q) >= 3 and norm_q in norm_full_text:
                 score += 40
 
@@ -179,8 +193,6 @@ class NHIIndexer:
                             score += 30
                         else:
                             score += 5
-                    if any(term in ri for ri in reg_ingredients):
-                        score += 30
 
             if score > 0:
                 results.append((reg, score))

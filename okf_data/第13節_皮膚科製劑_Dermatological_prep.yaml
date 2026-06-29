@@ -1,0 +1,583 @@
+okf_version: '1.0'
+schema_type: Taiwan_NHI_Drug_Regulation
+chapter: 第13節 皮膚科製劑 Dermatological preparations
+total_regulations: 17
+regulations:
+- regulation_id: REG-0498
+  section_number: 13.2.
+  section_title: 13.2. Cadexomer iodine（如Iodosorb powder）：（87/4/1）
+  chapter: 第13節 皮膚科製劑 Dermatological preparations
+  source_file: 完整給付規定1150623.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients: []
+  conditions_of_payment:
+    indications: []
+    laboratory_criteria: []
+    summary: 限慢性腿部潰瘍病例及慢性感染性潰瘍傷口使用，每日用量超過一包時，需檢附傷口照片以利審查。
+  reference_annotations:
+    original_clause: 13.2. Cadexomer iodine（如Iodosorb powder）：（87/4/1）
+    full_text: 限慢性腿部潰瘍病例及慢性感染性潰瘍傷口使用，每日用量超過一包時，需檢附傷口照片以利審查。
+- regulation_id: REG-0499
+  section_number: 13.3.1.
+  section_title: 13.3.1. Calcipotriol外用單方製劑（87/4/1、89/2/1、94/3/1、99/12/1）
+  chapter: 第13節 皮膚科製劑 Dermatological preparations
+  source_file: 完整給付規定1150623.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients: []
+  conditions_of_payment:
+    indications:
+    - Psoriasis / Psoriatic Arthritis (乾癬)
+    laboratory_criteria: []
+    summary: 限確經診斷為尋常性牛皮癬（psoriasis）之病例使用，使用量以每星期不高於30gm或30mL為原則，若因病情需要使用量需超過每星期 30gm或30mL者，應於病歷詳細記錄理由。
+  reference_annotations:
+    original_clause: 13.3.1. Calcipotriol外用單方製劑（87/4/1、89/2/1、94/3/1、99/12/1）
+    full_text: 限確經診斷為尋常性牛皮癬（psoriasis）之病例使用，使用量以每星期不高於30gm或30mL為原則，若因病情需要使用量需超過每星期
+      30gm或30mL者，應於病歷詳細記錄理由。
+- regulation_id: REG-0500
+  section_number: 13.3.2.
+  section_title: 13.3.2. 含calcipotriol及類固醇之外用複方製劑（如Daivobet、Enstilar）（94/5/1、99/12/1、109/10/1、115/1/1）
+  chapter: 第13節 皮膚科製劑 Dermatological preparations
+  source_file: 完整給付規定1150623.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients: []
+  conditions_of_payment:
+    indications:
+    - Psoriasis / Psoriatic Arthritis (乾癬)
+    laboratory_criteria: []
+    summary: '1.限確診為尋常性乾癬（psoriasis）之病人使用，使用量以每星期不高於30gm為原則，若因病情需要使用量需超過每星期30gm者，應於病歷詳細記錄理由。（94/5/1、99/12/1、115/1/1）
+
+      2.若因病情需要需連續使用超過8週者，應於病歷詳細記錄理由。（109/10/1）'
+  reference_annotations:
+    original_clause: 13.3.2. 含calcipotriol及類固醇之外用複方製劑（如Daivobet、Enstilar）（94/5/1、99/12/1、109/10/1、115/1/1）
+    full_text: '1.限確診為尋常性乾癬（psoriasis）之病人使用，使用量以每星期不高於30gm為原則，若因病情需要使用量需超過每星期30gm者，應於病歷詳細記錄理由。（94/5/1、99/12/1、115/1/1）
+
+      2.若因病情需要需連續使用超過8週者，應於病歷詳細記錄理由。（109/10/1）'
+- regulation_id: REG-0501
+  section_number: 13.4.
+  section_title: 13.4. Isotretinoin口服製劑 (如Roaccutane)：（86/9/1、87/4/1、94/3/1）
+  chapter: 第13節 皮膚科製劑 Dermatological preparations
+  source_file: 完整給付規定1150623.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients: []
+  conditions_of_payment:
+    indications: []
+    laboratory_criteria: []
+    summary: '1.限皮膚科專科醫師使用。
+
+      2.需檢附病人之服藥同意書 (詳附表十)，以及經傳統治療無效之病歷資料或治療前之照片，經事前審查核准後使用。
+
+      3.每次申請以一療程為限，若需再次療程，請檢附原來照片與最近照片再次申請事前審查核准後使用（每一療程最高總劑量為100 mg –120 mg/kg，於四至六個月完成)。'
+  reference_annotations:
+    original_clause: 13.4. Isotretinoin口服製劑 (如Roaccutane)：（86/9/1、87/4/1、94/3/1）
+    full_text: '1.限皮膚科專科醫師使用。
+
+      2.需檢附病人之服藥同意書 (詳附表十)，以及經傳統治療無效之病歷資料或治療前之照片，經事前審查核准後使用。
+
+      3.每次申請以一療程為限，若需再次療程，請檢附原來照片與最近照片再次申請事前審查核准後使用（每一療程最高總劑量為100 mg –120 mg/kg，於四至六個月完成)。'
+- regulation_id: REG-0502
+  section_number: 13.5.
+  section_title: 13.5. Acitretin（如Neotigason）：(87/11/1)
+  chapter: 第13節 皮膚科製劑 Dermatological preparations
+  source_file: 完整給付規定1150623.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients: []
+  conditions_of_payment:
+    indications: []
+    laboratory_criteria: []
+    summary: 申報費用時需檢具病患同意書 (附表十一)，並檢送含確定診斷之詳細病歷資料，俾利審查。
+  reference_annotations:
+    original_clause: 13.5. Acitretin（如Neotigason）：(87/11/1)
+    full_text: 申報費用時需檢具病患同意書 (附表十一)，並檢送含確定診斷之詳細病歷資料，俾利審查。
+- regulation_id: REG-0503
+  section_number: 13.6.
+  section_title: 13.6. Methoxsalen製劑：(87/11/1)
+  chapter: 第13節 皮膚科製劑 Dermatological preparations
+  source_file: 完整給付規定1150623.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients: []
+  conditions_of_payment:
+    indications: []
+    laboratory_criteria: []
+    summary: 限皮膚科專科醫師使用於PUVA治療 (配合紫外線照射)，申報費用時需檢送含確定診斷之詳細病歷資料，俾利審查。
+  reference_annotations:
+    original_clause: 13.6. Methoxsalen製劑：(87/11/1)
+    full_text: 限皮膚科專科醫師使用於PUVA治療 (配合紫外線照射)，申報費用時需檢送含確定診斷之詳細病歷資料，俾利審查。
+- regulation_id: REG-0504
+  section_number: 13.7.
+  section_title: 13.7. Doxepin HCl cream (如Ichderm)：(88/6/1)
+  chapter: 第13節 皮膚科製劑 Dermatological preparations
+  source_file: 完整給付規定1150623.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients: []
+  conditions_of_payment:
+    indications: []
+    laboratory_criteria: []
+    summary: 限成人使用，每次處方不超過七天。
+  reference_annotations:
+    original_clause: 13.7. Doxepin HCl cream (如Ichderm)：(88/6/1)
+    full_text: 限成人使用，每次處方不超過七天。
+- regulation_id: REG-0505
+  section_number: 13.8.
+  section_title: 13.8. Tazarotene外用製劑：(91/4/1、99/12/1、101/2/1)
+  chapter: 第13節 皮膚科製劑 Dermatological preparations
+  source_file: 完整給付規定1150623.docx
+  effective_dates:
+  - (99/12/1)
+  - (99/12/1)
+  medications:
+    drug_classes: []
+    ingredients: []
+  conditions_of_payment:
+    indications:
+    - Psoriasis / Psoriatic Arthritis (乾癬)
+    laboratory_criteria: []
+    summary: '1.限乾癬之病例使用。
+
+      2.使用量以每星期不高於30gm為原則。若因病情需要，使用量需超過每星期30gm者，應於病歷詳細記載理由。(99/12/1)
+
+      3.與calcitriol (或calcipotriol)併用，兩者合計總量每星期不超過30gm或30mL，若因病情需要兩者合併使用量需超過每星期30gm
+      者，應於病歷詳細記載理由。(99/12/1)'
+  reference_annotations:
+    original_clause: 13.8. Tazarotene外用製劑：(91/4/1、99/12/1、101/2/1)
+    full_text: '1.限乾癬之病例使用。
+
+      2.使用量以每星期不高於30gm為原則。若因病情需要，使用量需超過每星期30gm者，應於病歷詳細記載理由。(99/12/1)
+
+      3.與calcitriol (或calcipotriol)併用，兩者合計總量每星期不超過30gm或30mL，若因病情需要兩者合併使用量需超過每星期30gm
+      者，應於病歷詳細記載理由。(99/12/1)'
+- regulation_id: REG-0506
+  section_number: 13.9.
+  section_title: 13.9. Calcitriol (如Silkis ointment)：(92/11/1、93/9/1、99/12/1)
+  chapter: 第13節 皮膚科製劑 Dermatological preparations
+  source_file: 完整給付規定1150623.docx
+  effective_dates:
+  - (99/12/1)
+  medications:
+    drug_classes: []
+    ingredients: []
+  conditions_of_payment:
+    indications:
+    - Psoriasis / Psoriatic Arthritis (乾癬)
+    laboratory_criteria: []
+    summary: '1.限用於小於35%體表面積之輕度至中重度乾癬之病例，使用量以每星期不高於30gm為原則，若因病情需要使用量需超過每星期30gm者，應於病歷詳細記錄理由。其面積計算:依照rule
+      of nines計算法。（同13.10備註1）
+
+      2.與tazarotene併用，兩者合計總量每星期不超過30gm或30mL，若因病情需要兩者合併使用量需超過每星期30gm者，應於病歷詳細記錄理由。
+
+      (99/12/1)'
+  reference_annotations:
+    original_clause: 13.9. Calcitriol (如Silkis ointment)：(92/11/1、93/9/1、99/12/1)
+    full_text: '1.限用於小於35%體表面積之輕度至中重度乾癬之病例，使用量以每星期不高於30gm為原則，若因病情需要使用量需超過每星期30gm者，應於病歷詳細記錄理由。其面積計算:依照rule
+      of nines計算法。（同13.10備註1）
+
+      2.與tazarotene併用，兩者合計總量每星期不超過30gm或30mL，若因病情需要兩者合併使用量需超過每星期30gm者，應於病歷詳細記錄理由。
+
+      (99/12/1)'
+- regulation_id: REG-0507
+  section_number: 13.10.
+  section_title: 13.10. Tacrolimus (如Protopic Ointment )：(91/12/1、93/8/1、95/7/1、99/12/1、111/2/1)
+  chapter: 第13節 皮膚科製劑 Dermatological preparations
+  source_file: 完整給付規定1150623.docx
+  effective_dates:
+  - (95/7/1、111/2/1)
+  - (99/12/1)
+  - (99/12/1)
+  - (99/12/1)
+  medications:
+    drug_classes: []
+    ingredients: []
+  conditions_of_payment:
+    indications:
+    - Atopic Dermatitis (異位性皮膚炎)
+    laboratory_criteria: []
+    summary: '限2歲以上因為潛在危險而不宜使用其他傳統治療、或對其他傳統治療反應不充分、或無法耐受其他傳統治療且患部面積>30%之中、重度異位性皮膚炎之下列病患第二線使用(95/7/1、111/2/1)
+
+      1.成人患部面積30%~50%，每星期不超過30gm；患部面積>50%，每星期不超過60gm。(99/12/1)
+
+      2.孩童患部面積30%~50%，每兩星期不超過30gm；患部面積>50%，每星期不超過30gm。(99/12/1)
+
+      3.面積計算：成人依照 rule of nines(詳備註1)，由部位乘予大約比例之總和，兒童依比例 (備註2，Barkin公式) 修訂。
+
+      4.使用一個月後，症狀若無改善，應改用其...'
+  reference_annotations:
+    original_clause: 13.10. Tacrolimus (如Protopic Ointment )：(91/12/1、93/8/1、95/7/1、99/12/1、111/2/1)
+    full_text: '限2歲以上因為潛在危險而不宜使用其他傳統治療、或對其他傳統治療反應不充分、或無法耐受其他傳統治療且患部面積>30%之中、重度異位性皮膚炎之下列病患第二線使用(95/7/1、111/2/1)
+
+      1.成人患部面積30%~50%，每星期不超過30gm；患部面積>50%，每星期不超過60gm。(99/12/1)
+
+      2.孩童患部面積30%~50%，每兩星期不超過30gm；患部面積>50%，每星期不超過30gm。(99/12/1)
+
+      3.面積計算：成人依照 rule of nines(詳備註1)，由部位乘予大約比例之總和，兒童依比例 (備註2，Barkin公式) 修訂。
+
+      4.使用一個月後，症狀若無改善，應改用其他藥物治療。
+
+      5.以三個月為一個療程，作間歇性長期治療者，若需繼續治療，每月限使用30公克。（93/8 /1）
+
+      6.不可合併紫外線治療。（93/8 /1）
+
+      7.與pimecrolimus併用時 (99/12/1)：
+
+      (1)成人：患部面積30%~50%，每星期兩者合併用量不超過30gm；患部面積>50%，兩者每星期合併用量不超過60gm。
+
+      (2)孩童：患部面積30%~50%，每兩星期兩者合併用量不超過30gm；患部面積>50%，每星期兩者合併用量不超過30gm。
+
+      (3)若因病情需要兩者合併使用量需超過限制者，應於病歷詳細記錄理由。
+
+      備註1：Rule of nines計算法：頭頸9%，兩上肢18%，軀幹18%，背18%，兩下肢36%，陰部1%。
+
+      備註2：兒童患部面積計算如附表十七 (From Roger M. Barkin)'
+- regulation_id: REG-0508
+  section_number: 13.11.
+  section_title: 13.11. Pimecrolimus (Elidel 1% )：(92/11/1、93/8/1、94/3/1、95/7/1、99/12/1、110/12/1、111/2/1)
+  chapter: 第13節 皮膚科製劑 Dermatological preparations
+  source_file: 完整給付規定1150623.docx
+  effective_dates:
+  - (94/3/1、95/7/1、110/12/1、111/2/1)
+  - (94/3/1、99/12/1)
+  - (99/12/1)
+  - (110/12/1)
+  - (99/12/1)
+  medications:
+    drug_classes: []
+    ingredients: []
+  conditions_of_payment:
+    indications:
+    - Atopic Dermatitis (異位性皮膚炎)
+    laboratory_criteria: []
+    summary: '限2歲以上且患部面積>30%之中、重度異位性皮膚炎，或敏感性皮膚部位(頭頸部、眼瞼、耳後區、生殖器、皮膚彎曲處、腋下、鼠蹊部)異位性皮膚炎之下列病患第二線使用：(94/3/1、95/7/1、110/12/1、111/2/1)
+
+      1.成人患部面積30%~50%，每星期不超過30gm；患部面積>50%，每星期不超過60gm。(94/3/1、99/12/1)
+
+      2.孩童患部面積30%~50%，每兩星期不超過30gm；患部面積>50%，每星期不超過30gm。(99/12/1)
+
+      3.敏感性皮膚部位(頭頸部、眼瞼、耳後區、生殖器、皮膚彎曲處、腋下、鼠蹊部)異位性皮膚炎部分：成人每月不超過30gm，孩童每月不超...'
+  reference_annotations:
+    original_clause: 13.11. Pimecrolimus (Elidel 1% )：(92/11/1、93/8/1、94/3/1、95/7/1、99/12/1、110/12/1、111/2/1)
+    full_text: '限2歲以上且患部面積>30%之中、重度異位性皮膚炎，或敏感性皮膚部位(頭頸部、眼瞼、耳後區、生殖器、皮膚彎曲處、腋下、鼠蹊部)異位性皮膚炎之下列病患第二線使用：(94/3/1、95/7/1、110/12/1、111/2/1)
+
+      1.成人患部面積30%~50%，每星期不超過30gm；患部面積>50%，每星期不超過60gm。(94/3/1、99/12/1)
+
+      2.孩童患部面積30%~50%，每兩星期不超過30gm；患部面積>50%，每星期不超過30gm。(99/12/1)
+
+      3.敏感性皮膚部位(頭頸部、眼瞼、耳後區、生殖器、皮膚彎曲處、腋下、鼠蹊部)異位性皮膚炎部分：成人每月不超過30gm，孩童每月不超過不超過20gm，且不得與全身用藥分開計算。(110/12/1)
+
+      4.使用一個月後，症狀若無改善，應改用其他藥物治療。
+
+      5.以三個月為一個療程，作間歇性長期治療者，若需繼續治療，每月限使用30公克。（93/8/1）
+
+      6.不可合併紫外線治療。（93/8/1）
+
+      7.與tacrolimus併用時(99/12/1)：
+
+      (1)成人：患部面積30%~50%，每星期兩者合併用量不超過30gm；患部面積>50%，兩者每星期合併用量不超過60gm。
+
+      (2)孩童：患部面積30%~50%，每兩星期兩者合併用量不超過30gm；患部面積>50%，每星期兩者合併用量不超過30gm。
+
+      (3)若因病情需要兩者合併使用量需超過限制者，應於病歷詳細記錄理由。'
+- regulation_id: REG-0509
+  section_number: 13.12.
+  section_title: 13.12. Amorolfine (如Amocoat)：(99/4/1)
+  chapter: 第13節 皮膚科製劑 Dermatological preparations
+  source_file: 完整給付規定1150623.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients: []
+  conditions_of_payment:
+    indications:
+    - Onychomycosis / Tinea Unguium (足趾甲癬)
+    laboratory_criteria: []
+    summary: '1.限用於皮真菌、酵母菌及黴菌引起之甲癬。
+
+      2.每年限使用一瓶5mL。
+
+      3.許可證類別若變更為指示用藥，將不予給付。'
+  reference_annotations:
+    original_clause: 13.12. Amorolfine (如Amocoat)：(99/4/1)
+    full_text: '1.限用於皮真菌、酵母菌及黴菌引起之甲癬。
+
+      2.每年限使用一瓶5mL。
+
+      3.許可證類別若變更為指示用藥，將不予給付。'
+- regulation_id: REG-0510
+  section_number: 13.13.
+  section_title: 13.13. Podophyllotoxin (如Wart Del Cream)：(102/9/1)
+  chapter: 第13節 皮膚科製劑 Dermatological preparations
+  source_file: 完整給付規定1150623.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients: []
+  conditions_of_payment:
+    indications: []
+    laboratory_criteria: []
+    summary: '1.限皮膚、泌尿、婦產專科醫師或經病理診斷確認，使用於生殖器疣 (包括外生殖器及肛門附近)之治療。
+
+      2.每次限給付乙支(5gm)，一個月內不得重複處方，每次療程間應相隔至少3個月，治療期間不得與其它冷凍、電燒、雷射治療合併申報。
+
+      3.若病灶侵犯生殖器部位超過50%，每療程處方之總劑量以10gm為上限，並且需於病歷上詳載，併得合併申報冷凍、電燒或雷射治療。'
+  reference_annotations:
+    original_clause: 13.13. Podophyllotoxin (如Wart Del Cream)：(102/9/1)
+    full_text: '1.限皮膚、泌尿、婦產專科醫師或經病理診斷確認，使用於生殖器疣 (包括外生殖器及肛門附近)之治療。
+
+      2.每次限給付乙支(5gm)，一個月內不得重複處方，每次療程間應相隔至少3個月，治療期間不得與其它冷凍、電燒、雷射治療合併申報。
+
+      3.若病灶侵犯生殖器部位超過50%，每療程處方之總劑量以10gm為上限，並且需於病歷上詳載，併得合併申報冷凍、電燒或雷射治療。'
+- regulation_id: REG-0511
+  section_number: 13.14.
+  section_title: 13.14. Ingenol (如Picato) ：(105/11/1)
+  chapter: 第13節 皮膚科製劑 Dermatological preparations
+  source_file: 完整給付規定1150623.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients: []
+  conditions_of_payment:
+    indications: []
+    laboratory_criteria: []
+    summary: '限用於治療局部性、非過度角化 (non-hyperkeratotic)、非肥厚型(non-hypertrophic)光化性角化症
+
+      1.限用於局部性治療25cm2的連續治療面積內，4個(含)以上病灶數量。
+
+      2.須經皮膚科醫師診斷為光化性角化症，並附照片備查。
+
+      3.療程:
+
+      (1)150微克/克(0.015%)用於臉部或頭皮，每天一次、連續塗抹3天，每部位每一次療程限處方3支； 500微克/克(0.05%)用於身軀或四肢，每天一次，連續塗抹2天，每部位每一次療程限處方2支。
+
+      (2)若未達完全清除、或病灶復發或出現新病灶，須進行第二次療程，須距第一次療程八週以上，一年內以兩療程為限。
+
+      (3)於局部治療...'
+  reference_annotations:
+    original_clause: 13.14. Ingenol (如Picato) ：(105/11/1)
+    full_text: '限用於治療局部性、非過度角化 (non-hyperkeratotic)、非肥厚型(non-hypertrophic)光化性角化症
+
+      1.限用於局部性治療25cm2的連續治療面積內，4個(含)以上病灶數量。
+
+      2.須經皮膚科醫師診斷為光化性角化症，並附照片備查。
+
+      3.療程:
+
+      (1)150微克/克(0.015%)用於臉部或頭皮，每天一次、連續塗抹3天，每部位每一次療程限處方3支； 500微克/克(0.05%)用於身軀或四肢，每天一次，連續塗抹2天，每部位每一次療程限處方2支。
+
+      (2)若未達完全清除、或病灶復發或出現新病灶，須進行第二次療程，須距第一次療程八週以上，一年內以兩療程為限。
+
+      (3)於局部治療範圍處，八週內不得同時併用其他光化性角化症治療，如冷凍治療、雷射、電燒等。'
+- regulation_id: REG-0512
+  section_number: 13.15.
+  section_title: 13.15. Permethrin外用製劑：（106/9/1、111/6/1、113/12/1）
+  chapter: 第13節 皮膚科製劑 Dermatological preparations
+  source_file: 完整給付規定1150623.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients: []
+  conditions_of_payment:
+    indications: []
+    laboratory_criteria: []
+    summary: '1.每人每次處方使用30gm一支，需要時得於7天後再處方使用一支(限30gm)；若第1次處方使用60gm一支，則7天後之第2次治療不得再處方一支(30gm或60gm)。（106/9/1、111/6/1、113/12/1）
+
+      2.半年內需使用第3次時，須經皮膚科醫師確診處方。'
+  reference_annotations:
+    original_clause: 13.15. Permethrin外用製劑：（106/9/1、111/6/1、113/12/1）
+    full_text: '1.每人每次處方使用30gm一支，需要時得於7天後再處方使用一支(限30gm)；若第1次處方使用60gm一支，則7天後之第2次治療不得再處方一支(30gm或60gm)。（106/9/1、111/6/1、113/12/1）
+
+      2.半年內需使用第3次時，須經皮膚科醫師確診處方。'
+- regulation_id: REG-0513
+  section_number: 13.16.
+  section_title: 13.16. Ivermectin (如Stromectol)：（107/8/1、112/12/1、113/4/1）
+  chapter: 第13節 皮膚科製劑 Dermatological preparations
+  source_file: 完整給付規定1150623.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients: []
+  conditions_of_payment:
+    indications: []
+    laboratory_criteria: []
+    summary: '1.限鏡檢呈陽性之確診的疥瘡病患使用，須附照片備查。
+
+      2.結痂性疥瘡患者，可合併外用疥瘡藥物治療，但需附照片備查，且每次處方時，限仍有新典型臨床病灶及鏡檢呈陽性者。
+
+      3.保險對象收容於矯正機關者，依據「全民健康保險提供保險對象收容於矯正機關者醫療服務計畫」辦理。（112/12/1）
+
+      4.醫師於住宿型長期照顧機構為住民處方時，不限鏡檢確診者使用，惟須附照片備查。（113/4/1）'
+  reference_annotations:
+    original_clause: 13.16. Ivermectin (如Stromectol)：（107/8/1、112/12/1、113/4/1）
+    full_text: '1.限鏡檢呈陽性之確診的疥瘡病患使用，須附照片備查。
+
+      2.結痂性疥瘡患者，可合併外用疥瘡藥物治療，但需附照片備查，且每次處方時，限仍有新典型臨床病灶及鏡檢呈陽性者。
+
+      3.保險對象收容於矯正機關者，依據「全民健康保險提供保險對象收容於矯正機關者醫療服務計畫」辦理。（112/12/1）
+
+      4.醫師於住宿型長期照顧機構為住民處方時，不限鏡檢確診者使用，惟須附照片備查。（113/4/1）'
+- regulation_id: REG-0514
+  section_number: 13.17.1.
+  section_title: 13.17.1. Dupilumab(如Dupixent) ; upadacitinib(如Rinvoq) ; abrocitinib(如Cibinqo)
+    ;lebrikizumab (如Ebglyss)（113/2/1、113/8/1、114/6/1、115/6/1）(12歲以上病人治療部分)
+  chapter: 第13節 皮膚科製劑 Dermatological preparations
+  source_file: 完整給付規定1150623.docx
+  effective_dates:
+  - (111/8/1)
+  - (111/8/1)
+  - (111/8/1)
+  - (112/4/1、112/6/1、112/8/1、113/8/1)
+  - (112/4/1)
+  - (112/6/1、113/8/1)
+  - (112/6/1)
+  - (112/6/1)
+  - (112/6/1)
+  - (111/8/1、114/6/1、115/6/1)
+  - (111/8/1)
+  medications:
+    drug_classes: []
+    ingredients: []
+  conditions_of_payment:
+    indications:
+    - Hepatitis B / Hepatitis C (肝炎)
+    - Atopic Dermatitis (異位性皮膚炎)
+    - Chronic Urticaria (蕁麻疹)
+    - Psoriasis / Psoriatic Arthritis (乾癬)
+    - Systemic Lupus Erythematosus (紅斑性狼瘡)
+    - Vasculitis / Dermatomyositis (血管炎)
+    - Hypertension (高血壓)
+    laboratory_criteria:
+    - ALT
+    - 血壓
+    - 白血球
+    summary: '1.處方科別如下：(111/8/1)
+
+      (1)18歲以上患者：限皮膚科及風濕免疫科專科醫師處方。
+
+      (2)12歲以上至未滿18歲患者：限皮膚科專科醫師，或具兒童過敏免疫風濕專長之兒科專科醫師處方。
+
+      2.限用於經照光治療及其他系統性(全身性)治療無效(治療需6個月的完整療程，得合併它院就診病歷)，或因醫療因素而無法接受照光治療及其他系統性(全身性)治療之全身慢性中重度之異位性皮膚炎患者。(111/8/1)
+
+      (1)所稱慢性中重度之異位性皮膚炎，指病灶持續至少6個月，且Eczema area severity index (EASI) ≧16且異位性皮膚炎皮膚紅腫體表面積需≧30%且Investigat...'
+  reference_annotations:
+    original_clause: 13.17.1. Dupilumab(如Dupixent) ; upadacitinib(如Rinvoq) ; abrocitinib(如Cibinqo)
+      ;lebrikizumab (如Ebglyss)（113/2/1、113/8/1、114/6/1、115/6/1）(12歲以上病人治療部分)
+    full_text: '1.處方科別如下：(111/8/1)
+
+      (1)18歲以上患者：限皮膚科及風濕免疫科專科醫師處方。
+
+      (2)12歲以上至未滿18歲患者：限皮膚科專科醫師，或具兒童過敏免疫風濕專長之兒科專科醫師處方。
+
+      2.限用於經照光治療及其他系統性(全身性)治療無效(治療需6個月的完整療程，得合併它院就診病歷)，或因醫療因素而無法接受照光治療及其他系統性(全身性)治療之全身慢性中重度之異位性皮膚炎患者。(111/8/1)
+
+      (1)所稱慢性中重度之異位性皮膚炎，指病灶持續至少6個月，且Eczema area severity index (EASI) ≧16且異位性皮膚炎皮膚紅腫體表面積需≧30%且Investigator''s  Global
+      Assessment (IGA):3~4。(111/8/1)
+
+      註：Eczema area severity index (EASI)之異位性皮膚炎面積計算，只含皮膚紅腫濕疹部位，單純的皮膚乾燥、脫皮、抓痕，不可列入計算。
+
+      (2)所稱治療無效，指經完整療程後，3個月內連續兩次評估，嚴重度均符合上列第(1)點情況，且兩次評估之間相隔至少4週。。
+
+      Ⅰ.治療必須包括足量之照光治療及包括以下三種系統性(全身性)治療之至少二種，包括methotrexate、azathioprine、cyclosporin。
+
+      Ⅱ.照光治療應依學理，如光化療法(PUVA)及窄頻UVB(nb-UVB)必須每週至少2次，療程達12週。申請時必須附病歷影印及詳細照光劑量紀錄。
+
+      Ⅲ.前開免疫抑制劑之劑量：
+
+      i.18歲以上患者：Methotrexate合理劑量需達每週15mg、azathioprine為2mg/kg/d、cyclosporin為5mg/kg/d，足量治療至少各分別使用12週無效或是有客觀證據產生不良反應(如相隔至少4週，兩次肝功能AST/ALT
+      >2.5 UNL，白血球低於4000/μL，高血壓或腎功能異常，或是至少兩次經培養確診之皰疹性皮膚炎)或有禁忌症後，且不應同時合併使用兩種或以上傳統用藥。
+
+      ii.12歲以上至未滿18歲患者：Methotrexate合理劑量需達每週10mg、azathioprine為1.0mg/kg/d、cyclosporin為2.5mg/kg/d，足量治療至少各分別使用12週治療無效或是有客觀證據產生不良反應(如肝功能AST/ALT
+      >2.5 UNL，白血球低於4000/μL，高血壓或腎功能異常，或是經培養確診之皰疹性皮膚炎)或有禁忌症後，且不應同時合併使用兩種或以上傳統用藥。
+
+      iii.若臨床上發生無法耐受或特殊體質者(例如NUDT15或TPMT代謝不良基因變異型、肝腎功能不佳、或曾因服用上述藥物發生嚴重感染)，得降低前述系統性治療藥物之合理劑量(病歷中須詳述說明及紀載)。
+
+      (3)所稱醫療因素，係指如光過敏(經photo patch test)、白化症（Albinism）及多形性日光疹(PMLE)，或光照會使原有疾病惡化者(如紅斑性狼瘡(LE)、皮肌炎(DM)、著色性乾皮症(XP)、紫質症(PCT)及基底細胞母斑症候群(NBCCS))，或經皮膚科醫師確診之光敏感性疾病〔慢性光激性皮炎(chronic
+      actinic dermatitis)、日光性蕁麻疹(solar urticaria)〕、皮膚癌(skin cancer) 或有皮膚癌家族史。
+
+      3.需經事前審查核准後使用。
+
+      (1)初次申請時，以6個月為1個療程。經評估需續用者，每6個月需再次提出事前審查申請續用評估，且應於期滿前1個月提出，並於申請時檢附照片。
+
+      (2)初次申請經核准，於治療滿6個月後，經評估需續用者，申請續用時，需檢附照片證明初次申請治療6個月後，與初次治療前之療效達EASI 50方可申請使用。停藥超過3個月再申請者，視同新申請案件，否則視為續用案件。
+
+      (3)使用劑量：(112/4/1、112/6/1、112/8/1、113/8/1)
+
+      I.dupilumab：
+
+      i.18歲以上:起始劑量600mg (限300mg注射2劑)，接著以300mg隔週注射一次，且於16週時，須先行評估，至少有EASI 50療效方可使用。
+
+      ii.12歲以上至未滿18歲：
+
+      (ⅰ)體重15公斤以上至未滿30公斤：起始劑量600mg (限300mg注射兩劑) ，接著以300mg隔4週注射一次，且於16週時，須先行評估，至少有EASI
+      50療效方可使用。
+
+      (ⅱ)體重30公斤以上至未滿60公斤：起始劑量400mg (限200mg注射兩劑) ，接著以200mg隔週注射一次，且於16週時，須先行評估，至少有EASI
+      50療效方可使用。
+
+      (ⅲ)體重60公斤以上：起始劑量600mg (限300mg注射兩劑) ，接著以300mg隔週注射一次，且於16週時，須先行評估，至少有EASI 50療效方可使用。
+
+      Ⅱ.upadacitinib：每日1次15mg或30mg。(112/4/1)
+
+      ⅰ.EASI 16~20者：限每日使用15mg。
+
+      ⅱ.18歲以上，且EASI 20以上者：每日得使用30mg。
+
+      Ⅲ.abrocitinib：(112/6/1、113/8/1)
+
+      ⅰ.限使用於12歲以上，每日1次100mg或200mg。
+
+      ⅱ.於16週時，須先行評估，至少有EASI 50療效方可使用。
+
+      IV.lebrikizumab：（115/6/1）
+
+      ⅰ.限使用於12歲以上且體重至少40公斤。
+
+      ⅱ.起始劑量為第0週及第2週以皮下注射給予500mg (限250mg注射兩劑)，第4週起皮下注射給予250mg，每2週一次直到第16週，之後維持劑量250mg每4週一次。
+
+      iii.於16週時，須先行評估，至少有EASI 50療效方可使用。
+
+      (4)若患者曾核准使用治療乾癬之生物製劑，需等到乾癬症狀消失後，至少兩年才能提出申請。或申請前須切片確定排除乾癬診斷並經皮膚科專科醫師確立診斷。
+
+      (5)使用abrocitinib時，宜紀錄患者HBsAg、B型肝炎核心抗體 （anti-HBc Ab）及anti-HCV資料（若HBsAg 檢驗為陽性，宜加作HBV
+      DNA）。(112/6/1)
+
+      (6)Upadacitinib及abrocitinib僅能擇一使用。唯有在出現無法忍受其副作用時方可互換。（113/8/1)。
+
+      4.需排除使用的情形應參照藥物仿單資訊，重要之排除使用狀況包括：
+
+      (1)懷孕或正在授乳的婦女。
+
+      (2)寄生蟲 (蠕蟲) 感染。
+
+      (3)活動性嚴重全身性感染(使用abrocitnib者)。(112/6/1)
+
+      5.需停止治療應參照藥物仿單之禁忌情形，如果發生下列現象應停止治療：
+
+      (1)不良事件，包括：
+
+      Ⅰ.惡性腫瘤。
+
+      Ⅱ.懷孕與授乳期間。
+
+      Ⅲ.寄生蟲 (蠕蟲) 感染。
+
+      Ⅳ.使用abrocitnib者發生嚴重的間發性感染症(帶狀皰疹) (暫時停藥即可)。(112/6/1)
+
+      (2)療效不彰：患者經過6個月治療（初次療程）後未達療效者，療效定義指EASI改善未達50%。
+
+      6.暫緩續用之相關規定：
+
+      (1)暫緩續用時機：使用dupilumab治療1年後，或使用abrocitinib、upadacitinib、lebrikizumab 2年後符合EASI≦16者。(111/8/1、114/6/1、115/6/1)
+
+      (2)暫緩續用後若疾病再復發，可重新申請使用，須符合至少有50%復發或EASI≧16 (需附上次療程治療前、後，及本次照片)。(111/8/1)
+
+      7. Dupilumab、upadacitinib、abrocitinib及lebrikizumab不得併用；upadacitinib及abrocitinib不得併用cyclosporin。（112/4/1、112/6/1、115/6/1）'

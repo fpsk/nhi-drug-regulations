@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  nhi-regulations-app:
+    build: .
+    container_name: nhi_regulations_web_app
+    ports:
+      - "5001:5001"
+    environment:
+      - PORT=5001
+      - FLASK_ENV=production
+    volumes:
+      - ./okf_data:/app/okf_data
+      - ./uploads:/app/uploads
+    restart: unless-stopped

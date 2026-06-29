@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台灣健保藥品給付規定查詢系統 | Taiwan NHI Drug Regulations Query Engine</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-globes">
+        <div class="globe globe-1"></div>
+        <div class="globe globe-2"></div>
+        <div class="globe globe-3"></div>
+    </div>
+
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-prescription-bottle-medical logo-icon"></i>
+            <div>
+                <h1>健保給付規定查詢 <span>NHI Regulations Engine</span></h1>
+                <p class="subtitle">Google OKF 相容知識庫與 ATC 藥理 cross-search 系統</p>
+            </div>
+        </div>
+        <div class="nav-actions">
+            <button id="uploadBtn" class="btn btn-primary">
+                <i class="fa-solid fa-cloud-arrow-up"></i> 更新法規文件 (.docx/.pdf)
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Search Section -->
+        <section class="search-hero">
+            <div class="search-box-wrapper">
+                <div class="search-input-group">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="搜尋英文/繁體中文藥品名稱、ATC代碼 (如 SGLT2, 恩格列淨)、臨床指標 (eGFR, HbA1c) 或章節代號 (2.5)..." autocomplete="off">
+                    <button id="clearSearch" class="btn-clear"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+
+            <!-- ATC Expansion Badge -->
+            <div id="atcExpansion" class="atc-expansion-bar hidden">
+                <div class="atc-badge-title"><i class="fa-solid fa-diagram-project"></i> ATC 藥理類別自動擴充：</div>
+                <div id="atcTags" class="atc-tags"></div>
+            </div>
+
+            <!-- Filter Controls -->
+            <div class="filter-bar">
+                <div class="filter-item">
+                    <label><i class="fa-solid fa-layer-group"></i> 給付章節 (Chapter):</label>
+                    <select id="chapterFilter">
+                        <option value="">全部章節 (All Chapters)</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <label><i class="fa-solid fa-vial-circle-check"></i> 檢驗指標 (Lab Criteria):</label>
+                    <select id="labFilter">
+                        <option value="">全部檢驗指標 (All Labs)</option>
+                        <option value="HbA1c">HbA1c (糖化血色素)</option>
+                        <option value="eGFR">eGFR (腎絲球過濾率)</option>
+                        <option value="ALT">ALT / AST (肝功能)</option>
+                        <option value="LVEF">LVEF (左心室射出分率)</option>
+                        <option value="Scr">Scr / 血清肌酸酐</option>
+                    </select>
+                </div>
+                <div class="stats-counter" id="statsCounter">
+                    載入中...
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Grid -->
+        <section class="results-container">
+            <div id="top6Banner" class="top6-banner hidden"></div>
+            <div id="resultsGrid" class="results-grid">
+                <!-- Cards injected dynamically -->
+            </div>
+            
+            <!-- Load More Container -->
+            <div id="loadMoreContainer" class="load-more-container hidden">
+                <button id="loadMoreBtn" class="btn btn-secondary btn-load-more">
+                    <i class="fa-solid fa-angles-down"></i> 顯示更多給付規定 (Load More)
+                </button>
+            </div>
+
+            <div id="noResults" class="no-results hidden">
+                <i class="fa-solid fa-box-open"></i>
+                <h3>未找到符合條件的給付規定</h3>
+                <p>請嘗試調整搜尋關鍵字或清除篩選條件。</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Detail Modal -->
+    <div id="detailModal" class="modal-backdrop hidden">
+        <div class="modal-card">
+            <div class="modal-header">
+                <div>
+                    <span id="modalSecBadge" class="sec-badge"></span>
+                    <h2 id="modalTitle">給付規定詳情</h2>
+                </div>
+                <button id="closeModal" class="btn-icon"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-tabs">
+                    <button class="tab-btn active" data-tab="annotationTab"><i class="fa-solid fa-file-contract"></i> 條文與參考標註</button>
+                    <button class="tab-btn" data-tab="okfTab"><i class="fa-solid fa-code"></i> Google OKF YAML 結構</button>
+                </div>
+                <div id="annotationTab" class="tab-content active">
+                    <div class="meta-section">
+                        <div class="meta-box">
+                            <strong><i class="fa-solid fa-folder"></i> 歸屬章節：</strong>
+                            <span id="modalChapter"></span>
+                        </div>
+                        <div class="meta-box">
+                            <strong><i class="fa-regular fa-calendar-days"></i> 修訂發布日期：</strong>
+                            <span id="modalDates"></span>
+                        </div>
+                    </div>
+                    <div class="annotated-text-box">
+                        <h4><i class="fa-solid fa-quote-left"></i> 原始條文內文 (與給付條件標註)</h4>
+                        <div id="modalFullText" class="full-text"></div>
+                    </div>
+                </div>
+                <div id="okfTab" class="tab-content">
+                    <pre><code id="modalOkfYaml"></code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Upload Modal -->
+    <div id="uploadModal" class="modal-backdrop hidden">
+        <div class="modal-card modal-sm">
+            <div class="modal-header">
+                <h2><i class="fa-solid fa-cloud-arrow-up"></i> 更新健保給付規定文件</h2>
+                <button id="closeUploadModal" class="btn-icon"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="uploadForm">
+                    <div class="drop-zone" id="dropZone">
+                        <i class="fa-solid fa-file-word drop-icon"></i>
+                        <p>將最新給付規定 <strong>.docx</strong> 或 <strong>.pdf</strong> 檔案拖曳至此</p>
+                        <span>或點擊選擇檔案</span>
+                        <input type="file" id="fileInput" accept=".docx,.pdf" required hidden>
+                    </div>
+                    <div id="fileSelected" class="file-selected hidden">
+                        <i class="fa-solid fa-file-lines"></i> <span id="selectedFileName"></span>
+                    </div>
+                    <div id="uploadStatus" class="upload-status"></div>
+                    <button type="submit" class="btn btn-primary btn-block" id="startUploadBtn">
+                        上傳並自動轉換為 Google OKF 知識庫
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

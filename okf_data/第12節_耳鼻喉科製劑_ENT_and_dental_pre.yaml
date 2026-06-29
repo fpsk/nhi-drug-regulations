@@ -1,0 +1,80 @@
+okf_version: '1.0'
+schema_type: Taiwan_NHI_Drug_Regulation
+chapter: 第12節 耳鼻喉科製劑 ENT and dental preparations
+total_regulations: 4
+regulations:
+- regulation_id: REG-0494
+  section_number: 12.1.
+  section_title: 12.1. Beclomethasone cap. for spray (如Salcoat)（87/10/1）：
+  chapter: 第12節 耳鼻喉科製劑 ENT and dental preparations
+  source_file: 完整給付規定1150623.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients: []
+  conditions_of_payment:
+    indications: []
+    laboratory_criteria: []
+    summary: 限因口腔放射線治療或化學治療產生大面積口腔潰爛之病人使用。
+  reference_annotations:
+    original_clause: 12.1. Beclomethasone cap. for spray (如Salcoat)（87/10/1）：
+    full_text: 限因口腔放射線治療或化學治療產生大面積口腔潰爛之病人使用。
+- regulation_id: REG-0495
+  section_number: 12.2.
+  section_title: 12.2. Sod. monofluorophosphate, sod. fluoride gel (如Fluocaril gel)：
+  chapter: 第12節 耳鼻喉科製劑 ENT and dental preparations
+  source_file: 完整給付規定1150623.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients: []
+  conditions_of_payment:
+    indications:
+    - Nasopharyngeal Carcinoma (鼻咽癌)
+    - Head and Neck Cancer (頭頸部癌)
+    laboratory_criteria: []
+    summary: 限住院治療及門診追蹤複查之口腔癌病例，以及放射治療之鼻咽癌或骨髓移植病例使用。
+  reference_annotations:
+    original_clause: 12.2. Sod. monofluorophosphate, sod. fluoride gel (如Fluocaril
+      gel)：
+    full_text: 限住院治療及門診追蹤複查之口腔癌病例，以及放射治療之鼻咽癌或骨髓移植病例使用。
+- regulation_id: REG-0496
+  section_number: 12.3.
+  section_title: 12.3. Ofloxacin (如Tarivid Otic Solution)：(88/8/1)
+  chapter: 第12節 耳鼻喉科製劑 ENT and dental preparations
+  source_file: 完整給付規定1150623.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients: []
+  conditions_of_payment:
+    indications: []
+    laboratory_criteria: []
+    summary: '1.有耳膜穿孔之急慢性中耳炎病患，每次處方以一瓶(十日)為原則。
+
+      2.其他耳部感染症如外耳炎等，若經使用第一線抗微生物製劑無效，且有病歷詳細記載者方得使用。'
+  reference_annotations:
+    original_clause: 12.3. Ofloxacin (如Tarivid Otic Solution)：(88/8/1)
+    full_text: '1.有耳膜穿孔之急慢性中耳炎病患，每次處方以一瓶(十日)為原則。
+
+      2.其他耳部感染症如外耳炎等，若經使用第一線抗微生物製劑無效，且有病歷詳細記載者方得使用。'
+- regulation_id: REG-0497
+  section_number: 12.4.
+  section_title: 12.4. Ciprofloxacin +hydrocortisone (如Siproxan Otic Drops)(97/4/1)
+  chapter: 第12節 耳鼻喉科製劑 ENT and dental preparations
+  source_file: 完整給付規定1150623.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients: []
+  conditions_of_payment:
+    indications: []
+    laboratory_criteria: []
+    summary: '1.耳部感染症如外耳炎等，若經使用第一線抗微生物製劑無效，且有病歷詳細記載者方得使用
+
+      2.每次處方以一瓶為原則。'
+  reference_annotations:
+    original_clause: 12.4. Ciprofloxacin +hydrocortisone (如Siproxan Otic Drops)(97/4/1)
+    full_text: '1.耳部感染症如外耳炎等，若經使用第一線抗微生物製劑無效，且有病歷詳細記載者方得使用
+
+      2.每次處方以一瓶為原則。'

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>台灣健保藥品給付規定行動查詢 App | Mobile NHI Engine</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+    <!-- Background Glow Effects -->
+    <div class="mobile-background">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <div class="app-shell">
+        <!-- Top App Bar -->
+        <header class="top-bar">
+            <div class="brand">
+                <i class="fa-solid fa-prescription-bottle-medical brand-icon"></i>
+                <div>
+                    <h2>健保給付規定 <span>行動版</span></h2>
+                    <p class="brand-sub">OKF 智慧醫療規章查詢平台</p>
+                </div>
+            </div>
+            <button id="themeToggleBtn" class="btn-theme" aria-label="Toggle Theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </header>
+
+        <!-- Sticky Search Area -->
+        <div class="search-sticky">
+            <div class="mobile-search-box">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="search" id="mobileSearchInput" placeholder="搜尋藥名 (Nexium, 恩格列淨)、疾病 (breast cancer) 或章節..." autocomplete="off">
+                <button id="mobileClearBtn" class="btn-clear-mobile hidden"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <!-- ATC & Disease Expansion Scroll Bar -->
+            <div id="mobileAtcExpansion" class="mobile-atc-bar hidden">
+                <div class="expansion-label"><i class="fa-solid fa-diagram-project"></i> 智慧聯想：</div>
+                <div id="mobileAtcTags" class="horizontal-tags"></div>
+            </div>
+
+            <!-- Quick Category Pills -->
+            <div class="category-scroll-container">
+                <div class="category-pills" id="categoryPills">
+                    <button class="pill active" data-chap="">全部章節</button>
+                    <button class="pill" data-chap="第7節">腸胃藥物</button>
+                    <button class="pill" data-chap="第9節">抗癌瘤藥</button>
+                    <button class="pill" data-chap="第2節">心血管藥</button>
+                    <button class="pill" data-chap="第10節">抗微生物</button>
+                    <button class="pill" data-chap="第1節">神經系統</button>
+                    <button class="pill" data-chap="第8節">免疫製劑</button>
+                    <button class="pill" data-chap="第3節">代謝營養</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <main class="mobile-content">
+            <!-- Results Counter Banner -->
+            <div class="mobile-stats-bar">
+                <span id="mobileStatsCounter">載入中...</span>
+                <span id="mobileLabFilterBadge" class="filter-badge hidden"></span>
+            </div>
+
+            <div id="mobileTop6Banner" class="mobile-top6-banner hidden"></div>
+
+            <!-- Single Column Card List -->
+            <div id="mobileResultsList" class="mobile-cards-list">
+                <!-- Mobile cards injected dynamically -->
+            </div>
+
+            <!-- Load More Button -->
+            <div id="mobileLoadMoreContainer" class="mobile-load-more hidden">
+                <button id="mobileLoadMoreBtn" class="btn-mobile-load-more">
+                    <i class="fa-solid fa-angles-down"></i> 顯示更多規定 (Load More)
+                </button>
+            </div>
+
+            <!-- Empty State -->
+            <div id="mobileNoResults" class="mobile-empty-state hidden">
+                <i class="fa-solid fa-box-open empty-icon"></i>
+                <h3>未找到相關給付規定</h3>
+                <p>請嘗試其他藥品名稱或疾病關鍵字。</p>
+            </div>
+        </main>
+
+        <!-- Bottom Navigation Bar -->
+        <nav class="bottom-nav">
+            <button class="nav-item active" id="navHomeBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span>查詢</span>
+            </button>
+            <button class="nav-item" id="navChaptersBtn">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>分類章節</span>
+            </button>
+            <button class="nav-item" id="navUploadBtn">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <span>更新法規</span>
+            </button>
+        </nav>
+    </div>
+
+    <!-- Full-Screen Mobile Sheet Modal for Regulation Detail -->
+    <div id="mobileDetailSheet" class="sheet-backdrop hidden">
+        <div class="sheet-card">
+            <div class="sheet-drag-handle"></div>
+            <div class="sheet-header">
+                <div>
+                    <span id="sheetSecBadge" class="sheet-badge"></span>
+                    <h3 id="sheetTitle" class="sheet-title">給付條文詳情</h3>
+                </div>
+                <button id="closeSheetBtn" class="btn-sheet-close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="sheet-body">
+                <div class="sheet-tabs">
+                    <button class="sheet-tab active" data-stab="sAnnotateTab"><i class="fa-solid fa-file-contract"></i> 條文標註</button>
+                    <button class="sheet-tab" data-stab="sOkfTab"><i class="fa-solid fa-code"></i> OKF 結構</button>
+                </div>
+                <div id="sAnnotateTab" class="sheet-tab-content active">
+                    <div class="sheet-meta">
+                        <div class="meta-item">
+                            <i class="fa-solid fa-folder"></i> <span id="sheetChapter"></span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fa-regular fa-calendar-days"></i> 修訂：<span id="sheetDates"></span>
+                        </div>
+                    </div>
+                    <div class="sheet-text-box">
+                        <div id="sheetFullText" class="sheet-full-text"></div>
+                    </div>
+                </div>
+                <div id="sOkfTab" class="sheet-tab-content">
+                    <pre><code id="sheetOkfYaml"></code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Upload Modal Sheet -->
+    <div id="mobileUploadSheet" class="sheet-backdrop hidden">
+        <div class="sheet-card sheet-sm">
+            <div class="sheet-drag-handle"></div>
+            <div class="sheet-header">
+                <h3><i class="fa-solid fa-cloud-arrow-up"></i> 更新健保規定文件</h3>
+                <button id="closeUploadSheetBtn" class="btn-sheet-close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="sheet-body">
+                <form id="mobileUploadForm">
+                    <div class="mobile-drop-zone" id="mobileDropZone">
+                        <i class="fa-solid fa-file-word drop-icon-mobile"></i>
+                        <p>點擊上傳最新 <strong>.docx</strong> 或 <strong>.pdf</strong> 給付規定</p>
+                        <input type="file" id="mobileFileInput" accept=".docx,.pdf" required hidden>
+                    </div>
+                    <div id="mobileFileSelected" class="file-selected hidden">
+                        <i class="fa-solid fa-file-lines"></i> <span id="mobileSelectedFileName"></span>
+                    </div>
+                    <div id="mobileUploadStatus" class="upload-status"></div>
+                    <button type="submit" class="btn btn-primary btn-block" id="mobileStartUploadBtn">
+                        上傳並自動建置 OKF 知識庫
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script src="mobile.js"></script>
+</body>
+</html>

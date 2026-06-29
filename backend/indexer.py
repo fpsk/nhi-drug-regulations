@@ -35,13 +35,15 @@ class NHIIndexer:
                 print(f"Error loading {yf}: {e}")
 
     def _index_record(self, reg):
+        full_text = reg.get("section_title", "") + " " + reg.get("reference_annotations", {}).get("full_text", "")
+        reg["norm_full_text"] = re.sub(r'[\s\-_/]+', '', full_text.lower())
+        
         self.regulations.append(reg)
         reg_id = reg["regulation_id"]
         
         sec_num = reg.get("section_number", "")
         self.index["by_section"][sec_num] = reg_id
         
-        full_text = reg.get("reference_annotations", {}).get("full_text", "") + " " + reg.get("section_title", "")
         tokens = set(re.findall(r'\w+', full_text.lower()))
         for t in tokens:
             if t not in self.index["by_keyword"]:
@@ -64,8 +66,8 @@ class NHIIndexer:
         matched_class_names = set()
         matched_disease_names = set()
         
-        # Smart Normalization for Lab Criteria & Acronyms
-        norm_q = re.sub(r'[\s\-_]+', '', query_clean.lower())
+        # Universal Alphanumeric Normalization for Lab Criteria & Medical Acronyms
+        norm_q = re.sub(r'[\s\-_/]+', '', query_clean.lower())
         if norm_q in ['hbvdna', 'hbv', 'b型肝炎病毒量', '血清hbvdna']:
             expanded_terms.add('hbv dna')
             expanded_terms.add('hbv-dna')
@@ -100,7 +102,7 @@ class NHIIndexer:
 
         # Disease Expansion
         disease_expansions = self.disease_engine.expand_query(query_clean)
-        if norm_q == 'hbvdna':
+        if norm_q in ['hbvdna', 'hbvdna量']:
             disease_expansions.extend(self.disease_engine.expand_query('hbv'))
             
         for de in disease_expansions:
@@ -127,6 +129,7 @@ class NHIIndexer:
                 continue
 
             full_text = (reg["section_title"] + " " + reg.get("reference_annotations", {}).get("full_text", "")).lower()
+            norm_full_text = reg.get("norm_full_text", "")
             reg_classes = [c.lower() for c in reg.get("medications", {}).get("drug_classes", [])]
             reg_ingredients = [i.lower() for i in reg.get("medications", {}).get("ingredients", [])]
             reg_indications = [ind.lower() for ind in reg.get("conditions_of_payment", {}).get("indications", [])]
@@ -143,11 +146,14 @@ class NHIIndexer:
                 if any(mc in rc or rc in mc for rc in reg_classes):
                     score += 100
 
+            # Universal Alphanumeric Matching Check for Labs/Biomarkers (e.g. pdl1, ntprobnp, fib4, das28, egfr, hba1c)
+            if len(norm_q) >= 3 and norm_q in norm_full_text:
+                score += 40
+
             for term in expanded_terms:
                 if term and len(term) > 1:
                     is_match = False
-                    # For short English terms (<=4 chars like ppi, pud, gerd), require word boundary regex
-                    if re.match(r'^[a-z0-9\-]{2,5}$', term) and term not in ['hbv', 'hcv', 'dna', 'rna']:
+                    if re.match(r'^[a-z0-9\-]{2,5}$', term) and term not in ['hbv', 'hcv', 'dna', 'rna', 'pdl1', 'her2', 'fib4']:
                         if re.search(r'\b' + re.escape(term) + r'\b', full_text):
                             is_match = True
                     else:

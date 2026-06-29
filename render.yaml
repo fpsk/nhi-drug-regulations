@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: nhi-drug-regulations-query
+    env: python
+    region: singapore
+    plan: free
+    buildCommand: pip install -r requirements.txt && python3 -m backend.parser
+    startCommand: gunicorn --bind 0.0.0.0:$PORT wsgi:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: ADMIN_PASSWORD
+        value: nhi2026

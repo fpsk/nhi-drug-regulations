@@ -62,23 +62,25 @@ class NHIIndexer:
         if not query_clean and not chapter_filter and not lab_filter:
             return self.regulations[:50]
 
+        direct_terms = set([query_clean.lower()])
         expanded_terms = set([query_clean.lower()])
         matched_class_names = set()
         matched_disease_names = set()
+        matched_ingredients = set()
         
         # Universal Alphanumeric Normalization for Lab Criteria & Medical Acronyms
         norm_q = re.sub(r'[\s\-_/]+', '', query_clean.lower())
         if norm_q in ['hbvdna', 'hbv', 'b型肝炎病毒量', '血清hbvdna']:
-            expanded_terms.add('hbv dna')
-            expanded_terms.add('hbv-dna')
-            expanded_terms.add('hbvdna')
-            expanded_terms.add('hbv')
-            expanded_terms.add('b型肝炎')
+            direct_terms.add('hbv dna')
+            direct_terms.add('hbv-dna')
+            direct_terms.add('hbvdna')
+            direct_terms.add('hbv')
+            direct_terms.add('b型肝炎')
         elif norm_q in ['hcvrna', 'hcv', 'c型肝炎病毒量']:
-            expanded_terms.add('hcv rna')
-            expanded_terms.add('hcv-rna')
-            expanded_terms.add('hcvrna')
-            expanded_terms.add('c型肝炎')
+            direct_terms.add('hcv rna')
+            direct_terms.add('hcv-rna')
+            direct_terms.add('hcvrna')
+            direct_terms.add('c型肝炎')
 
         # ATC Expansion
         atc_expansions = self.atc_engine.expand_query(query_clean)
@@ -89,16 +91,20 @@ class NHIIndexer:
             matched_class_names.add(exp["class_name_tc"].lower())
             
             for alias in exp.get("aliases", []):
-                expanded_terms.add(alias.lower())
+                # Don't pollute direct drug terms with broad umbrellas like 骨質疏鬆
+                if alias.lower() not in ['骨質疏鬆', '糖尿病', '高血壓', '心臟病']:
+                    expanded_terms.add(alias.lower())
                 
             for ing in exp["ingredients"]:
-                expanded_terms.add(ing["en"].lower())
-                expanded_terms.add(ing["tc"].lower())
+                matched_ingredients.add(ing["en"].lower())
+                matched_ingredients.add(ing["tc"].lower())
+                direct_terms.add(ing["en"].lower())
+                direct_terms.add(ing["tc"].lower())
                 brand_str = ing.get("brand", "")
                 if brand_str:
                     for b in re.findall(r'[a-zA-Z0-9\-]+|[\u4e00-\u9fa5]+', brand_str):
                         if len(b) > 1:
-                            expanded_terms.add(b.lower())
+                            direct_terms.add(b.lower())
 
         # Disease Expansion
         disease_expansions = self.disease_engine.expand_query(query_clean)
@@ -138,13 +144,21 @@ class NHIIndexer:
             if query_clean.lower() == reg["section_number"].lower():
                 score += 300
 
+            # Huge bonus for direct ingredient or brand matches in section title or text
+            for dt in direct_terms:
+                if dt and len(dt) > 1:
+                    if dt in reg["section_title"].lower():
+                        score += 200
+                    elif dt in full_text:
+                        score += 80
+
             for mdn in matched_disease_names:
                 if any(mdn in ind for ind in reg_indications):
-                    score += 150
+                    score += 100
 
             for mc in matched_class_names:
                 if any(mc in rc or rc in mc for rc in reg_classes):
-                    score += 100
+                    score += 80
 
             # Universal Alphanumeric Matching Check for Labs/Biomarkers (e.g. pdl1, ntprobnp, fib4, das28, egfr, hba1c)
             if len(norm_q) >= 3 and norm_q in norm_full_text:
@@ -162,7 +176,7 @@ class NHIIndexer:
 
                     if is_match:
                         if term in reg["section_title"].lower():
-                            score += 50
+                            score += 30
                         else:
                             score += 5
                     if any(term in ri for ri in reg_ingredients):

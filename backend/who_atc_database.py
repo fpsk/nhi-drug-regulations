@@ -1,5 +1,6 @@
 # Comprehensive Auto-Generated WHO ATC Database for Taiwan NHI Regulated Drugs
 WHO_ATC_DATABASE = {
+    "H05AA02": {"atc7": "H05AA02", "atc5": "H05AA", "en": "Teriparatide", "tc": "特立帕肽 (副甲狀腺素)", "class_en": "Parathyroid hormones and analogues", "class_tc": "副甲狀腺素及類似劑 / 骨質疏鬆症治療藥物", "brand": "Forteo (骨復力 / 復骨嚴 / Forteo)"},
     "V03AX23": {"atc7": "V03AX23", "atc5": "V03AX", "en": "Wafer", "tc": "Wafer", "class_en": "Other therapeutic products / Specialist Agents", "class_tc": "專科專用藥物", "brand": "Gliadel Wafer"},
     "V03AX36": {"atc7": "V03AX36", "atc5": "V03AX", "en": "Tablets", "tc": "Tablets", "class_en": "Other therapeutic products / Specialist Agents", "class_tc": "專科專用藥物", "brand": "Ezetrol Tablets"},
     "V03AX49": {"atc7": "V03AX49", "atc5": "V03AX", "en": "Atozet", "tc": "Atozet", "class_en": "Other therapeutic products / Specialist Agents", "class_tc": "專科專用藥物", "brand": "Vytorin"},

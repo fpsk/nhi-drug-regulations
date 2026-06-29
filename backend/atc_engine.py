@@ -5,6 +5,20 @@ from backend.who_atc_database import WHO_ATC_DATABASE
 # Embedded with WHO 7-character Level 5 codes and Taiwan Traditional Chinese Brand Names
 
 ATC_DATABASE = {
+    "H05AA": {
+        "atc_code": "H05AA",
+        "class_name_en": "Parathyroid hormones and analogues / Osteoporosis Agents",
+        "class_name_tc": "副甲狀腺素及類似劑 / 骨質疏鬆症治療藥物",
+        "aliases": ["h05aa", "h05aa02", "teriparatide", "forteo", "骨復力", "復骨嚴", "骨質疏鬆", "副甲狀腺素"],
+        "ingredients": [
+            {
+                "atc7": "H05AA02",
+                "en": "Teriparatide",
+                "tc": "特立帕肽 (副甲狀腺素)",
+                "brand": "Forteo (骨復力 / 復骨嚴 / Forteo)"
+            }
+        ]
+    },
     "L01EX": {
         "atc_code": "L01EX",
         "class_name_en": "Other protein kinase inhibitors / Targeted Antineoplastics",
@@ -378,12 +392,13 @@ class ATCEngine:
 
         # Check WHO ATC 7-Character Database
         for code7, info7 in self.who_db.items():
-            if q_clean in [code7.lower(), info7["en"].lower(), info7["tc"].lower()]:
+            brand_clean = info7.get("brand", "").lower()
+            if q_clean in [code7.lower(), info7["en"].lower(), info7["tc"].lower()] or q_clean in brand_clean:
                 matched_expansions.append({
                     "atc_code": info7["atc7"],
                     "class_name_en": info7["class_en"],
                     "class_name_tc": info7["class_tc"],
-                    "reason": f"WHO ATC7 Direct Match: {info7['atc7']} ({info7['en']})",
+                    "reason": f"WHO ATC7 Direct Match: {info7['atc7']} ({info7['en']} / {info7.get('brand')})",
                     "ingredients": [{"en": info7["en"], "tc": info7["tc"], "brand": info7["brand"], "atc7": info7["atc7"]}],
                     "aliases": [info7["atc7"].lower(), info7["en"].lower(), info7["tc"].lower()]
                 })
@@ -479,5 +494,5 @@ class ATCEngine:
 
 if __name__ == "__main__":
     engine = ATCEngine()
-    print("Test L01FF02 (Pembrolizumab):", engine.expand_query("L01FF02"))
-    print("Test L04AB04 (Adalimumab):", engine.expand_query("L04AB04"))
+    print("Test Forteo expansion:", engine.expand_query("forteo"))
+    print("Test Teriparatide expansion:", engine.expand_query("teriparatide"))

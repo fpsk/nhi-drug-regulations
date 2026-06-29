@@ -1,4 +1,5 @@
 import re
+from backend.who_atc_database import WHO_ATC_DATABASE
 
 # Comprehensive ATC (Anatomical Therapeutic Chemical) Classification Database
 # Embedded with WHO 7-character Level 5 codes and Taiwan Traditional Chinese Brand Names
@@ -365,6 +366,7 @@ ATC_DATABASE = {
 class ATCEngine:
     def __init__(self):
         self.atc_db = ATC_DATABASE
+        self.who_db = WHO_ATC_DATABASE
 
     def expand_query(self, query):
         """Given a search query, return matching ATC classes and their associated ingredients."""
@@ -374,6 +376,19 @@ class ATCEngine:
 
         matched_expansions = []
 
+        # Check WHO ATC 7-Character Database
+        for code7, info7 in self.who_db.items():
+            if q_clean in [code7.lower(), info7["en"].lower(), info7["tc"].lower()]:
+                matched_expansions.append({
+                    "atc_code": info7["atc7"],
+                    "class_name_en": info7["class_en"],
+                    "class_name_tc": info7["class_tc"],
+                    "reason": f"WHO ATC7 Direct Match: {info7['atc7']} ({info7['en']})",
+                    "ingredients": [{"en": info7["en"], "tc": info7["tc"], "brand": info7["brand"], "atc7": info7["atc7"]}],
+                    "aliases": [info7["atc7"].lower(), info7["en"].lower(), info7["tc"].lower()]
+                })
+
+        # Check Standard ATC Database
         for code, info in self.atc_db.items():
             is_match = False
             matched_reason = ""
@@ -456,9 +471,13 @@ class ATCEngine:
                 if ing["en"].lower() in text_lower or ing["tc"].lower() in text_lower:
                     found_ingredients.add(f"{ing['en']} ({ing['tc']})")
 
+        for code7, info7 in self.who_db.items():
+            if info7["en"].lower() in text_lower or info7["tc"].lower() in text_lower:
+                found_ingredients.add(f"{info7['en']} ({info7['tc']})")
+
         return list(found_classes), list(found_ingredients)
 
 if __name__ == "__main__":
     engine = ATCEngine()
-    print("Test L01EX29:", engine.expand_query("L01EX29"))
-    print("Test C10AA07:", engine.expand_query("C10AA07"))
+    print("Test L01FF02 (Pembrolizumab):", engine.expand_query("L01FF02"))
+    print("Test L04AB04 (Adalimumab):", engine.expand_query("L04AB04"))

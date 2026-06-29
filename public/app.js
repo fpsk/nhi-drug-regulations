@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeUploadModal = document.getElementById('closeUploadModal');
     const uploadForm = document.getElementById('uploadForm');
     const fileInput = document.getElementById('fileInput');
+    const uploadPassword = document.getElementById('uploadPassword');
     const dropZone = document.getElementById('dropZone');
     const fileSelected = document.getElementById('fileSelected');
     const selectedFileName = document.getElementById('selectedFileName');
@@ -101,8 +102,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const formData = new FormData();
         formData.append('file', fileInput.files[0]);
+        formData.append('password', uploadPassword ? uploadPassword.value : '');
 
-        uploadStatus.innerHTML = '<span style="color:#38bdf8;"><i class="fa-solid fa-spinner fa-spin"></i> 正在解析檔案並重新構建 OKF 知識庫...</span>';
+        uploadStatus.innerHTML = '<span style="color:#38bdf8;"><i class="fa-solid fa-spinner fa-spin"></i> 正在驗證密碼並解析檔案...</span>';
         
         try {
             const res = await fetch('/api/upload', {
@@ -115,6 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTimeout(() => {
                     uploadModal.classList.add('hidden');
                     uploadStatus.innerHTML = '';
+                    if (uploadPassword) uploadPassword.value = '';
                     fileSelected.classList.add('hidden');
                     loadChapters();
                     currentOffset = 0;

@@ -107,7 +107,7 @@
                 <span>分類章節</span>
             </button>
             <button class="nav-item" id="navUploadBtn">
-                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <i class="fa-solid fa-lock"></i>
                 <span>更新法規</span>
             </button>
         </nav>
@@ -154,22 +154,28 @@
         <div class="sheet-card sheet-sm">
             <div class="sheet-drag-handle"></div>
             <div class="sheet-header">
-                <h3><i class="fa-solid fa-cloud-arrow-up"></i> 更新健保規定文件</h3>
+                <h3><i class="fa-solid fa-lock"></i> 更新健保規定 (需密碼)</h3>
                 <button id="closeUploadSheetBtn" class="btn-sheet-close"><i class="fa-solid fa-xmark"></i></button>
             </div>
             <div class="sheet-body">
                 <form id="mobileUploadForm">
                     <div class="mobile-drop-zone" id="mobileDropZone">
                         <i class="fa-solid fa-file-word drop-icon-mobile"></i>
-                        <p>點擊上傳最新 <strong>.docx</strong> 或 <strong>.pdf</strong> 給付規定</p>
+                        <p>點擊選擇上傳 <strong>.docx</strong> 或 <strong>.pdf</strong> 給付規定</p>
                         <input type="file" id="mobileFileInput" accept=".docx,.pdf" required hidden>
                     </div>
                     <div id="mobileFileSelected" class="file-selected hidden">
                         <i class="fa-solid fa-file-lines"></i> <span id="mobileSelectedFileName"></span>
                     </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label style="display: block; font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.3rem;">
+                            <i class="fa-solid fa-key" style="color: var(--primary);"></i> 管理員密碼 (Admin Password):
+                        </label>
+                        <input type="password" id="mobileUploadPassword" placeholder="預設密碼為 nhi2026" required style="width: 100%; padding: 0.65rem 0.85rem; background: var(--bg-input); border: 1.5px solid var(--border-color); border-radius: 10px; color: var(--text-main); outline: none; font-size: 0.9rem;">
+                    </div>
                     <div id="mobileUploadStatus" class="upload-status"></div>
                     <button type="submit" class="btn btn-primary btn-block" id="mobileStartUploadBtn">
-                        上傳並自動建置 OKF 知識庫
+                        驗證密碼並建置 OKF 知識庫
                     </button>
                 </form>
             </div>

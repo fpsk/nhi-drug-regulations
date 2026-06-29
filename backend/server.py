@@ -83,11 +83,17 @@ def api_atc_expand():
 
 @app.route('/api/upload', methods=['POST'])
 def api_upload():
+    # Admin password security check
+    password = request.form.get('password', '')
+    admin_password = os.environ.get('ADMIN_PASSWORD', 'nhi2026')
+    if password != admin_password:
+        return jsonify({"status": "error", "message": "管理員密碼錯誤！無法更新法規文件 (Invalid Password)"}), 401
+
     if 'file' not in request.files:
-        return jsonify({"status": "error", "message": "No file uploaded"}), 400
+        return jsonify({"status": "error", "message": "未選擇上傳檔案"}), 400
     file = request.files['file']
     if file.filename == '':
-        return jsonify({"status": "error", "message": "Empty filename"}), 400
+        return jsonify({"status": "error", "message": "檔名空白"}), 400
     
     filename = secure_filename(file.filename)
     filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
@@ -100,14 +106,14 @@ def api_upload():
         elif ext == '.pdf':
             recs = parser.parse_pdf(filepath)
         else:
-            return jsonify({"status": "error", "message": "Unsupported format. Only .docx and .pdf allowed"}), 400
+            return jsonify({"status": "error", "message": "格式不符。僅支援 .docx 與 .pdf 檔案"}), 400
             
         generated_files = parser.save_to_okf_yaml(recs)
         indexer.load_and_index()
         
         return jsonify({
             "status": "success",
-            "message": f"Successfully parsed and updated regulations from {filename}",
+            "message": f"成功解構並更新給付規定知識庫 (來自 {filename})",
             "records_count": len(recs),
             "generated_files": [os.path.basename(f) for f in generated_files]
         })

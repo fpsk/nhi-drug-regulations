@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeUploadSheetBtn = document.getElementById('closeUploadSheetBtn');
     const mobileUploadForm = document.getElementById('mobileUploadForm');
     const mobileFileInput = document.getElementById('mobileFileInput');
+    const mobileUploadPassword = document.getElementById('mobileUploadPassword');
     const mobileDropZone = document.getElementById('mobileDropZone');
     const mobileFileSelected = document.getElementById('mobileFileSelected');
     const mobileSelectedFileName = document.getElementById('mobileSelectedFileName');
@@ -126,8 +127,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!mobileFileInput.files[0]) return;
         const formData = new FormData();
         formData.append('file', mobileFileInput.files[0]);
+        formData.append('password', mobileUploadPassword ? mobileUploadPassword.value : '');
 
-        mobileUploadStatus.innerHTML = '<span style="color:#38bdf8;"><i class="fa-solid fa-spinner fa-spin"></i> 正在解析並重構 OKF...</span>';
+        mobileUploadStatus.innerHTML = '<span style="color:#38bdf8;"><i class="fa-solid fa-spinner fa-spin"></i> 正在驗證密碼與解析檔...</span>';
         try {
             const res = await fetch('/api/upload', { method: 'POST', body: formData });
             const data = await res.json();
@@ -136,6 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTimeout(() => {
                     mobileUploadSheet.classList.add('hidden');
                     mobileUploadStatus.innerHTML = '';
+                    if (mobileUploadPassword) mobileUploadPassword.value = '';
                     mobileFileSelected.classList.add('hidden');
                     currentOffset = 0;
                     performMobileSearch();

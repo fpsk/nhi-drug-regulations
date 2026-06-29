@@ -32,7 +32,7 @@
         </div>
         <div class="nav-actions">
             <button id="uploadBtn" class="btn btn-primary">
-                <i class="fa-solid fa-cloud-arrow-up"></i> 更新法規文件 (.docx/.pdf)
+                <i class="fa-solid fa-lock"></i> 更新法規文件 (需密碼驗證)
             </button>
         </div>
     </header>
@@ -143,7 +143,7 @@
     <div id="uploadModal" class="modal-backdrop hidden">
         <div class="modal-card modal-sm">
             <div class="modal-header">
-                <h2><i class="fa-solid fa-cloud-arrow-up"></i> 更新健保給付規定文件</h2>
+                <h2><i class="fa-solid fa-lock"></i> 更新健保給付規定 (密碼驗證)</h2>
                 <button id="closeUploadModal" class="btn-icon"><i class="fa-solid fa-xmark"></i></button>
             </div>
             <div class="modal-body">
@@ -157,9 +157,15 @@
                     <div id="fileSelected" class="file-selected hidden">
                         <i class="fa-solid fa-file-lines"></i> <span id="selectedFileName"></span>
                     </div>
+                    <div style="margin-bottom: 1.25rem;">
+                        <label style="display: block; font-size: 0.88rem; color: #94a3b8; margin-bottom: 0.4rem;">
+                            <i class="fa-solid fa-key" style="color: #38bdf8;"></i> 管理員驗證密碼 (Admin Password):
+                        </label>
+                        <input type="password" id="uploadPassword" placeholder="預設密碼為 nhi2026" required style="width: 100%; padding: 0.75rem 1rem; background: rgba(15, 23, 42, 0.8); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 10px; color: white; outline: none; font-size: 0.95rem;">
+                    </div>
                     <div id="uploadStatus" class="upload-status"></div>
                     <button type="submit" class="btn btn-primary btn-block" id="startUploadBtn">
-                        上傳並自動轉換為 Google OKF 知識庫
+                        驗證密碼並自動更新 OKF 知識庫
                     </button>
                 </form>
             </div>

@@ -1,9 +1,47 @@
 import re
 
 # Comprehensive ATC (Anatomical Therapeutic Chemical) Classification Database
-# Embedded with Taiwan Traditional Chinese Brand Names (如 利加隆, 優思, 合寶麥斯, 強體力蒙 C, 恩格列淨, 健力士)
+# Embedded with Taiwan Traditional Chinese Brand Names (如 利加隆, 優思, 合寶麥斯, 強體力蒙 C, 恩格列淨, 健力士, 芙奎替尼 Fruzaqla)
 
 ATC_DATABASE = {
+    "L01EX": {
+        "atc_code": "L01EX",
+        "class_name_en": "Other protein kinase inhibitors / Targeted Antineoplastics",
+        "class_name_tc": "蛋白激酶抑制劑 / 標靶抗癌藥物 (VEGFR/TKI 標靶藥物)",
+        "aliases": ["l01ex", "l01ex29", "l01xe", "蛋白激酶抑制劑", "標靶抗癌藥物", "標靶藥物", "tki", "vegfr 抑制劑"],
+        "ingredients": [
+            {
+                "en": "Fruquintinib",
+                "tc": "芙奎替尼 (呋喹替尼)",
+                "brand": "Fruzaqla (愛優特 / 芙奎替尼)"
+            },
+            {
+                "en": "Regorafenib",
+                "tc": "瑞戈非尼",
+                "brand": "Stivarga (癌瑞格)"
+            },
+            {
+                "en": "Lenvatinib",
+                "tc": "樂伐替尼",
+                "brand": "Lenvima (樂衛瑪)"
+            },
+            {
+                "en": "Cabozantinib",
+                "tc": "卡博替尼",
+                "brand": "Cabometyx (衛佳妥)"
+            },
+            {
+                "en": "Sunitinib",
+                "tc": "舒尼替尼",
+                "brand": "Sutent (索坦)"
+            },
+            {
+                "en": "Sorafenib",
+                "tc": "索拉非尼",
+                "brand": "Nexavar (蕾莎瓦)"
+            }
+        ]
+    },
     "A05BA": {
         "atc_code": "A05BA",
         "class_name_en": "Liver Therapy / Hepatoprotectants",
@@ -371,5 +409,4 @@ class ATCEngine:
 
 if __name__ == "__main__":
     engine = ATCEngine()
-    print("Test Silymarin expansion:", engine.expand_query("Silymarin"))
-    print("Test Legalon expansion:", engine.expand_query("Legalon"))
+    print("Test Fruquintinib expansion:", engine.expand_query("Fruquintinib"))

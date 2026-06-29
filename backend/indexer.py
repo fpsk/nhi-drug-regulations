@@ -64,6 +64,20 @@ class NHIIndexer:
         matched_class_names = set()
         matched_disease_names = set()
         
+        # Smart Normalization for Lab Criteria & Acronyms
+        norm_q = re.sub(r'[\s\-_]+', '', query_clean.lower())
+        if norm_q in ['hbvdna', 'hbv', 'b型肝炎病毒量', '血清hbvdna']:
+            expanded_terms.add('hbv dna')
+            expanded_terms.add('hbv-dna')
+            expanded_terms.add('hbvdna')
+            expanded_terms.add('hbv')
+            expanded_terms.add('b型肝炎')
+        elif norm_q in ['hcvrna', 'hcv', 'c型肝炎病毒量']:
+            expanded_terms.add('hcv rna')
+            expanded_terms.add('hcv-rna')
+            expanded_terms.add('hcvrna')
+            expanded_terms.add('c型肝炎')
+
         # ATC Expansion
         atc_expansions = self.atc_engine.expand_query(query_clean)
         for exp in atc_expansions:
@@ -86,6 +100,9 @@ class NHIIndexer:
 
         # Disease Expansion
         disease_expansions = self.disease_engine.expand_query(query_clean)
+        if norm_q == 'hbvdna':
+            disease_expansions.extend(self.disease_engine.expand_query('hbv'))
+            
         for de in disease_expansions:
             expanded_terms.add(de["english_name"].lower())
             matched_disease_names.add(de["english_name"].lower())
@@ -130,7 +147,7 @@ class NHIIndexer:
                 if term and len(term) > 1:
                     is_match = False
                     # For short English terms (<=4 chars like ppi, pud, gerd), require word boundary regex
-                    if re.match(r'^[a-z0-9\-]{2,5}$', term):
+                    if re.match(r'^[a-z0-9\-]{2,5}$', term) and term not in ['hbv', 'hcv', 'dna', 'rna']:
                         if re.search(r'\b' + re.escape(term) + r'\b', full_text):
                             is_match = True
                     else:

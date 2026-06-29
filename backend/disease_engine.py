@@ -61,9 +61,9 @@ DISEASE_DATABASE = {
         "aliases": ["cirrhosis", "liver cirrhosis", "hepatic cirrhosis"]
     },
     "hepatitis": {
-        "en": "Hepatitis B / Hepatitis C",
-        "tc_terms": ["肝炎", "慢性B型肝炎", "慢性C型肝炎", "B型肝炎", "C型肝炎", "急性肝炎", "肝炎發作"],
-        "aliases": ["hepatitis", "hbv", "hcv", "hepatitis b", "hepatitis c"]
+        "en": "Hepatitis B / Hepatitis C (HBV DNA / HCV RNA)",
+        "tc_terms": ["肝炎", "慢性B型肝炎", "慢性C型肝炎", "B型肝炎", "C型肝炎", "急性肝炎", "肝炎發作", "B型肝炎病毒量", "血清HBV DNA"],
+        "aliases": ["hepatitis", "hbv", "hcv", "hepatitis b", "hepatitis c", "hbvdna", "hbv dna", "hbv-dna", "hcvrna", "hcv rna", "hcv-rna"]
     },
     "liver_cancer": {
         "en": "Liver Cancer / Hepatocellular Carcinoma",

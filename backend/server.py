@@ -22,6 +22,18 @@ def index():
 def mobile_index():
     return send_from_directory('../public', 'mobile.html')
 
+@app.route('/api/version', methods=['GET'])
+def api_version():
+    return jsonify({
+        "status": "success",
+        "app_name": "Taiwan NHI Drug Regulations Query Engine",
+        "version": "2026.06.30-v2",
+        "latest_features": "Forteo / Teriparatide / H05AA02 relevance boosting + Neo4j Graph Export",
+        "total_regulations": len(indexer.regulations),
+        "who_atc_items": len(atc_engine.who_db),
+        "atc_db_items": len(atc_engine.atc_db)
+    })
+
 @app.route('/api/search', methods=['GET'])
 def api_search():
     query = request.args.get('q', '')

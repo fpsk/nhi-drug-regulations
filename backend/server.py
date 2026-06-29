@@ -5,30 +5,36 @@ from backend.indexer import NHIIndexer
 from backend.parser import NHIRegulationParser
 from backend.atc_engine import ATCEngine
 
-app = Flask(__name__, static_folder="../public", static_url_path="")
-app.config['UPLOAD_FOLDER'] = '../uploads'
-os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+PUBLIC_DIR = os.path.abspath(os.path.join(BASE_DIR, '..', 'public'))
+DATA_DIR = os.path.abspath(os.path.join(BASE_DIR, '..', 'okf_data'))
+UPLOAD_DIR = os.path.abspath(os.path.join(BASE_DIR, '..', 'uploads'))
 
-indexer = NHIIndexer(data_dir="okf_data")
-parser = NHIRegulationParser(output_dir="okf_data")
+os.makedirs(UPLOAD_DIR, exist_ok=True)
+
+app = Flask(__name__, static_folder=PUBLIC_DIR, static_url_path="")
+app.config['UPLOAD_FOLDER'] = UPLOAD_DIR
+
+indexer = NHIIndexer(data_dir=DATA_DIR)
+parser = NHIRegulationParser(output_dir=DATA_DIR)
 atc_engine = ATCEngine()
 
 @app.route('/')
 def index():
-    return send_from_directory('../public', 'index.html')
+    return send_from_directory(PUBLIC_DIR, 'index.html')
 
 @app.route('/mobile')
 @app.route('/mobile.html')
 def mobile_index():
-    return send_from_directory('../public', 'mobile.html')
+    return send_from_directory(PUBLIC_DIR, 'mobile.html')
 
 @app.route('/api/version', methods=['GET'])
 def api_version():
     return jsonify({
         "status": "success",
         "app_name": "Taiwan NHI Drug Regulations Query Engine",
-        "version": "2026.06.30-v2",
-        "latest_features": "Forteo / Teriparatide / H05AA02 relevance boosting + Neo4j Graph Export",
+        "version": "2026.06.30-v3",
+        "latest_features": "Absolute path resolution for cloud mobile routes + Forteo / Teriparatide relevance boosting",
         "total_regulations": len(indexer.regulations),
         "who_atc_items": len(atc_engine.who_db),
         "atc_db_items": len(atc_engine.atc_db)
@@ -95,7 +101,6 @@ def api_atc_expand():
 
 @app.route('/api/upload', methods=['POST'])
 def api_upload():
-    # Admin password security check
     password = request.form.get('password', '')
     admin_password = os.environ.get('ADMIN_PASSWORD', 'nhi2026')
     if password != admin_password:

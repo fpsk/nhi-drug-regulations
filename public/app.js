@@ -348,6 +348,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    function cleanTitleForDisplay(title) {
+        if (!title) return '';
+        return title.replace(/（[^）]*\d+[^）]*）/g, '')
+                    .replace(/\([^)]*\d+[^)]*\)/g, '')
+                    .trim();
+    }
+
+    function formatDatesForDisplay(dates) {
+        if (!dates || dates.length === 0) return '未特別標註';
+        if (dates.length <= 2) return dates.join(', ');
+        return `${dates[0]} ... ${dates[dates.length - 1]} (共 ${dates.length} 次修訂)`;
+    }
+
     function cleanSummaryText(text) {
         if (!text) return '';
         return text.replace(/【給付與評估表格.*?】:\s*/g, '').replace(/\|/g, ' - ').substring(0, 260) + '...';
@@ -355,9 +368,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function openDetailModal(reg) {
         document.getElementById('modalSecBadge').textContent = reg.section_number;
-        document.getElementById('modalTitle').textContent = reg.section_title;
+        document.getElementById('modalTitle').textContent = cleanTitleForDisplay(reg.section_title);
         document.getElementById('modalChapter').textContent = reg.chapter;
-        document.getElementById('modalDates').textContent = reg.effective_dates.length ? reg.effective_dates.join(', ') : '未特別標註';
+        document.getElementById('modalDates').textContent = formatDatesForDisplay(reg.effective_dates);
         
         const fullTextContainer = document.getElementById('modalFullText');
         renderFormattedText(fullTextContainer, reg.reference_annotations.full_text);

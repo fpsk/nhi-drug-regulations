@@ -31,6 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentLimit = 6;
     let currentRegulations = [];
     let debounceTimer = null;
+    let searchAbortController = null;
+    let atcAbortController = null;
 
     // Initialize
     loadChapters();
@@ -162,8 +164,15 @@ document.addEventListener('DOMContentLoaded', () => {
             atcExpansion.classList.add('hidden');
             return;
         }
+
+        if (atcAbortController) {
+            atcAbortController.abort();
+        }
+        atcAbortController = new AbortController();
+        const signal = atcAbortController.signal;
+
         try {
-            const res = await fetch(`/api/atc/expand?q=${encodeURIComponent(q)}`);
+            const res = await fetch(`/api/atc/expand?q=${encodeURIComponent(q)}`, { signal });
             const data = await res.json();
             if (data.status === 'success' && data.expansions.length > 0) {
                 atcTags.innerHTML = '';
@@ -214,6 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 atcExpansion.classList.add('hidden');
             }
         } catch (err) {
+            if (err.name === 'AbortError') return;
             console.error("Error expanding ATC:", err);
         }
     }
@@ -226,8 +236,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         statsCounter.textContent = '搜尋中...';
 
+        if (searchAbortController) {
+            searchAbortController.abort();
+        }
+        searchAbortController = new AbortController();
+        const signal = searchAbortController.signal;
+
         try {
-            const res = await fetch(`/api/search?q=${encodeURIComponent(q)}&chapter=${encodeURIComponent(chap)}&lab=${encodeURIComponent(lab)}&limit=${currentLimit}&offset=${currentOffset}`);
+            const res = await fetch(`/api/search?q=${encodeURIComponent(q)}&chapter=${encodeURIComponent(chap)}&lab=${encodeURIComponent(lab)}&limit=${currentLimit}&offset=${currentOffset}`, { signal });
             const data = await res.json();
             
             if (data.status === 'success') {
@@ -251,6 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 renderResults(data.results, false);
             }
         } catch (err) {
+            if (err.name === 'AbortError') return;
             console.error("Search error:", err);
             statsCounter.textContent = '搜尋發生錯誤';
         }

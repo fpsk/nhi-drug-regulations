@@ -36,6 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentChapter = '';
     let currentRegulations = [];
     let debounceTimer = null;
+    let searchAbortController = null;
+    let atcAbortController = null;
 
     // Theme Toggle
     let isDark = true;
@@ -154,8 +156,15 @@ document.addEventListener('DOMContentLoaded', () => {
     async function checkMobileATC() {
         const q = mobileSearchInput.value.trim();
         if (!q) { mobileAtcExpansion.classList.add('hidden'); return; }
+
+        if (atcAbortController) {
+            atcAbortController.abort();
+        }
+        atcAbortController = new AbortController();
+        const signal = atcAbortController.signal;
+
         try {
-            const res = await fetch(`/api/atc/expand?q=${encodeURIComponent(q)}`);
+            const res = await fetch(`/api/atc/expand?q=${encodeURIComponent(q)}`, { signal });
             const data = await res.json();
             if (data.status === 'success' && data.expansions.length > 0) {
                 mobileAtcTags.innerHTML = '';
@@ -205,7 +214,10 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 mobileAtcExpansion.classList.add('hidden');
             }
-        } catch (err) { console.error("ATC error:", err); }
+        } catch (err) {
+            if (err.name === 'AbortError') return;
+            console.error("ATC error:", err);
+        }
     }
 
 
@@ -213,8 +225,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const q = mobileSearchInput.value.trim();
         mobileStatsCounter.textContent = '搜尋中...';
 
+        if (searchAbortController) {
+            searchAbortController.abort();
+        }
+        searchAbortController = new AbortController();
+        const signal = searchAbortController.signal;
+
         try {
-            const res = await fetch(`/api/search?q=${encodeURIComponent(q)}&chapter=${encodeURIComponent(currentChapter)}&limit=${currentLimit}&offset=${currentOffset}`);
+            const res = await fetch(`/api/search?q=${encodeURIComponent(q)}&chapter=${encodeURIComponent(currentChapter)}&limit=${currentLimit}&offset=${currentOffset}`, { signal });
             const data = await res.json();
 
             if (data.status === 'success') {
@@ -233,6 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 renderMobileCards(data.results, false);
             }
         } catch (err) {
+            if (err.name === 'AbortError') return;
             console.error("Mobile search error:", err);
             mobileStatsCounter.textContent = '搜尋發生錯誤';
         }

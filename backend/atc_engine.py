@@ -397,8 +397,43 @@ class ATCEngine:
             return brand_en, brand_tc
         return brand_str.strip(), []
 
+    def levenshtein_distance(self, s1, s2):
+        if len(s1) < len(s2):
+            return self.levenshtein_distance(s2, s1)
+        if len(s2) == 0:
+            return len(s1)
+        previous_row = range(len(s2) + 1)
+        for i, c1 in enumerate(s1):
+            current_row = [i + 1]
+            for j, c2 in enumerate(s2):
+                insertions = previous_row[j + 1] + 1
+                deletions = current_row[j] + 1
+                substitutions = previous_row[j] + (c1 != c2)
+                current_row.append(min(insertions, deletions, substitutions))
+            previous_row = current_row
+        return previous_row[-1]
+
+    def is_fuzzy_match(self, q, target):
+        q = q.lower()
+        target = target.lower()
+        if len(q) < 4 or len(target) < 4:
+            return q == target
+        
+        d = self.levenshtein_distance(q, target)
+        if d <= 2:
+            return True
+            
+        if abs(len(q) - len(target)) <= 1:
+            s1 = set(q)
+            s2 = set(target)
+            intersection = len(s1.intersection(s2))
+            union = len(s1.union(s2))
+            if union > 0 and (intersection / union) >= 0.8:
+                return True
+        return False
+
     def expand_query(self, query):
-        """Given a search query, return matching ATC classes and their associated ingredients with rich metadata."""
+        """Given a search query, return matching ATC classes and their associated ingredients with rich metadata and spelling tolerance."""
         q_clean = query.strip().lower()
         if not q_clean:
             return []
@@ -410,13 +445,14 @@ class ATCEngine:
             brand_str = info7.get("brand", "")
             brand_en, brand_tc = self.parse_brand(brand_str)
             
-            is_atc_match = q_clean == code7.lower()
-            is_ing_en_match = q_clean in info7["en"].lower() or info7["en"].lower() in q_clean
+            is_atc_match = q_clean == code7.lower() or self.is_fuzzy_match(q_clean, code7)
+            is_ing_en_match = q_clean in info7["en"].lower() or info7["en"].lower() in q_clean or self.is_fuzzy_match(q_clean, info7["en"])
             is_ing_tc_match = q_clean in info7["tc"].lower() or info7["tc"].lower() in q_clean
-            is_brand_en_match = brand_en and (q_clean in brand_en.lower() or brand_en.lower() in q_clean)
+            is_brand_en_match = brand_en and (q_clean in brand_en.lower() or brand_en.lower() in q_clean or self.is_fuzzy_match(q_clean, brand_en))
             is_brand_tc_match = any(q_clean in tc.lower() or tc.lower() in q_clean for tc in brand_tc)
             
             if is_atc_match or is_ing_en_match or is_ing_tc_match or is_brand_en_match or is_brand_tc_match:
+
                 class_info = self.atc_db.get(info7["atc5"], {})
                 class_aliases = class_info.get("aliases", [])
                 matched_expansions.append({
@@ -445,10 +481,10 @@ class ATCEngine:
                 brand_str = ing.get("brand", "")
                 brand_en, brand_tc = self.parse_brand(brand_str)
                 
-                is_atc_match = ing_atc7 and q_clean == ing_atc7.lower()
-                is_ing_en_match = q_clean in ing["en"].lower() or ing["en"].lower() in q_clean
+                is_atc_match = ing_atc7 and (q_clean == ing_atc7.lower() or self.is_fuzzy_match(q_clean, ing_atc7))
+                is_ing_en_match = q_clean in ing["en"].lower() or ing["en"].lower() in q_clean or self.is_fuzzy_match(q_clean, ing["en"])
                 is_ing_tc_match = q_clean in ing["tc"].lower() or ing["tc"].lower() in q_clean
-                is_brand_en_match = brand_en and (q_clean in brand_en.lower() or brand_en.lower() in q_clean)
+                is_brand_en_match = brand_en and (q_clean in brand_en.lower() or brand_en.lower() in q_clean or self.is_fuzzy_match(q_clean, brand_en))
                 is_brand_tc_match = any(q_clean in tc.lower() or tc.lower() in q_clean for tc in brand_tc)
                 
                 if is_atc_match or is_ing_en_match or is_ing_tc_match or is_brand_en_match or is_brand_tc_match:

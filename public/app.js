@@ -168,10 +168,46 @@ document.addEventListener('DOMContentLoaded', () => {
             if (data.status === 'success' && data.expansions.length > 0) {
                 atcTags.innerHTML = '';
                 data.expansions.forEach(exp => {
-                    const tag = document.createElement('div');
-                    tag.className = 'atc-tag';
-                    tag.innerHTML = `<strong>${exp.atc_code}</strong> | ${exp.class_name_tc} (${exp.class_name_en})`;
-                    atcTags.appendChild(tag);
+                    const cardItem = document.createElement('div');
+                    cardItem.className = 'atc-expansion-card';
+                    
+                    let html = `
+                        <div class="atc-exp-header">
+                            <span class="atc-exp-code-badge"><i class="fa-solid fa-barcode"></i> 藥物完整 ATC 碼: ${exp.atc_code}</span>
+                            <span class="atc-exp-class-badge"><i class="fa-solid fa-layer-group"></i> 藥理分類: ${exp.class_code}</span>
+                        </div>
+                        <div class="atc-exp-body">
+                            <div class="atc-exp-row">
+                                <span class="atc-exp-label">藥理分類與給付規定 (ATC Class):</span>
+                                <span class="atc-exp-value"><strong>${exp.class_name_tc}</strong> <small style="opacity: 0.8; display: block;">${exp.class_name_en}</small></span>
+                            </div>
+                    `;
+                    
+                    if (exp.ingredient_en || exp.ingredient_tc) {
+                        html += `
+                            <div class="atc-exp-row">
+                                <span class="atc-exp-label">對應成分 (Generic Ingredient):</span>
+                                <span class="atc-exp-value"><strong>${exp.ingredient_en}</strong> ${exp.ingredient_tc ? `(${exp.ingredient_tc})` : ''}</span>
+                            </div>
+                        `;
+                    }
+                    
+                    if (exp.is_brand) {
+                        const brandsList = [];
+                        if (exp.brand_en) brandsList.push(`<strong>${exp.brand_en}</strong> (英文)`);
+                        if (exp.brand_tc && exp.brand_tc.length > 0) brandsList.push(`<strong>${exp.brand_tc.join(' / ')}</strong> (台灣中文)`);
+                        
+                        html += `
+                            <div class="atc-exp-row">
+                                <span class="atc-exp-label">商品名稱 (Trade Brands):</span>
+                                <span class="atc-exp-value">${brandsList.join(' | ')}</span>
+                            </div>
+                        `;
+                    }
+                    
+                    html += `</div>`;
+                    cardItem.innerHTML = html;
+                    atcTags.appendChild(cardItem);
                 });
                 atcExpansion.classList.remove('hidden');
             } else {
@@ -181,6 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error("Error expanding ATC:", err);
         }
     }
+
 
     async function performSearch() {
         const q = searchInput.value.trim();

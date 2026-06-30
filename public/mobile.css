@@ -209,39 +209,43 @@ body {
 
 /* ATC Scroll Bar */
 .mobile-atc-bar {
-    background: rgba(56, 189, 248, 0.1);
-    border: 1px solid rgba(56, 189, 248, 0.25);
+    background: rgba(15, 23, 42, 0.75);
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-radius: var(--radius-md);
-    padding: 0.6rem 0.85rem;
+    padding: 0.75rem 1rem;
     margin-top: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
 }
 
 .expansion-label {
-    font-size: 0.8rem;
+    font-size: 0.82rem;
     color: var(--primary);
-    font-weight: 600;
-    margin-bottom: 0.4rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
 }
 
 .horizontal-tags {
     display: flex;
-    gap: 0.5rem;
-    overflow-x: auto;
-    padding-bottom: 0.2rem;
-    scrollbar-width: none;
+    flex-direction: column;
+    gap: 0.6rem;
 }
 
-.horizontal-tags::-webkit-scrollbar { display: none; }
-
-.atc-tag-m {
-    white-space: nowrap;
-    background: var(--bg-surface);
-    border: 1px solid var(--border-color);
-    color: var(--text-main);
-    padding: 0.25rem 0.6rem;
-    border-radius: 12px;
-    font-size: 0.78rem;
+.mobile-atc-card {
+    background: rgba(30, 41, 59, 0.55);
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    border-radius: var(--radius-sm);
+    padding: 0.65rem 0.85rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
 }
+
 
 /* Category Pills Carousel */
 .category-scroll-container {

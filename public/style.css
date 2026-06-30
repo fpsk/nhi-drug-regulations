@@ -180,41 +180,99 @@ body {
 }
 
 .atc-expansion-bar {
-    background: rgba(30, 58, 138, 0.4);
-    border: 1px solid rgba(59, 130, 246, 0.4);
+    background: rgba(15, 23, 42, 0.7);
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-radius: var(--radius-md);
-    padding: 0.75rem 1.25rem;
-    margin-bottom: 1.25rem;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1.5rem;
     display: flex;
-    align-items: center;
-    gap: 1rem;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
     animation: fadeIn 0.3s ease;
 }
 
 .atc-badge-title {
-    font-size: 0.9rem;
-    color: #93c5fd;
-    font-weight: 600;
-    white-space: nowrap;
+    font-size: 0.95rem;
+    color: var(--primary);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 0.5rem;
 }
 
 .atc-tags {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+    flex-direction: column;
+    gap: 0.75rem;
 }
 
-.atc-tag {
+.atc-expansion-card {
+    background: rgba(30, 41, 59, 0.45);
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    border-radius: var(--radius-sm);
+    padding: 1rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.atc-exp-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    border-bottom: 1px solid rgba(56, 189, 248, 0.15);
+    padding-bottom: 0.5rem;
+}
+
+.atc-exp-code-badge {
     background: rgba(56, 189, 248, 0.2);
     border: 1px solid rgba(56, 189, 248, 0.4);
     color: #e0f2fe;
-    padding: 0.25rem 0.75rem;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 700;
 }
+
+.atc-exp-class-badge {
+    background: rgba(147, 197, 253, 0.12);
+    border: 1px solid rgba(147, 197, 253, 0.3);
+    color: #dbeafe;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.atc-exp-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.atc-exp-row {
+    display: flex;
+    align-items: flex-start;
+    font-size: 0.88rem;
+    line-height: 1.4;
+}
+
+.atc-exp-label {
+    color: #94a3b8;
+    width: 250px;
+    flex-shrink: 0;
+    font-weight: 600;
+}
+
+.atc-exp-value {
+    color: #f1f5f9;
+}
+
 
 .top6-banner {
     background: linear-gradient(135deg, rgba(244, 63, 94, 0.2), rgba(225, 29, 72, 0.3));

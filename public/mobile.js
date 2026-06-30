@@ -160,10 +160,46 @@ document.addEventListener('DOMContentLoaded', () => {
             if (data.status === 'success' && data.expansions.length > 0) {
                 mobileAtcTags.innerHTML = '';
                 data.expansions.forEach(exp => {
-                    const tag = document.createElement('div');
-                    tag.className = 'atc-tag-m';
-                    tag.innerHTML = `<strong>${exp.atc_code}</strong> | ${exp.class_name_tc}`;
-                    mobileAtcTags.appendChild(tag);
+                    const cardItem = document.createElement('div');
+                    cardItem.className = 'mobile-atc-card';
+                    
+                    let html = `
+                        <div class="atc-exp-header" style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(56, 189, 248, 0.15); padding-bottom: 0.3rem; margin-bottom: 0.3rem;">
+                            <span style="font-size:0.75rem; font-weight:700; color:#38bdf8;"><i class="fa-solid fa-barcode"></i> ATC: ${exp.atc_code}</span>
+                            <span style="font-size:0.75rem; font-weight:600; color:#93c5fd;"><i class="fa-solid fa-layer-group"></i> 類別: ${exp.class_code}</span>
+                        </div>
+                        <div style="display:flex; flex-direction:column; gap:0.25rem; font-size:0.8rem;">
+                            <div>
+                                <span style="color:#94a3b8; font-weight:600; display:inline-block; width:110px;">分類 (ATC Class):</span>
+                                <span style="color:#f1f5f9;">${exp.class_name_tc}</span>
+                            </div>
+                    `;
+                    
+                    if (exp.ingredient_en || exp.ingredient_tc) {
+                        html += `
+                            <div>
+                                <span style="color:#94a3b8; font-weight:600; display:inline-block; width:110px;">成分 (Generic):</span>
+                                <span style="color:#f1f5f9; font-weight:600;">${exp.ingredient_en} ${exp.ingredient_tc ? `(${exp.ingredient_tc})` : ''}</span>
+                            </div>
+                        `;
+                    }
+                    
+                    if (exp.is_brand) {
+                        const brandsList = [];
+                        if (exp.brand_en) brandsList.push(`${exp.brand_en} (Eng)`);
+                        if (exp.brand_tc && exp.brand_tc.length > 0) brandsList.push(`${exp.brand_tc.join('/')} (中)`);
+                        
+                        html += `
+                            <div>
+                                <span style="color:#94a3b8; font-weight:600; display:inline-block; width:110px;">商品名 (Brands):</span>
+                                <span style="color:#f1f5f9;">${brandsList.join(' | ')}</span>
+                            </div>
+                        `;
+                    }
+                    
+                    html += `</div>`;
+                    cardItem.innerHTML = html;
+                    mobileAtcTags.appendChild(cardItem);
                 });
                 mobileAtcExpansion.classList.remove('hidden');
             } else {
@@ -171,6 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         } catch (err) { console.error("ATC error:", err); }
     }
+
 
     async function performMobileSearch() {
         const q = mobileSearchInput.value.trim();

@@ -382,8 +382,23 @@ class ATCEngine:
         self.atc_db = ATC_DATABASE
         self.who_db = WHO_ATC_DATABASE
 
+    def parse_brand(self, brand_str):
+        if not brand_str:
+            return "", []
+        # Matches format: "Brand (Chinese1 / Chinese2 / ...)"
+        match = re.match(r'^([^\(]+)\s*\((.*?)\)', brand_str)
+        if match:
+            brand_en = match.group(1).strip()
+            parts = [p.strip() for p in match.group(2).split('/')]
+            # Chinese characters have ord > 127
+            brand_tc = [p for p in parts if any(ord(c) > 127 for c in p)]
+            if not brand_tc:
+                brand_tc = [p for p in parts if p.lower() != brand_en.lower()]
+            return brand_en, brand_tc
+        return brand_str.strip(), []
+
     def expand_query(self, query):
-        """Given a search query, return matching ATC classes and their associated ingredients."""
+        """Given a search query, return matching ATC classes and their associated ingredients with rich metadata."""
         q_clean = query.strip().lower()
         if not q_clean:
             return []
@@ -392,75 +407,80 @@ class ATCEngine:
 
         # Check WHO ATC 7-Character Database
         for code7, info7 in self.who_db.items():
-            brand_clean = info7.get("brand", "").lower()
-            if q_clean in [code7.lower(), info7["en"].lower(), info7["tc"].lower()] or q_clean in brand_clean:
+            brand_str = info7.get("brand", "")
+            brand_en, brand_tc = self.parse_brand(brand_str)
+            
+            is_atc_match = q_clean == code7.lower()
+            is_ing_en_match = q_clean in info7["en"].lower() or info7["en"].lower() in q_clean
+            is_ing_tc_match = q_clean in info7["tc"].lower() or info7["tc"].lower() in q_clean
+            is_brand_en_match = brand_en and (q_clean in brand_en.lower() or brand_en.lower() in q_clean)
+            is_brand_tc_match = any(q_clean in tc.lower() or tc.lower() in q_clean for tc in brand_tc)
+            
+            if is_atc_match or is_ing_en_match or is_ing_tc_match or is_brand_en_match or is_brand_tc_match:
                 matched_expansions.append({
-                    "atc_code": info7["atc7"],
+                    "atc_code": code7,
+                    "class_code": info7["atc5"],
                     "class_name_en": info7["class_en"],
                     "class_name_tc": info7["class_tc"],
-                    "reason": f"WHO ATC7 Direct Match: {info7['atc7']} ({info7['en']} / {info7.get('brand')})",
-                    "ingredients": [{"en": info7["en"], "tc": info7["tc"], "brand": info7["brand"], "atc7": info7["atc7"]}],
-                    "aliases": [info7["atc7"].lower(), info7["en"].lower(), info7["tc"].lower()]
+                    "ingredient_en": info7["en"],
+                    "ingredient_tc": info7["tc"],
+                    "brand_en": brand_en,
+                    "brand_tc": brand_tc,
+                    "is_brand": is_brand_en_match or is_brand_tc_match,
+                    "is_chinese": is_ing_tc_match or is_brand_tc_match,
+                    "searched_term": query
                 })
 
         # Check Standard ATC Database
         for code, info in self.atc_db.items():
-            is_match = False
-            matched_reason = ""
-
-            if q_clean == code.lower():
-                is_match = True
-                matched_reason = f"Exact ATC Code: {code}"
-
-            if not is_match:
-                for alias in info["aliases"]:
-                    alias_clean = alias.lower()
-                    if len(alias_clean) <= 4:
-                        if re.search(r'\b' + re.escape(alias_clean) + r'\b', q_clean):
-                            is_match = True
-                            matched_reason = f"Matched Class Alias: {alias}"
-                            break
-                    else:
-                        if alias_clean in q_clean or q_clean in alias_clean:
-                            is_match = True
-                            matched_reason = f"Matched Class Alias: {alias}"
-                            break
-
-            if not is_match:
-                for ing in info["ingredients"]:
-                    ing_en = ing["en"].lower()
-                    ing_tc = ing["tc"].lower()
-                    ing_atc7 = ing.get("atc7", "").lower()
-                    brand_str = ing.get("brand", "").lower()
+            for ing in info["ingredients"]:
+                ing_atc7 = ing.get("atc7", "")
+                if any(x.get("atc_code") == ing_atc7 for x in matched_expansions):
+                    continue
                     
-                    if ing_atc7 and ing_atc7 == q_clean:
-                        is_match = True
-                        matched_reason = f"Matched 7-Char ATC Code: {ing.get('atc7')}"
-                        break
-                    if ing_en in q_clean or q_clean in ing_en:
-                        is_match = True
-                        matched_reason = f"Matched Ingredient: {ing['en']} ({ing['tc']})"
-                        break
-                    if ing_tc in q_clean or q_clean in ing_tc:
-                        is_match = True
-                        matched_reason = f"Matched Ingredient: {ing['tc']}"
-                        break
-                    if brand_str and (q_clean in brand_str or any(b in q_clean for b in re.findall(r'[a-zA-Z0-9\-]+|[\u4e00-\u9fa5]+', brand_str) if len(b)>1)):
-                        is_match = True
-                        matched_reason = f"Matched Trade Brand: {ing.get('brand')}"
-                        break
+                brand_str = ing.get("brand", "")
+                brand_en, brand_tc = self.parse_brand(brand_str)
+                
+                is_atc_match = ing_atc7 and q_clean == ing_atc7.lower()
+                is_ing_en_match = q_clean in ing["en"].lower() or ing["en"].lower() in q_clean
+                is_ing_tc_match = q_clean in ing["tc"].lower() or ing["tc"].lower() in q_clean
+                is_brand_en_match = brand_en and (q_clean in brand_en.lower() or brand_en.lower() in q_clean)
+                is_brand_tc_match = any(q_clean in tc.lower() or tc.lower() in q_clean for tc in brand_tc)
+                
+                if is_atc_match or is_ing_en_match or is_ing_tc_match or is_brand_en_match or is_brand_tc_match:
+                    matched_expansions.append({
+                        "atc_code": ing_atc7 or info["atc_code"],
+                        "class_code": info["atc_code"],
+                        "class_name_en": info["class_name_en"],
+                        "class_name_tc": info["class_name_tc"],
+                        "ingredient_en": ing["en"],
+                        "ingredient_tc": ing["tc"],
+                        "brand_en": brand_en,
+                        "brand_tc": brand_tc,
+                        "is_brand": is_brand_en_match or is_brand_tc_match,
+                        "is_chinese": is_ing_tc_match or is_brand_tc_match,
+                        "searched_term": query
+                    })
 
-            if is_match:
-                matched_expansions.append({
-                    "atc_code": info["atc_code"],
-                    "class_name_en": info["class_name_en"],
-                    "class_name_tc": info["class_name_tc"],
-                    "reason": matched_reason,
-                    "ingredients": info["ingredients"],
-                    "aliases": info["aliases"]
-                })
+            # Also check if user typed the exact class code or alias (broad search)
+            if q_clean == code.lower() or any(q_clean == alias.lower() for alias in info["aliases"]):
+                if not any(x.get("class_code") == code for x in matched_expansions):
+                    matched_expansions.append({
+                        "atc_code": info["atc_code"],
+                        "class_code": info["atc_code"],
+                        "class_name_en": info["class_name_en"],
+                        "class_name_tc": info["class_name_tc"],
+                        "ingredient_en": "",
+                        "ingredient_tc": "",
+                        "brand_en": "",
+                        "brand_tc": [],
+                        "is_brand": False,
+                        "is_chinese": False,
+                        "searched_term": query
+                    })
 
         return matched_expansions
+
 
     def find_related_terms(self, text):
         """Find ATC classes and ingredients mentioned in text."""

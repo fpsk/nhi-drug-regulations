@@ -315,7 +315,7 @@ ATC_DATABASE = {
         "atc_code": "C10AA",
         "class_name_en": "HMG-CoA reductase inhibitors (Statins)",
         "class_name_tc": "Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)",
-        "aliases": ["c10aa", "c10aa01", "c10aa03", "c10aa05", "c10aa07", "statin", "statins", "降膽固醇藥"],
+        "aliases": ["c10aa", "c10aa01", "c10aa03", "c10aa05", "c10aa07", "statin", "statins", "降膽固醇藥", "降膽固醇", "降血脂藥", "降血脂", "血脂", "膽固醇"],
         "ingredients": [
             {
                 "atc7": "C10AA05",
@@ -417,6 +417,8 @@ class ATCEngine:
             is_brand_tc_match = any(q_clean in tc.lower() or tc.lower() in q_clean for tc in brand_tc)
             
             if is_atc_match or is_ing_en_match or is_ing_tc_match or is_brand_en_match or is_brand_tc_match:
+                class_info = self.atc_db.get(info7["atc5"], {})
+                class_aliases = class_info.get("aliases", [])
                 matched_expansions.append({
                     "atc_code": code7,
                     "class_code": info7["atc5"],
@@ -428,7 +430,9 @@ class ATCEngine:
                     "brand_tc": brand_tc,
                     "is_brand": is_brand_en_match or is_brand_tc_match,
                     "is_chinese": is_ing_tc_match or is_brand_tc_match,
-                    "searched_term": query
+                    "searched_term": query,
+                    "aliases": class_aliases + [info7["atc7"].lower(), info7["en"].lower(), info7["tc"].lower()],
+                    "primary_regulation": info7.get("primary_regulation", "")
                 })
 
         # Check Standard ATC Database
@@ -459,7 +463,9 @@ class ATCEngine:
                         "brand_tc": brand_tc,
                         "is_brand": is_brand_en_match or is_brand_tc_match,
                         "is_chinese": is_ing_tc_match or is_brand_tc_match,
-                        "searched_term": query
+                        "searched_term": query,
+                        "aliases": info.get("aliases", []) + [ing_atc7.lower() if ing_atc7 else "", ing["en"].lower(), ing["tc"].lower()],
+                        "primary_regulation": ing.get("primary_regulation", "")
                     })
 
             # Also check if user typed the exact class code or alias (broad search)
@@ -476,8 +482,11 @@ class ATCEngine:
                         "brand_tc": [],
                         "is_brand": False,
                         "is_chinese": False,
-                        "searched_term": query
+                        "searched_term": query,
+                        "aliases": info.get("aliases", []),
+                        "primary_regulation": ""
                     })
+
 
         return matched_expansions
 

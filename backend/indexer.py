@@ -87,32 +87,43 @@ class NHIIndexer:
         atc_expansions = self.atc_engine.expand_query(query_clean)
         for exp in atc_expansions:
             expanded_terms.add(exp["atc_code"].lower())
+            expanded_terms.add(exp["class_code"].lower())
             expanded_terms.add(exp["class_name_en"].lower())
             expanded_terms.add(exp["class_name_tc"].lower())
             matched_class_names.add(exp["class_name_tc"].lower())
             
             for alias in exp.get("aliases", []):
-                if alias.lower() not in ['骨質疏鬆', '糖尿病', '高血壓', '心臟病']:
+                if alias and len(alias) > 1:
                     expanded_terms.add(alias.lower())
-                
-            for ing in exp["ingredients"]:
-                ing_en = ing["en"].lower()
-                ing_tc = ing["tc"].lower()
-                brand_str = ing.get("brand", "").lower()
-                
-                # Precise filter: only isolate ingredient if query matches this specific ingredient/brand
-                if query_clean.lower() in brand_str or query_clean.lower() in ing_en or query_clean.lower() in ing_tc or query_clean.lower() == ing.get("atc7", "").lower():
-                    exact_target_terms.add(ing_en)
-                    exact_target_terms.add(ing_tc)
-                    if brand_str:
-                        for b in re.findall(r'[a-zA-Z0-9\-]+|[\u4e00-\u9fa5]+', brand_str):
-                            if len(b) > 1:
-                                exact_target_terms.add(b.lower())
-
+            
+            ing_en = exp.get("ingredient_en", "").lower()
+            ing_tc = exp.get("ingredient_tc", "").lower()
+            brand_en = exp.get("brand_en", "").lower()
+            brand_tc = [b.lower() for b in exp.get("brand_tc", [])]
+            
+            if ing_en:
                 matched_ingredients.add(ing_en)
-                matched_ingredients.add(ing_tc)
                 direct_terms.add(ing_en)
+            if ing_tc:
+                matched_ingredients.add(ing_tc)
                 direct_terms.add(ing_tc)
+                
+            is_matching_specific = (
+                query_clean in ing_en or 
+                query_clean in ing_tc or 
+                (brand_en and query_clean in brand_en) or 
+                any(query_clean in b for b in brand_tc) or
+                query_clean == exp["atc_code"].lower()
+            )
+            
+            if is_matching_specific:
+                if ing_en: exact_target_terms.add(ing_en)
+                if ing_tc: exact_target_terms.add(ing_tc)
+                if brand_en: exact_target_terms.add(brand_en)
+                for b in brand_tc:
+                    exact_target_terms.add(b)
+
+
 
         # Disease Expansion
         disease_expansions = self.disease_engine.expand_query(query_clean)
@@ -127,6 +138,9 @@ class NHIIndexer:
             for tc in de["chinese_terms"]:
                 expanded_terms.add(tc.lower())
                 matched_disease_names.add(tc.lower())
+
+        # Extract primary regulations
+        primary_regulations = set([exp["primary_regulation"] for exp in atc_expansions if exp.get("primary_regulation")])
 
         results = []
         for reg in self.regulations:
@@ -152,7 +166,16 @@ class NHIIndexer:
             if query_clean.lower() == reg["section_number"].lower():
                 score += 2000
 
+            # Primary regulation mapping boost
+            for pr in primary_regulations:
+                pr_clean = pr.strip('.')
+                sec_clean = reg["section_number"].strip('.')
+                if sec_clean == pr_clean or sec_clean.startswith(pr_clean + '.'):
+                    score += 1500
+                    break
+
             # Unbeatable priority boost for exact isolated brand/molecule matches in title or text
+
             for et in exact_target_terms:
                 if et and len(et) > 1:
                     if et in reg["section_title"].lower():

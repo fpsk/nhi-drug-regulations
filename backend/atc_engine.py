@@ -390,6 +390,45 @@ ATC_DATABASE = {
                 "brand": "Pradaxa (普達信)"
             }
         ]
+    },
+    "J05AF": {
+        "atc_code": "J05AF",
+        "class_name_en": "Nucleoside and nucleotide reverse transcriptase inhibitors / B-hepatitis antivirals",
+        "class_name_tc": "核苷及核苷酸反轉錄酶抑制劑 / B型肝炎口服抗病毒藥物",
+        "aliases": ["j05af", "j05af07", "j05af13", "j05af10", "j05af05", "tenofovir", "entecavir", "lamivudine", "viread", "vemlidy", "baraclude", "zeffix", "韋立得", "惠立妥", "貝樂克", "干安能", "B型肝炎"],
+        "ingredients": [
+            {
+                "atc7": "J05AF07",
+                "en": "Tenofovir disoproxil",
+                "tc": "替諾福韋雙索酯",
+                "brand": "Viread (惠立妥 / 雷克威 / 坦立普 / Viread)"
+            },
+            {
+                "atc7": "J05AF13",
+                "en": "Tenofovir alafenamide",
+                "tc": "替諾福韋丙酚酚胺",
+                "brand": "Vemlidy (韋立得 / Vemlidy)"
+            },
+            {
+                "atc7": "J05AF10",
+                "en": "Entecavir",
+                "tc": "恩替卡韋",
+                "brand": "Baraclude (貝樂克 / Baraclude)"
+            },
+            {
+                "atc7": "J05AF05",
+                "en": "Lamivudine",
+                "tc": "拉米夫定",
+                "brand": "Zeffix (干安能 / Zeffix)"
+            }
+        ]
+    },
+    "J05AR": {
+        "atc_code": "J05AR",
+        "class_name_en": "Antivirals for treatment of HIV infections, combinations",
+        "class_name_tc": "HIV抗病毒藥物複方製劑 (人類免疫缺乏病毒)",
+        "aliases": ["j05ar", "j05ar03", "j05ar18", "j05ar20", "truvada", "biktarvy", "genvoya", "hiv", "愛滋病", "愛滋"],
+        "ingredients": []
     }
 }
 

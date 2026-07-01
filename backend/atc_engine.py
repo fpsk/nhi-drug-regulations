@@ -448,6 +448,30 @@ class ATCEngine:
                 return True
         return False
 
+    def clean_taiwan_brand(self, name):
+        if not name:
+            return ""
+        
+        # Split by quotes to isolate brand from manufacturer
+        parts = [p.strip() for p in re.split(r'[\"\'”’“‘]', name) if p.strip()]
+        part = parts[-1] if parts else name
+        
+        # Strip parenthesized generic annotations/synonyms
+        part = re.sub(r'[\(（].*?[\)）]', '', part)
+        
+        # Strip common dosage forms and units
+        for word in ['膜衣錠', '糖衣錠', '緩釋錠', '持續錠', '咀嚼錠', '舌下錠', '錠', 
+                     '軟膠囊', '硬膠囊', '持續性膠囊', '膠囊', 
+                     '濃縮注射液', '乾粉注射劑', '注射液', '注射劑', '針劑',
+                     '點眼液', '點鼻液', '吸入劑', '噴霧劑', '乳膏', '軟膏', '凝膠', '藥膏',
+                     '毫克', '微克', '公克', '公絲', '公撮', '國際單位', '毫升']:
+            part = part.replace(word, '')
+            
+        # Strip numbers, english letters, and punctuation
+        part = re.sub(r'[A-Za-z0-9\.\-\%\/\s\+\,\*\#\_]+', '', part)
+        part = re.sub(r'[０-９ａ-ｚＡ-Ｚ％（）＆＋，。]+', '', part)
+        return part.strip()
+
     def get_db_connection(self):
         db_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'nhi_drugs.db')
         return sqlite3.connect(db_path)
@@ -525,17 +549,40 @@ class ATCEngine:
 
         conn.close()
 
-        # Step 3: Process rows into standardized expansions
-        seen_atc_ingredients = set()
+        # Step 3: Process rows into standardized expansions grouped by ATC
+        atc_groups = {}
         for nhi_code, eng, chi, ing, atc, form, price in rows:
             if not atc:
                 continue
             
-            dedup_key = f"{atc}_{ing}_{eng.split()[0]}"
-            if dedup_key in seen_atc_ingredients:
-                continue
-            seen_atc_ingredients.add(dedup_key)
+            if atc not in atc_groups:
+                atc_groups[atc] = {
+                    "nhi_code": nhi_code,
+                    "eng_name": eng,
+                    "chi_name": chi,
+                    "ingredient": ing,
+                    "form": form,
+                    "price": price,
+                    "brands_en": set(),
+                    "brands_tc": set()
+                }
+            
+            # Extract English brand name concise part
+            brand_en, brand_tc = self.parse_brand(f"{eng} ({chi})")
+            if brand_en:
+                clean_eng = brand_en.split()[0].title()
+                if clean_eng.replace('.', '').replace('-', '').isalnum():
+                    atc_groups[atc]["brands_en"].add(clean_eng)
+            
+            # Clean Chinese brand name
+            clean_tc = self.clean_taiwan_brand(chi)
+            if clean_tc:
+                atc_groups[atc]["brands_tc"].add(clean_tc)
+            elif brand_tc:
+                for b in brand_tc:
+                    atc_groups[atc]["brands_tc"].add(b)
 
+        for atc, data in atc_groups.items():
             class_code = atc[:5] if len(atc) >= 5 else atc
             
             class_info = self.atc_db.get(class_code, {})
@@ -543,7 +590,10 @@ class ATCEngine:
             class_name_tc = class_info.get("class_name_tc", "治療類別")
             class_aliases = class_info.get("aliases", [])
 
-            brand_en, brand_tc = self.parse_brand(f"{eng} ({chi})")
+            brand_en_list = sorted(list(data["brands_en"]))
+            brand_tc_list = sorted(list(data["brands_tc"]))
+            
+            brand_en_str = ", ".join(brand_en_list) if brand_en_list else data["eng_name"].split()[0].title()
             primary_regulation = CLASS_REGULATION_MAPPING.get(class_code, "")
             
             matched_expansions.append({
@@ -551,14 +601,14 @@ class ATCEngine:
                 "class_code": class_code,
                 "class_name_en": class_name_en,
                 "class_name_tc": class_name_tc,
-                "ingredient_en": ing.title(),
-                "ingredient_tc": chi.split('膠囊')[0].split('膜衣錠')[0].strip(),
-                "brand_en": brand_en,
-                "brand_tc": brand_tc,
-                "is_brand": q_clean in brand_en.lower() or any(q_clean in b.lower() for b in brand_tc),
+                "ingredient_en": data["ingredient"].title(),
+                "ingredient_tc": data["chi_name"].split('膠囊')[0].split('膜衣錠')[0].strip() if data["chi_name"] else "",
+                "brand_en": brand_en_str,
+                "brand_tc": brand_tc_list,
+                "is_brand": q_clean in brand_en_str.lower() or any(q_clean in b.lower() for b in brand_tc_list),
                 "is_chinese": any(ord(c) > 127 for c in q_clean),
                 "searched_term": query,
-                "aliases": class_aliases + [atc.lower(), ing.lower()],
+                "aliases": class_aliases + [atc.lower(), data["ingredient"].lower()],
                 "primary_regulation": primary_regulation
             })
 

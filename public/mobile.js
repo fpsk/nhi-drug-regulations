@@ -193,10 +193,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         `;
                     }
                     
-                    if (exp.is_brand) {
+                    if (exp.brand_en || (exp.brand_tc && exp.brand_tc.length > 0)) {
                         const brandsList = [];
                         if (exp.brand_en) brandsList.push(`${exp.brand_en} (Eng)`);
-                        if (exp.brand_tc && exp.brand_tc.length > 0) brandsList.push(`${exp.brand_tc.join('/')} (中)`);
+                        if (exp.brand_tc && exp.brand_tc.length > 0) brandsList.push(`${exp.brand_tc.join(', ')} (台)`);
                         
                         html += `
                             <div>

@@ -201,10 +201,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         `;
                     }
                     
-                    if (exp.is_brand) {
+                    if (exp.brand_en || (exp.brand_tc && exp.brand_tc.length > 0)) {
                         const brandsList = [];
                         if (exp.brand_en) brandsList.push(`<strong>${exp.brand_en}</strong> (英文)`);
-                        if (exp.brand_tc && exp.brand_tc.length > 0) brandsList.push(`<strong>${exp.brand_tc.join(' / ')}</strong> (台灣中文)`);
+                        if (exp.brand_tc && exp.brand_tc.length > 0) brandsList.push(`<strong>${exp.brand_tc.join(', ')}</strong> (台灣品牌)`);
                         
                         html += `
                             <div class="atc-exp-row">

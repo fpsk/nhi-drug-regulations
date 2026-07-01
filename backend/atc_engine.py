@@ -1,4 +1,6 @@
 import re
+import os
+import sqlite3
 from backend.who_atc_database import WHO_ATC_DATABASE
 
 # Comprehensive ATC (Anatomical Therapeutic Chemical) Classification Database
@@ -446,97 +448,119 @@ class ATCEngine:
                 return True
         return False
 
+    def get_db_connection(self):
+        db_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'nhi_drugs.db')
+        return sqlite3.connect(db_path)
+
     def expand_query(self, query):
         """Given a search query, return matching ATC classes and their associated ingredients with rich metadata and spelling tolerance."""
         q_clean = query.strip().lower()
         if not q_clean:
             return []
 
+        # Class-level regulation mapping
+        CLASS_REGULATION_MAPPING = {
+            "C10AA": "2.6.1",   # Statins -> Lipids Table
+            "M01AH": "1.1.5",   # Coxibs -> NSAIDs
+            "H05AA": "5.6.2",   # Teriparatide -> Osteoporosis
+            "L01FF": "9.69",    # PD-1/PD-L1 -> Immunotherapy
+            "L01EX": "9.136",   # VEGFR TKI -> Targeted Therapy
+            "A10BK": "2.16",    # SGLT2 -> Diabetes
+            "A10BJ": "5.1.3",   # GLP-1 -> Diabetes / Obesity
+            "B01AF": "2.1.4",   # Direct Xa inhibitors -> Anticoagulants
+            "L04AB": "8.2.4",   # TNF-alpha -> Rheumatoid Arthritis
+            "L04AC": "8.2.4",   # IL inhibitors -> Rheumatoid Arthritis
+            "J05AF": "10.7.3",  # B-hepatitis antivirals -> HBV
+        }
+
         matched_expansions = []
+        conn = self.get_db_connection()
+        cursor = conn.cursor()
 
-        # Check WHO ATC 7-Character Database
-        for code7, info7 in self.who_db.items():
-            brand_str = info7.get("brand", "")
-            brand_en, brand_tc = self.parse_brand(brand_str)
+        # Step 1: Substring/exact search in SQLite (super fast)
+        cursor.execute("""
+            SELECT nhi_code, english_name, chinese_name, ingredient, atc_code, form, price
+            FROM nhi_drugs
+            WHERE nhi_code = ? 
+               OR atc_code = ? 
+               OR english_name LIKE ? 
+               OR chinese_name LIKE ? 
+               OR ingredient LIKE ?
+            LIMIT 50
+        """, (q_clean.upper(), q_clean.upper(), f"%{q_clean}%", f"%{q_clean}%", f"%{q_clean}%"))
+        rows = cursor.fetchall()
+
+        # Step 2: Fuzzy matching if no exact results found
+        if not rows and len(q_clean) >= 4:
+            cursor.execute("SELECT DISTINCT english_name, ingredient, atc_code FROM nhi_drugs")
+            all_drugs = cursor.fetchall()
             
-            is_atc_match = q_clean == code7.lower() or self.is_fuzzy_match(q_clean, code7)
-            is_ing_en_match = q_clean in info7["en"].lower() or info7["en"].lower() in q_clean or self.is_fuzzy_match(q_clean, info7["en"])
-            is_ing_tc_match = q_clean in info7["tc"].lower() or info7["tc"].lower() in q_clean
-            is_brand_en_match = brand_en and (q_clean in brand_en.lower() or brand_en.lower() in q_clean or self.is_fuzzy_match(q_clean, brand_en))
-            is_brand_tc_match = any(q_clean in tc.lower() or tc.lower() in q_clean for tc in brand_tc)
+            candidates = set()
+            for eng, ing, atc in all_drugs:
+                if eng:
+                    first = eng.split()[0].lower()
+                    if self.is_fuzzy_match(q_clean, first):
+                        candidates.add(('english_name', first))
+                if ing:
+                    if self.is_fuzzy_match(q_clean, ing.lower()):
+                        candidates.add(('ingredient', ing.lower()))
+
+            if candidates:
+                for typ, val in list(candidates)[:3]:
+                    if typ == 'english_name':
+                        cursor.execute("""
+                            SELECT nhi_code, english_name, chinese_name, ingredient, atc_code, form, price
+                            FROM nhi_drugs
+                            WHERE english_name LIKE ?
+                            LIMIT 10
+                        """, (f"{val}%",))
+                    else:
+                        cursor.execute("""
+                            SELECT nhi_code, english_name, chinese_name, ingredient, atc_code, form, price
+                            FROM nhi_drugs
+                            WHERE ingredient = ?
+                            LIMIT 10
+                        """, (val.upper(),))
+                    rows.extend(cursor.fetchall())
+
+        conn.close()
+
+        # Step 3: Process rows into standardized expansions
+        seen_atc_ingredients = set()
+        for nhi_code, eng, chi, ing, atc, form, price in rows:
+            if not atc:
+                continue
             
-            if is_atc_match or is_ing_en_match or is_ing_tc_match or is_brand_en_match or is_brand_tc_match:
+            dedup_key = f"{atc}_{ing}_{eng.split()[0]}"
+            if dedup_key in seen_atc_ingredients:
+                continue
+            seen_atc_ingredients.add(dedup_key)
 
-                class_info = self.atc_db.get(info7["atc5"], {})
-                class_aliases = class_info.get("aliases", [])
-                matched_expansions.append({
-                    "atc_code": code7,
-                    "class_code": info7["atc5"],
-                    "class_name_en": info7["class_en"],
-                    "class_name_tc": info7["class_tc"],
-                    "ingredient_en": info7["en"],
-                    "ingredient_tc": info7["tc"],
-                    "brand_en": brand_en,
-                    "brand_tc": brand_tc,
-                    "is_brand": is_brand_en_match or is_brand_tc_match,
-                    "is_chinese": is_ing_tc_match or is_brand_tc_match,
-                    "searched_term": query,
-                    "aliases": class_aliases + [info7["atc7"].lower(), info7["en"].lower(), info7["tc"].lower()],
-                    "primary_regulation": info7.get("primary_regulation", "")
-                })
+            class_code = atc[:5] if len(atc) >= 5 else atc
+            
+            class_info = self.atc_db.get(class_code, {})
+            class_name_en = class_info.get("class_name_en", "Therapeutic Class")
+            class_name_tc = class_info.get("class_name_tc", "治療類別")
+            class_aliases = class_info.get("aliases", [])
 
-        # Check Standard ATC Database
-        for code, info in self.atc_db.items():
-            for ing in info["ingredients"]:
-                ing_atc7 = ing.get("atc7", "")
-                if any(x.get("atc_code") == ing_atc7 for x in matched_expansions):
-                    continue
-                    
-                brand_str = ing.get("brand", "")
-                brand_en, brand_tc = self.parse_brand(brand_str)
-                
-                is_atc_match = ing_atc7 and (q_clean == ing_atc7.lower() or self.is_fuzzy_match(q_clean, ing_atc7))
-                is_ing_en_match = q_clean in ing["en"].lower() or ing["en"].lower() in q_clean or self.is_fuzzy_match(q_clean, ing["en"])
-                is_ing_tc_match = q_clean in ing["tc"].lower() or ing["tc"].lower() in q_clean
-                is_brand_en_match = brand_en and (q_clean in brand_en.lower() or brand_en.lower() in q_clean or self.is_fuzzy_match(q_clean, brand_en))
-                is_brand_tc_match = any(q_clean in tc.lower() or tc.lower() in q_clean for tc in brand_tc)
-                
-                if is_atc_match or is_ing_en_match or is_ing_tc_match or is_brand_en_match or is_brand_tc_match:
-                    matched_expansions.append({
-                        "atc_code": ing_atc7 or info["atc_code"],
-                        "class_code": info["atc_code"],
-                        "class_name_en": info["class_name_en"],
-                        "class_name_tc": info["class_name_tc"],
-                        "ingredient_en": ing["en"],
-                        "ingredient_tc": ing["tc"],
-                        "brand_en": brand_en,
-                        "brand_tc": brand_tc,
-                        "is_brand": is_brand_en_match or is_brand_tc_match,
-                        "is_chinese": is_ing_tc_match or is_brand_tc_match,
-                        "searched_term": query,
-                        "aliases": info.get("aliases", []) + [ing_atc7.lower() if ing_atc7 else "", ing["en"].lower(), ing["tc"].lower()],
-                        "primary_regulation": ing.get("primary_regulation", "")
-                    })
-
-            # Also check if user typed the exact class code or alias (broad search)
-            if q_clean == code.lower() or any(q_clean == alias.lower() for alias in info["aliases"]):
-                if not any(x.get("class_code") == code for x in matched_expansions):
-                    matched_expansions.append({
-                        "atc_code": info["atc_code"],
-                        "class_code": info["atc_code"],
-                        "class_name_en": info["class_name_en"],
-                        "class_name_tc": info["class_name_tc"],
-                        "ingredient_en": "",
-                        "ingredient_tc": "",
-                        "brand_en": "",
-                        "brand_tc": [],
-                        "is_brand": False,
-                        "is_chinese": False,
-                        "searched_term": query,
-                        "aliases": info.get("aliases", []),
-                        "primary_regulation": ""
-                    })
-
+            brand_en, brand_tc = self.parse_brand(f"{eng} ({chi})")
+            primary_regulation = CLASS_REGULATION_MAPPING.get(class_code, "")
+            
+            matched_expansions.append({
+                "atc_code": atc,
+                "class_code": class_code,
+                "class_name_en": class_name_en,
+                "class_name_tc": class_name_tc,
+                "ingredient_en": ing.title(),
+                "ingredient_tc": chi.split('膠囊')[0].split('膜衣錠')[0].strip(),
+                "brand_en": brand_en,
+                "brand_tc": brand_tc,
+                "is_brand": q_clean in brand_en.lower() or any(q_clean in b.lower() for b in brand_tc),
+                "is_chinese": any(ord(c) > 127 for c in q_clean),
+                "searched_term": query,
+                "aliases": class_aliases + [atc.lower(), ing.lower()],
+                "primary_regulation": primary_regulation
+            })
 
         return matched_expansions
 

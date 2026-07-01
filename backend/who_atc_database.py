@@ -26,5 +26,6 @@ WHO_ATC_DATABASE = {
     "D11AH05": {"atc7": "D11AH05", "atc5": "D11AH", "en": "Dupilumab", "tc": "杜匹魯單抗", "class_en": "Interleukin Inhibitors", "class_tc": "異位性皮膚炎生物製劑", "brand": "Dupixent (杜避炎)", "primary_regulation": "6.2.9"},
     "L04AA29": {"atc7": "L04AA29", "atc5": "L04AA", "en": "Tofacitinib", "tc": "托法替尼", "class_en": "JAK Inhibitors", "class_tc": "JAK 激酶抑制劑", "brand": "Xeljanz (捷抑妥)", "primary_regulation": "8.2.4"},
     "J05AF05": {"atc7": "J05AF05", "atc5": "J05AF", "en": "Entecavir", "tc": "恩替卡韋", "class_en": "Antivirals", "class_tc": "B型肝炎口服抗病毒藥物", "brand": "Baraclude (貝樂克)", "primary_regulation": "10.7.3"},
-    "J05AF13": {"atc7": "J05AF13", "atc5": "J05AF", "en": "Tenofovir alafenamide", "tc": "替諾福韋丙酚酚胺", "class_en": "Antivirals", "class_tc": "B型肝炎口服抗病毒藥物", "brand": "Vemlidy (韋立得)", "primary_regulation": "10.7.3"}
+    "J05AF13": {"atc7": "J05AF13", "atc5": "J05AF", "en": "Tenofovir alafenamide", "tc": "替諾福韋丙酚酚胺", "class_en": "Antivirals", "class_tc": "B型肝炎口服抗病毒藥物", "brand": "Vemlidy (韋立得)", "primary_regulation": "10.7.3"},
+    "M01AH01": {"atc7": "M01AH01", "atc5": "M01AH", "en": "Celecoxib", "tc": "塞來昔布", "class_en": "Coxibs", "class_tc": "選擇性COX-2抑制劑 (非類固醇抗發炎劑)", "brand": "Celebrex (西樂葆 / 希樂葆 / Celebrex)", "primary_regulation": "1.1.5"}
 }

@@ -343,6 +343,20 @@ ATC_DATABASE = {
             }
         ]
     },
+    "M01AH": {
+        "atc_code": "M01AH",
+        "class_name_en": "Coxibs (Selective COX-2 Inhibitors)",
+        "class_name_tc": "選擇性COX-2抑制劑 (非類固醇抗發炎劑)",
+        "aliases": ["m01ah", "m01ah01", "celebrex", "celecoxib", "西樂葆", "希樂葆", "關節炎", "止痛藥", "非類固醇抗發炎劑"],
+        "ingredients": [
+            {
+                "atc7": "M01AH01",
+                "en": "Celecoxib",
+                "tc": "塞來昔布",
+                "brand": "Celebrex (西樂葆 / 希樂葆 / Celebrex)"
+            }
+        ]
+    },
     "B01AF": {
         "atc_code": "B01AF",
         "class_name_en": "Direct factor Xa inhibitors (DOACs / NOACs)",

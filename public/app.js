@@ -332,7 +332,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <span class="sec-badge">#${existingCount + idx + 1} ${reg.section_number}</span>
                         <span class="chapter-tag">${reg.chapter.split(' ')[0]}</span>
                     </div>
-                    <h3 class="card-title">${reg.section_title}</h3>
+                    <h3 class="card-title">${cleanTitleForDisplay(reg.section_title)}</h3>
                     <div class="badge-group">${indicationBadges} ${labBadges}</div>
                     <p class="card-summary">${cleanSummaryText(reg.conditions_of_payment.summary)}</p>
                 </div>

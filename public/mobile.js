@@ -304,7 +304,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <span class="m-badge">#${existingCount + idx + 1} ${reg.section_number}</span>
                     <span class="m-chapter">${reg.chapter.split(' ')[0]}</span>
                 </div>
-                <h3 class="m-title">${reg.section_title}</h3>
+                <h3 class="m-title">${cleanTitleForDisplay(reg.section_title)}</h3>
                 <div class="m-tags-group">${indicationBadges} ${labBadges}</div>
                 <p class="m-summary">${cleanSummaryText(reg.conditions_of_payment.summary)}</p>
                 <div class="m-card-footer">

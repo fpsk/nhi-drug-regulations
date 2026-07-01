@@ -57,87 +57,105 @@ class NHIIndexer:
                 self.index["by_lab"][l_key] = set()
             self.index["by_lab"][l_key].add(reg_id)
 
-    def search(self, query, chapter_filter=None, lab_filter=None):
-        query_clean = query.strip()
-        if not query_clean and not chapter_filter and not lab_filter:
+    def search(self, query, chapter_filter=None, lab_filter=None, disease_query=None):
+        query_clean = query.strip() if query else ""
+        disease_query_clean = disease_query.strip() if disease_query else ""
+        
+        # Smart compound query parsing for single search bar: e.g. "statins, hyperlipidemia"
+        if query_clean and not disease_query_clean:
+            parts = [p.strip() for p in re.split(r'[,，;；]+', query_clean) if p.strip()]
+            if len(parts) > 1:
+                query_clean = parts[0]
+                disease_query_clean = parts[1]
+
+        if not query_clean and not disease_query_clean and not chapter_filter and not lab_filter:
             return self.regulations[:50]
 
-        direct_terms = set([query_clean.lower()])
-        expanded_terms = set([query_clean.lower()])
-        exact_target_terms = set([query_clean.lower()])
+        direct_terms = set()
+        expanded_terms = set()
+        exact_target_terms = set()
         matched_class_names = set()
         matched_disease_names = set()
         matched_ingredients = set()
-        
+
+        if query_clean:
+            direct_terms.add(query_clean.lower())
+            expanded_terms.add(query_clean.lower())
+            exact_target_terms.add(query_clean.lower())
+        if disease_query_clean:
+            direct_terms.add(disease_query_clean.lower())
+            expanded_terms.add(disease_query_clean.lower())
+            exact_target_terms.add(disease_query_clean.lower())
+
         # Universal Alphanumeric Normalization for Lab Criteria & Medical Acronyms
-        norm_q = re.sub(r'[\s\-_/]+', '', query_clean.lower())
-        if norm_q in ['hbvdna', 'hbv', 'b型肝炎病毒量', '血清hbvdna']:
-            direct_terms.add('hbv dna')
-            direct_terms.add('hbv-dna')
-            direct_terms.add('hbvdna')
-            direct_terms.add('hbv')
-            direct_terms.add('b型肝炎')
-        elif norm_q in ['hcvrna', 'hcv', 'c型肝炎病毒量']:
-            direct_terms.add('hcv rna')
-            direct_terms.add('hcv-rna')
-            direct_terms.add('hcvrna')
-            direct_terms.add('c型肝炎')
+        for q_part in [query_clean, disease_query_clean]:
+            if not q_part:
+                continue
+            norm_q = re.sub(r'[\s\-_/]+', '', q_part.lower())
+            if norm_q in ['hbvdna', 'hbv', 'b型肝炎病毒量', '血清hbvdna']:
+                direct_terms.update(['hbv dna', 'hbv-dna', 'hbvdna', 'hbv', 'b型肝炎'])
+            elif norm_q in ['hcvrna', 'hcv', 'c型肝炎病毒量']:
+                direct_terms.update(['hcv rna', 'hcv-rna', 'hcvrna', 'c型肝炎'])
 
-        # ATC Expansion
-        atc_expansions = self.atc_engine.expand_query(query_clean)
-        for exp in atc_expansions:
-            expanded_terms.add(exp["atc_code"].lower())
-            expanded_terms.add(exp["class_code"].lower())
-            expanded_terms.add(exp["class_name_en"].lower())
-            expanded_terms.add(exp["class_name_tc"].lower())
-            matched_class_names.add(exp["class_name_tc"].lower())
-            
-            for alias in exp.get("aliases", []):
-                if alias and len(alias) > 1:
-                    expanded_terms.add(alias.lower())
-            
-            ing_en = exp.get("ingredient_en", "").lower()
-            ing_tc = exp.get("ingredient_tc", "").lower()
-            brand_en = exp.get("brand_en", "").lower()
-            brand_tc = [b.lower() for b in exp.get("brand_tc", [])]
-            
-            if ing_en:
-                matched_ingredients.add(ing_en)
-                direct_terms.add(ing_en)
-            if ing_tc:
-                matched_ingredients.add(ing_tc)
-                direct_terms.add(ing_tc)
+        # ATC Expansion (run on drug/primary query)
+        atc_expansions = []
+        if query_clean:
+            atc_expansions = self.atc_engine.expand_query(query_clean)
+            for exp in atc_expansions:
+                expanded_terms.add(exp["atc_code"].lower())
+                expanded_terms.add(exp["class_code"].lower())
+                expanded_terms.add(exp["class_name_en"].lower())
+                expanded_terms.add(exp["class_name_tc"].lower())
+                matched_class_names.add(exp["class_name_tc"].lower())
                 
-            is_matching_specific = (
-                query_clean in ing_en or 
-                query_clean in ing_tc or 
-                (brand_en and query_clean in brand_en) or 
-                any(query_clean in b for b in brand_tc) or
-                query_clean == exp["atc_code"].lower()
-            )
-            
-            if is_matching_specific:
-                if ing_en: exact_target_terms.add(ing_en)
-                if ing_tc: exact_target_terms.add(ing_tc)
-                if brand_en: exact_target_terms.add(brand_en)
-                for b in brand_tc:
-                    exact_target_terms.add(b)
+                for alias in exp.get("aliases", []):
+                    if alias and len(alias) > 1:
+                        expanded_terms.add(alias.lower())
+                
+                ing_en = exp.get("ingredient_en", "").lower()
+                ing_tc = exp.get("ingredient_tc", "").lower()
+                brand_en = exp.get("brand_en", "").lower()
+                brand_tc = [b.lower() for b in exp.get("brand_tc", [])]
+                
+                if ing_en:
+                    matched_ingredients.add(ing_en)
+                    direct_terms.add(ing_en)
+                if ing_tc:
+                    matched_ingredients.add(ing_tc)
+                    direct_terms.add(ing_tc)
+                    
+                is_matching_specific = (
+                    query_clean in ing_en or 
+                    query_clean in ing_tc or 
+                    (brand_en and query_clean in brand_en) or 
+                    any(query_clean in b for b in brand_tc) or
+                    query_clean == exp["atc_code"].lower()
+                )
+                
+                if is_matching_specific:
+                    if ing_en: exact_target_terms.add(ing_en)
+                    if ing_tc: exact_target_terms.add(ing_tc)
+                    if brand_en: exact_target_terms.add(brand_en)
+                    for b in brand_tc:
+                        exact_target_terms.add(b)
 
-
-
-        # Disease Expansion
-        disease_expansions = self.disease_engine.expand_query(query_clean)
-        if norm_q in ['hbvdna', 'hbvdna量']:
-            disease_expansions.extend(self.disease_engine.expand_query('hbv'))
-            
-        for de in disease_expansions:
-            expanded_terms.add(de["english_name"].lower())
-            matched_disease_names.add(de["english_name"].lower())
-            for alias in de["aliases"]:
-                expanded_terms.add(alias.lower())
-            for tc in de["chinese_terms"]:
-                expanded_terms.add(tc.lower())
-                matched_disease_names.add(tc.lower())
+        # Disease Expansion (run on disease query, or fallback to main query if no separate disease query was entered)
+        target_disease_query = disease_query_clean if disease_query_clean else query_clean
+        disease_expansions = []
+        if target_disease_query:
+            disease_expansions = self.disease_engine.expand_query(target_disease_query)
+            norm_disease_q = re.sub(r'[\s\-_/]+', '', target_disease_query.lower())
+            if norm_disease_q in ['hbvdna', 'hbvdna量']:
+                disease_expansions.extend(self.disease_engine.expand_query('hbv'))
+                
+            for de in disease_expansions:
+                expanded_terms.add(de["english_name"].lower())
+                matched_disease_names.add(de["english_name"].lower())
+                for alias in de["aliases"]:
+                    expanded_terms.add(alias.lower())
+                for tc in de["chinese_terms"]:
+                    expanded_terms.add(tc.lower())
+                    matched_disease_names.add(tc.lower())
 
         # Extract primary regulations
         primary_regulations = set([exp["primary_regulation"] for exp in atc_expansions if exp.get("primary_regulation")])
@@ -152,7 +170,7 @@ class NHIIndexer:
                 if lab_filter.lower() not in reg_labs:
                     continue
 
-            if not query_clean:
+            if not query_clean and not disease_query_clean:
                 results.append((reg, 1.0))
                 continue
 
@@ -163,7 +181,7 @@ class NHIIndexer:
             reg_indications = [ind.lower() for ind in reg.get("conditions_of_payment", {}).get("indications", [])]
             
             score = 0
-            if query_clean.lower() == reg["section_number"].lower():
+            if query_clean and query_clean.lower() == reg["section_number"].lower():
                 score += 2000
 
             # Primary regulation mapping boost
@@ -175,7 +193,6 @@ class NHIIndexer:
                     break
 
             # Unbeatable priority boost for exact isolated brand/molecule matches in title or text
-
             for et in exact_target_terms:
                 if et and len(et) > 1:
                     if et in reg["section_title"].lower():
@@ -198,8 +215,13 @@ class NHIIndexer:
                 if any(mc in rc or rc in mc for rc in reg_classes):
                     score += 50
 
-            if len(norm_q) >= 3 and norm_q in norm_full_text:
-                score += 40
+            # Combine norm check for both queries
+            for q_part in [query_clean, disease_query_clean]:
+                if not q_part:
+                    continue
+                norm_q = re.sub(r'[\s\-_/]+', '', q_part.lower())
+                if len(norm_q) >= 3 and norm_q in norm_full_text:
+                    score += 40
 
             for term in expanded_terms:
                 if term and len(term) > 1:

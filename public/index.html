@@ -45,6 +45,29 @@
                     <input type="text" id="searchInput" placeholder="查詢英文/ 繁體中文 藥物, 藥理作用, 疾病別, 章節代號 (2.5), ATC, 檢驗值" autocomplete="off">
                     <button id="clearSearch" class="btn-clear"><i class="fa-solid fa-xmark"></i></button>
                 </div>
+                <div style="display: flex; justify-content: flex-end; margin-top: 0.5rem;">
+                    <button id="toggleAdvSearchBtn" class="btn btn-secondary" style="font-size: 0.82rem; padding: 0.4rem 0.75rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 8px; color: #cbd5e1; cursor: pointer; display: flex; align-items: center; gap: 0.4rem;">
+                        <i class="fa-solid fa-sliders" style="color: #38bdf8;"></i> 進階條件搜尋 (Advanced Filters)
+                    </button>
+                </div>
+            </div>
+
+            <!-- Collapsible Advanced Search Panel -->
+            <div id="advancedSearchPanel" class="adv-search-panel hidden" style="background: rgba(15, 23, 42, 0.5); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.25rem; margin-top: 0.75rem; display: flex; flex-direction: column; gap: 1rem; backdrop-filter: blur(10px);">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div style="display: flex; flex-direction: column; gap: 0.4rem;">
+                        <label style="color: #94a3b8; font-size: 0.85rem; font-weight: 600; text-align: left;"><i class="fa-solid fa-prescription-bottle-medical" style="color: #38bdf8;"></i> 藥物學名/商品名/ATC碼 (Drug Name / ATC):</label>
+                        <input type="text" id="advDrugInput" placeholder="輸入藥物, 如 Lipitor, Atorvastatin, A10BK" style="width: 100%; padding: 0.6rem 0.85rem; background: rgba(15, 23, 42, 0.8); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 8px; color: white; outline: none; font-size: 0.9rem;">
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 0.4rem;">
+                        <label style="color: #94a3b8; font-size: 0.85rem; font-weight: 600; text-align: left;"><i class="fa-solid fa-virus" style="color: #38bdf8;"></i> 適應症/疾病別 (Disease / Indication):</label>
+                        <input type="text" id="advDiseaseInput" placeholder="輸入疾病, 如 hyperlipidemia, 糖尿病, 氣喘" style="width: 100%; padding: 0.6rem 0.85rem; background: rgba(15, 23, 42, 0.8); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 8px; color: white; outline: none; font-size: 0.9rem;">
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: flex-end; gap: 0.5rem;">
+                    <button id="clearAdvSearchBtn" class="btn btn-secondary" style="font-size: 0.82rem; padding: 0.4rem 0.85rem; cursor: pointer;"><i class="fa-solid fa-trash-can"></i> 重設清除</button>
+                    <button id="applyAdvSearchBtn" class="btn btn-primary" style="font-size: 0.82rem; padding: 0.4rem 1.25rem; cursor: pointer;"><i class="fa-solid fa-magnifying-glass"></i> 搜尋條件篩選</button>
+                </div>
             </div>
 
             <!-- ATC Expansion Badge -->

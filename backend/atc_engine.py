@@ -612,6 +612,27 @@ class ATCEngine:
                 "primary_regulation": primary_regulation
             })
 
+        # Step 4: Check standard class database for alias/code matching (e.g., 'statins', 'sglt2')
+        for code, info in self.atc_db.items():
+            if q_clean == code.lower() or any(q_clean == alias.lower() for alias in info.get("aliases", [])):
+                if not any(x.get("class_code") == code for x in matched_expansions):
+                    primary_regulation = CLASS_REGULATION_MAPPING.get(code, "")
+                    matched_expansions.append({
+                        "atc_code": info["atc_code"],
+                        "class_code": info["atc_code"],
+                        "class_name_en": info["class_name_en"],
+                        "class_name_tc": info["class_name_tc"],
+                        "ingredient_en": "",
+                        "ingredient_tc": "",
+                        "brand_en": "",
+                        "brand_tc": [],
+                        "is_brand": False,
+                        "is_chinese": any(ord(c) > 127 for c in q_clean),
+                        "searched_term": query,
+                        "aliases": info.get("aliases", []),
+                        "primary_regulation": primary_regulation
+                    })
+
         return matched_expansions
 
 

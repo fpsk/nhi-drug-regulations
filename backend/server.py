@@ -43,6 +43,7 @@ def api_version():
 @app.route('/api/search', methods=['GET'])
 def api_search():
     query = request.args.get('q', '')
+    disease = request.args.get('disease', None)
     chapter = request.args.get('chapter', None)
     lab = request.args.get('lab', None)
     limit_param = request.args.get('limit', '6')
@@ -58,7 +59,7 @@ def api_search():
     except ValueError:
         offset = 0
 
-    results = indexer.search(query, chapter_filter=chapter, lab_filter=lab)
+    results = indexer.search(query, chapter_filter=chapter, lab_filter=lab, disease_query=disease)
     total_count = len(results)
     
     if query.strip() and total_count > limit:

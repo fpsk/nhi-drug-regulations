@@ -69,6 +69,67 @@ document.addEventListener('DOMContentLoaded', () => {
         performMobileSearch();
     });
 
+    // Collapsible Advanced Search Listeners (Mobile)
+    const mobileToggleAdvSearchBtn = document.getElementById('mobileToggleAdvSearchBtn');
+    const mobileAdvancedSearchPanel = document.getElementById('mobileAdvancedSearchPanel');
+    const mobileAdvDrugInput = document.getElementById('mobileAdvDrugInput');
+    const mobileAdvDiseaseInput = document.getElementById('mobileAdvDiseaseInput');
+    const mobileApplyAdvSearchBtn = document.getElementById('mobileApplyAdvSearchBtn');
+    const mobileClearAdvSearchBtn = document.getElementById('mobileClearAdvSearchBtn');
+
+    if (mobileToggleAdvSearchBtn && mobileAdvancedSearchPanel) {
+        mobileToggleAdvSearchBtn.addEventListener('click', () => {
+            const isHidden = mobileAdvancedSearchPanel.classList.toggle('hidden');
+            if (!isHidden) {
+                mobileSearchInput.value = '';
+                mobileClearBtn.classList.add('hidden');
+                mobileAtcExpansion.classList.add('hidden');
+            }
+            currentOffset = 0;
+            performMobileSearch();
+        });
+    }
+
+    if (mobileApplyAdvSearchBtn) {
+        mobileApplyAdvSearchBtn.addEventListener('click', () => {
+            currentOffset = 0;
+            performMobileSearch();
+            if (mobileAdvDrugInput && mobileAdvDrugInput.value.trim()) {
+                const oldVal = mobileSearchInput.value;
+                mobileSearchInput.value = mobileAdvDrugInput.value.trim();
+                checkMobileATC();
+                mobileSearchInput.value = oldVal;
+            }
+        });
+    }
+
+    if (mobileClearAdvSearchBtn) {
+        mobileClearAdvSearchBtn.addEventListener('click', () => {
+            if (mobileAdvDrugInput) mobileAdvDrugInput.value = '';
+            if (mobileAdvDiseaseInput) mobileAdvDiseaseInput.value = '';
+            currentOffset = 0;
+            performMobileSearch();
+            mobileAtcExpansion.classList.add('hidden');
+        });
+    }
+
+    if (mobileAdvDrugInput) {
+        mobileAdvDrugInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                currentOffset = 0;
+                performMobileSearch();
+            }
+        });
+    }
+    if (mobileAdvDiseaseInput) {
+        mobileAdvDiseaseInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                currentOffset = 0;
+                performMobileSearch();
+            }
+        });
+    }
+
     // Category pills event
     categoryPills.querySelectorAll('.pill').forEach(pill => {
         pill.addEventListener('click', (e) => {
@@ -222,7 +283,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     async function performMobileSearch() {
-        const q = mobileSearchInput.value.trim();
+        let q = '';
+        let disease = '';
+        
+        const advPanel = document.getElementById('mobileAdvancedSearchPanel');
+        const isAdvActive = advPanel && !advPanel.classList.contains('hidden');
+        
+        if (isAdvActive) {
+            const advDrug = document.getElementById('mobileAdvDrugInput');
+            const advDisease = document.getElementById('mobileAdvDiseaseInput');
+            q = advDrug ? advDrug.value.trim() : '';
+            disease = advDisease ? advDisease.value.trim() : '';
+        } else {
+            q = mobileSearchInput.value.trim();
+        }
+        
         mobileStatsCounter.textContent = '搜尋中...';
 
         if (searchAbortController) {
@@ -232,7 +307,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const signal = searchAbortController.signal;
 
         try {
-            const res = await fetch(`/api/search?q=${encodeURIComponent(q)}&chapter=${encodeURIComponent(currentChapter)}&limit=${currentLimit}&offset=${currentOffset}`, { signal });
+            const res = await fetch(`/api/search?q=${encodeURIComponent(q)}&disease=${encodeURIComponent(disease)}&chapter=${encodeURIComponent(currentChapter)}&limit=${currentLimit}&offset=${currentOffset}`, { signal });
             const data = await res.json();
 
             if (data.status === 'success') {
@@ -258,12 +333,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function loadMoreMobileResults() {
-        const q = mobileSearchInput.value.trim();
+        let q = '';
+        let disease = '';
+        
+        const advPanel = document.getElementById('mobileAdvancedSearchPanel');
+        const isAdvActive = advPanel && !advPanel.classList.contains('hidden');
+        
+        if (isAdvActive) {
+            const advDrug = document.getElementById('mobileAdvDrugInput');
+            const advDisease = document.getElementById('mobileAdvDiseaseInput');
+            q = advDrug ? advDrug.value.trim() : '';
+            disease = advDisease ? advDisease.value.trim() : '';
+        } else {
+            q = mobileSearchInput.value.trim();
+        }
+        
         currentOffset += currentLimit;
         mobileLoadMoreBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> 載入更多中...';
 
         try {
-            const res = await fetch(`/api/search?q=${encodeURIComponent(q)}&chapter=${encodeURIComponent(currentChapter)}&limit=${currentLimit}&offset=${currentOffset}`);
+            const res = await fetch(`/api/search?q=${encodeURIComponent(q)}&disease=${encodeURIComponent(disease)}&chapter=${encodeURIComponent(currentChapter)}&limit=${currentLimit}&offset=${currentOffset}`);
             const data = await res.json();
 
             if (data.status === 'success') {

@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: nhi-drug-regulations-query
+    name: nhi-drug-regulations-fpsk
     env: python
     region: singapore
     plan: free

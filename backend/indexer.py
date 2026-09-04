@@ -181,8 +181,12 @@ class NHIIndexer:
             reg_indications = [ind.lower() for ind in reg.get("conditions_of_payment", {}).get("indications", [])]
             
             score = 0
-            if query_clean and query_clean.lower() == reg["section_number"].lower():
-                score += 2000
+            sec_clean = reg["section_number"].strip('.').lower()
+            q_sec = query_clean.strip('.').lower()
+            if q_sec and (q_sec == sec_clean or query_clean.lower() == reg["section_number"].lower()):
+                score += 3000
+            elif q_sec and sec_clean.startswith(q_sec + '.'):
+                score += 800
 
             # Primary regulation mapping boost
             for pr in primary_regulations:

@@ -1,13 +1,13 @@
 okf_version: '1.0'
 schema_type: Taiwan_NHI_Drug_Regulation
 chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-total_regulations: 146
+total_regulations: 148
 regulations:
-- regulation_id: REG-0286
+- regulation_id: REG-0288
   section_number: 9.1.1.
   section_title: 9.1.1. Exemestane(如Aromasin Sugar Coated Tablets)：（88/11/1、90/10/1、99/6/1、105/8/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (105/8/1)
   medications:
@@ -33,11 +33,11 @@ regulations:
       (1)病歷上應詳細記載手術資料、病理報告(應包含ER、PR之檢測結果且無復發現象)。
 
       (2)本案藥品使用不得超過三年。'
-- regulation_id: REG-0287
+- regulation_id: REG-0289
   section_number: 9.1.2.
   section_title: 9.1.2. Anastrozole(如Arimidex)：（88/6/1、92/3/1、93/6/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (92/3/1)
   - (92/3/1)
@@ -78,11 +78,11 @@ regulations:
       (2)有靜脈血栓栓塞症病史者。
 
       (3)有子宮異常出血病史，且「經陰道超音波檢查」判定為子宮內膜異常增生的高危險群。'
-- regulation_id: REG-0288
+- regulation_id: REG-0290
   section_number: 9.1.3.
   section_title: 9.1.3. Letrozole：（88/11/1、90/10/1、92/3/1、97/11/1、98/11/1、99/9/1、102/8/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (98/11/1、99/9/1、102/8/1)
   medications:
@@ -118,21 +118,25 @@ regulations:
       (2)若由tamoxifen轉換使用本品，則使用期限合計不得超過5年。
 
       4.病歷上應詳細記載手術資料、病理報告(應包含ER、PR之檢測結果且無復發現象)及用藥紀錄(如tamoxifen使用五年證明)。'
-- regulation_id: REG-0289
+- regulation_id: REG-0291
   section_number: 9.2.
-  section_title: 9.2. Carboplatin(如Paraplatin；Carboplatin inj)：(112/12/1、114/2/1、114/6/1、114/8/1、114/10/1、115/6/1)
+  section_title: 9.2. Carboplatin(如Paraplatin；Carboplatin inj)：(112/12/1、114/2/1、114/6/1、114/8/1、114/10/1、115/6/1、115/8/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (112/12/1)
   - (112/12/1、114/2/1)
-  - (114/6/1、114/8/1)
+  - (114/6/1、114/8/1、115/8/1)
   - (114/6/1)
   - (114/10/1)
   - (115/6/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Durvalumab (度伐利尤單抗)
+    - Atezolizumab (阿特珠單抗)
+    - Pembrolizumab (派姆單抗)
+    - Nivolumab (納武單抗)
   conditions_of_payment:
     indications:
     - Triple-Negative Breast Cancer (TNBC) (三陰性乳癌)
@@ -150,9 +154,9 @@ regulations:
 
       4.與atezolizumab及etoposide併用，或與durvalumab及etoposide併用於擴散期(extensive stage)小細胞肺癌成人患者時，患者需符合免疫檢查點抑制劑之藥品給付規定。(112/12/1、114/2/1)
 
-      5.與pembrolizumab及pemetrexed(限使用Pexeda、Apeta或Peme...'
+      5.與pembrolizumab及pemetrexed(限使用Pexeda、Apeta、Peme...'
   reference_annotations:
-    original_clause: 9.2. Carboplatin(如Paraplatin；Carboplatin inj)：(112/12/1、114/2/1、114/6/1、114/8/1、114/10/1、115/6/1)
+    original_clause: 9.2. Carboplatin(如Paraplatin；Carboplatin inj)：(112/12/1、114/2/1、114/6/1、114/8/1、114/10/1、115/6/1、115/8/1)
     full_text: '限
 
       1.卵巢癌患者。
@@ -163,18 +167,20 @@ regulations:
 
       4.與atezolizumab及etoposide併用，或與durvalumab及etoposide併用於擴散期(extensive stage)小細胞肺癌成人患者時，患者需符合免疫檢查點抑制劑之藥品給付規定。(112/12/1、114/2/1)
 
-      5.與pembrolizumab及pemetrexed(限使用Pexeda、Apeta或Pemetrexed Sandoz)併用，或與atezolizumab及bevacizumab(限使用Alymsys、Avastin、Abevmy、Vegzelma或Mvasi)、paclitaxel併用，做為轉移性且不具有EGFR/ALK/ROS-1腫瘤基因異常的非鱗狀非小細胞肺癌的第一線治療，患者需符合免疫檢查點抑制劑之藥品給付規定。(114/6/1、114/8/1)
+      5.與pembrolizumab及pemetrexed(限使用Pexeda、Apeta、Pemetrexed Sandoz或Alimta Avos)併用，或與atezolizumab及bevacizumab(限使用Alymsys、Avastin、Abevmy、Vegzelma或Mvasi)、paclitaxel併用，做為轉移性且不具有EGFR/ALK/ROS-1腫瘤基因異常的非鱗狀非小細胞肺癌的第一線治療，患者需符合免疫檢查點抑制劑之藥品給付規定。(114/6/1、114/8/1、115/8/1)
 
       6.與pembrolizumab及paclitaxel併用於早期三陰性乳癌(第II期至第IIIb期，cT1c N1-2或T2-4 N0-2)病人的術前前導性治療用藥，病人需符合免疫檢查點抑制劑之藥品給付規定。(114/6/1)
 
       7.與amivantamab 及pemetrexed 併用於罹患帶有表皮生長因子受體(EGFR) exon 20 插入突變之局部晚期或轉移性非小細胞肺癌(NSCLC)的成人病人，作為第一線治療。(114/10/1)
 
-      8.與nivolumab併用於可切除（腫瘤≧4公分或淋巴結陽性N1/N2(排除N3)，且無疾病轉移M0）之不具EGFR或ALK腫瘤基因異常之非小細胞肺癌術前輔助治療成人病人，至多3個療程，且病人需符合免疫檢查點抑制劑之藥品給付規定。(115/6/1)'
-- regulation_id: REG-0290
+      8.與nivolumab併用於可切除（腫瘤≧4公分或淋巴結陽性N1/N2(排除N3)，且無疾病轉移M0）之不具EGFR或ALK腫瘤基因異常之非小細胞肺癌術前輔助治療成人病人，至多3個療程，且病人需符合免疫檢查點抑制劑之藥品給付規定。(115/6/1)
+
+      9.與dostarlimab及paclitaxel(除GENETAXYL CREM LESS及TAXOL以外)併用，至多使用6個療程，接續單用dostarlimab用於治療患有錯誤配對修復功能不足（dMMR）或微衛星高度不穩定性（MSI-H）之原發性晚期或首次復發性子宮內膜癌(EC）成人病人第一線治療，病人需符合免疫檢查點抑制劑之藥品給付規定。(115/8/1）'
+- regulation_id: REG-0292
   section_number: 9.3.
-  section_title: 9.3. Docetaxel：（87/7/1、92/11/1、93/8/1、95/8/1、96/1/1、99/6/1、100/1/1、101/9/1、108/1/1、113/5/1、115/6/1）
+  section_title: 9.3. Docetaxel：（87/7/1、92/11/1、93/8/1、95/8/1、96/1/1、99/6/1、100/1/1、101/9/1、108/1/1、113/5/1、115/6/1、115/8/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (99/6/1)
   - (113/5/1)
@@ -189,9 +195,9 @@ regulations:
     - Lung Cancer (肺癌)
     - Prostate Cancer (前列腺癌)
     laboratory_criteria: []
-    summary: '1.本類藥品(除Doce及Phyxotere之外)依藥品許可證登載之適應症範圍內給付於乳癌、非小細胞肺癌、前列腺癌、頭頸癌及胃腺癌之病例；倘併用其他標靶治療、免疫檢查點抑制劑等藥品時，病人須符合該併用藥品之藥品給付規定。(115/6/1）
+    summary: '1.本類藥品(除Doce之外)依藥品許可證登載之適應症範圍內給付於乳癌、非小細胞肺癌、前列腺癌、頭頸癌及胃腺癌之病例；倘併用其他標靶治療、免疫檢查點抑制劑等藥品時，病人須符合該併用藥品之藥品給付規定。(115/6/1、115/8/1）
 
-      2.Doce及Phyxotere限給付於下列情形：(115/6/1）
+      2.Doce及Phyxotere限給付於下列情形：(115/6/1、115/8/1））
 
       (1)乳癌：
 
@@ -199,12 +205,12 @@ regulations:
 
       Ⅱ.與anthracycline合併使用於腋下淋巴結轉移之早期乳癌之術後輔助性化學治療。(99/6/1)
 
-      Ⅲ.早期乳癌手術後，經診斷為三陰性反應且無淋巴轉移的病人，得作為與cyclophosphamide併用doxorubicin的化學輔助療法。(...'
+      Ⅲ.早期乳癌手術後，經診斷為三陰性反應且無淋巴轉移的病人，得作為與cyclophosphamide併用doxorubicin的化...'
   reference_annotations:
-    original_clause: 9.3. Docetaxel：（87/7/1、92/11/1、93/8/1、95/8/1、96/1/1、99/6/1、100/1/1、101/9/1、108/1/1、113/5/1、115/6/1）
-    full_text: '1.本類藥品(除Doce及Phyxotere之外)依藥品許可證登載之適應症範圍內給付於乳癌、非小細胞肺癌、前列腺癌、頭頸癌及胃腺癌之病例；倘併用其他標靶治療、免疫檢查點抑制劑等藥品時，病人須符合該併用藥品之藥品給付規定。(115/6/1）
+    original_clause: 9.3. Docetaxel：（87/7/1、92/11/1、93/8/1、95/8/1、96/1/1、99/6/1、100/1/1、101/9/1、108/1/1、113/5/1、115/6/1、115/8/1）
+    full_text: '1.本類藥品(除Doce之外)依藥品許可證登載之適應症範圍內給付於乳癌、非小細胞肺癌、前列腺癌、頭頸癌及胃腺癌之病例；倘併用其他標靶治療、免疫檢查點抑制劑等藥品時，病人須符合該併用藥品之藥品給付規定。(115/6/1、115/8/1）
 
-      2.Doce及Phyxotere限給付於下列情形：(115/6/1）
+      2.Doce及Phyxotere限給付於下列情形：(115/6/1、115/8/1））
 
       (1)乳癌：
 
@@ -225,11 +231,11 @@ regulations:
       (4)頭頸癌：限局部晚期且無遠端轉移之頭頸部鱗狀細胞癌且無法手術切除者，與cisplatin及5-fluorouracil併用，作為放射治療前的引導治療，限使用4個療程。(100/1/1)
 
       (5)胃腺癌：晚期胃腺癌患者，包括胃食道接合處之腺癌。(108/1/1)'
-- regulation_id: REG-0291
+- regulation_id: REG-0293
   section_number: 9.4.
-  section_title: 9.4. Gemcitabine（如Gemzar）：（92/12/1、93/8/1、94/10/1、96/5/1、99/10/1、105/2/1、114/2/1、115/2/1、115/6/1）
+  section_title: 9.4. Gemcitabine（如Gemzar）：（92/12/1、93/8/1、94/10/1、96/5/1、99/10/1、105/2/1、114/2/1、115/2/1、115/6/1、115/9/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -242,41 +248,15 @@ regulations:
     - Urothelial Carcinoma / Bladder Cancer (尿路上皮癌)
     - Pancreatic Cancer (胰臟癌)
     laboratory_criteria: []
-    summary: '1.本類藥品(除Gemmis之外)依藥品許可證登載之適應症範圍內給付於非小細胞肺癌、胰臟癌、膀胱癌、乳癌、卵巢癌及膽道癌之病例；倘併用其他標靶治療、免疫檢查點抑制劑等藥品時，病人須符合該併用藥品之藥品給付規定。(115/6/1）
-
-      2. Gemmis限給付於下列情形：(115/6/1）
-
-      (1)晚期或無法手術切除之非小細胞肺癌及胰臟癌病患。
-
-      (2)晚期膀胱癌病患。（92/12/1）
-
-      (3)Gemcitabine與paclitaxel併用，可使用於曾經使用過anthracycline之局部復發且無法手術切除或轉移性之乳癌病患。（94/10/1）
-
-      (4)用於曾經使用含鉑類藥物(platinum-bas...'
+    summary: 1.本類藥品依藥品許可證登載之適應症範圍內給付於非小細胞肺癌、胰臟癌、膀胱癌、乳癌、卵巢癌及膽道癌之病例；倘併用其他標靶治療、免疫檢查點抑制劑等藥品時，病人須符合該併用藥品之藥品給付規定。(115/6/1、115/9/1）
   reference_annotations:
-    original_clause: 9.4. Gemcitabine（如Gemzar）：（92/12/1、93/8/1、94/10/1、96/5/1、99/10/1、105/2/1、114/2/1、115/2/1、115/6/1）
-    full_text: '1.本類藥品(除Gemmis之外)依藥品許可證登載之適應症範圍內給付於非小細胞肺癌、胰臟癌、膀胱癌、乳癌、卵巢癌及膽道癌之病例；倘併用其他標靶治療、免疫檢查點抑制劑等藥品時，病人須符合該併用藥品之藥品給付規定。(115/6/1）
-
-      2. Gemmis限給付於下列情形：(115/6/1）
-
-      (1)晚期或無法手術切除之非小細胞肺癌及胰臟癌病患。
-
-      (2)晚期膀胱癌病患。（92/12/1）
-
-      (3)Gemcitabine與paclitaxel併用，可使用於曾經使用過anthracycline之局部復發且無法手術切除或轉移性之乳癌病患。（94/10/1）
-
-      (4)用於曾經使用含鉑類藥物(platinum-based)治療後復發且間隔至少6個月之卵巢癌，作為第二線治療。（96/5/1、99/10/1）
-
-      (5)無法手術切除或晚期或復發之膽道癌(含肝內膽管)病患。（105/2/1）
-
-      (6)與durvalumab及cisplatin併用於治療局部晚期或轉移性未接受治療或不可手術之膽道癌(biliary tract cancer)成人病人(壺腹癌除外)，患者需符合免疫檢查點抑制劑之藥品給付規定。（114/2/1)
-
-      (7)與nivolumab及cisplatin併用於無法切除或轉移性泌尿道上皮癌成人病人的第一線治療，病人需符合免疫檢查點抑制劑之藥品給付規定，且至多6個療程。（115/2/1)'
-- regulation_id: REG-0292
+    original_clause: 9.4. Gemcitabine（如Gemzar）：（92/12/1、93/8/1、94/10/1、96/5/1、99/10/1、105/2/1、114/2/1、115/2/1、115/6/1、115/9/1）
+    full_text: 1.本類藥品依藥品許可證登載之適應症範圍內給付於非小細胞肺癌、胰臟癌、膀胱癌、乳癌、卵巢癌及膽道癌之病例；倘併用其他標靶治療、免疫檢查點抑制劑等藥品時，病人須符合該併用藥品之藥品給付規定。(115/6/1、115/9/1）
+- regulation_id: REG-0294
   section_number: 9.5.1.
-  section_title: 9.5.1. Paclitaxel成分注射劑：(108/11/1、112/12/1、114/6/1、114/8/1、115/6/1)
+  section_title: 9.5.1. Paclitaxel成分注射劑：(108/11/1、112/12/1、114/6/1、114/8/1、115/6/1、115/8/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (94/1/1)
   - (94/1/1)
@@ -285,7 +265,9 @@ regulations:
   - (114/6/1、114/8/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Atezolizumab (阿特珠單抗)
+    - Pembrolizumab (派姆單抗)
   conditions_of_payment:
     indications:
     - Triple-Negative Breast Cancer (TNBC) (三陰性乳癌)
@@ -293,41 +275,47 @@ regulations:
     - Lung Cancer (肺癌)
     - Ovarian Cancer (卵巢癌)
     laboratory_criteria: []
-    summary: '1.本類藥品(除PHYXOL、GENETAXYL CREM LESS及TAXOL之外)依藥品許可證登載之適應症範圍內給付於卵巢癌、非小細胞肺癌、乳癌及卡波西氏肉瘤之病例；倘併用其他標靶治療、免疫檢查點抑制劑等藥品時，病人須符合該併用藥品之藥品給付規定。(115/6/1）
+    summary: '1.本類藥品(除GENETAXYL CREM LESS及TAXOL以外)依藥品許可證登載之適應症範圍內給付於卵巢癌、非小細胞肺癌、乳癌及卡波西氏肉瘤之病例。(115/6/1、115/8/1）
 
-      2.PHYXOL、GENETAXYL CREM LESS及TAXOL限給付於下列情形：(115/6/1）
+      2.GENETAXYL CREM LESS及TAXOL限給付於下列情形：(115/6/1、115/8/1）
 
       (1)晚期卵巢癌，作為第一線治療時需與cisplatin併用。(94/1/1)
 
       (2)非小細胞肺癌，作為第一線用藥時需與cisplatin併用。(94/1/1)
 
-      (3)與pembrolizumab及carboplatin併...'
+      (3)已使用合併療法(除非有禁忌症、至少應包括使用anthracycline)失敗的轉移性乳癌患者。（91/4/1、94/1/1)
+
+      (4)...'
   reference_annotations:
-    original_clause: 9.5.1. Paclitaxel成分注射劑：(108/11/1、112/12/1、114/6/1、114/8/1、115/6/1)
-    full_text: '1.本類藥品(除PHYXOL、GENETAXYL CREM LESS及TAXOL之外)依藥品許可證登載之適應症範圍內給付於卵巢癌、非小細胞肺癌、乳癌及卡波西氏肉瘤之病例；倘併用其他標靶治療、免疫檢查點抑制劑等藥品時，病人須符合該併用藥品之藥品給付規定。(115/6/1）
+    original_clause: 9.5.1. Paclitaxel成分注射劑：(108/11/1、112/12/1、114/6/1、114/8/1、115/6/1、115/8/1)
+    full_text: '1.本類藥品(除GENETAXYL CREM LESS及TAXOL以外)依藥品許可證登載之適應症範圍內給付於卵巢癌、非小細胞肺癌、乳癌及卡波西氏肉瘤之病例。(115/6/1、115/8/1）
 
-      2.PHYXOL、GENETAXYL CREM LESS及TAXOL限給付於下列情形：(115/6/1）
+      2.GENETAXYL CREM LESS及TAXOL限給付於下列情形：(115/6/1、115/8/1）
 
       (1)晚期卵巢癌，作為第一線治療時需與cisplatin併用。(94/1/1)
 
       (2)非小細胞肺癌，作為第一線用藥時需與cisplatin併用。(94/1/1)
 
-      (3)與pembrolizumab及carboplatin併用於轉移性鱗狀非小細胞肺癌的第一線治療，患者需符合免疫檢查點抑制劑之藥品給付規定。(112/12/1)
+      (3)已使用合併療法(除非有禁忌症、至少應包括使用anthracycline)失敗的轉移性乳癌患者。（91/4/1、94/1/1)
 
-      (4)已使用合併療法(除非有禁忌症、至少應包括使用anthracycline)失敗的轉移性乳癌患者。（91/4/1、94/1/1)
+      (4)腋下淋巴轉移之乳癌且動情素受體為陰性之患者，paclitaxel可作為接續含doxorubicin在內之輔助化學治療。（91/4/1、94/1/1、98/8/1)
 
-      (5)腋下淋巴轉移之乳癌且動情素受體為陰性之患者，paclitaxel可作為接續含doxorubicin在內之輔助化學治療。（91/4/1、94/1/1、98/8/1)
+      (5) 卡波西氏肉瘤第二線用藥。（88/11/1)
 
-      (6)卡波西氏肉瘤第二線用藥。（88/11/1）
+      3.本類藥品併用其他標靶治療、免疫檢查點抑制劑等藥品時，病人須符合該併用藥品之藥品給付規定，並依下列情形使用：(115/8/1）
 
-      (7)與pembrolizumab及carboplatin併用於早期三陰性乳癌(第II期至第IIIb期，cT1c N1-2 或 T2-4 N0-2)病人的術前前導性治療用藥，病人需符合免疫檢查點抑制劑之藥品給付規定。(114/6/1)
+      (1)本類藥品與pembrolizumab及carboplatin併用於轉移性鱗狀非小細胞肺癌的第一線治療，患者需符合免疫檢查點抑制劑之藥品給付規定。(112/12/1)
 
-      (8)與atezolizumab及bevacizumab(限使用Alymsys、Avastin、Abevmy、Vegzelma或Mvasi)、carboplatin併用於轉移性非鱗狀非小細胞肺癌第一線治療，患者需符合免疫檢查點抑制劑之藥品給付規定。(114/6/1、114/8/1)'
-- regulation_id: REG-0293
+      (2)本類藥品與pembrolizumab及carboplatin併用於早期三陰性乳癌(第II期至第IIIb期，cT1c N1-2 或 T2-4 N0-2)病人的術前前導性治療用藥，病人需符合免疫檢查點抑制劑之藥品給付規定。(114/6/1)
+
+      (3)本類藥品與atezolizumab及bevacizumab(限使用Alymsys、Avastin、Abevmy、Vegzelma或Mvasi)、carboplatin併用於轉移性非鱗狀非小細胞肺癌第一線治療，患者需符合免疫檢查點抑制劑之藥品給付規定。(114/6/1、114/8/1)
+
+      (4)本類藥品 (除GENETAXYL CREM LESS及TAXOL以外)與dostarlimab及carboplatin併用，至多使用6個療程，接續單用dostarlimab用於治療患有錯誤配對修復功能不足（dMMR）或微衛星高度不穩定性（MSI-H）之原發性晚期或首次復發性子宮內膜癌(EC）成人病人第一線治療，病人需符合免疫檢查點抑制劑之藥品給付規定。(115/8/1）'
+- regulation_id: REG-0295
   section_number: 9.5.2.
   section_title: 9.5.2. Albumin-based paclitaxel（如Abraxane）：(108/11/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -340,11 +328,11 @@ regulations:
   reference_annotations:
     original_clause: 9.5.2. Albumin-based paclitaxel（如Abraxane）：(108/11/1)
     full_text: 限併用gemcitabine，做為轉移性胰腺癌患者之第一線治療。
-- regulation_id: REG-0294
+- regulation_id: REG-0296
   section_number: 9.6.
   section_title: 9.6. Streptococcus pyrogene(如Picibanil)：
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -356,11 +344,11 @@ regulations:
   reference_annotations:
     original_clause: 9.6. Streptococcus pyrogene(如Picibanil)：
     full_text: 限惡性腫瘤患者患有惡性腹水，肋膜積水或心包膜積水時使用，需檢附病歷摘要。
-- regulation_id: REG-0295
+- regulation_id: REG-0297
   section_number: 9.8.
   section_title: 9.8. Toremifene（如Fareston）：（88/6/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -373,11 +361,11 @@ regulations:
   reference_annotations:
     original_clause: 9.8. Toremifene（如Fareston）：（88/6/1）
     full_text: 限用於停經後，且女性荷爾蒙接受體(estrogen receptor)為陽性之轉移性乳癌病患。
-- regulation_id: REG-0296
+- regulation_id: REG-0298
   section_number: 9.9.
   section_title: 9.9. Vinorelbine：(91/1/1、95/6/1、96/9/1、101/3/1、106/11/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (106/11/1)
   medications:
@@ -404,11 +392,11 @@ regulations:
       (2)病理分期第二期及第三期前半(stageII & stageIIIA)非小細胞肺癌於接受根治性手術後與鉑金類藥品併用之輔助治療，最多可使用4療程(106/11/1)。
 
       2.本成分之口服劑型與注射劑型不得併用。'
-- regulation_id: REG-0297
+- regulation_id: REG-0299
   section_number: 9.10.
   section_title: 9.10. Oxaliplatin：（需符合藥品許可證登載之適應症）（89/7/1、91/10/1、93/8/1、98/2/1、98/3/1、98/7/1、102/9/1、102/12/1、109/12/1、110/5/1、110/6/1、110/7/1、111/11/1、113/4/1、113/6/1、115/2/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (91/10/1)
   - (98/2/1)
@@ -417,7 +405,8 @@ regulations:
   - (115/2/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Nivolumab (納武單抗)
   conditions_of_payment:
     indications:
     - Colorectal Cancer (大腸直腸癌)
@@ -447,11 +436,11 @@ regulations:
       4.與nivolumab及fluoropyrimidine（5-FU或capecitabine）併用於第一線治療晚期或轉移性且不具有HER2過度表現的胃癌病人，病人需符合免疫檢查點抑制劑之藥品給付規定。(113/4/1、113/6/1、115/2/1)
 
       5.與nivolumab及fluoropyrimidine併用於無法接受化學放射性治療或手術切除等治癒性治療之晚期或轉移性食道鱗狀細胞癌成人病人的第一線治療，病人需符合免疫檢查點抑制劑之藥品給付規定。(115/2/1)'
-- regulation_id: REG-0298
+- regulation_id: REG-0300
   section_number: 9.11.
   section_title: 9.11. Uracil-Tegafur：(如Ufur)(100/1/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (93/4/1、98/3/1、99/10/1)
   - (94/10/1、97/12/1)
@@ -485,11 +474,11 @@ regulations:
       4.直腸癌、結腸癌第Ⅱ、Ⅲ期患者之術後輔助性治療，且使用期限不得超過2年(94/10/1、97/12/1)
 
       5.用於病理分期為T2且腫瘤≧3cm之肺腺癌病人，作為手術後輔助治療，使用期限以二年為限。(100/1/1)'
-- regulation_id: REG-0299
+- regulation_id: REG-0301
   section_number: 9.12.1.
   section_title: 9.12.1. Irinotecan(如Campto injection)：（需符合藥品許可證登載之適應症）(90/10/1、93/8/1、110/5/1、110/7/1、110/8/1、112/2/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (110/5/1、110/7/1、110/8/1、112/2/1)
   medications:
@@ -518,11 +507,11 @@ regulations:
 
       2.與5-fluorouracil、leucovorin及oxaliplatin併用(FOLFIRINOX)，做為轉移性胰臟癌之第一線治療(限用Irino、Irinotel、Campto、Irinotecan
       Injection Concentrate、Irican、Innocan、Irinotecan Injection)。(110/5/1、110/7/1、110/8/1、112/2/1)'
-- regulation_id: REG-0300
+- regulation_id: REG-0302
   section_number: 9.12.2.
   section_title: 9.12.2. Irinotecan微脂體注射劑(如Onivyde)：(107/8/1、114/12/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (107/8/1)
   - (114/12/1)
@@ -545,11 +534,11 @@ regulations:
       2.與oxaliplatin、5-FU和leucovorin併用，作為轉移性胰腺癌成人病人第一線治療。(114/12/1)
 
       3.需經事前審查核准後使用。'
-- regulation_id: REG-0301
+- regulation_id: REG-0303
   section_number: 9.13.
   section_title: 9.13. Aldesleukin(如Proleukin for Injection)：(90/10/1、93/8/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -562,11 +551,11 @@ regulations:
   reference_annotations:
     original_clause: 9.13. Aldesleukin(如Proleukin for Injection)：(90/10/1、93/8/1)
     full_text: 限轉移性腎細胞癌及惡性黑色素癌病患使用。
-- regulation_id: REG-0302
+- regulation_id: REG-0304
   section_number: 9.14.
   section_title: 9.14. Doxorubicin hydrochloride liposome injection(如Lipo-Dox、Caelyx)：(91/3/1、93/8/1、93/11/1、99/10/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (99/10/1)
   - (91/3/1)
@@ -596,11 +585,11 @@ regulations:
       2.用於治療CD4數量低下（<200 CD4 lymphocyte/mm3）和粘膜、皮膚或內臟有病變的AIDS related Kaposi’s Sarcoma的病人。(91/3/1)
 
       3.用於單一治療有心臟疾病風險考量之轉移性乳癌患者。(93/11/1)'
-- regulation_id: REG-0303
+- regulation_id: REG-0305
   section_number: 9.15.
   section_title: 9.15. Tretinoin（如Vesanoid Soft Gelatin）：（88/10/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -613,11 +602,11 @@ regulations:
   reference_annotations:
     original_clause: 9.15. Tretinoin（如Vesanoid Soft Gelatin）：（88/10/1）
     full_text: 限急性前髓性白血病使用。
-- regulation_id: REG-0304
+- regulation_id: REG-0306
   section_number: 9.16.1.
   section_title: 9.16.1. Topotecan注射劑（88/10/1、93/8/1、98/11/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -635,11 +624,11 @@ regulations:
     full_text: '1.限卵巢癌及小細胞肺癌之第二線化學治療（第一線治療應包括白金化合物）。
 
       2.與cisplatin併用適用於治療經組織學檢查確定患有第IV-B期復發性或持續性子宮頸癌，且不適合以外科手術及（或）放射療法進行治療的患者。（98/11/1）'
-- regulation_id: REG-0305
+- regulation_id: REG-0307
   section_number: 9.16.2.
   section_title: 9.16.2. Topotecan口服劑型（100/6/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -652,11 +641,11 @@ regulations:
   reference_annotations:
     original_clause: 9.16.2. Topotecan口服劑型（100/6/1）
     full_text: 限用於小細胞肺癌之第二線化學治療（第一線治療應包括白金化合物）。
-- regulation_id: REG-0306
+- regulation_id: REG-0308
   section_number: 9.17.
   section_title: 9.17. Capecitabine（如Xeloda）：（88/10/1、91/4/1、92/6/1、93/8/1、96/9/1、97/12/1、110/2/1、113/4/1、113/6/1、115/2/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (110/2/1)
   - (92/6/1)
@@ -664,7 +653,8 @@ regulations:
   - (113/4/1、113/6/1、115/2/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Nivolumab (納武單抗)
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
@@ -702,11 +692,11 @@ regulations:
       5.Capecitabine合併platinum可使用於晚期胃癌之第一線治療。(97/12/1)
 
       6.與nivolumab及oxaliplatin併用於第一線治療晚期或轉移性且不具有HER2過度表現的胃癌病人，病人需符合免疫檢查點抑制劑之藥品給付規定。(113/4/1、113/6/1、115/2/1)'
-- regulation_id: REG-0307
+- regulation_id: REG-0309
   section_number: 9.18.
-  section_title: 9.18. Trastuzumab (如Herceptin)：(91/4/1、93/8/1、95/2/1、99/1/1、99/8/1、99/10/1、101/1/1、105/11/1、108/5/1、109/2/1、111/12/1、112/10/1、113/8/1、113/12/1、114/1/1、114/5/1、114/12/1、115/7/1)
+  section_title: 9.18. Trastuzumab (如Herceptin)：(91/4/1、93/8/1、95/2/1、99/1/1、99/8/1、99/10/1、101/1/1、105/11/1、108/5/1、109/2/1、111/12/1、112/10/1、113/8/1、113/12/1、114/1/1、114/5/1、114/12/1、115/7/1、115/8/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (99/1/1、99/8/1、99/10/1、101/1/1、111/12/1、112/10/1、113/8/1、113/12/1、114/1/1、114/12/1、115/7/1)
   - (99/8/1、99/10/1、101/1/1、111/12/1、112/10/1、113/8/1、113/12/1、114/1/1、114/12/1、115/7/1)
@@ -714,11 +704,12 @@ regulations:
   - (113/8/1、113/12/1、114/1/1、114/12/1、115/7/1)
   - (113/8/1、113/12/1)
   - (115/7/1)
-  - (111/12/1、112/10/1、113/8/1、113/12/1、114/1/1、114/12/1、115/7/1)
+  - (111/12/1、112/10/1、113/8/1、113/12/1、114/1/1、114/12/1、115/7/1、115/8/1)
+  - (113/8/1、115/7/1、115/8/1)
   - (113/8/1、115/7/1)
-  - (113/8/1、115/7/1)
-  - (115/7/1)
-  - (115/7/1)
+  - (115/7/1、115/8/1)
+  - (115/7/1、115/8/1)
+  - (115/7/1、115/8/1)
   - (91/4/1、99/1/1)
   - (93/8/1、95/2/1、99/1/1)
   - (99/1/1、108/5/1、113/12/1)
@@ -737,7 +728,7 @@ regulations:
 
       Ⅰ.若本藥品使用於手術前之輔助治療，依下列術後情形使用：(113/8/1、113/12...'
   reference_annotations:
-    original_clause: 9.18. Trastuzumab (如Herceptin)：(91/4/1、93/8/1、95/2/1、99/1/1、99/8/1、99/10/1、101/1/1、105/11/1、108/5/1、109/2/1、111/12/1、112/10/1、113/8/1、113/12/1、114/1/1、114/5/1、114/12/1、115/7/1)
+    original_clause: 9.18. Trastuzumab (如Herceptin)：(91/4/1、93/8/1、95/2/1、99/1/1、99/8/1、99/10/1、101/1/1、105/11/1、108/5/1、109/2/1、111/12/1、112/10/1、113/8/1、113/12/1、114/1/1、114/5/1、114/12/1、115/7/1、115/8/1)
     full_text: '1.早期乳癌(99/1/1、99/8/1、99/10/1、101/1/1、111/12/1、112/10/1、113/8/1、113/12/1、114/1/1、114/12/1、115/7/1)
 
       (1)具HER2過度表現(IHC3+或FISH+)，且具腋下淋巴結轉移但無遠處臟器轉移之早期乳癌患者，作為輔助性治療用藥(事審代碼：C50P2)：(99/8/1、99/10/1、101/1/1、111/12/1、112/10/1、113/8/1、113/12/1、114/1/1、114/12/1、115/7/1)。
@@ -751,21 +742,21 @@ regulations:
 
       Ⅱ.若未接受術前輔助治療先行手術者，給予本藥品作為術後輔助治療，須接受至少4個療程的化學治療(本藥品合併化療或接續化療之後使用本藥品)，本藥品以全部18個療程為上限。(115/7/1)
 
-      (2)具HER2過度表現(IHC3+或FISH+)，且無腋下淋巴結轉移之早期乳癌患者，作為輔助性治療用藥：(111/12/1、112/10/1、113/8/1、113/12/1、114/1/1、114/12/1、115/7/1)
+      (2)具HER2過度表現(IHC3+或FISH+)，且無腋下淋巴結轉移之早期乳癌患者，作為輔助性治療用藥：(111/12/1、112/10/1、113/8/1、113/12/1、114/1/1、114/12/1、115/7/1、115/8/1)
 
       Ⅰ.若本藥品使用於手術前之輔助治療，須經影像檢查(乳房超音波或乳房X光攝影或核磁共振)顯示腫瘤大於2公分，並依下列術後情形使用：
 
       病理檢驗雌激素受體為陰性ER(-)(事審代碼：C50P1)且外科手術後達病理上緩解（pCR）者：使用於外科手術前後的總療程合併計算，以全部9個療程為上限；使用Eirgasun
-      vial 420 mg以全部18個療程為上限。(113/8/1、115/7/1)
+      vial 420 mg、Herzuma及Ogivri以全部18個療程為上限。(113/8/1、115/7/1、115/8/1)
 
       病理檢驗ER(-)(事審代碼：C50P1)且外科手術後無法達病理上緩解（non-pCR）者：本藥品與trastuzumab emtansine使用於外科手術前後的總療程合併計算，以全部18個療程為上限，其中trastuzumab
       emtansine以14個療程為上限。(113/8/1、115/7/1)
 
-      病理檢驗陽性ER(+)(事審代碼：C50P3)：限使用Eirgasun vial 420 mg於外科手術前後的總療程合併計算，以全部18個療程為上限。(115/7/1)
+      病理檢驗陽性ER(+)(事審代碼：C50P3)：限使用Eirgasun vial 420 mg、Herzuma及Ogivri於外科手術前後的總療程合併計算，以全部18個療程為上限。(115/7/1、115/8/1)
 
-      115年6月30日以前已核定使用trastuzumab之病人，得經事前審查核准後，使用Eirgasun vial 420 mg至總療程上限(即18個療程)或使用期間發生疾病惡化為止。
+      115年6月30日以前已核定使用trastuzumab之病人，得經事前審查核准後，使用Eirgasun vial 420 mg、Herzuma及Ogivri至總療程上限(即18個療程)或使用期間發生疾病惡化為止(115/7/1、115/8/1)。
 
-      Ⅱ.若未接受術前輔助治療先行手術者，給予本藥品(限使用Eirgasun vial 420 mg)作為術後輔助治療，以全部18個療程為上限，須接受至少4個療程的化學治療(合併化療或接續化療之後使用本藥品)，並須符合下列條件之一：(115/7/1)
+      Ⅱ.若未接受術前輔助治療先行手術者，給予本藥品(限使用Eirgasun vial 420 mg、Herzuma及Ogivri)作為術後輔助治療，以全部18個療程為上限，須接受至少4個療程的化學治療(合併化療或接續化療之後使用本藥品)，並須符合下列條件之一：(115/7/1、115/8/1)
 
       i. ER(-)且腫瘤大於0.5公分(事審代碼：C50P4)。
 
@@ -786,11 +777,11 @@ regulations:
       Trastuzumab合併capecitabine (或5-fluorouracil)及cisplatin適用於未曾接受過化學治療之HER2過度表現(IHC3+或FISH+)轉移性胃腺癌(或胃食道接合處腺癌)的治療。(109/2/1)
 
       4.經事前審查核准後使用，核准後早期乳癌及轉移性胃癌每24週、晚期乳癌每18週須檢附療效評估資料再次申請，若疾病有惡化情形即不應再行申請。（105/11/1、114/5/1）'
-- regulation_id: REG-0308
+- regulation_id: REG-0310
   section_number: 9.19.
   section_title: 9.19. Estramustine sod. phosphate monohydrate(如Estracyt)：(91/4/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -811,22 +802,22 @@ regulations:
       1.經荷爾蒙治療無效。
 
       2.經診斷對單獨使用荷爾蒙治療，具有預後療效不佳因素的初次治療病患。'
-- regulation_id: REG-0309
+- regulation_id: REG-0311
   section_number: 9.20.
-  section_title: 9.20. Rituximab注射劑(如Mabthera，不同劑型之適用範圍需符合藥品許可證登載之適應症)：用於抗癌瘤部分(91/4/1、93/1/1、95/3/1、97/2/1、102/1/1、103/2/1、103/9/1、104/6/1、106/9/1、111/6/1、113/2/1、113/12/1、115/5/1、115/6/1)
+  section_title: 9.20. Rituximab注射劑(如Mabthera，不同劑型之適用範圍需符合藥品許可證登載之適應症)：用於抗癌瘤部分(91/4/1、93/1/1、95/3/1、97/2/1、102/1/1、103/2/1、103/9/1、104/6/1、106/9/1、111/6/1、113/2/1、113/12/1、115/5/1、115/6/1、115/8/1、115/9/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (93/1/1、95/3/1、113/2/1)
   - (95/3/1)
   - (97/2/1、104/6/1)
-  - (103/2/1、111/6/1)
-  - (111/6/1)
-  - (111/6/1)
+  - (103/2/1、111/6/1、115/8/1)
+  - (111/6/1、115/8/1)
+  - (111/6/1、115/8/1)
   - (103/9/1)
   - (113/12/1)
   - (113/12/1)
-  - (102/1/1、103/2/1、103/9/1、113/12/1、115/5/1、115/6/1)
+  - (102/1/1、103/2/1、103/9/1、113/12/1、115/5/1、115/6/1、115/8/1)
   medications:
     drug_classes: []
     ingredients: []
@@ -845,7 +836,7 @@ regulations:
 
       4.作為濾泡性淋巴瘤患者於接受含rituximab誘導化學治療後產生反應(達partial remission或complete remission)之病患，若在接受含rituximab誘導化學治療前有下列情形之一者，得接受ritu...'
   reference_annotations:
-    original_clause: 9.20. Rituximab注射劑(如Mabthera，不同劑型之適用範圍需符合藥品許可證登載之適應症)：用於抗癌瘤部分(91/4/1、93/1/1、95/3/1、97/2/1、102/1/1、103/2/1、103/9/1、104/6/1、106/9/1、111/6/1、113/2/1、113/12/1、115/5/1、115/6/1)
+    original_clause: 9.20. Rituximab注射劑(如Mabthera，不同劑型之適用範圍需符合藥品許可證登載之適應症)：用於抗癌瘤部分(91/4/1、93/1/1、95/3/1、97/2/1、102/1/1、103/2/1、103/9/1、104/6/1、106/9/1、111/6/1、113/2/1、113/12/1、115/5/1、115/6/1、115/8/1、115/9/1)
     full_text: '1.復發或對化學療效有抗性之低惡度B細胞非何杰金氏淋巴瘤。（91/4/1）
 
       2.併用polatuzumab vedotin或CHOP或其他化學療法，用於CD20抗原陽性之B瀰漫性大細胞非何杰金氏淋巴瘤之病患。(93/1/1、95/3/1、113/2/1)
@@ -866,11 +857,11 @@ regulations:
 
       (6)出現任一系列血球低下者(platelet<100,000/mm3，或Hb<10gm/dL，或absolute neutrophil count<1500/mm3)。
 
-      5.慢性淋巴球性白血病：(103/2/1、111/6/1)
+      5.慢性淋巴球性白血病：(103/2/1、111/6/1、115/8/1)
 
-      (1)Rai Stage Ⅲ/Ⅳ(或Binet C級)之CLL病人。若用於Rai StageⅠ/Ⅱ(或Binet A/B級)併有疾病相關免疫性症候(如自體免疫性溶血、免疫性血小板低下紫瘢症等)的病人時，需經過至少一種標準的烷化基劑治療無效或病情惡化者，且CD20陽性細胞須大於50%。（Rixathon不受「需經過一種標準的烷化基劑治療無效或病情惡化，且CD20陽性細胞須大於50%」限制，僅須符合具CD20陽性細胞即可使用，做為第一線用藥需與fludarabine及cyclophosphamide併用）(111/6/1)
+      (1)Rai Stage Ⅲ/Ⅳ(或Binet C級)之CLL病人。若用於Rai StageⅠ/Ⅱ(或Binet A/B級)併有疾病相關免疫性症候(如自體免疫性溶血、免疫性血小板低下紫瘢症等)的病人時，需經過至少一種標準的烷化基劑治療無效或病情惡化者，且CD20陽性細胞須大於50%。（除Mabthera以外，不受「需經過一種標準的烷化基劑治療無效或病情惡化，且CD20陽性細胞須大於50%」限制，僅須符合具CD20陽性細胞即可使用，做為第一線用藥需與fludarabine及cyclophosphamide併用）(111/6/1、115/8/1)
 
-      (2)與化學療法併用，做為復發或頑固性的CD20陽性慢性淋巴球性白血病病患的治療用藥，且CD20陽性細胞須大於50%。（Rixathon不受「CD20陽性細胞須大於50%」限制，僅須符合具CD20陽性細胞即可使用）(111/6/1)
+      (2)與化學療法併用，做為復發或頑固性的CD20陽性慢性淋巴球性白血病病患的治療用藥，且CD20陽性細胞須大於50%。（除Mabthera以外，不受「CD20陽性細胞須大於50%」限制，僅須符合具CD20陽性細胞即可使用）(111/6/1、115/8/1)
 
       (3)初次申請最多六個（月）療程，再次申請以三個療程為限。
 
@@ -904,15 +895,15 @@ regulations:
 
       8.合併bendamustine用於先前未曾接受治療且不適合自體幹細胞移植的第III/IV期被套細胞淋巴瘤。(113/12/1)
 
-      9.Rituximab(限使用Rixathon)合併lenalidomide(限使用Revlimid)用於先前曾接受至少一線全身性治療之復發性或難治性濾泡性淋巴瘤成人病人，需符合lenalidomide之藥品給付規定。（115/5/1）
+      9.Rituximab(除Mabthera以外)合併lenalidomide(限使用Revlimid及Leavdo)用於先前曾接受至少一線全身性治療之復發性或難治性濾泡性淋巴瘤成人病人，需符合lenalidomide之藥品給付規定。（115/5/1、115/8/1、115/9/1）
 
-      10.使用於1、4、5、6、7、8及9病人時，需經事前審查核准後使用，使用Rixathon用於1、4、5之病人除外。(102/1/1、103/2/1、103/9/1、113/12/1、115/5/1、115/6/1)'
-- regulation_id: REG-0310
+      10.Rituximab用於6、7、8、9及Mabthera用於1、4、5，需經事前審查核准後使用。(102/1/1、103/2/1、103/9/1、113/12/1、115/5/1、115/6/1、115/8/1)'
+- regulation_id: REG-0312
   section_number: 9.21.
   section_title: 9.21. Fludarabine(如Fludara Oral, Film-Coated Tablet及Fludara Lyophilized
     IV Injection)：(92/12/1、93/3/1、94/10/1、99/10/1、106/11/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (94/10/1)
   - (106/11/1)
@@ -943,11 +934,11 @@ regulations:
       (1)Rai Stage Ⅲ/IV(或Binet C級)之CLL病人。若用於Rai Stage I/II(或Binet A/B級)併有疾病相關免疫性症候(如自體免疫性溶血、免疫性血小板低下紫瘢症等)的病人時，需經過至少一種標準的烷化基劑治療無效或病情惡化者。
 
       (2)每3個療程需進行療效評估，病歷應留存評估紀錄，無疾病惡化方可繼續使用。(106/11/1)'
-- regulation_id: REG-0311
+- regulation_id: REG-0313
   section_number: 9.22.
   section_title: 9.22. Imatinib(如Glivec)：(91/5/1、93/7/1、97/8/1、99/6/1、100/2/1、102/9/1、113/6/1)附表九之八
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (100/2/1、102/9/1)
   - (99/6/1)
@@ -1014,11 +1005,11 @@ regulations:
       (2)治療嗜伊紅性白血球增加症候群(HES)與/或慢性嗜伊紅性白血病(CEL)且有血小板衍生生長因子受體(PDGFR)基因重組之成人患者，且存在器官侵犯証據者。
 
       7.治療患有無法手術切除、復發性或轉移性且有血小板衍生生長因子受體(PDGFR)基因重組之隆突性皮膚纖維肉瘤(DFSP)之成人患者。(99/6/1)'
-- regulation_id: REG-0312
+- regulation_id: REG-0314
   section_number: 9.23.
   section_title: 9.23. Arsenic trioxide(如Asadin Inj.)：(91/8/1、92/9/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1031,12 +1022,12 @@ regulations:
   reference_annotations:
     original_clause: 9.23. Arsenic trioxide(如Asadin Inj.)：(91/8/1、92/9/1)
     full_text: 限用於急性前骨髓細胞白血病患者。
-- regulation_id: REG-0313
+- regulation_id: REG-0315
   section_number: 9.24.
   section_title: 9.24. Gefitinib(如Iressa):(93/11/1、96/8/1、96/11/1、100/6/1、101/5/1、101/10/1、103/5/1、106/11/1、
-    108/6/1、108/11/1、109/4/1、109/6/1、109/10/1、111/2/1、111/4/1、113/3/1、113/6/1、113/10/1)
+    108/6/1、108/11/1、109/4/1、109/6/1、109/10/1、111/2/1、111/4/1、113/3/1、113/6/1、113/10/1、115/8/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (100/6/1、108/6/1、108/11/1、113/6/1)
   - (96/11/1、100/6/1、111/2/1)
@@ -1044,12 +1035,15 @@ regulations:
   - (96/11/1、100/6/1、101/10/1、106/11/1)
   - (101/5/1、106/11/1)
   - (96/8/1、103/5/1、109/4/1)
-  - (109/6/1、109/10/1、111/4/1、113/3/1、113/10/1)
-  - (109/6/1、111/4/1、113/10/1)
+  - (109/6/1、109/10/1、111/4/1、113/3/1、113/10/1、115/8/1)
+  - (109/6/1、111/4/1、113/10/1、115/8/1)
   - (113/3/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Afatinib (阿法替尼)
+    - Osimertinib (奧希替尼)
+    - Erlotinib (厄洛替尼)
   conditions_of_payment:
     indications:
     - Lung Cancer (肺癌)
@@ -1060,19 +1054,19 @@ regulations:
 
       (2)先前已使用過第一線含鉑化學治療，或70歲以上接受過第一線化學治療，但仍局部惡化或轉移之肺腺癌。(96/11/1、100/6/1、111/2/1)
 
-      2.使用注意事項(106/11/1、109/4/1、109/10/1、111/4/1、113/3/1）
+      2.使用注意事項(106/11/1、109/4/1、109/10/1、111/4/1、113/3/1、115/8/1）
 
-      (1)用於第一線用藥：病歷應留存確實患有肺腺癌之病理或細胞檢查報告，及EGF...'
+      (1)用於第一線用藥：病歷應留存確實患有肺腺癌之病理或細胞檢...'
   reference_annotations:
     original_clause: 9.24. Gefitinib(如Iressa):(93/11/1、96/8/1、96/11/1、100/6/1、101/5/1、101/10/1、103/5/1、106/11/1、
-      108/6/1、108/11/1、109/4/1、109/6/1、109/10/1、111/2/1、111/4/1、113/3/1、113/6/1、113/10/1)
+      108/6/1、108/11/1、109/4/1、109/6/1、109/10/1、111/2/1、111/4/1、113/3/1、113/6/1、113/10/1、115/8/1)
     full_text: '1.限單獨使用於
 
       (1)具有EGFR-TK基因突變之局部侵犯性或轉移性(即第ⅢB、ⅢC或第Ⅳ期)之肺腺癌病患之第一線治療，需檢附EGFR基因檢測結果報告，且需符合全民健康保險藥品給付規定之通則十二。(100/6/1、108/6/1、108/11/1、113/6/1)
 
       (2)先前已使用過第一線含鉑化學治療，或70歲以上接受過第一線化學治療，但仍局部惡化或轉移之肺腺癌。(96/11/1、100/6/1、111/2/1)
 
-      2.使用注意事項(106/11/1、109/4/1、109/10/1、111/4/1、113/3/1）
+      2.使用注意事項(106/11/1、109/4/1、109/10/1、111/4/1、113/3/1、115/8/1）
 
       (1)用於第一線用藥：病歷應留存確實患有肺腺癌之病理或細胞檢查報告，及EGFR-TK基因突變檢測報告。(100/6/1、106/11/1)
 
@@ -1082,18 +1076,19 @@ regulations:
 
       (4)本藥品與erlotinib及afatinib不得併用。(96/8/1、103/5/1、109/4/1)
 
-      (5)本藥品於第一線使用時，與osimertinib、dacomitinib及bevacizumab併用erlotinib之治療組合僅得擇一使用，除因耐受性不良，不得互換。(109/6/1、109/10/1、111/4/1、113/3/1、113/10/1)
+      (5)本藥品於第一線使用時，與osimertinib、dacomitinib、bevacizumab併用erlotinib之治療組合及aumolertinib僅得擇一使用，除因耐受性不良，不得互換。(109/6/1、109/10/1、111/4/1、113/3/1、113/10/1、115/8/1)
 
-      Ⅰ.如需更換使用osimertinib，必須符合osimertinib第一線使用於具有EGFR Exon 19 Del或Exon 21 L858R基因突變之局部侵犯性或轉移性（即為IIIB、IIIC期或第Ⅳ期）肺腺癌病患之限制。(109/6/1、111/4/1、113/10/1)
+      Ⅰ.如需更換使用osimertinib或aumolertinib，必須符合osimertinib或aumolertinib第一線使用於具有EGFR Exon
+      19 Del或Exon 21 L858R基因突變之局部侵犯性或轉移性（即為IIIB、IIIC期或第Ⅳ期）肺腺癌病患之限制。(109/6/1、111/4/1、113/10/1、115/8/1)
 
       Ⅱ.如需更換使用dacomitinib，必須符合dacomitinib第一線使用於具有EGFR-TK Exon 19 Del或Exon 21 L858R點突變，且無腦轉移(non-CNS)之局部侵犯性或轉移性肺腺癌之限制。(109/10/1）
 
       Ⅲ.如需更換使用bevacizumab併用erlotinib之治療組合，必須符合bevacizumab第一線使用於具有EGFR Exon 21 L858R突變且腦轉移之無法手術切除的轉移性（第Ⅳ期）非鱗狀非小細胞肺癌肺腺癌之限制。(113/3/1)'
-- regulation_id: REG-0314
+- regulation_id: REG-0316
   section_number: 9.25.
   section_title: 9.25. Temozolomide(如Temodal)：(94/3/1、97/1/1、98/9/1、111/9/1)附表八之二
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (98/9/1)
   - (98/9/1、111/9/1)
@@ -1131,20 +1126,23 @@ regulations:
       2.新診斷的多形神經膠母細胞瘤，與放射線治療同步進行，然後作為輔助性治療。（97/1/1）
 
       3.需經事前審查核准後使用，每日最大劑量200mg/m2。每次申請事前審查之療程以三個月為限，再次申請必須提出客觀證據（如：影像學）證實無惡化，才可繼續使用。(98/9/1、111/9/1)'
-- regulation_id: REG-0315
+- regulation_id: REG-0317
   section_number: 9.26.
-  section_title: 9.26. Pemetrexed(如Alimta)：(95/3/1、95/7/1、97/11/1、98/9/1、103/4/1、103/9/1、106/11/1、111/2/1、114/6/1、114/8/1、114/10/1)
+  section_title: 9.26. Pemetrexed(如Alimta)：(95/3/1、95/7/1、97/11/1、98/9/1、103/4/1、103/9/1、106/11/1、111/2/1、114/6/1、114/8/1、114/10/1、115/8/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (95/7/1、97/11/1、98/9/1、111/2/1)
   - (98/9/1)
-  - (114/6/1、114/8/1)
+  - (114/6/1、114/8/1、115/8/1)
   - (114/10/1)
+  - (115/6/1、115/8/1)
   - (103/4/1、103/9/1、106/11/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Pembrolizumab (派姆單抗)
+    - Nivolumab (納武單抗)
   conditions_of_payment:
     indications:
     - Lung Cancer (肺癌)
@@ -1157,9 +1155,9 @@ regulations:
 
       (3)與含鉑類之化學療法併用，作為治療局部晚期或轉移性非小細胞肺癌(顯著鱗狀細胞組織型除外)之第一線化療用藥，且限用於ECOG為0~1之病患。(98/9/1)
 
-      (4)pemetrexed(限使用Pexeda、Apeta或Pemetrexed Sandoz)與pembrolizumab與含鉑類之化學療法併用於轉移性，不具有EG...'
+      (4)pemetrexed(限使用Pexeda、Apeta、Pemetrexed Sandoz或Alimta Avos)與pembrolizumab與含鉑類之化學療法...'
   reference_annotations:
-    original_clause: 9.26. Pemetrexed(如Alimta)：(95/3/1、95/7/1、97/11/1、98/9/1、103/4/1、103/9/1、106/11/1、111/2/1、114/6/1、114/8/1、114/10/1)
+    original_clause: 9.26. Pemetrexed(如Alimta)：(95/3/1、95/7/1、97/11/1、98/9/1、103/4/1、103/9/1、106/11/1、111/2/1、114/6/1、114/8/1、114/10/1、115/8/1)
     full_text: '1.限用於
 
       (1)與cisplatin併用於惡性肋膜間質細胞瘤。
@@ -1168,16 +1166,18 @@ regulations:
 
       (3)與含鉑類之化學療法併用，作為治療局部晚期或轉移性非小細胞肺癌(顯著鱗狀細胞組織型除外)之第一線化療用藥，且限用於ECOG為0~1之病患。(98/9/1)
 
-      (4)pemetrexed(限使用Pexeda、Apeta或Pemetrexed Sandoz)與pembrolizumab與含鉑類之化學療法併用於轉移性，不具有EGFR/ALK/ROS-1腫瘤基因異常的非鱗狀非小細胞肺癌的第一線治療，患者需符合免疫檢查點抑制劑之藥品給付規定。(114/6/1、114/8/1)
+      (4)pemetrexed(限使用Pexeda、Apeta、Pemetrexed Sandoz或Alimta Avos)與pembrolizumab與含鉑類之化學療法併用於轉移性，不具有EGFR/ALK/ROS-1腫瘤基因異常的非鱗狀非小細胞肺癌的第一線治療，患者需符合免疫檢查點抑制劑之藥品給付規定。(114/6/1、114/8/1、115/8/1)
 
       (5)與amivantamab及carboplatin併用於罹患帶有表皮生長因子受體(EGFR) exon 20插入突變之局部晚期或轉移性非小細胞肺癌(NSCLC)的成人病人，作為第一線治療。(114/10/1)
 
+      (6)pemetrexed(限使用Pexeda、Apeta、Pemetrexed Sandoz或Alimta Avos) 與nivolumab及含鉑化療併用於非鱗狀非小細胞肺癌術前輔助治療，患者需符合免疫檢查點抑制劑之藥品給付規定。(115/6/1、115/8/1)
+
       2.每4個療程需進行療效評估，病歷應留存評估紀錄，無疾病惡化方可繼續使用。(103/4/1、103/9/1、106/11/1)'
-- regulation_id: REG-0316
+- regulation_id: REG-0318
   section_number: 9.27.
   section_title: 9.27. Cetuximab(如Erbitux)：(96/3/1、98/7/1、98/8/1、99/10/1、101/12/1、104/11/1、106/1/1、106/4/1、107/6/1、110/6/1、111/2/1、112/12/1、113/6/1、115/2/1、115/5/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (101/12/1、104/11/1、106/1/1、110/6/1、113/6/1、115/2/1)
   - (101/12/1、106/1/1、107/6/1、115/2/1)
@@ -1251,11 +1251,11 @@ regulations:
       (1)限無法接受局部治療之復發及/或轉移性頭頸部鱗狀細胞癌，且未曾申報cetuximab之病人使用。
 
       (2)須經事前審查核准後使用，每位病人每12週申請一次，需無疾病惡化情形方得繼續使用。(106/4/1、115/2/1)'
-- regulation_id: REG-0317
+- regulation_id: REG-0319
   section_number: 9.28.
   section_title: 9.28. Bortezomib（如Velcade）：（96/6/1、98/2/1、99/3/1、99/9/1、100/10/1、101/6/1、105/5/1、109/4/1、109/6/1、111/1/1、112/4/1）附表九之三
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (99/3/1、100/10/1、101/6/1、109/4/1、109/6/1、111/1/1、112/4/1)
   - (98/2/1、105/5/1)
@@ -1330,21 +1330,25 @@ regulations:
       (3)第一線使用過復發者，不得申請再次使用。(105/5/1)
 
       (4)需經事前審查核准後使用。'
-- regulation_id: REG-0318
+- regulation_id: REG-0320
   section_number: 9.29.
-  section_title: 9.29. Erlotinib（如Tarceva）：（96/6/1、96/8/1、97/6/1、101/5/1、101/10/1、102/4/1、102/11/1、103/5/1、106/11/1、108/6/1、108/11/1、109/4/1、109/6/1、109/10/1、111/2/1、111/4/1、113/3/1、113/6/1、113/9/1、113/10/1、114/3/1、114/4/1）
+  section_title: 9.29. Erlotinib（如Tarceva）：（96/6/1、96/8/1、97/6/1、101/5/1、101/10/1、102/4/1、102/11/1、103/5/1、106/11/1、108/6/1、108/11/1、109/4/1、109/6/1、109/10/1、111/2/1、111/4/1、113/3/1、113/6/1、113/9/1、113/10/1、114/3/1、114/4/1、115/8/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (102/4/1)
   - (102/4/1、106/11/1)
   - (101/5/1、106/11/1)
   - (103/5/1、109/4/1)
-  - (109/6/1、109/10/1、111/4/1、113/10/1)
-  - (109/6/1、111/4/1、113/10/1)
+  - (109/6/1、109/10/1、111/4/1、113/10/1、115/8/1)
+  - (109/6/1、111/4/1、113/10/1、115/8/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Afatinib (阿法替尼)
+    - Osimertinib (奧希替尼)
+    - Erlotinib (厄洛替尼)
+    - Gefitinib (吉非替尼)
   conditions_of_payment:
     indications:
     - Lung Cancer (肺癌)
@@ -1358,7 +1362,7 @@ regulations:
 
       (3)先前已使用過platinum類第一線化學治療，或70歲以上接受過第一線化學治療，但仍局部惡化...'
   reference_annotations:
-    original_clause: 9.29. Erlotinib（如Tarceva）：（96/6/1、96/8/1、97/6/1、101/5/1、101/10/1、102/4/1、102/11/1、103/5/1、106/11/1、108/6/1、108/11/1、109/4/1、109/6/1、109/10/1、111/2/1、111/4/1、113/3/1、113/6/1、113/9/1、113/10/1、114/3/1、114/4/1）
+    original_clause: 9.29. Erlotinib（如Tarceva）：（96/6/1、96/8/1、97/6/1、101/5/1、101/10/1、102/4/1、102/11/1、103/5/1、106/11/1、108/6/1、108/11/1、109/4/1、109/6/1、109/10/1、111/2/1、111/4/1、113/3/1、113/6/1、113/9/1、113/10/1、114/3/1、114/4/1、115/8/1）
     full_text: '1.限單獨使用於
 
       (1)適用於具有EGFR-TK突變之局部侵犯性或轉移性(即第ⅢB、ⅢC或第Ⅳ期)之肺腺癌病患之第一線治療，需檢附EGFR基因檢測結果報告，且需符合全民健康保險藥品給付規定之通則十二。(102/11/1、108/6/1、108/11/1、113/6/1）
@@ -1373,7 +1377,7 @@ regulations:
       2.Erlotinib與bevacizumab(除Zirabev以外)併用，作為無法手術切除的轉移性（第Ⅳ期）且帶有表皮生長因子受體(EGFR) Exon
       21 L858R活性化突變之腦轉移非鱗狀非小細胞肺癌病患的第一線治療。(113/3/1、113/9/1、114/3/1、114/4/1）
 
-      3.使用注意事項(106/11/1、109/4/1、109/10/1、111/4/1）
+      3.使用注意事項(106/11/1、109/4/1、109/10/1、111/4/1、115/8/1）
 
       (1)用於已接受platinum類第一線化學療法後，病情穩定之維持療法：病歷應留存確實患有肺腺癌之病理或細胞檢查報告，並附已接受4個週期platinum類第一線化學療法後，腫瘤範圍穩定(stable
       disease，不含partial response或complete response)之影像診斷證明（如胸部X光、電腦斷層或其他可作為評估的影像）。(102/4/1、106/11/1)
@@ -1386,20 +1390,21 @@ regulations:
 
       (5)本藥品與gefitinib及afatinib不得併用。(103/5/1、109/4/1)
 
-      (6)本藥品於第一線使用時，與osimertinib及dacomitinib僅得擇一使用，除因耐受性不良，不得互換。(109/6/1、109/10/1、111/4/1、113/10/1)
+      (6)本藥品於第一線使用時，與osimertinib、dacomitinib及aumolertinib僅得擇一使用，除因耐受性不良，不得互換。(109/6/1、109/10/1、111/4/1、113/10/1、115/8/1)
 
-      Ⅰ.如需更換使用osimertinib，必須符合osimertinib第一線使用於具有EGFR Exon 19 Del或Exon 21 L858R基因突變之局部侵犯性或轉移性（即為IIIB、IIIC期或第Ⅳ期）肺腺癌病患之限制。(109/6/1、111/4/1、113/10/1)
+      Ⅰ.如需更換使用osimertinib或aumolertinib，必須符合osimertinib或aumolertinib第一線使用於具有EGFR Exon
+      19 Del或Exon 21 L858R基因突變之局部侵犯性或轉移性（即為IIIB、IIIC期或第Ⅳ期）肺腺癌病患之限制。(109/6/1、111/4/1、113/10/1、115/8/1)
 
       Ⅱ.如需更換使用dacomitinib，必須符合dacomitinib第一線使用於具有EGFR-TK Exon 19 Del或Exon 21 L858R點突變，且無腦轉移(non-CNS)之局部侵犯性或轉移性肺腺癌之限制。(109/10/1）
 
       備註1：非小細胞肺癌病患的第二線治療用藥之定義為：病患需先經第一線含鉑化學治療，或70歲(含)以上接受過第一線化學治療後，因疾病惡化，此時所給予之治療即為第二線用藥。（97/6/1）
 
       備註2：非小細胞肺癌病患的第三線治療用藥之定義為：病患需先經第一線化學藥物治療後，因疾病惡化，再經第二線不同的化學藥物治療之後，若疾病再度惡化，此時所給予之治療即為第三線用藥。'
-- regulation_id: REG-0319
+- regulation_id: REG-0321
   section_number: 9.30.
   section_title: 9.30. Dasatinib(如Sprycel)：(98/1/1、102/4/1、104/12/1、110/5/1、113/6/1、115/2/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (102/4/1、104/12/1、110/5/1)
   - (110/5/1)
@@ -1447,11 +1452,11 @@ regulations:
       (3)需檢送病歷及對imatinib耐受性不良或無效的證明(104/12/1)。
 
       3.治療患有慢性期費城染色體陽性慢性骨髓性白血病(Ph+ CML) 之1歲以上的兒童病人。(110/5/1)'
-- regulation_id: REG-0320
+- regulation_id: REG-0322
   section_number: '4.1'
   section_title: 4.1 ~3項規定內之疾病診斷或追蹤若需依據基因檢測報告，則需符合全民健康保險藥品給付規定之通則十二。(113/6/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (115/2/1)
   medications:
@@ -1464,11 +1469,11 @@ regulations:
   reference_annotations:
     original_clause: 4.1 ~3項規定內之疾病診斷或追蹤若需依據基因檢測報告，則需符合全民健康保險藥品給付規定之通則十二。(113/6/1)
     full_text: 5.Dasatinib、nilotinib與bosutinib不得合併使用。(115/2/1)
-- regulation_id: REG-0321
+- regulation_id: REG-0323
   section_number: 9.31.
   section_title: 9.31. Sunitinib（如Sutent）：（98/2/1、98/5/1、99/1/1、99/2/1、101/5/1、102/1/1、104/12/1、110/12/1、112/3/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (99/2/1)
   - (99/2/1)
@@ -1526,11 +1531,11 @@ regulations:
       (3)不可合併使用化學治療或相關標靶藥物。（102/1/1）
 
       (4)經事前專案審查核准後使用，且需每3個月評估一次。'
-- regulation_id: REG-0322
+- regulation_id: REG-0324
   section_number: 9.32.1.
   section_title: 9.32.1. Nilotinib 200mg(如Tasigna 200mg)（98/6/1、99/1/1、104/12/1、113/6/1、115/2/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (104/12/1)
   medications:
@@ -1553,11 +1558,11 @@ regulations:
       2.必須檢附耐受性不良或治療無效的證明。(104/12/1)
 
       3.Nilotinib、dasatinib與bosutinib不得合併使用。（98/6/1、99/1/1、104/12/1、115/2/1)'
-- regulation_id: REG-0323
+- regulation_id: REG-0325
   section_number: 9.32.2.
   section_title: 9.32.2. Nilotinib 150mg(如Tasigna 150mg)：(101/7/1、104/12/1、113/6/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (104/12/1)
   - (113/6/1)
@@ -1576,11 +1581,11 @@ regulations:
     full_text: '1.限用於新確診之慢性期費城染色體陽性的慢性骨髓性白血病。(104/12/1)
 
       2.疾病診斷或追蹤若需依據基因檢測報告，則需符合全民健康保險藥品給付規定之通則十二。(113/6/1)'
-- regulation_id: REG-0324
+- regulation_id: REG-0326
   section_number: 9.33.
   section_title: 9.33. Thalidomide（如Thado）：(98/7/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1593,11 +1598,11 @@ regulations:
   reference_annotations:
     original_clause: 9.33. Thalidomide（如Thado）：(98/7/1)
     full_text: 治療新診斷多發性骨髓瘤。使用時須和prednisolone及oral melphalan併用，或和骨髓移植併用，或和palmidronate併用於骨髓移植後之治療。
-- regulation_id: REG-0325
+- regulation_id: REG-0327
   section_number: 9.34.
   section_title: 9.34. Sorafenib(如Nexavar)：(98/10/1、100/6/1、101/8/1、104/12/1、105/11/1、106/1/1、107/7/1、108/6/1、108/12/1、109/1/1、112/8/1、114/2/1、114/6/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (100/6/1)
   - (108/12/1)
@@ -1609,7 +1614,11 @@ regulations:
   - (107/7/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Sorafenib (索拉非尼)
+    - Durvalumab (度伐利尤單抗)
+    - Atezolizumab (阿特珠單抗)
+    - Lenvatinib (樂伐替尼)
   conditions_of_payment:
     indications:
     - Liver Cancer / Hepatocellular Carcinoma (肝癌)
@@ -1661,11 +1670,11 @@ regulations:
       (2)需經事前審查核准後使用，每次申請之療程以3個月為限，送審時需檢送影像資料，每3個月評估一次。
 
       (3)Sorafenib與lenvatinib不得合併使用。(107/7/1)'
-- regulation_id: REG-0326
+- regulation_id: REG-0328
   section_number: 9.35.
   section_title: 9.35. carmustine植入劑(如Gliadel Wafer)：(100/2/1)附表八之四
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1681,16 +1690,17 @@ regulations:
     full_text: '1.作為復發性多形神經膠母細胞瘤病人的手術輔助，且不得與temozolomide併用。
 
       2.需經事前審查核准後使用。'
-- regulation_id: REG-0327
+- regulation_id: REG-0329
   section_number: 9.36.1.
   section_title: 9.36.1. Everolimus 5mg及10mg(如Afinitor 5mg及10mg)：（100/2/1、102/1/1、104/9/1、104/12/1、106/3/1、108/10/1、109/4/1、114/12/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (104/12/1、108/10/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Sunitinib (舒尼替尼)
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
@@ -1739,11 +1749,11 @@ regulations:
       5.除晚期腎細胞癌之外，其他疾病需經事前審查核准後使用，每次申請之療程以3個月為限。初次申請時需檢送病理報告及影像報告，之後每3個月申請一次，再次申請時需檢附影像資料及前次治療結果評估資料證實無惡化，才可繼續使用。(104/12/1、108/10/1)
 
       6.限每日最大劑量為10mg。（108/10/1）'
-- regulation_id: REG-0328
+- regulation_id: REG-0330
   section_number: 9.36.2.
   section_title: 9.36.2. Everolimus 2.5mg及5mg(如Votubia)：（102/1/1、106/4/1、111/2/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (106/4/1、111/2/1)
   - (111/2/1)
@@ -1789,11 +1799,11 @@ regulations:
       Terminology Criteria for Adverse Events(CTCAE), version4.0.)
 
       (4)限每日最大劑量為10mg。'
-- regulation_id: REG-0329
+- regulation_id: REG-0331
   section_number: 9.37.
   section_title: 9.37. Bevacizumab(如Avastin)：（100/6/1、101/05/1、106/4/1、108/3/1、109/6/1、112/8/1、113/3/1、113/6/1、113/9/1、114/3/1、114/6/1、114/8/1、114/10/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (108/3/1)
   - (106/4/1)
@@ -1814,7 +1824,11 @@ regulations:
   - (114/6/1、114/8/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Afatinib (阿法替尼)
+    - Erlotinib (厄洛替尼)
+    - Gefitinib (吉非替尼)
+    - Atezolizumab (阿特珠單抗)
   conditions_of_payment:
     indications:
     - Liver Cancer / Hepatocellular Carcinoma (肝癌)
@@ -1912,14 +1926,15 @@ regulations:
       6.與atezolizumab併用適用於未曾使用過全身性治療用藥之轉移性或無法手術切除且不適合局部治療或局部治療失敗之Child-Pugh A class晚期肝細胞癌，患者需符合atezolizumab之藥品給付規定。(112/8/1)
 
       7. Bevacizumab(限使用Alymsys、Avastin、Abevmy、Vegzelma或Mvasi)與atezolizumab及carboplatin、paclitaxel併用於轉移性非鱗狀非小細胞肺癌第一線治療，患者需符合免疫檢查點抑制劑之藥品給付規定。(114/6/1、114/8/1)'
-- regulation_id: REG-0330
+- regulation_id: REG-0332
   section_number: 9.38.
   section_title: 9.38. Temsirolimus(如Torisel)：（101/1/1）附表九之十一
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - 蛋白激酶抑制劑 / 標靶抗癌藥物 (VEGFR/TKI 標靶藥物)
     ingredients: []
   conditions_of_payment:
     indications:
@@ -1936,11 +1951,11 @@ regulations:
       III.血色素低於正常值12gm/dL\nIV.矯正後血鈣值超過10mg/dL\nV.\t乳酸脫氫酶(lactate dehydrogenase)超過1.5倍正常值上限\n\
       VI.超過一個以上的器官有轉移病灶。\n(3)無效後則不給付其他酪胺酸激酶阻斷劑TKI。\n2.病人若對藥物產生耐受性不佳（intolerance），則以原來藥物減量為原則，若嚴重耐受性不佳，可以換其他酪胺酸激酶阻斷劑（tyrosine\
       \ kinase inhibitor, TKI）。"
-- regulation_id: REG-0331
+- regulation_id: REG-0333
   section_number: 9.39.
   section_title: 9.39. Flutamide；buserelin：（90/8/1、101/7/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1961,11 +1976,11 @@ regulations:
       2.攝護腺癌病人接受根除性攝護腺切除手術治療後，PSA逐漸升高有局部復發或遠處轉移之情況。
 
       3.癌症臨床期別為T2、T3，準備接受根除性攝護腺切除手術治療或其他定效治療，包括irradiation之前為求tumor volume reduction，作為neoadjuvant治療之目的。'
-- regulation_id: REG-0332
+- regulation_id: REG-0334
   section_number: 9.40.
   section_title: 9.40. Bicalutamide：（89/10/1、101/7/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1978,11 +1993,11 @@ regulations:
   reference_annotations:
     original_clause: 9.40. Bicalutamide：（89/10/1、101/7/1）
     full_text: 限用於與LHRH類似劑療法或手術去勢療法併用於進展性攝護腺癌。
-- regulation_id: REG-0333
+- regulation_id: REG-0335
   section_number: 9.41.
   section_title: 9.41. Pazopanib（如Votrient）：（101/8/1、104/4/1、106/3/1、110/12/1、112/10/1）附表九之十三
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (106/3/1)
   medications:
@@ -2027,11 +2042,11 @@ regulations:
       neuroectodermal tumor)或突起性表皮纖維惡性腫瘤(dermatofibrosarcoma protuberance)的患者。（104/4/1、112/10/1）
 
       (3)須經事前審查核准後使用，每次申請療程以三個月為限，每三個月需再次申請。(須檢附影像學報告)'
-- regulation_id: REG-0334
+- regulation_id: REG-0336
   section_number: 9.42.
   section_title: 9.42. Bendamustine（如Innomustine）：(101/10/1、103/2/1、108/10/1、113/2/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (103/2/1)
   - (108/10/1)
@@ -2072,11 +2087,11 @@ regulations:
       7.不得與fludarabine合併使用。(103/2/1)
 
       8.須經事前審查核准後使用，每次申請最多六個（月）療程；若為依前述第6項與polatuzumab vedotin和rituximab併用時，每次申請最多3個療程，且最多給付6個療程。(101/10/1、113/2/1)。'
-- regulation_id: REG-0335
+- regulation_id: REG-0337
   section_number: 9.43.
-  section_title: 9.43. Lenalidomide(如Revlimid)：（101/12/1、106/10/1、109/2/1、109/8/1、112/4/1、114/10/1、115/3/1、115/4/1、115/5/1）
+  section_title: 9.43. Lenalidomide(如Revlimid)：（101/12/1、106/10/1、109/2/1、109/8/1、112/4/1、114/10/1、115/3/1、115/4/1、115/5/1、115/8/1、115/9/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (114/10/1、115/3/1、115/4/1)
   medications:
@@ -2100,7 +2115,7 @@ regulations:
 
       ⅱ.高血鈣(c...'
   reference_annotations:
-    original_clause: 9.43. Lenalidomide(如Revlimid)：（101/12/1、106/10/1、109/2/1、109/8/1、112/4/1、114/10/1、115/3/1、115/4/1、115/5/1）
+    original_clause: 9.43. Lenalidomide(如Revlimid)：（101/12/1、106/10/1、109/2/1、109/8/1、112/4/1、114/10/1、115/3/1、115/4/1、115/5/1、115/8/1、115/9/1）
     full_text: '1.多發性骨髓瘤：
 
       (1)先前尚未接受過任何治療且不適用造血幹細胞移植的多發性骨髓瘤患者可使用lenalidomide併用dexamethasone作為第一線治療。開始治療時病患須同時符合下列I與Ⅱ的條件：（109/2/1、109/8/1、112/4/1）
@@ -2174,7 +2189,7 @@ regulations:
 
       Ⅱ.每天限給付1粒。
 
-      3.Lenalidomide(限使用Revlimid)與rituximab(限使用Rixathon)併用，治療先前曾接受至少一線全身性治療之復發性或難治性濾泡性淋巴瘤成人病人：（115/5/1）
+      3.Lenalidomide(限使用Revlimid及Leavdo)與rituximab(除Mabthera以外)併用，治療先前曾接受至少一線全身性治療之復發性或難治性濾泡性淋巴瘤成人病人：（115/5/1、115/8/1、115/9/1）
 
       (1)具CD20抗原陽性。
 
@@ -2182,19 +2197,19 @@ regulations:
 
       (3)開始使用前之疾病狀態需出現下列任一情形：
 
-      有單一腫瘤直徑7公分以上者；
+      Ⅰ.有單一腫瘤直徑7公分以上者；
 
-      有三顆以上之腫瘤其直徑大於3公分以上者；
+      Ⅱ.有三顆以上之腫瘤其直徑大於3公分以上者；
 
-      脾臟腫大，其長度16公分以上者；
+      Ⅲ.脾臟腫大，其長度16公分以上者；
 
-      對vital organs造成擠壓者；
+      Ⅳ.對vital organs造成擠壓者；
 
-      周邊血中出現淋巴球增生超過5000/ mm3者；
+      Ⅴ.周邊血中出現淋巴球增生超過5000/ mm3者；
 
-      出現任一系列血球低下者（platelet<100,000/ mm3，或 Hb<10gm/dL，或absolute neutrophil count<1500/mm3)。
+      Ⅵ.出現任一系列血球低下者（platelet<100,000/ mm3，或 Hb<10gm/dL，或absolute neutrophil count<1500/mm3)。
 
-      B symptoms。
+      Ⅶ.B symptoms。
 
       (4)需經事前審查核准後使用，每3個月需再次申請，再次申請時需檢附影像資料（CT或MRI），若未達partial remission或 complete
       remission，則不予給付。
@@ -2202,11 +2217,11 @@ regulations:
       (5)每位病人最多給付12個療程，若病情惡化應即停止使用。
 
       (6)每日限處方1粒。'
-- regulation_id: REG-0336
+- regulation_id: REG-0338
   section_number: 9.44.1.
   section_title: 9.44.1. Azacitidine 注射劑（如Vidaza）：（102/1/1、111/5/1、111/8/1、112/2/1、112/8/1、114/3/1、114/8/1、114/12/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (114/8/1)
   medications:
@@ -2255,11 +2270,11 @@ regulations:
       (3)需經事前審查核准後使用，每2個療程需再次申請；再次申請時需檢附療效評估資料，若病情惡化應即停止使用。
 
       (4)最多給付6個療程。'
-- regulation_id: REG-0337
+- regulation_id: REG-0339
   section_number: 9.44.2.
   section_title: 9.44.2. Azacitidine 口服製劑（如Onureg）：(114/5/1、114/10/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (114/10/1)
   medications:
@@ -2279,22 +2294,26 @@ regulations:
       \ (CRi)。\n(3)之前未曾接受azacitidine或decitabine藥物治療。\n2.\t需經事前審查核准後使用，初次申請為3個療程，需檢附染色體檢測結果報告；每3個療程需再次申請，可治療至疾病復發\
       \ (定義為周邊血或骨髓觀察到的芽細胞超過5%或新出現髓外侵犯)或無法耐受藥物毒性為止。\n3.\t每人以24個療程為上限。\n4.\t不得與midostaurin、venetoclax及gilteritinib等標靶藥品併用。\n\
       5.\t病人接受本藥物治療後，不再給付造血幹細胞移植。\n6.本藥品與quizartinib僅得擇一使用，除因耐受性不良，不得互換。(114/10/1)"
-- regulation_id: REG-0338
+- regulation_id: REG-0340
   section_number: 9.45.
-  section_title: 9.45. Afatinib（如Giotrif）：(103/5/1、106/11/1、108/6/1、108/11/1、109/4/1、109/6/1、109/10/1、111/4/1、113/3/1、113/6/1、113/10/1)
+  section_title: 9.45. Afatinib（如Giotrif）：(103/5/1、106/11/1、108/6/1、108/11/1、109/4/1、109/6/1、109/10/1、111/4/1、113/3/1、113/6/1、113/10/1、115/8/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (108/6/1、108/11/1、113/6/1)
   - (108/6/1)
   - (108/6/1)
   - (109/4/1)
-  - (109/6/1、109/10/1、111/4/1、113/3/1、113/10/1)
-  - (109/6/1、111/4/1、113/10/1)
+  - (109/6/1、109/10/1、111/4/1、113/3/1、113/10/1、115/8/1)
+  - (109/6/1、111/4/1、113/10/1、115/8/1)
   - (113/3/1)
   medications:
-    drug_classes: []
-    ingredients: []
+    drug_classes:
+    - 蛋白激酶抑制劑 / 標靶抗癌藥物 (VEGFR/TKI 標靶藥物)
+    ingredients:
+    - Osimertinib (奧希替尼)
+    - Erlotinib (厄洛替尼)
+    - Gefitinib (吉非替尼)
   conditions_of_payment:
     indications:
     - Lung Cancer (肺癌)
@@ -2305,18 +2324,18 @@ regulations:
 
       (2)先前已使用過第一線含鉑化學治療，但仍惡化的局部晚期或轉移性之鱗狀組織非小細胞肺癌之第二線治療。(108/6/1)
 
-      2.使用注意事項(106/11/1、108/6/1、109/4/1、109/10/1、111/4/1、113/3/1）
+      2.使用注意事項(106/11/1、108/6/1、109/4/1、109/10/1、111/4/1、113/3/1、115/8/1）
 
-      (1)用於具有EGFR-TK基因突變之局部晚期或轉移性肺腺癌之第一線治療：病歷應留存確實患有肺腺癌之病理...'
+      (1)用於具有EGFR-TK基因突變之局部晚期或轉移性肺腺癌之第一線治療：病歷應留存確實...'
   reference_annotations:
-    original_clause: 9.45. Afatinib（如Giotrif）：(103/5/1、106/11/1、108/6/1、108/11/1、109/4/1、109/6/1、109/10/1、111/4/1、113/3/1、113/6/1、113/10/1)
+    original_clause: 9.45. Afatinib（如Giotrif）：(103/5/1、106/11/1、108/6/1、108/11/1、109/4/1、109/6/1、109/10/1、111/4/1、113/3/1、113/6/1、113/10/1、115/8/1)
     full_text: '1. 限單獨使用於：
 
       (1)具有EGFR-TK基因突變之局部晚期或轉移性(即第ⅢB、ⅢC期或第Ⅳ期)之肺腺癌病患之第一線治療，需檢附EGFR基因檢測結果報告，且需符合全民健康保險藥品給付規定之通則十二。(108/6/1、108/11/1、113/6/1)
 
       (2)先前已使用過第一線含鉑化學治療，但仍惡化的局部晚期或轉移性之鱗狀組織非小細胞肺癌之第二線治療。(108/6/1)
 
-      2.使用注意事項(106/11/1、108/6/1、109/4/1、109/10/1、111/4/1、113/3/1）
+      2.使用注意事項(106/11/1、108/6/1、109/4/1、109/10/1、111/4/1、113/3/1、115/8/1）
 
       (1)用於具有EGFR-TK基因突變之局部晚期或轉移性肺腺癌之第一線治療：病歷應留存確實患有肺腺癌之病理或細胞檢查報告，及EGFR-TK基因突變檢測報告。
 
@@ -2328,18 +2347,19 @@ regulations:
 
       (5)本藥品與gefitinib及erlotinib不得併用。(109/4/1)
 
-      (6)本藥品於第一線使用時，與osimertinib、dacomitinib及bevacizumab併用erlotinib之治療組合僅得擇一使用，除因耐受性不良，不得互換。(109/6/1、109/10/1、111/4/1、113/3/1、113/10/1)
+      (6)本藥品於第一線使用時，與osimertinib、dacomitinib、bevacizumab併用erlotinib之治療組合及aumolertinib僅得擇一使用，除因耐受性不良，不得互換。(109/6/1、109/10/1、111/4/1、113/3/1、113/10/1、115/8/1)
 
-      Ⅰ.如需更換使用osimertinib，必須符合osimertinib第一線使用於具有EGFR Exon 19 Del或Exon 21 L858R基因突變之局部侵犯性或轉移性（即為IIIB、IIIC期或第Ⅳ期）肺腺癌病患之限制。(109/6/1、111/4/1、113/10/1)
+      Ⅰ.如需更換使用osimertinib或aumolertinib，必須符合osimertinib或aumolertinib第一線使用於具有EGFR Exon
+      19 Del或Exon 21 L858R基因突變之局部侵犯性或轉移性（即為IIIB、IIIC期或第Ⅳ期）肺腺癌病患之限制。(109/6/1、111/4/1、113/10/1、115/8/1)
 
       Ⅱ.如需更換使用dacomitinib，必須符合dacomitinib第一線使用於具有EGFR-TK Exon 19 Del或Exon 21 L858R點突變，且無腦轉移(non-CNS)之局部侵犯性或轉移性肺腺癌之限制。(109/10/1）
 
       Ⅲ.如需更換使用bevacizumab併用erlotinib之治療組合，必須符合bevacizumab第一線使用於具有EGFR Exon 21 L858R突變且腦轉移之無法手術切除的轉移性（第Ⅳ期）非鱗狀非小細胞肺癌肺腺癌之限制。(113/3/1)'
-- regulation_id: REG-0339
+- regulation_id: REG-0341
   section_number: 9.46.
   section_title: 9.46. Tegafur/gimeracil/oteracil複方製劑(如TS-1）：(103/6/1、105/12/1、109/2/1、113/2/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (105/12/1)
   - (109/2/1)
@@ -2384,11 +2404,11 @@ regulations:
       (2)不得與標靶治療、其他化療或免疫檢查點抑制劑併用。
 
       4.與gemcitabine合併使用作為晚期或復發之膽道癌第一線治療。(113/2/1)'
-- regulation_id: REG-0340
+- regulation_id: REG-0342
   section_number: 9.47.
   section_title: 9.47. Lapatinib（如Tykerb）：（103/9/1、106/11/1、110/2/1、114/2/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (106/11/1)
   - (110/2/1、114/2/1)
@@ -2411,11 +2431,11 @@ regulations:
       2.每3個月需進行療效評估，病歷應留存評估紀錄，無疾病惡化方可繼續使用。(106/11/1)
 
       3. Lapatinib、trastuzumab emtansine和trastuzumab deruxtecan僅能擇一給付，不得互換。(110/2/1、114/2/1)'
-- regulation_id: REG-0341
+- regulation_id: REG-0343
   section_number: 9.48.
   section_title: 9.48. Eribulin（如Halaven）：（103/12/1、106/11/1、108/12/1、110/2/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (106/11/1)
   - (110/2/1)
@@ -2455,11 +2475,11 @@ regulations:
       (1)限單獨使用於治療無法手術切除或轉移性脂肪肉瘤成人患者，且先前應至少接受一次含anthracycline之全身化療。
 
       (2)須經事前審查核准後使用，每次申請以3個療程為限，再次申請時應檢附前次治療結果評估資料證實無惡化，才可繼續使用。'
-- regulation_id: REG-0342
+- regulation_id: REG-0344
   section_number: 9.49.
   section_title: 9.49. Abiraterone(如Zytiga）：（103/12/1、105/9/1、106/9/1、108/3/1、109/5/1、109/10/1、110/2/1、110/3/1、110/11/1、111/3/1、112/9/1、113/8/1、113/9/1、114/6/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (114/6/1)
   - (106/9/1、109/10/1)
@@ -2521,11 +2541,11 @@ regulations:
       及olaparib 與 abiraterone併用，終生僅給付一種治療，且除非出現嚴重不耐受反應導致必須永久停止治療，不得互換。(112/9/1、114/6/1)
 
       7.本品與radium-223 dichloride不得合併使用。(108/3/1)'
-- regulation_id: REG-0343
+- regulation_id: REG-0345
   section_number: 9.50.
   section_title: 9.50. Crizotinib (如Xalkori)：(104/9/1、106/11/1、107/5/1、108/7/1、108/9/1、108/12/1、110/7/1、111/2/1、111/8/1、112/11/1、113/6/1、113/9/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (106/11/1、111/8/1、113/9/1)
   - (108/9/1)
@@ -2549,10 +2569,9 @@ regulations:
 
       每次申請事前審查之療程以三個月為限，每三個月需再次申請。
 
-      初次申請時需檢具確實患有非小細胞肺癌之病理或細胞檢查報告，及ALK突變檢測報告，或ROS-1突變檢測報告，且需符合全民健康保險藥品給付規定之通則十二。
-      (107/5/1、108/9/1、111/2/1、113/6/1)
+      初次申請時需檢具確實患有非小細胞肺癌之病理或細胞檢查報告，及ALK突變檢測報告，或ROS-1突變檢測報告，且需符合全民健康保險藥品給付規定之通則十二。(107/5/1、108/9/1、111/2/1、113/6/1)
 
-      再次申請時需附上治療後相關臨床資料，如給藥4週後，需追蹤胸部X...'
+      再次申請時需附上治療後相關臨床資料，如給藥4週後，需追蹤胸部X光...'
   reference_annotations:
     original_clause: 9.50. Crizotinib (如Xalkori)：(104/9/1、106/11/1、107/5/1、108/7/1、108/9/1、108/12/1、110/7/1、111/2/1、111/8/1、112/11/1、113/6/1、113/9/1)
     full_text: '適用於ALK陽性之晚期非小細胞肺癌第一線治療，且於113年9月1日前經審核同意用藥，後續評估符合續用申請條件者。(106/11/1、111/8/1、113/9/1)
@@ -2563,8 +2582,7 @@ regulations:
 
       每次申請事前審查之療程以三個月為限，每三個月需再次申請。
 
-      初次申請時需檢具確實患有非小細胞肺癌之病理或細胞檢查報告，及ALK突變檢測報告，或ROS-1突變檢測報告，且需符合全民健康保險藥品給付規定之通則十二。
-      (107/5/1、108/9/1、111/2/1、113/6/1)
+      初次申請時需檢具確實患有非小細胞肺癌之病理或細胞檢查報告，及ALK突變檢測報告，或ROS-1突變檢測報告，且需符合全民健康保險藥品給付規定之通則十二。(107/5/1、108/9/1、111/2/1、113/6/1)
 
       再次申請時需附上治療後相關臨床資料，如給藥4週後，需追蹤胸部X光或電腦斷層等影像檢查評估療效，往後每4週做胸部X光檢查，每3個月需追蹤其作為評估藥效的影像(如胸部X光或電腦斷層)，若病情惡化即不得再次申請。(108/12/1、112/11/1)
 
@@ -2573,18 +2591,22 @@ regulations:
       Crizotinib與entrectinib用於ROS-1陽性之晚期非小細胞肺癌時，僅得擇一使用，除因病人使用後，發生嚴重不良反應或耐受不良之情形外，不得互換。(110/7/1)
 
       每日最大劑量限500mg。(108/9/1)'
-- regulation_id: REG-0344
+- regulation_id: REG-0346
   section_number: 9.51.
   section_title: 9.51. Regorafenib（如Stivarga）：（104/9/1、105/8/1、107/12/1、108/6/1、110/5/1、110/6/1、113/6/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (108/6/1、110/5/1)
   - (110/5/1)
   - (107/12/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Sorafenib (索拉非尼)
+    - Regorafenib (瑞戈非尼)
+    - Sunitinib (舒尼替尼)
+    - Nivolumab (納武單抗)
   conditions_of_payment:
     indications:
     - Liver Cancer / Hepatocellular Carcinoma (肝癌)
@@ -2623,11 +2645,11 @@ regulations:
       (4)Regorafenib與ramucirumab、nivolumab僅能擇一使用，不得互換。(110/5/1)
 
       4.本藥品不得與trifluridine/tipiracil併用。(107/12/1)'
-- regulation_id: REG-0345
+- regulation_id: REG-0347
   section_number: 9.52.
   section_title: 9.52. Vemurafenib(如Zelboraf)：(104/11/1、110/3/1、113/6/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (113/6/1)
   medications:
@@ -2637,23 +2659,23 @@ regulations:
     indications:
     - Melanoma (黑色素瘤)
     laboratory_criteria: []
-    summary: '1.用於治療BRAF V600突變陽性ECOG≤2且罹患無法切除(第ⅢC期)或轉移性(第Ⅳ期)黑色素瘤之病人。需檢附BRAF V600基因突變分析檢測報告，且需符合全民健康保險藥品給付規定之通則十二。(113/6/1)
+    summary: '1. 用於治療BRAF V600突變陽性ECOG≤2且罹患無法切除(第ⅢC期)或轉移性(第Ⅳ期)黑色素瘤之病人。需檢附BRAF V600基因突變分析檢測報告，且需符合全民健康保險藥品給付規定之通則十二。(113/6/1)
 
       2.需經事前審查核准後使用，每次申請療程以三個月為限，如發現病情惡化應停止使用。再申請應檢附前次治療結果評估資料。
 
       3.本品與dabrafenib (併用trametinib) 僅能擇一使用，除因耐受性不良，不得互換。(110/3/1）'
   reference_annotations:
     original_clause: 9.52. Vemurafenib(如Zelboraf)：(104/11/1、110/3/1、113/6/1）
-    full_text: '1.用於治療BRAF V600突變陽性ECOG≤2且罹患無法切除(第ⅢC期)或轉移性(第Ⅳ期)黑色素瘤之病人。需檢附BRAF V600基因突變分析檢測報告，且需符合全民健康保險藥品給付規定之通則十二。(113/6/1)
+    full_text: '1. 用於治療BRAF V600突變陽性ECOG≤2且罹患無法切除(第ⅢC期)或轉移性(第Ⅳ期)黑色素瘤之病人。需檢附BRAF V600基因突變分析檢測報告，且需符合全民健康保險藥品給付規定之通則十二。(113/6/1)
 
       2.需經事前審查核准後使用，每次申請療程以三個月為限，如發現病情惡化應停止使用。再申請應檢附前次治療結果評估資料。
 
       3.本品與dabrafenib (併用trametinib) 僅能擇一使用，除因耐受性不良，不得互換。(110/3/1）'
-- regulation_id: REG-0346
+- regulation_id: REG-0348
   section_number: 9.53.
   section_title: 9.53. Panitumumab（如Vectibix）：(105/4/1、107/6/1、110/6/1、113/6/1、115/2/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (98/8/1、110/6/1、113/6/1、115/2/1)
   - (107/6/1、115/2/1)
@@ -2693,11 +2715,11 @@ regulations:
       (2)本藥品須經事前審查核准後使用，每次申請之療程以9週為限，再次申請必須提出客觀證據(如：影像學)證實無惡化，才可繼續使用。
 
       (3)使用總療程以 18 週為上限。'
-- regulation_id: REG-0347
+- regulation_id: REG-0349
   section_number: 9.54.
   section_title: 9.54. Enzalutamide（如Xtandi）：（105/9/1、106/9/1、108/3/1、109/10/1、110/3/1、110/11/1、111/3/1、112/9/1、113/8/1、114/6/1、114/10/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (112/9/1)
   - (106/9/1)
@@ -2790,11 +2812,11 @@ regulations:
       及olaparib 與 abiraterone併用，終生僅給付一種治療，且除非出現嚴重不耐受反應導致必須永久停止治療，不得互換。(112/9/1、114/6/1)
 
       8.本品與radium-223 dichloride不得合併使用。(108/3/1)'
-- regulation_id: REG-0348
+- regulation_id: REG-0350
   section_number: 9.55.
   section_title: 9.55. Ruxolitinib(如Jakavi)：(105/10/1、113/3/1、113/6/1、114/1/1、114/10/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (113/6/1)
   - (113/6/1)
@@ -2888,11 +2910,11 @@ regulations:
       ⅲ.發生皮質類固醇依賴性：在逐漸調降皮質類固醇期間，無法將劑量調降至每日0.25 mg/kg 以下維持至少7 天。
 
       ⅳ.發生皮質類固醇不耐受性:初始治療後，發生 CTCAE G3 嚴重不良反應之情形。'
-- regulation_id: REG-0349
+- regulation_id: REG-0351
   section_number: 9.56.
   section_title: 9.56. Brentuximab vedotin(如Adcetris)：(105/10/1、106/4/1、109/2/1、111/2/1、114/12/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (109/2/1)
   - (111/2/1)
@@ -2977,11 +2999,11 @@ regulations:
       (MF，第ⅡB期或以上)、Sezary症候群(SS)或原發性皮膚退行分化型大細胞淋巴瘤（pcALCL），且CD30需於超過10%的腫瘤細胞呈現陽性。（111/2/1、114/12/1）
 
       (2)須經事前審查核准後使用，首次申請療程以4個療程為限，再申請應檢附前次治療結果評估資料。若病人病情已達完全緩解，得再給付2個療程；若病情惡化即須停止使用。健保給付以6個療程為上限。（111/2/1）'
-- regulation_id: REG-0350
+- regulation_id: REG-0352
   section_number: 9.57.
   section_title: 9.57. Clofarabine（如Evoltra）：（106/1/1、109/12/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -3004,16 +3026,17 @@ regulations:
       2.須事前審查核准後使用，申請時須檢附完整之造血幹細胞移植計畫，並詳細記載確認捐贈者名單、確認移植之執行醫院及移植前調適治療等資料。
 
       3.不得與blinatumomab併用。（109/12/1）'
-- regulation_id: REG-0351
+- regulation_id: REG-0353
   section_number: 9.58.
   section_title: 9.58. Axitinib(如Inlyta)：（106/1/1、108/12/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (108/12/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Sunitinib (舒尼替尼)
   conditions_of_payment:
     indications:
     - Renal Cell Carcinoma (RCC) (腎細胞癌)
@@ -3030,11 +3053,11 @@ regulations:
       2.無效後則不給付temsirolimus。(108/12/1)
 
       3.需經事前審查核准後使用，每次申請之療程以3個月為限，送審時需檢送影像資料，每3個月評估一次。'
-- regulation_id: REG-0352
+- regulation_id: REG-0354
   section_number: 9.59.
   section_title: 9.59. Ceritinib(如Zykadia)：(106/9/1、106/11/1、108/7/1、108/12/1、111/2/1、111/8/1、112/11/1、113/6/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (108/7/1、111/8/1)
   - (108/12/1、111/2/1、113/6/1)
@@ -3074,11 +3097,11 @@ regulations:
       Ceritinib與crizotinib、alectinib、brigatinib、lorlatinib用於ALK陽性之晚期非小細胞肺癌第一線治療時，僅得擇一使用，除因病人使用後，發生嚴重不良反應或耐受不良之情形外，不得互換。(108/7/1、108/12/1、111/8/1、112/11/1)
 
       每日最大劑量限450mg。(108/7/1)'
-- regulation_id: REG-0353
+- regulation_id: REG-0355
   section_number: 9.60.
   section_title: 9.60. Alectinib(如Alecensa)：(106/11/1、108/12/1、111/2/1、111/8/1、112/11/1、113/6/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (108/12/1、111/8/1)
   - (108/12/1、111/2/1、113/6/1)
@@ -3118,11 +3141,11 @@ regulations:
       Alectinib與ceritinib、crizotinib、brigatinib、lorlatinib用於ALK陽性之晚期非小細胞肺癌第一線治療時，僅得擇一使用，除因病人使用後，發生嚴重不良反應或耐受不良之情形外，不得互換。(108/12/1、111/8/1、112/11/1)
 
       每日最大劑量限1200mg。(108/12/1)'
-- regulation_id: REG-0354
+- regulation_id: REG-0356
   section_number: 9.61.
   section_title: 9.61. Ibrutinib (如Imbruvica)：(106/11/1、108/9/1、111/1/1、112/7/1、112/12/1、113/2/1、114/10/1、115/5/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (108/9/1)
   - (115/5/1)
@@ -3190,11 +3213,11 @@ regulations:
       (6)在非IGHV突變二線以上病人及CLL三線以上病人，ibrutinib、acalabrutinib與zanubrutinib三者僅能擇一使用，唯有在出現無法忍受其副作用時方可互換。三者使用總療程合併計算，以全部24個月為上限。（115/5/1)
 
       (7)每日至多處方3粒。'
-- regulation_id: REG-0355
+- regulation_id: REG-0357
   section_number: 9.62.
   section_title: 9.62. Pomalidomide(如Pomalyst):(107/1/1、109/2/1、112/4/1、113/9/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (109/2/1、112/4/1)
   medications:
@@ -3257,14 +3280,14 @@ regulations:
       (2)再次申請時必須確定paraprotein (M-protein)未上升(即表示對藥物有反應或為穩定狀態);或對部分non-secretory type
       多發性骨髓瘤病人以骨髓檢查plasma cell為療效依據，證明為對藥物有反應或為穩定狀態，方可繼續使用。續用時的申請以3個療程為限。疾病若發生惡化情形應即停止使用。（107/1/1、112/4/1）
 
-      4. 每人終生以10個療程為上限，Pomado則每人以6個療程為上限。（107/1/1、112/4/1、113/9/1）
+      4.每人終生以10個療程為上限，Pomado則每人以6個療程為上限。（107/1/1、112/4/1、113/9/1）
 
       5.不得與其他蛋白酶體抑制劑(proteasome inhibitor)或免疫調節劑(immunomodulatory drugs)併用。 (109/2/1、112/4/1)'
-- regulation_id: REG-0356
+- regulation_id: REG-0358
   section_number: '6.112'
   section_title: 6.112 年3月31日以前已核定用藥之病人，得經事前審查核准後，使用至總療程上限（即終生10個療程，Pomado則每人6個療程）或使用期間發生疾病惡化為止。（112/4/1、113/9/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (113/9/1)
   medications:
@@ -3277,11 +3300,11 @@ regulations:
   reference_annotations:
     original_clause: 6.112 年3月31日以前已核定用藥之病人，得經事前審查核准後，使用至總療程上限（即終生10個療程，Pomado則每人6個療程）或使用期間發生疾病惡化為止。（112/4/1、113/9/1）
     full_text: 7.每日最多處方1粒(113/9/1)
-- regulation_id: REG-0357
+- regulation_id: REG-0359
   section_number: 9.63.
   section_title: 9.63. Lenvatinib(如Lenvima)：(107/7/1、109/1/1、109/8/1、112/8/1、114/2/1、114/6/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (109/8/1)
   - (109/1/1、109/8/1、112/8/1、114/2/1、114/6/1)
@@ -3289,7 +3312,12 @@ regulations:
   - (109/1/1、109/8/1、112/8/1、114/2/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Sorafenib (索拉非尼)
+    - Durvalumab (度伐利尤單抗)
+    - Regorafenib (瑞戈非尼)
+    - Atezolizumab (阿特珠單抗)
+    - Lenvatinib (樂伐替尼)
   conditions_of_payment:
     indications:
     - Liver Cancer / Hepatocellular Carcinoma (肝癌)
@@ -3327,16 +3355,17 @@ regulations:
       (2)需經事前審查核准後使用，初次申請之療程以3個月為限，之後每3個月評估一次。送審時需檢送影像資料，無疾病惡化方可繼續使用。(109/1/1、114/6/1)
 
       (3)Lenvatinib、sorafenib、atezolizumab併用bevacizumab、tremelimumab併用durvalumab僅得擇一給付，不得互換；且lenvatinib治療失敗後，不得申請使用regorafenib或ramucirumab。(109/1/1、109/8/1、112/8/1、114/2/1)'
-- regulation_id: REG-0358
+- regulation_id: REG-0360
   section_number: 9.64.
   section_title: 9.64. Blinatumomab(如Blincyto)：(107/9/1、109/12/1、112/12/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (112/12/1)
   - (112/12/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 蛋白激酶抑制劑 / 標靶抗癌藥物 (VEGFR/TKI 標靶藥物)
     ingredients: []
   conditions_of_payment:
     indications:
@@ -3357,11 +3386,11 @@ regulations:
       (4)不得與酪胺酸激酶抑制劑(TKI)（如imatinib、dasatinib、nilotinib、ponatinib）等併用。\n(5)若使用blinatumomab後，MRD若未消失但疾病仍在完全緩解時，不得申請給付inotuzumab\
       \ ozogamicin。\n(6)每位病人限給付2療程（56支）。\n4.\t須事前審查核准後使用，申請時須檢附完整之造血幹細胞移植計畫，並詳細記載確認捐贈者名單、確認移植之執行醫院及移植前調適治療等資料。\n\
       5.病人已依前述第3項獲得給付治療者，不得再申請前述之第1、2項給付治療。(112/12/1)"
-- regulation_id: REG-0359
+- regulation_id: REG-0361
   section_number: 9.65.
   section_title: 9.65. Pralatrexate(如Folotyn)：(107/10/1、110/5/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -3381,18 +3410,21 @@ regulations:
       2.需經事前審查核准後使用，初次申請時應檢附移植計劃資料。
 
       3.每人至多給付3個療程，第1個療程後需進行疾病評估，若病情仍持續惡化，應即停止使用。（110/5/1）'
-- regulation_id: REG-0360
+- regulation_id: REG-0362
   section_number: 9.66.
   section_title: 9.66. Trifluridine/tipiracil(如Lonsurf)：(107/12/1、109/12/1、110/6/1、113/6/1、115/2/1、115/6/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (107/12/1、109/12/1、110/6/1、113/6/1、115/2/1、115/6/1)
   - (109/12/1、115/2/1)
   - (115/2/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Fruquintinib (芙奎替尼 (呋喹替尼))
+    - Regorafenib (瑞戈非尼)
+    - Fruquintinib (芙奎替尼)
   conditions_of_payment:
     indications:
     - Colorectal Cancer (大腸直腸癌)
@@ -3416,11 +3448,11 @@ regulations:
       irinotecan為基礎的化學療法，以及HER2/neu標靶治療[如果適合]）的轉移性胃腺癌或胃食道接合處腺癌病人。
 
       3.病歷應留存確診之病理或檢查報告及影像診斷證明等，並紀錄治療相關臨床資料，以備查核。倘病人臨床症狀或影像顯示疾病惡化，則應停藥。(115/2/1)'
-- regulation_id: REG-0361
+- regulation_id: REG-0363
   section_number: 9.67.
   section_title: 9.67. Ponatinib(如Iclusig)：(107/12/1、113/6/1、115/2/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (107/12/1、115/2/1)
   medications:
@@ -3452,11 +3484,11 @@ regulations:
       2.需經事前審查核准後使用。首次申請事前審查之療程以3個月為限，之後每3個月需再次申請，再次申請時應檢附前次治療結果評估資料，包含BCR-ABL定量RT-PCR報告。
 
       3.若使用後未出現治療反應、無法耐受藥物副作用或疾病進展，則必須停止使用。'
-- regulation_id: REG-0362
+- regulation_id: REG-0364
   section_number: 9.68.
   section_title: 9.68. Radium-223(如Xofigo)：(108/3/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -3473,11 +3505,11 @@ regulations:
     full_text: "限用於治療去勢抗性攝護腺癌(castration-resistant prostate cancer)病患，其合併有症狀的骨轉移且尚未有臟器轉移者，且病人須符合下列三項條件：\n\
       1.\t患者須合併有症狀之骨轉移且骨轉移≧2處\n2.\t每位患者最高使用六個療程\n3.\t須經事前審查核准後使用，申請時需檢附：\n(1)\t.用藥紀錄(證明為有症狀的骨轉移、需常規使用止痛藥物)\n\
       (2)\t.三個月內影像報告證明骨轉移≧2處\n(3)\t.三個月內影像報告證明無臟器轉移\n4.\t不得合併使用abiraterone、enzalutamide及其他治療因惡性腫瘤伴隨骨骼事件之藥品，如denosumab、bisphosphonates等。"
-- regulation_id: REG-0363
+- regulation_id: REG-0365
   section_number: 9.69.
-  section_title: 9.69. 免疫檢查點抑制劑(如atezolizumab；nivolumab；pembrolizumab；avelumab；ipilimumab；durvalumab；tremelimumab；cemiplimab製劑)：(108/4/1、108/6/1、109/4/1、109/6/1、109/11/1、110/5/1、110/10/1、111/4/1、111/6/1、112/8/1、112/10/1、112/12/1、113/2/1、113/4/1、113/5/1、113/6/1、113/8/1、114/1/1、114/2/1、114/6/1、114/8/1、114/10/1、115/2/1、115/4/1、115/5/1、115/6/1)
+  section_title: 9.69. 免疫檢查點抑制劑(如atezolizumab；nivolumab；pembrolizumab；avelumab；ipilimumab；durvalumab；tremelimumab；cemiplimab製劑；dostarlimab製劑)：(108/4/1、108/6/1、109/4/1、109/6/1、109/11/1、110/5/1、110/10/1、111/4/1、111/6/1、112/8/1、112/10/1、112/12/1、113/2/1、113/4/1、113/5/1、113/6/1、113/8/1、114/1/1、114/2/1、114/6/1、114/8/1、114/10/1、115/2/1、115/4/1、115/5/1、115/6/1、115/8/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (109/4/1、109/11/1、114/6/1、114/8/1)
   - (114/8/1)
@@ -3490,14 +3522,14 @@ regulations:
   - (109/6/1)
   - (113/4/1、113/6/1、115/2/1)
   - (114/6/1)
-  - (112/12/1、113/4/1、113/6/1、113/8/1、114/2/1、114/6/1、115/2/1、115/4/1、115/6/1)
+  - (112/12/1、113/4/1、113/6/1、113/8/1、114/2/1、114/6/1、115/2/1、115/4/1、115/6/1、115/8/1)
   - (112/8/1、112/10/1、114/2/1)
   - (114/2/1)
   - (114/2/1)
-  - (112/12/1、113/4/1、113/8/1、114/6/1、115/6/1)
-  - (115/6/1)
+  - (112/12/1、113/4/1、113/8/1、114/6/1、115/6/1、115/8/1)
+  - (115/6/1、115/8/1)
   - (112/12/1、113/4/1、113/8/1)
-  - (114/6/1、114/8/1)
+  - (114/6/1、114/8/1、115/8/1)
   - (112/12/1、114/2/1)
   - (113/4/1、113/6/1、115/2/1)
   - (113/4/1、113/6/1、115/2/1、115/4/1)
@@ -3509,7 +3541,7 @@ regulations:
   - (115/2/1)
   - (114/2/1)
   - (109/4/1、112/10/1、115/2/1)
-  - (109/4/1、109/6/1、111/4/1、112/8/1、112/10/1、112/12/1、113/2/1、113/4/1、113/6/1、113/8/1、114/2/1、114/6/1、114/8/1、114/10/1、115/2/1、115/5/1、115/6/1)
+  - (109/4/1、109/6/1、111/4/1、112/8/1、112/10/1、112/12/1、113/2/1、113/4/1、113/6/1、113/8/1、114/2/1、114/6/1、114/8/1、114/10/1、115/2/1、115/5/1、115/6/1、115/8/1)
   - (108/4/1、111/6/1、112/8/1、113/5/1、115/2/1)
   - (109/4/1、109/11/1、114/6/1、114/8/1、115/6/1)
   - (108/4/1、110/10/1、111/6/1、115/6/1)
@@ -3531,7 +3563,14 @@ regulations:
   - (109/11/1、114/1/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Sorafenib (索拉非尼)
+    - Durvalumab (度伐利尤單抗)
+    - Pembrolizumab (派姆單抗)
+    - Nivolumab (納武單抗)
+    - Regorafenib (瑞戈非尼)
+    - Atezolizumab (阿特珠單抗)
+    - Lenvatinib (樂伐替尼)
   conditions_of_payment:
     indications:
     - Liver Cancer / Hepatocellular Carcinoma (肝癌)
@@ -3555,7 +3594,7 @@ regulations:
 
       鞏固治療：限durvalumab用於第三期局部晚期、無法手術切除且腫瘤表現PD-L1 ≥ 1%之非小細胞肺癌成人病人，非鱗狀癌者需為EGFR/ALK/ROS-1腫瘤基因原生型、鱗狀癌者需為EGFR/ALK腫瘤基因原生型，病人須於接受根治性同步放射治療合併至少2個週期含鉑化療後無惡化(無PD)，且至多使用12個月。(114/8/1)...'
   reference_annotations:
-    original_clause: 9.69. 免疫檢查點抑制劑(如atezolizumab；nivolumab；pembrolizumab；avelumab；ipilimumab；durvalumab；tremelimumab；cemiplimab製劑)：(108/4/1、108/6/1、109/4/1、109/6/1、109/11/1、110/5/1、110/10/1、111/4/1、111/6/1、112/8/1、112/10/1、112/12/1、113/2/1、113/4/1、113/5/1、113/6/1、113/8/1、114/1/1、114/2/1、114/6/1、114/8/1、114/10/1、115/2/1、115/4/1、115/5/1、115/6/1)
+    original_clause: 9.69. 免疫檢查點抑制劑(如atezolizumab；nivolumab；pembrolizumab；avelumab；ipilimumab；durvalumab；tremelimumab；cemiplimab製劑；dostarlimab製劑)：(108/4/1、108/6/1、109/4/1、109/6/1、109/11/1、110/5/1、110/10/1、111/4/1、111/6/1、112/8/1、112/10/1、112/12/1、113/2/1、113/4/1、113/5/1、113/6/1、113/8/1、114/1/1、114/2/1、114/6/1、114/8/1、114/10/1、115/2/1、115/4/1、115/5/1、115/6/1、115/8/1)
     full_text: "1.本類藥品得於藥品許可證登載之適應症及藥品仿單內，單獨使用於下列患者：\n(1)黑色素瘤：腫瘤無法切除或轉移之第三期或第四期黑色素瘤病人，先前曾接受過至少一次全身性治療失敗者。\n\
       (2)非小細胞肺癌：(109/4/1、109/11/1、114/6/1、114/8/1)\n鞏固治療：限durvalumab用於第三期局部晚期、無法手術切除且腫瘤表現PD-L1\
       \ ≥ 1%之非小細胞肺癌成人病人，非鱗狀癌者需為EGFR/ALK/ROS-1腫瘤基因原生型、鱗狀癌者需為EGFR/ALK腫瘤基因原生型，病人須於接受根治性同步放射治療合併至少2個週期含鉑化療後無惡化(無PD)，且至多使用12個月。(114/8/1)\n\
@@ -3577,77 +3616,87 @@ regulations:
       Ⅳ.未曾進行肝臟移植。\nⅤ.於109年4月1日前經審核同意用藥，後續評估符合續用申請條件者。(109/4/1)\n(9)默克細胞癌：限avelumab用於先前已使用過platinum類化學治療失敗後，又有疾病惡化之轉移性第四期默克細胞癌(Merkel\
       \ Cell Carcinoma)之成人患者。(109/6/1)\n(10)食道鱗狀細胞癌：限nivolumab用於曾接受合併含鉑及fluoropyrimidine化學治療之後惡化的無法切除晚期或復發性食道鱗狀細胞癌病人。(113/4/1、113/6/1、115/2/1)\n\
       (11)大腸直腸癌：限pembrolizumab做為無法切除或轉移性高微衛星不穩定性(MSI-H)或錯誤配對修復功能不足性(dMMR)大腸直腸癌(CRC)之成年病人第一線治療。(114/6/1)\n\
-      2.本類藥品得於藥品許可證登載之適應症及藥品仿單內，併用其他藥品於下列患者：\n(112/12/1、113/4/1、113/6/1、113/8/1、114/2/1、114/6/1、115/2/1、115/4/1、115/6/1)\n\
+      2.本類藥品得於藥品許可證登載之適應症及藥品仿單內，併用其他藥品於下列患者：\n(112/12/1、113/4/1、113/6/1、113/8/1、114/2/1、114/6/1、115/2/1、115/4/1、115/6/1、115/8/1)\n\
       (1)晚期肝細胞癌第一線用藥(112/8/1、112/10/1、114/2/1):\nⅠ.限atezolizumab與bevacizumab併用，或限durvalumab與tremelimumab併用，適用於治療未曾接受全身性療法之轉移性或無法手術切除且不適合局部治療或局部治療失敗之Child-Pugh\
       \ A class晚期肝細胞癌成人患者，並符合下列條件之一：（112/8/1、112/10/1、114/2/1)\ni.肝外轉移（遠端轉移或肝外淋巴結侵犯）。\n\
       ii.大血管侵犯（腫瘤侵犯主門靜脈或侵犯左/右靜脈第一或第二分支）。\niii.經導管動脈化學藥物栓塞治療（Transcatheter arterial\
       \ chemo embolization, T.A.C.E.）失敗者，需提供患者於12個月內>=3次局部治療之紀錄。\nII.須排除有以下任一情形：\n\
       i.曾接受器官移植。\nii.正在接受免疫抑制藥物治療。\niii.有上消化道出血之疑慮且未接受完全治療 (須有半年內之內視鏡評估報告)。\nIII.sorafenib、lenvatinib、atezolizumab與bevacizumab併用、durvalumab與tremelimumab併用僅得擇一給付，不得互換。(114/2/1)\n\
       IV.atezolizumab與bevacizumab併用或durvalumab與tremelimumab併用治療失敗後，不得申請使用regorafenib或ramucirumab。(114/2/1)\n\
-      (2)非小細胞肺癌：(112/12/1、113/4/1、113/8/1、114/6/1、115/6/1)\n非小細胞肺癌術前輔助治療：限用於可切除（腫瘤≧4公分或淋巴結陽性N1/N2(排除N3)，且無疾病轉移M0）之不具EGFR或ALK\
-      \ 腫瘤基因異常成人病人，且至多3個療程，並依下列條件使用：(115/6/1)\n非鱗狀非小細胞肺癌：限nivolumab與pemetrexed(限使用Pexeda、Apeta或Pemetrexed\
-      \ Sandoz)及含鉑化療併用。\n鱗狀細胞非小細胞肺癌：限nivolumab與含鉑化療併用。\n轉移性鱗狀非小細胞肺癌第一線用藥：限pembrolizumab與carboplatin及paclitaxel併用至多使用4個療程，接續單用pembrolizumab治療。(112/12/1、113/4/1、113/8/1)\n\
-      轉移性非鱗狀非小細胞肺癌第一線：限pembrolizumab與pemetrexed(限使用Pexeda、Apeta或Pemetrexed Sandoz)及含鉑類化學療法併用，或限atezolizumab與bevacizumab(限使用Alymsys、Avastin、Abevmy、Vegzelma或Mvasi)及carboplatin、paclitaxel併用，做為轉移性且不具有EGFR/ALK/ROS-1腫瘤基因異常的非鱗狀非小細胞肺癌第一線治療。(114/6/1、114/8/1)\n\
+      (2)非小細胞肺癌：(112/12/1、113/4/1、113/8/1、114/6/1、115/6/1、115/8/1)\n非小細胞肺癌術前輔助治療：限用於可切除（腫瘤≧4公分或淋巴結陽性N1/N2(排除N3)，且無疾病轉移M0）之不具EGFR或ALK\
+      \ 腫瘤基因異常成人病人，且至多3個療程，並依下列條件使用：(115/6/1、115/8/1)\n非鱗狀非小細胞肺癌：限nivolumab與pemetrexed(限使用Pexeda、Apeta、Pemetrexed\
+      \ Sandoz或Alimta Avos)及含鉑化療併用。\n鱗狀細胞非小細胞肺癌：限nivolumab與含鉑化療併用。\n轉移性鱗狀非小細胞肺癌第一線用藥：限pembrolizumab與carboplatin及paclitaxel併用至多使用4個療程，接續單用pembrolizumab治療。(112/12/1、113/4/1、113/8/1)\n\
+      轉移性非鱗狀非小細胞肺癌第一線：限pembrolizumab與pemetrexed(限使用Pexeda、Apeta、Pemetrexed Sandoz或Alimta\
+      \ Avos)及含鉑類化學療法併用，或限atezolizumab與bevacizumab(限使用Alymsys、Avastin、Abevmy、Vegzelma或Mvasi)及carboplatin、paclitaxel併用，做為轉移性且不具有EGFR/ALK/ROS-1腫瘤基因異常的非鱗狀非小細胞肺癌第一線治療。(114/6/1、114/8/1、115/8/1)\n\
       (3)小細胞肺癌：限atezolizumab與carboplatin及etoposide併用，或durvalumab與etoposide及carboplatin或cisplatin兩者之一併用，適用於先前未曾接受化療，且無腦部或無脊髓轉移之擴散期(extensive\
       \ stage)小細胞肺癌成人患者。(112/12/1、114/2/1)\n(4)惡性肋膜間皮瘤：限ipilimumab與nivolumab併用於無法切除之惡性肋膜間皮瘤且病理組織顯示為非上皮型(Non-epithelioid)成人病人的第一線治療。(113/4/1、113/6/1、115/2/1)\n\
       (5)胃癌（不含胃腸基質瘤及神經內分泌腫瘤/癌）：(113/4/1、113/6/1、115/2/1、115/4/1)\n限nivolumab併用fluoropyrimidine（5-FU或capecitabine）及oxaliplatin，用於第一線治療晚期或轉移性且不具有HER2過度表現的胃癌病人。(113/4/1、113/6/1、115/2/1)\n\
       與zolbetuximab僅得擇一使用，且治療失敗時不可互換。(115/4/1)\n(6)膽道癌第一線用藥：限durvalumab與cisplatin及\
       \ gemcitabine併用至多使用8個療程，接續單用durvalumab於先前未接受過治療或不可手術之局部晚期或轉移性膽道癌 (biliary tract\
       \ cancer)，並須排除以下任一情形：(114/2/1)\nⅠ.壺腹癌。\nⅡ.曾接受異體器官移植。\nⅢ.具有或曾有活動性自體免疫或發炎性疾病。\n\
-      (7)早期三陰性乳癌：非轉移性、第II期至第IIIb期（cT1c N1-2 或 T2-4 N0-2）成年病人(114/6/1)：\n術前前導性治療：限pembrolizumab每3週1次與carboplatin和paclitaxel併用至多4個療程，接續限pembrolizumab每3週1次與cyclophosphamide和doxorubicin或epirubicin併用至多4個療程，做為初診斷病人前導性治療用藥。\n\
-      術後輔助治療：上述病人接受過術前前導性治療後，限手術後未達pCR者，單用pembrolizumab每3週1次，做為輔助治療用藥，且至多使用9個療程。\n\
-      上述pembrolizumab用於早期三陰性乳癌依前述療程規定至多使用17個療程，且用於術後輔助治療，pembrolizumab與olaparib僅能擇一支付。\n\
-      食道鱗狀細胞癌：限nivolumab與fluoropyrimidine及cisplatin或oxaliplatin併用，用於無法接受化學放射性治療或手術切除等治癒性治療之晚期或轉移性食道鱗狀細胞癌成人病人的第一線治療。(115/2/1)\n\
+      (7)早期三陰性乳癌：非轉移性、第II期至第IIIb期（cT1c N1-2 或 T2-4 N0-2）成年病人(114/6/1)：\nⅠ.術前前導性治療：限pembrolizumab每3週1次與carboplatin和paclitaxel併用至多4個療程，接續限pembrolizumab每3週1次與cyclophosphamide和doxorubicin或epirubicin併用至多4個療程，做為初診斷病人前導性治療用藥。\n\
+      Ⅱ.術後輔助治療：上述病人接受過術前前導性治療後，限手術後未達pCR者，單用pembrolizumab每3週1次，做為輔助治療用藥，且至多使用9個療程。\n\
+      Ⅲ.上述pembrolizumab用於早期三陰性乳癌依前述療程規定至多使用17個療程，且用於術後輔助治療，pembrolizumab與olaparib僅能擇一支付。\n\
+      (8)食道鱗狀細胞癌：限nivolumab與fluoropyrimidine及cisplatin或oxaliplatin併用，用於無法接受化學放射性治療或手術切除等治癒性治療之晚期或轉移性食道鱗狀細胞癌成人病人的第一線治療。(115/2/1)\n\
       (9)泌尿道上皮癌：限nivolumab與cisplatin及gemcitabine併用至多6個療程，接續限單用nivolumab，做為無法切除或轉移性泌尿道上皮癌成人病人的第一線治療。(115/2/1)\n\
-      3.使用條件：\n(1)\t病人身體狀況良好(ECOG≦1)。\n(2)\t病人之心肺與肝腎功能須符合下列所有條件：\nI.NYHA(the New York\
-      \ Heart Association) Functional Class I或II\nII.GOT<60U/L及GPT<60U/L，且T-bilirubin<1.5mg/dL\
-      \ (晚期肝細胞癌以及膽道癌病人可免除此條件)(114/2/1)\nIII.腎功能：(晚期腎細胞癌病人可免除此條件) (109/4/1、112/10/1、115/2/1)\n\
-      i.泌尿道上皮癌第一線用藥：單獨使用pembrolizumab須符合eGFR>30mL/min/1.73m2且<60mL/min/1.73m2；nivolumab併用化療須符合eGFR\
+      (10) 子宮內膜癌：限dostarlimab與carboplatin及paclitaxel(除GENETAXYL CREM LESS及TAXOL以外)併用至多使用6個療程，接續單用dostarlimab用於治療患有錯誤配對修復功能不足（dMMR）或微衛星高度不穩定性（MSI-H）之原發性晚期或首次復發性子宮內膜癌(EC）成人病人第一線治療，並需符合以下任一條件：(115/8/1）\n\
+      先前未曾接受全身性治療。\n先前曾接受術前/術後輔助全身性治療，且於治療結束後至少6個月以後才首次復發。\n3.使用條件：\n(1)\t病人身體狀況良好(ECOG≦1)。\n\
+      (2)\t病人之心肺與肝腎功能須符合下列所有條件：\nI.NYHA(the New York Heart Association) Functional\
+      \ Class I或II\nII.GOT<60U/L及GPT<60U/L，且T-bilirubin<1.5mg/dL (晚期肝細胞癌以及膽道癌病人可免除此條件)(114/2/1)\n\
+      III.腎功能：(晚期腎細胞癌病人可免除此條件) (109/4/1、112/10/1、115/2/1)\ni.泌尿道上皮癌第一線用藥：單獨使用pembrolizumab須符合eGFR>30mL/min/1.73m2且<60mL/min/1.73m2；nivolumab併用化療須符合eGFR\
       \ ≥60mL/min/1.73m2。\nii.泌尿道上皮癌第二線用藥：eGFR>30mL/min/1.73m2。\niii.泌尿道上皮癌維持治療（112/10/1）：eGFR>30mL/min/1.73m2。\n\
       iv.其他癌別：Creatinine<1.5mg/dL且eGFR>60mL/min/1.73m2。\n(3)病人之生物標記表現：除ipilimumab與nivolumab併用於惡性肋膜間皮瘤外，依個別藥品使用其對應之第三等級體外診斷醫療器材(class\
-      \ III IVD)所檢測之PD-L1表現量需符合下表：(109/4/1、109/6/1、111/4/1、112/8/1、112/10/1、112/12/1、113/2/1、113/4/1、113/6/1、113/8/1、114/2/1、114/6/1、114/8/1、114/10/1、115/2/1、115/5/1、115/6/1)\n\
+      \ III IVD)所檢測之PD-L1表現量需符合下表：(109/4/1、109/6/1、111/4/1、112/8/1、112/10/1、112/12/1、113/2/1、113/4/1、113/6/1、113/8/1、114/2/1、114/6/1、114/8/1、114/10/1、115/2/1、115/5/1、115/6/1、115/8/1)\n\
       \n【給付與評估表格 / Clinical Assessment Table】:\n給付範圍 | 事審代碼 | pembrolizumab (Dako\
       \ 22C3或Ventana SP263*) | nivolumab (Dako 28-8或Ventana SP263*) | atezolizumab\
       \ (Ventana SP142) | avelumab (Ventana SP263*) | durvalumab (Ventana SP263*)\
-      \ | cemiplimab(Dako 22C3或Ventana SP263*)\n黑色素瘤 | P001 | 不需檢附報告 | 不需檢附報告 | 本藥品尚未給付於此適應症\
-      \ | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n非小細胞肺癌術前輔助治療(併用) | P016 | 本藥品尚未給付於此適應症\
-      \ | 不需檢附報告 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n非小細胞肺癌\
-      \ 鞏固治療 | P015 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 |\
-      \ PD-L1≧ 1% | 本藥品尚未給付於此適應症\n鱗狀、非鱗狀非小細胞肺癌第一線用藥(單用) | P013 | TPS≧50% | 本藥品尚未給付於此適應症\
-      \ | TC≧50%或IC≧10% | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | TPS≧50%\n非鱗狀非小細胞肺癌第一線用藥 (併用)\
-      \ | P013 | 不需檢附報告 | 本藥品尚未給付於此適應症 | 不需檢附報告 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n\
-      鱗狀非小細胞肺癌第二線用藥 | P011 | TPS≧50% | TC≧50% | TC≧50%或IC≧10% | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\
-      \ | 本藥品尚未給付於此適應症\n非鱗狀非小細胞肺癌第三線用藥 | P012 | TPS≧50% | TC≧50% | TC≧50%或IC≧10% |\
-      \ 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n鱗狀非小細胞肺癌第一線用藥（併用化療） | P014 | TPS\
-      \ 1~49% | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n\
+      \ | cemiplimab(Dako 22C3或Ventana SP263*) | dostarlimab\n黑色素瘤 | P001 | 不需檢附報告\
+      \ | 不需檢附報告 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n\
+      非小細胞肺癌術前輔助治療(併用) | P016 | 本藥品尚未給付於此適應症 | 不需檢附報告 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\
+      \ | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n非小細胞肺癌 鞏固治療 | P015 | 本藥品尚未給付於此適應症\
+      \ | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | PD-L1≧ 1% | 本藥品尚未給付於此適應症 |\
+      \ 本藥品尚未給付於此適應症\n鱗狀、非鱗狀非小細胞肺癌第一線用藥(單用) | P013 | TPS≧50% | 本藥品尚未給付於此適應症 | TC≧50%或IC≧10%\
+      \ | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | TPS≧50% | 本藥品尚未給付於此適應症\n非鱗狀非小細胞肺癌第一線用藥 (併用)\
+      \ | P013 | 不需檢附報告 | 本藥品尚未給付於此適應症 | 不需檢附報告 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\
+      \ | 本藥品尚未給付於此適應症\n鱗狀非小細胞肺癌第二線用藥 | P011 | TPS≧50% | TC≧50% | TC≧50%或IC≧10% |\
+      \ 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n非鱗狀非小細胞肺癌第三線用藥\
+      \ | P012 | TPS≧50% | TC≧50% | TC≧50%或IC≧10% | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 |\
+      \ 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n鱗狀非小細胞肺癌第一線用藥（併用化療） | P014 | TPS 1~49% | 本藥品尚未給付於此適應症\
+      \ | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n\
       小細胞肺癌 (併用化療) | P021 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 不需檢附報告 | 本藥品尚未給付於此適應症 |\
-      \ 不需檢附報告 | 本藥品尚未給付於此適應症\n典型何杰金氏淋巴瘤 | P031 | 不需檢附報告 | 不需檢附報告 | 本藥品尚未給付於此適應症 |\
-      \ 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n泌尿道上皮癌維持療法 | P043 | 本藥品尚未給付於此適應症\
-      \ | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 不需檢附報告 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n泌尿道上皮癌第一線用藥\
-      \ (單用) | P042 | CPS≧10 | 本藥品尚未給付於此適應症 | IC≧5% (113年8月1日前審核同意符合續用申請條件者) | 本藥品尚未給付於此適應症\
-      \ | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n泌尿道上皮癌第一線用藥(併用化療) | P044 | 本藥品尚未給付於此適應症 | TC≥1%\
+      \ 不需檢附報告 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n典型何杰金氏淋巴瘤 | P031 | 不需檢附報告 | 不需檢附報告 |\
+      \ 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n\
+      泌尿道上皮癌維持療法 | P043 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 不需檢附報告 | 本藥品尚未給付於此適應症\
+      \ | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n泌尿道上皮癌第一線用藥 (單用) | P042 | CPS≧10 | 本藥品尚未給付於此適應症\
+      \ | IC≧5% (113年8月1日前審核同意符合續用申請條件者) | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\
+      \ | 本藥品尚未給付於此適應症\n泌尿道上皮癌第一線用藥(併用化療) | P044 | 本藥品尚未給付於此適應症 | TC≥1% | 本藥品尚未給付於此適應症\
       \ | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n泌尿道上皮癌第二線用藥 |\
       \ P041 | CPS≧10 | TC≧5% | IC≧5% (113年8月1日前審核同意符合續用申請條件者) | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\
-      \ | 本藥品尚未給付於此適應症\n胃腺癌 (109年4月1日前審核同意符合續用申請條件者) | P051 | CPS≧1 | 不需檢附報告 | 本藥品尚未給付於此適應症\
-      \ | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n胃癌第一線用藥 (併用化療) | P052 | 本藥品尚未給付於此適應症\
-      \ | CPS≧5 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n晚期腎細胞癌\
-      \ | P061 | 本藥品尚未給付於此適應症 | 不需檢附報告 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\
-      \ | 本藥品尚未給付於此適應症\n晚期肝細胞癌(109年4月1日前審核同意符合續用) | P071 | 本藥品尚未給付於此適應症 | 不需檢附報告 (109年4月1日前審核同意符合續用申請條件者)\
-      \ | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n晚期肝細胞癌第一線用藥 （併用）\
-      \ | P072 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 不需檢附報告（併用bevacizumab） | 本藥品尚未給付於此適應症\
-      \ | 不需檢附報告(併用tremelimumab) | 本藥品尚未給付於此適應症\n頭頸部鱗狀細胞癌第一線用藥 | P082 | CPS≧20 | 本藥品尚未給付於此適應症\
-      \ | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n頭頸部鱗狀細胞癌第二線用藥\
-      \ | P081 | TPS≧50% | TC≧10% | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n\
-      默克細胞癌 | P091 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 不需檢附報告 | 本藥品尚未給付於此適應症\
+      \ | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n胃腺癌 (109年4月1日前審核同意符合續用申請條件者) | P051 | CPS≧1\
+      \ | 不需檢附報告 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n\
+      胃癌第一線用藥 (併用化療) | P052 | 本藥品尚未給付於此適應症 | CPS≧5 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 |\
+      \ 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n晚期腎細胞癌 | P061 | 本藥品尚未給付於此適應症 |\
+      \ 不需檢附報告 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n\
+      晚期肝細胞癌(109年4月1日前審核同意符合續用) | P071 | 本藥品尚未給付於此適應症 | 不需檢附報告 (109年4月1日前審核同意符合續用申請條件者)\
+      \ | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n\
+      晚期肝細胞癌第一線用藥 （併用） | P072 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 不需檢附報告（併用bevacizumab）\
+      \ | 本藥品尚未給付於此適應症 | 不需檢附報告(併用tremelimumab) | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n頭頸部鱗狀細胞癌第一線用藥\
+      \ | P082 | CPS≧20 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\
+      \ | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n頭頸部鱗狀細胞癌第二線用藥 | P081 | TPS≧50% | TC≧10% | 本藥品尚未給付於此適應症\
+      \ | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n默克細胞癌 | P091\
+      \ | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 不需檢附報告 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\
       \ | 本藥品尚未給付於此適應症\n食道鱗狀細胞癌第一線用藥(併用化療) | P102 | 本藥品尚未給付於此適應症 | TC≧1% | 本藥品尚未給付於此適應症\
-      \ | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n食道鱗狀細胞癌第二線用藥 (單用) | P101 | 本藥品尚未給付於此適應症\
-      \ | TC≧1% | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n惡性肋膜間皮瘤(ipilimumab併用nivolumab)\
-      \ | P111 | 本藥品尚未給付於此適應症 | 不需檢附報告， 病理組織為非上皮型(Non-epithelioid) | 本藥品尚未給付於此適應症\
-      \ | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n膽道癌 (併用化療) | P121 | 本藥品尚未給付於此適應症\
-      \ | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 不需檢附報告 | 本藥品尚未給付於此適應症\n早期三陰性乳癌(併用化療)\
+      \ | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n食道鱗狀細胞癌第二線用藥\
+      \ (單用) | P101 | 本藥品尚未給付於此適應症 | TC≧1% | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\
+      \ | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n惡性肋膜間皮瘤(ipilimumab併用nivolumab) | P111 | 本藥品尚未給付於此適應症\
+      \ | 不需檢附報告， 病理組織為非上皮型(Non-epithelioid) | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\
+      \ | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n膽道癌 (併用化療) | P121 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\
+      \ | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 不需檢附報告 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n早期三陰性乳癌(併用化療)\
       \ | P131 | 不需檢附報告 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\
-      \ | 本藥品尚未給付於此適應症\n大腸直腸癌 | P141 | 不需檢附報告 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\
-      \ | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n* Ventana SP263僅適用於檢測非小細胞肺癌或泌尿道上皮癌維持療法\n(4)每位病人每個適應症限給付一種免疫檢查點抑制劑且不得互換，治療期間亦不可合併申報該適應症之標靶藥物（atezolizumab與bevacizumab併用於晚期肝細胞癌第一線用藥及非鱗狀非小細胞肺癌第一線用藥除外），無效後或給付時程期滿後則不再給付該適應症相關之標靶藥物。（enfortumab\
+      \ | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n大腸直腸癌 | P141 | 不需檢附報告 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\
+      \ | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\n子宮內膜癌第一線 (併用化療）\
+      \ | P151 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症 | 本藥品尚未給付於此適應症\
+      \ | 本藥品尚未給付於此適應症 | 不需檢附報告\n* Ventana SP263僅適用於檢測非小細胞肺癌或泌尿道上皮癌維持療法\n(4)每位病人每個適應症限給付一種免疫檢查點抑制劑且不得互換，治療期間亦不可合併申報該適應症之標靶藥物（atezolizumab與bevacizumab併用於晚期肝細胞癌第一線用藥及非鱗狀非小細胞肺癌第一線用藥除外），無效後或給付時程期滿後則不再給付該適應症相關之標靶藥物。（enfortumab\
       \ vedotin用於局部晚期或轉移性泌尿道上皮癌第三線用藥及cetuximab用於頭頸部鱗狀細胞癌(不含鼻咽癌) 除外 ）。(108/4/1、111/6/1、112/8/1、113/5/1、115/2/1)\n\
       (5)給付時程期限：自初次處方用藥日起算2年（pembrolizumab用於早期三陰性乳癌依前述給付時程期限至多使用17個療程、durvalumab用於鞏固治療自初次處方用藥日起算1年、nivolumab用於非小細胞肺癌術前輔助治療至多使用3個療程）。(109/4/1、109/11/1、114/6/1、114/8/1、115/6/1)\n\
       (6)需經事前審查核准後使用。(108/4/1、110/10/1、111/6/1、115/6/1)\n(7)每次申請以12週為限，初次申請時需檢附以下資料：(108/6/1、109/11/1、111/6/1、113/6/1、114/6/1、115/2/1)\n\
@@ -3672,11 +3721,11 @@ regulations:
       \ illness rating scale) score >6\nIV.使用於早期三陰性乳癌術後輔助治療時，須檢附於乳房和/或手術切除的淋巴結中發現有殘餘的侵襲性癌症(non-pCR)佐證。(114/6/1)\n\
       Ⅴ其他佐證病歷資料。\n4.登錄與結案作業：(109/11/1、114/1/1）\n(1)醫師處方使用本類藥品，倘病人結束治療、停止用藥、未通過續用申請或達給付時程期限時，醫事機構須在28天內於VPN系統登錄結案。逾期未登錄結案者，系統自動結案，且不予支付該個案自前次事前審查核定日後申報之藥費。(109/11/1、114/1/1)\n\
       (2)已結案者自結案日後不予支付藥費。"
-- regulation_id: REG-0364
+- regulation_id: REG-0366
   section_number: 9.70.
   section_title: 9.70. Pertuzumab(如Perjeta)：(108/5/1、108/12/1、112/8/1、113/12/1、114/1/1、114/5/1、114/12/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (108/5/1、108/12/1、112/8/1、113/12/1)
   - (108/12/1、112/8/1)
@@ -3734,11 +3783,11 @@ regulations:
       Ⅱ：pertuzumab與trastuzumab皮下注射複方製劑(如Phesgo)
 
       (4)先前於早期乳癌已使用pertuzumab與trastuzumab併用或使用pertuzumab與trastuzumab皮下注射複方製劑(如Phesgo)者，不得再次申請pertuzumab與trastuzumab併用，惟於早期乳癌治療結束至首次疾病復發轉移時間超過12個月以上者得再次申請。(113/12/1)'
-- regulation_id: REG-0365
+- regulation_id: REG-0367
   section_number: 9.71.
   section_title: 9.71. Venetoclax (如Venclexta)：(108/9/1、110/7/1、112/7/1、114/8/1、114/10/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (110/7/1、114/8/1)
   - (110/7/1、114/8/1)
@@ -3810,11 +3859,11 @@ regulations:
       (3)需經事前審查核准後使用，每2個療程需再次申請；再次申請時需檢附療效評估資料，若病情惡化應即停止使用。
 
       (4)若併用低劑量cytarabine，每日至多處方6粒，最多給付4個療程。若併用azacitidine治療，每日至多處方4粒，最多給付6個療程。(110/7/1、114/8/1)'
-- regulation_id: REG-0366
+- regulation_id: REG-0368
   section_number: 9.72.
   section_title: 9.72. CDK4/6抑制劑 (如 ribociclib；palbociclib)：(108/10/1、108/12/1、109/4/1、109/10/1、110/5/1、110/10/1、113/1/1、113/3/1、114/7/1、115/1/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (109/10/1、110/5/1、110/10/1、113/1/1)
   - (115/1/1)
@@ -3822,7 +3871,8 @@ regulations:
   - (113/3/1、115/1/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Palbociclib (帕博西尼)
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
@@ -3893,11 +3943,11 @@ regulations:
       (3) ribociclib與palbociclib僅得擇一使用，唯有在耐受不良時方可轉換使用，使用總療程合併計算，以每人終生給付24個月為上限。(108/12/1)
 
       (4)若先前於早期乳癌使用abemaciclib無效後，或於晚期乳癌使用ribociclib、palbociclib無效後，不得再申請ribociclib、palbociclib。(113/3/1、115/1/1)'
-- regulation_id: REG-0367
+- regulation_id: REG-0369
   section_number: '6.110'
   section_title: 6.110 年9月30日以前已核定用藥之病人，得經事前審查核准後，使用至總療程(即終生24個月)或總療程期間疾病惡化為止，且後續不得再申請使用本類藥品。（110/10/1、113/1/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (109/4/1)
   medications:
@@ -3910,14 +3960,15 @@ regulations:
   reference_annotations:
     original_clause: 6.110 年9月30日以前已核定用藥之病人，得經事前審查核准後，使用至總療程(即終生24個月)或總療程期間疾病惡化為止，且後續不得再申請使用本類藥品。（110/10/1、113/1/1）
     full_text: 7.若先前使用 everolimus 無效後，不得再申請本類藥品。(109/4/1)
-- regulation_id: REG-0368
+- regulation_id: REG-0370
   section_number: 9.73.
   section_title: 9.73. Inotuzumab ozogamicin (如Besponsa)：(108/11/1、112/12/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - 蛋白激酶抑制劑 / 標靶抗癌藥物 (VEGFR/TKI 標靶藥物)
     ingredients: []
   conditions_of_payment:
     indications:
@@ -3944,11 +3995,11 @@ regulations:
 
       5.病人若已依達完全緩解但仍有殘餘疾病(MRD)之條件取得 blinatumomab 給付同意並接受治療後，MRD若未消失但疾病仍在完全緩解時，不得申請給付inotuzumab
       ozogamicin。（112/12/1）'
-- regulation_id: REG-0369
+- regulation_id: REG-0371
   section_number: 9.74.
   section_title: 9.74. Cabozantinib (如Cabometyx)： (108/12/1、110/12/1、114/8/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (108/12/1、110/12/1)
   - (114/8/1)
@@ -3996,11 +4047,11 @@ regulations:
       (2)須經事前審查核准後使用，每次申請療程以3個月為限，送審時需檢送影像資料，每3個月評估一次，無疾病惡化方可繼續使用。
 
       3.每日限用1粒。'
-- regulation_id: REG-0370
+- regulation_id: REG-0372
   section_number: 9.75.
   section_title: 9.75. Carfilzomib (如Kyprolis)：(109/2/1、112/4/1、113/4/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4067,11 +4118,11 @@ regulations:
       4. 不得與其他蛋白酶體抑制劑(proteasome inhibitor)或免疫調節劑(immunomodulatory drugs) 或daratumumab併用。（109/2/1、112/4/1、113/4/1）
 
       5. 112年3月31日以前已核定用藥之病人，得經事前審查核准後，使用至總療程上限（即終生10個療程）或使用期間發生疾病惡化為止。（112/4/1）'
-- regulation_id: REG-0371
+- regulation_id: REG-0373
   section_number: 9.76.
   section_title: 9.76. Midostaurin (如Rydapt)：(109/2/1、113/6/1、114/10/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (113/6/1)
   - (114/10/1)
@@ -4091,11 +4142,11 @@ regulations:
       \ promyelocytic leukemia，APL）的患者。\n3.\t首次用於標準前導期，可免事前審查，以2個療程為限，若2個療程後仍未達完全緩解之病患即不得再使用。\n\
       4.\t續用時需經事前審查核准後使用，申請時須檢附FLT3突變陽性檢測結果報告，且需符合全民健康保險藥品給付規定之通則十二，及日期、化學治療處方紀錄及療效評估，每次續用申請以2個療程為限，並需檢附前次治療結果評估資料證實無疾病進展，才可繼續使用。每人以總共給付6個療程為上限。(113/6/1)\n\
       5.\t若病患接受造血幹細胞移植後則將不再給付本藥品。\n6.本藥品與quizartinib僅得擇一使用，除因耐受性不良，不得互換。(114/10/1)"
-- regulation_id: REG-0372
+- regulation_id: REG-0374
   section_number: 9.77.
   section_title: 9.77. Ixazomib (如Ninlaro)：(109/3/1、112/4/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4113,7 +4164,7 @@ regulations:
 
       2.前述病患若於第二線治療使用，則需為具高風險細胞遺傳異常的病人群 (包括具del（17p）、t（4；14）、t(14；16)及1q21 amplification等染色體變化者)；若為第三線以上治療使用，則不需為具高風險遺傳異常者。
 
-      3. 需經事前審查核准後使用：（10...'
+      3.需經事前審查核准後使用：（109...'
   reference_annotations:
     original_clause: 9.77. Ixazomib (如Ninlaro)：(109/3/1、112/4/1)
     full_text: '1.與lenalidomide及dexamethasone合併使用於先前已接受至少一種治療失敗之多發性骨髓瘤病患，並符合下列條件之一：
@@ -4124,7 +4175,7 @@ regulations:
 
       2.前述病患若於第二線治療使用，則需為具高風險細胞遺傳異常的病人群 (包括具del（17p）、t（4；14）、t(14；16)及1q21 amplification等染色體變化者)；若為第三線以上治療使用，則不需為具高風險遺傳異常者。
 
-      3. 需經事前審查核准後使用：（109/3/1、112/4/1）
+      3.需經事前審查核准後使用：（109/3/1、112/4/1）
 
       (1) 初次申請以4個療程為限，且需同時符合下列Ⅰ.與Ⅱ.的條件：（109/3/1、112/4/1）
 
@@ -4162,16 +4213,12 @@ regulations:
       (3) 每人終生以12個療程為上限。（109/3/1、112/4/1）
 
       4. 除lenalidomide外，本案藥品不得與其他蛋白酶體抑制劑(proteasome inhibitor)或免疫調節劑(immunomodulatory
-      drugs)併用。（109/3/1、112/4/1）
-
-      5. 112年3月31日以前已核定用藥之病人，得經事前審查核准後，使用至總療程
-
-      上限（即終生12個療程）或使用期間發生疾病惡化為止。（112/4/1）'
-- regulation_id: REG-0373
+      drugs)併用。（109/3/1、112/4/1）'
+- regulation_id: REG-0375
   section_number: 9.78.
   section_title: 9.78. Daratumumab(如Darzalex靜脈注射劑與皮下注射劑)：(109/4/1、112/4/1、113/4/1、114/9/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (114/9/1)
   - (109/4/1、112/4/1、114/9/1)
@@ -4269,11 +4316,11 @@ regulations:
 
       3.除lenalidomide、thalidomide或bortezomib外，本案藥品不得與其他蛋白酶體抑制劑(proteasome inhibitor)或免疫調節劑(immunomodulatory
       drugs)併用。(109/4/1、112/4/1、114/9/1)'
-- regulation_id: REG-0374
+- regulation_id: REG-0376
   section_number: '4.112'
   section_title: 4.112 年3月31日以前已核定用藥之病人，得經事前審查核准後，使用至總療程上限（第一線治療以總共16輸注為上限，第二線以上治療以總共22次輸注為上限，接受第一線治療以後，不再給付第二線以上治療）或使用期間發生疾病惡化為止。（112/4/1、114/9/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4285,11 +4332,11 @@ regulations:
   reference_annotations:
     original_clause: 4.112 年3月31日以前已核定用藥之病人，得經事前審查核准後，使用至總療程上限（第一線治療以總共16輸注為上限，第二線以上治療以總共22次輸注為上限，接受第一線治療以後，不再給付第二線以上治療）或使用期間發生疾病惡化為止。（112/4/1、114/9/1）
     full_text: 5.Daratumumab與isatuximab二者僅能擇一使用，除因藥物耐受不良以外，不可以其他原因申請互換使用。（113/4/1）
-- regulation_id: REG-0375
+- regulation_id: REG-0377
   section_number: 9.79.
   section_title: 9.79. Obinutuzumab(如Gazyva)：（109/4/1、113/2/1、114/8/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (114/8/1)
   medications:
@@ -4365,19 +4412,22 @@ regulations:
 
       4.限以obinutuzumab 1,000mg作為glofitamab用於治療先前曾接受至少兩線全身治療之復發性或難治性瀰漫性大B細胞淋巴瘤 (DLBCL)
       的成人病人之前置治療，需與glofitamab首次治療同時申請事前審查並經核准後使用。(114/8/1）'
-- regulation_id: REG-0376
+- regulation_id: REG-0378
   section_number: 9.80.
-  section_title: 9.80. Osimertinib (如Tagrisso)：(109/4/1、109/6/1、109/10/1、111/4/1、113/6/1、113/10/1)
+  section_title: 9.80. Osimertinib (如Tagrisso)：(109/4/1、109/6/1、109/10/1、111/4/1、113/6/1、113/10/1、115/8/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (111/4/1、113/10/1)
   - (113/6/1、113/10/1)
-  - (109/6/1、111/4/1、113/10/1)
-  - (109/10/1、113/10/1)
+  - (109/6/1、111/4/1、113/10/1、115/8/1)
+  - (109/10/1、113/10/1、115/8/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Afatinib (阿法替尼)
+    - Erlotinib (厄洛替尼)
+    - Gefitinib (吉非替尼)
   conditions_of_payment:
     indications:
     - Lung Cancer (肺癌)
@@ -4389,13 +4439,13 @@ regulations:
 
       (2)先前已使用過EGFR標靶藥物gefitinib、erlotinib、afatinib或dacomitinib治療失敗，且具有EGFR　T790M基因突變之局部侵犯性或轉移性之非小細胞肺癌之第二線治療。(109/10/1）
 
-      2.使用注意事項：(109/10/1、111/4/1、113/6/1、113/10/1）
+      2.使用注意事項：(109/10/1、111/4/1、113/6/1、113/10/1、115/8/1）
 
       (1)須經事前審查核准後使用：
 
-      I.每次申請事前審查之療程以三...'
+      I.每次申請事...'
   reference_annotations:
-    original_clause: 9.80. Osimertinib (如Tagrisso)：(109/4/1、109/6/1、109/10/1、111/4/1、113/6/1、113/10/1)
+    original_clause: 9.80. Osimertinib (如Tagrisso)：(109/4/1、109/6/1、109/10/1、111/4/1、113/6/1、113/10/1、115/8/1)
     full_text: '1.限單獨使用於：
 
       (1) 具有EGFR Exon 19 Del或Exon 21 L858R基因突變之局部侵犯性或轉移性（即為IIIB、IIIC期或第Ⅳ期）肺腺癌病患之第一線治療。
@@ -4403,7 +4453,7 @@ regulations:
 
       (2)先前已使用過EGFR標靶藥物gefitinib、erlotinib、afatinib或dacomitinib治療失敗，且具有EGFR　T790M基因突變之局部侵犯性或轉移性之非小細胞肺癌之第二線治療。(109/10/1）
 
-      2.使用注意事項：(109/10/1、111/4/1、113/6/1、113/10/1）
+      2.使用注意事項：(109/10/1、111/4/1、113/6/1、113/10/1、115/8/1）
 
       (1)須經事前審查核准後使用：
 
@@ -4413,18 +4463,17 @@ regulations:
 
       III.再次申請時需附上治療後相關臨床資料（如：影像學）證實無惡化，才可繼續使用。每次處方以4週為限，如給藥4週後需追蹤胸部X光或電腦斷層等影像檢查評估療效，每8至12週需進行完整療效評估(如胸部X光或電腦斷層)，若病情惡化、復發或產生不可接受之毒性，即不得再次申請。
 
-      (2)用於第一線治療用藥：與gefitinib、erlotinib、afatinib及dacomitinib僅得擇一使用，除因耐受性不良，不得互換。如需更換使用本藥品，必須符合本藥品具有EGFR
-      Exon 19 Del或Exon 21 L858R基因突變之局部侵犯性或轉移性（即為IIIB、IIIC期或第Ⅳ期）肺腺癌病患。(109/6/1、111/4/1、113/10/1)
+      (2)用於第一線治療用藥：與gefitinib、erlotinib、afatinib、dacomitinib及aumolertinib僅得擇一使用，除因耐受性不良，不得互換。如需更換使用本藥品，必須符合本藥品具有EGFR
+      Exon 19 Del或Exon 21 L858R基因突變之局部侵犯性或轉移性（即為IIIB、IIIC期或第Ⅳ期）肺腺癌病患。(109/6/1、111/4/1、113/10/1、115/8/1)
 
-      (3)用於第二線治療用藥：須符合本藥品具有EGFR T790M基因突變，及檢附曾經接受gefitinib、erlotinib、afatinib或dacomitinib治療之證明，以及目前又有疾病惡化之影像診斷證明（如胸部X光、電腦斷層或其他可作為評估的影像），此影像證明以可測量（measurable）的病灶為優先，如沒有可以測量的病灶，則可評估（evaluable）的病灶亦可採用。
-      (109/10/1、113/10/1)
+      (3)用於第二線治療用藥：須符合本藥品具有EGFR T790M基因突變，及檢附曾經接受gefitinib、erlotinib、afatinib或dacomitinib治療之證明，以及目前又有疾病惡化之影像診斷證明（如胸部X光、電腦斷層或其他可作為評估的影像），此影像證明以可測量（measurable）的病灶為優先，如沒有可以測量的病灶，則可評估（evaluable）的病灶亦可採用。與aumolertinib擇一使用，除因耐受不良，不得互換。(109/10/1、113/10/1、115/8/1)
 
       (4)每日限用1粒。'
-- regulation_id: REG-0377
+- regulation_id: REG-0379
   section_number: 9.81.
   section_title: 9.81. Lorlatinib (如Lorviqua)：(109/6/1、112/11/1、113/4/1、113/6/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (112/11/1)
   - (109/6/1、112/11/1、113/4/1)
@@ -4465,11 +4514,11 @@ regulations:
       (1)須經事前審查核准後使用。
 
       (2)每次申請事前審查之療程以三個月為限，每三個月需再次申請，再次申請時並需附上治療後相關臨床資料，若病情惡化即不得再次申請。'
-- regulation_id: REG-0378
+- regulation_id: REG-0380
   section_number: 9.82.
   section_title: 9.82. Brigatinib (如Alunbrig)：(109/8/1、111/8/1、112/11/1、113/6/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (112/11/1)
   - (112/11/1)
@@ -4513,16 +4562,20 @@ regulations:
       每次申請事前審查之療程以3個月為限，每3個月需再次申請，再次申請時並需附上治療後相關臨床資料，若病情惡化即不得再次申請。
 
       3.每日最大劑量限180mg。(111/8/1)。'
-- regulation_id: REG-0379
+- regulation_id: REG-0381
   section_number: 9.83.
-  section_title: 9.83. Dacomitinib (如Vizimpro)：(109/10/1、111/9/1、113/6/1)
+  section_title: 9.83. Dacomitinib (如Vizimpro)：(109/10/1、111/9/1、113/6/1、115/8/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
-  - (111/9/1)
+  - (111/9/1、115/8/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Afatinib (阿法替尼)
+    - Osimertinib (奧希替尼)
+    - Erlotinib (厄洛替尼)
+    - Gefitinib (吉非替尼)
   conditions_of_payment:
     indications:
     - Lung Cancer (肺癌)
@@ -4531,49 +4584,30 @@ regulations:
 
       2.使用注意事項
 
-      (1)病歷應留存確實患有肺腺癌之病理或細胞檢查報告，及EGFR-TK基因
+      (1)病歷應留存確實患有肺腺癌之病理或細胞檢查報告，及EGFR-TK基因突變檢測報告。
 
-      突變檢測報告。
+      (2)每次處方以4週為限，再次處方時需於病歷記錄治療後相關臨床資料，如每4週需追蹤胸部X光或電腦斷層等影像檢查，每8至12週需進行完整療效評估（如胸部X光或電腦斷層）。
 
-      (2)每次處方以4週為限，再次處方時需於病歷記錄治療後相關臨床資
-
-      料，如每4週需追蹤胸部X光或電腦斷層等影像檢查，每8至12週需
-
-      進行完整療效評估（如胸部X光或電腦斷層）。
-
-      (3)本藥品與gefitinib、erloti...'
+      (3)本藥品與gefitinib、erlotinib...'
   reference_annotations:
-    original_clause: 9.83. Dacomitinib (如Vizimpro)：(109/10/1、111/9/1、113/6/1)
+    original_clause: 9.83. Dacomitinib (如Vizimpro)：(109/10/1、111/9/1、113/6/1、115/8/1)
     full_text: '1.限單獨使用具有EGFR-TK Exon 19 Del或Exon 21 L858R點突變，且無腦轉移 (non-CNS)之局部侵犯性或轉移性(即第ⅢB、ⅢC或第Ⅳ期)之肺腺癌病患之第一線治療，需檢附EGFR基因檢測結果報告，且需符合全民健康保險藥品給付規定之通則十二。
 
       2.使用注意事項
 
-      (1)病歷應留存確實患有肺腺癌之病理或細胞檢查報告，及EGFR-TK基因
+      (1)病歷應留存確實患有肺腺癌之病理或細胞檢查報告，及EGFR-TK基因突變檢測報告。
 
-      突變檢測報告。
+      (2)每次處方以4週為限，再次處方時需於病歷記錄治療後相關臨床資料，如每4週需追蹤胸部X光或電腦斷層等影像檢查，每8至12週需進行完整療效評估（如胸部X光或電腦斷層）。
 
-      (2)每次處方以4週為限，再次處方時需於病歷記錄治療後相關臨床資
-
-      料，如每4週需追蹤胸部X光或電腦斷層等影像檢查，每8至12週需
-
-      進行完整療效評估（如胸部X光或電腦斷層）。
-
-      (3)本藥品與gefitinib、erlotinib及afatinib，僅得擇一使用，除因
-
-      耐受性不良，不得互換。如需更換使用本藥品，必須符合本藥品第一
-
-      線使用於具有EGFR-TK Exon 19 Del或Exon 21 L858R點突變，且無
-
-      腦轉移(non-CNS)之局部侵犯性或轉移性(即第ⅢB、ⅢC或第Ⅳ期)肺
-
-      腺癌之限制。(111/9/1)
+      (3)本藥品與gefitinib、erlotinib、afatinib、osimertinib及aumolertinib，僅得擇一使用，除因耐受性不良，不得互換。如需更換使用本藥品，必須符合本藥品第一線使用於具有EGFR-TK
+      Exon 19 Del或Exon 21 L858R點突變，且無腦轉移(non-CNS)之局部侵犯性或轉移性(即第ⅢB、ⅢC或第Ⅳ期)肺腺癌之限制。(111/9/1、115/8/1)
 
       (4)每日限用1粒。'
-- regulation_id: REG-0380
+- regulation_id: REG-0382
   section_number: 9.85.
   section_title: 9.85. PARP抑制劑(如olaparib、niraparib、talazoparib)：(109/11/1、111/6/1、111/8/1、112/1/1、112/11/1、113/3/1、113/6/1、113/9/1、114/3/1、114/6/1、114/8/1、114/10/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (109/11/1、111/8/1)
   - (114/6/1、114/8/1)
@@ -4594,7 +4628,8 @@ regulations:
   - (112/1/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Pembrolizumab (派姆單抗)
   conditions_of_payment:
     indications:
     - Triple-Negative Breast Cancer (TNBC) (三陰性乳癌)
@@ -4703,7 +4738,7 @@ regulations:
       (1)單獨使用於具germline or somatic BRCA 1/2致病性或疑似致病性突變且先前接受過新荷爾蒙藥物(novel hormonal
       agents)治療後惡化之成人病人。
 
-      (2) 併用abiraterone及prednisone或prednisolone，用於具germline或 somatic BRCA 1/2致病性或疑似致病性突變且尚未接受化學治療之成人病人：(114/6/1）
+      (2)併用abiraterone及prednisone或prednisolone，用於具germline或 somatic BRCA 1/2致病性或疑似致病性突變且尚未接受化學治療之成人病人：(114/6/1）
 
       I.需符合下列條件之 一：
 
@@ -4759,11 +4794,11 @@ regulations:
       IV. 用於術後輔助治療，olaparib與pembrolizumab僅能擇一給付。
 
       5.Olaparib每日最多使用4粒(112/1/1)'
-- regulation_id: REG-0381
+- regulation_id: REG-0383
   section_number: 9.86.
   section_title: 9.86. Vandetanib (如Caprelsa)：(109/11/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4773,25 +4808,25 @@ regulations:
     laboratory_criteria: []
     summary: '適用於無法進行手術切除的局部侵犯或轉移性甲狀腺髓質癌，並且為症狀性及疾病侵襲性的患者。
 
-      需經事前審查核准後使用，每次申請之療程以6個月為限，送審時需檢送影像資料，每6個月評估一次。
+      1.需經事前審查核准後使用，每次申請之療程以6個月為限，送審時需檢送影像資料，每6個月評估一次。
 
-      出現疾病惡化或無法忍受之藥物不良反應，應立即停用。
+      2.出現疾病惡化或無法忍受之藥物不良反應，應立即停用。
 
-      4.每日最大劑量為300毫克。'
+      3.每日最大劑量為300毫克。'
   reference_annotations:
     original_clause: 9.86. Vandetanib (如Caprelsa)：(109/11/1)
     full_text: '適用於無法進行手術切除的局部侵犯或轉移性甲狀腺髓質癌，並且為症狀性及疾病侵襲性的患者。
 
-      需經事前審查核准後使用，每次申請之療程以6個月為限，送審時需檢送影像資料，每6個月評估一次。
+      1.需經事前審查核准後使用，每次申請之療程以6個月為限，送審時需檢送影像資料，每6個月評估一次。
 
-      出現疾病惡化或無法忍受之藥物不良反應，應立即停用。
+      2.出現疾病惡化或無法忍受之藥物不良反應，應立即停用。
 
-      4.每日最大劑量為300毫克。'
-- regulation_id: REG-0382
+      3.每日最大劑量為300毫克。'
+- regulation_id: REG-0384
   section_number: 9.87.
   section_title: 9.87. Trastuzumab emtansine (如Kadcyla)：(110/2/1、113/8/1、114/2/1、114/5/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (113/8/1、114/2/1、114/5/1)
   - (110/2/1、113/8/1、114/2/1)
@@ -4847,11 +4882,11 @@ regulations:
       (2)經事前審查核准後使用，核准後每12週須檢附療效評估資料再次申請，若疾病有惡化情形即不應再行申請，每位病人至多給付10個月(13個療程為上限)。
 
       (3)Trastuzumab emtansine、lapatinib和trastuzumab deruxtecan僅能擇一給付，不得互換。(114/2/1)'
-- regulation_id: REG-0383
+- regulation_id: REG-0385
   section_number: 9.88.
   section_title: 9.88. Ixabepilone (如Ixempra)：(110/2/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4880,11 +4915,11 @@ regulations:
       2.每3個療程需進行療效評估，病歷應留存評估紀錄，無疾病惡化方可繼續使用。
 
       3.Ixabepilone與eribulin用於治療上述之轉移性乳癌患者時，僅得擇一使用，且不得互換(ixabepilone限用於未曾使用過eribulin之病患)。'
-- regulation_id: REG-0384
+- regulation_id: REG-0386
   section_number: 9.90.
   section_title: 9.90. Apalutamide (如Erleada)：(110/3/1、110/11/1、111/3/1、112/9/1、113/8/1、114/6/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (112/9/1、114/6/1)
   medications:
@@ -4952,11 +4987,11 @@ regulations:
 
       3. 不論病人處於轉移或非轉移的狀態下，新型荷爾蒙藥品(abiraterone、apalutamide、darolutamide和enzalutamide)
       ，及olaparib 與 abiraterone併用，終生僅給付一種治療，且除非出現嚴重不耐受反應導致必須永久停止治療，不得互換。 (112/9/1、114/6/1)'
-- regulation_id: REG-0385
+- regulation_id: REG-0387
   section_number: 9.91.
   section_title: 9.91. Dabrafenib (如Tafinlar)、Trametinib (如Mekinist)：(110/3/1、113/3/1、113/6/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (113/3/1、113/6/1)
   medications:
@@ -5005,15 +5040,18 @@ regulations:
       I.初次申請時需檢附確實患有非小細胞肺癌之病理或細胞檢查報告以及 BRAF V600E 突變檢測報告，且需符合全民健康保險藥品給付規定之通則十二。
 
       II.每次申請事前審查之療程以3個月為限，每3個月需再次申請，再次申請時並需附上治療後相關臨床資料，若病情惡化即不得再次申請。'
-- regulation_id: REG-0386
+- regulation_id: REG-0388
   section_number: 9.92.
   section_title: 9.92. Ramucirumab (如Cyramza)：(110/5/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Sorafenib (索拉非尼)
+    - Regorafenib (瑞戈非尼)
+    - Nivolumab (納武單抗)
   conditions_of_payment:
     indications:
     - Liver Cancer / Hepatocellular Carcinoma (肝癌)
@@ -5032,11 +5070,11 @@ regulations:
       2.需經事前審查核准後使用，初次申請之療程以12週為限，之後每8週評估一次。送審時需檢送影像資料，無疾病惡化方可繼續使用。
 
       3.Ramucirumab與regorafenib、nivolumab僅能擇一使用，不得互換。'
-- regulation_id: REG-0387
+- regulation_id: REG-0389
   section_number: 9.93.
   section_title: 9.93. Entrectinib (如Rozlytrek)：(110/7/1、113/6/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (113/6/1)
   medications:
@@ -5046,33 +5084,20 @@ regulations:
     indications:
     - Lung Cancer (肺癌)
     laboratory_criteria: []
-    summary: '1.單獨使用於ROS-1陽性之局部晚期或轉移性非小細胞肺癌的成人病人。
-
-      2.須經事前審查核准後使用：(113/6/1)
-
-      (1)需檢具確實患有非小細胞肺癌之病理或細胞檢查報告，以及符合診斷之ROS-1突變檢測報告，且需符合全民健康保險藥品給付規定之通則十二。
-
-      (2)每次申請事前審查之療程以三個月為限，每三個月需再次申請，再次申請時並需附上治療後相關臨床資料，如給藥4週後，需追蹤胸部X光或電腦斷層等影像檢查評估療效，往後每4週做胸部X光檢查，每隔8週需追蹤其作為評估藥效的影像(如胸部X光或電腦斷層)，若病情惡化即不得再次申請。
-
-      3.Entrectinib與crizotinib用於ROS-1陽性之晚...'
+    summary: "1.單獨使用於ROS-1陽性之局部晚期或轉移性非小細胞肺癌的成人病人。\n2.須經事前審查核准後使用：(113/6/1)\n(1)\t\
+      需檢具確實患有非小細胞肺癌之病理或細胞檢查報告，以及符合診斷之ROS-1突變檢測報告，且需符合全民健康保險藥品給付規定之通則十二。\n(2)\t每次申請事前審查之療程以三個月為限，每三個月需再次申請，再次申請時並需附上治療後相關臨床資料，如給藥4週後，需追蹤胸部X光或電腦斷層等影像檢查評估療效，往後每4週做胸部X光檢查，每隔8週需追蹤其作為評估藥效的影像(如胸部X光或電腦斷層)，若病情惡化即不得再次申請。\n\
+      3.Entrectinib與crizotinib用於ROS-1陽性..."
   reference_annotations:
     original_clause: 9.93. Entrectinib (如Rozlytrek)：(110/7/1、113/6/1)
-    full_text: '1.單獨使用於ROS-1陽性之局部晚期或轉移性非小細胞肺癌的成人病人。
-
-      2.須經事前審查核准後使用：(113/6/1)
-
-      (1)需檢具確實患有非小細胞肺癌之病理或細胞檢查報告，以及符合診斷之ROS-1突變檢測報告，且需符合全民健康保險藥品給付規定之通則十二。
-
-      (2)每次申請事前審查之療程以三個月為限，每三個月需再次申請，再次申請時並需附上治療後相關臨床資料，如給藥4週後，需追蹤胸部X光或電腦斷層等影像檢查評估療效，往後每4週做胸部X光檢查，每隔8週需追蹤其作為評估藥效的影像(如胸部X光或電腦斷層)，若病情惡化即不得再次申請。
-
-      3.Entrectinib與crizotinib用於ROS-1陽性之晚期非小細胞肺癌時，僅得擇一使用，除因病人使用後，發生嚴重不良反應或耐受不良之情形外，不得互換。
-
-      4.每日最大劑量限600mg。'
-- regulation_id: REG-0388
+    full_text: "1.單獨使用於ROS-1陽性之局部晚期或轉移性非小細胞肺癌的成人病人。\n2.須經事前審查核准後使用：(113/6/1)\n(1)\t\
+      需檢具確實患有非小細胞肺癌之病理或細胞檢查報告，以及符合診斷之ROS-1突變檢測報告，且需符合全民健康保險藥品給付規定之通則十二。\n(2)\t每次申請事前審查之療程以三個月為限，每三個月需再次申請，再次申請時並需附上治療後相關臨床資料，如給藥4週後，需追蹤胸部X光或電腦斷層等影像檢查評估療效，往後每4週做胸部X光檢查，每隔8週需追蹤其作為評估藥效的影像(如胸部X光或電腦斷層)，若病情惡化即不得再次申請。\n\
+      3.Entrectinib與crizotinib用於ROS-1陽性之晚期非小細胞肺癌時，僅得擇一使用，除因病人使用後，發生嚴重不良反應或耐受不良之情形外，不得互換。\n\
+      4.每日最大劑量限600mg。"
+- regulation_id: REG-0390
   section_number: 9.94.
   section_title: 9.94. Darolutamide(如Nubeqa)：(110/11/1、112/9/1、113/5/1、113/8/1、115/4/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (113/5/1、114/6/1、115/4/1)
   - (113/5/1、113/8/1)
@@ -5099,7 +5124,7 @@ regulations:
 
       Ⅰ.葛里森分數(Gleason score)≧8。
 
-      Ⅱ. 骨骼掃描出現三個(含)以上病灶...'
+      Ⅱ.骨骼掃描出現三個(含)以上病灶且...'
   reference_annotations:
     original_clause: 9.94. Darolutamide(如Nubeqa)：(110/11/1、112/9/1、113/5/1、113/8/1、115/4/1)
     full_text: '1.作為單一療法或與docetaxel併用於治療高風險轉移性的去勢敏感性前列腺癌(mCSPC)，總療程以36個月為上限。(113/5/1、114/6/1、115/4/1)
@@ -5114,7 +5139,7 @@ regulations:
 
       Ⅰ.葛里森分數(Gleason score)≧8。
 
-      Ⅱ. 骨骼掃描出現三個(含)以上病灶且至少其中一處以上為非脊柱及非骨盆腔轉移。(113/5/1、113/8/1)
+      Ⅱ.骨骼掃描出現三個(含)以上病灶且至少其中一處以上為非脊柱及非骨盆腔轉移。(113/5/1、113/8/1)
 
       Ⅲ.出現內臟轉移。
 
@@ -5160,17 +5185,18 @@ regulations:
 
       3. 不論病人處於轉移或非轉移的狀態下，新型荷爾蒙藥品(abiraterone、apalutamide、darolutamide和enzalutamide)
       ，及olaparib 與 abiraterone併用，終生僅給付一種治療，且除非出現嚴重不耐受反應導致必須永久停止治療，不得互換。(112/9/1、114/6/1)'
-- regulation_id: REG-0389
+- regulation_id: REG-0391
   section_number: 9.95.
   section_title: 9.95. Larotrectinib (如Vitrakvi)：(111/3/1、111/6/1、112/12/1、113/6/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (112/12/1)
   - (111/3/1、111/6/1、113/6/1)
   - (111/6/1、113/6/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 蛋白激酶抑制劑 / 標靶抗癌藥物 (VEGFR/TKI 標靶藥物)
     ingredients: []
   conditions_of_payment:
     indications:
@@ -5204,11 +5230,11 @@ regulations:
       (13)分泌型乳腺癌:先前曾接受過前導性、術後輔助性或轉移性化學治療的轉移性分泌型乳腺癌。\n4.需經事前審查核准後使用：(111/3/1、111/6/1、113/6/1)\n\
       (1)每次申請之療程以12週為限。\n(2)初次申請時需檢附NTRK基因融合檢測報告。NTRK 1/2/3檢測需符合全民健康保險藥品給付規定之通則十二。(111/6/1、113/6/1)\n\
       (3)再次申請時需檢附療效評估資料證實無疾病進展，才可繼續使用。"
-- regulation_id: REG-0390
+- regulation_id: REG-0392
   section_number: 9.96.
   section_title: 9.96. Decitabine：(111/5/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -5240,11 +5266,11 @@ regulations:
       4.急性骨髓性白血病之定義：骨髓芽細胞（myeloblast）大於30%。
 
       5.本藥品與azacitidine僅能擇一使用，除因耐受性不良，不得互換。使用本藥品無效後，不得再申請azacitidine。'
-- regulation_id: REG-0391
+- regulation_id: REG-0393
   section_number: 9.97.
   section_title: 9.97. Avapritinib (如Ayvakit)：(111/6/1、113/6/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (111/6/1、113/6/1)
   medications:
@@ -5270,11 +5296,11 @@ regulations:
       3.每次申請事前審查之療程以6個月為限，再次申請必須提出客觀證據(如：影像學)證實無惡化，才可繼續使用。
 
       4.每日至多處方100mg 2粒或300mg 1粒。'
-- regulation_id: REG-0392
+- regulation_id: REG-0394
   section_number: 9.98.
   section_title: 9.98. Pemigatinib (如Pemazyre)：(112/5/1、113/6/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (113/6/1)
   medications:
@@ -5283,18 +5309,33 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: "1.\t適用於成人接受過全身性藥物治療、腫瘤具有FGFR2融合或重排、不可手術切除的局部晚期或轉移性肝內膽管癌。\n2.\t需經事前審查核准後使用，初次申請需檢附腫瘤組織具有FGFR2基因融合或重排之基因變異檢測報告，且需符合全民健康保險藥品給付規定之通則十二。(113/6/1)\n\
-      3.\t核准後每12週需再次申請，再次申請時需檢附療效評估資料證實無疾病惡化，才可繼續使用。\n4.\t每日限處方1粒。"
+    summary: '1.適用於成人接受過全身性藥物治療、腫瘤具有FGFR2融合或重排、不可手術切除的局部晚期或轉移性肝內膽管癌。
+
+      2.需經事前審查核准後使用，初次申請需檢附腫瘤組織具有FGFR2基因融合或重排之基因變異檢測報告，且需符合全民健康保險藥品給付規定之通則十二。(113/6/1)
+
+      3.核准後每12週需再次申請，再次申請時需檢附療效評估資料證實無疾病惡化，才可繼續使用。
+
+      4.每日限處方1粒。'
   reference_annotations:
     original_clause: 9.98. Pemigatinib (如Pemazyre)：(112/5/1、113/6/1)
-    full_text: "1.\t適用於成人接受過全身性藥物治療、腫瘤具有FGFR2融合或重排、不可手術切除的局部晚期或轉移性肝內膽管癌。\n2.\t需經事前審查核准後使用，初次申請需檢附腫瘤組織具有FGFR2基因融合或重排之基因變異檢測報告，且需符合全民健康保險藥品給付規定之通則十二。(113/6/1)\n\
-      3.\t核准後每12週需再次申請，再次申請時需檢附療效評估資料證實無疾病惡化，才可繼續使用。\n4.\t每日限處方1粒。"
-- regulation_id: REG-0393
+    full_text: '1.適用於成人接受過全身性藥物治療、腫瘤具有FGFR2融合或重排、不可手術切除的局部晚期或轉移性肝內膽管癌。
+
+      2.需經事前審查核准後使用，初次申請需檢附腫瘤組織具有FGFR2基因融合或重排之基因變異檢測報告，且需符合全民健康保險藥品給付規定之通則十二。(113/6/1)
+
+      3.核准後每12週需再次申請，再次申請時需檢附療效評估資料證實無疾病惡化，才可繼續使用。
+
+      4.每日限處方1粒。'
+- regulation_id: REG-0395
   section_number: 9.99.
-  section_title: 9.99. Gilteritinib(如Xospata)：(112/6/1、113/6/1)
+  section_title: 9.99. Gilteritinib(如Xospata)：(112/6/1、113/6/1、115/8/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
+  - (112/6/1、115/8/1)
+  - (115/8/1)
+  - (112/6/1、115/8/1)
+  - (112/6/1、115/8/1)
+  - (115/8/1)
   - (113/6/1)
   medications:
     drug_classes: []
@@ -5303,38 +5344,58 @@ regulations:
     indications:
     - Leukemia (白血病)
     laboratory_criteria: []
-    summary: '1.限單獨使用於具有FLT3突變的復發性或難治性急性骨髓性白血病(R/R AML)且計畫進行造血幹細胞移植的成年病人，限移植前使用，每位病人限給付6療程。病患須至少接受過一次
-      含anthracycline藥物的化學治療。
+    summary: '1.限單獨使用於具有FLT3突變的復發性或難治性急性骨髓性白血病(R/R AML)，限用於(112/6/1、115/8/1)：
 
-      2.須事前審查核准後使用，初次申請時須檢附：
+      (1)計畫進行造血幹細胞移植的成年病人，限移植前使用，每位病人限給付6療程。病患須至少接受過一次含anthracycline藥物的化學治療。
 
-      (1)相關病歷資料。
+      (2)移植後的維持治療，病人移植前需曾使用gilteritinib至少1個療程，移植後30天內未發生疾病惡化，且至少達到複合完全緩解（Composite
+      CR）方可繼續申請使用。(115/8/1)
 
-      (2)完整之造血幹細胞移植計畫，並詳細記載確認捐贈者名單及移植前調適治療等資料。需由具訓練血液及骨髓移植醫師能力之醫院申請，並由完成血液及骨髓移植訓練之醫師確認移植計畫。
-
-      (3)染色體檢驗報告，若為unfavorable karyotype(包含complex karyotype、-5、-5q、 -7、-7q...'
+      2.須經事前審查核准後使用，每次申請為3個療程，每個療程為1個月，申請劑量以每日120mg為上限：(112/6/1、115/8/1)...'
   reference_annotations:
-    original_clause: 9.99. Gilteritinib(如Xospata)：(112/6/1、113/6/1)
-    full_text: '1.限單獨使用於具有FLT3突變的復發性或難治性急性骨髓性白血病(R/R AML)且計畫進行造血幹細胞移植的成年病人，限移植前使用，每位病人限給付6療程。病患須至少接受過一次
-      含anthracycline藥物的化學治療。
+    original_clause: 9.99. Gilteritinib(如Xospata)：(112/6/1、113/6/1、115/8/1)
+    full_text: '1.限單獨使用於具有FLT3突變的復發性或難治性急性骨髓性白血病(R/R AML)，限用於(112/6/1、115/8/1)：
 
-      2.須事前審查核准後使用，初次申請時須檢附：
+      (1)計畫進行造血幹細胞移植的成年病人，限移植前使用，每位病人限給付6療程。病患須至少接受過一次含anthracycline藥物的化學治療。
 
-      (1)相關病歷資料。
+      (2)移植後的維持治療，病人移植前需曾使用gilteritinib至少1個療程，移植後30天內未發生疾病惡化，且至少達到複合完全緩解（Composite
+      CR）方可繼續申請使用。(115/8/1)
 
-      (2)完整之造血幹細胞移植計畫，並詳細記載確認捐贈者名單及移植前調適治療等資料。需由具訓練血液及骨髓移植醫師能力之醫院申請，並由完成血液及骨髓移植訓練之醫師確認移植計畫。
+      2.須經事前審查核准後使用，每次申請為3個療程，每個療程為1個月，申請劑量以每日120mg為上限：(112/6/1、115/8/1)
 
-      (3)染色體檢驗報告，若為unfavorable karyotype(包含complex karyotype、-5、-5q、 -7、-7q、除t(9;11)外的11q23
+      (1)移植前使用之病人需檢附
+
+      I.初次申請：
+
+      i.相關病歷資料。
+
+      ii.完整之造血幹細胞移植計畫，並詳細記載確認捐贈者名單及移植前調適治療等資料。需由具訓練血液及骨髓移植醫師能力之醫院申請，並由完成血液及骨髓移植訓練之醫師確認移植計畫。
+
+      iii.染色體檢驗報告，若為unfavorable karyotype(包含complex karyotype、-5、-5q、 -7、-7q、除t(9;11)外的11q23
       abnormalities、inv(3)、(3;3)、t(6;9)以及t(9;22)等) 則不予給付。
 
-      (4)檢附之FLT3突變檢測結果報告，需符合全民健康保險藥品給付規定之通則十二。(113/6/1)
+      II.申請續用次3個療程時須檢附達到PR、Cri或CR的證明方可續用。(112/6/1、115/8/1)
 
-      3.每次申請為二個療程；續申請次二個療程時須檢附達到PR、CRi 或CR的證明方可續用。申請劑量以每日120mg為上限。'
-- regulation_id: REG-0394
+      (2)移植後使用於維持治療之病人需檢附：(115/8/1)
+
+      I.初次申請：
+
+      i.相關病理與病歷資料。
+
+      ii.使用gilteritinib的用藥紀錄。
+
+      II.申請續用：
+
+      i.療效評估資料證明無疾病復發。
+
+      ii.3個月內微量殘留病灶(MRD)檢驗報告，若MRD檢驗結果為陽性者，得繼續使用；若MRD結果為陰性者，得續用並再觀察3個療程，如再次評估MRD檢驗結果仍為陰性，則停止使用。
+
+      3.檢附之FLT3突變檢測結果報告，需符合全民健康保險藥品給付規定之通則十二。(113/6/1)'
+- regulation_id: REG-0396
   section_number: 9.100.
   section_title: 9.100. Acalabrutinib(如Calquence)：(112/7/1、112/12/1、114/10/1、115/5/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (112/12/1)
   - (112/7/1、112/12/1、114/10/1、115/5/1)
@@ -5411,11 +5472,11 @@ regulations:
       (6)在非IGHV突變二線以上病人及CLL三線以上病人，acalabrutinib、ibrutinib與zanubrutinib三者僅能擇一使用，唯有在出現無法忍受其副作用時方可互換。三者使用總療程合併計算，以全部24個月為上限。(114/10/1、115/5/1)
 
       (7)每日至多處方2粒。'
-- regulation_id: REG-0395
+- regulation_id: REG-0397
   section_number: 9.101.
   section_title: 9.101. Tepotinib (如Tepmetko):(112/7/1、113/6/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -5450,11 +5511,11 @@ regulations:
       3.使用本品無效後則不再給付該適應症相關之免疫檢查點PD-1、PD-L1抑制劑。
 
       4.每日最多處方2粒。'
-- regulation_id: REG-0396
+- regulation_id: REG-0398
   section_number: 9.102.
   section_title: 9.102. Dinutuximab beta (如Qarziba)：(112/8/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -5478,11 +5539,11 @@ regulations:
       3.自初診斷至使用本品前，出現復發、新轉移或疾病惡化者，不得申請給付。
 
       4.經事前審查核准後使用。'
-- regulation_id: REG-0397
+- regulation_id: REG-0399
   section_number: 9.103.
   section_title: 9.103. Tisagenlecleucel(如Kymriah)：(112/11/1、113/2/1、114/8/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (112/11/1、114/8/1)
   - (114/8/1)
@@ -5498,7 +5559,7 @@ regulations:
     ingredients: []
   conditions_of_payment:
     indications:
-    - Hepatitis B / Hepatitis C (肝炎)
+    - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     - Breast Cancer (乳癌)
     - Leukemia (白血病)
     - Lymphoma (淋巴腫瘤)
@@ -5548,11 +5609,11 @@ regulations:
       (5)醫院藥局至少需庫存10支靜脈注射tocilizumab。(112/11/1、114/8/1)\n(6)細胞蒐集和處理實驗室須於2029年1月1日前取得相關國際認證(AABB或FACT-JACIE)。\n\
       (7)由保險人每年委託相關學會定期稽核醫院符合前述條件。\n6.須經專家小組特殊專案審查核准後使用，並須檢附下列文件：\n(1)CAR-T多科團隊會議紀錄。\n\
       (2)符合前述第4、5項之醫院條件及醫師資格之相關文件。\n(3)經臨床醫師確認無法接受造血幹細胞移植者，須檢附相關文件。"
-- regulation_id: REG-0398
+- regulation_id: REG-0400
   section_number: 9.104.
   section_title: 9.104. Zanubrutinib(如Brukinsa)：(112/12/1、114/8/1、114/10/1、115/5/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (112/12/1、114/8/1、114/10/1、115/5/1)
   - (114/8/1)
@@ -5674,11 +5735,11 @@ regulations:
       (6)在非IGHV突變二線以上病人及CLL三線以上病人，acalabrutinib、ibrutinib與zanubrutinib三者僅能擇一使用，唯有在出現無法忍受其副作用時方可互換。三者使用總療程合併計算，以全部24個月為上限。(114/10/1、115/5/1)
 
       (7)每日至多處方4粒。'
-- regulation_id: REG-0399
+- regulation_id: REG-0401
   section_number: 9.105.
   section_title: 9.105. Polatuzumab vedotin (如Polivy)：(113/2/1、114/8/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (113/2/1、114/8/1)
   - (114/8/1)
@@ -5707,14 +5768,14 @@ regulations:
       Ⅱ.年齡在65歲以下，符合HCT-CI≧3分，且使用過的第二線治療含鉑類藥物（cisplatin、oxaliplatin、carboplatin）後，以影像學檢查證實疾病惡化中。\n\
       Ⅲ.使用過第二線治療含鉑類藥物（cisplatin、oxaliplatin、carboplatin）後，在收集造血幹細胞時，即使使用plerixafor後收集的CD34陽性原始細胞仍未達每公斤體重200萬顆細胞，且以影像學檢查證實疾病惡化中。\n\
       (3)一線曾接受經兩次（含）以上rituximab合併化學治療，治療4個療程以上復發或是於治療中發生疾病惡化者。(113/2/1、114/8/1)\n\
-      (4)救援治療需符合以下任一條件：(114/8/1)\nI.\t治療2個療程以上復發或是於治療中發生疾病惡化者。\nII.\t經造血幹細胞移植治療失敗者。\n\
+      (4)\t救援治療需符合以下任一條件：(114/8/1)\nI.\t治療2個療程以上復發或是於治療中發生疾病惡化者。\nII.\t經造血幹細胞移植治療失敗者。\n\
       2.需經事前審查核准後使用：\n(1)每次申請事前審查以3個療程為限，再次申請必須提出客觀證據（如：影像學）證實無惡化，若病情惡化即不得再次申請。\n\
       (2)每位病人終生限給付6個療程。\n3.病人接受本藥物治療後，不給付造血幹細胞移植。(113/2/1、114/8/1)\n4.本藥品、glofitamab及epcoritamab僅得擇一給付，治療失敗後不得互換。(114/8/1)"
-- regulation_id: REG-0400
+- regulation_id: REG-0402
   section_number: 9.106.
   section_title: 9.106. Sacituzumab govitecan (如Trodelvy）：(113/2/1、114/2/1、114/10/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (113/2/1、114/2/1)
   - (114/2/1)
@@ -5774,11 +5835,11 @@ regulations:
       (2)須經事前審查核准後使用，每次申請之療程以3個月為限，初次申請時需檢附HR陽性、HER2陰性(IHC 0、IHC 1+或 IHC 2+/ISH–)之檢測報告。
 
       (3)再次申請必須提出客觀證據（如：影像學）證實無惡化，才可繼續使用。'
-- regulation_id: REG-0401
+- regulation_id: REG-0403
   section_number: 9.107.
   section_title: 9.107. Abemaciclib (如Verzenio)：(113/3/1、113/6/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (113/3/1、113/6/1)
   medications:
@@ -5814,11 +5875,11 @@ regulations:
       4.須經事前審查核准後使用，每24週須再次申請並檢附療效評估資料，若疾病有惡化情形須停止使用。
 
       5.每日至多使用2錠，使用不得超過2年。'
-- regulation_id: REG-0402
+- regulation_id: REG-0404
   section_number: 9.108.
   section_title: 9.108. Isatuximab(如Sarclisa)：(113/4/1、114/9/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (113/4/1、114/9/1)
   - (114/9/1)
@@ -5886,15 +5947,18 @@ regulations:
       drugs)併用。
 
       5.Isatuximab與daratumumab二者僅能擇一使用，除因藥物耐受不良以外，不可以其他原因申請互換使用。'
-- regulation_id: REG-0403
+- regulation_id: REG-0405
   section_number: 9.109.
   section_title: 9.109. Enfortumab vedotin(如Padcev）：(113/5/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Atezolizumab (阿特珠單抗)
+    - Pembrolizumab (派姆單抗)
+    - Nivolumab (納武單抗)
   conditions_of_payment:
     indications:
     - Diabetes Mellitus (糖尿病)
@@ -5943,11 +6007,11 @@ regulations:
       4.每次申請事前審查以3個療程為限，再次申請時需檢附療效評估資料，若病情惡化即不得再次申請，無效後或給付時程期滿後則不再給付該適應症相關之標靶藥物及免疫檢查點抑制劑。
 
       5.每位病人限給付6個療程。'
-- regulation_id: REG-0404
+- regulation_id: REG-0406
   section_number: 9.110.
-  section_title: 9.110. Tirabrutinib(如Velexbru）：(113/6/1)
+  section_title: 9.110. Tirabrutinib (如Velexbru）：(113/6/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -5971,7 +6035,7 @@ regulations:
 
       5.限單獨使用，不得同時使用單株抗體及化療。'
   reference_annotations:
-    original_clause: 9.110. Tirabrutinib(如Velexbru）：(113/6/1)
+    original_clause: 9.110. Tirabrutinib (如Velexbru）：(113/6/1)
     full_text: '1.適用於治療成人復發或難治型原發性中樞神經系統B細胞淋巴瘤，且符合下列各項條件：
 
       (1)復發頑固型，曾接受過至少兩個療程HD-MTX治療。
@@ -5987,11 +6051,11 @@ regulations:
       4.限給付9個月。
 
       5.限單獨使用，不得同時使用單株抗體及化療。'
-- regulation_id: REG-0405
+- regulation_id: REG-0407
   section_number: 9.111.
-  section_title: 9.111. Elotuzumab(如Empliciti)：(113/9/1)
+  section_title: 9.111. Elotuzumab (如Empliciti)：(113/9/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -6013,7 +6077,7 @@ regulations:
 
       Ⅰ.具有下列任一疾病惡化的指標： 病人開始治療前須在連續2次評估中均符合同一指標 (但若為plamacytoma 體積增加，或是新產生的bone lesion(s)...'
   reference_annotations:
-    original_clause: 9.111. Elotuzumab(如Empliciti)：(113/9/1)
+    original_clause: 9.111. Elotuzumab (如Empliciti)：(113/9/1)
     full_text: '1.與pomalidomide及dexamethasone併用，治療之前曾接受過至少兩種療法（包括lenalidomide和蛋白酶體抑制劑）的多發性骨髓瘤成年病人，且完全符合下列條件：
 
       (1)確認完成前次治療時或結束治療後六十天內發生疾病惡化(disease progression)。
@@ -6058,11 +6122,11 @@ regulations:
       (3)每人以10個療程為上限。
 
       3.不得與蛋白酶體抑制劑(bortezomib、carfilzomib)或lenalidomide併用。'
-- regulation_id: REG-0406
+- regulation_id: REG-0408
   section_number: 9.112.
   section_title: 9.112. Pertuzumab與trastuzumab皮下注射複方製劑(如Phesgo):(113/12/1、114/5/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (113/12/1)
   medications:
@@ -6084,11 +6148,11 @@ regulations:
       (4)\t須經事前審查核准後使用，核准後每24週須檢附療效評估資料再次申請，若疾病有惡化情形即不應再行申請。（113/12/1、114/5/1）\n2.轉移性乳癌\n\
       (1)與docetaxel併用於治療轉移後未曾以抗HER2或化學療法治療之HER2過度表現(IHC3+或FISH+)轉移性乳癌病人。\n(2)須經事前審查核准後使用，核准後每18週須檢附療效評估資料再次申請，若疾病有惡化情形即不應再行申請，每位病人至多給付18個月為限。\n\
       (3)下列Ｉ~Ⅱ使用於轉移性乳癌總療程合併計算，以全部18個月為上限：\nＩ：本藥品\nⅡ：pertuzumab與trastuzumab併用\n(4)先前於早期乳癌已使用過本藥品或pertuzumab與trastuzumab併用者，不得再次申請本藥品，惟於早期乳癌治療結束至首次疾病復發轉移時間超過12個月以上者得再次申請。(113/12/1)"
-- regulation_id: REG-0407
+- regulation_id: REG-0409
   section_number: 9.113.
   section_title: 9.113. Gemtuzumab ozogamicin(如Mylotarg)：(114/1/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -6119,11 +6183,11 @@ regulations:
       3.若病患疾病達到完全緩解(即CR 或 CRi)，可續申請使用於鞏固治療期，每次申請以1個療程為限(1次輸注)，並最多給付2個鞏固治療療程(即2次輸注)。申請時需檢附前次治療結果評估資料證實無疾病惡化。
 
       4.每人以給付5次輸注為上限。'
-- regulation_id: REG-0408
+- regulation_id: REG-0410
   section_number: 9.114.
   section_title: 9.114. Fedratinib (如Inrebic)：(114/1/1、114/10/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (114/10/1)
   medications:
@@ -6164,11 +6228,11 @@ regulations:
       Ⅲ.AML transformation：骨髓中之芽細胞≥20%或血液中之芽細胞≥20%合併芽細胞數值≥1×109/L。
 
       2.本藥品與ruxolitinib、momelotinib用於中度風險或高風險之骨髓纖維化治療時，僅得擇一給付。ruxolitinib、momelotinib治療後如疾病惡化不得換用本藥品。(114/10/1)'
-- regulation_id: REG-0409
+- regulation_id: REG-0411
   section_number: 9.115.
   section_title: 9.115. Trastuzumab deruxtecan (如Enhertu)：(114/2/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -6215,11 +6279,11 @@ regulations:
       (5)Trastuzumab deruxtecan和sacituzumab govitecan僅能擇一給付，不得互換。
 
       3.申報醫療費用時「總量」應依實際使用量申報，取至小數點第一位，第二位四捨五入。'
-- regulation_id: REG-0410
+- regulation_id: REG-0412
   section_number: 9.116.
   section_title: 9.116. Selumetinib (如Koselugo)：(114/2/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -6283,11 +6347,11 @@ regulations:
       (4)經治療18個月後，初次申請之目標PN引起之症狀未改善且PN惡化。
 
       5.每日最高劑量為100 mg。'
-- regulation_id: REG-0411
+- regulation_id: REG-0413
   section_number: 9.117.
   section_title: 9.117. Selinexor(如Xpovio)：(114/3/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -6346,11 +6410,11 @@ regulations:
       MM病人以骨髓檢查plasma cell為療效依據，證明為對藥物有反應或為穩定狀態，方可繼續使用。續用時的申請每次以4個療程為限。
 
       (3)每人終生以8個療程為上限。'
-- regulation_id: REG-0412
+- regulation_id: REG-0414
   section_number: 9.118.
   section_title: 9.118. Elranatamab (如Elrexfio)：(114/5/1、114/8/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (114/5/1、114/8/1)
   medications:
@@ -6418,11 +6482,11 @@ regulations:
       (2)每兩年接受至少6小時中華民國血液及骨髓移植學會或中華民國血液病學會舉辦之雙特異性抗體相關治療教育訓練。
 
       5.Elranatamab與teclistamab僅能擇一給付，除因耐受性不良，不得互換。二者使用總療程合併計算，以全部39次輸注為上限。'
-- regulation_id: REG-0413
+- regulation_id: REG-0415
   section_number: 9.119.
   section_title: 9.119. Teclistamab (如Tecvayli) ：(114/5/1、114/8/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (114/5/1、114/8/1)
   medications:
@@ -6492,11 +6556,11 @@ regulations:
       每兩年接受至少6小時中華民國血液及骨髓移植學會或中華民國血液病學會舉辦之雙特異性抗體相關治療教育訓練。
 
       Teclistamab與elranatamab僅能擇一給付，除因耐受性不良，不得互換。二者使用總療程合併計算，以全部39次輸注為上限。'
-- regulation_id: REG-0414
+- regulation_id: REG-0416
   section_number: 9.120.
   section_title: 9.120. Glofitamab（如Columvi）：（114/8/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -6518,11 +6582,11 @@ regulations:
       3.\t總療程以12個療程為上限；每位病人一生限用一次連續療程(12個療程)，不得重複申請。\n4.\t限以obinutuzumab 1,000mg作為療程之前置治療，僅用以降低療程中誘導細胞激素釋放症候群(CRS)的風險。\n\
       5.\t執行醫師須完全符合下列資格：\n(1)醫師必須為血液病或造血幹細胞移植專科醫師且須完成血液病或造血幹細胞移植的相關照護訓練。\n(2)每兩年接受至少6小時中華民國血液及骨髓移植學會或中華民國血液病學會舉辦之雙特異性抗體相關治療教育訓練。\n\
       6.\t本藥品、polatuzumab vedotin及 epcoritamab僅得擇一給付，治療失敗後不得互換。"
-- regulation_id: REG-0415
+- regulation_id: REG-0417
   section_number: 9.121.
   section_title: 9.121. Epcoritamab (如Epkinly)：(114/8/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -6584,11 +6648,11 @@ regulations:
       (2)每兩年接受至少6小時中華民國血液及骨髓移植學會或中華民國血液病學會舉辦之雙特異性抗體相關治療教育訓練。
 
       5.本藥品、glofitamab、polatuzumab vedotin，三者僅得擇一給付，治療失敗後不得互換。'
-- regulation_id: REG-0416
+- regulation_id: REG-0418
   section_number: 9.122.
   section_title: 9.122. Asciminib (如Scemblix)：(114/9/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -6611,11 +6675,11 @@ regulations:
       2.不能為具有T315I或V299L突變之BCR-ABL融合基因的疾病。
 
       3.使用後無法耐受藥物副作用或發生疾病進展，須停止使用。'
-- regulation_id: REG-0417
+- regulation_id: REG-0419
   section_number: 9.123.
   section_title: 9.123. Ripretinib(如Qinlock）：(114/9/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -6636,11 +6700,11 @@ regulations:
       2.需經事前審查核准後使用，每次申請之療程以3個月為限，送審時需檢送影像資料，每3個月評估一次。治療期間出現疾病惡化，則不可繼續使用。
 
       3.本藥品不得合併其他藥品，每日至多處方3粒。'
-- regulation_id: REG-0418
+- regulation_id: REG-0420
   section_number: 9.124.
   section_title: 9.124. Tafasitamab（如Minjuvi）：（114/10/1、115/3/1、115/4/1）
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -6686,11 +6750,11 @@ regulations:
       4.執行醫師須為血液病或造血幹細胞移植專科醫師且須完成血液病或造血幹細胞移植的相關照護訓練。
 
       5.病人接受本藥物治療後，不給付造血幹細胞移植。'
-- regulation_id: REG-0419
+- regulation_id: REG-0421
   section_number: 9.125.
   section_title: 9.125. Quizartinib（如Vanflyta）：（114/10/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -6699,21 +6763,33 @@ regulations:
     indications:
     - Leukemia (白血病)
     laboratory_criteria: []
-    summary: "1.\t限用於新確診為FLT3-ITD 突變陽性的急性骨髓性白血病(AML)成人病人，於標準前導(cytarabine 和anthracycline)與鞏固性化療(cytarabine)時合併使用，及於維持治療時單獨使用。\n\
-      2.\t需排除急性前骨髓性細胞白血病（acute promyelocytic leukemia，APL）的病人。\n3.\t首次用於標準前導期，可免事前審查，且以2個療程為限。若在2個療程後仍未達完全緩解，則不得再使用。\n\
-      4.\t續用於鞏固治療時需經事前審查核准後使用，申請時須檢附FLT3 突變陽性檢測結果及日期、化學治療處方紀錄及療效評估，每次續用申請以2個療程為限，並需檢附前次治..."
+    summary: '1.限用於新確診為FLT3-ITD 突變陽性的急性骨髓性白血病(AML)成人病人，於標準前導(cytarabine 和anthracycline)與鞏固性化療(cytarabine)時合併使用，及於維持治療時單獨使用。
+
+      2.需排除急性前骨髓性細胞白血病（acute promyelocytic leukemia，APL）的病人。
+
+      3.首次用於標準前導期，可免事前審查，且以2個療程為限。若在2個療程後仍未達完全緩解，則不得再使用。
+
+      4.續用於鞏固治療時需經事前審查核准後使用，申請時須檢附FLT3 突變陽性檢測結果及日期、化學治療處方紀錄及療效評估，每次續用申請以2個療程為限，並需檢附前次治療結果評...'
   reference_annotations:
     original_clause: 9.125. Quizartinib（如Vanflyta）：（114/10/1)
-    full_text: "1.\t限用於新確診為FLT3-ITD 突變陽性的急性骨髓性白血病(AML)成人病人，於標準前導(cytarabine 和anthracycline)與鞏固性化療(cytarabine)時合併使用，及於維持治療時單獨使用。\n\
-      2.\t需排除急性前骨髓性細胞白血病（acute promyelocytic leukemia，APL）的病人。\n3.\t首次用於標準前導期，可免事前審查，且以2個療程為限。若在2個療程後仍未達完全緩解，則不得再使用。\n\
-      4.\t續用於鞏固治療時需經事前審查核准後使用，申請時須檢附FLT3 突變陽性檢測結果及日期、化學治療處方紀錄及療效評估，每次續用申請以2個療程為限，並需檢附前次治療結果評估資料證實無疾病進展，才可繼續使用。前導治療與鞏固治療每人以總共給付6個療程為上限。\n\
-      5.\t維持治療僅限於無疾病進展且尚未接受造血幹細胞移植的病人，病人接受造血幹細胞移植後即需停用。續用維持治療須經審查核准後使用，初次申請為3個療程，並須檢附前次治療結果評估資料證實無疾病進展才可繼續使用，每3個療程需再次申請，可治療至疾病復發或無法耐受藥物毒性為止。維持治療每人以24個療程為上限。\n\
-      6.\t前導治療與鞏固治療限與midostaurin僅得擇一使用，除因耐受性不良，不得互換。\n7.\t維持治療限與azacitidine擇一使用，除因耐受性不良，不得互換。"
-- regulation_id: REG-0420
+    full_text: '1.限用於新確診為FLT3-ITD 突變陽性的急性骨髓性白血病(AML)成人病人，於標準前導(cytarabine 和anthracycline)與鞏固性化療(cytarabine)時合併使用，及於維持治療時單獨使用。
+
+      2.需排除急性前骨髓性細胞白血病（acute promyelocytic leukemia，APL）的病人。
+
+      3.首次用於標準前導期，可免事前審查，且以2個療程為限。若在2個療程後仍未達完全緩解，則不得再使用。
+
+      4.續用於鞏固治療時需經事前審查核准後使用，申請時須檢附FLT3 突變陽性檢測結果及日期、化學治療處方紀錄及療效評估，每次續用申請以2個療程為限，並需檢附前次治療結果評估資料證實無疾病進展，才可繼續使用。前導治療與鞏固治療每人以總共給付6個療程為上限。
+
+      5.維持治療僅限於無疾病進展且尚未接受造血幹細胞移植的病人，病人接受造血幹細胞移植後即需停用。續用維持治療須經審查核准後使用，初次申請為3個療程，並須檢附前次治療結果評估資料證實無疾病進展才可繼續使用，每3個療程需再次申請，可治療至疾病復發或無法耐受藥物毒性為止。維持治療每人以24個療程為上限。
+
+      6.前導治療與鞏固治療限與midostaurin僅得擇一使用，除因耐受性不良，不得互換。
+
+      7.維持治療限與azacitidine擇一使用，除因耐受性不良，不得互換。'
+- regulation_id: REG-0422
   section_number: 9.126.
   section_title: 9.126. Amivantamab(如Rybrevant)：(114/10/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -6738,11 +6814,11 @@ regulations:
       (1)初次申請時需檢具確實患有非小細胞肺癌之病理或細胞檢查報告，及檢具表皮生長因子受體 (EGFR) exon 20插入突變分析檢測結果報告，且需符合全民健康保險藥品給付規定之通則十二。
 
       (2)每次申請事前審查之療程以3個月為限，每3個月需再次申請，再次申請時需檢附療效評估資料，若病情惡化即不得再次申請。'
-- regulation_id: REG-0421
+- regulation_id: REG-0423
   section_number: 9.127.
   section_title: 9.127. Momelotinib (如Omjjara)：(114/10/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -6785,11 +6861,11 @@ regulations:
       IV.每日限給付1粒。
 
       2.本藥品與ruxolitinib、fedratinib用於中度風險或高風險之骨髓纖維化治療時，僅得擇一給付。Ruxolitinib、fedratinib治療後如疾病惡化不得換用本藥品。'
-- regulation_id: REG-0422
+- regulation_id: REG-0424
   section_number: 9.128.
   section_title: 9.128. Tucidinostat (如Kepida)：(114/12/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -6812,11 +6888,11 @@ regulations:
       2.需經事前審查核准後使用，每次申請之療程以3個月為限。初次申請時需檢送病理報告及影像報告，之後每3個月申請一次，再次申請時需檢附影像資料及前次治療結果評估資料證實無惡化，才可繼續使用。
 
       3.本藥品與everolimus僅得擇一使用，除因耐受性不良，不得互換。'
-- regulation_id: REG-0423
+- regulation_id: REG-0425
   section_number: 9.129.
   section_title: 9.129. Alpelisib (如Piqray）：(115/1/1、115/6/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (115/6/1)
   medications:
@@ -6862,16 +6938,17 @@ regulations:
       3.每日最多處方2粒。
 
       4.本藥品併用fulvestrant與capivasertib併用fulvestrant用於PIK3CA基因突變病人時，僅得擇一給付。(115/6/1)'
-- regulation_id: REG-0424
+- regulation_id: REG-0426
   section_number: 9.130.
   section_title: 9.130. Fulvestrant(如 Fustron)：(115/1/1、115/6/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (115/1/1、115/6/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Palbociclib (帕博西尼)
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
@@ -6888,11 +6965,11 @@ regulations:
       2.與alpelisib或capivasertib併用於曾接受CDK4/6抑制劑治療但疾病惡化的停經後轉移性乳癌病人，且須符合alpelisib或capivasertib之藥品給付規定。(115/1/1、115/6/1)
 
       3.與CDK4/6抑制劑(限使用palbociclib)併用於曾接受過內分泌療法之局部晚期或轉移性乳癌病人，且須符合CDK4/6抑制劑之藥品給付規定。'
-- regulation_id: REG-0425
+- regulation_id: REG-0427
   section_number: 9.131.
   section_title: 9.131. Repotrectinib(如Augtyro)：(115/2/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -6921,11 +6998,11 @@ regulations:
       (2)每次申請事前審查以3個月為限，再次申請時需附上治療後相關臨床資料，如給藥4週後，需追蹤胸部X光或電腦斷層等影像檢查評估療效，往後每4週做胸部X光檢查，每隔8週需追蹤其作為評估藥效的影像(如胸部X光或電腦斷層)，若病情惡化即不得再次申請。
 
       3.每日最大劑量限320mg。'
-- regulation_id: REG-0426
+- regulation_id: REG-0428
   section_number: 9.132.
   section_title: 9.132. Bosutinib(如Bostini)：(115/2/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -6936,37 +7013,37 @@ regulations:
     laboratory_criteria: []
     summary: '1.第一線使用：
 
-      (1).治療新診斷的費城染色體陽性之慢性期慢性骨髓性白血病的成人病人。
+      (1)治療新診斷的費城染色體陽性之慢性期慢性骨髓性白血病的成人病人。
 
-      (2).限每日最大劑量400mg。
+      (2)限每日最大劑量400mg。
 
       2.第二線使用：
 
-      (1).治療患有慢性、加速或急性期慢性骨髓性白血病，對先前經 imatinib 400mg(含)以上治療後有抗藥性或無耐受性的成人病人。
+      (1)治療患有慢性、加速或急性期慢性骨髓性白血病，對先前經 imatinib 400mg(含)以上治療後有抗藥性或無耐受性的成人病人。
 
-      (2).需檢送病歷及對imatinib耐受性不良或無效的證明。
+      (2)需檢送病歷及對imatinib耐受性不良或無效的證明。
 
-      (3).每日最大劑量500mg，惟接受起始劑量而未達到維持血液學、細胞遺傳學或分子反應，且未出現第3級或以上不良反應的病人，可進行遞增劑量，每日以最大劑量600mg為限。'
+      (3)每日最大劑量500mg，惟接受起始劑量而未達到維持血液學、細胞遺傳學或分子反應，且未出現第3級或以上不良反應的病人，可進行遞增劑量，每日以最大劑量600mg為限。'
   reference_annotations:
     original_clause: 9.132. Bosutinib(如Bostini)：(115/2/1)
     full_text: '1.第一線使用：
 
-      (1).治療新診斷的費城染色體陽性之慢性期慢性骨髓性白血病的成人病人。
+      (1)治療新診斷的費城染色體陽性之慢性期慢性骨髓性白血病的成人病人。
 
-      (2).限每日最大劑量400mg。
+      (2)限每日最大劑量400mg。
 
       2.第二線使用：
 
-      (1).治療患有慢性、加速或急性期慢性骨髓性白血病，對先前經 imatinib 400mg(含)以上治療後有抗藥性或無耐受性的成人病人。
+      (1)治療患有慢性、加速或急性期慢性骨髓性白血病，對先前經 imatinib 400mg(含)以上治療後有抗藥性或無耐受性的成人病人。
 
-      (2).需檢送病歷及對imatinib耐受性不良或無效的證明。
+      (2)需檢送病歷及對imatinib耐受性不良或無效的證明。
 
-      (3).每日最大劑量500mg，惟接受起始劑量而未達到維持血液學、細胞遺傳學或分子反應，且未出現第3級或以上不良反應的病人，可進行遞增劑量，每日以最大劑量600mg為限。'
-- regulation_id: REG-0427
+      (3)每日最大劑量500mg，惟接受起始劑量而未達到維持血液學、細胞遺傳學或分子反應，且未出現第3級或以上不良反應的病人，可進行遞增劑量，每日以最大劑量600mg為限。'
+- regulation_id: REG-0429
   section_number: '3.1'
   section_title: 3.1 ~2項規定內之疾病診斷或追蹤若需依據基因檢測報告，則需符合全民健康保險藥品給付規定之通則十二。
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -6978,11 +7055,11 @@ regulations:
   reference_annotations:
     original_clause: 3.1 ~2項規定內之疾病診斷或追蹤若需依據基因檢測報告，則需符合全民健康保險藥品給付規定之通則十二。
     full_text: 4.Bosutinib、nilotinib與dasatinib不得合併使用。
-- regulation_id: REG-0428
+- regulation_id: REG-0430
   section_number: 9.133.
   section_title: 9.133. Zolbetuximab (如Vyloy)：(115/4/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -7008,11 +7085,11 @@ regulations:
       須經事前審查核准後使用，每次申請事前審查之療程以12週為限，再次申請必須提出客觀影像學證據（如：RECIST criteria）證實無惡化，才可繼續使用。
 
       本案藥品與免疫檢查點抑制劑僅能擇一給付，且治療失敗時不可互換。'
-- regulation_id: REG-0429
+- regulation_id: REG-0431
   section_number: 9.134.
   section_title: 9.134. Encorafenib (如Braftovi):(115/5/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -7047,11 +7124,11 @@ regulations:
       3.使用總療程以24週為上限。
 
       4.使用本品併用cetuximab作為第二線治療，不得再申請給付抗表皮生長因子受體(anti-EGFR)藥品作為後續治療。'
-- regulation_id: REG-0430
+- regulation_id: REG-0432
   section_number: 9.135.
   section_title: 9.135. Capivasertib (如Truqap)：(115/6/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -7092,11 +7169,11 @@ regulations:
       (2) 核准後每12週需檢附療效評估資料再次申請，若疾病惡化即必須停止使用
 
       3.本藥品併用fulvestrant與alpelisib併用fulvestrant用於PIK3CA基因變異病人時，僅得擇一給付。'
-- regulation_id: REG-0431
+- regulation_id: REG-0433
   section_number: 9.136.
   section_title: 9.136. Fruquintinib (如Fruzaqla)：(115/6/1)
   chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -7123,3 +7200,105 @@ regulations:
       3.須經事前審查核准後使用，每次申請之療程以8週為限，再次申請必須提出客觀證據（如：影像學）證實無惡化，才可繼續使用。
 
       4.Fruzaqla 5mg每日至多給付1粒，Fruzaqla 1mg每日至多給付4粒。'
+- regulation_id: REG-0434
+  section_number: 9.137.
+  section_title: 9.137. Cabazitaxel(如Cabazred):(115/8/1)
+  chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
+  source_file: 完整給付規定1150821.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients: []
+  conditions_of_payment:
+    indications:
+    - Prostate Cancer (前列腺癌)
+    laboratory_criteria: []
+    summary: '1.與prednisone或prednisolone併用，治療對荷爾蒙無效的轉移性前列腺癌(mCRPC)，且已接受過docetaxel治療者，須完全符合下列條件：
+
+      (1)曾經接受過docetaxel至少3個療程。
+
+      (2)曾經接受過新型荷爾蒙藥品(abiraterone、apalutamide、darolutamide和enzalutamide)治療後惡化。
+
+      (3)ECOG≦1。
+
+      2.需經事前審查核准後使用，每3個月需再次申請。
+
+      (1)初次申請時需檢附病理報告、使用雄性素去除療法紀錄，系列PSA和睪固酮數據及3個月內影像報告。
+
+      (2)再申請時PSA值未超過治療前，且影像學證據尚無疾病進展者，可以...'
+  reference_annotations:
+    original_clause: 9.137. Cabazitaxel(如Cabazred):(115/8/1)
+    full_text: '1.與prednisone或prednisolone併用，治療對荷爾蒙無效的轉移性前列腺癌(mCRPC)，且已接受過docetaxel治療者，須完全符合下列條件：
+
+      (1)曾經接受過docetaxel至少3個療程。
+
+      (2)曾經接受過新型荷爾蒙藥品(abiraterone、apalutamide、darolutamide和enzalutamide)治療後惡化。
+
+      (3)ECOG≦1。
+
+      2.需經事前審查核准後使用，每3個月需再次申請。
+
+      (1)初次申請時需檢附病理報告、使用雄性素去除療法紀錄，系列PSA和睪固酮數據及3個月內影像報告。
+
+      (2)再申請時PSA值未超過治療前，且影像學證據尚無疾病進展者，可以繼續使用。
+
+      (3)下降達最低值後之持續追蹤出現PSA較最低值上升50%以上且PSA≧2ng/mL，則需停藥，但影像學證據尚無疾病進展者，可以繼續使用。
+
+      3.總療程以7個療程為上限。
+
+      4.不得與新型荷爾蒙藥品或olaparib合併使用。'
+- regulation_id: REG-0435
+  section_number: 9.138.
+  section_title: 9.138. Aumolertinib (如Pulmivex)：(115/8/1)
+  chapter: 第9節 抗癌瘤藥物Antineoplastics drugs
+  source_file: 完整給付規定1150821.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients:
+    - Afatinib (阿法替尼)
+    - Osimertinib (奧希替尼)
+    - Erlotinib (厄洛替尼)
+    - Gefitinib (吉非替尼)
+  conditions_of_payment:
+    indications:
+    - Lung Cancer (肺癌)
+    laboratory_criteria: []
+    summary: '1.限單獨使用於：
+
+      (1)具有EGFR Exon 19 Del或Exon 21 L858R基因突變之局部侵犯性或轉移性（即為IIIB、IIIC期或第Ⅳ期）肺腺癌病人之第一線治療。
+
+      (2)先前已接受過EGFR標靶藥物 gefitinib、erlotinib、afatinib 、dacomitinib治療失敗，且具有EGFR　T790M基因突變之局部侵犯性或轉移性之非小細胞肺癌之第二線治療。
+
+      2.使用注意事項：
+
+      (1)須經事前審查核准後使用：
+
+      I.每次申請事前審查之療程以三個月為限，每三個月需再次申請。
+
+      II.初次申請時需檢具確實患有肺腺癌或非小細胞肺癌之病理或細胞檢查報告，及檢附EGFR基因檢測...'
+  reference_annotations:
+    original_clause: 9.138. Aumolertinib (如Pulmivex)：(115/8/1)
+    full_text: '1.限單獨使用於：
+
+      (1)具有EGFR Exon 19 Del或Exon 21 L858R基因突變之局部侵犯性或轉移性（即為IIIB、IIIC期或第Ⅳ期）肺腺癌病人之第一線治療。
+
+      (2)先前已接受過EGFR標靶藥物 gefitinib、erlotinib、afatinib 、dacomitinib治療失敗，且具有EGFR　T790M基因突變之局部侵犯性或轉移性之非小細胞肺癌之第二線治療。
+
+      2.使用注意事項：
+
+      (1)須經事前審查核准後使用：
+
+      I.每次申請事前審查之療程以三個月為限，每三個月需再次申請。
+
+      II.初次申請時需檢具確實患有肺腺癌或非小細胞肺癌之病理或細胞檢查報告，及檢附EGFR基因檢測結果報告，且需符合全民健康保險藥品給付規定之通則十二。
+
+      III.再次申請時需附上治療後相關臨床資料（如：影像學）證實無惡化，才可繼續使用。每次處方以4週為限，如給藥4週後需追蹤胸部X光或電腦斷層等影像檢查評估療效，每8至12週需進行完整療效評估(如胸部X光或電腦斷層)，若病情惡化、復發或產生不可接受之毒性，即不得再次申請。
+
+      (2)用於第一線治療用藥：與gefitinib、erlotinib、afatinib、dacomitinib及osimertinib僅得擇一使用，除因耐受性不良，不得互換。如需更換使用本藥品，必須符合本藥品具有EGFR
+      Exon 19 Del或Exon 21 L858R基因突變之局部侵犯性或轉移性（即為IIIB、IIIC期或第Ⅳ期）肺腺癌病患。
+
+      (3)用於第二線治療用藥：須符合本藥品具有EGFR T790M 基因突變，及檢附曾經接受gefitinib、erlotinib、afatinib、dacomitinib
+      治療之證明，以及目前又有疾病惡化之影像診斷證明（如胸部X 光、電腦斷層或其他可作為評估的影像），此影像證明以可測量（measurable）的病灶為優先，如沒有可以測量的病灶，則可評估（evaluable）的病灶亦可採用。與osimertinib擇一使用，除因耐受性不良，不得互換。
+
+      (4)每日限給付2粒。'

@@ -8,7 +8,7 @@ regulations:
   section_title: 1.6.3. Tolterodine L-tartrate  (如Detrusitol) ; solifenacin succinate  (如Vesicare)；mirabegron
     (如Betmiga):(90/7/1、93/10/1、96/4/1、104/2/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (104/2/1)
   medications:
@@ -58,7 +58,7 @@ regulations:
   section_number: 1.6.4.
   section_title: 1.6.4. Nusinersen(如 Spinraza)、risdiplam（如Evrysdi）：（109/7/1、109/10/1、112/4/1、112/6/1、112/8/1、113/8/1、115/6/1）
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (109/7/1、112/4/1、112/6/1、112/8/1、113/8/1、115/6/1)
   - (113/8/1)
@@ -148,7 +148,7 @@ regulations:
   section_number: 1.6.5.
   section_title: 1.6.5. Galcanezumab(如Emgality)、fremanezumab(如Ajovy)：(110/3/1、111/3/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -195,7 +195,7 @@ regulations:
   section_number: 1.6.6.
   section_title: 1.6.6. Patisiran（如Onpattro）、vutrisiran（如Amvuttra）：（112/5/1、114/5/1）
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -291,7 +291,7 @@ regulations:
   section_title: 1.6.7. Onasemnogene abeparvovec (如Zolgensma suspension for Intravenous
     Infusion)：（112/8/1、112/10/1、113/4/1）
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (113/4/1)
   - (112/10/1)
@@ -426,7 +426,7 @@ regulations:
   section_number: 1.6.8.
   section_title: 1.6.8. Eladocagene exuparvovec(如Upstaza)：（114/12/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -522,7 +522,7 @@ regulations:
   section_number: 1.6.9.
   section_title: 1.6.9. Baclofen注射劑 (如Gablofen)：(115/7/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -541,14 +541,14 @@ regulations:
       4.需經事前審查核准後使用。\n(1)\t申請時需檢附功能量表如GMFCS （Gross Motor Function Classification System)達III至V級評估結果、Modified\
       \ Ashworth Scale評估結果、病歷資料、治療計畫及照片或影片。\n(2)\t首次申請以六個月為限，之後每六個月須再次申請，評估使用後spasticity有改善(Modified\
       \ Ashworth Scale進步一分以上，或功能/照護負擔改善)，方得續用。"
-- regulation_id: REG-0248
+- regulation_id: REG-0250
   section_number: 8.2.4.2.
   section_title: 8.2.4.2. Etanercept(如Enbrel)； adalimumab（如Humira）；golimumab（如Simponi）；
     abatacept（如Orencia）；tocilizumab（如Actemra）；tofacitinib（如Xeljanz）；certolizumab (Cimzia)
     ；baricitinib（如Olumiant）；opinercept (如Tunex)； infliximab(如Remicade)；peficitinib
     (如Smyraf)；upadacitinib(如Rinvoq)；filgotinib(如Jyseleca) (92/3/1、93/8/1、93/9/1、98/3/1、99/2/1、100/12/1、101/1/1、101/6/1、102/1/1、102/4/1、102/10/1、103/12/1、106/4/1、106/11/1、107/9/1、108/3/1、108/5/1、109/8/1、109/9/1、109/12/1、110/3/1、110/5/1、110/6/1、112/5/1、114/9/1)：成人治療部分
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (102/10/1、106/4/1)
   - (106/4/1)
@@ -733,13 +733,13 @@ regulations:
       (1)生物製劑暫緩續用後，必須持續接受至少2種DMARDs藥物之治療（methotrexate為基本藥物，另一藥物必須包括肌肉注射之金劑、hydroxychloroquine、sulfasalazine、d-penicillamine、azathioprine、leflunomide、cyclosporine中之任何一種），其中methotrexate至少2個月以上必須達到當初申請生物製劑時所使用之劑量。
 
       (2)DAS28總積分上升程度＞ 1.2。(102/4/1)'
-- regulation_id: REG-0249
+- regulation_id: REG-0251
   section_number: 8.2.4.3.
   section_title: 8.2.4.3. Adalimumab（如Humira）; etanercept (如Enbrel) ；golimumab（如Simponi）；secukinumab（如Cosentyx）；infliximab（如Remicade靜脈注射）；certolizumab
     (如Cimzia)；ixekizumab(如Taltz) ；upadacitinib(如Rinvoq)；tofacitinib (如Xeljanz)；brodalumab
     (如Lumicef)；bimekizumab（如Bimzelx） (98/8/1、98/11/1、101/1/1、102/1/1、107/1/1、109/9/1、109/12/1、110/7/1、111/5/1、112/3/1、112/4/1、112/12/1、114/9/1、115/5/1)：用於僵直性脊椎炎治療部分
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (107/1/1、112/3/1)
   - (109/9/1、109/12/1)
@@ -753,7 +753,9 @@ regulations:
   - (110/7/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Secukinumab (蘇金單抗)
+    - Tofacitinib (托法替尼)
   conditions_of_payment:
     indications:
     - Thrombosis / Pulmonary Embolism (血栓)
@@ -877,16 +879,16 @@ regulations:
       iii.懷孕(certolizumab除外，其他暫時停藥即可) (110/7/1)
 
       iv.嚴重的間發性感染症(依嚴重性判斷可選擇暫時停藥即可)'
-- regulation_id: REG-0250
+- regulation_id: REG-0252
   section_number: 8.2.4.4.
   section_title: 8.2.4.4. Adalimumab（如Humira）； etanercept (如Enbrel)；golimumab（如Simponi）；ustekinumab（如Stelara）；secukinumab（如Cosentyx）；ixekizumab
     (如Taltz)；tofacitinib（如Xeljanz）；certolizumab(如Cimzia)；brodalumab(如Lumicef)；guselkumab(如Tremfya)；upadacitinib(如Rinvoq)
-    ；risankizumab (如Skyrizi)；bimekizumab（如Bimzelx）（98/8/1、98/11/1、99/1/1、102/1/1、102/2/1、105/10/1、107/1/1、109/3/1、109/6/1、109/8/1、109/9/1、110/7/1、111/3/1、111/5/1、111/9/1、112/3/1、112/4/1、112/12/1、114/2/1、115/5/1)：用於活動性乾癬性關節炎－乾癬性周邊關節炎治療部分
+    ；risankizumab (如Skyrizi)；bimekizumab（如Bimzelx）（98/8/1、98/11/1、99/1/1、102/1/1、102/2/1、105/10/1、107/1/1、109/3/1、109/6/1、109/8/1、109/9/1、110/7/1、111/3/1、111/5/1、111/9/1、112/3/1、112/4/1、112/12/1、114/2/1、115/5/1、115/8/1)：用於活動性乾癬性關節炎－乾癬性周邊關節炎治療部分
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (109/8/1)
-  - (107/1/1、109/6/1、112/3/1、112/4/1、112/12/1、115/5/1)
+  - (107/1/1、109/6/1、112/3/1、112/4/1、112/12/1、115/5/1、115/8/1)
   - (105/10/1、107/1/1、109/3/1、109/6/1、111/3/1、111/5/1、111/9/1、112/4/1、112/12/1、114/2/1、115/5/1)
   - (107/1/1、112/3/1)
   - (109/3/1、111/5/1)
@@ -907,7 +909,12 @@ regulations:
   - (110/7/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Etanercept (恩博)
+    - Tofacitinib (托法替尼)
+    - Ustekinumab (烏司他單抗)
+    - Secukinumab (蘇金單抗)
+    - Adalimumab (阿達木單抗)
   conditions_of_payment:
     indications:
     - Psoriasis / Psoriatic Arthritis (乾癬)
@@ -929,7 +936,7 @@ regulations:
   reference_annotations:
     original_clause: 8.2.4.4. Adalimumab（如Humira）； etanercept (如Enbrel)；golimumab（如Simponi）；ustekinumab（如Stelara）；secukinumab（如Cosentyx）；ixekizumab
       (如Taltz)；tofacitinib（如Xeljanz）；certolizumab(如Cimzia)；brodalumab(如Lumicef)；guselkumab(如Tremfya)；upadacitinib(如Rinvoq)
-      ；risankizumab (如Skyrizi)；bimekizumab（如Bimzelx）（98/8/1、98/11/1、99/1/1、102/1/1、102/2/1、105/10/1、107/1/1、109/3/1、109/6/1、109/8/1、109/9/1、110/7/1、111/3/1、111/5/1、111/9/1、112/3/1、112/4/1、112/12/1、114/2/1、115/5/1)：用於活動性乾癬性關節炎－乾癬性周邊關節炎治療部分
+      ；risankizumab (如Skyrizi)；bimekizumab（如Bimzelx）（98/8/1、98/11/1、99/1/1、102/1/1、102/2/1、105/10/1、107/1/1、109/3/1、109/6/1、109/8/1、109/9/1、110/7/1、111/3/1、111/5/1、111/9/1、112/3/1、112/4/1、112/12/1、114/2/1、115/5/1、115/8/1)：用於活動性乾癬性關節炎－乾癬性周邊關節炎治療部分
     full_text: '1.限內科專科醫師且具有風濕或免疫專科醫師證書者，或皮膚科專科醫師處方。（99/1/ 1）
 
       2.需經事前審查核准後使用。
@@ -947,7 +954,7 @@ regulations:
       i.疾病修飾治療藥物〔DMARDs包括下列四種: sulfasalazine、methotrexate (MTX)、cyclosporine、leflunomide〕，治療至少六個月，且至少有兩個月都達標準目標劑量(除非有明顯副作用或毒性反應)，仍然未達療效者。
 
       ii.疾病修飾治療藥物中sulfasalazine、methotrexate (MTX)、cyclosporine為第一線藥物，leflunomide為第二線藥物，第一線疾病修飾類藥物治療無效，應先經leflunomide治療3個月無效後，方可使用腫瘤壞死因子抑制劑或secukinumab
-      150mg、ixekizumab或tofacitinib或upadacitinib或brodalumab或bimekizumab作為第三線治療。(107/1/1、109/6/1、112/3/1、112/4/1、112/12/1、115/5/1)
+      150mg、ixekizumab或tofacitinib或upadacitinib或brodalumab或bimekizumab作為第三線治療。原經事前審查符合apremilast藥品給付規定且已接受治療者，apremilast可視同為DMARDs第一線藥物。(107/1/1、109/6/1、112/3/1、112/4/1、112/12/1、115/5/1、115/8/1)
 
       iii.標準治療失敗之定義：經過充分使用以上藥物治療又給予規定劑量，且至少先後使用或併用兩種疾病修飾類藥物(DMARDs)仍無法使病情緩解，即符合下列情況之一：
 
@@ -1043,12 +1050,12 @@ regulations:
       iii.懷孕(certolizumab除外，其他暫時停藥即可)(110/7/1)
 
       iv.嚴重感染症﹝依嚴重性判斷可選擇暫時停藥﹞'
-- regulation_id: REG-0251
+- regulation_id: REG-0253
   section_number: 8.2.4.5.
   section_title: 8.2.4.5. Adalimumab（如Humira）;etanercept(如Enbrel)；golimumab（如Simponi）；secukinumab(如Cosentyx)；ixekizumab(如Taltz)；tofacitinib(如Xeljanz)；certolizumab(如Cimzia)；guselkumab(如Tremfya)；upadacitinib(如Rinvoq)；brodalumab
     (如Lumicef) ；risankizumab (如Skyrizi)；bimekizumab（如Bimzelx） (98/8/1、98/11/1、99/1/1、102/1/1、102/2/1、107/1/1、109/3/1、109/6/1、110/7/1、111/9/1、112/3/1、112/4/1、112/12/1、114/2/1、115/5/1)：用於活動性乾癬性關節炎－乾癬性脊椎病變治療部分
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (107/1/1、109/3/1、109/6/1、111/9/1、112/4/1、112/12/1、114/2/1、115/5/1)
   - (107/1/1、112/3/1)
@@ -1065,7 +1072,9 @@ regulations:
   - (110/7/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Secukinumab (蘇金單抗)
+    - Tofacitinib (托法替尼)
   conditions_of_payment:
     indications:
     - Psoriasis / Psoriatic Arthritis (乾癬)
@@ -1169,13 +1178,13 @@ regulations:
       iii.懷孕(certolizumab除外，其他暫時停藥即可)(110/7/1)
 
       iv.嚴重的間發性感染症﹝依嚴重性判斷可選擇暫時停藥﹞'
-- regulation_id: REG-0252
+- regulation_id: REG-0254
   section_number: 8.2.4.6.1.
   section_title: 8.2.4.6.1. Etanercept（如Enbrel）；adalimumab（如Humira）；ustekinumab（如Stelara）；secukinumab（如Cosentyx）；ixekizumab(如Taltz)
     ； guselkumab (如Tremfya) ；brodalumab (如Lumicef)；risankizumab(如Skyrizi) ；certolizumab
     (如Cimzia) ；bimekizumab（如Bimzelx）(98/11/1、100/7/1、101/5/1、101/12/1、102/1/1、104/4/1、105/9/1、107/8/1、108/3/1、108/4/1、109/9/1、109/12/1、110/5/1、110/7/1、113/3/1、114/6/1、115/5/1)：用於乾癬治療部分
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (100/7/1)
   - (101/5/1、109/9/1)
@@ -1195,10 +1204,14 @@ regulations:
   - (110/5/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Adalimumab (阿達木單抗)
+    - Ustekinumab (烏司他單抗)
+    - Etanercept (恩博)
+    - Secukinumab (蘇金單抗)
   conditions_of_payment:
     indications:
-    - Hepatitis B / Hepatitis C (肝炎)
+    - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     - Generalized Pustular Psoriasis (GPP) (全身型急性發作膿疱性乾癬)
     - Psoriasis / Psoriatic Arthritis (乾癬)
     laboratory_criteria:
@@ -1335,11 +1348,11 @@ regulations:
       (1)使用一種生物製劑治療後，雖PASI<10且有PASI 50療效，但治療後仍有PASI>1、體表面積>3% 或是病灶存在外露明顯部位(如頭皮、臉部、手指甲、手部)且明顯影響生活品質者，得於每半年續用申請時，平行轉用另一種生物製劑(用法用量依照仿單)，但前後所使用生物製劑之期間均應計入2年給付時間合併計算。
 
       (2)申請此項平行轉換者，申請續用時，有效性比較基準點為此2年療程起始時之嚴重度。'
-- regulation_id: REG-0253
+- regulation_id: REG-0255
   section_number: 8.2.4.6.2.
   section_title: 8.2.4.6.2. Spesolimab (如 Spevigo) (113/7/1)：用於全身型急性發作膿疱性乾癬治療部分
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1377,11 +1390,11 @@ regulations:
       4.若於給予初始劑量的1週後急性發作症狀持續（GPPGA 總分≥2 且 GPPGA 單項膿疱評分≥2），可再給予額外一劑900毫克。
 
       5.需檢附IL36RN突變檢測報告，且需符合全民健康保險藥品給付規定之通則十二。'
-- regulation_id: REG-0254
+- regulation_id: REG-0256
   section_number: 8.2.4.7.1.
   section_title: 8.2.4.7.1. Adalimumab（如Humira）、infliximab（如Remicade）、vedolizumab(如Entyvio)、ustekinumab（如Stelara）、risankizumab（如Skyrizi）、upadacitinib(如Rinvoq）(105/10/1、106/5/1、106/10/1、108/10/1、109/9/1、112/8/1、113/7/1、113/9/1、113/11/1、114/8/1、114/9/1)：成人治療部分
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (106/5/1、106/10/1、109/9/1、112/8/1、113/9/1、114/8/1、114/9/1)
   - (106/5/1、106/10/1、108/10/1、109/9/1、112/8/1、113/9/1、113/11/1、114/8/1、114/9/1)
@@ -1391,7 +1404,9 @@ regulations:
   - (102/1/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Adalimumab (阿達木單抗)
+    - Ustekinumab (烏司他單抗)
   conditions_of_payment:
     indications:
     - Crohn's Disease (CD) (克隆氏症)
@@ -1489,11 +1504,11 @@ regulations:
       iii懷孕(暫時停藥即可)
 
       iv嚴重間發性感染(暫時停藥即可)。'
-- regulation_id: REG-0255
+- regulation_id: REG-0257
   section_number: 8.2.4.7.2.
   section_title: 8.2.4.7.2. Adalimumab（如Humira）、infliximab （如Remicade靜脈注射）、risankizumab（如Skyrizi）(105/10/1、106/5/1、108/10/1、111/2/1、113/7/1、113/9/1、114/9/1)：兒童治療部分
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (108/10/1)
   medications:
@@ -1510,15 +1525,16 @@ regulations:
     full_text: '1.限具消化系專科證書之內科、兒科專科醫師處方使用。(108/10/1)
 
       2.須經事前審查核准後使用。'
-- regulation_id: REG-0256
+- regulation_id: REG-0258
   section_number: '3.6'
   section_title: 3.6 歲以上(risankizumab限使用於16歲以上未滿18歲)，經診斷為小兒克隆氏症且領有重大傷病證明，並排除第6項之情形及符合下列條件之一；且申請時應附上影像診斷評估報告；(111/2/1、113/9/1)。
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Adalimumab (阿達木單抗)
   conditions_of_payment:
     indications:
     - Crohn's Disease (CD) (克隆氏症)
@@ -1585,16 +1601,17 @@ regulations:
       ii該藥物引起之嚴重毒性 (白血球過低、嚴重過敏)
 
       iii嚴重感染(暫時停藥即可)。'
-- regulation_id: REG-0257
+- regulation_id: REG-0259
   section_number: 8.2.4.8.
   section_title: 8.2.4.8. Abatacept靜脈注射劑（如Orencia IV）（101/10/1、102/1/1、104/8/1、108/1/1、111/2/1）：用於幼年型慢性關節炎治療部分
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (102/1/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Etanercept (恩博)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -1688,12 +1705,12 @@ regulations:
       iii.醫師的整體評估
 
       Ⅱ.上述各種指標惡化程度達30%以上者不得超過一項。'
-- regulation_id: REG-0258
+- regulation_id: REG-0260
   section_number: 8.2.4.9.1.
   section_title: 8.2.4.9.1. Golimumab(如Simponi)、Adalimumab（如Humira）、Vedolizumab（如Entyvio）、infliximab（如Remicade）、tofacitinib(如Xeljanz)
     ustekinumab(如Stelara)、upadacitinib(如Rinvoq)(105/9/1、105/10/1、106/10/1、107/8/1、108/10/1、111/3/1、111/6/1、112/8/1、113/7/1、113/11/1、114/8/1、114/9/1)：成人治療部分
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (105/10/1、106/10/1、107/8/1、108/10/1、111/3/1、111/6/1、112/8/1、114/8/1、114/9/1)
   - (106/10/1、108/10/1)
@@ -1706,7 +1723,10 @@ regulations:
   - (105/10/1、106/10/1、107/8/1、108/10/1、111/3/1、111/6/1、112/8/1、113/7/1、113/11/1、114/8/1、114/9/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Adalimumab (阿達木單抗)
+    - Ustekinumab (烏司他單抗)
+    - Tofacitinib (托法替尼)
   conditions_of_payment:
     indications:
     - Ulcerative Colitis (UC) (潰瘍性結腸炎)
@@ -1763,11 +1783,11 @@ regulations:
       (5)具高度感染機會之病患：慢性腿部潰瘍、導尿管置留、身上有引流管、人工關節感染，該人工關節尚未摘除者、頑固性或復發性之胸腔感染症病患。\n(6)多發性硬化症(multiple\
       \ sclerosis)。\n8.須停止治療的情形：\n(1)療效不彰：療效評估未達繼續使用標準者。\n(2)其他事項包括：\nⅠ.惡性腫瘤。\nⅡ.該藥物引起之嚴重毒性(白血球過低、嚴重過敏)。\n\
       Ⅲ.懷孕(暫時停藥即可)。\nⅣ.嚴重間發性感染(暫時停藥即可)。"
-- regulation_id: REG-0259
+- regulation_id: REG-0261
   section_number: 8.2.4.9.2.
   section_title: 8.2.4.9.2. Infliximab（如Remicade靜脈注射）、adalimumab（如Humira） (107/8/1、108/10/1、111/2/1、111/5/1、113/7/1、114/9/1）：兒童治療部分
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (111/5/1)
   - (111/5/1)
@@ -1777,7 +1797,8 @@ regulations:
   - (108/10/1、111/5/1、113/7/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Adalimumab (阿達木單抗)
   conditions_of_payment:
     indications:
     - Ulcerative Colitis (UC) (潰瘍性結腸炎)
@@ -1875,15 +1896,16 @@ regulations:
       Ⅲ.懷孕(暫時停藥即可)。
 
       Ⅳ.嚴重間發性感染(暫時停藥即可)。'
-- regulation_id: REG-0260
+- regulation_id: REG-0262
   section_number: 8.2.4.10.
   section_title: 8.2.4.10. Adalimumab（如Humira）(109/9/1) 用於小兒葡萄膜炎治療部分
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Adalimumab (阿達木單抗)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -1957,18 +1979,18 @@ regulations:
       (3)身上帶有人工關節者，罹患或先前曾罹患過嚴重的敗血症(Sepsis)者。
 
       (4)惡性腫瘤或具有癌症前兆(pre-malignancy)的患者。'
-- regulation_id: REG-0261
+- regulation_id: REG-0263
   section_number: 8.2.4.11.
   section_title: 8.2.4.11. Guselkumab (如Tremfya) (111/9/1)：用於掌蹠膿皰症治療部分
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
     ingredients: []
   conditions_of_payment:
     indications:
-    - Hepatitis B / Hepatitis C (肝炎)
+    - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     laboratory_criteria: []
     summary: '1.限內科專科醫師且具有風濕或免疫專科醫師證書者，或皮膚科專科醫師處方。
 
@@ -2052,11 +2074,11 @@ regulations:
       (2)因使用一種生物製劑治療後療效不彰，而轉用另一種不同藥理機轉之生物製劑，以轉用後者之起始日重新計算2年後開始減量之時機。但因無法忍受副作用而轉用相同藥理機轉之生物製劑，轉用前後所使用生物製劑之期間均應計入。
 
       8.暫緩續用後若疾病再復發，可重新申請使用，須符合至少有50%復發(需附上次療程治療前、後，及本次照片)。'
-- regulation_id: REG-0262
+- regulation_id: REG-0264
   section_number: 8.2.4.12.
   section_title: 8.2.4.12. Tocilizumab(如Actemra)：(113/1/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -2082,11 +2104,11 @@ regulations:
       94%、需使用吸氧治療、高流量氧氣或非侵襲性呼吸器之患者。
 
       2.劑量8mg/kg，單次靜脈注射，最大劑量800mg。'
-- regulation_id: REG-0263
+- regulation_id: REG-0265
   section_number: 8.2.4.13.
   section_title: 8.2.4.13. Baricitinib (Olumiant)：(113/1/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -2114,11 +2136,11 @@ regulations:
       2.每日劑量口服4mg，使用14天或至出院。
 
       3.排除懷孕婦女。'
-- regulation_id: REG-0264
+- regulation_id: REG-0266
   section_number: 8.2.4.14.
   section_title: 8.2.4.14. Secukinumab（如Cosentyx）：用於化膿性汗腺炎（114/7/1）
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -2193,11 +2215,11 @@ regulations:
       復發者傳統全身性療法反應不佳或無法耐受，指使用1.（3）所列兩種或兩種以上藥物治療，且至少3個月後，仍未達HiSCR 50 方可重新申請治療。
 
       上一個療程或療程結束後，至少接受一處或一處以上的廔管（fistula/tunnel）切除手術（excision）或除頂術（deroofing），並檢附相關病理報告。'
-- regulation_id: REG-0265
+- regulation_id: REG-0267
   section_number: 8.2.5.
   section_title: 8.2.5. Leflunomide (如Arava、Arheuma )：(92/9/1、93/5/1、97/9/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -2215,20 +2237,25 @@ regulations:
     full_text: '1.限治療成人類風濕性關節炎，且用於methotrexate治療無效，或無法忍受methotrexate副作用時使用。
 
       2.限治療具活動性的成人乾癬性關節炎，且於DMARDs（疾病修飾抗風濕病藥物）治療無效後使用。（97/9/1）'
-- regulation_id: REG-0266
+- regulation_id: REG-0268
   section_number: 8.2.6.1.
   section_title: 8.2.6.1. Interferon alpha-2a （如Roferon-A）及interferon alpha-2b（如Intron
     A）（92/10/1、109/7/1）; peginterferon alfa-2a（如Pegasys）（92/11/1-C肝、94/11/1-B肝、96/10/1、98/11/1、99/5/1-B肝、100/6/1-B肝、102/2/1、105/10/1、106/1/1、106/4/1、109/7/1、110/3/1、111/2/1、111/3/1)：
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (109/7/1)
   medications:
-    drug_classes: []
-    ingredients: []
+    drug_classes:
+    - 核苷及核苷酸反轉錄酶抑制劑 / B型肝炎口服抗病毒藥物
+    ingredients:
+    - Tenofovir alafenamide (替諾福韋丙酚酚胺)
+    - Tenofovir disoproxil (替諾福韋雙索酯)
+    - Lamivudine (拉米夫定)
+    - Entecavir (恩替卡韋)
   conditions_of_payment:
     indications:
-    - Hepatitis B / Hepatitis C (肝炎)
+    - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     - Hemophilia (血友病)
     laboratory_criteria:
     - ALT
@@ -2265,11 +2292,11 @@ regulations:
       Ⅰ.醫院：\ni.有消化系內科或消化系兒科專科醫師之醫院。\nii.醫師資格為前開醫院之消化系內科專科醫師、消化系兒科專科醫師、血液病專科醫師、腫瘤內科專科醫師、癌症相關科醫師及符合器官移植手術資格之專任或兼任專科醫師。\n\
       iii.前開非消化系專科醫師，需先照會消化系專科醫師，惟愛滋病毒感染患者併有B型或C肝炎感染者，得由其照護之感染症內科專科醫師開立處方。\nⅡ.基層院所：\n\
       i.須具有消化系內科或消化系兒科專任專科醫師之基層院所。\nii.肝炎治療醫療資源不足地區及山地離島地區，具有消化系內科或消化系兒科兼任專科醫師之基層院所，亦得開立處方，惟離島地區(如金門縣、連江縣、澎湖縣、台東縣蘭嶼鄉、台東縣綠島鄉)內科醫師之基層院所，亦得開立處方。"
-- regulation_id: REG-0267
+- regulation_id: REG-0269
   section_number: APP
   section_title: ◎附表三十四：肝炎治療醫療資源不足地區及山地離島地區一覽表
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (87/4/1)
   - (89/1/1、111/2/1)
@@ -2322,12 +2349,12 @@ regulations:
       (8)kasabach-Merritt症候群。（93/4/1）
 
       (9)用於一般療法無法治療的Lymphangioma。（93/4/1、97/8/1）'
-- regulation_id: REG-0268
+- regulation_id: REG-0270
   section_number: 8.2.6.2.
   section_title: 8.2.6.2. Peginterferon alpha-2b（如Peg-Intron）（92/10/1、94/10/1、109/7/1）；interferon
     alfacon-1（如Infergen）（93/7/1、94/10/1、98/11/1、109/7/1）
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (109/7/1)
   medications:
@@ -2335,7 +2362,7 @@ regulations:
     ingredients: []
   conditions_of_payment:
     indications:
-    - Hepatitis B / Hepatitis C (肝炎)
+    - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     - Hemophilia (血友病)
     laboratory_criteria: []
     summary: '1.限用於下列慢性病毒性C型肝炎患者，且應與ribavirin併用:
@@ -2381,16 +2408,18 @@ regulations:
       Ⅰ.須具有消化系內科或消化系兒科專任專科醫師之基層院所。
 
       Ⅱ.肝炎治療醫療資源不足地區及山地離島地區，具有消化系內科或消化系兒科兼任專科醫師之基層院所，亦得開立處方，惟離島地區(如金門縣、連江縣、澎湖縣、台東縣蘭嶼鄉、台東縣綠島鄉)內科醫師之基層院所，亦得開立處方。'
-- regulation_id: REG-0269
+- regulation_id: REG-0271
   section_number: 8.2.7.
   section_title: 8.2.7. Rituximab注射劑（如Mabthera，不同劑型之適用範圍需符合藥品許可證登載之適應症)：用於類風濕性關節炎之成人治療部分（97/11/1、99/2/1、101/7/1、102/1/1、102/4/1、106/9/1、109/11/1）
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (102/1/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Adalimumab (阿達木單抗)
+    - Etanercept (恩博)
   conditions_of_payment:
     indications:
     - Rheumatoid Arthritis (類風濕性關節炎)
@@ -2458,11 +2487,11 @@ regulations:
       - 未達療效
 
       - 藥物引起嚴重毒性'
-- regulation_id: REG-0270
+- regulation_id: REG-0272
   section_number: APP
   section_title: ◎附表二十三：全民健康保險使用rituximab用於類風濕性關節炎申請表
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (109/11/1)
   medications:
@@ -2509,11 +2538,11 @@ regulations:
       (5)維持治療應於第12個月時靜脈輸注投予500mg的維持治療，之後每6個月根據臨床評估投予。
 
       (6)若於rituximab療療程中復發，病人可接受一劑1000mg rituximab靜脈輸注。醫療專業人員也應根據臨床評估，考慮重新開始或增加病人的葡萄糖皮質素(glucocorticoids)劑量。'
-- regulation_id: REG-0271
+- regulation_id: REG-0273
   section_number: 8.2.8.
   section_title: 8.2.8. Palivizumab (如Synagis)(99/12/1、102/7/1、106/4/1、111/2/1、111/4/1、114/6/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (106/4/1、111/2/1、111/4/1、114/6/1)
   - (111/2/1)
@@ -2535,11 +2564,11 @@ regulations:
       1.出生時，懷孕週數未滿33週之早產兒，最多施打六劑。懷孕週數滿33週但未滿36週之早產兒，最多施打三劑。(106/4/1、111/2/1、111/4/1、114/6/1)
 
       2.併有慢性肺疾病(Chronic Lung Disease；CLD)之早產兒(35週以下)(111/2/1)。'
-- regulation_id: REG-0272
+- regulation_id: REG-0274
   section_number: '3.1'
   section_title: 3.1 歲以下患有血液動力學上顯著異常之先天性心臟病童。需符合以下條件(111/2/1)：
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -2584,11 +2613,11 @@ regulations:
       Ⅱ一歲之內接受體外循環開心矯正手術者，術後出院前再給一劑。
 
       Ⅲ最多施打六劑。'
-- regulation_id: REG-0273
+- regulation_id: REG-0275
   section_number: 8.2.9.
   section_title: 8.2.9. Thalidomide（如Thado）(100/2/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -2612,12 +2641,12 @@ regulations:
       3.不可單獨用於治療發生中度至重度神經炎之ENL。
 
       4.需事前審查核准後使用。'
-- regulation_id: REG-0274
+- regulation_id: REG-0276
   section_number: 8.2.10.
   section_title: 8.2.10. Eculizumab（如Soliris）、ravulizumab (如Ultomiris)、crovalimab(如Piasky)
     ：（101/4/1、102/10/1、108/6/1、108/9/1、114/2/1、114/10/1、115/3/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (108/6/1、114/2/1、114/10/1)
   - (101/4/1、115/3/1)
@@ -2672,11 +2701,11 @@ regulations:
       網狀細胞(reticulocytes) <25x109/L。
 
       骨髓內造血細胞密度<30%。'
-- regulation_id: REG-0275
+- regulation_id: REG-0277
   section_number: APP
   section_title: ◎附表三十之二：陣發性夜間血紅素尿症患者特殊專案審查申請Soliris (eculizumab)、Ultomiris (ravulizumab)、Piasky(crovalimab)用藥檢附資料查檢表
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (108/6/1、108/9/1)
   - (108/9/1)
@@ -2734,11 +2763,11 @@ regulations:
       iii.嚴重腦傷害導致神經性異常重度殘障\niv.若病患疾病是由於帶MCP、CD46、CFI基因異常導致，且超過易感染病毒年紀(5歲以上)，或者在延長給藥時間或減少劑量下仍然無復發且CH50<10%，可考慮停藥。\n\
       另於114/2/1前已使用eculizumab之病人，符合續用申請條件者，得轉換至ravulizumab或crovalimab，惟使用ravulizumab或crovalimab無效後，不得再申請eculizumab。(114/2/1、114/10/1)\n\
       新病人限ravulizumab或crovalimab擇一使用。(114/10/1)\nRavulizumab或crovalimab惟在有耐受不良時方可轉換使用，且限轉換一次。(114/10/1)"
-- regulation_id: REG-0276
+- regulation_id: REG-0278
   section_number: 8.2.11.
   section_title: 8.2.11. Plerixafor (如Mozobil)：(102/12/1、106/10/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (106/10/1)
   medications:
@@ -2760,11 +2789,11 @@ regulations:
       2.原則上使用不超過2天(106/10/1)。
 
       3.使用第2天應確實計算療程中已收集之CD34+細胞總數，若仍未達每公斤體重2百萬個CD34+細胞，方得再使用1天。'
-- regulation_id: REG-0277
+- regulation_id: REG-0279
   section_number: 8.2.12.
   section_title: 8.2.12. Canakinumab（如Ilaris）：(104/8/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -2823,11 +2852,11 @@ regulations:
       Ⅱ.治療後hsCRP及ESR改善程度≧50%。
 
       (2)使用1年期間後須暫緩續用，倘hsCRP及ESR較暫緩續用前上升程度≧50%，則可申請續用，續用期間為1年。hsCRP檢驗結果上升應排除其他非CAPS之情況所引起。'
-- regulation_id: REG-0278
+- regulation_id: REG-0280
   section_number: 8.2.13.
   section_title: 8.2.13. Belimumab(如Benlysta)：(111/10/1、114/2/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (114/2/1)
   - (114/2/1)
@@ -2885,11 +2914,11 @@ regulations:
 
       Ⅴ.治療2年後，若腎炎已達完全緩解者(complete renal response, CRR)，應停止使用belimumab。CRR指病人uPCR<0.5且eGFR下降與基期相比<10%或持續≥90
       ml/min/1.73m2。'
-- regulation_id: REG-0279
+- regulation_id: REG-0281
   section_number: APP
   section_title: ◎附表三十六：全民健康保險狼瘡腎炎使用belimumab申請表
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (114/2/1)
   - (114/2/1)
@@ -3009,11 +3038,11 @@ regulations:
       (3)無法達到有效控制的定義為經標準治療至少3個月後仍有疾病活動性SELENA SLEDAI≥8（神經精神分數不可計入計分: 癲癇發作、精神疾病、器質性腦部症候群、腦神經疾患、狼瘡性頭痛、腦血管事件。腎臟分數計分最多只能佔4分:尿圓柱體、血尿、蛋白尿、膿尿。皮膚、黏膜與關節相關分數需附照片證明，相關檢驗與檢查須附報告）。
 
       (4)療效評估與繼續使用：每治療12 個月後評估SELENA SLEDAI ≥8積分：與初次申請之積分比較，減少≥4 分方得繼續使用。若需繼續使用，需重新提出申請。'
-- regulation_id: REG-0280
+- regulation_id: REG-0282
   section_number: 8.2.14.
   section_title: 8.2.14. Satralizumab(如Enspryng)、inebilizumab(如Uplizna)：(112/10/1、115/1/1、115/2/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (112/10/1、115/1/1、115/2/1)
   - (112/10/1、115/1/1)
@@ -3065,14 +3094,15 @@ regulations:
       停用標準：使用satralizumab或inebilizumab後，病人疾病惡化，且EDSS≧8分，或疾病年度發作頻率增加者，應停止使用。
 
       Satralizumab或inebilizumab僅得擇一使用，惟在有耐受不良時方可轉換使用。'
-- regulation_id: REG-0281
+- regulation_id: REG-0283
   section_number: 8.2.15.
   section_title: 8.2.15. Siltuximab (如Sylvant):(113/2/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - HIV抗病毒藥物複方製劑 (人類免疫缺乏病毒)
     ingredients: []
   conditions_of_payment:
     indications:
@@ -3172,21 +3202,22 @@ regulations:
       Ⅳ.腎絲球過濾率GFR上升20%或GFR≧60mL/min/1.73m2。
 
       淋巴結較基礎值可測量縮小50%或無新發生淋巴結節腫大(每半年執行檢測一次)。'
-- regulation_id: REG-0282
+- regulation_id: REG-0284
   section_number: 8.2.16.
   section_title: 8.2.16. Apremilast（如Otezla）、deucravacitinib（如Sotyktu）：（113/3/1、113/10/1、114/6/1）
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (113/10/1)
   - (113/10/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Tofacitinib (托法替尼)
   conditions_of_payment:
     indications:
     - Liver Cirrhosis (肝硬化)
-    - Hepatitis B / Hepatitis C (肝炎)
+    - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     - Psoriasis / Psoriatic Arthritis (乾癬)
     laboratory_criteria:
     - ALT
@@ -3212,11 +3243,11 @@ regulations:
       肝硬化等級Child-Pugh score A級且經6個月追蹤治療仍無改善或是Child-Pugh B級以上。\n(2)\t因肝功能異常具肝臟切片結果：第三期以上異常。\n\
       (3)\tC肝病毒陽性。\n(4)\tHBsAg陽性。\n(5)\tAST/ALT ≧2.5UNL(100)。\n2.腎功能不佳之定義為：(113/10/1)\n\
       (1)\tCCr<50mL/min或eGFR<60mL/min/1.73m2或洗腎。\n(2)Creatinine增加超過使用前30%。"
-- regulation_id: REG-0283
+- regulation_id: REG-0285
   section_number: 8.2.17.
   section_title: 8.2.17. Mepolizumab (如Nucala)、Benralizumab (如Fasenra)：(113/4/1、115/4/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -3254,11 +3285,11 @@ regulations:
       3. Mepolizumab或benralizumab僅得擇一使用，惟在有耐受不良時方可轉換使用。(115/4/1）
 
       備註：診斷為嗜伊紅性肉芽腫併多發血管炎之定義：曾經發生氣喘伴隨嗜伊紅性白血球增多，且診斷報告須附上組織切片檢查報告，確認出現EGPA病徵。'
-- regulation_id: REG-0284
+- regulation_id: REG-0286
   section_number: 8.2.18.
   section_title: 8.2.18. Anifrolumab（如Saphnelo）：(113/10/1)：
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -3305,12 +3336,15 @@ regulations:
       Ⅱ.關節炎計分者，續用申請時需檢附腫脹關節數目及照片。\nⅢ.肌炎計分者，續用申請時需檢附CPK、LDH、GOT數值。\nⅣ.皮疹計分者，續用申請時需檢附CLASI評分及皮膚照片。\n\
       7.減量或停用條件：若使用滿2年，達緩解或低疾病活動度SLEDAI-2K≦4滿一年以上，可以減量。減量後，若持續維持緩解或低疾病活動度SLEDAI-2K≦4滿一年以上停用，若減量或停用後病情復發，得申請恢復治療，後續依續用條件申請。\n\
       8.不給付於神經精神性狼瘡，或是狼瘡腎炎病人。\n9.\tAnifrolumab不得與其他生物製劑併用為原則。"
-- regulation_id: REG-0285
+- regulation_id: REG-0287
   section_number: 8.2.19.
-  section_title: 8.2.19. Danicopan (如Voydeya)：（115/3/1）
+  section_title: '8.2.19. Danicopan (如Voydeya)、iptacopan (如Fabhalta): (115/3/1、115/9/1)'
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
-  effective_dates: []
+  source_file: 完整給付規定1150821.docx
+  effective_dates:
+  - (115/3/1、115/9/1)
+  - (115/3/1、115/9/1)
+  - (115/9/1)
   medications:
     drug_classes: []
     ingredients: []
@@ -3320,38 +3354,38 @@ regulations:
     laboratory_criteria:
     - 白血球
     - 血小板
-    summary: '1.限與eculizumab或ravulizumab併用於經衛生福利部國民健康署認定之陣發性夜間血紅素尿症病人，並經特殊專案審查核准後使用，且符合下列條件：
+    summary: '限用於經衛生福利部國民健康署認定之陣發性夜間血紅素尿症病人，並經特殊專案審查核准後使用，且符合下列條件：(115/3/1、115/9/1)
 
-      (1)年齡18歲以上。
+      (1)Danicopan限與eculizumab或ravulizumab併用；iptacopan限單用。(115/3/1、115/9/1)
 
-      (2)經C5補體抑制劑(如eculizumab或ravulizumab)治療後，仍出現血管外溶血(clinically significant extravascular
+      (2)年齡18歲以上。
+
+      (3)經C5補體抑制劑(如eculizumab或ravulizumab)治療後，仍出現血管外溶血(clinically significant extravascular
       hemolysis)。
 
-      (3)使用C5抑制劑下血紅素仍小於或等於9.5g/dL。
+      (4)使用C5抑制劑下血紅素仍小於或等於9.5g/dL。
 
-      (4)絕對網狀紅血球計數大於或等於120×109/L，或網狀紅血球比例大於或等於3%。
-
-      2.排除有高危險之骨髓化生不良症候群（RAEB-1或RAEB-2）。
-
-      3.每...'
+      (5)絕對網狀紅血球計數大於或等於120×...'
   reference_annotations:
-    original_clause: 8.2.19. Danicopan (如Voydeya)：（115/3/1）
-    full_text: '1.限與eculizumab或ravulizumab併用於經衛生福利部國民健康署認定之陣發性夜間血紅素尿症病人，並經特殊專案審查核准後使用，且符合下列條件：
+    original_clause: '8.2.19. Danicopan (如Voydeya)、iptacopan (如Fabhalta): (115/3/1、115/9/1)'
+    full_text: '限用於經衛生福利部國民健康署認定之陣發性夜間血紅素尿症病人，並經特殊專案審查核准後使用，且符合下列條件：(115/3/1、115/9/1)
 
-      (1)年齡18歲以上。
+      (1)Danicopan限與eculizumab或ravulizumab併用；iptacopan限單用。(115/3/1、115/9/1)
 
-      (2)經C5補體抑制劑(如eculizumab或ravulizumab)治療後，仍出現血管外溶血(clinically significant extravascular
+      (2)年齡18歲以上。
+
+      (3)經C5補體抑制劑(如eculizumab或ravulizumab)治療後，仍出現血管外溶血(clinically significant extravascular
       hemolysis)。
 
-      (3)使用C5抑制劑下血紅素仍小於或等於9.5g/dL。
+      (4)使用C5抑制劑下血紅素仍小於或等於9.5g/dL。
 
-      (4)絕對網狀紅血球計數大於或等於120×109/L，或網狀紅血球比例大於或等於3%。
+      (5)絕對網狀紅血球計數大於或等於120×109/L，或網狀紅血球比例大於或等於3%。
 
       2.排除有高危險之骨髓化生不良症候群（RAEB-1或RAEB-2）。
 
       3.每6個月須經特殊專案審查重新評估治療結果。若符合下列條件之一，則不予同意使用。
 
-      (1)接受治療的患者用藥後病情沒有改善者（LDH超過正常值上限的1.5倍或最近3個月內輸血多於2個單位）
+      (1)接受治療的患者用藥後病情沒有改善者（LDH超過正常值上限的1.5倍或最近3個月內輸血多於2個單位）。
 
       (2)PNH granulocyte clone size ≦50%。
 
@@ -3363,13 +3397,15 @@ regulations:
 
       iii.網狀細胞(reticulocytes) <25x109/L。
 
-      iv.骨髓內造血細胞密度<30%。'
-- regulation_id: REG-0464
+      iv.骨髓內造血細胞密度<30%。
+
+      4.Danicopan、iptacopan兩者僅得擇一使用，惟病人出現耐受不良反應時方可轉換使用，且限轉換一次。(115/9/1)'
+- regulation_id: REG-0469
   section_number: 10.7.3.
   section_title: 10.7.3. Lamivudine 100mg(如Zeffix)；entecavir (如Baraclude)；telbivudine
     (如Sebivo)；tenofovir disoproxil (如Viread)；tenofovir alafenamide (如Vemlidy)：（92/10/1、93/2/1、93/8/1、94/10/1、95/10/1、95/11/1、97/8/1、98/11/1、99/5/1、99/7/1、100/6/1、102/2/1、104/12/1、106/1/1、106/4/1、107/2/1、108/2/1、108/5/1、109/1/1、109/7/1、110/3/1、111/3/1、111/9/1、112/10/1、113/1/1、113/4/1、114/6/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (98/11/1、110/3/1)
   - (93/2/1、94/10/1、98/11/1)
@@ -3389,12 +3425,17 @@ regulations:
   - (109/7/1、111/9/1、114/6/1)
   - (111/9/1)
   medications:
-    drug_classes: []
-    ingredients: []
+    drug_classes:
+    - 核苷及核苷酸反轉錄酶抑制劑 / B型肝炎口服抗病毒藥物
+    ingredients:
+    - Tenofovir alafenamide (替諾福韋丙酚酚胺)
+    - Tenofovir disoproxil (替諾福韋雙索酯)
+    - Lamivudine (拉米夫定)
+    - Entecavir (恩替卡韋)
   conditions_of_payment:
     indications:
     - Liver Cirrhosis (肝硬化)
-    - Hepatitis B / Hepatitis C (肝炎)
+    - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     - Liver Cancer / Hepatocellular Carcinoma (肝癌)
     laboratory_criteria:
     - ALT
@@ -3461,12 +3502,12 @@ regulations:
       \ 4 週之孕產婦接受第2次以後治療者，得由其婦產科專科醫師開立處方。（111/9/1、114/6/1）。\n(2)基層院所：\nⅠ.須具有消化系內科或消化系兒科專任專科醫師之基層院所。\n\
       Ⅱ.肝炎治療醫療資源不足地區及山地離島地區，具有消化系內科或消化系兒科兼任專科醫師之基層院所，亦得開立處方，惟離島地區(如金門縣、連江縣、澎湖縣、台東縣蘭嶼鄉、台東縣綠島鄉)內科醫師之基層院所，亦得開立處方。\n\
       Ⅲ.懷孕滿 27 週直至產後 4 週之孕產婦接受第2次以後治療者，得由其婦產科專科醫師開立處方。（114/6/1）"
-- regulation_id: REG-0465
+- regulation_id: REG-0470
   section_number: 10.7.4.
   section_title: 10.7.4. Adefovir dipivoxil (如Hepsera Tablets 10mg) ；Entecavir (如Baraclude
     1.0mg)；tenofovir disoproxil (如Viread)；tenofovir alafenamide (如Vemlidy)：(95/9/1、95/10/1、97/8/1、98/11/1、99/5/1、99/7/1、102/2/1、104/12/1、106/1/1、106/4/1、108/5/1、109/7/1、111/9/1）
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (95/9/1、95/10/1、97/8/1、98/11/1、99/5/1、99/7/1、106/4/1)
   - (104/12/1、106/4/1、108/5/1)
@@ -3479,12 +3520,17 @@ regulations:
   - (109/7/1、111/9/1)
   - (111/9/1)
   medications:
-    drug_classes: []
-    ingredients: []
+    drug_classes:
+    - 核苷及核苷酸反轉錄酶抑制劑 / B型肝炎口服抗病毒藥物
+    ingredients:
+    - Tenofovir alafenamide (替諾福韋丙酚酚胺)
+    - Tenofovir disoproxil (替諾福韋雙索酯)
+    - Lamivudine (拉米夫定)
+    - Entecavir (恩替卡韋)
   conditions_of_payment:
     indications:
     - Liver Cirrhosis (肝硬化)
-    - Hepatitis B / Hepatitis C (肝炎)
+    - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     laboratory_criteria: []
     summary: '用於慢性病毒性B型肝炎患者之條件如下：
 
@@ -3547,11 +3593,11 @@ regulations:
       Ⅰ.須具有消化系內科或消化系兒科專任專科醫師之基層院所。
 
       Ⅱ.肝炎治療醫療資源不足地區及山地離島地區，具有消化系內科或消化系兒科兼任專科醫師之基層院所，亦得開立處方，惟離島地區(如金門縣、連江縣、澎湖縣、台東縣蘭嶼鄉、台東縣綠島鄉)內科醫師之基層院所，亦得開立處方。'
-- regulation_id: REG-0466
+- regulation_id: REG-0471
   section_number: 10.7.7.
   section_title: 10.7.7. Elbasvir/grazoprevir（如Zepatier）(106/8/1、107/6/1、108/1/1、108/6/1、109/1/1、109/7/1、110/6/1）：
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (107/6/1、108/1/1、108/6/1)
   medications:
@@ -3559,7 +3605,7 @@ regulations:
     ingredients: []
   conditions_of_payment:
     indications:
-    - Hepatitis B / Hepatitis C (肝炎)
+    - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     laboratory_criteria: []
     summary: '1.限用於成人慢性病毒性C型肝炎患者，並依據「C型肝炎全口服新藥健保給付執行計畫」辦理。(109/1/1、109/7/1）
 
@@ -3607,11 +3653,11 @@ regulations:
       (1)接受第一次治療時中斷療程，且中斷原因屬專業醫療評估必須停藥者。
 
       (2)接受第一次治療結束後第12週，血中偵測不到病毒，目前血中又再次偵測到病毒者。'
-- regulation_id: REG-0467
+- regulation_id: REG-0472
   section_number: 10.7.8.
   section_title: 10.7.8. Sofosbuvir/ledipasvir（如Harvoni）(107/1/1、107/6/1、107/10/1、108/1/1、108/6/1、109/1/1、109/7/1、110/6/1、111/2/1、114/6/1、114/12/1）：
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -3619,7 +3665,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Liver Cirrhosis (肝硬化)
-    - Hepatitis B / Hepatitis C (肝炎)
+    - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     laboratory_criteria: []
     summary: "1.限用於慢性病毒性C型肝炎患者，並依據「C型肝炎全口服新藥健保給付執行計畫」辦理。(109/1/1、109/7/1）\n2.限使用於HCV\
       \ RNA或HCV core Ag為陽性之下列病患：(107/6/1、107/10/1、108/1/1、108/6/1、114/6/1）)\n(1)\t\
@@ -3635,11 +3681,11 @@ regulations:
       4.限未曾申請給付其他同類全口服直接抗病毒藥物(direct-acting anti-viral, DAAs)，且不得併用其他DAAs，惟若曾接受本項藥品或其他DAAs第一次治療且符合下列情形之一者，可再治療一次（一個療程）：(110/6/1）\n\
       (1)接受第一次治療時中斷療程，且中斷原因屬專業醫療評估必須停藥者。\n(2)接受第一次治療結束後第12週，血中偵測不到病毒，目前血中又再次偵測到病毒者。\n\
       5.高風險族群（監獄受刑人、注射藥癮者、愛滋病毒帶原者/愛滋病人、發生危險性行為者）病人，若符合前述規定即可接受治療，以治療三次為限。（114/12/1）"
-- regulation_id: REG-0468
+- regulation_id: REG-0473
   section_number: 10.7.9.
   section_title: 10.7.9. Sofosbuvir（如Sovaldi）(107/1/1、107/6/1、108/1/1、108/6/1、109/1/1、109/7/1）：
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (107/6/1、108/1/1、108/6/1)
   medications:
@@ -3647,7 +3693,7 @@ regulations:
     ingredients: []
   conditions_of_payment:
     indications:
-    - Hepatitis B / Hepatitis C (肝炎)
+    - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     laboratory_criteria: []
     summary: '1.限用於成人慢性病毒性C型肝炎患者，並依據「C型肝炎全口服新藥健保給付執行計畫」辦理。(109/1/1、109/7/1）
 
@@ -3665,11 +3711,11 @@ regulations:
       3.需合併ribavirin治療，每人給付療程12週，醫師每次開藥以4週為限。(108/1/1）
 
       4.限未曾申請給付其他同類全口服直接抗病毒藥物(direct-acting anti-viral, DAAs)，且不得併用其他DAAs。'
-- regulation_id: REG-0469
+- regulation_id: REG-0474
   section_number: 10.7.10.
   section_title: 10.7.10. Glecaprevir/pibrentasvir（如Maviret）(107/8/1、108/1/1、108/6/1、109/1/1、109/4/1、109/7/1、109/8/1、110/6/1、111/2/1、114/6/1、114/12/1）：
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -3677,7 +3723,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Liver Cirrhosis (肝硬化)
-    - Hepatitis B / Hepatitis C (肝炎)
+    - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     laboratory_criteria: []
     summary: '1.限用於成人慢性病毒性C型肝炎患者，並依據「C型肝炎全口服新藥健保給付執行計畫」辦理。(109/1/1、109/7/1）
 
@@ -3723,11 +3769,11 @@ regulations:
       (3)接受其他DAAs第一次治療，於治療完成時或治療結束後第12週，血中仍偵測到病毒者，或治療4週後之病毒量未能下降超過二個對數值(即下降未達100倍)發生在108年1月1日前者。
 
       5.高風險族群（監獄受刑人、注射藥癮者、愛滋病毒帶原者/愛滋病人、發生危險性行為者）病人，若符合前述規定即可接受治療，以治療三次為限。（114/12/1）'
-- regulation_id: REG-0470
+- regulation_id: REG-0475
   section_number: 10.7.11.
   section_title: 10.7.11. Sofosbuvir/velpatasvir（如Epclusa）(108/6/1、109/1/1、109/7/1、110/6/1、112/5/1、114/6/1、114/12/1）：
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (109/1/1、109/7/1、112/5/1)
   - (112/5/1、114/6/1)
@@ -3740,7 +3786,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Liver Cirrhosis (肝硬化)
-    - Hepatitis B / Hepatitis C (肝炎)
+    - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     laboratory_criteria: []
     summary: '1.限用於慢性病毒性C型肝炎患者，並依據「C型肝炎全口服新藥健保給付執行計畫」辦理。(109/1/1、109/7/1、112/5/1)
 
@@ -3776,11 +3822,11 @@ regulations:
       (4)失代償性肝硬化（Child-Pugh B或C）病患，先前接受含NS5A抑制劑之DAAs第一次治療失敗者(治療完成時或治療結束後第12週，血中仍偵測到病毒者)。(112/5/1)
 
       5.高風險族群（監獄受刑人、注射藥癮者、愛滋病毒帶原者/愛滋病人、發生危險性行為者）病人，若符合前述規定即可接受治療，以治療三次為限。（114/12/1）'
-- regulation_id: REG-0471
+- regulation_id: REG-0476
   section_number: 10.7.12.
   section_title: 10.7.12. Letermovir（如Prevymis）：（109/6/1）
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -3798,11 +3844,11 @@ regulations:
       3.\t僅限於第一次接受異體造血幹細胞移植時可使用。\n4.\t限用於移植術後至第84天為止。\n5.\t具下列條件之一的CMV 感染之高風險病患方得使用：\n\
       (1)親屬間捐贈：其HLA-A/B/C/DR 具有2個或以上之位點不相符者。\n(2)非親屬間捐贈：其HLA-A/B/C/DR 具有1個或以上之位點不相符者。\n\
       (3)接受臍帶血移植者。"
-- regulation_id: REG-0472
+- regulation_id: REG-0477
   section_number: 10.7.13.
   section_title: 10.7.13. Sofosbuvir/ velpatasvir/ voxilaprevir（如Vosevi）：（110/9/1、114/6/1、114/12/1）
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -3810,7 +3856,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Liver Cirrhosis (肝硬化)
-    - Hepatitis B / Hepatitis C (肝炎)
+    - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     laboratory_criteria: []
     summary: '1.限用於成人慢性病毒性C型肝炎患者，並依據「C型肝炎全口服新藥健保給付執行計畫」辦理。
 
@@ -3842,11 +3888,11 @@ regulations:
       (2)接受第一次治療完成時或治療結束後第12週，血中仍偵測到病毒者，或治療4週後之病毒量未能下降超過二個對數值（即下降未達100倍）發生在108年1月1日前者。
 
       5.高風險族群（監獄受刑人、注射藥癮者、愛滋病毒帶原者/愛滋病人、發生危險性行為者）病人，若符合前述規定即可接受治療，以治療三次為限。（114/12/1）'
-- regulation_id: REG-0473
+- regulation_id: REG-0478
   section_number: 10.7.14.
   section_title: 10.7.14. Maribavir（如Livtencity）：（113/11/1）
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -3890,11 +3936,11 @@ regulations:
       (2)療程期間，偵測到抗性突變。
 
       5.首次申請治療療程後，若未達清除巨細胞病毒(CMV)治療目的或仍有治療需求，且不符合前述停藥條件者，可經事前審查核准後續用4週。事前申請時需檢附巨細胞病毒(CMV)DNA濃度或相關檢測報告，且總療程以12週為上限。'
-- regulation_id: REG-0474
+- regulation_id: REG-0479
   section_number: 10.8.1.1.
   section_title: 10.8.1.1. Teicoplanin及vancomycin注射劑：(88/3/1、110/7/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -3922,11 +3968,11 @@ regulations:
       4.vancomycin 10 gm(溶液用粉劑)限骨髓移植病例使用。
 
       5.其他經感染症專科醫師認定需使用者。'
-- regulation_id: REG-0475
+- regulation_id: REG-0480
   section_number: 10.8.1.2.
   section_title: 10.8.1.2. Vancomycin口服製劑(110/7/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -3942,11 +3988,11 @@ regulations:
     full_text: "1.\t限用於梭狀桿菌引起之假膜性結腸炎，且需符合下列診斷方法之一：\n(1)內視鏡檢查證實有假膜性結腸炎之病理變化。\n(2)臨床上有腸炎、結腸炎之相關症狀，如腹瀉、腹痛、腸阻塞(ileus)等，加上下列任一種條件：\n\
       I.糞便檢驗證實有梭狀桿菌之toxin A或toxin B存在、或其毒素基因存在。\nII.糞便細菌培養證實有梭狀桿菌或糞便之抗原檢測證實有GDH(glutamate\
       \ dehydrogenase)存在。\n2.\t申報時應檢附下列報告之一：\n(1)內視鏡檢查報告。\n(2)臨床症狀敘述，加上Toxin A+B檢測報告、糞便細菌培養結果、糞便細菌抗原檢測(GDH)結果或PCR基因檢測結果。"
-- regulation_id: REG-0476
+- regulation_id: REG-0481
   section_number: 10.8.2.
   section_title: 10.8.2. Quinolone類：（96/9/1、97/9/1、107/1/1、108/12/1）
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (96/9/1、108/12/1)
   medications:
@@ -3959,11 +4005,11 @@ regulations:
   reference_annotations:
     original_clause: 10.8.2. Quinolone類：（96/9/1、97/9/1、107/1/1、108/12/1）
     full_text: 限使用於下列疾病，若使用於結核病不予給付，請向衛生福利部疾病管制署申請並依最新版「結核病診治指引」辦理。(96/9/1、108/12/1)
-- regulation_id: REG-0477
+- regulation_id: REG-0482
   section_number: 10.8.2.1.
   section_title: 10.8.2.1. Moxifloxacin (如Avelox)：(91/2/1、92/11/1、94/3/1、97/9/1、105/8/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -3984,11 +4030,11 @@ regulations:
       1.慢性支氣管炎的急性惡化、社區性肺炎、複雜性腹腔內感染。
 
       2.急性鼻竇炎或複雜性皮膚和軟組織感染，因抗藥性細菌感染及病情需要，經感染科醫師會診確認需要使用者。'
-- regulation_id: REG-0478
+- regulation_id: REG-0483
   section_number: 10.8.2.2.
   section_title: 10.8.2.2. Gemifloxacin (如Factive)：(96/6/1、97/9/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4001,11 +4047,11 @@ regulations:
   reference_annotations:
     original_clause: 10.8.2.2. Gemifloxacin (如Factive)：(96/6/1、97/9/1)
     full_text: 限用於成人(18歲以上)之慢性支氣管炎的急性惡化、社區性肺炎。
-- regulation_id: REG-0479
+- regulation_id: REG-0484
   section_number: 10.8.2.3.
   section_title: 10.8.2.3. Levofloxacin（如Cravit）（97/9/1）
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4018,11 +4064,11 @@ regulations:
   reference_annotations:
     original_clause: 10.8.2.3. Levofloxacin（如Cravit）（97/9/1）
     full_text: 限用於成人(18歲以上)之慢性支氣管炎的急性惡化、社區性肺炎、複雜性泌尿道感染。
-- regulation_id: REG-0480
+- regulation_id: REG-0485
   section_number: 10.8.2.4.
   section_title: 10.8.2.4. Nemonoxacin膠囊劑及注射劑(如Taigexyn)：(107/1/1、111/3/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (111/3/1)
   medications:
@@ -4039,11 +4085,11 @@ regulations:
     full_text: '1.膠囊劑限用於18歲以上適合於門診治療之輕度社區性肺炎。
 
       2.注射劑限用治療對Nemonoxacin 有感受性的致病菌所引起之18歲以上社區型肺炎。(111/3/1)'
-- regulation_id: REG-0481
+- regulation_id: REG-0486
   section_number: 10.8.3.
   section_title: 10.8.3. Linezolid（如Zyvox Injection及Tablets）：（91/4/1、100/7/1、105/2/1、108/4/1）
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4097,11 +4143,11 @@ regulations:
       2.心內膜炎（endocarditis）病患不建議使用。（108/4/1）
 
       3.申報費用時需檢附會診紀錄或相關之病歷資料。'
-- regulation_id: REG-0482
+- regulation_id: REG-0487
   section_number: 10.8.5.
   section_title: 10.8.5. Tigecycline（如Tygacil）：(95/12/1、100/7/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (100/7/1)
   medications:
@@ -4126,11 +4172,11 @@ regulations:
       (2)其他經感染症專科醫師會診，認定需使用之下列感染症：複雜性皮膚及皮膚結構感染、複雜性腹腔內感染、社區感染性肺炎。(100/7/1)
 
       2.申報費用時需檢附會診紀錄或相關之病歷資料。'
-- regulation_id: REG-0483
+- regulation_id: REG-0488
   section_number: 10.8.6.
   section_title: 10.8.6. Colistin可用於靜脈注射劑(97/9/1、98/9/1、99/2/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4142,11 +4188,11 @@ regulations:
   reference_annotations:
     original_clause: 10.8.6. Colistin可用於靜脈注射劑(97/9/1、98/9/1、99/2/1)
     full_text: 限經感染症專科醫師會診，確定使用於一般抗生素無效，且具多重抗藥性之革蘭氏陰性菌之嚴重感染。
-- regulation_id: REG-0484
+- regulation_id: REG-0489
   section_number: 10.8.7.
   section_title: 10.8.7. Daptomycin注射劑：(98/1/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4162,11 +4208,11 @@ regulations:
     full_text: '1.證實為MRSA (methicillin-resistant staphylococcus aureus)複雜皮膚和皮膚組織感染，且證明為vancomycin抗藥菌株或使用vancomycin、teicoplanin治療失敗者或對vancomycin、teicoplanin治療無法耐受者。
 
       2.其他抗藥性革蘭氏陽性菌引起的複雜皮膚和皮膚組織感染或MRSA菌血症(含右側感染性心內膜炎)，因病情需要經感染症專科醫師會診確認需要使用者(申報費用時需檢附會診及相關之病歷資料)。'
-- regulation_id: REG-0485
+- regulation_id: REG-0490
   section_number: 10.8.8.
   section_title: 10.8.8. Fidaxomicin(如Dificid)：(103/9/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4184,11 +4230,11 @@ regulations:
       difficile-associated diarrhoea, CDAD)，並經感染症專科醫師會診，確認有感染症需使用者。
 
       2.申報費用時需檢附會診紀錄及相關之病歷資料。'
-- regulation_id: REG-0486
+- regulation_id: REG-0491
   section_number: 10.8.9.
   section_title: 10.8.9. Minocycline注射劑：(112/4/1、114/1/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (114/1/1)
   - (114/1/1)
@@ -4204,11 +4250,11 @@ regulations:
     original_clause: 10.8.9. Minocycline注射劑：(112/4/1、114/1/1)
     full_text: "限經感染症專科醫師會診，且符合下列條件之一使用:\n1.\t對Carbapenem具抗藥性之Acinetobacter baumannii感染(CRAB)。\n\
       2.\tCRAB以外具敏感性之抗藥性菌株。(114/1/1)\n3.其他臨床上懷疑或確定由立克次氏體、披衣菌等引起之感染。(114/1/1)"
-- regulation_id: REG-0487
+- regulation_id: REG-0492
   section_number: 10.8.10.
   section_title: 10.8.10. Polymyxin B sulfate靜脈注射劑：(113/12/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4222,11 +4268,11 @@ regulations:
     original_clause: 10.8.10. Polymyxin B sulfate靜脈注射劑：(113/12/1)
     full_text: "1.\t確定使用於一般抗生素無效，用於患有對Polymyxin B 具感受性且具多重抗藥性之革蘭氏陰性菌引起之嚴重感染成人病人，不適合用於治療泌尿道感染。\n\
       2.\t需經會診感染科醫師同意後使用，申報費用時需檢附會診紀錄及相關之病歷資料。"
-- regulation_id: REG-0488
+- regulation_id: REG-0493
   section_number: 10.9.
   section_title: 10.9. 抗人類免疫缺乏病毒藥品使用規定(106/2/4)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4242,11 +4288,11 @@ regulations:
     full_text: '1.限在台灣地區確診且服藥兩年以上之病患使用。
 
       2.依衛生福利部疾病管制署最新版「抗人類免疫缺乏病毒藥品處方使用規範」之建議辦理。'
-- regulation_id: REG-0515
+- regulation_id: REG-0520
   section_number: 13.17.2.
   section_title: 13.17.2. Dupilumab (如Dupixent)：（113/2/1）(6歲以上未滿12歲兒童治療部分)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4328,11 +4374,11 @@ regulations:
       暫緩續用時機：使用生物製劑治療1年後符合EASI≦16者。
 
       暫緩續用後若疾病再復發，可重新申請使用，須符合至少有50%復發或EASI≧16 (需附上次療程治療前、後，及本次照片)。'
-- regulation_id: REG-0516
+- regulation_id: REG-0521
   section_number: 13.18.
   section_title: 13.18. Nadifloxacin外用製劑(如Nadixa) (110/6/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4348,12 +4394,12 @@ regulations:
     full_text: '1.限用於傳統外用抗生素治療無效之毛囊炎及尋常性鬚瘡，不得合併其他局部抗生素藥膏使用。
 
       2.臉部每個月限用一條（25gm）。'
-- regulation_id: REG-0517
+- regulation_id: REG-0522
   section_number: 13.19.
   section_title: 13.19. Centella asiatica extract, plectranthus amboinicus extract外用製劑(如Fespixon
     cream)：(112/8/1)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4408,11 +4454,11 @@ regulations:
       6.再次申請時除前條所需資料外，需加附前次治療後該傷口完全癒合之照片。
 
       備註:積極血糖控制，係指糖化血色素不高於個別目標值1.5%以上，惟一般病人的糖化血色素目標值為7.0%以下，因此8.5%為指標。'
-- regulation_id: REG-0537
+- regulation_id: REG-0542
   section_number: APP
   section_title: 附表二-A　全民健康保險使用rt-PA(Actilyse)或Tenecteplase (Metalyse)申報表（血管（不含腦血管）血栓病患用）
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4424,11 +4470,11 @@ regulations:
   reference_annotations:
     original_clause: 附表二-A　全民健康保險使用rt-PA(Actilyse)或Tenecteplase (Metalyse)申報表（血管（不含腦血管）血栓病患用）
     full_text: 申報醫師：                     本表請併醫療費用申報
-- regulation_id: REG-0538
+- regulation_id: REG-0543
   section_number: APP
   section_title: 附表二-B　全民健康保險使用rt-PA(Actilyse)申報表（急性缺血性腦中風病患用）
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4440,11 +4486,11 @@ regulations:
   reference_annotations:
     original_clause: 附表二-B　全民健康保險使用rt-PA(Actilyse)申報表（急性缺血性腦中風病患用）
     full_text: 申報醫師：                     本表請併醫療費用申報
-- regulation_id: REG-0539
+- regulation_id: REG-0544
   section_number: APP
   section_title: 附表二-C  急性缺血性腦中風之血栓溶解治療檢查表
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (112/10/1)
   - (107/11/1)
@@ -4456,7 +4502,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Liver Cirrhosis (肝硬化)
-    - Hepatitis B / Hepatitis C (肝炎)
+    - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     - Stroke / Cerebrovascular Accident (腦中風)
     - Myocardial Infarction (心肌梗塞)
     - Hypertension (高血壓)
@@ -4485,11 +4531,11 @@ regulations:
       \ 嚴重肝病，包括肝衰竭、肝硬化、肝門脈高壓（食道靜脈曲張）及急性肝炎。\n□　　　□  出血性視網膜病變，如糖尿病性（視覺障礙可能為出血性視網膜病變的指標）或其他出血性眼疾。\n\
       □　　　□  細菌性心內膜炎，心包炎。\n□　　　□  急性胰臟炎。\n□　　　□  最近3個月內曾患胃腸道潰瘍。\n□　　　□  動脈瘤，靜/動脈畸形。\n\
       □　　　□  易出血之腫瘤。\n□　　　□  對本藥之主成分或賦型劑過敏者。\n□　　　□  其他（例如在排除條件未提到但會增加出血危險狀況，如洗腎患者、嚴重心衰竭或身體太衰弱者）。"
-- regulation_id: REG-0540
+- regulation_id: REG-0545
   section_number: APP
   section_title: 附表二-D 使用健保給付PCSK9血脂調節劑事前審查申請表
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4501,11 +4547,11 @@ regulations:
   reference_annotations:
     original_clause: 附表二-D 使用健保給付PCSK9血脂調節劑事前審查申請表
     full_text: 修訂日期：109/4/1、114/9/1
-- regulation_id: REG-0541
+- regulation_id: REG-0546
   section_number: APP
-  section_title: 附表四全民健康保險使用HumanAlbumin申報表
+  section_title: 附表四 全民健康保險使用HumanAlbumin申報表
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4517,15 +4563,15 @@ regulations:
 
       使用藥劑名稱及代碼'
   reference_annotations:
-    original_clause: 附表四全民健康保險使用HumanAlbumin申報表
+    original_clause: 附表四 全民健康保險使用HumanAlbumin申報表
     full_text: '使用日期　　　年　　　月　　　日至　　　年　　　月　　　日
 
       使用藥劑名稱及代碼'
-- regulation_id: REG-0542
+- regulation_id: REG-0547
   section_number: APP
   section_title: 附表五：全民健康保險使用繞徑治療藥物申報表
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4541,11 +4587,11 @@ regulations:
     full_text: '備註：檢送之抗體力價報告為最近3個月。
 
       申報醫師：'
-- regulation_id: REG-0543
+- regulation_id: REG-0548
   section_number: APP
-  section_title: 附表六全民健康保險使用IntravenousImmuneGlobulin(IVIG)
+  section_title: 附表六 全民健康保險使用IntravenousImmuneGlobulin(IVIG)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4592,7 +4638,7 @@ regulations:
 
       1.區域醫院(含)以上教學醫...'
   reference_annotations:
-    original_clause: 附表六全民健康保險使用IntravenousImmuneGlobulin(IVIG)
+    original_clause: 附表六 全民健康保險使用IntravenousImmuneGlobulin(IVIG)
     full_text: '治療川崎病(KawasakiDisease)申請表
 
       臨床症狀
@@ -4638,11 +4684,11 @@ regulations:
       IVIG限病發十天內使用
 
       申請醫師　　　　　　　醫事機構章戳'
-- regulation_id: REG-0544
+- regulation_id: REG-0549
   section_number: APP
   section_title: 附表九之十三：全民健康保險使用抗癌藥品pazopanib申請表
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4670,11 +4716,11 @@ regulations:
       本人確實瞭解採取下列方法為絕對需要:\n1.女性患者在服用acitretin製劑前必須驗孕以確定尚未懷孕。\n2.女性患者在服用acitretin製劑之前的四個星期，治療期間及停藥後至少24個月內，必須使用有效之避孕方法。\n\
       3.萬一在上述期間發生懷孕，本人保證立刻通知\t\t\t\t\t\t\t醫師。\n雖然本人充分瞭解假使在上述期間發生懷孕可能導致之後果，本人仍然願意接受acitretin製劑治療，並且願意承受這種危險性及有關注意事項。\n\
       為慎重計，特立此同意書。\n日期:民國\t\t年\t\t月\t\t日，地點:\n立同意書人:\n（未成年人需經法定代理人之同意）"
-- regulation_id: REG-0545
+- regulation_id: REG-0550
   section_number: APP
   section_title: 附表十三：全民健康保險類風濕關節炎病患28處關節疾病活動度(DiseaseActivityScore,DAS28)評估表
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4694,11 +4740,11 @@ regulations:
       PIP關節：近側的指骨間關節(PIP:ProximalInterphalangeal)
 
       整體健康狀態評估：即在100mm圖像模擬量表中所呈現的整體健康狀態'
-- regulation_id: REG-0546
+- regulation_id: REG-0551
   section_number: APP
   section_title: 附表十四：全民健康保險疾病修飾抗風濕病藥物(DMARDs)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4714,11 +4760,11 @@ regulations:
     full_text: '之標準目標劑量暨治療劑量表
 
       圖一：整體健康狀態(GeneralHealthStatus)'
-- regulation_id: REG-0547
+- regulation_id: REG-0552
   section_number: APP
   section_title: 附表十六：全民健康保險活動性多關節幼年型慢性關節炎使用藥品申請表
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4746,11 +4792,11 @@ regulations:
       小兒科專科醫師證書：兒專醫字第號
 
       小兒過敏免疫專科醫師證書:專醫字第號'
-- regulation_id: REG-0548
+- regulation_id: REG-0553
   section_number: APP
   section_title: 附表十七全民健康保險使用Tacrolimus兒童患部面積計算圖
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4762,11 +4808,11 @@ regulations:
   reference_annotations:
     original_clause: 附表十七全民健康保險使用Tacrolimus兒童患部面積計算圖
     full_text: Barkin公式
-- regulation_id: REG-0549
+- regulation_id: REG-0554
   section_number: APP
   section_title: 附表十八之一  全民健康保險血友病患者使用「第八、第九凝血因子」在家治療紀錄表
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4805,11 +4851,11 @@ regulations:
       2.領藥量請詳記藥品規格量及瓶數，例如：500IU×2瓶，使用空瓶於繳回時，請由醫療院所相關人員進行確認(包含回收空瓶日期及總結存量等)，並請確認人員簽名(章)。
 
       3.出血部位說明請見背面圖示。               回收空瓶日期：                       總結存量(瓶)：'
-- regulation_id: REG-0550
+- regulation_id: REG-0555
   section_number: APP
   section_title: 附表十八之二  全民健康保險血友病患者使用「繞徑治療藥物」在家治療紀錄表
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4850,11 +4896,11 @@ regulations:
       3.出血部位說明請見背面圖示。
 
       回收空瓶日期：                       總結存量(瓶)：'
-- regulation_id: REG-0551
+- regulation_id: REG-0556
   section_number: APP
   section_title: 附表十八之三  全民健康保險一般型血友病患需要時治療之凝血因子建議劑量
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4866,11 +4912,11 @@ regulations:
   reference_annotations:
     original_clause: 附表十八之三  全民健康保險一般型血友病患需要時治療之凝血因子建議劑量
     full_text: ＊：Eloctate、Adynovate、Kovaltry、Afstyla、Jivi、Altuviiio、Idelvion、Alprolix、Refixia等請參照仿單建議劑量，其他製劑依本表建議劑量使用。
-- regulation_id: REG-0552
+- regulation_id: REG-0557
   section_number: APP
   section_title: 附表十八之四  全民健康保險血友病患者使用「第十三凝血因子」在家治療紀錄表
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4912,11 +4958,11 @@ regulations:
       4.初次使用十三凝血因子，須經事前審查核准後方予給付。
 
       回收空瓶日期：                       總結存量(瓶)：'
-- regulation_id: REG-0553
+- regulation_id: REG-0558
   section_number: APP
   section_title: 附表十八之五 重型血友病患「醫療評估追蹤紀錄表」
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -4941,35 +4987,36 @@ regulations:
 
       □ 預防性注射12歲以上之病人，每6至8週應至少回診一次。
 
-      □ 有抗體之病人治療時(抗體最高歷史數值:     BU/mL)，應該每4週至少回診一次
+      □ 有抗體之病人治療時(抗體最高歷史數值:     BU/mL)，應該每4-8週至少回診一次
 
-      □ 需要時治療之無抗體重型血友病患，每3個月應至少回診一...'
+      □ 需要時治療之無抗體重型血友病患，每3個月應至少回...'
   reference_annotations:
     original_clause: 附表十八之五 重型血友病患「醫療評估追蹤紀錄表」
     full_text: "病人本人至少需於3個月回診時由醫師填寫一次醫療評估追蹤紀錄表\n基本資料:\n姓名: ________病歷號碼:__________年齡:______\
       \ 歲 體重: _______ 公斤 身高: ______ 公分\n血友病: □A型 □B型 □其他______\n回診分類:\n□ 預防性注射4歲及以下之病人，每2至4週應至少回診一次。\n\
       □ 預防性注射4歲以上至12歲之病人，每4至6週應至少回診一次。\n□ 預防性注射12歲以上之病人，每6至8週應至少回診一次。\n□ 有抗體之病人治療時(抗體最高歷史數值:\
-      \     BU/mL)，應該每4週至少回診一次\n□ 需要時治療之無抗體重型血友病患，每3個月應至少回診一次\n□ 接受「皮下非補充製劑」的治療時，視同Prophylaxis\
+      \     BU/mL)，應該每4-8週至少回診一次\n□ 需要時治療之無抗體重型血友病患，每3個月應至少回診一次\n□ 接受「皮下非補充製劑」的治療時，視同Prophylaxis\
       \ 追蹤\n治療期間：    年   月   日 至     年   月    日\n預防注射：使用劑量: 每公斤       (單位:IU/μg/mg)\n\
-      使用頻次：每       週使用       次 共      次數  共       單位/月\n□第八因子(藥名：______)\n□第九因子(藥名：______)\n\
-      □其他(藥名：______)\n次數  共       單位 (activated) PCC(藥名：______)\n     次數  共      \
-      \ 單位 recombinant factor VII(藥名：______)\n次數  共       單位 ___________________(藥名：______)\n\
-      二、出血時注射(突破性出血)：\n出血部位：□腦部 □腸胃道 □呼吸道 □肌肉 □關節 □其他:\n次數  共       單位 □第八因子  □第九因子\
-      \ □其他\n次數  共       單位 (activated) PCC(藥名：            )\n      次數  共       單位\
-      \ recombinant factor VII(藥名：       )\n次數  共       單位 ___________________(藥名：\
-      \       )\n三、手術或侵入性處置: □  無  □ 有  請說明:\n四、抗體數值：       BU /mL 檢驗日期:________________\n\
-      (有抗體之病人請註明三個月內抗體檢測數值；無抗體之病人請註明一年內抗體檢測數值)\n五、每三個月至少一次檢測最低凝血因子濃度(trough level)________\
+      使用頻次：每       週使用       次 共      次數  共       單位/月\n□fitusiran 每____月____mg\n\
+      □第八因子(藥名：______)\n□第九因子(藥名：______)\n□其他(藥名：______)\n次數  共       單位 (activated)\
+      \ PCC(藥名：______)\n     次數  共       單位 recombinant factor VII(藥名：______)\n次數\
+      \  共       單位 ___________________(藥名：______)\n二、出血時注射(突破性出血)：\n出血部位：□腦部 □腸胃道\
+      \ □呼吸道 □肌肉 □關節 □其他:\n次數  共       單位 □第八因子  □第九因子 □其他\n次數  共       單位 (activated)\
+      \ PCC(藥名：            )\n      次數  共       單位 recombinant factor VII(藥名：    \
+      \   )\n次數  共       單位 ___________________(藥名：       )\n三、手術或侵入性處置: □  無  □ 有\
+      \  請說明:\n四、抗體數值：       BU /mL 檢驗日期:________________\n(有抗體之病人請註明三個月內抗體檢測數值；無抗體之病人請註明一年內抗體檢測數值)\n\
+      五、每三個月至少一次檢測最低凝血因子濃度(trough level)________ 檢驗日:________；\nfitusiran每兩個月至少一次檢測抗凝血酵素(anti-thrombin)濃度________\
       \ 檢驗日:________\n六、治療計畫：\n□維持治療\n□調整治療\n請說明:\n□進一步檢查(例如:藥物動力學檢測)\n請說明:\n□療效評估(每年評估一次)\n\
       1.Pettersson score、HJHS、肌肉骨骼超音波：\n請說明:______________________________________________________________________\n\
       評估醫師:_______________\n2.HAL、QoL：\n請說明: _____________________________________________________________________\n\
       3.不良事件反應：\n請說明: _____________________________________________________________________\n\
       4.併發症：\n請說明: _____________________________________________________________________\n\
       評估醫師:                                    日期:"
-- regulation_id: REG-0554
+- regulation_id: REG-0559
   section_number: APP
   section_title: 附表十八之六  全民健康保險血友病患者使用「雙特異性單株抗體藥物」在家治療紀錄表
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -5010,11 +5057,11 @@ regulations:
       3.出血部位說明請見背面圖示。
 
       回收空瓶日期：                       總結存量(瓶)：'
-- regulation_id: REG-0555
+- regulation_id: REG-0560
   section_number: APP
   section_title: 附表十九全民健康保險使用Pilocarpinehydrochloride口服劑型治療後，
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -5102,11 +5149,11 @@ regulations:
       日期：
 
       附註：總分大於十分（含）以上者，証明病人服用pilocarpinehydrochloride口服劑型的確有改善，可以繼續服用。若低於10分，則不建議服用。'
-- regulation_id: REG-0556
+- regulation_id: REG-0561
   section_number: APP
   section_title: 附表二十全民健康保險使用Cevimelinehydrochloride治療後，
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -5192,11 +5239,11 @@ regulations:
       日期：
 
       附註：總分大於十分（含）以上者，証明病人服用cevimelinehydrochloride的確有改善，可以繼續服用。若低於10分，則不建議服用。'
-- regulation_id: REG-0557
+- regulation_id: REG-0562
   section_number: APP
   section_title: 附表二十一之二NSAID藥物副作用：
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -5212,15 +5259,16 @@ regulations:
     original_clause: 附表二十一之二NSAID藥物副作用：
     full_text: "準備使用TNF拮抗劑治療僵直性脊椎炎與乾癬性關節炎時的非類固醇類消炎止痛劑(NSAIDs)毒性標準及嚴重度說明\nULN=正常值上限\t\
       \tLLN=正常值下限"
-- regulation_id: REG-0558
+- regulation_id: REG-0563
   section_number: APP
   section_title: 附表二十二之一：全民健康保險乾癬性周邊關節炎使用生物製劑註申請表(第一頁)
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Ustekinumab (烏司他單抗)
   conditions_of_payment:
     indications:
     - Psoriasis / Psoriatic Arthritis (乾癬)
@@ -5229,11 +5277,11 @@ regulations:
   reference_annotations:
     original_clause: 附表二十二之一：全民健康保險乾癬性周邊關節炎使用生物製劑註申請表(第一頁)
     full_text: 註：全民健康保險乾癬性周邊關節炎申請Ustekinumab/ixekizumab使用附表二十二之六
-- regulation_id: REG-0559
+- regulation_id: REG-0564
   section_number: APP
   section_title: 附表二十二之二：乾癬性周邊關節炎使用DMARDs標準目標劑量及有效治療劑量的定義
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -5281,11 +5329,11 @@ regulations:
       Cyclosporine3mg/kg/天
 
       Leflunomide10mg/天'
-- regulation_id: REG-0560
+- regulation_id: REG-0565
   section_number: APP
   section_title: 附表二十二之三：乾癬性關節炎評估表
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -5297,39 +5345,37 @@ regulations:
 
       (申請續用時填原始評估日期及分數)
 
-      目前評估日期：年月日1.Tenderjointscore:_______2.Swollenjointscore:_______
+      目前評估日期：  年  月  日1.Tenderjointscore:_______ 2.Swollenjointscore:_______
 
-      原始評估日期：年月日1.Tenderjointscore:_______2.Swollenjointscore:_______
+      原始評估日期：  年  月  日1.Tenderjointscore:_______ 2.Swollenjointscore:_______
 
-      病人自我評估目前(0-5分)_______，評估日期：年月日
+      病人自我評估目前(0-5分)_______，評估日期：   年   月   日
 
-      病人自我評估原始(0-5分)_______，評估日期：年月日
+      病人自我評估原始(0-5分)_______，評估日期：   年   月   日
 
-      醫師整體評估目前(0-5分)_______，評估日期：年月日
-
-      醫師整體評估原始(0-5分)______...'
+      醫師整體評估目前(0-5分)_____...'
   reference_annotations:
     original_clause: 附表二十二之三：乾癬性關節炎評估表
     full_text: '有78個可能疼痛及76個可能腫脹關節，應記錄其症狀；有症狀為1分，沒症狀為0分。
 
       (申請續用時填原始評估日期及分數)
 
-      目前評估日期：年月日1.Tenderjointscore:_______2.Swollenjointscore:_______
+      目前評估日期：  年  月  日1.Tenderjointscore:_______ 2.Swollenjointscore:_______
 
-      原始評估日期：年月日1.Tenderjointscore:_______2.Swollenjointscore:_______
+      原始評估日期：  年  月  日1.Tenderjointscore:_______ 2.Swollenjointscore:_______
 
-      病人自我評估目前(0-5分)_______，評估日期：年月日
+      病人自我評估目前(0-5分)_______，評估日期：   年   月   日
 
-      病人自我評估原始(0-5分)_______，評估日期：年月日
+      病人自我評估原始(0-5分)_______，評估日期：   年   月   日
 
-      醫師整體評估目前(0-5分)_______，評估日期：年月日
+      醫師整體評估目前(0-5分)_______，評估日期：   年   月   日
 
-      醫師整體評估原始(0-5分)_______，評估日期：年月日'
-- regulation_id: REG-0561
+      醫師整體評估原始(0-5分)_______，評估日期：   年   月   日'
+- regulation_id: REG-0566
   section_number: APP
   section_title: 附表二十二之五：NSAID藥物副作用
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -5345,15 +5391,16 @@ regulations:
     original_clause: 附表二十二之五：NSAID藥物副作用
     full_text: "準備使用TNF拮抗劑治療僵直性脊椎炎與乾癬性關節炎時的非類固醇類消炎止痛劑(NSAIDs)毒性標準及嚴重度說明\nULN=正常值上限\t\
       \tLLN=正常值下限"
-- regulation_id: REG-0562
+- regulation_id: REG-0567
   section_number: APP
   section_title: 附表二十二之六：全民健康保險乾癬性周邊關節炎使用
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Ustekinumab (烏司他單抗)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -5361,15 +5408,16 @@ regulations:
   reference_annotations:
     original_clause: 附表二十二之六：全民健康保險乾癬性周邊關節炎使用
     full_text: ustekinumab/guselkumab/risankizumab申請表(第一頁)
-- regulation_id: REG-0563
+- regulation_id: REG-0568
   section_number: APP
   section_title: 附表二十二之六：全民健康保險乾癬性周邊關節炎使用
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Ustekinumab (烏司他單抗)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -5377,11 +5425,11 @@ regulations:
   reference_annotations:
     original_clause: 附表二十二之六：全民健康保險乾癬性周邊關節炎使用
     full_text: ustekinumab/ guselkumab/ risankizumab申請表(第二頁)
-- regulation_id: REG-0564
+- regulation_id: REG-0569
   section_number: APP
   section_title: 附表二十三：全民健康保險使用rituximab申請表
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -5397,11 +5445,11 @@ regulations:
     full_text: '初次治療
 
       重複療程'
-- regulation_id: REG-0565
+- regulation_id: REG-0570
   section_number: APP
   section_title: 附表二十四之三：乾癬面積暨嚴重度指數【PsoriasisAreaSeverityIndex(PASI)】
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -5426,12 +5474,12 @@ regulations:
       乾癬嚴重度（Severity）：
 
       PASI＝0.1*（Eh＋Ih＋Dh）*Ah＋0.3*（Et＋It＋Dt）*At＋'
-- regulation_id: REG-0566
+- regulation_id: REG-0571
   section_number: APP
   section_title: 附表二十四之五：掌蹠膿皰症面積暨嚴重度指數【Palmoplantar Pustulosis Area Severity Index
     (PPPASI)】
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -5462,15 +5510,16 @@ regulations:
 
       PPPASI＝0.2*（ERP＋PRP＋DRP）*ARP＋0.2*（ELP＋PLP＋DLP）*ALP + 0.3*（ERS＋PRS＋DRS）*ARS +
       0.3*（ELS＋PLS＋DLS）*ALS＝________'
-- regulation_id: REG-0567
+- regulation_id: REG-0572
   section_number: APP
   section_title: 附表二十六之三
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Adalimumab (阿達木單抗)
   conditions_of_payment:
     indications:
     - Crohn's Disease (CD) (克隆氏症)
@@ -5479,15 +5528,16 @@ regulations:
   reference_annotations:
     original_clause: 附表二十六之三
     full_text: 全民健康保險小兒克隆氏症使用adalimumab、infliximab、risankizumab申請表
-- regulation_id: REG-0568
+- regulation_id: REG-0573
   section_number: APP
   section_title: 附表二十六之三
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Adalimumab (阿達木單抗)
   conditions_of_payment:
     indications:
     - Crohn's Disease (CD) (克隆氏症)
@@ -5496,11 +5546,11 @@ regulations:
   reference_annotations:
     original_clause: 附表二十六之三
     full_text: 全民健康保險小兒克隆氏症使用adalimumab、infliximab、risankizumab申請表
-- regulation_id: REG-0569
+- regulation_id: REG-0574
   section_number: APP
-  section_title: 附表三十之二陣發性夜間血紅素尿症患者特殊專案審查申請Soliris(eculizumab)、Ultomiris(ravulizumab)、Piasky(crovalimab)用藥檢附資料查檢表
+  section_title: 附表三十之二 陣發性夜間血紅素尿症患者特殊專案審查申請Soliris(eculizumab)、Ultomiris(ravulizumab)、Piasky(crovalimab)用藥檢附資料查檢表
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -5510,13 +5560,14 @@ regulations:
     laboratory_criteria: []
     summary: 115年3月1日修訂
   reference_annotations:
-    original_clause: 附表三十之二陣發性夜間血紅素尿症患者特殊專案審查申請Soliris(eculizumab)、Ultomiris(ravulizumab)、Piasky(crovalimab)用藥檢附資料查檢表
+    original_clause: 附表三十之二 陣發性夜間血紅素尿症患者特殊專案審查申請Soliris(eculizumab)、Ultomiris(ravulizumab)、Piasky(crovalimab)用藥檢附資料查檢表
     full_text: 115年3月1日修訂
-- regulation_id: REG-0570
+- regulation_id: REG-0575
   section_number: APP
-  section_title: 附表三十之四陣發性夜間血紅素尿症患者第二線治療藥品特殊專案審查申請Voydeya(Danicopan)+Soliris(eculizumab)/Ultomiris(ravulizumab)用藥檢附資料查檢表
+  section_title: 附表三十之四 陣發性夜間血紅素尿症患者第二線治療藥品特殊專案審查申請Voydeya(Danicopan)+Soliris(eculizumab)/Ultomiris(ravulizumab)
+    或Fabhalta (iptacopan)用藥檢附資料查檢表
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -5524,15 +5575,16 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 115年3月1日修訂
+    summary: 115年9月1日修訂
   reference_annotations:
-    original_clause: 附表三十之四陣發性夜間血紅素尿症患者第二線治療藥品特殊專案審查申請Voydeya(Danicopan)+Soliris(eculizumab)/Ultomiris(ravulizumab)用藥檢附資料查檢表
-    full_text: 115年3月1日修訂
-- regulation_id: REG-0571
+    original_clause: 附表三十之四 陣發性夜間血紅素尿症患者第二線治療藥品特殊專案審查申請Voydeya(Danicopan)+Soliris(eculizumab)/Ultomiris(ravulizumab)
+      或Fabhalta (iptacopan)用藥檢附資料查檢表
+    full_text: 115年9月1日修訂
+- regulation_id: REG-0576
   section_number: APP
   section_title: 附表三十一：全民健康保險使用abatacept申請表
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -5544,31 +5596,31 @@ regulations:
 
       申請醫師(簽名蓋章)：
 
-      內科專科醫師證書：內專醫字第號
+      內科專科醫師證書：內專醫字第           號
 
-      風濕病專科醫師證書：中僂專醫字第號醫事機構章戳：
+      風濕病專科醫師證書：中僂專醫字第         號    醫事機構章戳：
 
-      小兒科專科醫師證書：兒專醫字第號
+      小兒科專科醫師證書：兒專醫字第         號
 
-      小兒過敏免疫專科醫師證書:專醫字第號'
+      小兒過敏免疫專科醫師證書: 專醫字第         號'
   reference_annotations:
     original_clause: 附表三十一：全民健康保險使用abatacept申請表
     full_text: '(六歲至十七歲兒童)
 
       申請醫師(簽名蓋章)：
 
-      內科專科醫師證書：內專醫字第號
+      內科專科醫師證書：內專醫字第           號
 
-      風濕病專科醫師證書：中僂專醫字第號醫事機構章戳：
+      風濕病專科醫師證書：中僂專醫字第         號    醫事機構章戳：
 
-      小兒科專科醫師證書：兒專醫字第號
+      小兒科專科醫師證書：兒專醫字第         號
 
-      小兒過敏免疫專科醫師證書:專醫字第號'
-- regulation_id: REG-0572
+      小兒過敏免疫專科醫師證書: 專醫字第         號'
+- regulation_id: REG-0577
   section_number: APP
   section_title: 附表三十二：異位性皮膚炎面積暨嚴重度指數【Eczema Area and Severity Index (EASI)】
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -5610,11 +5662,11 @@ regulations:
       (Red＋Edema＋Scratch＋Lichenification)×(上肢%)＋0.3(Red＋Edema＋Scratch＋Lichenification)×(下肢%)
 
       附註：Eczema area severity index (EASI)之異位性皮膚炎面積計算，只含皮膚紅腫濕疹部位，單純的皮膚乾燥、脫皮、抓痕，不可列入計算。'
-- regulation_id: REG-0573
+- regulation_id: REG-0578
   section_number: APP
   section_title: 附表三十二之二：全民健康保險6歲以上未滿12歲兒童
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -5627,11 +5679,11 @@ regulations:
   reference_annotations:
     original_clause: 附表三十二之二：全民健康保險6歲以上未滿12歲兒童
     full_text: 異位性皮膚炎使用生物製劑申請表
-- regulation_id: REG-0574
+- regulation_id: REG-0579
   section_number: APP
   section_title: 附表三十三 全民健康保險遺傳性血管性水腫患者使用Icatibant/Human C1 esterase inhibitor治療紀錄表
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -5707,11 +5759,11 @@ regulations:
       範圍逐漸擴散的皮膚疹，正式醫學名稱為「邊緣性紅斑」
 
       活動評估紀錄表：請於注射後24小時內填寫以下評量表'
-- regulation_id: REG-0575
+- regulation_id: REG-0580
   section_number: APP
   section_title: 附表三十五：成人中風後之手臂或下肢痙攣
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -5733,11 +5785,11 @@ regulations:
       手臂      units, 下肢       units
 
       注射部位 □左側 □右側 □上肢 □下肢    注射藥物 □ Botox   □ Dysport'
-- regulation_id: REG-0576
+- regulation_id: REG-0581
   section_number: APP
   section_title: 附表三十六：全民健康保險狼瘡腎炎使用belimumab生物製劑申請表
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -5753,11 +5805,11 @@ regulations:
     full_text: '申請醫師（簽名蓋章）：　　　　　　　      申請醫師（簽名蓋章）：
 
       專科醫師證書： 專字第　　　　 　 號       醫事機構章戳：'
-- regulation_id: REG-0577
+- regulation_id: REG-0582
   section_number: APP
   section_title: 附表三十六之一：全民健康保險全身性狼瘡5-17歲病人使用belimumab生物製劑申請表
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -5773,11 +5825,11 @@ regulations:
     full_text: '申請醫師（簽名蓋章）：　　　　　　　 申請醫師（簽名蓋章）：
 
       專科醫師證書：專字第　　　　 　 號   醫事機構章戳：'
-- regulation_id: REG-0578
+- regulation_id: REG-0583
   section_number: APP
   section_title: 附表三十六之二SELENA SLEDAI積分表
   chapter: 附表附錄 Standalone Appendix Forms
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []

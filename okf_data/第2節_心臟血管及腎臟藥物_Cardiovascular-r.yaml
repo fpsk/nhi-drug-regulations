@@ -7,7 +7,7 @@ regulations:
   section_number: 2.1.1.1.
   section_title: 2.1.1.1. Acetylsalicylic acid (Aspirin) 製劑（89/2/1）
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -24,7 +24,7 @@ regulations:
   section_number: 2.1.1.2.
   section_title: 2.1.1.2. Ticlopidine (原ticlopidine與acetylsalicylic acid合併使用之情況條文修訂)：(87/4/1、88/9/1、90/1/1、100/7/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (88/9/1)
   medications:
@@ -52,7 +52,7 @@ regulations:
   section_number: 2.1.1.3.
   section_title: 2.1.1.3. Tirofiban (如Aggrastat)：（91/2/1、99/10/1、100/7/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -73,7 +73,7 @@ regulations:
   section_number: 2.1.1.4.
   section_title: 2.1.1.4. Abciximab（如ReoPro）：(90/7/1、100/7/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -94,7 +94,7 @@ regulations:
   section_number: 2.1.1.5.
   section_title: 2.1.1.5. Cilostazol（如Pletaal）：(90/6/1、100/7/1、104/4/1、105/5/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (105/5/1)
   medications:
@@ -137,7 +137,7 @@ regulations:
   section_number: 2.1.1.6
   section_title: 2.1.1.6 Clopidogrel（如Plavix）：(90/1/1、93/4/1、94/8/1、96/10/1、100/7/1、101/12/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (90/1/1、94/8/1、96/10/1)
   - (101/12/1)
@@ -185,7 +185,7 @@ regulations:
   section_number: 2.1.1.7.
   section_title: 2.1.1.7. Eptifibatide（如Integrilin）：（95/8/1、100/7/1）
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -206,7 +206,7 @@ regulations:
   section_number: 2.1.1.8.
   section_title: 2.1.1.8. Clopidogrel-acetylsalicylic acid（如CoPlavix）：(100/9/1、101/12/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (100/9/1、101/12/1)
   - (101/12/1)
@@ -233,7 +233,7 @@ regulations:
   section_number: 2.1.1.9.
   section_title: 2.1.1.9. Ticagrelor（如Brilinta）：(102/7/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -252,7 +252,7 @@ regulations:
   section_number: 2.1.1.10.
   section_title: 2.1.1.10. Prasugrel（如Efient）：(107/11/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -271,7 +271,7 @@ regulations:
   section_number: 2.1.2.1.
   section_title: 2.1.2.1. rt-PA（如Actilyse Inj）、tenecteplase (如  Metalyse) ：
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (91/12/1、100/7/1、107/11/1)
   - (93/1/1)
@@ -324,7 +324,7 @@ regulations:
   section_number: 2.1.2.2.
   section_title: 2.1.2.2. rt-PA（如Actilyse Inj）用於急性缺血性腦中風時：(93/1/1、100/7/1、107/11/1、112/10/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (112/10/1)
   - (107/11/1)
@@ -351,7 +351,7 @@ regulations:
   section_number: 2.1.3.1.
   section_title: 2.1.3.1. Tinzaparin注射劑（如Innohep）：90/7/1、91/9/1、100/7/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -376,7 +376,7 @@ regulations:
   section_number: 2.1.3.2.
   section_title: 2.1.3.2. Enoxaparin 注射劑（如Clexane）：(108/2/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -395,7 +395,7 @@ regulations:
   section_number: 2.1.4.1.
   section_title: 2.1.4.1. Fondaparinux（如Arixtra）： (100/4/1、100/7/1、103/2/1、111/2/1、111/3/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (103/2/1、111/2/1)
   - (103/2/1、111/3/1)
@@ -435,7 +435,7 @@ regulations:
   section_number: 2.1.4.2.
   section_title: 2.1.4.2. Rivaroxaban(如Xarelto)（101/1/1、102/2/1、103/5/1、104/12/1、105/5/1、110/7/1、111/2/1、112/3/1）
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (112/3/1)
   - (112/3/1)
@@ -456,7 +456,7 @@ regulations:
   section_number: '2.18'
   section_title: 2.18 歲以上非瓣膜性心房纖維顫動病患，須符合下列條件之一：(102/2/1、103/5/1、105/5/1、111/2/1、112/3/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (111/2/1)
   - (111/2/1、112/3/1)
@@ -562,7 +562,7 @@ regulations:
   section_number: 2.1.4.3.
   section_title: 2.1.4.3. Apixaban（如Eliquis）(103/6/1、106/4/1、111/2/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (111/2/1)
   - (111/2/1)
@@ -659,7 +659,7 @@ regulations:
   section_number: 2.1.4.4.
   section_title: 2.1.4.4. Edoxaban(如Lixiana)：(105/9/1、111/2/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (111/2/1)
   - (111/2/1)
@@ -753,7 +753,7 @@ regulations:
   section_number: 2.1.5.
   section_title: 2.1.5. 直接凝血酶抑制劑(Direct thrombin inhibitors) ：Dabigatran(如Pradaxa)（101/6/1、104/12/1、107/9/1、111/2/1、112/3/1）
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (111/2/1)
   - (111/2/1)
@@ -793,7 +793,7 @@ regulations:
   section_number: 2.2.2.
   section_title: 2.2.2. Nimodipine inj（如Nimotop）：(87/4/1、93/2/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -809,7 +809,7 @@ regulations:
   section_number: 2.2.3.
   section_title: 2.2.3. Papaverine inj：
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -825,7 +825,7 @@ regulations:
   section_number: 2.3.1.
   section_title: 2.3.1. Sumatriptan succinate（如Imigran）；rizatriptan：（88/9/1、93/8/1、94/11/1、97/1/1、97/6/1、97/9/1、108/5/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -857,7 +857,7 @@ regulations:
   section_number: 2.4.1.
   section_title: 2.4.1. Alprostadil：(86/9/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -873,7 +873,7 @@ regulations:
   section_number: 2.4.2.
   section_title: 2.4.2. Potassium citrate（如Urocit-K tab）：
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -889,7 +889,7 @@ regulations:
   section_number: 2.4.3.
   section_title: 2.4.3. Pentosan Polysulfate Sodium (如Elmiron Cap)(92/12/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -935,37 +935,427 @@ regulations:
       4.需經事前審查核准後使用。'
 - regulation_id: REG-0080
   section_number: 2.6.1.
-  section_title: 2.6.1. 全民健康保險降血脂藥物給付規定表（86/1/1、87/4/1、87/7/1、91/9/1、93/9/1、97/7/1、102/8/1、108/2/1）
+  section_title: 2.6.1. 全民健康保險降血脂藥物給付規定表（86/1/1、87/4/1、87/7/1、91/9/1、93/9/1、97/7/1、102/8/1、108/2/1、115/9/1）
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
+  - (115/9/1)
+  - (115/9/1)
   - (108/2/1)
   medications:
     drug_classes:
     - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
-    ingredients: []
+    ingredients:
+    - Atorvastatin (阿托伐他汀)
+    - Simvastatin (辛伐他汀)
+    - Rosuvastatin (瑞舒伐他汀)
+    - Pravastatin (普伐他汀)
   conditions_of_payment:
     indications:
     - Stroke / Cerebrovascular Accident (腦中風)
     - Myocardial Infarction (心肌梗塞)
     - Hypertension (高血壓)
+    - Hyperlipidemia / Hypercholesterolemia (高脂血症)
+    - Chronic Kidney Disease (慢性腎臟病)
     - Diabetes Mellitus (糖尿病)
     laboratory_criteria:
+    - HbA1c
+    - eGFR
+    - 血糖
     - 血壓
-    summary: '全民健康保險降膽固醇藥物給付規定表
+    summary: '降膽固醇藥物，適用全民健康保險降膽固醇藥物給付規定表一。但下表所列項目不適用表一，僅適用全民健康保險降膽固醇藥物給付規定表二。(115/9/1)
 
 
       【給付與評估表格 / Clinical Assessment Table】:
 
-      對象類別 (Target Group) | 非藥物治療 | 起始藥物治療血脂值 | 血脂目標值 | 處方規定
+      成分名稱 | 健保代碼 | 藥品名稱
 
-      有急性冠狀動脈症候群病史 曾接受心導管介入治療或外科冠動脈搭橋手術之冠狀動脈粥狀硬化患者(108/2/1) | 與藥物治療可並行 | LDL-C≧70mg/dL
-      | LDL-C<70mg/dL | 第一年應每3-6個月抽血檢查一次，第二年以後應至少每6-12個月抽血檢查一次，同時請注意副作用之產生如肝功能異常，橫紋肌溶解症。
+      simvastatin | AC46402100 | Simvatin film coating tablets 20mg
 
-      心血管疾病或糖尿病患者 | 與藥物治療可並行 ...'
+      simvastatin | AB47348100 | Vatatin F.C. tablets 20mg "STANDARD"
+
+      simvastatin | BC24339100 | Simvahexal film...'
   reference_annotations:
-    original_clause: 2.6.1. 全民健康保險降血脂藥物給付規定表（86/1/1、87/4/1、87/7/1、91/9/1、93/9/1、97/7/1、102/8/1、108/2/1）
-    full_text: '全民健康保險降膽固醇藥物給付規定表
+    original_clause: 2.6.1. 全民健康保險降血脂藥物給付規定表（86/1/1、87/4/1、87/7/1、91/9/1、93/9/1、97/7/1、102/8/1、108/2/1、115/9/1）
+    full_text: '降膽固醇藥物，適用全民健康保險降膽固醇藥物給付規定表一。但下表所列項目不適用表一，僅適用全民健康保險降膽固醇藥物給付規定表二。(115/9/1)
+
+
+      【給付與評估表格 / Clinical Assessment Table】:
+
+      成分名稱 | 健保代碼 | 藥品名稱
+
+      simvastatin | AC46402100 | Simvatin film coating tablets 20mg
+
+      simvastatin | AB47348100 | Vatatin F.C. tablets 20mg "STANDARD"
+
+      simvastatin | BC24339100 | Simvahexal film-coated tablets 40mg
+
+      simvastatin | AC49672100 | Simatin F.C. tablets 20mg
+
+      simvastatin | AC49841100 | Simpotin F.C. tablets 20 mg "Weidar"
+
+      simvastatin | AC47924100 | Zostatin F.C. tablets 20 mg "S.C."
+
+      simvastatin | BC23970100 | Simvahexal film-coated tablets 20mg
+
+      simvastatin | AC49360100 | Bezostatin F.C. tablets 40 mg "S.C."
+
+      simvastatin | AC48813100 | Simvatenin F.C. tablets 20mg (simvastatin)
+
+      simvastatin | AC56804100 | Simvastatin F.C. tablets 20mg "CYH"
+
+      simvastatin | AC49699100 | Simatin F.C. tablets 10mg
+
+      simvastatin | AC47907100 | Sinty F.C. tablets 20mg
+
+      simvastatin | AC48926100 | Simva F.C. tablets 20 mg
+
+      simvastatin | AC49190100 | Sivasin film coated tablets 40mg
+
+      simvastatin | AC58207100 | Simvatin film coating tablets 40mg
+
+      simvastatin | AC48608100 | Simva F.C. tablets 20mg "Union"
+
+      simvastatin | AC49997100 | Simatin F.C. tablets 40 mg
+
+      simvastatin | A055967100 | Simva F.C. tablets 40mg "Union"
+
+      simvastatin | AC56806100 | Sinty F.C. tablets 40mg
+
+      lovastatin | AC39403100 | Lozutin tablets 20mg (lovastatin)
+
+      lovastatin | AC39307100 | Delipic tablets 20mg  "Standard" (lovastatin)
+
+      lovastatin | A042389100 | Lovatin tablets 20mg "PANBIOTIC"
+
+      pravastatin | BC23596100 | Mevalotin protect 40mg tablets
+
+      pravastatin | AC52581100 | Joinlo tablets 40mg “EVEREST”
+
+      pravastatin | AB49454100 | Pratin tablets 40 mg (pravastatin sodium)
+
+      pravastatin | AB48586100 | Pavatin protect tablets 20mg "Standard" (pravastatin
+      sodium)
+
+      pravastatin | AB48681100 | U-Chu Pavadin tablets 20 mg
+
+      pravastatin | AB46029100 | Pratin tablets 10mg (pravastatin sodium)
+
+      pravastatin | AB48644100 | Mechol tablets 20mg "Yung Shin"
+
+      pravastatin | AB49021100 | Pratin tablets 20 mg
+
+      pravastatin | BC23597100 | Mevalotin protect 20mg tablets
+
+      pravastatin | AC57126100 | Pavatin protect tablets 40mg "Standard" (pravastatin
+      sodium)
+
+      pravastatin | AC48469100 | Mechol tablets 10mg "Yung Shin"
+
+      pravastatin | AC57741100 | Joinlo tablet 20mg  EVEREST
+
+      fluvastatin | BC23556100 | Lescol XL film-coated tablets 80mg
+
+      fluvastatin | BC26147100 | Fluvastatin XL film-coated tablets 80mg
+
+      fluvastatin | AC56629100 | Lecitol XL film-coated Tablets 80mg
+
+      atorvastatin | AC55272100 | Atorva film-coated tablets 10mg "Standard" (atorvastatin)
+
+      atorvastatin | BA25337100 | Tulip 20mg film coated tablets
+
+      atorvastatin | BA25200100 | Tulip 10mg film coated tablets
+
+      atorvastatin | AC48879100 | Anxolipo F.C. tablet 10 mg
+
+      atorvastatin | AC57267100 | Atotin F.C. tablets 10mg
+
+      atorvastatin | AC51598100 | Atoty F.C. tablets 10 mg
+
+      atorvastatin | AC58211100 | Atotin F.C. tablets 20mg
+
+      atorvastatin | AC49226100 | Anxolightor F.C. tablets 20 mg
+
+      atorvastatin | AC58517100 | Atoroty F.C. tablets 20mg
+
+      atorvastatin | AC57805100 | Atorva F.C. tab. 20mg  "Standard" (atorvastatin)
+
+      atorvastatin | AA49543100 | Atorin F.C. tablet 10mg
+
+      atorvastatin | BA25201100 | Tulip 40mg film coated tablets
+
+      atorvastatin | AA57774100 | Atover F.C. Tab. 10mg P.L.
+
+      atorvastatin | AC52530100 | Atorin F.C. tablets 20mg
+
+      atorvastatin | AC55583100 | Atorcal F.C. tablets 20mg "S.C."
+
+      atorvastatin | AC55895100 | Atorcal F.C. tablets 10mg "S.C."
+
+      atorvastatin | AA57950100 | Atover F.C. tablets 20mg P.L.
+
+      atorvastatin | AC55268100 | Atorva film-coated tablets 40mg "Standard"(atorvastatin)
+
+      atorvastatin | AC55952100 | Atoty F.C. tablets 20 mg
+
+      atorvastatin | AA56739100 | Anxolipo F.C. tablets 20mg
+
+      atorvastatin | AC55956100 | Lipiminus F.C. tablets 20mg
+
+      atorvastatin | AB54967100 | Atover F.C. tablets 40 mg "P.L."
+
+      atorvastatin | AA49288100 | Anxolipo F.C. tablets 40mg
+
+      atorvastatin | AC56319100 | Lipiminus F.C.tablets 10mg
+
+      atorvastatin | AC57133100 | Atotin F.C. tablets 40mg
+
+      atorvastatin | AC52301100 | Lipiminus F.C tablets 40mg
+
+      atorvastatin | AC57930100 | Atova F.C. tablets 10mg "Yu Sheng"
+
+      atorvastatin | AC56682100 | Atoroty F.C. tablets 10mg
+
+      atorvastatin | AC50086100 | Atorcal F.C. tablets 40 mg "S.C."
+
+      atorvastatin | AB57967100 | Atorstin film coated tablets 10mg
+
+      atorvastatin | AC58041100 | Atoty F.C. tablets 40mg
+
+      atorvastatin | AB57772100 | Atorstin film coated tablets 40mg
+
+      atorvastatin | AB58049100 | Atorstin film coated tablets 20mg
+
+      atorvastatin | AB51732100 | Atorin F.C. tablets 40mg
+
+      atorvastatin | AC58262100 | Atoroty F.C. tablets 40mg
+
+      rosuvastatin | AA57802100 | Roty F.C. tablets 10mg
+
+      rosuvastatin | AA57843100 | Roty F.C. tablets 5mg
+
+      rosuvastatin | BC24597100 | Crestor 5mg film-coated tablets
+
+      rosuvastatin | AC57803100 | Roty F.C. tablets 20mg
+
+      rosuvastatin | BC24129100 | Crestor 20mg film-coated tablets
+
+      rosuvastatin | AB57940100 | Rosulator F.C. tablets 10mg "S.C."
+
+      rosuvastatin | BC26543100 | Alvostat film coated tablets 10mg
+
+      rosuvastatin | AC59266100 | Rostatin F.C. tablets 5mg "Standard"
+
+      rosuvastatin | AC58282100 | Rostatin F.C. tablets 10mg "Standard"
+
+      rosuvastatin | AC58384100 | Rosu F.C. tablets 10mg
+
+      rosuvastatin | AC57130100 | Rotlip film-coated tablets 10mg
+
+      rosuvastatin | AC59652100 | Rosulator F.C. tablets 5mg "S.C."
+
+      rosuvastatin | AC57809100 | Rolipostatin 10mg F.C. tablets "Macro"
+
+      rosuvastatin | BC26900100 | Zyrova 20 (rosuvastatin tablets 20mg)
+
+      rosuvastatin | BC27782100 | Zyrova 5 (rosuvastatin tablets 5mg)
+
+      rosuvastatin | AC58969100 | Aladdin F.C. tablets 10mg
+
+      rosuvastatin | BC27781100 | Zyrova 10 (rosuvastatin tablets 10mg)
+
+      rosuvastatin | AC58067100 | Rosutor film-coated tablets 10mg
+
+      rosuvastatin | BC26544100 | Alvostat film coated tablets 20mg
+
+      rosuvastatin | AC60114100 | Rosutor film-coated tablets 5mg
+
+      rosuvastatin | AC59649100 | Rosulip F.C. tablets 5mg C.H.
+
+      rosuvastatin | AC58270100 | Crosuty F.C. tablets 10mg
+
+      rosuvastatin | AC58622100 | Rotlip film-coated tablets 5mg
+
+      rosuvastatin | AC58098100 | Crosuty F.C. tablets 5mg
+
+      rosuvastatin | AC60197100 | Rosutor film-coated tablets 20mg
+
+      pitavastatin | BC25350100 | Livalo tablets 2mg
+
+      pitavastatin | AA58648100 | Pitarty F.C. tablets 2mg
+
+      pitavastatin | BC27002100 | Livalo OD tablets 2mg
+
+      pitavastatin | AC58526100 | Pitastatin F.C. tablets 2mg
+
+      pitavastatin | AC58633100 | Pitarty F.C. tablets 4mg
+
+      pitavastatin | AC58525100 | Pitastatin F.C. tablets 4mg
+
+      pitavastatin | AC59398100 | Pivas F.C. tablets 2mg
+
+      pitavastatin | AC59192100 | Pitanxo F.C. tablets 4mg
+
+      pitavastatin | AC60561100 | "EVEREST" Huiton F.C. tablets 2mg
+
+      pitavastatin | AC61795100 | Pistatin F.C. tablets 2mg
+
+      pitavastatin | AC58078100 | Pitavol F.C.tablets 2mg
+
+      pitavastatin | AC60174100 | Pitavastatin F.C. tablets 2mg "CYH"
+
+      pitavastatin | AC59193100 | Pitanxo F.C. tablets 2mg
+
+      pitavastatin | AC60290100 | Lavitol film coated tablets 4mg
+
+      pravastatin及fenofibrate複方 | BC26169100 | Pravafen 40mg/160mg hard capsules
+
+      atorvastatin及amlodipine複方 | BC24392100 | Caduet 5mg/20mg tablet
+
+      atorvastatin及amlodipine複方 | BC24391100 | Caduet 5mg/10mg tablet
+
+      atorvastatin及amlodipine複方 | AC59887100 | Dualpress F.C. tablets 5mg/10mg
+
+      atorvastatin及amlodipine複方 | AC60836100 | Dualpress F.C. tablets 5mg/20mg
+
+      全民健康保險降膽固醇藥物給付規定表一：(115/9/1)
+
+
+      【給付與評估表格 / Clinical Assessment Table】:
+
+      ASCVD 風險等級 | 非藥物治療 | 起始藥物治療 血脂值 | 主要/（次要） 血脂目標值 | 處方規定
+
+      極高風險 | 處置各項可改善心血管風險因子與藥物治療並行 | LDL-C≧55mg/dL | LDL-C<55mg/dL(non-HDL-C<85mg/dL)
+      | 極高、非常高風險： 一、起始治療：依據基線血脂值、用藥史和臨床狀況，給予中至高強度statin或合併ezetimibe。 二、經起始治療6~8週後，檢測血脂指標，如治療達標，則維持治療，並應每6個月追蹤血脂指標；如血脂值未達標，檢視服藥狀況，並考慮調整至高強度statin或最大耐受statin劑量，同時考慮合併non-statin治療，包含：ezetimibe、PCSK9單株抗體、siRNA、ATP
+      citrate lyase抑制劑。 三、更動治療1~3個月內需追蹤血脂值是否達標，如治療達標，則維持治療，並應每6個月追蹤血脂指標；如血脂值未達標，檢視服藥狀況，並考慮調整藥物組合。
+
+      非常高風險 | 處置各項可改善心血管風險因子與藥物治療並行 | LDL-C≧70mg/dL | LDL-C<70mg/dL(non-HDL-C<100mg/dL)
+      | 極高、非常高風險： 一、起始治療：依據基線血脂值、用藥史和臨床狀況，給予中至高強度statin或合併ezetimibe。 二、經起始治療6~8週後，檢測血脂指標，如治療達標，則維持治療，並應每6個月追蹤血脂指標；如血脂值未達標，檢視服藥狀況，並考慮調整至高強度statin或最大耐受statin劑量，同時考慮合併non-statin治療，包含：ezetimibe、PCSK9單株抗體、siRNA、ATP
+      citrate lyase抑制劑。 三、更動治療1~3個月內需追蹤血脂值是否達標，如治療達標，則維持治療，並應每6個月追蹤血脂指標；如血脂值未達標，檢視服藥狀況，並考慮調整藥物組合。
+
+      高風險 | 生活型態改變與藥物治療並行 | LDL-C≧100mg/dL | LDL-C<100mg/dL(non-HDL-C<130mg/dL) |
+      高風險： 一、起始治療：依據基線血脂值與臨床狀況，給予中至高強度statin或合併ezetimibe；同時進行生活型態改變。 二、經起始治療6~8週後，檢測血脂指標，如治療達標，則維持治療，並應每6個月追蹤血脂指標；如血脂值未達標，檢視服藥狀況，並考慮使用高強度statin或最大耐受statin劑量或同時合併non-statin治療，包含：ezetimibe、PCSK9單株抗體、siRNA、ATP
+      citrate lyase抑制劑。 三、更動治療1~3個月內需追蹤血脂值是否達標，如治療達標，則維持治療，並應每6個月追蹤血脂指標；如血脂值未達標，檢視服藥狀況，並考慮調整藥物組合。
+      中、低風險： 一、起始治療：進行生活型態改變，並處置心血管風險因子。 二、經起始治療3~6個月後，檢測血脂指標，如治療達標，則維持治療，並應每6-12個月追蹤血脂指標；如血脂值未達標，給予中強度statin。
+      三、中強度statin治療6~8週後追蹤血脂值是否達標，如治療達標，則維持治療，並應每6-12個月追蹤血脂指標；如血脂值未達標，檢視服藥狀況，並可給予高強度statin或最大耐受statin劑量或合併non-statin治療。
+
+      中風險 | 給藥前應有3-6個月 生活型態改變，並處置心血管風險因子 | LDL-C≧115mg/dL | LDL-C<115mg/dL(non-HDL-C<145mg/dL)
+      | 高風險： 一、起始治療：依據基線血脂值與臨床狀況，給予中至高強度statin或合併ezetimibe；同時進行生活型態改變。 二、經起始治療6~8週後，檢測血脂指標，如治療達標，則維持治療，並應每6個月追蹤血脂指標；如血脂值未達標，檢視服藥狀況，並考慮使用高強度statin或最大耐受statin劑量或同時合併non-statin治療，包含：ezetimibe、PCSK9單株抗體、siRNA、ATP
+      citrate lyase抑制劑。 三、更動治療1~3個月內需追蹤血脂值是否達標，如治療達標，則維持治療，並應每6個月追蹤血脂指標；如血脂值未達標，檢視服藥狀況，並考慮調整藥物組合。
+      中、低風險： 一、起始治療：進行生活型態改變，並處置心血管風險因子。 二、經起始治療3~6個月後，檢測血脂指標，如治療達標，則維持治療，並應每6-12個月追蹤血脂指標；如血脂值未達標，給予中強度statin。
+      三、中強度statin治療6~8週後追蹤血脂值是否達標，如治療達標，則維持治療，並應每6-12個月追蹤血脂指標；如血脂值未達標，檢視服藥狀況，並可給予高強度statin或最大耐受statin劑量或合併non-statin治療。
+
+      低風險 | 給藥前應有3-6個月 生活型態改變，並處置心血管風險因子 | LDL-C≧130mg/dL | LDL-C<130mg/dL(non-HDL-C<160mg/dL)
+      | 高風險： 一、起始治療：依據基線血脂值與臨床狀況，給予中至高強度statin或合併ezetimibe；同時進行生活型態改變。 二、經起始治療6~8週後，檢測血脂指標，如治療達標，則維持治療，並應每6個月追蹤血脂指標；如血脂值未達標，檢視服藥狀況，並考慮使用高強度statin或最大耐受statin劑量或同時合併non-statin治療，包含：ezetimibe、PCSK9單株抗體、siRNA、ATP
+      citrate lyase抑制劑。 三、更動治療1~3個月內需追蹤血脂值是否達標，如治療達標，則維持治療，並應每6個月追蹤血脂指標；如血脂值未達標，檢視服藥狀況，並考慮調整藥物組合。
+      中、低風險： 一、起始治療：進行生活型態改變，並處置心血管風險因子。 二、經起始治療3~6個月後，檢測血脂指標，如治療達標，則維持治療，並應每6-12個月追蹤血脂指標；如血脂值未達標，給予中強度statin。
+      三、中強度statin治療6~8週後追蹤血脂值是否達標，如治療達標，則維持治療，並應每6-12個月追蹤血脂指標；如血脂值未達標，檢視服藥狀況，並可給予高強度statin或最大耐受statin劑量或合併non-statin治療。
+
+      0項心血管風險因子 | 給藥前應有3-6個月 生活型態改變，並處置心血管風險因子 | LDL-C≧160mg/dL | LDL-C<160mg/dL |
+      高風險： 一、起始治療：依據基線血脂值與臨床狀況，給予中至高強度statin或合併ezetimibe；同時進行生活型態改變。 二、經起始治療6~8週後，檢測血脂指標，如治療達標，則維持治療，並應每6個月追蹤血脂指標；如血脂值未達標，檢視服藥狀況，並考慮使用高強度statin或最大耐受statin劑量或同時合併non-statin治療，包含：ezetimibe、PCSK9單株抗體、siRNA、ATP
+      citrate lyase抑制劑。 三、更動治療1~3個月內需追蹤血脂值是否達標，如治療達標，則維持治療，並應每6個月追蹤血脂指標；如血脂值未達標，檢視服藥狀況，並考慮調整藥物組合。
+      中、低風險： 一、起始治療：進行生活型態改變，並處置心血管風險因子。 二、經起始治療3~6個月後，檢測血脂指標，如治療達標，則維持治療，並應每6-12個月追蹤血脂指標；如血脂值未達標，給予中強度statin。
+      三、中強度statin治療6~8週後追蹤血脂值是否達標，如治療達標，則維持治療，並應每6-12個月追蹤血脂指標；如血脂值未達標，檢視服藥狀況，並可給予高強度statin或最大耐受statin劑量或合併non-statin治療。
+
+      ●ASCVD風險等級定義：
+
+      一、極高風險：
+
+      (一)冠狀動脈疾病合併下列任一臨床狀況：
+
+      1.一年內曾經歷心肌梗塞。
+
+      2.≧兩次心肌梗塞病史。
+
+      3.多支冠狀動脈阻塞。
+
+      4.急性冠心症合併糖尿病。
+
+      5.周邊動脈疾病或頸動脈狹窄。
+
+      (二)周邊動脈疾病合併下列任一臨床狀況：
+
+      1.冠狀動脈疾病。
+
+      2.頸動脈狹窄。
+
+      二、非常高風險：
+
+      (一)經臨床檢查確診為動脈硬化心血管疾病，包含：
+
+      1.急性冠心症病史。
+
+      2.接受血管再通術(心導管介入治療或外科冠狀動脈繞道手術)。
+
+      3.缺血性中風/短暫性腦缺血發作合併動脈硬化相關疾病或病史。
+
+      4.周邊動脈疾病(曾接受血管再通術、有肢體缺血相關症狀或截肢)。
+
+      (二)經影像檢查確認有顯著斑塊負擔，定義為≧50%直徑狹窄率，包含：
+
+      1.冠狀動脈血管攝影。
+
+      2.冠狀動脈或周邊血管電腦斷層攝影。
+
+      3.頸動脈或周邊血管超音波。
+
+      三、高風險：
+
+      (一)糖尿病。
+
+      (二)慢性腎臟病(進入透析治療前的慢性腎臟病，包括UACR≧30mg/g or eGFR<60mL/min/1.73m2至少持續3個月)。
+
+      (三)LDL-C≧190mg/dL。
+
+      (四)冠狀動脈鈣化分數(CAC)≧400。
+
+      四、中風險：2項(含)以上心血管風險因子。
+
+      五、低風險：1項心血管風險因子。
+
+      ●心血管風險因子定義：
+
+      一、高血壓。
+
+      二、男性≧45歲，女性≧55歲。
+
+      三、早發性冠心病家族史(男性≦55歲，女性≦65歲)。
+
+      四、HDL-C：男性<40mg/dL，女性<50mg/dL。
+
+      五、抽菸。
+
+      六、代謝性症候群(符合以下至少三項)：
+
+      (一)腹部肥胖(男性≧90cm，女性≧80cm)。
+
+      (二)血壓偏高(≧130/85mmHg或使用高血壓藥物)。
+
+      (三)空腹血糖偏高(≧100mg/dL或使用糖尿病藥物)。
+
+      (四)空腹TG偏高(≧150mg/dL或使用治療TG血脂藥物)。
+
+      (五)HDL-C偏低(男性<40mg/dL，女性<50mg/dL)。
+
+      ●各風險等級評估建議：
+
+      一、極高風險、非常高風險：
+
+      (一)初始評估應檢測完整血脂指標，並應於急性病人入院後24小時內完成血脂檢驗。
+
+      (二)處置各項可改善心血管風險因子，包含：血壓、HbA1c、肥胖、抽菸、酒精攝取、生活型態。
+
+      二、高風險、中風險、低風險：
+
+      (一)給予完整血脂指標檢測，辨識各項可改善心血管風險因子，包含：血壓、HbA1c、肥胖、抽菸、酒精攝取、生活型態。
+
+      (二)ASCVD風險分級為高風險，當有嚴重高膽固醇血症、肌腱黃色瘤、早發心血管疾病或家族病史時，應依照台灣家族性高膽固醇血症診斷標準進行家族性膽固醇血症篩檢。
+
+      (三)若未符合上述高風險條件，應以列在低至中風險欄位的心血管風險因子數量作為風險評估。
+
+      ●當LDL-C達到理想治療目標後，非高密度脂蛋白-膽固醇(non-HDL-C)可作為血脂治療次要標的，其計算方式為總膽固醇數值減掉HDL-C數值，尤其適用於合併有高三酸甘油脂、糖尿病、或肥胖的病人以做進一步的心血管風險評估。
+
+      全民健康保險降膽固醇藥物給付規定表二：（86/1/1、87/4/1、87/7/1、91/9/1、93/9/1、97/7/1、102/8/1、108/2/1、115/9/1）
 
 
       【給付與評估表格 / Clinical Assessment Table】:
@@ -1026,10 +1416,12 @@ regulations:
       無心血管疾病病人 | 與藥物治療可並行 | TG≧500mg/dL | TG＜500mg/dL | 第一年應每3-6個月抽血檢查一次，第二年以後應至少每6-12個月抽血檢查一次，同時請注意副作用之產生如肝功能異常，橫紋肌溶解症。'
 - regulation_id: REG-0081
   section_number: 2.6.2.
-  section_title: 2.6.2. Ezetimibe (如Ezetrol Tablets)：(94/6/1)
+  section_title: 2.6.2. Ezetimibe：(94/6/1、115/9/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
-  effective_dates: []
+  source_file: 完整給付規定1150821.docx
+  effective_dates:
+  - (94/6/1、115/9/1)
+  - (115/9/1)
   medications:
     drug_classes:
     - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
@@ -1038,47 +1430,107 @@ regulations:
     indications:
     - Hyperlipidemia / Hypercholesterolemia (高脂血症)
     laboratory_criteria: []
-    summary: '原發性高膽固醇血症、同型接合子家族性高膽固醇血症、同型接合子性麥脂醇血症(植物脂醇血症)患者並符合下列條件之一者：
+    summary: '限用於原發性高膽固醇血症、同型接合子家族性高膽固醇血症、同型接合子性麥脂醇血症(植物脂醇血症)患者，並符合下列條件之一者：
 
-      1.符合全民健康保險降血脂藥物給付規定表且對Statins類藥品發生無法耐受藥物不良反應（如Severe myalgia、Myositis）者。
+      1.對statins類藥品發生無法耐受藥物不良反應（如Severe myalgia、Myositis）者。(94/6/1、115/9/1)
 
-      2.符合全民健康保險降血脂藥物給付規定表經使用Statins類藥品單一治療3個月未達治療目標者，得合併使用本案藥品與Statins類藥品。'
+      2.經使用statins類藥品單一治療6-8週未達治療目標者，得合併使用本類藥品與statins類藥品。但下表所列項目，需經使用statins類藥品單一治療3個月未達治療目標者，始得與statins類藥品併用。(115/9/1)
+
+
+      【給付與評估表格 / Clinical Assessment Table】:
+
+      健保代碼 | 藥品名稱
+
+      A...'
   reference_annotations:
-    original_clause: 2.6.2. Ezetimibe (如Ezetrol Tablets)：(94/6/1)
-    full_text: '原發性高膽固醇血症、同型接合子家族性高膽固醇血症、同型接合子性麥脂醇血症(植物脂醇血症)患者並符合下列條件之一者：
+    original_clause: 2.6.2. Ezetimibe：(94/6/1、115/9/1)
+    full_text: '限用於原發性高膽固醇血症、同型接合子家族性高膽固醇血症、同型接合子性麥脂醇血症(植物脂醇血症)患者，並符合下列條件之一者：
 
-      1.符合全民健康保險降血脂藥物給付規定表且對Statins類藥品發生無法耐受藥物不良反應（如Severe myalgia、Myositis）者。
+      1.對statins類藥品發生無法耐受藥物不良反應（如Severe myalgia、Myositis）者。(94/6/1、115/9/1)
 
-      2.符合全民健康保險降血脂藥物給付規定表經使用Statins類藥品單一治療3個月未達治療目標者，得合併使用本案藥品與Statins類藥品。'
+      2.經使用statins類藥品單一治療6-8週未達治療目標者，得合併使用本類藥品與statins類藥品。但下表所列項目，需經使用statins類藥品單一治療3個月未達治療目標者，始得與statins類藥品併用。(115/9/1)
+
+
+      【給付與評估表格 / Clinical Assessment Table】:
+
+      健保代碼 | 藥品名稱
+
+      AC60610100 | Ezetity tablets 10mg
+
+      BC27311100 | Ezzicad (ezetimibe) 10mg Tablets
+
+      BC28252100 | Ezta 10 (ezetimibe Tablets 10mg)
+
+      BC26552100 | Ezetimibe Sandoz 10mg tablets'
 - regulation_id: REG-0082
   section_number: 2.6.3.
-  section_title: 2.6.3. 含ezetimibe及statin類之複方製劑（如Vytorin、Atozet、Cretrol、Tonvasca）：(95/12/1、106/8/1、111/11/1、112/12/1)：
+  section_title: 2.6.3. 含ezetimibe及statin類之複方製劑：(95/12/1、106/8/1、111/11/1、112/12/1、115/9/1)：
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
-  - (106/8/1)
+  - (106/8/1、115/9/1)
+  - (115/9/1)
   - (106/8/1)
   medications:
     drug_classes:
     - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
-    ingredients: []
+    ingredients:
+    - Simvastatin (辛伐他汀)
   conditions_of_payment:
     indications:
     - Hyperlipidemia / Hypercholesterolemia (高脂血症)
     laboratory_criteria: []
-    summary: '1.限用於原發性高膽固醇血症、同型接合子家族性高膽固醇血症(HOFH) 病患並符合全民健康保險降血脂藥物給付規定表，經使用statin類藥品單一治療3個月未達治療目標者(106/8/1)。
+    summary: '1.限用於原發性高膽固醇血症、同型接合子家族性高膽固醇血症(HOFH) 病患。(106/8/1、115/9/1)
 
-      2.本品不得與gemfibrozil併用。(106/8/1)'
+      2.經使用statin類藥品單一治療6-8週未達治療目標者，得使用本類藥品。但下表所列項目，需經使用statin類藥品單一治療3個月未達治療目標者，始得使用。(115/9/1)
+
+
+      【給付與評估表格 / Clinical Assessment Table】:
+
+      健保代碼 | 藥品名稱
+
+      AC59251100 | Agitin tablets 10/20mg
+
+      AC60402100 | Sacure tablets 10/20mg
+
+      BC28502100 | Ezta-SM 10+20 (ez...'
   reference_annotations:
-    original_clause: 2.6.3. 含ezetimibe及statin類之複方製劑（如Vytorin、Atozet、Cretrol、Tonvasca）：(95/12/1、106/8/1、111/11/1、112/12/1)：
-    full_text: '1.限用於原發性高膽固醇血症、同型接合子家族性高膽固醇血症(HOFH) 病患並符合全民健康保險降血脂藥物給付規定表，經使用statin類藥品單一治療3個月未達治療目標者(106/8/1)。
+    original_clause: 2.6.3. 含ezetimibe及statin類之複方製劑：(95/12/1、106/8/1、111/11/1、112/12/1、115/9/1)：
+    full_text: '1.限用於原發性高膽固醇血症、同型接合子家族性高膽固醇血症(HOFH) 病患。(106/8/1、115/9/1)
 
-      2.本品不得與gemfibrozil併用。(106/8/1)'
+      2.經使用statin類藥品單一治療6-8週未達治療目標者，得使用本類藥品。但下表所列項目，需經使用statin類藥品單一治療3個月未達治療目標者，始得使用。(115/9/1)
+
+
+      【給付與評估表格 / Clinical Assessment Table】:
+
+      健保代碼 | 藥品名稱
+
+      AC59251100 | Agitin tablets 10/20mg
+
+      AC60402100 | Sacure tablets 10/20mg
+
+      BC28502100 | Ezta-SM 10+20 (ezetimibe and simvastatin tablets 10mg/20mg)
+
+      AC62052100 | Zoliton tablets 10/20mg
+
+      AC62053100 | Zoliton tablets 10/10mg
+
+      AC62140100 | Zovastin tablets 10/10mg
+
+      AC62139100 | Zovastin tablets 10/20mg
+
+      BC28181100 | Cretrol Tab. 10/10 mg
+
+      BC28182100 | Cretrol Tab. 10/20 mg
+
+      BC28884100 | Livazebe combination tablets HD (for 4mg)
+
+      3.本品不得與gemfibrozil併用。(106/8/1)'
 - regulation_id: REG-0083
   section_number: 2.6.4.1.
   section_title: 2.6.4.1. Evolocumab (如Repatha)：(107/3/1、108/5/1、109/4/1、114/9/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (108/5/1)
   - (108/5/1、109/4/1)
@@ -1145,7 +1597,7 @@ regulations:
   section_number: 2.6.4.2
   section_title: 2.6.4.2 Alirocumab (如Praluent) (109/1/1、114/9/1)：
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes:
@@ -1187,7 +1639,7 @@ regulations:
   section_title: 2.7. 乙型擬交感神經阻斷劑Beta blocking agents：metoprolol succinate 23.75mg（如Betaloc
     ZOK 25mg）(93/5/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1204,7 +1656,7 @@ regulations:
   section_number: 2.8.1.
   section_title: 2.8.1. 腦循環改善劑、腦代謝改善劑及血球流變改善劑：(87/4/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1220,7 +1672,7 @@ regulations:
   section_number: 2.8.2.
   section_title: 2.8.2. 肺動脈高血壓治療劑(95/1/1、97/6/1、98/12/1、99/11/1、100/4/1、103/7/1、104/6/1、104/8/1、108/5/1、109/1/1、112/3/1、113/1/1、114/6/1)：
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1246,7 +1698,7 @@ regulations:
   section_number: 2.8.2.1.
   section_title: 2.8.2.1. Iloprost (如Ventavis、 Ilomedin-20)：(95/1/1、99/11/1、100/4/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1272,7 +1724,7 @@ regulations:
   section_number: 2.8.2.2.
   section_title: 2.8.2.2. Sildenafil (如Revatio)：(97/6/1、100/4/1、102/8/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (102/8/1)
   medications:
@@ -1297,7 +1749,7 @@ regulations:
   section_number: 2.8.2.3.
   section_title: 2.8.2.3. Ambrisentan（如Volibris）（98/12/1、103/7/1、104/8/1、107/12/1)：
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1323,7 +1775,7 @@ regulations:
   section_number: 2.8.2.4.
   section_title: 2.8.2.4. Riociguat（如Adempas）(104/6/1）：
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1360,7 +1812,7 @@ regulations:
   section_number: 2.8.2.5.
   section_title: 2.8.2.5. Bosentan（如Tracleer）（98/12/1、103/7/1、104/8/1）：
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1392,7 +1844,7 @@ regulations:
   section_number: 2.8.2.6.
   section_title: 2.8.2.6. Macitentan（如Opsumit）（107/12/1、114/6/1、115/5/1)：
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1447,7 +1899,7 @@ regulations:
   section_number: 2.8.2.7.
   section_title: 2.8.2.7. Selexipag (如UPTRAVI)：(108/5/1、114/6/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (114/6/1)
   medications:
@@ -1485,7 +1937,7 @@ regulations:
   section_number: 2.8.2.8.
   section_title: 2.8.2.8. Treprostinil (如Remodulin inj.、Tyvaso)：(109/1/1、112/3/1、113/1/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (112/3/1、113/1/1)
   - (109/1/1、113/1/1)
@@ -1519,7 +1971,7 @@ regulations:
   section_number: 2.8.2.9.
   section_title: 2.8.2.9. Tadalafil（如Adcirca）：（114/6/1）
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1543,7 +1995,7 @@ regulations:
   section_number: 2.8.2.10.
   section_title: 2.8.2.10. 含macitentan及tadalafil之複方製劑(如Opsynvi)：(115/5/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1586,7 +2038,7 @@ regulations:
   section_number: 2.8.2.11.
   section_title: 2.8.2.11. Sotatercept（如Winrevair）：（115/6/1）
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1618,7 +2070,7 @@ regulations:
   section_number: 2.9.1.
   section_title: 2.9.1. Eplerenone (如Inspra)：（100/1/1、104/12/1）
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1644,7 +2096,7 @@ regulations:
   section_number: 2.9.2.
   section_title: 2.9.2. Amiloride單方口服製劑（109/9/1）
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1668,7 +2120,7 @@ regulations:
   section_number: 2.9.3.
   section_title: 2.9.3. Furosemide口服液劑(如Fumide oral solution)：（110/7/1）
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1684,7 +2136,7 @@ regulations:
   section_number: 2.10.1.
   section_title: 2.10.1. Dronedarone (如Multaq) (100/8/1、111/2/1、112/12/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (111/2/1)
   - (111/2/1、112/12/1)
@@ -1719,7 +2171,7 @@ regulations:
   section_number: 2.11.1.
   section_title: 2.11.1. Febuxostat（如Feburic）：（101/4/1、103/3/1、105/8/1、108/12/1）
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1751,7 +2203,7 @@ regulations:
   section_number: 2.11.2.
   section_title: 2.11.2. 含allopurinol成分製劑(105/2/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1772,7 +2224,7 @@ regulations:
   section_number: 2.12.
   section_title: 2.12. Ivabradine(如Coralan) (103/5/1、106/10/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (106/10/1)
   - (106/10/1)
@@ -1810,7 +2262,7 @@ regulations:
   section_number: 2.13.1.
   section_title: 2.13.1. Tolvaptan (如Samsca)：(105/9/1、108/7/1、109/3/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (109/3/1)
   - (109/3/1)
@@ -1834,7 +2286,7 @@ regulations:
   section_number: 2.13.2.
   section_title: 2.13.2. Tolvaptan (如Jinarc)(108/7/1、109/10/1)：
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (109/10/1)
   medications:
@@ -1890,7 +2342,7 @@ regulations:
   section_number: 2.14.
   section_title: 2.14. Sacubitril+Valsartan (如Entresto)：(106/3/1、109/6/1、110/7/1、111/5/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (109/6/1、110/7/1、111/5/1)
   - (109/6/1、111/5/1)
@@ -1924,7 +2376,7 @@ regulations:
   section_number: 2.15.
   section_title: 2.15. Digoxin口服液劑(如Cardiacin elixir)：(110/1/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1940,7 +2392,7 @@ regulations:
   section_number: 2.16.
   section_title: 2.16. Dapagliflozin(如Forxiga)、empagliflozin (如Jardiance 10mg)：（111/5/1、111/8/1、114/3/1）
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -2018,7 +2470,7 @@ regulations:
   section_number: 2.17.
   section_title: 2.17. Tafamidis（如Vyndamax）：(113/2/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -2071,7 +2523,7 @@ regulations:
   section_number: 2.18.
   section_title: 2.18. Captopril內服液劑（如Cen-Capto Oral Solution）：（114/8/1）
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -2092,7 +2544,7 @@ regulations:
   section_number: 2.19.
   section_title: 2.19. Mavacamten（如Camzyos）：(115/4/1)
   chapter: 第2節 心臟血管及腎臟藥物 Cardiovascular-renal drugs
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []

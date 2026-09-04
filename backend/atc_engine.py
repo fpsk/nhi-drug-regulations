@@ -534,6 +534,11 @@ class ATCEngine:
             "L04AB": "8.2.4",   # TNF-alpha -> Rheumatoid Arthritis
             "L04AC": "8.2.4",   # IL inhibitors -> Rheumatoid Arthritis
             "J05AF": "10.7.3",  # B-hepatitis antivirals -> HBV
+            "L01EB": "9.138",   # EGFR TKI (Aumolertinib / Osimertinib)
+            "L01CD": "9.137",   # Taxanes (Cabazitaxel)
+            "J01DI": "10.3.8",  # Siderophore cephalosporins (Cefiderocol)
+            "B02BX": "4.2.8",   # Hemophilia siRNA (Fitusiran)
+            "A16AX": "3.3.32",  # IBAT inhibitors (Maralixibat)
         }
 
         matched_expansions = []
@@ -670,6 +675,40 @@ class ATCEngine:
                         "searched_term": query,
                         "aliases": info.get("aliases", []),
                         "primary_regulation": primary_regulation
+                    })
+
+        # Step 5: Check WHO ATC Database for specific ingredient/brand queries (e.g., 'pulmivex', 'fetroja')
+        for atc7, winfo in self.who_db.items():
+            atc_code = winfo.get("atc7", atc7)
+            class_code = winfo.get("atc5", atc_code[:5])
+            brand_str = winfo.get("brand", "")
+            en_name = winfo.get("en", "")
+            tc_name = winfo.get("tc", "")
+            
+            match = (
+                q_clean == atc_code.lower() or
+                q_clean == class_code.lower() or
+                (len(q_clean) >= 3 and q_clean in en_name.lower()) or
+                (len(q_clean) >= 2 and q_clean in tc_name.lower()) or
+                (len(q_clean) >= 3 and q_clean in brand_str.lower())
+            )
+            if match:
+                if not any(x.get("atc_code") == atc_code for x in matched_expansions):
+                    brand_en, brand_tc = self.parse_brand(brand_str)
+                    matched_expansions.append({
+                        "atc_code": atc_code,
+                        "class_code": class_code,
+                        "class_name_en": winfo.get("class_en", "Therapeutic Class"),
+                        "class_name_tc": winfo.get("class_tc", "治療類別"),
+                        "ingredient_en": en_name,
+                        "ingredient_tc": tc_name,
+                        "brand_en": brand_en or en_name,
+                        "brand_tc": brand_tc if brand_tc else [tc_name],
+                        "is_brand": q_clean in brand_str.lower(),
+                        "is_chinese": any(ord(c) > 127 for c in q_clean),
+                        "searched_term": query,
+                        "aliases": [atc_code.lower(), class_code.lower(), en_name.lower(), tc_name.lower()],
+                        "primary_regulation": winfo.get("primary_regulation", "")
                     })
 
         return matched_expansions

@@ -3,11 +3,11 @@ schema_type: Taiwan_NHI_Drug_Regulation
 chapter: 第11節 解毒劑 Antidotes in poisoning
 total_regulations: 5
 regulations:
-- regulation_id: REG-0489
+- regulation_id: REG-0494
   section_number: 11.2.1.
   section_title: 11.2.1. Flumazenil (如Anexate inj )限使用於：
   chapter: 第11節 解毒劑 Antidotes in poisoning
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -23,11 +23,11 @@ regulations:
     full_text: '1.全身麻醉病例
 
       2.Benzodiazepine類藥物中毒之鑑別診斷與治療病例。'
-- regulation_id: REG-0490
+- regulation_id: REG-0495
   section_number: 11.2.2.
   section_title: 11.2.2. Edrophonium chloride（如Enlon）：
   chapter: 第11節 解毒劑 Antidotes in poisoning
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -39,11 +39,11 @@ regulations:
   reference_annotations:
     original_clause: 11.2.2. Edrophonium chloride（如Enlon）：
     full_text: 限使用於手術麻醉病例，作為神經肌肉阻斷劑之拮抗劑。
-- regulation_id: REG-0491
+- regulation_id: REG-0496
   section_number: 11.2.3.
   section_title: 11.2.3. Mesna（如Uromitexan inj）：
   chapter: 第11節 解毒劑 Antidotes in poisoning
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -55,11 +55,11 @@ regulations:
   reference_annotations:
     original_clause: 11.2.3. Mesna（如Uromitexan inj）：
     full_text: 限癌症或骨髓移植病例使用大量Endoxan；Ifosphamide類藥物時使用。
-- regulation_id: REG-0492
+- regulation_id: REG-0497
   section_number: 11.2.4.
   section_title: 11.2.4. Trientine dihydrochloride (104/1/1）
   chapter: 第11節 解毒劑 Antidotes in poisoning
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -75,11 +75,11 @@ regulations:
     full_text: '1.使用於經d-penicillamine治療耐受不佳之威爾森氏患者。
 
       2.需經事前審查核准後使用。'
-- regulation_id: REG-0493
+- regulation_id: REG-0498
   section_number: 11.2.5.
   section_title: 11.2.5. Fomepizole (如Fomeject)：（107/11/1）
   chapter: 第11節 解毒劑 Antidotes in poisoning
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []

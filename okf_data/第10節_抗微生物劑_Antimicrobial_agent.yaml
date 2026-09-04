@@ -1,13 +1,13 @@
 okf_version: '1.0'
 schema_type: Taiwan_NHI_Drug_Regulation
 chapter: 第10節 抗微生物劑 Antimicrobial agents
-total_regulations: 32
+total_regulations: 33
 regulations:
-- regulation_id: REG-0432
+- regulation_id: REG-0436
   section_number: 10.1.
   section_title: 10.1. 抗微生物劑用藥給付規定通則：
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (87/7/1)
   - (91/4/1)
@@ -105,11 +105,11 @@ regulations:
       12.非第一線抗微生物製劑其於本藥品給付規定中另訂有規定者，依各該規定給付之。
 
       13.有關結核病治療選擇的藥物種類、使用的劑量與治療的時程，應依衛生福利部疾病管制署最新版「結核病診治指引」辦理。(99/11/1、102/7/23、108/12/1)'
-- regulation_id: REG-0433
+- regulation_id: REG-0437
   section_number: 10.2.1.
   section_title: 10.2.1. Amoxicillin + clavulanic acid（如Augmentin tab）：(85/1/1、109/10/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -121,11 +121,11 @@ regulations:
   reference_annotations:
     original_clause: 10.2.1. Amoxicillin + clavulanic acid（如Augmentin tab）：(85/1/1、109/10/1)
     full_text: 用於急性化膿性中耳炎或急性化膿性鼻竇炎、急性下呼吸道感染、厭氧性細菌感染、菌血症等適應症，得免附細菌敏感試驗報告，惟以十日為限。
-- regulation_id: REG-0434
+- regulation_id: REG-0438
   section_number: 10.2.2.
   section_title: 10.2.2. Ampicillin + sulbactam 注射劑（如Unasyn注射劑、Ansullina注射劑）：(91/7/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -137,11 +137,11 @@ regulations:
   reference_annotations:
     original_clause: 10.2.2. Ampicillin + sulbactam 注射劑（如Unasyn注射劑、Ansullina注射劑）：(91/7/1)
     full_text: 單次處方劑量為1.5公克時，不得以0.75公克兩瓶申報。
-- regulation_id: REG-0435
+- regulation_id: REG-0439
   section_number: 10.3.1.
   section_title: 10.3.1. Cefaclor：（85/1/1、89/7/1、109/10/1）
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -153,11 +153,11 @@ regulations:
   reference_annotations:
     original_clause: 10.3.1. Cefaclor：（85/1/1、89/7/1、109/10/1）
     full_text: 用於急性化膿性中耳炎或急性化膿性鼻竇炎、急性下呼吸道感染、敗血症等適應症，得免附細菌敏感試驗報告，惟以十日為限。
-- regulation_id: REG-0436
+- regulation_id: REG-0440
   section_number: 10.3.2.
   section_title: 10.3.2. Cefuroxime tab：（87/4/1、109/10/1）
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -169,11 +169,11 @@ regulations:
   reference_annotations:
     original_clause: 10.3.2. Cefuroxime tab：（87/4/1、109/10/1）
     full_text: 用於急性化膿性中耳炎或急性化膿性鼻竇炎、急性下呼吸道感染、敗血症等適應症，得免附細菌敏感試驗報告，惟以十日為限。
-- regulation_id: REG-0437
+- regulation_id: REG-0441
   section_number: 10.3.3.
   section_title: 10.3.3. Ceftriaxone：（95/6/1）
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -185,11 +185,11 @@ regulations:
   reference_annotations:
     original_clause: 10.3.3. Ceftriaxone：（95/6/1）
     full_text: 用於疑似或證實為淋病尿道炎、子宮頸炎、軟性下疳時，可第一線單一劑量使用。
-- regulation_id: REG-0438
+- regulation_id: REG-0442
   section_number: 10.3.4.
   section_title: 10.3.4. Cefixime：（95/6/1）
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -201,11 +201,11 @@ regulations:
   reference_annotations:
     original_clause: 10.3.4. Cefixime：（95/6/1）
     full_text: 用於疑似或證實為淋病尿道炎、子宮頸炎、軟性下疳時，可第一線單一劑量使用。
-- regulation_id: REG-0439
+- regulation_id: REG-0443
   section_number: 10.3.5.
   section_title: 10.3.5. Ceftaroline fosamil (如Zinforo)：(108/2/1、108/12/1、110/11/1）
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -238,11 +238,11 @@ regulations:
       Ⅱ.免疫功能不全。
 
       2.申報費用時須檢附會診紀錄及相關之病歷資料。'
-- regulation_id: REG-0440
+- regulation_id: REG-0444
   section_number: 10.3.6.
   section_title: '10.3.6. Ceftazidime+avibactam sodium(如Zavicefta): (109/6/1、113/4/1）'
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -278,11 +278,11 @@ regulations:
       2.在經感染症專科醫師會診確認使用者，以經驗療法使用後細菌培養結果，若非對carbapenem具抗藥性，則限定使用7天。(113/4/1）
 
       3.使用不得超過14天，如因臨床需要而確有延長治療之必要，需經感染科醫師再照會評估認可，且照會紀錄應留存病歷備查。(113/4/1）'
-- regulation_id: REG-0441
+- regulation_id: REG-0445
   section_number: 10.3.7.
   section_title: 10.3.7. ceftolozane+tazobactam (如Zerbaxa):(110/3/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -310,11 +310,47 @@ regulations:
       (3)院內感染性肺炎，包括呼吸器相關肺炎。
 
       2.需經會診感染科醫師同意後使用。申報費用時，需檢附感染科醫師會診報告。'
-- regulation_id: REG-0442
+- regulation_id: REG-0446
+  section_number: 10.3.8.
+  section_title: 10.3.8. Cefiderocol(如Fetroja)：(115/8/1)
+  chapter: 第10節 抗微生物劑 Antimicrobial agents
+  source_file: 完整給付規定1150821.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients: []
+  conditions_of_payment:
+    indications: []
+    laboratory_criteria: []
+    summary: '1.限使用於18歲以上成人病人，對cefiderocol具感受性之多重抗藥性革蘭氏陰性菌所引起之以下任一感染症：
+
+      (1)複雜性泌尿道感染，包含腎盂腎炎。
+
+      (2)院內感染型肺炎和呼吸器相關肺炎。
+
+      (3)其他高度懷疑或證實為多重抗藥性革蘭氏陰性菌感染之臨床感染症。
+
+      2.需經感染科專科醫師會診，確認後使用。申報費用時，需檢附會診紀錄及相關之病歷資料。
+
+      3.每使用滿7天，應經感染科專科醫師會診後才可繼續使用。療程不超過14天為原則，如因臨床需要而有延長治療之必要，需有臨床佐證並經感染科醫師再次會診評估認可，照會紀錄應留存病歷備查。'
+  reference_annotations:
+    original_clause: 10.3.8. Cefiderocol(如Fetroja)：(115/8/1)
+    full_text: '1.限使用於18歲以上成人病人，對cefiderocol具感受性之多重抗藥性革蘭氏陰性菌所引起之以下任一感染症：
+
+      (1)複雜性泌尿道感染，包含腎盂腎炎。
+
+      (2)院內感染型肺炎和呼吸器相關肺炎。
+
+      (3)其他高度懷疑或證實為多重抗藥性革蘭氏陰性菌感染之臨床感染症。
+
+      2.需經感染科專科醫師會診，確認後使用。申報費用時，需檢附會診紀錄及相關之病歷資料。
+
+      3.每使用滿7天，應經感染科專科醫師會診後才可繼續使用。療程不超過14天為原則，如因臨床需要而有延長治療之必要，需有臨床佐證並經感染科醫師再次會診評估認可，照會紀錄應留存病歷備查。'
+- regulation_id: REG-0447
   section_number: 10.4.
   section_title: 10.4. 巨環類Macrolides（如erythromycin、azithromycin、clarithromycin、roxithromycin）：(90/11/1、93/9/1、97/12/1、98/10/1、100/5/1、108/1/1、110/4/1、111/3/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (110/4/1)
   - (100/5/1)
@@ -380,11 +416,11 @@ regulations:
       5. Roxithromycin (如Rulid)使用期間不得超過10日，每日最大劑量500mg。(100/5/1)
 
       6.本類製劑應儘量避免合併使用其他抗生素，用於治療「非結核分枝(耐酸)桿菌 (NTM)」者不在此限。(100/5/1)'
-- regulation_id: REG-0443
+- regulation_id: REG-0448
   section_number: 10.5.1.
   section_title: 10.5.1. Imipenem + cilastatin（如Tienam）；meropenem（如Mepem）：(87/11/1、93/2/1、93/5/1、99/5/1、99/8/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (93/5/1)
   medications:
@@ -409,11 +445,11 @@ regulations:
       3.臨床上為嚴重之細菌感染，且經其他廣效性的非第一線抗微生物製劑治療仍無法控制病情者。
 
       4.經感染症專科醫師會診，確認有感染症需使用者 (申報費用時需檢附會診紀錄及相關之病歷資料)。(93/5/1)'
-- regulation_id: REG-0444
+- regulation_id: REG-0449
   section_number: 10.5.2.
   section_title: 10.5.2. Ertapenem（如Invanz inj.）：(93/5/1、96/12/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -441,11 +477,11 @@ regulations:
       (3)急性骨盆感染
 
       2.經感染症專科醫師會診，確認有感染症需使用者（申報費用時需檢附會診紀錄及相關之病歷資料）。'
-- regulation_id: REG-0445
+- regulation_id: REG-0450
   section_number: 10.5.3.
   section_title: 10.5.3. Doripenem (如Finibax)：(99/8/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -465,11 +501,11 @@ regulations:
       2.臨床上為嚴重之複雜性泌尿道感染(包括腎盂腎炎)及複雜性腹腔內感染，且經其他廣效性的非第一線抗微生物製劑治療仍無法控制病情者。
 
       3.經感染症專科醫師會診，確認有感染症需使用者(申報費用時需檢附會診紀錄及相關之病歷資料)。'
-- regulation_id: REG-0446
+- regulation_id: REG-0451
   section_number: 10.5.4.
   section_title: 10.5.4. Imipenem＋cilastatin＋relebactam (如Recarbrio)：(114/1/1）
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes:
@@ -498,11 +534,11 @@ regulations:
       (3)院內感染型肺炎。
 
       2.需經會診感染科醫師同意後使用，申報費用時需檢附會診紀錄及相關之病歷資料。'
-- regulation_id: REG-0447
+- regulation_id: REG-0452
   section_number: 10.6.1.1.
   section_title: 10.6.1.1. Fluconazole錠劑膠囊劑（如Diflucan oral）：（85/10/1、87/4/1、108/12/1）
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -531,11 +567,11 @@ regulations:
       3.非愛滋病隱球菌腦膜炎患者使用，原則上使用6到8週，視病人臨床反應，抗原效價及培養結果調整療期，而治黴菌藥物之終止以效價下降四倍及兩次培養陰性為原則。
 
       4.用於念珠性陰道炎，限頑固性疾病或無性經驗病人無法使用塞劑治療者單一劑量使用。'
-- regulation_id: REG-0448
+- regulation_id: REG-0453
   section_number: 10.6.1.2.
   section_title: 10.6.1.2. Fluconazole注射劑（如Diflucan inj）：（85/10/1、108/12/1）
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -556,11 +592,11 @@ regulations:
       1.已證實為全身性黴菌感染(經組織或培養證實)病例使用。
 
       2.非愛滋病隱球菌腦膜炎患者使用，原則上使用6到8週，視病人臨床反應，抗原效價及培養結果調整療期，而治黴菌藥物之終止以效價下降四倍及兩次培養陰性為原則。'
-- regulation_id: REG-0449
+- regulation_id: REG-0454
   section_number: 10.6.1.3.
   section_title: 10.6.1.3. Fluconazole口服液劑（如Fluzole powder for oral suspension）：（108/12/1、111/2/1）
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -585,11 +621,11 @@ regulations:
       預防後天免疫缺乏症候群病人的黴菌感染。
 
       2.病人接受本品治療期間，不得併用其他同類藥品。'
-- regulation_id: REG-0450
+- regulation_id: REG-0455
   section_number: 10.6.3.1.
   section_title: 10.6.3.1. Itraconazole膠囊劑 (如Sporanox cap)：（85/1/1、91/4/1、91/8/1、98/8/1、104/1/1）
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (91/4/1、98/8/1)
   - (91/8/1、98/8/1)
@@ -631,11 +667,11 @@ regulations:
       6.每次門診時，應註明使用日期，目前已使用週數及預定停藥日期。
 
       7.病人接受本品治療期間，不得併用其他同類藥品。'
-- regulation_id: REG-0451
+- regulation_id: REG-0456
   section_number: 10.6.3.2.
   section_title: 10.6.3.2. Itraconazole注射劑 (如Sporanox inj.)：（96/6/1、96/8/1、99/10/1）
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (96/8/1、99/10/1)
   medications:
@@ -657,11 +693,11 @@ regulations:
       2.限用於第一線治療藥物無法使用或無效的免疫功能不全及中樞神經系統罹患隱球菌病(包括隱球菌腦膜炎)的病人，並以14日為限。
 
       3.因病情需要，經感染症專科醫師會診確認需要使用者(申報費用時需檢附會診紀錄及相關之病歷資料)。(96/8/1、99/10/1)'
-- regulation_id: REG-0452
+- regulation_id: REG-0457
   section_number: 10.6.3.3.
   section_title: 10.6.3.3. Itraconazole 內服液劑 (如Itrazole oral solution)：（96/10/1）
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -674,11 +710,11 @@ regulations:
   reference_annotations:
     original_clause: 10.6.3.3. Itraconazole 內服液劑 (如Itrazole oral solution)：（96/10/1）
     full_text: 限用於HIV陽性反應及其它免疫功能不全病人的口腔念珠菌感染及食道念珠菌感染者。
-- regulation_id: REG-0453
+- regulation_id: REG-0458
   section_number: 10.6.4.
   section_title: 10.6.4. Terbinafine (如Lamisil tab)：(85/1/1、91/4/1、98/8/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (98/8/1)
   - (98/8/1)
@@ -706,12 +742,12 @@ regulations:
       2.其他頑固性體癬及股癬病例使用，每日一次，最長使用2週，治療期間不得併用其他同類藥品。
 
       3.頭癬病例使用，每日一次，最長使用4週，若確需延長治療時間，需於病歷詳細載明備查。(98/8/1)'
-- regulation_id: REG-0454
+- regulation_id: REG-0459
   section_number: 10.6.5.
   section_title: 10.6.5. Amphotericin B Injection colloidal dispersion及liposomal complex劑型（如Amphocil
     Injection、AmBisome for Injection）：(91/8/1、93/2/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -725,11 +761,11 @@ regulations:
     original_clause: 10.6.5. Amphotericin B Injection colloidal dispersion及liposomal
       complex劑型（如Amphocil Injection、AmBisome for Injection）：(91/8/1、93/2/1)
     full_text: 限用於侵入性黴菌感染（invasive fungal infection），且腎功能不全患者
-- regulation_id: REG-0455
+- regulation_id: REG-0460
   section_number: 10.6.6.
   section_title: 10.6.6. Caspofungin Injection劑型 (如Cancidas Injection 50mg)：(92/8/1、94/1/1、96/7/1、99/10/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (99/10/1)
   medications:
@@ -751,11 +787,11 @@ regulations:
       1.限用於其他黴菌藥物治療無效或有嚴重副作用之侵入性麴菌症、侵入性念珠菌感染症之第二線用藥。
 
       2.經感染症專科醫師認定需使用者，惟治療食道念珠菌感染限用於fluconazole無效或有嚴重副作用者。(99/10/1)'
-- regulation_id: REG-0456
+- regulation_id: REG-0461
   section_number: 10.6.7.
   section_title: 10.6.7. Micafungin Injection劑型(如Mycamine for Injection)：(96/4/1、97/10/1、111/2/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (111/2/1)
   - (97/10/1)
@@ -782,11 +818,11 @@ regulations:
       2.預防接受造血幹細胞移植病患的念珠菌感染。
 
       3.治療念珠菌血症與其他侵襲性之念珠菌感染。(97/10/1)'
-- regulation_id: REG-0457
+- regulation_id: REG-0462
   section_number: 10.6.8.
   section_title: 10.6.8. Flucytosine (如Flusine Tablets)(96/6/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -798,11 +834,11 @@ regulations:
   reference_annotations:
     original_clause: 10.6.8. Flucytosine (如Flusine Tablets)(96/6/1)
     full_text: 限用於Cryptococcus infection的病患。
-- regulation_id: REG-0458
+- regulation_id: REG-0463
   section_number: 10.6.9.
   section_title: 10.6.9. Anidulafungin注射劑 (如Eraxis for Injection) (97/10/1、105/8/1、111/5/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -815,11 +851,11 @@ regulations:
   reference_annotations:
     original_clause: 10.6.9. Anidulafungin注射劑 (如Eraxis for Injection) (97/10/1、105/8/1、111/5/1)
     full_text: 限用於治療一個月以上患者之侵襲性念珠菌感染。
-- regulation_id: REG-0459
+- regulation_id: REG-0464
   section_number: 10.6.10.
   section_title: 10.6.10. Posaconazole (如Posanol)：(101/1/1、104/7/1、106/5/1、111/2/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (104/7/1)
   - (106/5/1)
@@ -866,11 +902,11 @@ regulations:
       2.使用本藥須經感染症專科醫師會診確認需要使用，申報費用時需檢附會診紀錄及相關之病歷資料。
 
       3.注射劑限用於無法口服之病人。(106/5/1)'
-- regulation_id: REG-0460
+- regulation_id: REG-0465
   section_number: 10.6.11.
   section_title: 10.6.11. Isavuconazole (如Cresemba)：(110/2/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -898,11 +934,11 @@ regulations:
       2.使用本藥須經感染症專科醫師會診確認需要使用，申報費用時需檢附會診紀錄及相關之病歷資料。
 
       3.注射劑限用於無法口服之病人。'
-- regulation_id: REG-0461
+- regulation_id: REG-0466
   section_number: 10.7.1.1.
   section_title: 10.7.1.1. 全身性抗疱疹病毒劑
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (98/11/1、100/7/1、107/12/1、108/3/1、108/6/1)
   - (107/12/1、108/3/1、108/6/1)
@@ -988,11 +1024,11 @@ regulations:
       B.接受高劑量化療或全身放射治療 (TBI) 前一天至移植術後第30天為止。
 
       3.Acyclovir、famciclovir及valaciclovir除上述特別規定外，使用療程原則以10天為限，口服、注射劑及外用藥膏擇一使用，不得合併使用。（95/6/1、100/7/1、101/5/1）'
-- regulation_id: REG-0462
+- regulation_id: REG-0467
   section_number: 10.7.1.2.
   section_title: 10.7.1.2. 局部抗疱疹病毒劑（如Acyclovir外用製劑；tromantadine外用製劑；penciclovir外用製劑）：(97/12/1、98/11/1、100/7/1、102/7/1）
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (102/7/1)
   medications:
@@ -1013,11 +1049,11 @@ regulations:
       2.Penciclovir藥膏用於治療由單純皰疹病毒引起之復發性唇皰疹，每次處方以1支(2公克)為原則。(102/7/1)
 
       3.口服、注射劑及外用藥膏擇一使用，不得合併使用。'
-- regulation_id: REG-0463
+- regulation_id: REG-0468
   section_number: 10.7.2.
   section_title: 10.7.2. Ribavirin 膠囊劑（如Robatrol、Rebetol）(93/2/1、93/7/1、93/8/1、95/11/1、98/11/1、100/4/1、109/7/1、114/6/1）：
   chapter: 第10節 抗微生物劑 Antimicrobial agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (109/7/1、111/9/1)
   medications:
@@ -1025,7 +1061,7 @@ regulations:
     ingredients: []
   conditions_of_payment:
     indications:
-    - Hepatitis B / Hepatitis C (肝炎)
+    - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     laboratory_criteria: []
     summary: '1.限用於下列慢性病毒性C型肝炎患者且應與interferon-alfa 2a或interferon-alfa 2b或interferon
       alfacon-1或peginterferon alfa-2b或peginterferon alfa-2a合併治療：

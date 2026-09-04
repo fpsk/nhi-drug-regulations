@@ -3,11 +3,11 @@ schema_type: Taiwan_NHI_Drug_Regulation
 chapter: 第13節 皮膚科製劑 Dermatological preparations
 total_regulations: 17
 regulations:
-- regulation_id: REG-0498
+- regulation_id: REG-0503
   section_number: 13.2.
   section_title: 13.2. Cadexomer iodine（如Iodosorb powder）：（87/4/1）
   chapter: 第13節 皮膚科製劑 Dermatological preparations
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -19,11 +19,11 @@ regulations:
   reference_annotations:
     original_clause: 13.2. Cadexomer iodine（如Iodosorb powder）：（87/4/1）
     full_text: 限慢性腿部潰瘍病例及慢性感染性潰瘍傷口使用，每日用量超過一包時，需檢附傷口照片以利審查。
-- regulation_id: REG-0499
+- regulation_id: REG-0504
   section_number: 13.3.1.
   section_title: 13.3.1. Calcipotriol外用單方製劑（87/4/1、89/2/1、94/3/1、99/12/1）
   chapter: 第13節 皮膚科製劑 Dermatological preparations
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -37,11 +37,11 @@ regulations:
     original_clause: 13.3.1. Calcipotriol外用單方製劑（87/4/1、89/2/1、94/3/1、99/12/1）
     full_text: 限確經診斷為尋常性牛皮癬（psoriasis）之病例使用，使用量以每星期不高於30gm或30mL為原則，若因病情需要使用量需超過每星期
       30gm或30mL者，應於病歷詳細記錄理由。
-- regulation_id: REG-0500
+- regulation_id: REG-0505
   section_number: 13.3.2.
   section_title: 13.3.2. 含calcipotriol及類固醇之外用複方製劑（如Daivobet、Enstilar）（94/5/1、99/12/1、109/10/1、115/1/1）
   chapter: 第13節 皮膚科製劑 Dermatological preparations
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -58,11 +58,11 @@ regulations:
     full_text: '1.限確診為尋常性乾癬（psoriasis）之病人使用，使用量以每星期不高於30gm為原則，若因病情需要使用量需超過每星期30gm者，應於病歷詳細記錄理由。（94/5/1、99/12/1、115/1/1）
 
       2.若因病情需要需連續使用超過8週者，應於病歷詳細記錄理由。（109/10/1）'
-- regulation_id: REG-0501
+- regulation_id: REG-0506
   section_number: 13.4.
   section_title: 13.4. Isotretinoin口服製劑 (如Roaccutane)：（86/9/1、87/4/1、94/3/1）
   chapter: 第13節 皮膚科製劑 Dermatological preparations
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -82,11 +82,11 @@ regulations:
       2.需檢附病人之服藥同意書 (詳附表十)，以及經傳統治療無效之病歷資料或治療前之照片，經事前審查核准後使用。
 
       3.每次申請以一療程為限，若需再次療程，請檢附原來照片與最近照片再次申請事前審查核准後使用（每一療程最高總劑量為100 mg –120 mg/kg，於四至六個月完成)。'
-- regulation_id: REG-0502
+- regulation_id: REG-0507
   section_number: 13.5.
   section_title: 13.5. Acitretin（如Neotigason）：(87/11/1)
   chapter: 第13節 皮膚科製劑 Dermatological preparations
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -98,11 +98,11 @@ regulations:
   reference_annotations:
     original_clause: 13.5. Acitretin（如Neotigason）：(87/11/1)
     full_text: 申報費用時需檢具病患同意書 (附表十一)，並檢送含確定診斷之詳細病歷資料，俾利審查。
-- regulation_id: REG-0503
+- regulation_id: REG-0508
   section_number: 13.6.
   section_title: 13.6. Methoxsalen製劑：(87/11/1)
   chapter: 第13節 皮膚科製劑 Dermatological preparations
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -114,11 +114,11 @@ regulations:
   reference_annotations:
     original_clause: 13.6. Methoxsalen製劑：(87/11/1)
     full_text: 限皮膚科專科醫師使用於PUVA治療 (配合紫外線照射)，申報費用時需檢送含確定診斷之詳細病歷資料，俾利審查。
-- regulation_id: REG-0504
+- regulation_id: REG-0509
   section_number: 13.7.
   section_title: 13.7. Doxepin HCl cream (如Ichderm)：(88/6/1)
   chapter: 第13節 皮膚科製劑 Dermatological preparations
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -130,11 +130,11 @@ regulations:
   reference_annotations:
     original_clause: 13.7. Doxepin HCl cream (如Ichderm)：(88/6/1)
     full_text: 限成人使用，每次處方不超過七天。
-- regulation_id: REG-0505
+- regulation_id: REG-0510
   section_number: 13.8.
   section_title: 13.8. Tazarotene外用製劑：(91/4/1、99/12/1、101/2/1)
   chapter: 第13節 皮膚科製劑 Dermatological preparations
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (99/12/1)
   - (99/12/1)
@@ -159,11 +159,11 @@ regulations:
 
       3.與calcitriol (或calcipotriol)併用，兩者合計總量每星期不超過30gm或30mL，若因病情需要兩者合併使用量需超過每星期30gm
       者，應於病歷詳細記載理由。(99/12/1)'
-- regulation_id: REG-0506
+- regulation_id: REG-0511
   section_number: 13.9.
   section_title: 13.9. Calcitriol (如Silkis ointment)：(92/11/1、93/9/1、99/12/1)
   chapter: 第13節 皮膚科製劑 Dermatological preparations
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (99/12/1)
   medications:
@@ -187,11 +187,11 @@ regulations:
       2.與tazarotene併用，兩者合計總量每星期不超過30gm或30mL，若因病情需要兩者合併使用量需超過每星期30gm者，應於病歷詳細記錄理由。
 
       (99/12/1)'
-- regulation_id: REG-0507
+- regulation_id: REG-0512
   section_number: 13.10.
   section_title: 13.10. Tacrolimus (如Protopic Ointment )：(91/12/1、93/8/1、95/7/1、99/12/1、111/2/1)
   chapter: 第13節 皮膚科製劑 Dermatological preparations
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (95/7/1、111/2/1)
   - (99/12/1)
@@ -240,11 +240,11 @@ regulations:
       備註1：Rule of nines計算法：頭頸9%，兩上肢18%，軀幹18%，背18%，兩下肢36%，陰部1%。
 
       備註2：兒童患部面積計算如附表十七 (From Roger M. Barkin)'
-- regulation_id: REG-0508
+- regulation_id: REG-0513
   section_number: 13.11.
   section_title: 13.11. Pimecrolimus (Elidel 1% )：(92/11/1、93/8/1、94/3/1、95/7/1、99/12/1、110/12/1、111/2/1)
   chapter: 第13節 皮膚科製劑 Dermatological preparations
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (94/3/1、95/7/1、110/12/1、111/2/1)
   - (94/3/1、99/12/1)
@@ -288,11 +288,11 @@ regulations:
       (2)孩童：患部面積30%~50%，每兩星期兩者合併用量不超過30gm；患部面積>50%，每星期兩者合併用量不超過30gm。
 
       (3)若因病情需要兩者合併使用量需超過限制者，應於病歷詳細記錄理由。'
-- regulation_id: REG-0509
+- regulation_id: REG-0514
   section_number: 13.12.
   section_title: 13.12. Amorolfine (如Amocoat)：(99/4/1)
   chapter: 第13節 皮膚科製劑 Dermatological preparations
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -313,11 +313,11 @@ regulations:
       2.每年限使用一瓶5mL。
 
       3.許可證類別若變更為指示用藥，將不予給付。'
-- regulation_id: REG-0510
+- regulation_id: REG-0515
   section_number: 13.13.
   section_title: 13.13. Podophyllotoxin (如Wart Del Cream)：(102/9/1)
   chapter: 第13節 皮膚科製劑 Dermatological preparations
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -337,11 +337,11 @@ regulations:
       2.每次限給付乙支(5gm)，一個月內不得重複處方，每次療程間應相隔至少3個月，治療期間不得與其它冷凍、電燒、雷射治療合併申報。
 
       3.若病灶侵犯生殖器部位超過50%，每療程處方之總劑量以10gm為上限，並且需於病歷上詳載，併得合併申報冷凍、電燒或雷射治療。'
-- regulation_id: REG-0511
+- regulation_id: REG-0516
   section_number: 13.14.
   section_title: 13.14. Ingenol (如Picato) ：(105/11/1)
   chapter: 第13節 皮膚科製劑 Dermatological preparations
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -377,11 +377,11 @@ regulations:
       (2)若未達完全清除、或病灶復發或出現新病灶，須進行第二次療程，須距第一次療程八週以上，一年內以兩療程為限。
 
       (3)於局部治療範圍處，八週內不得同時併用其他光化性角化症治療，如冷凍治療、雷射、電燒等。'
-- regulation_id: REG-0512
+- regulation_id: REG-0517
   section_number: 13.15.
   section_title: 13.15. Permethrin外用製劑：（106/9/1、111/6/1、113/12/1）
   chapter: 第13節 皮膚科製劑 Dermatological preparations
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -397,11 +397,11 @@ regulations:
     full_text: '1.每人每次處方使用30gm一支，需要時得於7天後再處方使用一支(限30gm)；若第1次處方使用60gm一支，則7天後之第2次治療不得再處方一支(30gm或60gm)。（106/9/1、111/6/1、113/12/1）
 
       2.半年內需使用第3次時，須經皮膚科醫師確診處方。'
-- regulation_id: REG-0513
+- regulation_id: REG-0518
   section_number: 13.16.
   section_title: 13.16. Ivermectin (如Stromectol)：（107/8/1、112/12/1、113/4/1）
   chapter: 第13節 皮膚科製劑 Dermatological preparations
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -425,12 +425,12 @@ regulations:
       3.保險對象收容於矯正機關者，依據「全民健康保險提供保險對象收容於矯正機關者醫療服務計畫」辦理。（112/12/1）
 
       4.醫師於住宿型長期照顧機構為住民處方時，不限鏡檢確診者使用，惟須附照片備查。（113/4/1）'
-- regulation_id: REG-0514
+- regulation_id: REG-0519
   section_number: 13.17.1.
   section_title: 13.17.1. Dupilumab(如Dupixent) ; upadacitinib(如Rinvoq) ; abrocitinib(如Cibinqo)
     ;lebrikizumab (如Ebglyss)（113/2/1、113/8/1、114/6/1、115/6/1）(12歲以上病人治療部分)
   chapter: 第13節 皮膚科製劑 Dermatological preparations
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (111/8/1)
   - (111/8/1)
@@ -445,10 +445,11 @@ regulations:
   - (111/8/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Dupilumab (杜匹魯單抗)
   conditions_of_payment:
     indications:
-    - Hepatitis B / Hepatitis C (肝炎)
+    - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     - Atopic Dermatitis (異位性皮膚炎)
     - Chronic Urticaria (蕁麻疹)
     - Psoriasis / Psoriatic Arthritis (乾癬)

@@ -7,7 +7,7 @@ regulations:
   section_number: 1.1.1.
   section_title: 1.1.1. 非類固醇抗發炎劑外用製劑：(88/9/1、92/2/1、94/9/1、109/2/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (94/9/1、109/2/1)
   - (92/2/1、109/2/1)
@@ -19,7 +19,7 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.外用非類固醇抗發炎軟膏，不得同時併用口服或其他外用非類固醇發炎製劑，每4週至多以處方40gm為限(94/9/1、109/2/1)。
+    summary: '1.外用非類固醇抗發炎軟膏，不得同時併用口服或其他外用非類固醇抗發炎製劑，每4週至多以處方40gm為限(94/9/1、109/2/1)。
 
       2.Flurbiprofen 40mg patch (如Flur Di Fen Patch)：
 
@@ -29,12 +29,12 @@ regulations:
 
       (2)不適合口服非類固醇抗發炎製劑者。
 
-      (3)不得同時併用口服或其他外用非類固醇發炎製劑，亦不得開立慢性連續處方箋(109/2/1)。
+      (3)不得同時併用口服或其他外用非類固醇抗發炎製劑，亦不得開立慢性連續處方箋(109/2/1)。
 
       (4)每4週限處方16片以內(109/2/1)。'
   reference_annotations:
     original_clause: 1.1.1. 非類固醇抗發炎劑外用製劑：(88/9/1、92/2/1、94/9/1、109/2/1)
-    full_text: '1.外用非類固醇抗發炎軟膏，不得同時併用口服或其他外用非類固醇發炎製劑，每4週至多以處方40gm為限(94/9/1、109/2/1)。
+    full_text: '1.外用非類固醇抗發炎軟膏，不得同時併用口服或其他外用非類固醇抗發炎製劑，每4週至多以處方40gm為限(94/9/1、109/2/1)。
 
       2.Flurbiprofen 40mg patch (如Flur Di Fen Patch)：
 
@@ -44,18 +44,19 @@ regulations:
 
       (2)不適合口服非類固醇抗發炎製劑者。
 
-      (3)不得同時併用口服或其他外用非類固醇發炎製劑，亦不得開立慢性連續處方箋(109/2/1)。
+      (3)不得同時併用口服或其他外用非類固醇抗發炎製劑，亦不得開立慢性連續處方箋(109/2/1)。
 
       (4)每4週限處方16片以內(109/2/1)。'
 - regulation_id: REG-0003
   section_number: 1.1.2.
   section_title: 1.1.2. 非類固醇抗發炎劑 (NSAIDs) 之注射劑：(88/12/1、97/7/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (97/7/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients: []
   conditions_of_payment:
     indications: []
@@ -88,7 +89,7 @@ regulations:
   section_number: 1.1.3.
   section_title: 1.1.3. Tramadol (87/4/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -114,7 +115,7 @@ regulations:
   section_number: 1.1.4.
   section_title: 1.1.4. Tramadol HCl＋acetaminophen (如Ultracet Tablets) (93/7/1、95/5/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -141,7 +142,7 @@ regulations:
   section_title: 1.1.5. 非類固醇抗發炎劑（NSAIDs）藥品，屬下列成分之口服製劑：celecoxib、nabumetone、meloxicam、etodolac、nimesulide
     (90/7/1、97/9/1)、etoricoxib (96/1/1、99/10/1)、含naproxen及esomeprazole複方製劑(101/10/1、106/12/1、111/2/1、111/7/1、115/4/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (99/10/1、111/7/1)
   - (106/12/1、111/2/1、111/7/1、115/4/1)
@@ -152,10 +153,11 @@ regulations:
   - (101/10/1)
   medications:
     drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     - PPI類 (氫離子幫浦抑制劑)
     ingredients:
-    - Omeprazole (歐美拉唑)
     - Esomeprazole (埃索美拉唑)
+    - Omeprazole (歐美拉唑)
   conditions_of_payment:
     indications:
     - Liver Cirrhosis (肝硬化)
@@ -223,12 +225,13 @@ regulations:
   section_number: 1.1.6.
   section_title: 1.1.6. Gabapentin、lidocaine貼片劑（97/12/1、98/4/1、98/9/1、101/2/1、101/5/1、102/2/1、110/5/1）
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (97/12/1、98/4/1)
   - (97/12/1、98/4/1、98/9/1、101/5/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients: []
   conditions_of_payment:
     indications: []
@@ -261,7 +264,7 @@ regulations:
   section_number: 1.1.7.
   section_title: 1.1.7. Pregabalin（101/2/1、102/2/1、105/1/1、106/3/1、109/5/1、113/12/1）
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (97/12/1、98/4/1)
   - (106/3/1、113/12/1)
@@ -271,7 +274,8 @@ regulations:
   - (105/1/1)
   - (109/5/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients: []
   conditions_of_payment:
     indications:
@@ -345,7 +349,7 @@ regulations:
   section_number: 1.1.8.
   section_title: 1.1.8. Duloxetine（如Cymbalta）：(102/8/1、105/2/1、113/12/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (105/2/1)
   - (105/2/1、113/12/1)
@@ -414,7 +418,7 @@ regulations:
   section_number: 1.1.9.
   section_title: 1.1.9. Fentanyl citrate口頰溶片或口頰錠(108/10/1、111/2/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (111/2/1)
   medications:
@@ -436,7 +440,7 @@ regulations:
   section_title: 1.2.1. 選擇性血清促進素再吸收抑制劑 (SSRI)、血清促進素及正腎上腺素再吸收抑制劑 (SNRI)及其他抗憂鬱劑（fluvoxamine
     maleate、fluoxetine、paroxetine、sertraline、venlafaxine、milnacipran、mirtazapine、citalopram、escitalopram、duloxetine、agomelatine、vortioxetine等製劑）：(88/12/1、89/10/1、91/5/1、92/6/1、93/5/1、94/2/1、94/12/1、99/10/1、101/7/1、107/3/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -453,7 +457,7 @@ regulations:
   section_number: 1.2.1.1.
   section_title: 1.2.1.1. Bupropion HCL：(92/1/1、99/10/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -469,7 +473,7 @@ regulations:
   section_number: 1.2.2.1.
   section_title: 1.2.2.1. Clozapine（如Clozaril）
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -494,7 +498,7 @@ regulations:
   section_number: 1.2.2.2.
   section_title: 1.2.2.2. Second generation antipsychotics(簡稱第二代抗精神病藥品，如clozapine、olanzapine、risperidone、quetiapine、amisulpride、ziprasidone、aripiprazole、paliperidone、lurasidone、brexpiprazole等)：(91/9/1、92/1/1、92/7/1、94/1/1、95/10/1、97/5/1、99/10/1、106/1/1、109/1/1、109/6/1、112/7/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (95/10/1、97/5/1、99/10/1、106/1/1、109/1/1、112/7/1)
   - (112/7/1)
@@ -564,7 +568,7 @@ regulations:
   section_number: 1.2.3.
   section_title: 1.2.3. Zaleplon、zolpidem、zopiclone及eszopiclone（98/1/1、98/5/1、98/10/1、102/11/1）
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (98/5/1)
   - (98/5/1、98/10/1)
@@ -605,7 +609,7 @@ regulations:
   section_number: 1.3.1.1.
   section_title: 1.3.1.1. Tizanidine HCl (如Sirdalud tab)：(90/10/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -629,7 +633,7 @@ regulations:
   section_number: 1.3.2.1.
   section_title: 1.3.2.1. Sodium valproate注射劑 (如Depakine Lyophilized Injection)(89/7/1、93/2/1、93/6/1、102/10/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -658,7 +662,7 @@ regulations:
   section_number: 1.3.2.2.
   section_title: 1.3.2.2. Gabapentin (如Neurontin)、vigabatrin (如Sabril)、tiagabine (如Gabitril)、pregabalin(如Lyrica)：(89/9/1、89/2/1、93/6/1、96/3/1、97/1/1、97/10/1、101/2/1、102/1/1、104/6/1、104/11/1、107/2/1、107/8/1、110/5/1）
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -676,7 +680,7 @@ regulations:
   section_number: 1.3.2.3.
   section_title: 1.3.2.3. Topiramate(如Topamax 、Trokendi）：（90/9/1、92/11/1、93/6/1、94/3/1、94/9/1、95/1/1、99/5/1、99/10/1、107/11/1、110/12/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -720,7 +724,7 @@ regulations:
   section_number: 1.3.2.4.
   section_title: 1.3.2.4. Levetiracetam（101/6/1、102/10/1、108/5/1、111/2/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (111/2/1)
   - (111/2/1)
@@ -773,7 +777,7 @@ regulations:
   section_number: 1.3.2.5.
   section_title: 1.3.2.5. Lamotrigine (如Lamictal) （97/10/1、111/2/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (111/2/1)
   medications:
@@ -811,7 +815,7 @@ regulations:
   section_number: 1.3.2.6
   section_title: 1.3.2.6 Carbamazepine（100/8/1）
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -847,7 +851,7 @@ regulations:
   section_number: 1.3.2.7.
   section_title: 1.3.2.7. Rufinamide (如Inovelon) (106/5/1、110/5/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -864,7 +868,7 @@ regulations:
   section_number: 1.3.2.8.
   section_title: 1.3.2.8. Zonisamide(如Zonegran) (107/2/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -881,7 +885,7 @@ regulations:
   section_number: 1.3.2.9.
   section_title: 1.3.2.9. Lacosamide (107/8/1）
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -920,7 +924,7 @@ regulations:
   section_number: 1.3.2.10.
   section_title: 1.3.2.10. Brivaracetam(如 Briviact)（110/1/1、111/3/1、112/3/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (112/3/1)
   medications:
@@ -968,7 +972,7 @@ regulations:
   section_number: 1.3.2.11.
   section_title: 1.3.2.11. Perampanel(如Fycompa)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1001,7 +1005,7 @@ regulations:
   section_number: 1.3.2.12.
   section_title: 1.3.2.12. Stiripentol（如Diacomit）：（113/2/1）
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1032,7 +1036,7 @@ regulations:
   section_number: 1.3.2.13.
   section_title: 1.3.2.13. Cannabidiol（如Epidyolex）：（113/4/1）
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1091,7 +1095,7 @@ regulations:
   section_number: 1.3.3.
   section_title: 1.3.3. 失智症治療藥品
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (108/12/1)
   - (106/10/1)
@@ -1202,7 +1206,7 @@ regulations:
   section_number: 1.3.4.
   section_title: 1.3.4. 帕金森氏症治療藥品：(91/11/1、93/2/1、95/9/1、96/9/1、97/7/1、100/6/1、101/6/1、108/10/1、110/11/1、111/3/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (110/11/1)
   - (101/6/1、108/10/1)
@@ -1259,7 +1263,7 @@ regulations:
     Sustained Release Capsules）；atomoxetine HCl（如Strattera Hard capsules、Atotine oral
     Solution）(93/9/1、96/5/1、96/9/1、97/5/1、106/3/1、109/9/1、111/2/1、111/8/1、113/11/1、114/10/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1282,7 +1286,7 @@ regulations:
   section_title: 3.19 歲以上至未滿41歲才第一次診斷者，須符合下列條件並檢附詳細病歷紀錄及相關資料，經事前審查核准後使用(限用含atomoxetine
     HCl成分一般錠劑膠囊劑藥品)：（111/8/1、114/10/1）
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (109/9/1)
   medications:
@@ -1362,7 +1366,7 @@ regulations:
   section_number: 1.3.6.1.
   section_title: 1.3.6.1. Modafinil(如Provigil)：(96/2/1、109/12/1、110/12/1、112/3/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (110/12/1)
   - (112/3/1)
@@ -1428,7 +1432,7 @@ regulations:
   section_number: 1.3.6.2.
   section_title: 1.3.6.2. Pitolisant (如Wakix)：（112/3/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1492,7 +1496,7 @@ regulations:
   section_number: 1.4.1.
   section_title: 1.4.1. Propofol：(91/2/1、100/7/1、109/2/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (100/7/1)
   - (109/2/1)
@@ -1512,7 +1516,7 @@ regulations:
   section_number: 1.4.2.
   section_title: 1.4.2. Cis-atracurium、atracurium：(91/2/1、100/7/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (100/7/1)
   medications:
@@ -1537,7 +1541,7 @@ regulations:
   section_number: 1.4.3.
   section_title: 1.4.3. Vecuronium、rocuronium：(91/2/1、100/7/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (100/7/1)
   medications:
@@ -1570,7 +1574,7 @@ regulations:
   section_number: 1.4.4.
   section_title: 1.4.4. 局部麻醉劑（local anesthetics）
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1590,7 +1594,7 @@ regulations:
   section_number: 1.4.5.
   section_title: 1.4.5. Dexmedetomidine（如Precedex）：(96/8/1、108/3/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1610,7 +1614,7 @@ regulations:
   section_number: 1.5.1.
   section_title: 1.5.1. Pilocarpine hydrochloride口服劑型
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1709,7 +1713,7 @@ regulations:
   section_number: 1.5.2.
   section_title: 1.5.2. Cevimeline hydrochloride（如Evoxac Capsules）（97/5/1、102/2/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1739,7 +1743,7 @@ regulations:
   section_number: 1.6.1.
   section_title: 1.6.1. Riluzole (如Rilutek、Teglutik) (87/4/1、92/11/1、95/4/1、112/7/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (92/11/1、95/4/1、112/7/1)
   - (112/7/1)
@@ -1767,7 +1771,7 @@ regulations:
   section_number: 1.6.2.
   section_title: 1.6.2. Botulinum toxin type A
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (98/5/1、107/2/1)
   medications:
@@ -1784,7 +1788,7 @@ regulations:
   section_number: 1.6.2.1.
   section_title: 1.6.2.1. Botox(90/1/1、93/1/1、94/6/1、98/3/1、98/5/1、100/8/1、104/5/1、104/9/1、107/2/1、109/2/1、109/12/1、110/3/1、111/3/1、115/2/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (94/6/1)
   - (94/6/1)
@@ -1922,7 +1926,7 @@ regulations:
   section_number: 1.6.2.2.
   section_title: 1.6.2.2. Dysport (91/2/1、93/1/1、94/6/1、98/3/1、98/5/1、100/8/1、107/2/1、109/2/1、109/12/1、112/11/1)
   chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (94/6/1)
   - (107/2/1、109/2/1)

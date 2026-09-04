@@ -29,5 +29,10 @@ WHO_ATC_DATABASE = {
     "J05AF05": {"atc7": "J05AF05", "atc5": "J05AF", "en": "Lamivudine", "tc": "拉米夫定", "class_en": "Antivirals", "class_tc": "B型肝炎口服抗病毒藥物", "brand": "Zeffix (干安能)", "primary_regulation": "10.7.3"},
     "J05AF07": {"atc7": "J05AF07", "atc5": "J05AF", "en": "Tenofovir disoproxil", "tc": "替諾福韋雙索酯", "class_en": "Antivirals", "class_tc": "B型肝炎口服抗病毒藥物", "brand": "Viread (惠立妥)", "primary_regulation": "10.7.3"},
     "J05AF13": {"atc7": "J05AF13", "atc5": "J05AF", "en": "Tenofovir alafenamide", "tc": "替諾福韋丙酚酚胺", "class_en": "Antivirals", "class_tc": "B型肝炎口服抗病毒藥物", "brand": "Vemlidy (韋立得)", "primary_regulation": "10.7.3"},
-    "M01AH01": {"atc7": "M01AH01", "atc5": "M01AH", "en": "Celecoxib", "tc": "塞來昔布", "class_en": "Coxibs", "class_tc": "選擇性COX-2抑制劑 (非類固醇抗發炎劑)", "brand": "Celebrex (西樂葆 / 希樂葆 / Celebrex)", "primary_regulation": "1.1.5"}
+    "M01AH01": {"atc7": "M01AH01", "atc5": "M01AH", "en": "Celecoxib", "tc": "塞來昔布", "class_en": "Coxibs", "class_tc": "選擇性COX-2抑制劑 (非類固醇抗發炎劑)", "brand": "Celebrex (西樂葆 / 希樂葆 / Celebrex)", "primary_regulation": "1.1.5"},
+    "L01EB07": {"atc7": "L01EB07", "atc5": "L01EB", "en": "Aumolertinib", "tc": "阿美替尼", "class_en": "EGFR Kinase Inhibitors", "class_tc": "EGFR 標靶藥物", "brand": "Pulmivex (阿美替尼 / Pulmivex)", "primary_regulation": "9.138"},
+    "L01CD04": {"atc7": "L01CD04", "atc5": "L01CD", "en": "Cabazitaxel", "tc": "卡巴他賽", "class_en": "Taxanes", "class_tc": "紫杉醇類抗癌藥物 (Taxanes)", "brand": "Cabazred (卡巴他賽 / Cabazred)", "primary_regulation": "9.137"},
+    "J01DI04": {"atc7": "J01DI04", "atc5": "J01DI", "en": "Cefiderocol", "tc": "頭孢地爾", "class_en": "Other cephalosporins and penems", "class_tc": "抗革蘭氏陰性菌頭孢菌素 (鐵載體)", "brand": "Fetroja (菲妥加 / Fetroja)", "primary_regulation": "10.3.8"},
+    "B02BX09": {"atc7": "B02BX09", "atc5": "B02BX", "en": "Fitusiran", "tc": "費妥斯蘭", "class_en": "Other systemic hemostatics", "class_tc": "血友病 siRNA 止血標靶藥物", "brand": "Qfitlia (費妥斯蘭 / Qfitlia)", "primary_regulation": "4.2.8"},
+    "A16AX18": {"atc7": "A16AX18", "atc5": "A16AX", "en": "Maralixibat", "tc": "馬拉利西巴", "class_en": "Various alimentary tract and metabolism products", "class_tc": "迴腸膽酸轉運蛋白 (IBAT) 抑制劑", "brand": "Livmarli (利瑪利 / Livmarli)", "primary_regulation": "3.3.32"}
 }

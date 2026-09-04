@@ -3,11 +3,11 @@ schema_type: Taiwan_NHI_Drug_Regulation
 chapter: 第8節 免疫製劑 Immunologic agents
 total_regulations: 17
 regulations:
-- regulation_id: REG-0231
+- regulation_id: REG-0233
   section_number: 8.1.1.
   section_title: 8.1.1. Hepatitis B immune globulin：
   chapter: 第8節 免疫製劑 Immunologic agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -19,11 +19,11 @@ regulations:
   reference_annotations:
     original_clause: 8.1.1. Hepatitis B immune globulin：
     full_text: 應以HBsAg (-)，Anti-HBc (-)之醫院工作人員為主，且傳染者需為HBsAg (+)。
-- regulation_id: REG-0232
+- regulation_id: REG-0234
   section_number: 8.1.3.
   section_title: 8.1.3. 高單位免疫球蛋白(111/2/1、113/11/1、114/10/1)：
   chapter: 第8節 免疫製劑 Immunologic agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (108/6/1)
   - (103/4/1)
@@ -90,11 +90,11 @@ regulations:
       \ 皮下注射劑：（108/2/1）\n原發性免疫不全症之預防性使用，需有醫學中心之診斷證明。\n註：川崎病診斷標準：\n1.發燒五天或五天以上且合併下列五項臨床症狀中至少四項。\n\
       (1)兩眼眼球結膜充血。\n(2)嘴唇及口腔的變化：嘴唇紅、乾裂或草莓舌或咽喉泛紅。\n(3)肢端病變：手（足）水腫或指（趾）尖脫皮。\n(4)多形性皮疹。\n\
       (5)頸部淋巴腺腫。\n2.排除其他可能引起類似臨床疾病。\n3.或只符合三項臨床症狀，但心臟超音波檢查已發現有冠狀動脈病變。"
-- regulation_id: REG-0233
+- regulation_id: REG-0235
   section_number: 8.1.4.
   section_title: 8.1.4. Immunoglobulin（如：Thymoglobuline inj）(90/11/1、96/2/1、97/8/1、99/2/1、109/4/1)：
   chapter: 第8節 免疫製劑 Immunologic agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (109/4/1)
   - (109/4/1)
@@ -134,11 +134,11 @@ regulations:
       (5)Thymoglobuline inj.可用於預防心臟、腎臟移植引起之急性排斥。(109/4/1)
 
       (6)作為異體造血幹細胞移植前之條件療法(109/4/1)。'
-- regulation_id: REG-0234
+- regulation_id: REG-0236
   section_number: 8.1.5.
   section_title: 8.1.5. 人用狂犬病疫苗及免疫球蛋白(如Rabipur)：(103/1/1、103/5/1、106/3/1)
   chapter: 第8節 免疫製劑 Immunologic agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (106/3/1)
   - (103/5/1)
@@ -156,11 +156,11 @@ regulations:
     full_text: '1.本類藥品使用於遭疑似狂犬病或麗沙病毒感染動物咬傷暴露後之接種，其使用對象及使用方式應依衛生福利部疾病管制署最新版「疑似狂犬病或麗沙病毒感染動物抓咬傷臨床處置指引」之接種建議辦理(請參閱疾病管制署狂犬病專區網頁http://www.cdc.gov.tw)。(106/3/1)
 
       2.限於疾病管制署公布之人用狂犬病疫苗接種服務醫院(衛生所)施打。(103/5/1)'
-- regulation_id: REG-0235
+- regulation_id: REG-0237
   section_number: 8.1.6.
   section_title: 8.1.6. 破傷風類毒素Tetanus toxoid：(112/11/12)
   chapter: 第8節 免疫製劑 Immunologic agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -172,11 +172,11 @@ regulations:
   reference_annotations:
     original_clause: 8.1.6. 破傷風類毒素Tetanus toxoid：(112/11/12)
     full_text: 每人每次處方限申報0.5mL。
-- regulation_id: REG-0236
+- regulation_id: REG-0238
   section_number: 8.2.1.
   section_title: 8.2.1. Cyclosporin（如Sandimmun）：（86/1/1、86/9/1、89/7/1、101/10/1、111/5/1）限
   chapter: 第8節 免疫製劑 Immunologic agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -219,11 +219,11 @@ regulations:
 
       8.使用於後天型嚴重再生不良性貧血。惟限使用「Sandimmun Neoral Soft Gelatin Capsules 25mg」及「Sandimmun
       Neoral Oral Solution 100mg/mL」。（101/10/1）'
-- regulation_id: REG-0237
+- regulation_id: REG-0239
   section_number: 8.2.2.1.
   section_title: 8.2.2.1. Tacrolimus持續性口服製劑：(98/8/1)
   chapter: 第8節 免疫製劑 Immunologic agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -239,11 +239,11 @@ regulations:
     full_text: '1.成人肝、腎移植之第一線用藥。
 
       2.成人肝、腎移植cyclosporin無效之第二線用藥。'
-- regulation_id: REG-0238
+- regulation_id: REG-0240
   section_number: 8.2.2.2.
   section_title: 8.2.2.2. Tacrolimus 注射劑及其他非持續性口服製劑： (88/8/1、93/12/1、102/7/1)
   chapter: 第8節 免疫製劑 Immunologic agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -259,12 +259,12 @@ regulations:
     full_text: '1.肝臟及腎臟移植之第一線用藥或肝腎移植cyclosporin無效之第二線用藥。
 
       2.心臟移植之第一線、第二線用藥。'
-- regulation_id: REG-0239
+- regulation_id: REG-0241
   section_number: 8.2.3.1.
   section_title: 8.2.3.1. Interferon beta-la (如Rebif) 、teriflunomide 14mg (如Aubagio)、
     dimethyl fumarate (如Tecfidera)、peginterferon beta-1a (如Plegridy)、ozanimod (如Zeposia)、cladribine(如Mavenclad)：(91/4/1、97/8/1、100/10/1、106/10/1、107/7/1、107/10/1、109/11/1、112/3/1、115/3/1)
   chapter: 第8節 免疫製劑 Immunologic agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (109/11/1、112/3/1、115/3/1)
   - (100/10/1)
@@ -293,11 +293,11 @@ regulations:
       (1)未使用DMT (disease-modifying therapies)藥物，但前一年有兩次發作，且MRI檢查至少有T1-gadolinium enhancing病灶或T2病灶惡化。\n\
       (2)使用其他DMT藥物後，一年仍有一次復發且經MRI檢查確認疾病活躍。\n(3)滿四年後若有復發或核磁共振上出現疾病活性可再次申請。\n6.Interferon\
       \ beta-la、teriflunomide 14mg、dimethyl fumarate、peginterferon beta-1a、ozanimod及cladribine不得合併使用。(112/3/1、115/3/1)"
-- regulation_id: REG-0240
+- regulation_id: REG-0242
   section_number: 8.2.3.2.
   section_title: 8.2.3.2. Interferon beta-1b (如Betaferon 8MIU)：(92/3/1、92/12/1、93/3/1、97/8/1、99/10/1、100/10/1、106/10/1)
   chapter: 第8節 免疫製劑 Immunologic agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (100/10/1、106/10/1)
   - (100/10/1、106/10/1)
@@ -344,11 +344,11 @@ regulations:
       iiNMO-IgG or Aquaporin-4抗體陽性。
 
       iii腦部磁振造影不符合多發性硬化症診斷標準。'
-- regulation_id: REG-0241
+- regulation_id: REG-0243
   section_number: 8.2.3.3.
   section_title: 8.2.3.3. Glatiramer acetate (如Copaxone injection)：(94/10/1、97/8/1)
   chapter: 第8節 免疫製劑 Immunologic agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -361,11 +361,11 @@ regulations:
   reference_annotations:
     original_clause: 8.2.3.3. Glatiramer acetate (如Copaxone injection)：(94/10/1、97/8/1)
     full_text: 限用於復發型多發性硬化症，Copaxone用於減少復發型多發性硬化症病人的復發頻率。
-- regulation_id: REG-0242
+- regulation_id: REG-0244
   section_number: 8.2.3.4.
   section_title: '8.2.3.4. Natalizumab (如Tysabri) （100/5/1）:'
   chapter: 第8節 免疫製劑 Immunologic agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -401,11 +401,11 @@ regulations:
 
       5.須經事前審查核准後使用，每年須重新申請，排除眼神經脊髓炎(neuromyelitis optica)病患。處方醫師應事先告知病患，使用本案藥品無法完全排除發生「進行性多灶性白質腦病」(Progressive
       multifocal leukoencephalopathy；PML)之副作用，PML致死率高，且臨床上不易處理。'
-- regulation_id: REG-0243
+- regulation_id: REG-0245
   section_number: 8.2.3.5.
   section_title: 8.2.3.5. Fingolimod(如Gilenya)：(101/9/1、102/10/1、109/1/1、109/10/1、115/3/1)
   chapter: 第8節 免疫製劑 Immunologic agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (102/10/1)
   - (102/10/1、109/1/1)
@@ -433,11 +433,11 @@ regulations:
       註：年度復發率無法減少之定義為： 採計使用fingolimod藥物後一年至兩年復發次數之數據 (以最近一年或兩年之復發次數除以1或2來計算)，較諸更先前一年或兩年之年復發率皆無再減少時。(102/10/1)\n\
       4.個案在停藥觀察期間復發且為高度活躍型復發緩解之多發性硬化症病人(highly active relapsing–remitting multiple\
       \ sclerosis)可再申請並經事前審查核准後使用。(102/10/1)"
-- regulation_id: REG-0244
+- regulation_id: REG-0246
   section_number: 8.2.3.6.
   section_title: 8.2.3.6. Alemtuzumab（如Lemtrada）：（108/7/1）
   chapter: 第8節 免疫製劑 Immunologic agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -498,11 +498,11 @@ regulations:
       ※年度復發率無法減少之定義：
 
       採計使用Alemtuzumab藥物後兩年內復發次數之數據(以最近兩年之復發次數除以2來計算)，較諸更先前一年或兩年之年復發率皆無再減少時。'
-- regulation_id: REG-0245
+- regulation_id: REG-0247
   section_number: 8.2.3.7.
   section_title: 8.2.3.7. Siponimod(如Mayzent)：(110/3/1)
   chapter: 第8節 免疫製劑 Immunologic agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -523,37 +523,41 @@ regulations:
       須經事前審查核准後使用，每年需重新申請，併應提出整個用藥期間之EDSS分數(包括起始用藥EDSS分數與每年申請時EDSS分數)\n6.\tSiponimod使用2年後，EDSS出現確認失能惡化持續6個月(6-month\
       \ confirmed disability progression)時，亦即EDSS未滿6分者，2年內惡化1分以上，EDSS大於等於6分者，2年內惡化0.5分以上，應停止本藥品之治療。\n\
       7.\t依治療建議劑量，從0.25mg每天1次起始，達到2mg每天1次之維持劑量，且不得以8粒0.25mg取代1粒2mg。"
-- regulation_id: REG-0246
+- regulation_id: REG-0248
   section_number: 8.2.4.
   section_title: 8.2.4. Etanercept(如Enbrel); adalimumab（如Humira）;golimumab（如Simponi）；abatacept（如Orencia）；tocilizumab（如Actemra）；tofacitinib（如Xeljanz）；infliximab
     ；certolizumab (如Cimzia)；ixekizumab(如Taltz)；brodalumab(如Lumicef)；filgotinib(如Jyseleca)；secukinumab（如Cosentyx）(92/3/1、93/8/1、93/9/1、98/3/1、99/2/1、100/12/1、101/1/1、101/6/1、101/10/1、102/1/1、102/2/1、102/4/1、102/10/1、103/9/1、103/12/1、105/9/1、105/10/1、109/12/1、111/5/1、112/5/1、113/10/1、114/7/1、114/10/1)
   chapter: 第8節 免疫製劑 Immunologic agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
     ingredients: []
   conditions_of_payment:
     indications:
-    - Hepatitis B / Hepatitis C (肝炎)
+    - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     laboratory_criteria: []
     summary: 使用本類藥品之醫事機構應注意監測病患用藥後之不良反應及可能發生的重大安全事件(如肺結核及病毒性肝炎)。（103/9/1）
   reference_annotations:
     original_clause: 8.2.4. Etanercept(如Enbrel); adalimumab（如Humira）;golimumab（如Simponi）；abatacept（如Orencia）；tocilizumab（如Actemra）；tofacitinib（如Xeljanz）；infliximab
       ；certolizumab (如Cimzia)；ixekizumab(如Taltz)；brodalumab(如Lumicef)；filgotinib(如Jyseleca)；secukinumab（如Cosentyx）(92/3/1、93/8/1、93/9/1、98/3/1、99/2/1、100/12/1、101/1/1、101/6/1、101/10/1、102/1/1、102/2/1、102/4/1、102/10/1、103/9/1、103/12/1、105/9/1、105/10/1、109/12/1、111/5/1、112/5/1、113/10/1、114/7/1、114/10/1)
     full_text: 使用本類藥品之醫事機構應注意監測病患用藥後之不良反應及可能發生的重大安全事件(如肺結核及病毒性肝炎)。（103/9/1）
-- regulation_id: REG-0247
+- regulation_id: REG-0249
   section_number: 8.2.4.1.
   section_title: 8.2.4.1. Etanercept(如Enbrel)；adalimumab(如Humira)；tocilizumab（如Actemra）；tofacitinib（如Xeljanz）；secukinumab（如Cosentyx）(94/3/1、101/12/1、102/1/1、102/10/1、105/10/1、108/1/1、111/2/1、113/10/1、114/7/1、114/10/1)：兒童治療部分
   chapter: 第8節 免疫製劑 Immunologic agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (102/10/1、113/10/1)
   - (102/1/1)
   - (102/10/1、113/10/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Adalimumab (阿達木單抗)
+    - Etanercept (恩博)
+    - Secukinumab (蘇金單抗)
+    - Tofacitinib (托法替尼)
   conditions_of_payment:
     indications:
     - Rheumatoid Arthritis (類風濕性關節炎)

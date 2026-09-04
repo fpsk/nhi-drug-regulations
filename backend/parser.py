@@ -286,8 +286,11 @@ class NHIRegulationParser:
 
 if __name__ == "__main__":
     parser = NHIRegulationParser()
-    if os.path.exists("完整給付規定1150623.docx"):
-        print("Parsing docx...")
-        recs = parser.parse_docx("完整給付規定1150623.docx")
+    target_docx = "完整給付規定1150821.docx"
+    if not os.path.exists(target_docx):
+        target_docx = "完整給付規定1150623.docx"
+    if os.path.exists(target_docx):
+        print(f"Parsing {target_docx}...")
+        recs = parser.parse_docx(target_docx)
         files = parser.save_to_okf_yaml(recs)
         print(f"Parsed {len(recs)} records into {len(files)} YAML files.")

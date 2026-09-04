@@ -7,7 +7,7 @@ regulations:
   section_number: '0.0'
   section_title: 通則 General Rules
   chapter: 通則 General Rules
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (86/1/1)
   - (109/12/1)
@@ -34,12 +34,16 @@ regulations:
   - (111/2/1)
   medications:
     drug_classes:
+    - 副甲狀腺素及類似劑 / 骨質疏鬆症治療藥物
     - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
     - GLP-1 受體促效劑 (腸泌素 / 瘦瘦針)
-    ingredients: []
+    ingredients:
+    - Adalimumab (阿達木單抗)
+    - Etanercept (恩博)
+    - Teriparatide (特立帕肽 (副甲狀腺素))
   conditions_of_payment:
     indications:
-    - Hepatitis B / Hepatitis C (肝炎)
+    - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     - Crohn's Disease (CD) (克隆氏症)
     - Leukemia (白血病)
     - Psoriasis / Psoriatic Arthritis (乾癬)

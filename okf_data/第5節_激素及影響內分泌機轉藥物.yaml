@@ -3,11 +3,11 @@ schema_type: Taiwan_NHI_Drug_Regulation
 chapter: 第5節 激素及影響內分泌機轉藥物
 total_regulations: 40
 regulations:
-- regulation_id: REG-0167
+- regulation_id: REG-0169
   section_number: 5.1.
   section_title: 5.1. 糖尿病用藥 Drugs used in diabetes
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (105/5/1)
   - (105/5/1、114/6/1)
@@ -17,11 +17,11 @@ regulations:
     - GLP-1 受體促效劑 (腸泌素 / 瘦瘦針)
     ingredients:
     - Sitagliptin (西格列汀)
-    - Dapagliflozin (達格列淨)
-    - Saxagliptin (沙格列汀)
     - Linagliptin (利格列汀)
-    - Empagliflozin (恩格列淨)
+    - Saxagliptin (沙格列汀)
     - Vildagliptin (維格列汀)
+    - Empagliflozin (恩格列淨)
+    - Dapagliflozin (達格列淨)
     - Liraglutide (利拉魯肽)
   conditions_of_payment:
     indications:
@@ -53,11 +53,11 @@ regulations:
       (10)各降血糖成分之口服複方製劑。\n2. 使用條件：(105/5/1、114/6/1)\n(1)\t原則上第二型糖尿病治療應優先使用metformin，或考慮早期開始使用胰島素。除有過敏、禁忌症、不能耐受或仍無法理想控制血糖的情形下，可使用其他類口服降血糖藥物。\n\
       (2) TZD製劑、DPP-4抑制劑、SGLT-2抑制劑、以及含該3類成分之複方製劑，限用於已接受過最大耐受劑量的metformin仍無法理想控制血糖之第二型糖尿病病人，且SGLT-2抑制劑與DPP-4抑制劑及其複方製劑宜二種擇一種使用。\n\
       (3)\t第二型糖尿病病人倘於使用三種口服降血糖藥物治療仍無法理想控制血糖者，宜考慮給予胰島素治療。\n(4)\t特約醫療院所應加強衛教第二型糖尿病病人，鼓勵健康生活型態的飲食和運動，如控制肥胖、限制熱量攝取等措施。"
-- regulation_id: REG-0168
+- regulation_id: REG-0170
   section_number: 5.1.1.
   section_title: 5.1.1. Acarbose (如Glucobay)；miglitol (如Diaban)（86/1/1、87/4/1、89/6/1、91/7/1、98/12/1）
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -70,11 +70,11 @@ regulations:
   reference_annotations:
     original_clause: 5.1.1. Acarbose (如Glucobay)；miglitol (如Diaban)（86/1/1、87/4/1、89/6/1、91/7/1、98/12/1）
     full_text: 限用於非胰島素依賴型糖尿病之治療。
-- regulation_id: REG-0169
+- regulation_id: REG-0171
   section_number: 5.1.3.1.
   section_title: 5.1.3.1. Exenatide(如Byetta)(100/5/1、105/5/1、107/4/1)
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes:
@@ -93,12 +93,12 @@ regulations:
     full_text: '1.限用於已接受過最大耐受劑量的metformin及/或sulfonylurea類藥物仍無法理想控制血糖之第二型糖尿病患者。
 
       2.本藥品不得與insulin、DPP-4抑制劑、SGLT-2抑制劑等藥物併用。'
-- regulation_id: REG-0170
+- regulation_id: REG-0172
   section_number: 5.1.3.2.
   section_title: 5.1.3.2. Liraglutide (如Victoza)、dulaglutide (如Trulicity)、lixisenatide(如Lyxumia)
     、semaglutide（如Ozempic）(101/10/1、105/5/1、105/8/1、107/4/1、107/7/1、109/5/1、109/8/1、109/9/1、109/12/1)
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (109/5/1)
   - (109/12/1)
@@ -106,9 +106,9 @@ regulations:
     drug_classes:
     - DPP-4 抑制劑 (二基勝肽酶-4 抑制劑)
     ingredients:
-    - Liraglutide (利拉魯肽)
     - Semaglutide (司美格魯肽)
     - Dulaglutide (度拉糖肽)
+    - Liraglutide (利拉魯肽)
   conditions_of_payment:
     indications:
     - Stroke / Cerebrovascular Accident (腦中風)
@@ -147,11 +147,11 @@ regulations:
       3.發生重大心血管事件，如心肌梗塞、接受冠狀動脈或其他動脈血管再通術(revascularization)、動脈硬化相關之缺血性腦中風等之病人，於接受過最大耐受劑量的metformin後，仍無法理想控制血糖之第二型糖尿病患者，可考慮不須使用其他口服降血糖藥品而考慮使用liraglutide或dulaglutide或semaglutide。(109/12/1)
 
       4.本藥品不得與DPP-4抑制劑、SGLT-2抑制劑併用。'
-- regulation_id: REG-0171
+- regulation_id: REG-0173
   section_number: 5.1.3.3.
   section_title: 5.1.3.3. 含lixisenatide及insulin glargine之複方製劑(如Soliqua)(108/7/1、110/7/1)
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (110/7/1)
   medications:
@@ -186,11 +186,11 @@ regulations:
       (4)Insulin(每日劑量少於60單位)
 
       2.本品不得與DPP-4抑制劑、SGLT-2抑制劑併用。'
-- regulation_id: REG-0172
+- regulation_id: REG-0174
   section_number: 5.1.5.
   section_title: 5.1.5. SGLT-2抑制劑及其複方：
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (105/5/1、107/3/1、108/7/1)
   - (107/3/1)
@@ -231,11 +231,11 @@ regulations:
       3.Dapagliflozin及metformin 複方(如Xigduo XR)(107/3/1)
 
       每日最多處方1粒。'
-- regulation_id: REG-0173
+- regulation_id: REG-0175
   section_number: 5.1.6.
   section_title: 5.1.6. 含empagliflozin及linagliptin之複方製劑(如Glyxambi)(108/1/1、109/5/1)
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -254,17 +254,17 @@ regulations:
     full_text: '1.每日限處方1粒。
 
       2.限用於已接受過最大耐受劑量的metformin，且併用empagliflozin或linagliptin治療至少6個月，糖化血色素值(HbA1c)仍高於7.5%者。'
-- regulation_id: REG-0174
+- regulation_id: REG-0176
   section_number: 5.1.7.
   section_title: 5.1.7. 含dapagliflozin及saxagliptin之複方製劑(如Qtern)(108/11/1、109/5/1)
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
     ingredients:
-    - Saxagliptin (沙格列汀)
     - Dapagliflozin (達格列淨)
+    - Saxagliptin (沙格列汀)
   conditions_of_payment:
     indications: []
     laboratory_criteria:
@@ -277,11 +277,11 @@ regulations:
     full_text: '1.每日限處方1粒。
 
       2.限用於已接受過最大耐受劑量的metformin，且併用dapagliflozin或saxagliptin治療至少6個月，糖化血色素值(HbA1c)仍高於7.5%者。'
-- regulation_id: REG-0175
+- regulation_id: REG-0177
   section_number: 5.1.8.
   section_title: 5.1.8. 含ertugliflozin及sitagliptin之複方製劑(如Steglujan)(109/5/1)
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -300,11 +300,11 @@ regulations:
     full_text: '1.每日限處方1粒。
 
       2.限用於已接受過最大耐受劑量的metformin，且併用ertugliflozin或sitagliptin治療至少6個月，糖化血色素值(HbA1c)仍高於7.5%者。'
-- regulation_id: REG-0176
+- regulation_id: REG-0178
   section_number: 5.2.1.
   section_title: 5.2.1. Danazol限下列病例使用（86/1/1）
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -320,11 +320,11 @@ regulations:
     full_text: '1.子宮內膜異位。
 
       2.纖維性囊腫乳房性疾患。'
-- regulation_id: REG-0177
+- regulation_id: REG-0179
   section_number: 5.2.2.1
   section_title: 5.2.2.1 Finasteride（如Proscar）; dutasteride (如Avodart) (86/1/1、87/4/1、93/10/1、101/3/1、102/12/1、106/10/1、108/12/1)：
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (102/12/1、108/12/1)
   medications:
@@ -339,11 +339,11 @@ regulations:
     original_clause: 5.2.2.1 Finasteride（如Proscar）; dutasteride (如Avodart) (86/1/1、87/4/1、93/10/1、101/3/1、102/12/1、106/10/1、108/12/1)：
     full_text: 限前列腺增生且有阻塞症狀，使用經直腸超音波前列腺掃描 (TRUS of prostate) 或使用腹部超音波測量(僅限無法實施直腸超音波前列腺掃描者)為原則，前列腺大於30mL或最大尿流速
       (Qmax) 小於15 mL/sec之病人方可使用。(102/12/1、108/12/1)
-- regulation_id: REG-0178
+- regulation_id: REG-0180
   section_number: 5.2.2.2.
   section_title: 5.2.2.2. Dutasteride + tamsulosin (如Duodart) (101/3/1、102/12/1、106/10/1、108/12/1)：
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (102/12/1、108/12/1)
   medications:
@@ -358,11 +358,11 @@ regulations:
     original_clause: 5.2.2.2. Dutasteride + tamsulosin (如Duodart) (101/3/1、102/12/1、106/10/1、108/12/1)：
     full_text: 限前列腺增生且有阻塞症狀，經直腸超音波前列腺掃描 (TRUS of prostate) 或使用腹部超音波測量(僅限無法實施直腸超音波前列腺掃描者)為原則，前列腺大於30mL或最大尿流速
       (Qmax) 小於15 mL/sec之病人。 (102/12/1、108/12/1)
-- regulation_id: REG-0179
+- regulation_id: REG-0181
   section_number: 5.3.1.1.
   section_title: 5.3.1.1. Estraderm TTS；Oestro V.T (93/5/1)
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -374,11 +374,11 @@ regulations:
   reference_annotations:
     original_clause: 5.3.1.1. Estraderm TTS；Oestro V.T (93/5/1)
     full_text: 限不能口服本品患者使用，申報費用時應具體說明不能口服之理由。
-- regulation_id: REG-0180
+- regulation_id: REG-0182
   section_number: 5.3.5.
   section_title: 5.3.5. Levonorgestrel intrauterine system  (如Mirena)：(104/2/1、107/4/1)
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -391,11 +391,11 @@ regulations:
   reference_annotations:
     original_clause: 5.3.5. Levonorgestrel intrauterine system  (如Mirena)：(104/2/1、107/4/1)
     full_text: 限使用於連續3個月(含)以上月經經血過多導致嚴重貧血(Hemoglobin≦10g/dL)之婦女，且每次使用後之五年內，不得再次使用。
-- regulation_id: REG-0181
+- regulation_id: REG-0183
   section_number: 5.3.6.
   section_title: 5.3.6. Megestrol口服液劑：(108/6/1、109/3/1)
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -409,11 +409,11 @@ regulations:
     original_clause: 5.3.6. Megestrol口服液劑：(108/6/1、109/3/1)
     full_text: "1.\t限用於已排除其他可治療之體重減輕（如全身性感染、影響吸收的腸胃道疾病、內分泌疾病、腎臟或精神病）之具惡病質的後天免疫缺乏症候群患者及癌症患者。\n\
       2.\t惡病質之條件包括最近6個月以內體重流失>5%，或BMI<20且體重流失>2%。"
-- regulation_id: REG-0182
+- regulation_id: REG-0184
   section_number: 5.4.1.1.
   section_title: 5.4.1.1. 生長激素 (Somatropin) (111/2/1)：
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (104/6/1、111/11/1)
   - (104/6/1、110/12/1)
@@ -587,11 +587,11 @@ regulations:
       Ⅲ.第二年開始，生長速率至少4公分/年。
 
       (5)需事前審查核准後使用，治療後每年需再提出申請，審查同意後使用。'
-- regulation_id: REG-0183
+- regulation_id: REG-0185
   section_number: 5.4.1.2.
   section_title: 5.4.1.2. 生長激素（如Genotropin）用於治療普瑞德威利氏症候群 （Prader-Willi Syndrome）患者時：（93/5/1、106/8/1）
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -627,11 +627,11 @@ regulations:
       Study。治療一年後測量身體組成Body Composition (DXA)、骨齡X光片。
 
       (2)普瑞德威利氏症候群患者容易發生睡眠窒息，這種現象或許治療後可減輕。最近發現年幼之患者可能因為一般之上呼吸道感染而引發猝死，也曾經發生在生長激素治療中的病人身上。目前並不清楚生長激素治療是否會改變猝死的發生，故不論是否接受治療，都需要提醒普瑞德威利氏症候群年幼患者之家長，在患者有呼吸道問題時需要特別的注意。'
-- regulation_id: REG-0184
+- regulation_id: REG-0186
   section_number: 5.4.2.
   section_title: 5.4.2. Bromocriptine：
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -643,11 +643,11 @@ regulations:
   reference_annotations:
     original_clause: 5.4.2. Bromocriptine：
     full_text: 如用於產後正常性泌乳之抑制，不予給付。
-- regulation_id: REG-0185
+- regulation_id: REG-0187
   section_number: 5.4.3.
   section_title: 5.4.3. Octreotide inj (如Sandostatin inj) 限：（87/11/1、102/1/1）
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -672,11 +672,11 @@ regulations:
       3.使用於胃、食道靜脈曲張出血，最長以三天為原則。
 
       4.治療患有功能性症狀之胃、腸、胰內分泌腫瘤的患者。（102/1/1）'
-- regulation_id: REG-0186
+- regulation_id: REG-0188
   section_number: 5.4.4.
   section_title: 5.4.4. Octreotide長效型注射劑 (如Sandostatin LAR Microspheres for Injection)：（89/7/1、102/1/1、104/4/1）
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -705,11 +705,11 @@ regulations:
       4.需經事前審查核准後使用，每次申請以一年為限，期滿須經再次申請核准後才得以續用。（104/4/1）
 
       5.用於治療上述第1、2項患者時，每次注射以20 mg為原則，每次注射需間隔四週；用於治療上述第3項患者時，每次注射以30 mg為原則，每次注射需間隔四週。若因病情需要超過使用量，應於病歷詳細紀錄以備查核。（104/4/1）'
-- regulation_id: REG-0187
+- regulation_id: REG-0189
   section_number: 5.4.5.
   section_title: 5.4.5. Somatostatin：（87/11/1、89/5/1）
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes:
@@ -731,11 +731,11 @@ regulations:
       2.使用於胃、食道靜脈曲張出血最長以三天為原則。
 
       3.嚴重性急性消化性潰瘍出血，急性之糜爛或出血性胃炎之急性嚴重出血，經內視鏡處理同時經氫離子幫浦阻斷劑或乙型組織胺受體阻斷劑注射治療仍不能止血，且不適合外科手術者，得使用本品作為輔助治療三天。'
-- regulation_id: REG-0188
+- regulation_id: REG-0190
   section_number: 5.4.6.
   section_title: 5.4.6. Lanreotide （如Somatuline）：（88/6/1、89/5/1、93/12/1、98/1/1、106/8/1）
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (93/12/1、106/8/1)
   - (106/8/1)
@@ -780,11 +780,11 @@ regulations:
       (2)用於治療非功能性患者，須附6個月內somatostatin-receptor 陽性報告。
 
       (3)每月限用lanreotide 120mg長效注射劑一針，每次注射間隔4週。須經事前審查核准後使用，每次申請以一年為限，期滿須經再次申請核准後，才得以續用。'
-- regulation_id: REG-0189
+- regulation_id: REG-0191
   section_number: 5.4.7.
   section_title: 5.4.7. Cabergoline (如 Dostinex Tab.)：(91/6/1)
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -800,11 +800,11 @@ regulations:
     full_text: '1.限用於高乳促素血症引起之狀況。
 
       2.如用於產後正常性泌乳之抑制，不予給付。'
-- regulation_id: REG-0190
+- regulation_id: REG-0192
   section_number: 5.4.8.
   section_title: 5.4.8. Pasireotide：(如Signifor) (103/7/1、106/10/1）
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -820,11 +820,11 @@ regulations:
     full_text: '1.限用於治療無法接受腦下垂體手術或已接受此手術未能治療的庫欣氏病 (Cushing''s disease)患者。
 
       2.限內分泌及神經外科專科醫師使用。'
-- regulation_id: REG-0191
+- regulation_id: REG-0193
   section_number: 5.4.9.
   section_title: 5.4.9. Pasireotide長效緩釋注射劑 (如Signifor LAR)：(108/12/1）
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes:
@@ -850,11 +850,11 @@ regulations:
       3.限內分泌及神經外科專科醫師使用。
 
       4.須經事前審查核准後使用，每一年須重新申請。'
-- regulation_id: REG-0192
+- regulation_id: REG-0194
   section_number: 5.5.1.
   section_title: 5.5.1. Gn-RH analogue （如Buserelin；Goserelin；Leuprorelin；Triptorelin；Nafarelin(acetate)等製劑）(92/1/1、93/4/1、95/4/1、98/5/1、99/2/1、99/10/1、100/2/1、106/2/1、109/2/1、110/12/1、111/2/1、113/6/1)
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (98/5/1、99/10/1)
   - (111/2/1)
@@ -903,11 +903,11 @@ regulations:
       \ (AFS修訂之評分標準（以下簡稱rAFS），需附手術紀錄及病理報告證明)；且符合下列各項條件之一者，需經事前審查核准後使用GnRH analogue。\n\
       i.肝機能不全（ALT或AST大於正常值三倍）、腎功能不全（creatinine > 2 mg %）、鬱血性心臟病，不適用各種荷爾蒙藥物治療者。\nii.曾使用各種荷爾蒙藥物治療，引起藥物過敏或不可逆之藥物不良反應者。\n\
       Ⅱ.前項藥物治療以連續六個月為上限。"
-- regulation_id: REG-0193
+- regulation_id: REG-0195
   section_number: 5.5.1.1.
   section_title: 5.5.1.1. Degarelix（如Firmagon）：（103/9/1）
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -920,11 +920,11 @@ regulations:
   reference_annotations:
     original_clause: 5.5.1.1. Degarelix（如Firmagon）：（103/9/1）
     full_text: 限用於成年男性晚期荷爾蒙依賴型前列腺癌患者。
-- regulation_id: REG-0194
+- regulation_id: REG-0196
   section_number: 5.5.2.
   section_title: 5.5.2. 抑鈣激素製劑 (Salmon calcitonin injection)
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -936,11 +936,11 @@ regulations:
   reference_annotations:
     original_clause: 5.5.2. 抑鈣激素製劑 (Salmon calcitonin injection)
     full_text: 用於惡性疾病之高血鈣症或變形性骨炎 ( Paget's disease)（85/10/1、93/8/1、100/1/1、103/2/1）。
-- regulation_id: REG-0195
+- regulation_id: REG-0197
   section_number: 5.5.3.1.
   section_title: 5.5.3.1. Clodronate；pamidronate：（85/1/1、87/4/1、93/2/1、96/1/1、100/1/1）
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (96/1/1)
   medications:
@@ -967,12 +967,12 @@ regulations:
       2.惡性腫瘤之蝕骨性骨頭轉移之病患，在使用嗎啡、可待因等止痛劑後仍不易控制者。
 
       3. Multiple Myeloma, Breast Cancer, Prostate Cancer併有蝕骨性骨轉移之病患(96/1/1)。'
-- regulation_id: REG-0196
+- regulation_id: REG-0198
   section_number: 5.5.3.2.1.
   section_title: 5.5.3.2.1. Zoledronic acid 4mg/vial (如Zometa Powder For Solution
     For Infusion 4mg)( 98/6/1、100/1/1)
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (93/6/1)
   - (96/1/1)
@@ -999,12 +999,12 @@ regulations:
       (93/6/1)。
 
       2.Multiple Myeloma，Breast Cancer，Prostate Cancer併有蝕骨性骨轉移之病患 (96/1/1)。'
-- regulation_id: REG-0197
+- regulation_id: REG-0199
   section_number: 5.5.3.2.2.
   section_title: 5.5.3.2.2. Zoledronic acid 5mg (如Aclasta 5mg/100mL Solution for infusion)(
     98/6/1、100/1/1)
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1017,11 +1017,11 @@ regulations:
     original_clause: 5.5.3.2.2. Zoledronic acid 5mg (如Aclasta 5mg/100mL Solution for
       infusion)( 98/6/1、100/1/1)
     full_text: 用於變形性骨炎(Paget's disease)
-- regulation_id: REG-0198
+- regulation_id: REG-0200
   section_number: 5.5.3.3.
   section_title: 5.5.3.3. Etidronate（如Etibon）：(87/10/1、100/1/1)
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1033,12 +1033,12 @@ regulations:
   reference_annotations:
     original_clause: 5.5.3.3. Etidronate（如Etibon）：(87/10/1、100/1/1)
     full_text: 限用於Paget’s disease之症狀治療及異位性骨化症之治療。
-- regulation_id: REG-0199
+- regulation_id: REG-0201
   section_number: 5.5.3.4.1.
   section_title: 5.5.3.4.1. Ibandronic acid 2mg/2mL；6mg/6mL（如Bondronat concentrate
     for solution for infusion）(96/8/1、100/1/1)
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1059,11 +1059,11 @@ regulations:
       (1)限用於治療惡性腫瘤之高血鈣併發症，且限用於血清鈣濃度超過2.75 mmol/L (11.0mg/dL)或游離鈣大於5.6 mg/dL之病例。
 
       (2)限Breast Cancer併有蝕骨性骨轉移之病患。'
-- regulation_id: REG-0200
+- regulation_id: REG-0202
   section_number: 5.5.4.
   section_title: 5.5.4. Denosumab（如Xgeva）(102/1/1、104/12/1、109/2/1、113/10/1)
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1086,11 +1086,11 @@ regulations:
     full_text: '限用於：
 
       多發性骨髓瘤病人與乳癌、前列腺癌、肺癌、結腸直腸癌、膀胱癌、腎癌、子宮頸癌、卵巢癌、食道癌、胃癌及胰癌併有蝕骨性骨轉移之病人。'
-- regulation_id: REG-0201
+- regulation_id: REG-0203
   section_number: 5.5.6.
   section_title: 5.5.6. Rasburicase（如Fasturtec注射劑）(93/5/1)
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1119,11 +1119,11 @@ regulations:
       (3)對allopurinol過敏者。
 
       2.使用以每日一至二劑並以三日為限。'
-- regulation_id: REG-0202
+- regulation_id: REG-0204
   section_number: 5.5.7.
   section_title: 5.5.7. Mecasermin（如Increlex注射劑）(98/5/1、111/2/1)
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (111/2/1)
   - (111/2/1)
@@ -1151,11 +1151,11 @@ regulations:
       VI.施予生長激素治療第一年比生長激素治療前多3公分以上，但後來以適當生長激素劑量治療，年生長速率仍小於3公分。\n4.\t治療劑量：不超過120μg/kg皮下注射每天兩次。\n\
       5.治療監測：病人至少每3個月測量身高體重一次，每6至12個月評估骨齡一次。\n6.繼續治療條件：\n(1)男童骨齡未滿16歲，女童骨齡未滿14歲，且骨端尚未癒合患者(111/2/1)。\n\
       (2)第一年生長速率比治療前增加至少3公分。\n(3)第二年開始，生長速率至少4公分/年。"
-- regulation_id: REG-0203
+- regulation_id: REG-0205
   section_number: 5.5.8.
   section_title: 5.5.8. Vosoritide（如Voxzogo）：（114/5/1）
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1216,16 +1216,16 @@ regulations:
       X光檢查證據顯示雙股下肢（脛骨近端、股骨遠端）生長板已閉合之病人。
 
       如因先前使用後無效停藥者，不得重新申請使用；如因使用中有輕微不良反應（如血壓偏低）而暫停使用者，得於狀況排除後重新申請使用。'
-- regulation_id: REG-0204
+- regulation_id: REG-0206
   section_number: 5.6.1.
-  section_title: 5.6.1. 抗骨質再吸收劑（anti- resorptive）(101/3/1、101/5/1、102/2/1、102/8/1、103/2/1、103/10/1、104/8/1、106/12/1、114/3/1、115/7/1)
+  section_title: 5.6.1. 抗骨質再吸收劑（anti- resorptive）(101/3/1、101/5/1、102/2/1、102/8/1、103/2/1、103/10/1、104/8/1、106/12/1、114/3/1、115/7/1、115/8/1、115/9/1)
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (102/2/1)
   - (101/3/1)
-  - (101/5/1、102/8/1、103/10/1、104/8/1、106/12/1、114/3/1、115/7/1)
-  - (114/3/1、115/7/1)
+  - (101/5/1、102/8/1、103/10/1、104/8/1、106/12/1、114/3/1、115/7/1、115/8/1、115/9/1)
+  - (114/3/1、115/7/1、115/8/1、115/9/1)
   medications:
     drug_classes: []
     ingredients: []
@@ -1243,7 +1243,7 @@ regulations:
       (2)Selective estrogen receptor modulators (SERM，選擇性雌激素接受體調節劑）：raloxifene（如Evista
       ）、bazedoxifene（如Viv...'
   reference_annotations:
-    original_clause: 5.6.1. 抗骨質再吸收劑（anti- resorptive）(101/3/1、101/5/1、102/2/1、102/8/1、103/2/1、103/10/1、104/8/1、106/12/1、114/3/1、115/7/1)
+    original_clause: 5.6.1. 抗骨質再吸收劑（anti- resorptive）(101/3/1、101/5/1、102/2/1、102/8/1、103/2/1、103/10/1、104/8/1、106/12/1、114/3/1、115/7/1、115/8/1、115/9/1)
     full_text: '1.藥品種類
 
       (1)Bisphosphonates（雙磷酸鹽類）：alendronate（如Fosamax）、 zoledronate 5mg (如Aclasta 5mg/100mL
@@ -1261,12 +1261,11 @@ regulations:
 
       Ⅰ.限用於停經後婦女（alendronate、zoledronate、denosumab及risedronate 35mg亦可使用於男性，risedronate
       150mg不可使用於男性）因骨質疏鬆症（須經DXA 檢測BMD之T score≦ -2.5SD）引起脊椎或髖部骨折，或因骨質疏少症(osteopenia)(經DXA檢測BMD之-2.5SD
-      <T score <-1.0SD)引起脊椎或髖部2處或2次(含)以上之骨折。使用Prolia、Alendronate Sandoz 70mg Tablets及PlusDmax
-      Tablets "Sinphar"除上述條件外，亦可用於前述因骨質疏鬆症引起之遠端橈骨或近端肱骨骨折，或骨質疏少症引起之遠端橈骨、近端肱骨2處或2次(含)以上之骨折。
-      (101/5/1、102/8/1、103/10/1、104/8/1、106/12/1、114/3/1、115/7/1)
+      <T score <-1.0SD)引起脊椎或髖部2處或2次(含)以上之骨折。denosumab、alendronate (除COVAXIN、Mosmass、Apo-Alendronate、Binosto及Alendro-Dthen外)除使用於上述條件外，亦可用於前述因骨質疏鬆症引起之遠端橈骨或近端肱骨骨折，或骨質疏少症引起之遠端橈骨、近端肱骨2處或2次(含)以上之骨折。
+      (101/5/1、102/8/1、103/10/1、104/8/1、106/12/1、114/3/1、115/7/1、115/8/1、115/9/1)
 
-      Ⅱ.用於骨質疏鬆症患者 (須經DXA檢測BMD之T-score≦-2.5)，且合併下列至少一項骨質疏鬆性骨折高風險因子者，限使用Prolia及Alendronate
-      Sandoz 70mg Tablet及PlusDmax Tablets "Sinphar"，且須於病歷上載明: (114/3/1、115/7/1)
+      Ⅱ.用於骨質疏鬆症患者 (須經DXA檢測BMD之T-score≦-2.5)，且合併下列至少一項骨質疏鬆性骨折高風險因子者，限使用denosumab、alendronate(除COVAXIN、Mosmass、Apo-Alendronate、Binosto及Alendro-Dthen外)，且須於病歷上載明:
+      (114/3/1、115/7/1、115/8/1、115/9/1)
 
       ⅰ類風溼性關節炎。
 
@@ -1277,11 +1276,11 @@ regulations:
       (2)治療時，一次限用一項藥物，不得併用其他骨質疏鬆症治療藥物。
 
       (3)使用雙磷酸鹽類藥物，須先檢測病患之血清creatinine濃度，符合該項藥物仿單之建議規定。'
-- regulation_id: REG-0205
+- regulation_id: REG-0207
   section_number: 5.6.2.
   section_title: 5.6.2. Parathyroid hormones and analogues （副甲狀腺素及類似劑）：teriparatide注射劑(101/7/1、110/5/1)
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (110/5/1)
   medications:
@@ -1329,45 +1328,29 @@ regulations:
       備註DXA: Dual energy X-ray absorptiometry
 
       BMD: Bone mineral density'
-- regulation_id: REG-0206
+- regulation_id: REG-0208
   section_number: 5.6.3.
-  section_title: 5.6.3. Romosozumab(如Evenity)：(110/5/1、114/3/1)
+  section_title: 5.6.3. Romosozumab(如Evenity)：(110/5/1、114/3/1、115/8/1)
   chapter: 第5節 激素及影響內分泌機轉藥物
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
-  - (110/5/1、114/3/1)
+  - (110/5/1、114/3/1、115/8/1)
+  - (110/5/1、114/3/1、115/8/1)
+  - (110/5/1、114/3/1、115/8/1)
   medications:
-    drug_classes: []
-    ingredients: []
+    drug_classes:
+    - 副甲狀腺素及類似劑 / 骨質疏鬆症治療藥物
+    ingredients:
+    - Teriparatide (特立帕肽 (副甲狀腺素))
   conditions_of_payment:
     indications:
     - Osteoporosis (骨質疏鬆症)
     laboratory_criteria: []
-    summary: '1.限用於停經後骨質疏鬆婦女。
-
-      2.需符合下列條件：
-
-      (1)引起遠端橈骨、近端肱骨、脊椎或髖部多於2（含）處骨折，經評估（須於病歷載明）無法耐受副作用或在持續配合使用抗骨質吸收劑至少連續12個月的情況下仍發生至少1處新的骨折之病患。(110/5/1、114/3/1)
-
-      (2)骨質疏鬆之程度，須經DXA檢測BMD之T-score小於或等於-3.0。
-
-      3.使用不得超過24支並於一年內使用完畢。
-
-      4.使用期間內不得併用其他骨質疏鬆症治療藥物。
-
-      5.與teriparatide僅得擇一使用，除因耐受性不良，不得互換。'
+    summary: "限用於停經後骨質疏鬆婦女。\n1.\t遠端橈骨、近端肱骨、脊椎或髖部，經DXA檢測BMD之T-score小於或等於-3.0，且需符合下列條件之一：(110/5/1、114/3/1、115/8/1)\n\
+      (1)\t於24個月內，多於2（含）處骨折，其中包含1處新診斷骨折。(110/5/1、114/3/1、115/8/1)\n(2)\t於24個月內，經評估（須於病歷載明）無法耐受副作用或在持續配合使用抗骨質吸收劑的情況下，仍發生至少1處新診斷骨折。(110/5/1、114/3/1、115/8/1)\n\
+      2.\t使用不得超過24支並於一年內使用完畢。\n3.\t使用期間內不得併用其他骨質疏鬆症治療藥物。\n4.\t與terip..."
   reference_annotations:
-    original_clause: 5.6.3. Romosozumab(如Evenity)：(110/5/1、114/3/1)
-    full_text: '1.限用於停經後骨質疏鬆婦女。
-
-      2.需符合下列條件：
-
-      (1)引起遠端橈骨、近端肱骨、脊椎或髖部多於2（含）處骨折，經評估（須於病歷載明）無法耐受副作用或在持續配合使用抗骨質吸收劑至少連續12個月的情況下仍發生至少1處新的骨折之病患。(110/5/1、114/3/1)
-
-      (2)骨質疏鬆之程度，須經DXA檢測BMD之T-score小於或等於-3.0。
-
-      3.使用不得超過24支並於一年內使用完畢。
-
-      4.使用期間內不得併用其他骨質疏鬆症治療藥物。
-
-      5.與teriparatide僅得擇一使用，除因耐受性不良，不得互換。'
+    original_clause: 5.6.3. Romosozumab(如Evenity)：(110/5/1、114/3/1、115/8/1)
+    full_text: "限用於停經後骨質疏鬆婦女。\n1.\t遠端橈骨、近端肱骨、脊椎或髖部，經DXA檢測BMD之T-score小於或等於-3.0，且需符合下列條件之一：(110/5/1、114/3/1、115/8/1)\n\
+      (1)\t於24個月內，多於2（含）處骨折，其中包含1處新診斷骨折。(110/5/1、114/3/1、115/8/1)\n(2)\t於24個月內，經評估（須於病歷載明）無法耐受副作用或在持續配合使用抗骨質吸收劑的情況下，仍發生至少1處新診斷骨折。(110/5/1、114/3/1、115/8/1)\n\
+      2.\t使用不得超過24支並於一年內使用完畢。\n3.\t使用期間內不得併用其他骨質疏鬆症治療藥物。\n4.\t與teriparatide僅得擇一使用，除因耐受性不良，不得互換。"

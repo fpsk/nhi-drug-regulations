@@ -1,13 +1,13 @@
 okf_version: '1.0'
 schema_type: Taiwan_NHI_Drug_Regulation
 chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-total_regulations: 34
+total_regulations: 35
 regulations:
 - regulation_id: REG-0114
   section_number: 3.1.1.
   section_title: 3.1.1. Fat emulsion：或含Fat emulsion之靜脈營養輸液(如含glucose、lipid、amino acid及electrolytes三合一靜脈營養輸液)：(97/11/1、98/7/1、98/12/1)限
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (98/12/1)
   medications:
@@ -33,7 +33,7 @@ regulations:
   section_number: 3.1.2.
   section_title: 3.1.2. Sodium glycerophosphate(如Glycophos)：（111/1/1）
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -57,7 +57,7 @@ regulations:
   section_number: 3.2.
   section_title: 3.2. 維生素 Vitamins
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -119,7 +119,7 @@ regulations:
   section_number: 3.2.1.
   section_title: 3.2.1. Mecobalamin製劑：(85/4/1、100/8/1)
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -186,7 +186,7 @@ regulations:
   section_number: 3.2.2.
   section_title: 3.2.2. 活性維生素D3製劑 (如alfacalcidol；calcitriol) 限下列病例使用：（86/1/1、91/7/1、100/1/1、109/10/1、110/12/1）
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -221,7 +221,7 @@ regulations:
   section_number: 3.3.1.
   section_title: 3.3.1. 肝庇護劑：(85/1/1、88/3/1、94/7/1、108/11/1、114/6/1)
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (108/11/1)
   medications:
@@ -231,7 +231,7 @@ regulations:
     indications:
     - Hepatoprotectants / Liver Protective Agents (肝庇護劑)
     - Liver Cirrhosis (肝硬化)
-    - Hepatitis B / Hepatitis C (肝炎)
+    - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     laboratory_criteria: []
     summary: '1.肝硬化、肝炎患者，限下列情形之一者，得由醫師依肝功能和影像檢查或病理切片檢查確實診斷後，視病情需要處方之。（94/7/1、114/6/1）
 
@@ -263,7 +263,7 @@ regulations:
   section_number: 3.3.2.
   section_title: 3.3.2. α-Keto acid-amino acid製劑(如Ketosteril)：限
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (98/11/1、104/12/1)
   - (104/12/1)
@@ -288,10 +288,11 @@ regulations:
   section_number: 3.3.4.
   section_title: 3.3.4. 口服鈣質補充劑oral calcium salt：（89/2/1）
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - 副甲狀腺素及類似劑 / 骨質疏鬆症治療藥物
     ingredients: []
   conditions_of_payment:
     indications:
@@ -308,7 +309,7 @@ regulations:
   section_number: 3.3.5.
   section_title: 3.3.5. Nutrineal PD4 with 1.1% Amino Acid：(91/2/1、92/10/1、99/5/1)
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (92/10/1、99/5/1)
   medications:
@@ -349,7 +350,7 @@ regulations:
   section_title: 3.3.6. "Baxter" Extraneal Peritoneal Dialysis Solution With 7.5%
     Icodextrin (93/12 /1、96/1/1、99/9/1、100/2/1、108/8/1）
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (100/2/1)
   - (108/8/1)
@@ -408,7 +409,7 @@ regulations:
   section_number: 3.3.7.
   section_title: 3.3.7. Sodium bicarbonate成分之口服製劑給付規定：(95/8/1、96/12/1)
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -424,7 +425,7 @@ regulations:
   section_number: 3.3.8.
   section_title: 3.3.8. Idursulfase(如Elaprase)：(96/7/1、99/8/1、106/10/1)
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (106/10/1)
   - (106/10/1)
@@ -518,7 +519,7 @@ regulations:
   section_title: 3.3.9. Imiglucerase(如Cerezyme inj.)、taliglucerase alfa(如Elelyso注射劑)、velaglucerase
     alfa(如VPRIV凍晶注射劑)（97/7/1、107/3/1、107/9/1、108/5/1、111/5/1）
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (107/3/1、107/9/1、108/5/1、111/5/1)
   medications:
@@ -585,7 +586,7 @@ regulations:
   section_number: 3.3.10.
   section_title: 3.3.10. Laronidase (如Aldurazyme)：(97/7/1、106/10/1)
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -681,7 +682,7 @@ regulations:
   section_number: 3.3.11.
   section_title: 3.3.11. Miglustat（如Zavesca）(98/8/1、108/5/1)
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -748,7 +749,7 @@ regulations:
   section_title: 3.3.12. Sodium phenylacetate＋Sodium benzoate（如Ammonul inj）： (99/2
     /1)
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -766,7 +767,7 @@ regulations:
   section_title: 3.3.13. Agalsidase alfa(如Replagal)、agalsidase beta(如Fabrazyme)及pegunigalsidase
     alfa (如Elfabrio)：(102/1/1、103/9/1、108/5/1、112/8/1、114/2/1)
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (112/8/1、114/2/1)
   medications:
@@ -837,7 +838,7 @@ regulations:
   section_number: 3.3.14.
   section_title: 3.3.14. Carglumic acid (如Carbaglu Tablets)：（102/9/1、106/7/1）
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -891,7 +892,7 @@ regulations:
   section_number: 3.3.15.
   section_title: 3.3.15. Galsulfase (如Naglazyme)：(106/10/1、107/12/1)
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (107/12/1)
   - (107/12/1)
@@ -984,7 +985,7 @@ regulations:
   section_number: 3.3.17.
   section_title: 3.3.17. Elosulfase alfa (如Vimizim) Elosulfase alfa (如Vimizim) (107/4/1、112/7/1)
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (112/7/1)
   - (112/7/1)
@@ -1064,7 +1065,7 @@ regulations:
   section_number: 3.3.18.
   section_title: 3.3.18. Eliglustat Capsules (如Cerdelga ) (108/5/1)
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1082,7 +1083,7 @@ regulations:
   section_number: 3.3.19.
   section_title: 3.3.19. 先天性代謝異常之罕見疾病藥品(108/9/1、108/12/1、111/9/1、113/11/1)
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (108/9/1、113/11/1)
   - (108/12/1)
@@ -1202,7 +1203,7 @@ regulations:
   section_number: 3.3.20.
   section_title: 3.3.20. Polysaccharides of Astragalus membranaceus(如PG2 Lyo. Injection)：(110/3/1)
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1240,7 +1241,7 @@ regulations:
   section_number: 3.3.21.
   section_title: 3.3.21. alpha-glucosidase (如Myozyme)(110/12/1、115/6/1)
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates:
   - (110/12/1、115/6/1)
   - (110/12/1、115/6/1)
@@ -1281,7 +1282,7 @@ regulations:
   section_number: 3.3.22.
   section_title: 3.3.22. CRRT non Ca dialysate：（111/4/1）
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1302,7 +1303,7 @@ regulations:
   section_number: 3.3.23.
   section_title: 3.3.23. 4%檸檬酸鈉溶液(如A.C.D.-4 Solution "S.T.")：（111/4/1）
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1323,7 +1324,7 @@ regulations:
   section_number: 3.3.24.
   section_title: 3.3.24. Support Cal 1.47% CaCl2：（111/4/1）
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1344,7 +1345,7 @@ regulations:
   section_number: 3.3.25.
   section_title: 3.3.25. Chenodeoxycholic acid (111/6/1)
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1384,7 +1385,7 @@ regulations:
   section_number: 3.3.26.
   section_title: 3.3.26. Alfa-avalglucosidase（如 Nexviazyme）（112/4/1）
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1440,7 +1441,7 @@ regulations:
   section_number: 3.3.27.
   section_title: 3.3.27. KH2PO4+Na2HPO4+NaH2PO4．H2O（如PhosAdd Tab.）：（112/5/1）
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1456,7 +1457,7 @@ regulations:
   section_number: 3.3.28.
   section_title: 3.3.28. Migalastat hydrochloride (如Galafold)：(112/8/1、114/2/1)
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1524,7 +1525,7 @@ regulations:
   section_number: 3.3.29.
   section_title: 3.3.29. Burosumab(如Crysvita)：(113/5/1)
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1584,7 +1585,7 @@ regulations:
   section_number: 3.3.30.
   section_title: 3.3.30. Glycerol phenylbutyrate (如Ravicti)：(113/11/1)
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1618,7 +1619,7 @@ regulations:
   section_number: 3.3.31.
   section_title: 3.3.31. Givosiran(如Givlaari)：(114/1/1)
   chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
-  source_file: 完整給付規定1150623.docx
+  source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
     drug_classes: []
@@ -1698,3 +1699,81 @@ regulations:
       7.本藥品不可合併使用human hemin預防性治療(prophylactic hemin)。
 
       8.使用3年後未再發作或大幅改善可先暫停用藥，得視病情需要重新申請使用。'
+- regulation_id: REG-0148
+  section_number: 3.3.32.
+  section_title: 3.3.32. Maralixibat chloride（如 Livmarli）：(115/9/1)
+  chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
+  source_file: 完整給付規定1150821.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients: []
+  conditions_of_payment:
+    indications: []
+    laboratory_criteria: []
+    summary: '限用於
+
+      經衛生福利部國民健康署認定之治療年齡1歲以上之進行性家族性肝內膽汁滯留症(PFIC)病人。
+
+      經衛生福利部國民健康署認定之治療年齡1歲以上之阿拉吉歐症候群(ALGS)病人。
+
+      需經事前審查核准後使用：
+
+      每次申請以6個月為限。
+
+      初次申請時須完全符合以下條件：
+
+      經醫學中心兒科專科醫師且領有兒科消化學次專科醫師證書者評估需接受肝臟移植治療但尚無法取得肝源者，且出現下列任一臨床症狀：
+
+      經內外科處置1個月後，仍有灰白色糞便表現。
+
+      顯著肝門脈高壓、肝臟纖維化(如腹部超音波、電腦斷層或磁振攝影等檢測顯示脾臟腫大，腹水，胃食道靜脈瘤，Fibroscan > 7 kPa，APRI score
+      >0.5等其中...'
+  reference_annotations:
+    original_clause: 3.3.32. Maralixibat chloride（如 Livmarli）：(115/9/1)
+    full_text: '限用於
+
+      經衛生福利部國民健康署認定之治療年齡1歲以上之進行性家族性肝內膽汁滯留症(PFIC)病人。
+
+      經衛生福利部國民健康署認定之治療年齡1歲以上之阿拉吉歐症候群(ALGS)病人。
+
+      需經事前審查核准後使用：
+
+      每次申請以6個月為限。
+
+      初次申請時須完全符合以下條件：
+
+      經醫學中心兒科專科醫師且領有兒科消化學次專科醫師證書者評估需接受肝臟移植治療但尚無法取得肝源者，且出現下列任一臨床症狀：
+
+      經內外科處置1個月後，仍有灰白色糞便表現。
+
+      顯著肝門脈高壓、肝臟纖維化(如腹部超音波、電腦斷層或磁振攝影等檢測顯示脾臟腫大，腹水，胃食道靜脈瘤，Fibroscan > 7 kPa，APRI score
+      >0.5等其中之一)。
+
+      凝血障礙(PT延長 ≥ 1.2)。
+
+      肝肺症候群。
+
+      肺門脈高壓。
+
+      高氨血症。
+
+      肝腦症候群。
+
+      符合下列任一診斷條件：
+
+      治療前血清膽汁酸(sBA)檢測≥100 μmol/L。
+
+      治療前CSS評估膽汁淤積搔癢之分數≥3分。
+
+      續用申請時須符合下列任一診斷條件：
+
+      血清膽汁酸(sBA)：較治療前降幅達≥30%或≤70μmol/L。
+
+      CSS工具評估：膽汁淤積搔癢分數≤1或比基準點改善達到≥1分。
+
+      限由醫學中心兒科專科醫師且領有兒科消化學次專科醫師證書者處方，並應於病歷詳實記載病程、確診之檢驗資料及治療反應。
+
+      每人終生給付以2年為限。倘病人用藥2年間仍無法取得肝源，需檢附證明文件(如無法取得肝源之就醫紀錄)，得重新申請續用。
+
+      若用藥後病人已接受肝臟移植，則需停藥。'

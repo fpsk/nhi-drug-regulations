@@ -9,8 +9,10 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PUBLIC_DIR = os.path.abspath(os.path.join(BASE_DIR, '..', 'public'))
 DATA_DIR = os.path.abspath(os.path.join(BASE_DIR, '..', 'okf_data'))
 UPLOAD_DIR = os.path.abspath(os.path.join(BASE_DIR, '..', 'uploads'))
+SCRATCH_DIR = os.path.abspath(os.path.join(BASE_DIR, '..', 'scratch'))
 
 os.makedirs(UPLOAD_DIR, exist_ok=True)
+os.makedirs(SCRATCH_DIR, exist_ok=True)
 
 app = Flask(__name__, static_folder=PUBLIC_DIR, static_url_path="")
 app.config['UPLOAD_FOLDER'] = UPLOAD_DIR
@@ -28,13 +30,17 @@ def index():
 def mobile_index():
     return send_from_directory(PUBLIC_DIR, 'mobile.html')
 
+@app.route('/visualize/<path:filename>')
+def serve_visualization(filename):
+    return send_from_directory(SCRATCH_DIR, filename)
+
 @app.route('/api/version', methods=['GET'])
 def api_version():
     return jsonify({
         "status": "success",
         "app_name": "Taiwan NHI Drug Regulations Query Engine",
-        "version": "2026.06.30-v3",
-        "latest_features": "Absolute path resolution for cloud mobile routes + Forteo / Teriparatide relevance boosting",
+        "version": "2026.08.21-v0.4",
+        "latest_features": "2026 August Official Update (583 regulations) + Google LangExtract entity grounding",
         "total_regulations": len(indexer.regulations),
         "who_atc_items": len(atc_engine.who_db),
         "atc_db_items": len(atc_engine.atc_db)

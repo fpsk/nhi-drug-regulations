@@ -6,3 +6,7 @@ uploads/
 venv/
 
 健保用藥品項115年07月查詢檔*
+.env
+*.env
+scratch/
+*.pdf

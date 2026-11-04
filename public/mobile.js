@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentRegulations = [];
     let debounceTimer = null;
     let searchAbortController = null;
-    let atcAbortController = null;
 
     // Theme Toggle
     let isDark = true;
@@ -155,16 +154,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Load More event
     mobileLoadMoreBtn.addEventListener('click', loadMoreMobileResults);
-
-    // Detail sheet tabs
-    document.querySelectorAll('.sheet-tab').forEach(tab => {
-        tab.addEventListener('click', (e) => {
-            document.querySelectorAll('.sheet-tab').forEach(t => t.classList.remove('active'));
-            document.querySelectorAll('.sheet-tab-content').forEach(c => c.classList.remove('active'));
-            e.target.classList.add('active');
-            document.getElementById(e.target.getAttribute('data-stab')).classList.add('active');
-        });
-    });
 
     closeSheetBtn.addEventListener('click', () => mobileDetailSheet.classList.add('hidden'));
     closeUploadSheetBtn.addEventListener('click', () => mobileUploadSheet.classList.add('hidden'));
@@ -372,12 +361,15 @@ document.addEventListener('DOMContentLoaded', () => {
                         uniqueBios.push(b);
                     }
                 });
-                labBadges = uniqueBios.slice(0, 4).map(b => 
-                    `<span class="badge-biomarker"><i class="fa-solid fa-vial-circle-check"></i> ${b.biomarker} ${b.operator === 'status' ? '' : b.operator}${b.value}${b.unit ? ' ' + b.unit : ''}</span>`
-                ).join(' ');
+                labBadges = uniqueBios.slice(0, 4).map(b => {
+                    const opStr = b.operator === 'status' ? '' : escapeHtml(b.operator);
+                    const valStr = escapeHtml(String(b.value));
+                    const unitStr = b.unit ? ' ' + escapeHtml(b.unit) : '';
+                    return `<span class="badge-biomarker"><i class="fa-solid fa-vial-circle-check"></i> ${escapeHtml(b.biomarker)} ${opStr}${valStr}${unitStr}</span>`;
+                }).join(' ');
             } else {
                 const labs = reg.conditions_of_payment.laboratory_criteria || [];
-                labBadges = labs.map(l => `<span class="m-tag-lab"><i class="fa-solid fa-flask"></i> ${l}</span>`).join(' ');
+                labBadges = labs.map(l => `<span class="m-tag-lab"><i class="fa-solid fa-flask"></i> ${escapeHtml(l)}</span>`).join(' ');
             }
 
             const priorAuthBadge = reg.conditions_of_payment.prior_authorization_required 
@@ -385,7 +377,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 : '';
 
             const indications = reg.conditions_of_payment.indications || [];
-            const indicationBadges = indications.map(ind => `<span class="m-tag-ind"><i class="fa-solid fa-notes-medical"></i> ${ind}</span>`).join(' ');
+            const indicationBadges = indications.map(ind => `<span class="m-tag-ind"><i class="fa-solid fa-notes-medical"></i> ${escapeHtml(ind)}</span>`).join(' ');
 
             card.innerHTML = `
                 <div class="m-card-header">
@@ -442,6 +434,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (criteriaSection && chipsContainer) {
             chipsContainer.innerHTML = '';
             const bios = reg.conditions_of_payment.structured_biomarkers || [];
+            const steps = reg.conditions_of_payment.step_therapy || [];
+            const stops = reg.conditions_of_payment.stopping_rules || [];
             const evals = reg.conditions_of_payment.evaluation_intervals || [];
             const priorAuth = reg.conditions_of_payment.prior_authorization_required;
             const priorAuthGrounding = reg.conditions_of_payment.prior_authorization_grounding;
@@ -454,15 +448,54 @@ document.addEventListener('DOMContentLoaded', () => {
                 priorAuthEl.innerHTML = '';
             }
 
-            if (bios.length > 0 || evals.length > 0 || priorAuth) {
+            const chipStyle = 'background:rgba(30,41,59,0.9); border:1px solid rgba(56,189,248,0.3); border-radius:6px; padding:0.25rem 0.55rem; font-size:0.75rem; color:#e2e8f0; cursor:pointer;';
+            if (bios.length > 0 || steps.length > 0 || stops.length > 0 || evals.length > 0 || priorAuth) {
                 criteriaSection.classList.remove('hidden');
                 bios.forEach((b) => {
                     const chip = document.createElement('button');
-                    chip.style.cssText = 'background:rgba(30,41,59,0.9); border:1px solid rgba(56,189,248,0.3); border-radius:6px; padding:0.25rem 0.55rem; font-size:0.75rem; color:#e2e8f0; cursor:pointer;';
+                    chip.style.cssText = chipStyle;
                     const snippetText = b.source_grounding ? (b.source_grounding.snippet || b.source_grounding.matched_text || '') : '';
                     chip.innerHTML = `<i class="fa-solid fa-vial" style="color:#10b981;"></i> <strong>${escapeHtml(b.biomarker)}</strong> ${escapeHtml(b.operator === 'status' ? '' : b.operator)} ${escapeHtml(String(b.value))}${b.unit ? ' ' + escapeHtml(b.unit) : ''}`;
                     chip.addEventListener('click', () => {
                         if (snippetText) scrollToMobileHighlight(reg.reference_annotations.full_text, snippetText);
+                    });
+                    chipsContainer.appendChild(chip);
+                });
+
+                evals.forEach((ev) => {
+                    const chip = document.createElement('button');
+                    chip.style.cssText = chipStyle;
+                    const evLabel = typeof ev === 'string' ? ev : (ev.schedule || ev.frequency || '');
+                    const evSnippet = typeof ev === 'string' ? ev : (ev.source_grounding ? (ev.source_grounding.snippet || ev.source_grounding.matched_text) : evLabel);
+                    chip.innerHTML = `<i class="fa-regular fa-clock" style="color:#38bdf8;"></i> 評估/續用: ${escapeHtml(evLabel)}`;
+                    chip.addEventListener('click', () => {
+                        if (evSnippet) scrollToMobileHighlight(reg.reference_annotations.full_text, evSnippet);
+                    });
+                    chipsContainer.appendChild(chip);
+                });
+
+                steps.slice(0, 3).forEach((st) => {
+                    const chip = document.createElement('button');
+                    chip.style.cssText = chipStyle;
+                    const stLabel = typeof st === 'string' ? st : (st.rule || st.requirement || '');
+                    const stSnippet = typeof st === 'string' ? st : (st.source_grounding ? (st.source_grounding.snippet || st.source_grounding.matched_text) : stLabel);
+                    const shortRule = stLabel.length > 22 ? stLabel.substring(0, 22) + '...' : stLabel;
+                    chip.innerHTML = `<i class="fa-solid fa-stairs" style="color:#f59e0b;"></i> 二線/轉換: ${escapeHtml(shortRule)}`;
+                    chip.addEventListener('click', () => {
+                        if (stSnippet) scrollToMobileHighlight(reg.reference_annotations.full_text, stSnippet);
+                    });
+                    chipsContainer.appendChild(chip);
+                });
+
+                stops.slice(0, 3).forEach((sp) => {
+                    const chip = document.createElement('button');
+                    chip.style.cssText = chipStyle;
+                    const spLabel = typeof sp === 'string' ? sp : (sp.rule || sp.condition || '');
+                    const spSnippet = typeof sp === 'string' ? sp : (sp.source_grounding ? (sp.source_grounding.snippet || sp.source_grounding.matched_text) : spLabel);
+                    const shortRule = spLabel.length > 22 ? spLabel.substring(0, 22) + '...' : spLabel;
+                    chip.innerHTML = `<i class="fa-solid fa-ban" style="color:#ef4444;"></i> 停藥/排除: ${escapeHtml(shortRule)}`;
+                    chip.addEventListener('click', () => {
+                        if (spSnippet) scrollToMobileHighlight(reg.reference_annotations.full_text, spSnippet);
                     });
                     chipsContainer.appendChild(chip);
                 });

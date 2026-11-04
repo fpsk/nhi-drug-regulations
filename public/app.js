@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentRegulations = [];
     let debounceTimer = null;
     let searchAbortController = null;
-    let atcAbortController = null;
 
     // Initialize
     loadChapters();
@@ -116,18 +115,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     loadMoreBtn.addEventListener('click', () => {
         loadMoreResults();
-    });
-
-    // Modal tabs
-    document.querySelectorAll('.tab-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-            
-            e.target.classList.add('active');
-            const tabId = e.target.getAttribute('data-tab');
-            document.getElementById(tabId).classList.add('active');
-        });
     });
 
     closeModal.addEventListener('click', () => detailModal.classList.add('hidden'));
@@ -430,11 +417,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
                 labBadges = uniqueBios.slice(0, 5).map(b => {
                     const snippetText = b.source_grounding ? (b.source_grounding.snippet || b.source_grounding.matched_text || '') : '';
-                    return `<span class="badge-biomarker" title="點擊內文可定位原始依據: ${escapeHtml(snippetText)}"><i class="fa-solid fa-vial-circle-check"></i> ${b.biomarker} ${b.operator === 'status' ? '' : b.operator}${b.value}${b.unit ? ' ' + b.unit : ''}</span>`;
+                    const opStr = b.operator === 'status' ? '' : escapeHtml(b.operator);
+                    const valStr = escapeHtml(String(b.value));
+                    const unitStr = b.unit ? ' ' + escapeHtml(b.unit) : '';
+                    return `<span class="badge-biomarker" title="點擊內文可定位原始依據: ${escapeHtml(snippetText)}"><i class="fa-solid fa-vial-circle-check"></i> ${escapeHtml(b.biomarker)} ${opStr}${valStr}${unitStr}</span>`;
                 }).join(' ');
             } else {
                 const labs = reg.conditions_of_payment.laboratory_criteria || [];
-                labBadges = labs.map(l => `<span class="badge-lab"><i class="fa-solid fa-flask"></i> ${l}</span>`).join(' ');
+                labBadges = labs.map(l => `<span class="badge-lab"><i class="fa-solid fa-flask"></i> ${escapeHtml(l)}</span>`).join(' ');
             }
             
             const priorAuthBadge = reg.conditions_of_payment.prior_authorization_required 
@@ -442,7 +432,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 : '';
 
             const indications = reg.conditions_of_payment.indications || [];
-            const indicationBadges = indications.map(ind => `<span class="badge-indication"><i class="fa-solid fa-notes-medical"></i> ${ind}</span>`).join(' ');
+            const indicationBadges = indications.map(ind => `<span class="badge-indication"><i class="fa-solid fa-notes-medical"></i> ${escapeHtml(ind)}</span>`).join(' ');
 
             card.innerHTML = `
                 <div>

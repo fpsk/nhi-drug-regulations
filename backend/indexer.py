@@ -77,12 +77,27 @@ class NHIIndexer:
             self._compiled_word_regex[term] = pat
         return pat
 
+    LAB_FILTER_GROUP_MAP = {
+        "bnp/nt-probnp": {"nt-probnp", "bnp", "probnp"},
+        "uacr": {"uacr", "upcr"},
+        "alt": {"alt", "ast", "gpt", "got"},
+        "braf": {"braf", "ras", "kras", "nras", "ros1"},
+        "psa": {"psa", "afp"},
+        "pasi": {"pasi", "easi"},
+        "mmse": {"mmse", "cdr"},
+        "dexa/bmd": {"t-score", "bmd", "dexa"},
+        "hbv dna": {"hbv dna", "hbsag", "hbeag"},
+        "hcv rna": {"hcv rna", "anti-hcv"},
+        "hb": {"hb", "hemoglobin", "血色素", "血紅素"},
+        "anc": {"anc", "wbc", "白血球"},
+        "platelet": {"platelet", "血小板"},
+    }
+
     def load_and_index(self):
         self.regulations = []
         self.index = {
             "by_section": {},
             "by_keyword": {},
-            "by_drug": {},
             "by_lab": {}
         }
 
@@ -110,6 +125,12 @@ class NHIIndexer:
         reg["_classes_lower"] = [c.lower() for c in reg.get("medications", {}).get("drug_classes", [])]
         reg["_ingredients_lower"] = [i.lower() for i in reg.get("medications", {}).get("ingredients", [])]
         reg["_indications_lower"] = [ind.lower() for ind in reg.get("conditions_of_payment", {}).get("indications", [])]
+        lab_tokens = {l.lower() for l in reg.get("conditions_of_payment", {}).get("laboratory_criteria", [])}
+        for b in reg.get("conditions_of_payment", {}).get("structured_biomarkers", []):
+            bio_name = b.get("biomarker", "").lower()
+            if bio_name:
+                lab_tokens.add(bio_name)
+        reg["_lab_tokens_lower"] = lab_tokens
 
         self.regulations.append(reg)
         reg_id = reg["regulation_id"]
@@ -326,6 +347,7 @@ class NHIIndexer:
 
         results = []
         lab_filter_lower = lab_filter.lower() if lab_filter else None
+        lab_filter_targets = self.LAB_FILTER_GROUP_MAP.get(lab_filter_lower, {lab_filter_lower}) if lab_filter_lower else None
 
         for reg in self.regulations:
             if chapter_filter and chapter_filter not in reg["chapter"]:
@@ -336,9 +358,7 @@ class NHIIndexer:
                     if not reg.get("conditions_of_payment", {}).get("prior_authorization_required"):
                         continue
                 else:
-                    reg_labs = [l.lower() for l in reg.get("conditions_of_payment", {}).get("laboratory_criteria", [])]
-                    reg_bios = [b.get("biomarker", "").lower() for b in reg.get("conditions_of_payment", {}).get("structured_biomarkers", [])]
-                    if lab_filter_lower not in reg_labs and lab_filter_lower not in reg_bios:
+                    if not (reg["_lab_tokens_lower"] & lab_filter_targets):
                         continue
 
             if not query_clean and not disease_query_clean:

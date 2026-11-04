@@ -28,7 +28,7 @@
                 <i class="fa-solid fa-prescription-bottle-medical brand-icon"></i>
                 <div>
                     <h2 style="font-size: 1.15rem; font-weight: 700; color: var(--text-main);">台灣健保藥物給付規定查詢</h2>
-                    <p class="brand-sub" style="color: #38bdf8; font-weight: 600;">2026年8月更新 · OKF v0.2</p>
+                    <p class="brand-sub" style="color: #38bdf8; font-weight: 600;">2026年8月更新 (583 條規定)</p>
                 </div>
             </div>
             <button id="themeToggleBtn" class="btn-theme" aria-label="Toggle Theme">
@@ -147,10 +147,6 @@
                 <button id="closeSheetBtn" class="btn-sheet-close"><i class="fa-solid fa-xmark"></i></button>
             </div>
             <div class="sheet-body">
-                <div class="sheet-tabs">
-                    <button class="sheet-tab active" data-stab="sAnnotateTab"><i class="fa-solid fa-file-contract"></i> 條文標註</button>
-                    <button class="sheet-tab" data-stab="sOkfTab"><i class="fa-solid fa-code"></i> OKF 結構</button>
-                </div>
                 <div id="sAnnotateTab" class="sheet-tab-content active">
                     <div class="sheet-meta">
                         <div class="meta-item">
@@ -162,7 +158,7 @@
                     </div>
                     <div id="sheetStructuredCriteriaSection" class="hidden" style="margin: 0.75rem 0; background: rgba(15, 23, 42, 0.55); border: 1px solid rgba(56, 189, 248, 0.25); border-radius: 10px; padding: 0.75rem;">
                         <div style="font-size: 0.82rem; font-weight: 700; color: #38bdf8; margin-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: center;">
-                            <span><i class="fa-solid fa-microscope"></i> LangExtract 臨床門檻 (點選定位)</span>
+                            <span><i class="fa-solid fa-microscope"></i> 結構化臨床門檻 (點選定位)</span>
                             <span id="sheetPriorAuthBadge"></span>
                         </div>
                         <div id="sheetStructuredChips" style="display: flex; flex-wrap: wrap; gap: 0.4rem;"></div>
@@ -170,9 +166,6 @@
                     <div class="sheet-text-box">
                         <div id="sheetFullText" class="sheet-full-text"></div>
                     </div>
-                </div>
-                <div id="sOkfTab" class="sheet-tab-content">
-                    <pre><code id="sheetOkfYaml"></code></pre>
                 </div>
             </div>
         </div>
@@ -204,14 +197,13 @@
                     </div>
                     <div id="mobileUploadStatus" class="upload-status"></div>
                     <button type="submit" class="btn btn-primary btn-block" id="mobileStartUploadBtn">
-                        驗證密碼並建置 OKF 知識庫
+                        驗證密碼並建置知識庫
                     </button>
                 </form>
             </div>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
-    <script src="mobile.js?v=7"></script>
+    <script src="mobile.js?v=8"></script>
 </body>
 </html>

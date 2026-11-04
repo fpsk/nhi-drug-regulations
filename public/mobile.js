@@ -474,12 +474,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const activeQuery = mobileSearchInput.value.trim().split(',')[0].split('，')[0].trim();
         renderFormattedText(sheetFullText, reg.reference_annotations.full_text, activeQuery.length >= 2 ? activeQuery : null);
 
-        if (window.jsyaml) {
-            document.getElementById('sheetOkfYaml').textContent = jsyaml.dump(reg);
-        } else {
-            document.getElementById('sheetOkfYaml').textContent = JSON.stringify(reg, null, 2);
-        }
-
         mobileDetailSheet.classList.remove('hidden');
     }
 

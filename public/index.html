@@ -26,7 +26,7 @@
             <i class="fa-solid fa-prescription-bottle-medical logo-icon"></i>
             <div>
                 <h1 style="font-size: 1.5rem; font-weight: 700; color: #f8fafc;">台灣健保藥物給付規定查詢</h1>
-                <p id="appVersionSubtitle" class="subtitle" style="color: #38bdf8; font-weight: 600; margin-top: 0.15rem; font-size: 0.9rem;">2026年8月更新 · Google OKF v0.2 (583 條規定)</p>
+                <p id="appVersionSubtitle" class="subtitle" style="color: #38bdf8; font-weight: 600; margin-top: 0.15rem; font-size: 0.9rem;">2026年8月更新 (583 條規定)</p>
             </div>
         </div>
         <div class="nav-actions">
@@ -169,10 +169,6 @@
                 <button id="closeModal" class="btn-icon"><i class="fa-solid fa-xmark"></i></button>
             </div>
             <div class="modal-body">
-                <div class="modal-tabs">
-                    <button class="tab-btn active" data-tab="annotationTab"><i class="fa-solid fa-file-contract"></i> 條文與參考標註</button>
-                    <button class="tab-btn" data-tab="okfTab"><i class="fa-solid fa-code"></i> Google OKF YAML 結構</button>
-                </div>
                 <div id="annotationTab" class="tab-content active">
                     <div class="meta-section">
                         <div class="meta-box">
@@ -186,7 +182,7 @@
                     </div>
                     <div id="modalStructuredCriteriaSection" class="structured-criteria-section hidden">
                         <div class="structured-criteria-header">
-                            <span><i class="fa-solid fa-microscope"></i> LangExtract 結構化臨床核對門檻 (點擊可高亮原始條文)</span>
+                            <span><i class="fa-solid fa-microscope"></i> 結構化臨床核對門檻 (點擊可高亮原始條文)</span>
                             <span id="modalPriorAuthBadge"></span>
                         </div>
                         <div id="modalStructuredChips" class="criteria-chip-list"></div>
@@ -195,9 +191,6 @@
                         <h4><i class="fa-solid fa-quote-left"></i> 原始條文內文 (與給付條件標註)</h4>
                         <div id="modalFullText" class="full-text"></div>
                     </div>
-                </div>
-                <div id="okfTab" class="tab-content">
-                    <pre><code id="modalOkfYaml"></code></pre>
                 </div>
             </div>
         </div>
@@ -229,14 +222,13 @@
                     </div>
                     <div id="uploadStatus" class="upload-status"></div>
                     <button type="submit" class="btn btn-primary btn-block" id="startUploadBtn">
-                        驗證密碼並自動更新 OKF 知識庫
+                        驗證密碼並自動更新知識庫
                     </button>
                 </form>
             </div>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
-    <script src="app.js?v=7"></script>
+    <script src="app.js?v=8"></script>
 </body>
 </html>

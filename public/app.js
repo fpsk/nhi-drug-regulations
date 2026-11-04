@@ -600,12 +600,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const fullTextContainer = document.getElementById('modalFullText');
         const activeQuery = searchInput.value.trim().split(',')[0].split('，')[0].trim();
         renderFormattedText(fullTextContainer, reg.reference_annotations.full_text, activeQuery.length >= 2 ? activeQuery : null);
-        
-        if (window.jsyaml) {
-            document.getElementById('modalOkfYaml').textContent = jsyaml.dump(reg);
-        } else {
-            document.getElementById('modalOkfYaml').textContent = JSON.stringify(reg, null, 2);
-        }
 
         detailModal.classList.remove('hidden');
     }

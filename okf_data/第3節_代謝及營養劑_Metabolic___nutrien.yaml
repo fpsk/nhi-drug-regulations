@@ -1,6 +1,20 @@
-okf_version: '1.0'
-schema_type: Taiwan_NHI_Drug_Regulation
+okf_version: '0.2'
+type: regulation/taiwan_nhi_drug_payment
 chapter: 第3節 代謝及營養劑 Metabolic & nutrient agents
+provenance:
+  authority: 衛生福利部中央健康保險署 (Taiwan NHIA)
+  source_document: 完整給付規定1150821.docx
+  jurisdiction: TW
+  legal_basis: 全民健康保險法第41條暨全民健康保險藥物給付項目及支付標準
+trust:
+  tier: machine-confirmed
+  extracted_by: LangExtract-NHI-Engine
+  grounding_verified: true
+  confidence_score: 0.98
+lifecycle:
+  status: active
+  last_synced: '2026-11-04'
+  stale_after: '2026-12-31'
 total_regulations: 35
 regulations:
 - regulation_id: REG-0114
@@ -16,11 +30,22 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.嚴重燒傷病人，為靜脈營養補充。
-
-      2.使用全靜脈營養者。
-
-      3.重大手術後五至七天仍不能經腸道進食者，每日不超過一瓶為原則。(98/12/1)'
+    summary: 規範【. Fat emulsion：或含Fat emulsion之靜脈營養輸液(如含glucose、lipid、amino acid及electrolytes三合一靜脈營養輸液)：限】之健保給付條件。
+      規範重點：1.嚴重燒傷病人，為靜脈營養補充。
+    clinical_rules:
+    - indication: 3.1.1. Fat emulsion：或含Fat emulsion之靜脈營養輸液(如含glucose、lipid、amino
+        acid及electrolytes三合一靜脈營養輸液)：(97/11/1、98/7/1、98/12/1)限
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 3.1.1. Fat emulsion：或含Fat emulsion之靜脈營養輸液(如含glucose、lipid、amino
       acid及electrolytes三合一靜脈營養輸液)：(97/11/1、98/7/1、98/12/1)限
@@ -37,15 +62,27 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Sodium Glycerophosphate (如 Glycophos)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.限用於接受靜脈營養補充，且臨床上有低血磷及相關症狀的病人使用。
-
-      2.早產兒有臨床需要者。
-
-      3.用於成人以使用7日為限。'
+    summary: 規範【. Sodium glycerophosphate(如Glycophos)：】之健保給付條件。 規範重點：1.限用於接受靜脈營養補充，且臨床上有低血磷及相關症狀的病人使用。
+    clinical_rules:
+    - indication: 3.1.2. Sodium glycerophosphate(如Glycophos)：（111/1/1）
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 使用7日為限
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 使用7日為限
   reference_annotations:
     original_clause: 3.1.2. Sodium glycerophosphate(如Glycophos)：（111/1/1）
     full_text: '1.限用於接受靜脈營養補充，且臨床上有低血磷及相關症狀的病人使用。
@@ -73,20 +110,62 @@ regulations:
     - Angular Cheilitis (Vitamin B2 Deficiency) (口角炎)
     - Anemia (貧血)
     laboratory_criteria: []
-    summary: '（使用維生素醫治之適應症詳附表三-Ａ）
-
-
-      【附表詳細內容 / Attached Table Details】:
-
-      藥品名稱 | 醫治病症
-
-      維生素A | 夜盲症、眼球乾燥症、角膜軟化症、皮膚角化異常症
-
-      維生素B1（89/2/1） | 維生素B1（thiamine）缺乏症、營養吸收障礙症候群（malabsorptionsyndrome）、或胰臟炎等需以全靜脈營養劑（totalparenteralnutrition,TPN）提供營養支持之病患、酒精戒斷症候群（alcoholwithdrawalsyndrome）。
-
-      維生素B2 | 口角炎、維生素B2有效之皮膚病
-
-      維生素B6 | 妊娠嘔吐、維生素B6有效...'
+    summary: 適用於【Scurvy、Rickets / Osteomalacia、Night Blindness / Xerophthalmia】之健保給付。
+    clinical_rules:
+    - indication: Scurvy (Vitamin C Deficiency) (壞血病)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Rickets / Osteomalacia (Vitamin D Deficiency) (佝僂病)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Night Blindness / Xerophthalmia (Vitamin A Deficiency) (夜盲症)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Pellagra (Niacin / Vitamin B3 Deficiency) (癩皮症)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Megaloblastic Anemia (Vitamin B12 / Folic Acid Deficiency) (巨球性貧血)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Thiamine Deficiency / Malabsorption Syndrome (Vitamin B1) (維生素B1缺乏症)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Angular Cheilitis (Vitamin B2 Deficiency) (口角炎)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Anemia (貧血)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 3.2. 維生素 Vitamins
     full_text: '（使用維生素醫治之適應症詳附表三-Ａ）
@@ -136,20 +215,69 @@ regulations:
     - Diabetes Mellitus (糖尿病)
     - Anemia (貧血)
     laboratory_criteria: []
-    summary: '限符合以下條件之一使用：
-
-      1.糖尿病併發周邊神經病變並具有臨床神經學病徵 (須於處方上敘明)。
-
-      2.經神經科專科醫師診斷或經神經傳導(NCV) 檢查證實之慢性多發性神經病變(chronic polyneuropathy)。（100/8/1）
-
-
-      【附表詳細內容 / Attached Table Details】:
-
-      藥品名稱 | 醫治病症
-
-      維生素A | 夜盲症、眼球乾燥症、角膜軟化症、皮膚角化異常症
-
-      維生素B1（89/2/1） | 維生素B1（thiamine）缺乏症、營養吸收障礙症候群（malabsorptionsyndrome）、或胰臟炎等需以全靜脈營養劑（totalparenteralnut...'
+    summary: 適用於【Scurvy、Rickets / Osteomalacia、Night Blindness / Xerophthalmia】之健保給付。
+      規範重點：限符合以下條件之一使用： 1.糖尿病併發周邊神經病變並具有臨床神經學病徵 (須於處方上敘明)。
+    clinical_rules:
+    - indication: Scurvy (Vitamin C Deficiency) (壞血病)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Rickets / Osteomalacia (Vitamin D Deficiency) (佝僂病)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Night Blindness / Xerophthalmia (Vitamin A Deficiency) (夜盲症)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Pellagra (Niacin / Vitamin B3 Deficiency) (癩皮症)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Megaloblastic Anemia (Vitamin B12 / Folic Acid Deficiency) (巨球性貧血)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Thiamine Deficiency / Malabsorption Syndrome (Vitamin B1) (維生素B1缺乏症)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Angular Cheilitis (Vitamin B2 Deficiency) (口角炎)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Diabetes Mellitus (糖尿病)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Anemia (貧血)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 3.2.1. Mecobalamin製劑：(85/4/1、100/8/1)
     full_text: '限符合以下條件之一使用：
@@ -203,11 +331,541 @@ regulations:
     - Chronic Kidney Disease (慢性腎臟病)
     - Hypoparathyroidism (副甲狀腺機能低下症)
     - Anemia (貧血)
-    laboratory_criteria: []
-    summary: "1.\tVit.D依賴型佝僂症或低磷血佝僂症。(應附醫學中心之診斷證明)\n2.\t副甲狀腺機能低下症。(應檢附病歷影本)\n3.\t\
-      慢性腎臟病引起之低血鈣症，並限eGFR小於45mL/min/1.73 m2，或PTH-i大於正常值三倍以上，血中鈣濃度在10.5mg/dL以上病例不可使用，每6個月須檢測病人血中鈣磷乘積，若血鈣*血磷>55mg2/dL2者不可使用。（109/10/1、110/12/1）。\n\
-      4.\t停經後婦女患有脊椎壓迫性骨折或髖骨骨折病患。\n\n【附表詳細內容 / Attached Table Details】:\n藥品名稱 | 醫治病症\n\
-      維生素A | 夜盲症、眼球乾燥症、角膜軟化症、皮膚角化..."
+    laboratory_criteria:
+    - Ca_x_P
+    - Calcium
+    - PTH-i
+    summary: 適用於【Scurvy、Rickets / Osteomalacia、Night Blindness / Xerophthalmia】之健保給付。
+      主要條件包含：臨床檢驗需符合 Ca_x_P > 55mg2/dL2, Calcium >= 10.5mg/dL, PTH-i >= 3倍。
+    clinical_rules:
+    - indication: Scurvy (Vitamin C Deficiency) (壞血病)
+      biomarkers:
+      - biomarker: Ca_x_P
+        operator: '>'
+        value: '55'
+        unit: mg2/dL2
+        duration: 6個月
+        terminology_bindings:
+          loinc: 13454-4
+          snomed_ct: '166732003'
+          snomed_procedure: 50676-6
+          snomed_finding: '166732003'
+        source_grounding:
+          start_char: 157
+          end_char: 172
+          snippet: 血鈣*血磷>55mg2/dL2
+      - biomarker: Calcium
+        operator: '>='
+        value: '10.5'
+        unit: mg/dL
+        duration: 6個月
+        terminology_bindings:
+          loinc: 17861-6
+          snomed_ct: '166701009'
+          snomed_procedure: '104934005'
+          snomed_finding: '166701009'
+        source_grounding:
+          start_char: 116
+          end_char: 133
+          snippet: 血中鈣濃度在10.5mg/dL以上
+      - biomarker: PTH-i
+        operator: '>='
+        value: '3'
+        unit: 倍
+        duration: 6個月
+        terminology_bindings:
+          loinc: 2731-8
+          snomed_ct: '1109581000000102'
+          snomed_procedure: '1109581000000102'
+          snomed_finding: '1109581000000102'
+        source_grounding:
+          start_char: 101
+          end_char: 115
+          snippet: PTH-i大於正常值三倍以上
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Rickets / Osteomalacia (Vitamin D Deficiency) (佝僂病)
+      biomarkers:
+      - biomarker: Ca_x_P
+        operator: '>'
+        value: '55'
+        unit: mg2/dL2
+        duration: 6個月
+        terminology_bindings:
+          loinc: 13454-4
+          snomed_ct: '166732003'
+          snomed_procedure: 50676-6
+          snomed_finding: '166732003'
+        source_grounding:
+          start_char: 157
+          end_char: 172
+          snippet: 血鈣*血磷>55mg2/dL2
+      - biomarker: Calcium
+        operator: '>='
+        value: '10.5'
+        unit: mg/dL
+        duration: 6個月
+        terminology_bindings:
+          loinc: 17861-6
+          snomed_ct: '166701009'
+          snomed_procedure: '104934005'
+          snomed_finding: '166701009'
+        source_grounding:
+          start_char: 116
+          end_char: 133
+          snippet: 血中鈣濃度在10.5mg/dL以上
+      - biomarker: PTH-i
+        operator: '>='
+        value: '3'
+        unit: 倍
+        duration: 6個月
+        terminology_bindings:
+          loinc: 2731-8
+          snomed_ct: '1109581000000102'
+          snomed_procedure: '1109581000000102'
+          snomed_finding: '1109581000000102'
+        source_grounding:
+          start_char: 101
+          end_char: 115
+          snippet: PTH-i大於正常值三倍以上
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Night Blindness / Xerophthalmia (Vitamin A Deficiency) (夜盲症)
+      biomarkers:
+      - biomarker: Ca_x_P
+        operator: '>'
+        value: '55'
+        unit: mg2/dL2
+        duration: 6個月
+        terminology_bindings:
+          loinc: 13454-4
+          snomed_ct: '166732003'
+          snomed_procedure: 50676-6
+          snomed_finding: '166732003'
+        source_grounding:
+          start_char: 157
+          end_char: 172
+          snippet: 血鈣*血磷>55mg2/dL2
+      - biomarker: Calcium
+        operator: '>='
+        value: '10.5'
+        unit: mg/dL
+        duration: 6個月
+        terminology_bindings:
+          loinc: 17861-6
+          snomed_ct: '166701009'
+          snomed_procedure: '104934005'
+          snomed_finding: '166701009'
+        source_grounding:
+          start_char: 116
+          end_char: 133
+          snippet: 血中鈣濃度在10.5mg/dL以上
+      - biomarker: PTH-i
+        operator: '>='
+        value: '3'
+        unit: 倍
+        duration: 6個月
+        terminology_bindings:
+          loinc: 2731-8
+          snomed_ct: '1109581000000102'
+          snomed_procedure: '1109581000000102'
+          snomed_finding: '1109581000000102'
+        source_grounding:
+          start_char: 101
+          end_char: 115
+          snippet: PTH-i大於正常值三倍以上
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Pellagra (Niacin / Vitamin B3 Deficiency) (癩皮症)
+      biomarkers:
+      - biomarker: Ca_x_P
+        operator: '>'
+        value: '55'
+        unit: mg2/dL2
+        duration: 6個月
+        terminology_bindings:
+          loinc: 13454-4
+          snomed_ct: '166732003'
+          snomed_procedure: 50676-6
+          snomed_finding: '166732003'
+        source_grounding:
+          start_char: 157
+          end_char: 172
+          snippet: 血鈣*血磷>55mg2/dL2
+      - biomarker: Calcium
+        operator: '>='
+        value: '10.5'
+        unit: mg/dL
+        duration: 6個月
+        terminology_bindings:
+          loinc: 17861-6
+          snomed_ct: '166701009'
+          snomed_procedure: '104934005'
+          snomed_finding: '166701009'
+        source_grounding:
+          start_char: 116
+          end_char: 133
+          snippet: 血中鈣濃度在10.5mg/dL以上
+      - biomarker: PTH-i
+        operator: '>='
+        value: '3'
+        unit: 倍
+        duration: 6個月
+        terminology_bindings:
+          loinc: 2731-8
+          snomed_ct: '1109581000000102'
+          snomed_procedure: '1109581000000102'
+          snomed_finding: '1109581000000102'
+        source_grounding:
+          start_char: 101
+          end_char: 115
+          snippet: PTH-i大於正常值三倍以上
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Megaloblastic Anemia (Vitamin B12 / Folic Acid Deficiency) (巨球性貧血)
+      biomarkers:
+      - biomarker: Ca_x_P
+        operator: '>'
+        value: '55'
+        unit: mg2/dL2
+        duration: 6個月
+        terminology_bindings:
+          loinc: 13454-4
+          snomed_ct: '166732003'
+          snomed_procedure: 50676-6
+          snomed_finding: '166732003'
+        source_grounding:
+          start_char: 157
+          end_char: 172
+          snippet: 血鈣*血磷>55mg2/dL2
+      - biomarker: Calcium
+        operator: '>='
+        value: '10.5'
+        unit: mg/dL
+        duration: 6個月
+        terminology_bindings:
+          loinc: 17861-6
+          snomed_ct: '166701009'
+          snomed_procedure: '104934005'
+          snomed_finding: '166701009'
+        source_grounding:
+          start_char: 116
+          end_char: 133
+          snippet: 血中鈣濃度在10.5mg/dL以上
+      - biomarker: PTH-i
+        operator: '>='
+        value: '3'
+        unit: 倍
+        duration: 6個月
+        terminology_bindings:
+          loinc: 2731-8
+          snomed_ct: '1109581000000102'
+          snomed_procedure: '1109581000000102'
+          snomed_finding: '1109581000000102'
+        source_grounding:
+          start_char: 101
+          end_char: 115
+          snippet: PTH-i大於正常值三倍以上
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Thiamine Deficiency / Malabsorption Syndrome (Vitamin B1) (維生素B1缺乏症)
+      biomarkers:
+      - biomarker: Ca_x_P
+        operator: '>'
+        value: '55'
+        unit: mg2/dL2
+        duration: 6個月
+        terminology_bindings:
+          loinc: 13454-4
+          snomed_ct: '166732003'
+          snomed_procedure: 50676-6
+          snomed_finding: '166732003'
+        source_grounding:
+          start_char: 157
+          end_char: 172
+          snippet: 血鈣*血磷>55mg2/dL2
+      - biomarker: Calcium
+        operator: '>='
+        value: '10.5'
+        unit: mg/dL
+        duration: 6個月
+        terminology_bindings:
+          loinc: 17861-6
+          snomed_ct: '166701009'
+          snomed_procedure: '104934005'
+          snomed_finding: '166701009'
+        source_grounding:
+          start_char: 116
+          end_char: 133
+          snippet: 血中鈣濃度在10.5mg/dL以上
+      - biomarker: PTH-i
+        operator: '>='
+        value: '3'
+        unit: 倍
+        duration: 6個月
+        terminology_bindings:
+          loinc: 2731-8
+          snomed_ct: '1109581000000102'
+          snomed_procedure: '1109581000000102'
+          snomed_finding: '1109581000000102'
+        source_grounding:
+          start_char: 101
+          end_char: 115
+          snippet: PTH-i大於正常值三倍以上
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Angular Cheilitis (Vitamin B2 Deficiency) (口角炎)
+      biomarkers:
+      - biomarker: Ca_x_P
+        operator: '>'
+        value: '55'
+        unit: mg2/dL2
+        duration: 6個月
+        terminology_bindings:
+          loinc: 13454-4
+          snomed_ct: '166732003'
+          snomed_procedure: 50676-6
+          snomed_finding: '166732003'
+        source_grounding:
+          start_char: 157
+          end_char: 172
+          snippet: 血鈣*血磷>55mg2/dL2
+      - biomarker: Calcium
+        operator: '>='
+        value: '10.5'
+        unit: mg/dL
+        duration: 6個月
+        terminology_bindings:
+          loinc: 17861-6
+          snomed_ct: '166701009'
+          snomed_procedure: '104934005'
+          snomed_finding: '166701009'
+        source_grounding:
+          start_char: 116
+          end_char: 133
+          snippet: 血中鈣濃度在10.5mg/dL以上
+      - biomarker: PTH-i
+        operator: '>='
+        value: '3'
+        unit: 倍
+        duration: 6個月
+        terminology_bindings:
+          loinc: 2731-8
+          snomed_ct: '1109581000000102'
+          snomed_procedure: '1109581000000102'
+          snomed_finding: '1109581000000102'
+        source_grounding:
+          start_char: 101
+          end_char: 115
+          snippet: PTH-i大於正常值三倍以上
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Chronic Kidney Disease (慢性腎臟病)
+      biomarkers:
+      - biomarker: Ca_x_P
+        operator: '>'
+        value: '55'
+        unit: mg2/dL2
+        duration: 6個月
+        terminology_bindings:
+          loinc: 13454-4
+          snomed_ct: '166732003'
+          snomed_procedure: 50676-6
+          snomed_finding: '166732003'
+        source_grounding:
+          start_char: 157
+          end_char: 172
+          snippet: 血鈣*血磷>55mg2/dL2
+      - biomarker: Calcium
+        operator: '>='
+        value: '10.5'
+        unit: mg/dL
+        duration: 6個月
+        terminology_bindings:
+          loinc: 17861-6
+          snomed_ct: '166701009'
+          snomed_procedure: '104934005'
+          snomed_finding: '166701009'
+        source_grounding:
+          start_char: 116
+          end_char: 133
+          snippet: 血中鈣濃度在10.5mg/dL以上
+      - biomarker: PTH-i
+        operator: '>='
+        value: '3'
+        unit: 倍
+        duration: 6個月
+        terminology_bindings:
+          loinc: 2731-8
+          snomed_ct: '1109581000000102'
+          snomed_procedure: '1109581000000102'
+          snomed_finding: '1109581000000102'
+        source_grounding:
+          start_char: 101
+          end_char: 115
+          snippet: PTH-i大於正常值三倍以上
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Hypoparathyroidism (副甲狀腺機能低下症)
+      biomarkers:
+      - biomarker: Ca_x_P
+        operator: '>'
+        value: '55'
+        unit: mg2/dL2
+        duration: 6個月
+        terminology_bindings:
+          loinc: 13454-4
+          snomed_ct: '166732003'
+          snomed_procedure: 50676-6
+          snomed_finding: '166732003'
+        source_grounding:
+          start_char: 157
+          end_char: 172
+          snippet: 血鈣*血磷>55mg2/dL2
+      - biomarker: Calcium
+        operator: '>='
+        value: '10.5'
+        unit: mg/dL
+        duration: 6個月
+        terminology_bindings:
+          loinc: 17861-6
+          snomed_ct: '166701009'
+          snomed_procedure: '104934005'
+          snomed_finding: '166701009'
+        source_grounding:
+          start_char: 116
+          end_char: 133
+          snippet: 血中鈣濃度在10.5mg/dL以上
+      - biomarker: PTH-i
+        operator: '>='
+        value: '3'
+        unit: 倍
+        duration: 6個月
+        terminology_bindings:
+          loinc: 2731-8
+          snomed_ct: '1109581000000102'
+          snomed_procedure: '1109581000000102'
+          snomed_finding: '1109581000000102'
+        source_grounding:
+          start_char: 101
+          end_char: 115
+          snippet: PTH-i大於正常值三倍以上
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Anemia (貧血)
+      biomarkers:
+      - biomarker: Ca_x_P
+        operator: '>'
+        value: '55'
+        unit: mg2/dL2
+        duration: 6個月
+        terminology_bindings:
+          loinc: 13454-4
+          snomed_ct: '166732003'
+          snomed_procedure: 50676-6
+          snomed_finding: '166732003'
+        source_grounding:
+          start_char: 157
+          end_char: 172
+          snippet: 血鈣*血磷>55mg2/dL2
+      - biomarker: Calcium
+        operator: '>='
+        value: '10.5'
+        unit: mg/dL
+        duration: 6個月
+        terminology_bindings:
+          loinc: 17861-6
+          snomed_ct: '166701009'
+          snomed_procedure: '104934005'
+          snomed_finding: '166701009'
+        source_grounding:
+          start_char: 116
+          end_char: 133
+          snippet: 血中鈣濃度在10.5mg/dL以上
+      - biomarker: PTH-i
+        operator: '>='
+        value: '3'
+        unit: 倍
+        duration: 6個月
+        terminology_bindings:
+          loinc: 2731-8
+          snomed_ct: '1109581000000102'
+          snomed_procedure: '1109581000000102'
+          snomed_finding: '1109581000000102'
+        source_grounding:
+          start_char: 101
+          end_char: 115
+          snippet: PTH-i大於正常值三倍以上
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers:
+    - biomarker: Ca_x_P
+      operator: '>'
+      value: '55'
+      unit: mg2/dL2
+      duration: 6個月
+      terminology_bindings:
+        loinc: 13454-4
+        snomed_ct: '166732003'
+        snomed_procedure: 50676-6
+        snomed_finding: '166732003'
+      source_grounding:
+        start_char: 157
+        end_char: 172
+        snippet: 血鈣*血磷>55mg2/dL2
+    - biomarker: Calcium
+      operator: '>='
+      value: '10.5'
+      unit: mg/dL
+      duration: 6個月
+      terminology_bindings:
+        loinc: 17861-6
+        snomed_ct: '166701009'
+        snomed_procedure: '104934005'
+        snomed_finding: '166701009'
+      source_grounding:
+        start_char: 116
+        end_char: 133
+        snippet: 血中鈣濃度在10.5mg/dL以上
+    - biomarker: PTH-i
+      operator: '>='
+      value: '3'
+      unit: 倍
+      duration: 6個月
+      terminology_bindings:
+        loinc: 2731-8
+        snomed_ct: '1109581000000102'
+        snomed_procedure: '1109581000000102'
+        snomed_finding: '1109581000000102'
+      source_grounding:
+        start_char: 101
+        end_char: 115
+        snippet: PTH-i大於正常值三倍以上
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 3.2.2. 活性維生素D3製劑 (如alfacalcidol；calcitriol) 限下列病例使用：（86/1/1、91/7/1、100/1/1、109/10/1、110/12/1）
     full_text: "1.\tVit.D依賴型佝僂症或低磷血佝僂症。(應附醫學中心之診斷證明)\n2.\t副甲狀腺機能低下症。(應檢附病歷影本)\n3.\t\
@@ -225,7 +883,8 @@ regulations:
   effective_dates:
   - (108/11/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 肝臟治療劑 / 肝庇護劑 (保肝劑)
     ingredients: []
   conditions_of_payment:
     indications:
@@ -233,17 +892,33 @@ regulations:
     - Liver Cirrhosis (肝硬化)
     - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     laboratory_criteria: []
-    summary: '1.肝硬化、肝炎患者，限下列情形之一者，得由醫師依肝功能和影像檢查或病理切片檢查確實診斷後，視病情需要處方之。（94/7/1、114/6/1）
-
-      （1）HBV（+）或HCV（+）之病患且GOT或GPT值大於等於正常值上限1倍以上。
-
-      （2）任何原因所引起之肝硬化且GOT或GPT值大於等於正常值上限1倍以上。
-
-      （3）HBV（-）及HCV（-）之病患，GOT或GPT值大於等於正常值上限2倍以上。
-
-      2.肝庇護劑之使用，門診以口服一種為原則；使用於高血氨症(hyperammonemia) 之肝庇護劑應檢附氨之異常報告。
-
-      3.使用肝庇護劑應檢附肝功能報告，該報告有效期為三至六個月，逾期應再複查。(108/1...'
+    summary: 適用於【Hepatoprotectants / Liver Protective Agents、Liver Cirrhosis、Hepatitis
+      B / Hepatitis C】之健保給付。 規範重點：1.肝硬化、肝炎患者，限下列情形之一者，得由醫師依肝功能和影像檢查或病理切片檢查確實診斷後，視病情需要處方之。
+    clinical_rules:
+    - indication: Hepatoprotectants / Liver Protective Agents (肝庇護劑)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Liver Cirrhosis (肝硬化)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 3.3.1. 肝庇護劑：(85/1/1、88/3/1、94/7/1、108/11/1、114/6/1)
     full_text: '1.肝硬化、肝炎患者，限下列情形之一者，得由醫師依肝功能和影像檢查或病理切片檢查確實診斷後，視病情需要處方之。（94/7/1、114/6/1）
@@ -275,10 +950,81 @@ regulations:
   conditions_of_payment:
     indications:
     - Chronic Kidney Disease (慢性腎臟病)
-    laboratory_criteria: []
-    summary: "1.限慢性腎衰竭病患行低蛋白飲食治療，連續三個月，每個月之腎絲球過濾率eGFR ≦15mL/min /1.73 m2且尚未接受透析治療，每日至多使用六顆。(98/11/1、104/12/1)\n\
-      2.使用時應每兩個月檢查一次，腎絲球過濾率eGFR≧25mL/min/1.73 m2時，或服用本品期間病人若發生體重減輕>5%或血清白蛋白降低>5%之情況或病人不遵守低蛋白飲食時，應即停藥。(104/12/1)\n\
-      3.本品不得用於透析及換腎病患，並不得做為一般營養補充劑。(103/4/1)\n4.\t使用本品時不得與同類品製劑(例如 Amiyu‥）同時處方。(93/12/1)"
+    laboratory_criteria:
+    - eGFR
+    summary: 適用於【Chronic Kidney Disease】之健保給付。 主要條件包含：臨床檢驗需符合 eGFR <= 15mL/min, eGFR
+      >= 25mL/min。
+    clinical_rules:
+    - indication: Chronic Kidney Disease (慢性腎臟病)
+      biomarkers:
+      - biomarker: eGFR
+        operator: <=
+        value: '15'
+        unit: mL/min
+        duration: 連續三個月
+        terminology_bindings:
+          loinc: 62238-1
+          snomed_ct: '1011481000000105'
+          snomed_procedure: '1011481000000105'
+          snomed_finding: '1011481000000105'
+        source_grounding:
+          start_char: 35
+          end_char: 49
+          snippet: eGFR ≦15mL/min
+      - biomarker: eGFR
+        operator: '>='
+        value: '25'
+        unit: mL/min
+        duration: null
+        terminology_bindings:
+          loinc: 62238-1
+          snomed_ct: '1011481000000105'
+          snomed_procedure: '1011481000000105'
+          snomed_finding: '1011481000000105'
+        source_grounding:
+          start_char: 117
+          end_char: 130
+          snippet: eGFR≧25mL/min
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules:
+      - '>5%或血清白蛋白降低>5%之情況或病人不遵守低蛋白飲食時，應即停藥。(104/12/1)'
+      evaluation_frequency: []
+    structured_biomarkers:
+    - biomarker: eGFR
+      operator: <=
+      value: '15'
+      unit: mL/min
+      duration: 連續三個月
+      terminology_bindings:
+        loinc: 62238-1
+        snomed_ct: '1011481000000105'
+        snomed_procedure: '1011481000000105'
+        snomed_finding: '1011481000000105'
+      source_grounding:
+        start_char: 35
+        end_char: 49
+        snippet: eGFR ≦15mL/min
+    - biomarker: eGFR
+      operator: '>='
+      value: '25'
+      unit: mL/min
+      duration: null
+      terminology_bindings:
+        loinc: 62238-1
+        snomed_ct: '1011481000000105'
+        snomed_procedure: '1011481000000105'
+        snomed_finding: '1011481000000105'
+      source_grounding:
+        start_char: 117
+        end_char: 130
+        snippet: eGFR≧25mL/min
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules:
+    - '>5%或血清白蛋白降低>5%之情況或病人不遵守低蛋白飲食時，應即停藥。(104/12/1)'
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 3.3.2. α-Keto acid-amino acid製劑(如Ketosteril)：限
     full_text: "1.限慢性腎衰竭病患行低蛋白飲食治療，連續三個月，每個月之腎絲球過濾率eGFR ≦15mL/min /1.73 m2且尚未接受透析治療，每日至多使用六顆。(98/11/1、104/12/1)\n\
@@ -299,8 +1045,26 @@ regulations:
     - Rickets / Osteomalacia (Vitamin D Deficiency) (佝僂病)
     - Osteoporosis (骨質疏鬆症)
     laboratory_criteria: []
-    summary: "限下列病患使用：\n1.\t骨質疏鬆（osteoporosis）或軟骨病（osteomalacia）病患。\n2.\t高磷酸鹽血症（hyperphosphatemia）或低血鈣症（hypocalcemia）。\n\
-      3.\t長期使用糖皮質類固醇（glucocorticoid）病患。\n4.\t腎衰竭病患。"
+    summary: "適用於【Rickets / Osteomalacia、Osteoporosis】之健保給付。 規範重點：限下列病患使用： 1.\t骨質疏鬆（osteoporosis）或軟骨病（osteomalacia）病患。"
+    clinical_rules:
+    - indication: Rickets / Osteomalacia (Vitamin D Deficiency) (佝僂病)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Osteoporosis (骨質疏鬆症)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 3.3.4. 口服鈣質補充劑oral calcium salt：（89/2/1）
     full_text: "限下列病患使用：\n1.\t骨質疏鬆（osteoporosis）或軟骨病（osteomalacia）病患。\n2.\t高磷酸鹽血症（hyperphosphatemia）或低血鈣症（hypocalcemia）。\n\
@@ -318,19 +1082,50 @@ regulations:
   conditions_of_payment:
     indications:
     - Chronic Kidney Disease (慢性腎臟病)
-    laboratory_criteria: []
-    summary: '1.限長期接受腹膜透析之病患使用；該病患至少接受腹膜透析（CAPD）三個月以上者。
-
-      2.每天限使用一袋代替葡萄糖腹膜透析液。
-
-      3.serum albumin ≦3.5gm/dL 或nPNA <0.9患者使用，需附開始CAPD當月的檢驗報告影本。
-
-      【註: nPNA (normalized protein equivalent of total nitrogen appearance) (gm/kg/day)
-      = [10.76×(0.69×UNA+1.46)] ÷body weight (kg)】
-
-      4.每週Kt/V需＞1.7。(92/10/1、99/5/1)
-
-      5.不得同時合併其他胺基酸（amino...'
+    laboratory_criteria:
+    - Albumin
+    summary: 適用於【Chronic Kidney Disease】之健保給付。 主要條件包含：臨床檢驗需符合 Albumin <= 3.5g/dL。
+    clinical_rules:
+    - indication: Chronic Kidney Disease (慢性腎臟病)
+      biomarkers:
+      - biomarker: Albumin
+        operator: <=
+        value: '3.5'
+        unit: g/dL
+        duration: 三個月以上
+        terminology_bindings:
+          loinc: 1751-7
+          snomed_ct: '104485008'
+          snomed_procedure: '104485008'
+          snomed_finding: '1153477009'
+        source_grounding:
+          start_char: 71
+          end_char: 83
+          snippet: albumin ≦3.5
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers:
+    - biomarker: Albumin
+      operator: <=
+      value: '3.5'
+      unit: g/dL
+      duration: 三個月以上
+      terminology_bindings:
+        loinc: 1751-7
+        snomed_ct: '104485008'
+        snomed_procedure: '104485008'
+        snomed_finding: '1153477009'
+      source_grounding:
+        start_char: 71
+        end_char: 83
+        snippet: albumin ≦3.5
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 3.3.5. Nutrineal PD4 with 1.1% Amino Acid：(91/2/1、92/10/1、99/5/1)
     full_text: '1.限長期接受腹膜透析之病患使用；該病患至少接受腹膜透析（CAPD）三個月以上者。
@@ -364,25 +1159,27 @@ regulations:
     - Chronic Kidney Disease (慢性腎臟病)
     - Diabetes Mellitus (糖尿病)
     laboratory_criteria: []
-    summary: '1.限下列病患使用：
-
-      (1)high transporters病患，用於每天長留置期。(100/2/1)
-
-      (2) high average transporters 病患，每天使用1袋≧2.5%葡萄糖腹膜透析液。(108/8/1)
-
-      (3)脫水衰竭病患及臨界脫水衰竭邊緣之病患，即病患下列情形之一者：
-
-      I.使用4.25% 傳統式葡萄糖腹膜透析液4小時內脫水量小於等於400cc.者。
-
-      II.每天使用總袋數1/2以上（含）2.5﹪葡萄糖腹膜透析液。(108/8/1)
-
-      (4)HbA1c大於7.0 ﹪的糖尿病腹膜透析病患，用於每天長留置期。
-
-      (5)腹膜炎病患。
-
-      2.每天限用一袋。
-
-      3.申報時，應檢附最近1...'
+    summary: 適用於【Chronic Kidney Disease、Diabetes Mellitus】之健保給付。 規範重點：1.限下列病患使用： (1)high
+      transporters病患，用於每天長留置期。
+    clinical_rules:
+    - indication: Chronic Kidney Disease (慢性腎臟病)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Diabetes Mellitus (糖尿病)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 3.3.6. "Baxter" Extraneal Peritoneal Dialysis Solution With 7.5%
       Icodextrin (93/12 /1、96/1/1、99/9/1、100/2/1、108/8/1）
@@ -417,7 +1214,20 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 限用於代謝性酸中毒。
+    summary: 規範【. Sodium bicarbonate成分之口服製劑給付規定：】之健保給付條件。
+    clinical_rules:
+    - indication: 3.3.7. Sodium bicarbonate成分之口服製劑給付規定：(95/8/1、96/12/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 3.3.7. Sodium bicarbonate成分之口服製劑給付規定：(95/8/1、96/12/1)
     full_text: 限用於代謝性酸中毒。
@@ -436,19 +1246,31 @@ regulations:
   - (106/10/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Idursulfase (如 Elaprase)
   conditions_of_payment:
     indications: []
     laboratory_criteria:
     - 白血球
-    summary: '1.病患須符合以下診斷條件：除了臨床表徵及尿液葡萄醣胺聚醣定性、定量檢驗的佐證外，須證明患者週邊血液白血球或血漿，或經培養之皮膚纖維芽細胞的IDS
-      酵素活性缺乏，或者是患者位於X 染色體Xq27-28 位點上之IDS 基因經分子生物學檢驗確認有一處已知或必然會引起黏多醣第Ⅱ型（MPSⅡ）之突變。(106/10/1)
-
-      2.限兒科專科經醫學遺傳學次專科訓練取得證書之醫師使用。(106/10/1)
-
-      3.排除使用於：(106/10/1)
-
-      (1)因idursulfase無法通過血腦屏障(blood-brain barrier)，靜脈注射idursulfas無法有效治療MPSⅡA，若有明顯中樞神經症狀且持...'
+    summary: 規範【. Idursulfase(如Elaprase)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: 3.3.8. Idursulfase(如Elaprase)：(96/7/1、99/8/1、106/10/1)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 療程以1年為限
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 846
+      end_char: 850
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 療程以1年為限
   reference_annotations:
     original_clause: 3.3.8. Idursulfase(如Elaprase)：(96/7/1、99/8/1、106/10/1)
     full_text: '1.病患須符合以下診斷條件：除了臨床表徵及尿液葡萄醣胺聚醣定性、定量檢驗的佐證外，須證明患者週邊血液白血球或血漿，或經培養之皮膚纖維芽細胞的IDS
@@ -524,20 +1346,42 @@ regulations:
   - (107/3/1、107/9/1、108/5/1、111/5/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Imiglucerase (如 Cerezyme inj.)
+    - Taliglucerase Alfa (如 Elelyso注射劑)
+    - Velaglucerase Alfa (如 VPRIV凍晶注射劑)
   conditions_of_payment:
     indications:
     - Anemia (貧血)
     - Immune Thrombocytopenia (ITP) (特發性血小板減少性紫斑症)
     laboratory_criteria:
     - 血小板
-    summary: '1.限用於下列條件，且排除第二型高雪氏症：(111/5/1）
-
-      (1)Imiglucerase(如Cerezyme inj.)、taliglucerase alfa(如Elelyso注射劑)：改善高雪氏症症狀，包括貧血、血小板減少症、肝臟或脾臟腫大、骨病變，但對於神經學症狀無效。（97/7/1、107/3/1、107/9/1、108/5/1、111/5/1）
-
-      (2)Velaglucerase alfa(如VPRIV凍晶注射劑)：限用於改善第一型高雪氏症症狀，包括貧血、血小板減少症、肝臟或脾臟腫大、骨病變，但對於神經學症狀無效。(107/3/1、107/9/1、108/5/1、111/5/1)
-
-      2...'
+    summary: 適用於【Anemia、Immune Thrombocytopenia】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Anemia (貧血)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 每次申請療程以1年為限
+    - indication: Immune Thrombocytopenia (ITP) (特發性血小板減少性紫斑症)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 每次申請療程以1年為限
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 332
+      end_char: 336
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 每次申請療程以1年為限
   reference_annotations:
     original_clause: 3.3.9. Imiglucerase(如Cerezyme inj.)、taliglucerase alfa(如Elelyso注射劑)、velaglucerase
       alfa(如VPRIV凍晶注射劑)（97/7/1、107/3/1、107/9/1、108/5/1、111/5/1）
@@ -590,29 +1434,30 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Laronidase (如 Aldurazyme)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.限下列病例使用：
-
-      (1)黏多醣症第一型賀勒-施艾氏症患者。
-
-      (2)黏多醣症第一型中度至重度之施艾氏症患者。
-
-      (3)黏多醣症第一型賀勒氏症進行造血幹細胞移植或手術前後。
-
-      備註：針對早期診斷帶有文獻報告已知的嚴重型突變點的病人，應持續追蹤其臨床症狀，若在兩歲以前出現明顯症狀 (疝氣或呼吸道阻塞等，建議儘速進行造血幹細胞移植，如為未知但預測為嚴重型突變的病人，比照處理。
-
-      2.限兒科專科經醫學遺傳學次專科訓練取得證書之醫師使用。
-
-      3.排除使用於：
-
-      (1)未經治療之患者沒有任何會影響健康之症狀時。
-
-      (2)患者有明顯之中樞神經症狀時。
-
-      (3)重型病患：完全臥床且無行動能力，或是無法自行呼吸且完全仰賴呼...'
+    summary: 規範【. Laronidase (如Aldurazyme)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: 3.3.10. Laronidase (如Aldurazyme)：(97/7/1、106/10/1)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 療程以1年為限
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 463
+      end_char: 467
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 療程以1年為限
   reference_annotations:
     original_clause: 3.3.10. Laronidase (如Aldurazyme)：(97/7/1、106/10/1)
     full_text: '1.限下列病例使用：
@@ -686,35 +1531,28 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Miglustat (如 Zavesca)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.限用於第一型高雪氏症、Niemann-Pick Disease Type C之治療。
-
-      2.本品使用於Niemann-Pick Disease Type C之規定：
-
-      (1)需事前審查，核准後才得以使用。
-
-      (2)不得併用其他高雪氏症酵素療法之藥品。
-
-      (3)申請使用藥物時需附上之資料包括:
-
-      Ⅰ生化或基因分析等足以確定診斷之依據。
-
-      Ⅱ臨床、神經學或影像上顯示有神經系統之侵犯。
-
-      (4)限遺傳或神經專科醫師使用，每六個月須再申請事前審查一次。
-
-      (5)治療前應告知患者及家長其有義務接受定期追蹤評估。
-
-      (6)醫師應定期追蹤評估治療效果及副作用。
-
-      (7)申報費用時須檢附病歷資料。
-
-      (8)排除條件
-
-      Ⅰ對於嚴重...'
+    summary: 規範【. Miglustat（如Zavesca）】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: 3.3.11. Miglustat（如Zavesca）(98/8/1、108/5/1)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 88
+      end_char: 92
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 3.3.11. Miglustat（如Zavesca）(98/8/1、108/5/1)
     full_text: '1.限用於第一型高雪氏症、Niemann-Pick Disease Type C之治療。
@@ -753,11 +1591,26 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Sodium Benzoate (如 Ammonul inj)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 限用於先天性尿素循環代謝障礙之急性血氨症及伴隨腦部病變。
+    summary: 規範【. Sodium phenylacetate＋Sodium benzoate（如Ammonul inj）：】之健保給付條件。 規範重點：限用於先天性尿素循環代謝障礙之急性血氨症及伴隨腦部病變。
+    clinical_rules:
+    - indication: 3.3.12. Sodium phenylacetate＋Sodium benzoate（如Ammonul inj）： (99/2
+        /1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 3.3.12. Sodium phenylacetate＋Sodium benzoate（如Ammonul inj）： (99/2
       /1)
@@ -772,7 +1625,10 @@ regulations:
   - (112/8/1、114/2/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Agalsidase Alfa (如 Replagal)
+    - Agalsidase Beta (如 Fabrazyme)
+    - Pegunigalsidase Alfa (如 Elfabrio)
   conditions_of_payment:
     indications:
     - Heart Failure (心臟衰竭)
@@ -784,21 +1640,272 @@ regulations:
     laboratory_criteria:
     - eGFR
     - 血壓
-    summary: '1.病患須符合以下診斷條件：(112/8/1、114/2/1)
-
-      (1)確定診斷為典型法布瑞氏症之患者，且符合下列條件之一：（108/5/1、112/8/1）
-
-      I. 出現肢端疼痛排汗障礙，或中風
-
-      II.蛋白尿、微量白蛋白尿(Microalbuminuria)
-
-      III.不整脈(附表心電圖〔ECG〕第2項)或心室肥大
-
-      (2)確定診斷為法布瑞氏症非典型患者，且符合下列所有條件：（108/5/1、112/8/1、114/2/1)
-
-      Ⅰ.經腎臟或心臟切片證實與法布瑞氏症相關。（108/5/1）
-
-      Ⅱ.法布瑞氏症IVS4+919G>A基因型患者，於「法布瑞氏症心臟變異型心臟功能評估指標表」(詳罕見疾病通報審查基...'
+    - NYHA
+    summary: 適用於【Heart Failure、Stroke / Cerebrovascular Accident、Myocardial Infarction】之健保給付。
+      主要條件包含：臨床檢驗需符合 NYHA = IVClass, NYHA = IVClass；使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Heart Failure (心臟衰竭)
+      biomarkers:
+      - biomarker: NYHA
+        operator: '='
+        value: IV
+        unit: Class
+        duration: null
+        terminology_bindings:
+          loinc: 88020-3
+          snomed_ct: '420816009'
+          snomed_procedure: '420816009'
+          snomed_finding: '420816009'
+        source_grounding:
+          start_char: 551
+          end_char: 564
+          snippet: NYHA class IV
+      - biomarker: NYHA
+        operator: '='
+        value: IV
+        unit: Class
+        duration: 2年
+        terminology_bindings:
+          loinc: 88020-3
+          snomed_ct: '420816009'
+          snomed_procedure: '420816009'
+          snomed_finding: '420816009'
+        source_grounding:
+          start_char: 845
+          end_char: 858
+          snippet: NYHA class IV
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules:
+      - 7.使用本類藥品需完成個案系統登錄，亦需於療程結束或停止使用該藥品後，於此系統登錄結案。逾期未登錄結案者，系統自動結案，且不予支付該個案自前次事前審查核定日後申
+      evaluation_frequency:
+      - 每一年須重新評估
+      - 療程以1年為限
+    - indication: Stroke / Cerebrovascular Accident (腦中風)
+      biomarkers:
+      - biomarker: NYHA
+        operator: '='
+        value: IV
+        unit: Class
+        duration: null
+        terminology_bindings:
+          loinc: 88020-3
+          snomed_ct: '420816009'
+          snomed_procedure: '420816009'
+          snomed_finding: '420816009'
+        source_grounding:
+          start_char: 551
+          end_char: 564
+          snippet: NYHA class IV
+      - biomarker: NYHA
+        operator: '='
+        value: IV
+        unit: Class
+        duration: 2年
+        terminology_bindings:
+          loinc: 88020-3
+          snomed_ct: '420816009'
+          snomed_procedure: '420816009'
+          snomed_finding: '420816009'
+        source_grounding:
+          start_char: 845
+          end_char: 858
+          snippet: NYHA class IV
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules:
+      - 7.使用本類藥品需完成個案系統登錄，亦需於療程結束或停止使用該藥品後，於此系統登錄結案。逾期未登錄結案者，系統自動結案，且不予支付該個案自前次事前審查核定日後申
+      evaluation_frequency:
+      - 每一年須重新評估
+      - 療程以1年為限
+    - indication: Myocardial Infarction (心肌梗塞)
+      biomarkers:
+      - biomarker: NYHA
+        operator: '='
+        value: IV
+        unit: Class
+        duration: null
+        terminology_bindings:
+          loinc: 88020-3
+          snomed_ct: '420816009'
+          snomed_procedure: '420816009'
+          snomed_finding: '420816009'
+        source_grounding:
+          start_char: 551
+          end_char: 564
+          snippet: NYHA class IV
+      - biomarker: NYHA
+        operator: '='
+        value: IV
+        unit: Class
+        duration: 2年
+        terminology_bindings:
+          loinc: 88020-3
+          snomed_ct: '420816009'
+          snomed_procedure: '420816009'
+          snomed_finding: '420816009'
+        source_grounding:
+          start_char: 845
+          end_char: 858
+          snippet: NYHA class IV
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules:
+      - 7.使用本類藥品需完成個案系統登錄，亦需於療程結束或停止使用該藥品後，於此系統登錄結案。逾期未登錄結案者，系統自動結案，且不予支付該個案自前次事前審查核定日後申
+      evaluation_frequency:
+      - 每一年須重新評估
+      - 療程以1年為限
+    - indication: Hypertension (高血壓)
+      biomarkers:
+      - biomarker: NYHA
+        operator: '='
+        value: IV
+        unit: Class
+        duration: null
+        terminology_bindings:
+          loinc: 88020-3
+          snomed_ct: '420816009'
+          snomed_procedure: '420816009'
+          snomed_finding: '420816009'
+        source_grounding:
+          start_char: 551
+          end_char: 564
+          snippet: NYHA class IV
+      - biomarker: NYHA
+        operator: '='
+        value: IV
+        unit: Class
+        duration: 2年
+        terminology_bindings:
+          loinc: 88020-3
+          snomed_ct: '420816009'
+          snomed_procedure: '420816009'
+          snomed_finding: '420816009'
+        source_grounding:
+          start_char: 845
+          end_char: 858
+          snippet: NYHA class IV
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules:
+      - 7.使用本類藥品需完成個案系統登錄，亦需於療程結束或停止使用該藥品後，於此系統登錄結案。逾期未登錄結案者，系統自動結案，且不予支付該個案自前次事前審查核定日後申
+      evaluation_frequency:
+      - 每一年須重新評估
+      - 療程以1年為限
+    - indication: Alzheimer's Disease / Dementia (阿茲海默症)
+      biomarkers:
+      - biomarker: NYHA
+        operator: '='
+        value: IV
+        unit: Class
+        duration: null
+        terminology_bindings:
+          loinc: 88020-3
+          snomed_ct: '420816009'
+          snomed_procedure: '420816009'
+          snomed_finding: '420816009'
+        source_grounding:
+          start_char: 551
+          end_char: 564
+          snippet: NYHA class IV
+      - biomarker: NYHA
+        operator: '='
+        value: IV
+        unit: Class
+        duration: 2年
+        terminology_bindings:
+          loinc: 88020-3
+          snomed_ct: '420816009'
+          snomed_procedure: '420816009'
+          snomed_finding: '420816009'
+        source_grounding:
+          start_char: 845
+          end_char: 858
+          snippet: NYHA class IV
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules:
+      - 7.使用本類藥品需完成個案系統登錄，亦需於療程結束或停止使用該藥品後，於此系統登錄結案。逾期未登錄結案者，系統自動結案，且不予支付該個案自前次事前審查核定日後申
+      evaluation_frequency:
+      - 每一年須重新評估
+      - 療程以1年為限
+    - indication: Diabetes Mellitus (糖尿病)
+      biomarkers:
+      - biomarker: NYHA
+        operator: '='
+        value: IV
+        unit: Class
+        duration: null
+        terminology_bindings:
+          loinc: 88020-3
+          snomed_ct: '420816009'
+          snomed_procedure: '420816009'
+          snomed_finding: '420816009'
+        source_grounding:
+          start_char: 551
+          end_char: 564
+          snippet: NYHA class IV
+      - biomarker: NYHA
+        operator: '='
+        value: IV
+        unit: Class
+        duration: 2年
+        terminology_bindings:
+          loinc: 88020-3
+          snomed_ct: '420816009'
+          snomed_procedure: '420816009'
+          snomed_finding: '420816009'
+        source_grounding:
+          start_char: 845
+          end_char: 858
+          snippet: NYHA class IV
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules:
+      - 7.使用本類藥品需完成個案系統登錄，亦需於療程結束或停止使用該藥品後，於此系統登錄結案。逾期未登錄結案者，系統自動結案，且不予支付該個案自前次事前審查核定日後申
+      evaluation_frequency:
+      - 每一年須重新評估
+      - 療程以1年為限
+    structured_biomarkers:
+    - biomarker: NYHA
+      operator: '='
+      value: IV
+      unit: Class
+      duration: null
+      terminology_bindings:
+        loinc: 88020-3
+        snomed_ct: '420816009'
+        snomed_procedure: '420816009'
+        snomed_finding: '420816009'
+      source_grounding:
+        start_char: 551
+        end_char: 564
+        snippet: NYHA class IV
+    - biomarker: NYHA
+      operator: '='
+      value: IV
+      unit: Class
+      duration: 2年
+      terminology_bindings:
+        loinc: 88020-3
+        snomed_ct: '420816009'
+        snomed_procedure: '420816009'
+        snomed_finding: '420816009'
+      source_grounding:
+        start_char: 845
+        end_char: 858
+        snippet: NYHA class IV
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 747
+      end_char: 751
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules:
+    - 7.使用本類藥品需完成個案系統登錄，亦需於療程結束或停止使用該藥品後，於此系統登錄結案。逾期未登錄結案者，系統自動結案，且不予支付該個案自前次事前審查核定日後申
+    evaluation_intervals:
+    - 每一年須重新評估
+    - 療程以1年為限
   reference_annotations:
     original_clause: 3.3.13. Agalsidase alfa(如Replagal)、agalsidase beta(如Fabrazyme)及pegunigalsidase
       alfa (如Elfabrio)：(102/1/1、103/9/1、108/5/1、112/8/1、114/2/1)
@@ -842,27 +1949,34 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Carglumic Acid (如 Carbaglu Tablets)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.限下列病例使用：
-
-      (1)N-乙醯麩胺酸合成酶缺乏症(以下稱NAGS 缺乏症)。
-
-      (2)異戊酸血症及甲基丙二酸血症及丙酸血症。
-
-      (3)初次發作之不明原因高血氨，懷疑是先天代謝異常者 (血氨值在新生兒高於150μmol/L，在其他患者高於100μmol/L)。（106/7/1）
-
-      2.應由具小兒專科醫師證書且接受過小兒遺傳或小兒新陳代謝等次專科訓練之醫師處方使用。
-
-      3.使用時須符合下列規定：（106/7/1）
-
-      (1)病歷應詳實記載病程、確診之檢驗資料及治療反應。
-
-      (2)異戊酸血症及甲基丙二酸血症及丙酸血症患者，每次以使用7天為限，一年不超過21天為限。
-
-      (3)初次發作之不明原因高血氨，懷疑是先天...'
+    summary: 規範【. Carglumic acid (如Carbaglu Tablets)：】之健保給付條件。 規範重點：1.限下列病例使用： (1)N-乙醯麩胺酸合成酶缺乏症(以下稱NAGS
+      缺乏症)。
+    clinical_rules:
+    - indication: 3.3.14. Carglumic acid (如Carbaglu Tablets)：（102/9/1、106/7/1）
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules:
+      - (4)用藥後，若病情無法持續改善或疾病已惡化，應停止使用。
+      evaluation_frequency:
+      - 使用7天為限
+      - 21天為限
+      - 使用7天為限
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules:
+    - (4)用藥後，若病情無法持續改善或疾病已惡化，應停止使用。
+    evaluation_intervals:
+    - 使用7天為限
+    - 21天為限
+    - 使用7天為限
   reference_annotations:
     original_clause: 3.3.14. Carglumic acid (如Carbaglu Tablets)：（102/9/1、106/7/1）
     full_text: '1.限下列病例使用：
@@ -901,26 +2015,31 @@ regulations:
   - (107/12/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Galsulfase (如 Naglazyme)
   conditions_of_payment:
     indications: []
     laboratory_criteria:
     - 白血球
-    summary: '1.病患須符合以下診斷條件：須證明患者之週邊血液白血球或經培養之皮膚纖維芽細胞ARSB活性缺乏，或是患者ARSB基因經分子生物學檢驗確認有兩個分別來自父母雙方，已知或必然會引起黏多醣症第六型之突變。
-
-      2.限兒科專科經醫學遺傳學次專科訓練取得證書之醫師使用。
-
-      3.排除使用於：
-
-      (1)患者若未給予治療，並不會導致健康情況之惡化時。
-
-      (2)重型病患：完全臥床且無行動能力，或是無法自行呼吸且完全仰賴呼吸器維生者。
-
-      (3)早期診斷帶有已知嚴重突變點的病患, 但無明顯臨床症狀者。
-
-      4.標準劑量為每週經靜脈注射給予galsulfase 1 mg/Kg。
-
-      5.黏多醣症第六型對於器官之傷害多屬不可逆性，治療前應...'
+    summary: 規範【. Galsulfase (如Naglazyme)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: 3.3.15. Galsulfase (如Naglazyme)：(106/10/1、107/12/1)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 療程以1年為限
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 621
+      end_char: 625
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 療程以1年為限
   reference_annotations:
     original_clause: 3.3.15. Galsulfase (如Naglazyme)：(106/10/1、107/12/1)
     full_text: '1.病患須符合以下診斷條件：須證明患者之週邊血液白血球或經培養之皮膚纖維芽細胞ARSB活性缺乏，或是患者ARSB基因經分子生物學檢驗確認有兩個分別來自父母雙方，已知或必然會引起黏多醣症第六型之突變。
@@ -993,27 +2112,31 @@ regulations:
   - (112/7/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Elosulfase Alfa (如 Vimizim)
   conditions_of_payment:
     indications: []
     laboratory_criteria:
     - 白血球
-    summary: '1.診斷：除了臨床表徵及尿液葡萄醣胺聚醣定性、定量檢驗的佐證外，須證明患者之週邊血液白血球或經培養之皮膚纖維芽細胞GALNS 活性缺乏，或是患者GALNS
-      基因經分子生物學檢驗確認有兩個分別來自父母雙方，已知或必然會引起黏多醣症第IVA 型之突變。
-
-      2.限小兒遺傳專科醫師使用。
-
-      3.排除使用於：
-
-      (1)患者合併有其他嚴重疾病，無法從酵素治療得到長期效益。
-
-      (2)重型病患：完全臥床且無行動能力，或是無法自行呼吸且完全仰賴呼吸器維生者。
-
-      (3)病患不願意配合追蹤評估。
-
-      4.黏多醣症第四型患者之傷害多屬不可逆性，治療前應與患者及家屬充分溝通告知下列事項，並請其簽名確認已被告知，留存病歷備查：
-
-      (1)...'
+    summary: 規範【. Elosulfase alfa (如Vimizim) Elosulfase alfa (如Vimizim)】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: 3.3.17. Elosulfase alfa (如Vimizim) Elosulfase alfa (如Vimizim) (107/4/1、112/7/1)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 療程以1年為限
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 336
+      end_char: 340
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 療程以1年為限
   reference_annotations:
     original_clause: 3.3.17. Elosulfase alfa (如Vimizim) Elosulfase alfa (如Vimizim)
       (107/4/1、112/7/1)
@@ -1069,12 +2192,28 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Eliglustat Capsules (如 Cerdelga)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: "1.\t限用於改善成人第一型高雪氏症症狀。\n2.\t使用劑量須依CYP2D6代謝狀況調整。\n3.\t不得併用其他高雪氏症酵素療法之藥品。\n\
-      4.\t需經事前審查核准後使用。"
+    summary: 規範【. Eliglustat Capsules (如Cerdelga )】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: 3.3.18. Eliglustat Capsules (如Cerdelga ) (108/5/1)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 71
+      end_char: 75
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 3.3.18. Eliglustat Capsules (如Cerdelga ) (108/5/1)
     full_text: "1.\t限用於改善成人第一型高雪氏症症狀。\n2.\t使用劑量須依CYP2D6代謝狀況調整。\n3.\t不得併用其他高雪氏症酵素療法之藥品。\n\
@@ -1109,23 +2248,229 @@ regulations:
     indications: []
     laboratory_criteria:
     - 血糖
-    summary: '1.藥品成分：
-
-      (1) Levocarnitine/L-Carnitine inner salt
-
-      (2) Sodium phenylbutyrate、glycerol phenylbutyrate(108/9/1、113/11/1)
-
-      (3) Citrulline malate
-
-      (4) L-Arginine
-
-      (5) Sapropterin dihydrochloride（Tetrahydro- Biopterin,BH4）
-
-      (6) betaine(108/12/1)
-
-      (7) oxitriptan（L-5-hydroxytryptophan ,5-HTP）(108/12/1)
-
-      (8) alpha-...'
+    - Blood Glucose
+    - Ammonia
+    - Phenylalanine
+    - Carnitine
+    - tHcy
+    summary: 規範【. 先天性代謝異常之罕見疾病藥品】之健保給付條件。 主要條件包含：臨床檢驗需符合 Blood Glucose < 50mg/mL,
+      Ammonia > 150μ mol/L, Ammonia > 150μmol/L；使用前須經事前審查核准。
+    clinical_rules:
+    - indication: 3.3.19. 先天性代謝異常之罕見疾病藥品(108/9/1、108/12/1、111/9/1、113/11/1)
+      biomarkers:
+      - biomarker: Blood Glucose
+        operator: <
+        value: '50'
+        unit: mg/mL
+        duration: null
+        terminology_bindings:
+          loinc: 2345-7
+          snomed_ct: '33747003'
+          snomed_procedure: '33747003'
+          snomed_finding: '365812005'
+        source_grounding:
+          start_char: 1177
+          end_char: 1188
+          snippet: 血糖<50 mg/mL
+      - biomarker: Ammonia
+        operator: '>'
+        value: '150'
+        unit: μ mol/L
+        duration: null
+        terminology_bindings:
+          loinc: 16362-6
+          snomed_ct: '166604007'
+          snomed_procedure: '166604007'
+          snomed_finding: '55281000237103'
+        source_grounding:
+          start_char: 629
+          end_char: 646
+          snippet: 血氨值高於 150 μ mol/L
+      - biomarker: Ammonia
+        operator: '>'
+        value: '150'
+        unit: μmol/L
+        duration: null
+        terminology_bindings:
+          loinc: 16362-6
+          snomed_ct: '166604007'
+          snomed_procedure: '166604007'
+          snomed_finding: '55281000237103'
+        source_grounding:
+          start_char: 745
+          end_char: 759
+          snippet: 血氨值高於150μmol/L
+      - biomarker: Phenylalanine
+        operator: '>'
+        value: '200'
+        unit: μmol/L
+        duration: null
+        terminology_bindings:
+          loinc: 14875-9
+          snomed_ct: '271060003'
+          snomed_procedure: '271060003'
+          snomed_finding: '67711000237102'
+        source_grounding:
+          start_char: 797
+          end_char: 823
+          snippet: phenylalanine 高於 200μmol/L
+      - biomarker: Phenylalanine
+        operator: '>'
+        value: '200'
+        unit: μmol/L
+        duration: null
+        terminology_bindings:
+          loinc: 14875-9
+          snomed_ct: '271060003'
+          snomed_procedure: '271060003'
+          snomed_finding: '67711000237102'
+        source_grounding:
+          start_char: 913
+          end_char: 939
+          snippet: phenylalanine 高於 200μmol/L
+      - biomarker: Carnitine
+        operator: <
+        value: '6'
+        unit: μmol/L
+        duration: null
+        terminology_bindings:
+          loinc: 14286-9
+          snomed_ct: '104465009'
+          snomed_procedure: '104465009'
+          snomed_finding: '104465009'
+        source_grounding:
+          start_char: 567
+          end_char: 592
+          snippet: free carnitine 低於6 μmol/L
+      - biomarker: tHcy
+        operator: '>'
+        value: '50'
+        unit: uM
+        duration: null
+        terminology_bindings:
+          loinc: 13965-9
+          snomed_ct: '104733005'
+          snomed_procedure: '104733005'
+          snomed_finding: '104733005'
+        source_grounding:
+          start_char: 857
+          end_char: 868
+          snippet: tHcy高於50 uM
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules:
+      - 3. 經通報主管機關，符合下列情形之一時，應停止使用：(111/9/1)
+      evaluation_frequency:
+      - 以14日為限
+    structured_biomarkers:
+    - biomarker: Blood Glucose
+      operator: <
+      value: '50'
+      unit: mg/mL
+      duration: null
+      terminology_bindings:
+        loinc: 2345-7
+        snomed_ct: '33747003'
+        snomed_procedure: '33747003'
+        snomed_finding: '365812005'
+      source_grounding:
+        start_char: 1177
+        end_char: 1188
+        snippet: 血糖<50 mg/mL
+    - biomarker: Ammonia
+      operator: '>'
+      value: '150'
+      unit: μ mol/L
+      duration: null
+      terminology_bindings:
+        loinc: 16362-6
+        snomed_ct: '166604007'
+        snomed_procedure: '166604007'
+        snomed_finding: '55281000237103'
+      source_grounding:
+        start_char: 629
+        end_char: 646
+        snippet: 血氨值高於 150 μ mol/L
+    - biomarker: Ammonia
+      operator: '>'
+      value: '150'
+      unit: μmol/L
+      duration: null
+      terminology_bindings:
+        loinc: 16362-6
+        snomed_ct: '166604007'
+        snomed_procedure: '166604007'
+        snomed_finding: '55281000237103'
+      source_grounding:
+        start_char: 745
+        end_char: 759
+        snippet: 血氨值高於150μmol/L
+    - biomarker: Phenylalanine
+      operator: '>'
+      value: '200'
+      unit: μmol/L
+      duration: null
+      terminology_bindings:
+        loinc: 14875-9
+        snomed_ct: '271060003'
+        snomed_procedure: '271060003'
+        snomed_finding: '67711000237102'
+      source_grounding:
+        start_char: 797
+        end_char: 823
+        snippet: phenylalanine 高於 200μmol/L
+    - biomarker: Phenylalanine
+      operator: '>'
+      value: '200'
+      unit: μmol/L
+      duration: null
+      terminology_bindings:
+        loinc: 14875-9
+        snomed_ct: '271060003'
+        snomed_procedure: '271060003'
+        snomed_finding: '67711000237102'
+      source_grounding:
+        start_char: 913
+        end_char: 939
+        snippet: phenylalanine 高於 200μmol/L
+    - biomarker: Carnitine
+      operator: <
+      value: '6'
+      unit: μmol/L
+      duration: null
+      terminology_bindings:
+        loinc: 14286-9
+        snomed_ct: '104465009'
+        snomed_procedure: '104465009'
+        snomed_finding: '104465009'
+      source_grounding:
+        start_char: 567
+        end_char: 592
+        snippet: free carnitine 低於6 μmol/L
+    - biomarker: tHcy
+      operator: '>'
+      value: '50'
+      unit: uM
+      duration: null
+      terminology_bindings:
+        loinc: 13965-9
+        snomed_ct: '104733005'
+        snomed_procedure: '104733005'
+        snomed_finding: '104733005'
+      source_grounding:
+        start_char: 857
+        end_char: 868
+        snippet: tHcy高於50 uM
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 1595
+      end_char: 1599
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules:
+    - 3. 經通報主管機關，符合下列情形之一時，應停止使用：(111/9/1)
+    evaluation_intervals:
+    - 以14日為限
   reference_annotations:
     original_clause: 3.3.19. 先天性代謝異常之罕見疾病藥品(108/9/1、108/12/1、111/9/1、113/11/1)
     full_text: '1.藥品成分：
@@ -1207,22 +2552,29 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Ccharides Of Astragalus Membranaceus (如 PG2 Lyo. Injection)
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
     laboratory_criteria: []
-    summary: '使用本藥品應符合下列各條件：
-
-      1.限用於第四期因疾病進展導致中重度疲憊之乳癌成人患者(不含住院安寧療護病患)。
-
-      2.臨床上需符合ICD-10診斷標準，病歷上應詳細記載疲憊分數≧4(BFI-T或VAS)，經其他處置無效之中重度癌因性疲憊症患者。
-
-      3.ECOG需為0-2之患者。
-
-      4.每位病人終生給付6支為上限。
-
-      5.需經事前審查核准後使用。'
+    summary: 適用於【Breast Cancer】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Breast Cancer (乳癌)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 159
+      end_char: 163
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 3.3.20. Polysaccharides of Astragalus membranaceus(如PG2 Lyo.
       Injection)：(110/3/1)
@@ -1248,19 +2600,30 @@ regulations:
   - (115/6/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Alpha-Glucosidase (如 Myozyme)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '用於衛生福利部國民健康署認定之龐貝氏症病人，且為未滿1歲前發病之嬰兒型龐貝氏症，出現肌肉無力，或心室肥大，或肌酸激酶CK升高，或於肌肉切片顯示有肝醣堆積者。
-
-      限由具兒科專科醫師證書，且經小兒遺傳及內分泌新陳代謝科或小兒神經科訓練之醫師，或具神經科專科醫師證書之醫師處方使用，並應於病歷詳實記載病程、確診之檢驗資料及治療反應。(110/12/1、115/6/1)
-
-      需經事前審查核准後使用，並應定期追蹤評估患者下列事項之治療效果，每次申請以1年為限，期滿需經再次申請核准後，始得續用：(110/12/1、115/6/1)
-
-      追蹤事項：
-
-      肝功能、腎功能、肌酸激酶(CK)、尿液Glc4、心電圖、心臟超音波、肌...'
+    summary: 規範【. alpha-glucosidase (如Myozyme)】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: 3.3.21. alpha-glucosidase (如Myozyme)(110/12/1、115/6/1)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 每次申請以1年為限
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 183
+      end_char: 187
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 每次申請以1年為限
   reference_annotations:
     original_clause: 3.3.21. alpha-glucosidase (如Myozyme)(110/12/1、115/6/1)
     full_text: '用於衛生福利部國民健康署認定之龐貝氏症病人，且為未滿1歲前發病之嬰兒型龐貝氏症，出現肌肉無力，或心室肥大，或肌酸激酶CK升高，或於肌肉切片顯示有肝醣堆積者。
@@ -1291,9 +2654,21 @@ regulations:
     indications:
     - Chronic Kidney Disease (慢性腎臟病)
     laboratory_criteria: []
-    summary: "須符合下列各項條件：\n1.\t接受連續性靜脈血液透析(CVVHD)且不適用heparin抗凝之病人，以局部檸檬酸鹽抗凝法 (regional\
-      \ citrate anticoagulation)使用本品作為透析液。\n2.\t與4%檸檬酸鈉溶液(如A.C.D.-4 Solution \"S.T.\"\
-      )及鈣補充液(如Support Cal 1.47% CaCl2)合併使用。"
+    summary: "適用於【Chronic Kidney Disease】之健保給付。 規範重點：須符合下列各項條件： 1.\t接受連續性靜脈血液透析(CVVHD)且不適用heparin抗凝之病人，以局部檸檬酸鹽抗凝法\
+      \ (regional citrate anticoagulation)使用本品作為透析液。"
+    clinical_rules:
+    - indication: Chronic Kidney Disease (慢性腎臟病)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 3.3.22. CRRT non Ca dialysate：（111/4/1）
     full_text: "須符合下列各項條件：\n1.\t接受連續性靜脈血液透析(CVVHD)且不適用heparin抗凝之病人，以局部檸檬酸鹽抗凝法 (regional\
@@ -1312,9 +2687,21 @@ regulations:
     indications:
     - Chronic Kidney Disease (慢性腎臟病)
     laboratory_criteria: []
-    summary: "須符合下列各項條件：\n1.\t接受連續性靜脈血液透析(CVVHD)且不適用heparin抗凝之病人，以局部檸檬酸鹽抗凝法 (regional\
-      \ citrate anticoagulation)使用本品作為抗凝劑。\n2.\t與CRRT non Ca dialysate及鈣補充液(如Support\
-      \ Cal 1.47% CaCl2)合併使用。"
+    summary: "適用於【Chronic Kidney Disease】之健保給付。 規範重點：須符合下列各項條件： 1.\t接受連續性靜脈血液透析(CVVHD)且不適用heparin抗凝之病人，以局部檸檬酸鹽抗凝法\
+      \ (regional citrate anticoagulation)使用本品作為抗凝劑。"
+    clinical_rules:
+    - indication: Chronic Kidney Disease (慢性腎臟病)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 3.3.23. 4%檸檬酸鈉溶液(如A.C.D.-4 Solution "S.T.")：（111/4/1）
     full_text: "須符合下列各項條件：\n1.\t接受連續性靜脈血液透析(CVVHD)且不適用heparin抗凝之病人，以局部檸檬酸鹽抗凝法 (regional\
@@ -1333,9 +2720,21 @@ regulations:
     indications:
     - Chronic Kidney Disease (慢性腎臟病)
     laboratory_criteria: []
-    summary: "須符合下列各項條件：\n1.\t接受連續性靜脈血液透析(CVVHD)且不適用heparin抗凝之病人，以局部檸檬酸鹽抗凝法 (regional\
-      \ citrate anticoagulation)使用本品作為鈣補充液。\n2. 與CRRT non Ca dialysate及4%檸檬酸鈉溶液(如A.C.D.-4\
-      \ Solution \"S.T.\")合併使用。"
+    summary: "適用於【Chronic Kidney Disease】之健保給付。 規範重點：須符合下列各項條件： 1.\t接受連續性靜脈血液透析(CVVHD)且不適用heparin抗凝之病人，以局部檸檬酸鹽抗凝法\
+      \ (regional citrate anticoagulation)使用本品作為鈣補充液。"
+    clinical_rules:
+    - indication: Chronic Kidney Disease (慢性腎臟病)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 3.3.24. Support Cal 1.47% CaCl2：（111/4/1）
     full_text: "須符合下列各項條件：\n1.\t接受連續性靜脈血液透析(CVVHD)且不適用heparin抗凝之病人，以局部檸檬酸鹽抗凝法 (regional\
@@ -1353,19 +2752,25 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.限用於因缺乏固醇27-羥化酶(sterol 27-hydroxylase)而導致的先天性膽酸合成障礙(呈現症狀為腦腱性黃瘤症)之1個月齡以上的病人。
-
-      2.需經事前審查後核准後使用，每次申請以1年為限，期滿需經再次申請核准後，始得續用。
-
-      3.符合下列任一條件，應停止治療：
-
-      (1)肝功能指數(SGPT，SGOT)上升高於基礎值。
-
-      (2)膽甾烷醇(Cholestanol)上升高於基礎值。
-
-      (3)凝血酶原時間延長，高於基礎值。
-
-      (4)連續2年追蹤，神經系統功能無法進步或穩定，逐漸退化。'
+    summary: 規範【. Chenodeoxycholic acid】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: 3.3.25. Chenodeoxycholic acid (111/6/1)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 每次申請以1年為限
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 81
+      end_char: 85
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 每次申請以1年為限
   reference_annotations:
     original_clause: 3.3.25. Chenodeoxycholic acid (111/6/1)
     full_text: '1.限用於因缺乏固醇27-羥化酶(sterol 27-hydroxylase)而導致的先天性膽酸合成障礙(呈現症狀為腦腱性黃瘤症)之1個月齡以上的病人。
@@ -1389,23 +2794,30 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Alfa-Avalglucosidase (如 Nexviazyme)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.用於確診為主管機關認定之6個月以上龐貝氏症患者，限由具兒科專科醫師證書，且經小兒遺傳及內分泌新陳代謝科或小兒神經科訓練之醫師，或具神經科專科醫師證書之醫師處方使用，並應於病歷詳實記載病程、確診之檢驗資料及治療反應，亦應符合下列任一條件：
-
-      (1)嬰兒型龐貝氏症為未滿1歲前發病，包括出現肌肉無力、心室肥大、肌酸激酶（CK）升高、或肌肉切片顯示有肝醣堆積者。
-
-      (2)晚發型龐貝氏症為滿1歲後發病，包括出現肌肉無力、肌酸激酶（CK）持續升高、或肌肉切片顯示有肝醣堆積者。
-
-      2.使用劑量如下：
-
-      (1)嬰兒型龐貝氏症劑量為40 mg/kg/every 2 weeks
-
-      (2)晚發型龐貝氏症:
-
-      Ⅰ.大於或等於...'
+    summary: 規範【. Alfa-avalglucosidase（如 Nexviazyme）】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: 3.3.26. Alfa-avalglucosidase（如 Nexviazyme）（112/4/1）
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 每次申請以1年為限
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 373
+      end_char: 377
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 每次申請以1年為限
   reference_annotations:
     original_clause: 3.3.26. Alfa-avalglucosidase（如 Nexviazyme）（112/4/1）
     full_text: '1.用於確診為主管機關認定之6個月以上龐貝氏症患者，限由具兒科專科醫師證書，且經小兒遺傳及內分泌新陳代謝科或小兒神經科訓練之醫師，或具神經科專科醫師證書之醫師處方使用，並應於病歷詳實記載病程、確診之檢驗資料及治療反應，亦應符合下列任一條件：
@@ -1445,11 +2857,25 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - H2O (如 PhosAdd Tab.)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 限用於確診為主管機關認定之性聯遺傳型低磷酸鹽佝僂症患者。
+    summary: 規範【. KH2PO4+Na2HPO4+NaH2PO4．H2O（如PhosAdd Tab.）：】之健保給付條件。 規範重點：限用於確診為主管機關認定之性聯遺傳型低磷酸鹽佝僂症患者。
+    clinical_rules:
+    - indication: 3.3.27. KH2PO4+Na2HPO4+NaH2PO4．H2O（如PhosAdd Tab.）：（112/5/1）
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 3.3.27. KH2PO4+Na2HPO4+NaH2PO4．H2O（如PhosAdd Tab.）：（112/5/1）
     full_text: 限用於確診為主管機關認定之性聯遺傳型低磷酸鹽佝僂症患者。
@@ -1461,7 +2887,8 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Migalastat Hydrochloride (如 Galafold)
   conditions_of_payment:
     indications:
     - Heart Failure (心臟衰竭)
@@ -1473,21 +2900,370 @@ regulations:
     laboratory_criteria:
     - eGFR
     - 血壓
-    summary: '1.本品不適用於治療法布瑞氏症IVS4+919G>A(c.639+919G>A)基因型患者。
-
-      2.病患須符合16歲以上，確定診斷為法布瑞氏症之患者且體外試驗確定為可符合性基因突變 (amenable mutation)【請參照https://www.galafoldamenabilitytable.com.tw/】
-
-      3.病患須符合以下診斷條件：
-
-      (1)確定診斷為法布瑞氏症典型患者，須符合下列條件之一：
-
-      Ⅰ.出現肢端疼痛排汗障礙，或中風
-
-      Ⅱ.蛋白尿、微量白蛋白尿 (Microalbuminuria)
-
-      Ⅲ.不整脈(附表心電圖〔ECG〕第2項)或心室肥大
-
-      (2)確定診斷為法布瑞氏症非典型患者，須符合...'
+    - NYHA
+    summary: 適用於【Heart Failure、Stroke / Cerebrovascular Accident、Myocardial Infarction】之健保給付。
+      主要條件包含：臨床檢驗需符合 eGFR < 30mL/min/1.73m2, NYHA = IVClass, NYHA = IVClass；使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Heart Failure (心臟衰竭)
+      biomarkers:
+      - biomarker: eGFR
+        operator: <
+        value: '30'
+        unit: mL/min/1.73m2
+        duration: 一年
+        terminology_bindings:
+          loinc: 62238-1
+          snomed_ct: '1011481000000105'
+          snomed_procedure: '1011481000000105'
+          snomed_finding: '1011481000000105'
+        source_grounding:
+          start_char: 1052
+          end_char: 1072
+          snippet: eGFR<30mL/min/1.73m2
+      - biomarker: NYHA
+        operator: '='
+        value: IV
+        unit: Class
+        duration: 1日
+        terminology_bindings:
+          loinc: 88020-3
+          snomed_ct: '420816009'
+          snomed_procedure: '420816009'
+          snomed_finding: '420816009'
+        source_grounding:
+          start_char: 689
+          end_char: 702
+          snippet: NYHA class IV
+      - biomarker: NYHA
+        operator: '='
+        value: IV
+        unit: Class
+        duration: 1年
+        terminology_bindings:
+          loinc: 88020-3
+          snomed_ct: '420816009'
+          snomed_procedure: '420816009'
+          snomed_finding: '420816009'
+        source_grounding:
+          start_char: 865
+          end_char: 878
+          snippet: NYHA class IV
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules:
+      - 10.使用本類藥品需完成個案系統登錄，亦需於療程結束或停止使用該藥品後，於此系統登錄結案。逾期未登錄結案者，系統自動結案，且不予支付該個案自前次事前審查核定日後申
+      evaluation_frequency:
+      - 每一年須重新評估
+      - 療程以1年為限
+    - indication: Stroke / Cerebrovascular Accident (腦中風)
+      biomarkers:
+      - biomarker: eGFR
+        operator: <
+        value: '30'
+        unit: mL/min/1.73m2
+        duration: 一年
+        terminology_bindings:
+          loinc: 62238-1
+          snomed_ct: '1011481000000105'
+          snomed_procedure: '1011481000000105'
+          snomed_finding: '1011481000000105'
+        source_grounding:
+          start_char: 1052
+          end_char: 1072
+          snippet: eGFR<30mL/min/1.73m2
+      - biomarker: NYHA
+        operator: '='
+        value: IV
+        unit: Class
+        duration: 1日
+        terminology_bindings:
+          loinc: 88020-3
+          snomed_ct: '420816009'
+          snomed_procedure: '420816009'
+          snomed_finding: '420816009'
+        source_grounding:
+          start_char: 689
+          end_char: 702
+          snippet: NYHA class IV
+      - biomarker: NYHA
+        operator: '='
+        value: IV
+        unit: Class
+        duration: 1年
+        terminology_bindings:
+          loinc: 88020-3
+          snomed_ct: '420816009'
+          snomed_procedure: '420816009'
+          snomed_finding: '420816009'
+        source_grounding:
+          start_char: 865
+          end_char: 878
+          snippet: NYHA class IV
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules:
+      - 10.使用本類藥品需完成個案系統登錄，亦需於療程結束或停止使用該藥品後，於此系統登錄結案。逾期未登錄結案者，系統自動結案，且不予支付該個案自前次事前審查核定日後申
+      evaluation_frequency:
+      - 每一年須重新評估
+      - 療程以1年為限
+    - indication: Myocardial Infarction (心肌梗塞)
+      biomarkers:
+      - biomarker: eGFR
+        operator: <
+        value: '30'
+        unit: mL/min/1.73m2
+        duration: 一年
+        terminology_bindings:
+          loinc: 62238-1
+          snomed_ct: '1011481000000105'
+          snomed_procedure: '1011481000000105'
+          snomed_finding: '1011481000000105'
+        source_grounding:
+          start_char: 1052
+          end_char: 1072
+          snippet: eGFR<30mL/min/1.73m2
+      - biomarker: NYHA
+        operator: '='
+        value: IV
+        unit: Class
+        duration: 1日
+        terminology_bindings:
+          loinc: 88020-3
+          snomed_ct: '420816009'
+          snomed_procedure: '420816009'
+          snomed_finding: '420816009'
+        source_grounding:
+          start_char: 689
+          end_char: 702
+          snippet: NYHA class IV
+      - biomarker: NYHA
+        operator: '='
+        value: IV
+        unit: Class
+        duration: 1年
+        terminology_bindings:
+          loinc: 88020-3
+          snomed_ct: '420816009'
+          snomed_procedure: '420816009'
+          snomed_finding: '420816009'
+        source_grounding:
+          start_char: 865
+          end_char: 878
+          snippet: NYHA class IV
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules:
+      - 10.使用本類藥品需完成個案系統登錄，亦需於療程結束或停止使用該藥品後，於此系統登錄結案。逾期未登錄結案者，系統自動結案，且不予支付該個案自前次事前審查核定日後申
+      evaluation_frequency:
+      - 每一年須重新評估
+      - 療程以1年為限
+    - indication: Hypertension (高血壓)
+      biomarkers:
+      - biomarker: eGFR
+        operator: <
+        value: '30'
+        unit: mL/min/1.73m2
+        duration: 一年
+        terminology_bindings:
+          loinc: 62238-1
+          snomed_ct: '1011481000000105'
+          snomed_procedure: '1011481000000105'
+          snomed_finding: '1011481000000105'
+        source_grounding:
+          start_char: 1052
+          end_char: 1072
+          snippet: eGFR<30mL/min/1.73m2
+      - biomarker: NYHA
+        operator: '='
+        value: IV
+        unit: Class
+        duration: 1日
+        terminology_bindings:
+          loinc: 88020-3
+          snomed_ct: '420816009'
+          snomed_procedure: '420816009'
+          snomed_finding: '420816009'
+        source_grounding:
+          start_char: 689
+          end_char: 702
+          snippet: NYHA class IV
+      - biomarker: NYHA
+        operator: '='
+        value: IV
+        unit: Class
+        duration: 1年
+        terminology_bindings:
+          loinc: 88020-3
+          snomed_ct: '420816009'
+          snomed_procedure: '420816009'
+          snomed_finding: '420816009'
+        source_grounding:
+          start_char: 865
+          end_char: 878
+          snippet: NYHA class IV
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules:
+      - 10.使用本類藥品需完成個案系統登錄，亦需於療程結束或停止使用該藥品後，於此系統登錄結案。逾期未登錄結案者，系統自動結案，且不予支付該個案自前次事前審查核定日後申
+      evaluation_frequency:
+      - 每一年須重新評估
+      - 療程以1年為限
+    - indication: Alzheimer's Disease / Dementia (阿茲海默症)
+      biomarkers:
+      - biomarker: eGFR
+        operator: <
+        value: '30'
+        unit: mL/min/1.73m2
+        duration: 一年
+        terminology_bindings:
+          loinc: 62238-1
+          snomed_ct: '1011481000000105'
+          snomed_procedure: '1011481000000105'
+          snomed_finding: '1011481000000105'
+        source_grounding:
+          start_char: 1052
+          end_char: 1072
+          snippet: eGFR<30mL/min/1.73m2
+      - biomarker: NYHA
+        operator: '='
+        value: IV
+        unit: Class
+        duration: 1日
+        terminology_bindings:
+          loinc: 88020-3
+          snomed_ct: '420816009'
+          snomed_procedure: '420816009'
+          snomed_finding: '420816009'
+        source_grounding:
+          start_char: 689
+          end_char: 702
+          snippet: NYHA class IV
+      - biomarker: NYHA
+        operator: '='
+        value: IV
+        unit: Class
+        duration: 1年
+        terminology_bindings:
+          loinc: 88020-3
+          snomed_ct: '420816009'
+          snomed_procedure: '420816009'
+          snomed_finding: '420816009'
+        source_grounding:
+          start_char: 865
+          end_char: 878
+          snippet: NYHA class IV
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules:
+      - 10.使用本類藥品需完成個案系統登錄，亦需於療程結束或停止使用該藥品後，於此系統登錄結案。逾期未登錄結案者，系統自動結案，且不予支付該個案自前次事前審查核定日後申
+      evaluation_frequency:
+      - 每一年須重新評估
+      - 療程以1年為限
+    - indication: Diabetes Mellitus (糖尿病)
+      biomarkers:
+      - biomarker: eGFR
+        operator: <
+        value: '30'
+        unit: mL/min/1.73m2
+        duration: 一年
+        terminology_bindings:
+          loinc: 62238-1
+          snomed_ct: '1011481000000105'
+          snomed_procedure: '1011481000000105'
+          snomed_finding: '1011481000000105'
+        source_grounding:
+          start_char: 1052
+          end_char: 1072
+          snippet: eGFR<30mL/min/1.73m2
+      - biomarker: NYHA
+        operator: '='
+        value: IV
+        unit: Class
+        duration: 1日
+        terminology_bindings:
+          loinc: 88020-3
+          snomed_ct: '420816009'
+          snomed_procedure: '420816009'
+          snomed_finding: '420816009'
+        source_grounding:
+          start_char: 689
+          end_char: 702
+          snippet: NYHA class IV
+      - biomarker: NYHA
+        operator: '='
+        value: IV
+        unit: Class
+        duration: 1年
+        terminology_bindings:
+          loinc: 88020-3
+          snomed_ct: '420816009'
+          snomed_procedure: '420816009'
+          snomed_finding: '420816009'
+        source_grounding:
+          start_char: 865
+          end_char: 878
+          snippet: NYHA class IV
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules:
+      - 10.使用本類藥品需完成個案系統登錄，亦需於療程結束或停止使用該藥品後，於此系統登錄結案。逾期未登錄結案者，系統自動結案，且不予支付該個案自前次事前審查核定日後申
+      evaluation_frequency:
+      - 每一年須重新評估
+      - 療程以1年為限
+    structured_biomarkers:
+    - biomarker: eGFR
+      operator: <
+      value: '30'
+      unit: mL/min/1.73m2
+      duration: 一年
+      terminology_bindings:
+        loinc: 62238-1
+        snomed_ct: '1011481000000105'
+        snomed_procedure: '1011481000000105'
+        snomed_finding: '1011481000000105'
+      source_grounding:
+        start_char: 1052
+        end_char: 1072
+        snippet: eGFR<30mL/min/1.73m2
+    - biomarker: NYHA
+      operator: '='
+      value: IV
+      unit: Class
+      duration: 1日
+      terminology_bindings:
+        loinc: 88020-3
+        snomed_ct: '420816009'
+        snomed_procedure: '420816009'
+        snomed_finding: '420816009'
+      source_grounding:
+        start_char: 689
+        end_char: 702
+        snippet: NYHA class IV
+    - biomarker: NYHA
+      operator: '='
+      value: IV
+      unit: Class
+      duration: 1年
+      terminology_bindings:
+        loinc: 88020-3
+        snomed_ct: '420816009'
+        snomed_procedure: '420816009'
+        snomed_finding: '420816009'
+      source_grounding:
+        start_char: 865
+        end_char: 878
+        snippet: NYHA class IV
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 798
+      end_char: 802
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules:
+    - 10.使用本類藥品需完成個案系統登錄，亦需於療程結束或停止使用該藥品後，於此系統登錄結案。逾期未登錄結案者，系統自動結案，且不予支付該個案自前次事前審查核定日後申
+    evaluation_intervals:
+    - 每一年須重新評估
+    - 療程以1年為限
   reference_annotations:
     original_clause: 3.3.28. Migalastat hydrochloride (如Galafold)：(112/8/1、114/2/1)
     full_text: "1.本品不適用於治療法布瑞氏症IVS4+919G>A(c.639+919G>A)基因型患者。\n2.病患須符合16歲以上，確定診斷為法布瑞氏症之患者且體外試驗確定為可符合性基因突變\
@@ -1529,23 +3305,34 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Burosumab (如 Crysvita)
   conditions_of_payment:
     indications:
     - Rickets / Osteomalacia (Vitamin D Deficiency) (佝僂病)
     laboratory_criteria:
     - Scr
-    summary: '1.用於經衛生福利部國民健康署認定之1歲以上性聯遺傳型低磷酸鹽症患者，生長板尚未關閉，且男性骨齡未達18歲、女性骨齡未達16歲，並符合以下所有條件：
-
-      (1)空腹低血磷症。
-
-      (2)正常腎功能（定義為空腹血清肌酸酐低於經年齡調整的正常上限）。
-
-      (3)放射學證據顯示具有佝僂症，且佝僂症嚴重程度分數（rickets severity score,RSS）總分為大於等於2分。
-
-      (4)具有已確認的PHEX（phosphate-regulating endopeptidase homolog, X-linked）基因變異。
-
-      2.限由具兒科專科醫師證書，且經小兒醫學遺傳學/新陳代謝學次專科或內分泌次專科或小兒...'
+    summary: 適用於【Rickets / Osteomalacia】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Rickets / Osteomalacia (Vitamin D Deficiency) (佝僂病)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 每12個月評估一次
+      - 每次申請療程以12個月為限
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 427
+      end_char: 431
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 每12個月評估一次
+    - 每次申請療程以12個月為限
   reference_annotations:
     original_clause: 3.3.29. Burosumab(如Crysvita)：(113/5/1)
     full_text: '1.用於經衛生福利部國民健康署認定之1歲以上性聯遺傳型低磷酸鹽症患者，生長板尚未關閉，且男性骨齡未達18歲、女性骨齡未達16歲，並符合以下所有條件：
@@ -1589,15 +3376,31 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Glycerol Phenylbutyrate (如 Ravicti)
   conditions_of_payment:
     indications:
     - Hepatoprotectants / Liver Protective Agents (肝庇護劑)
     laboratory_criteria: []
-    summary: 1.用於經衛生福利部國民健康署認定之不能藉由限制蛋白質的攝入和/或單純補充氨基酸控制的尿素循環代謝異常(Urea Cycle Disorders；UCDs)病人的長期輔助治療，包括
-      carbamoyl phosphate synthetase (CPS) I缺乏症、鳥胺酸氨甲醯基轉移酶(ornithine carbamoyltransferase,OTC)缺乏症、argininosuccinate
-      synthetase(ASS)缺乏症、argininosuccinate lyase(ASL)缺乏症、arginase (ARG) I 缺乏症和ornithine
-      translocase缺失引起之高...
+    summary: 適用於【Hepatoprotectants / Liver Protective Agents】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Hepatoprotectants / Liver Protective Agents (肝庇護劑)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules:
+      - 3.用藥後，若病情惡化即須停止使用。
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 532
+      end_char: 536
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules:
+    - 3.用藥後，若病情惡化即須停止使用。
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 3.3.30. Glycerol phenylbutyrate (如Ravicti)：(113/11/1)
     full_text: '1.用於經衛生福利部國民健康署認定之不能藉由限制蛋白質的攝入和/或單純補充氨基酸控制的尿素循環代謝異常(Urea Cycle Disorders；UCDs)病人的長期輔助治療，包括
@@ -1623,19 +3426,33 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Givosiran (如 Givlaari)
   conditions_of_payment:
     indications: []
     laboratory_criteria:
     - Scr
-    summary: '1.限用於確診為衛生福利部國民健康署認定之罕見疾病紫質症(porphyria)中屬急性肝紫質症(acute hepatic porphyria,
-      AHP)[如：急性間歇性紫質症(AIP)、遺傳性紫質症(HCP)、異位型紫質症(VP)、ALAD缺乏紫質症(ADP)]，且符合下列全部條件者：
-
-      (1)年滿18歲以上。
-
-      (2)具HMBS(PBGD)、ALAD、CPOX、PPOX致病基因變異者(需檢附基因診斷報告)。
-
-      (3)經過適當醫療處置2年後，仍於申請本藥品前1年內，發生4次(含)以上急性發作，急性發作時需急診或住院治療，且使用靜脈輸注血基質藥品(hemin)治療反應不佳或耐受性不良(intoler...'
+    summary: 規範【. Givosiran(如Givlaari)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: 3.3.31. Givosiran(如Givlaari)：(114/1/1)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 每3個月評估一次
+      - 每次申請以1年為限
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 735
+      end_char: 739
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 每3個月評估一次
+    - 每次申請以1年為限
   reference_annotations:
     original_clause: 3.3.31. Givosiran(如Givlaari)：(114/1/1)
     full_text: '1.限用於確診為衛生福利部國民健康署認定之罕見疾病紫質症(porphyria)中屬急性肝紫質症(acute hepatic porphyria,
@@ -1707,28 +3524,33 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Maralixibat (馬拉利西巴)
+    - Maralixibat Chloride (如 Livmarli)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '限用於
-
-      經衛生福利部國民健康署認定之治療年齡1歲以上之進行性家族性肝內膽汁滯留症(PFIC)病人。
-
-      經衛生福利部國民健康署認定之治療年齡1歲以上之阿拉吉歐症候群(ALGS)病人。
-
-      需經事前審查核准後使用：
-
-      每次申請以6個月為限。
-
-      初次申請時須完全符合以下條件：
-
-      經醫學中心兒科專科醫師且領有兒科消化學次專科醫師證書者評估需接受肝臟移植治療但尚無法取得肝源者，且出現下列任一臨床症狀：
-
-      經內外科處置1個月後，仍有灰白色糞便表現。
-
-      顯著肝門脈高壓、肝臟纖維化(如腹部超音波、電腦斷層或磁振攝影等檢測顯示脾臟腫大，腹水，胃食道靜脈瘤，Fibroscan > 7 kPa，APRI score
-      >0.5等其中...'
+    summary: 規範【. Maralixibat chloride（如 Livmarli）：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: 3.3.32. Maralixibat chloride（如 Livmarli）：(115/9/1)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 每次申請以6個月為限
+      - 給付以2年為限
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 92
+      end_char: 96
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 每次申請以6個月為限
+    - 給付以2年為限
   reference_annotations:
     original_clause: 3.3.32. Maralixibat chloride（如 Livmarli）：(115/9/1)
     full_text: '限用於

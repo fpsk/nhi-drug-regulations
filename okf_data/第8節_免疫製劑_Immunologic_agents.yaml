@@ -1,6 +1,20 @@
-okf_version: '1.0'
-schema_type: Taiwan_NHI_Drug_Regulation
+okf_version: '0.2'
+type: regulation/taiwan_nhi_drug_payment
 chapter: 第8節 免疫製劑 Immunologic agents
+provenance:
+  authority: 衛生福利部中央健康保險署 (Taiwan NHIA)
+  source_document: 完整給付規定1150821.docx
+  jurisdiction: TW
+  legal_basis: 全民健康保險法第41條暨全民健康保險藥物給付項目及支付標準
+trust:
+  tier: machine-confirmed
+  extracted_by: LangExtract-NHI-Engine
+  grounding_verified: true
+  confidence_score: 0.98
+lifecycle:
+  status: active
+  last_synced: '2026-11-04'
+  stale_after: '2026-12-31'
 total_regulations: 17
 regulations:
 - regulation_id: REG-0233
@@ -13,9 +27,24 @@ regulations:
     drug_classes: []
     ingredients: []
   conditions_of_payment:
-    indications: []
+    indications:
+    - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     laboratory_criteria: []
-    summary: 應以HBsAg (-)，Anti-HBc (-)之醫院工作人員為主，且傳染者需為HBsAg (+)。
+    summary: 適用於【Hepatitis B / Hepatitis C】之健保給付。 規範重點：應以HBsAg (-)，Anti-HBc (-)之醫院工作人員為主，且傳染者需為HBsAg
+      (+)。
+    clinical_rules:
+    - indication: Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 8.1.1. Hepatitis B immune globulin：
     full_text: 應以HBsAg (-)，Anti-HBc (-)之醫院工作人員為主，且傳染者需為HBsAg (+)。
@@ -44,19 +73,27 @@ regulations:
     - Immune Thrombocytopenia (ITP) (特發性血小板減少性紫斑症)
     laboratory_criteria:
     - 血小板
-    summary: '本類藥品限依藥品許可證登載之適應症範圍內用於符合下列任一條件病人，須檢附病歷摘要（註明診斷，相關檢查報告及數據，體重、年齡、性別、病史、曾否使用同一藥品及其療效…等）
-
-      1.靜脈注射劑：
-
-      (1)先天或後天性免疫球蛋白低下症併發嚴重感染時（需附六個月內免疫球蛋白檢查報告)
-
-      (2)免疫血小板缺乏性紫斑症 (ITP) 經傳統治療效果不佳，若其血小板＜80,000/cumm且符合下列情況之一者：(108/6/1)
-
-      Ⅰ.有嚴重出血。
-
-      Ⅱ.需接受緊急手術治療者。(103/4/1)
-
-      (3)免疫血小板缺乏性紫斑症(ITP)且於懷孕或分娩期間，或急性免疫血小板缺乏性紫斑症(ITP) 18歲以下兒童。（107/4/...'
+    summary: 適用於【Immune Thrombocytopenia】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Immune Thrombocytopenia (ITP) (特發性血小板減少性紫斑症)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 每3個月評估一次
+      - 每次申請以3個月為限
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 1425
+      end_char: 1429
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 每3個月評估一次
+    - 每次申請以3個月為限
   reference_annotations:
     original_clause: 8.1.3. 高單位免疫球蛋白(111/2/1、113/11/1、114/10/1)：
     full_text: "本類藥品限依藥品許可證登載之適應症範圍內用於符合下列任一條件病人，須檢附病歷摘要（註明診斷，相關檢查報告及數據，體重、年齡、性別、病史、曾否使用同一藥品及其療效…等）\n\
@@ -101,24 +138,27 @@ regulations:
   - (109/4/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Immunoglobulin (如 ：Thymoglobuline inj)
   conditions_of_payment:
     indications:
     - Anemia (貧血)
     laboratory_criteria: []
-    summary: '1.限符合下列適應症病患檢附病歷摘要（註明診斷、相關檢查報告及數據、體重、年齡、性別、病史)
-
+    summary: 適用於【Anemia】之健保給付。 規範重點：1.限符合下列適應症病患檢附病歷摘要（註明診斷、相關檢查報告及數據、體重、年齡、性別、病史)
       (1)嚴重再生不良性貧血經傳統方法治療無效且不適合作骨髓移植之病例。
-
-      (2)器官移植病患併發嚴重之急性排斥反應。
-
-      (3)限定於異體造血幹細胞移植之植體抗宿主疾病（graft versus host disease）之預防與治療。(109/4/1)
-
-      (4)心臟移植病人使用呼吸器，並可能併發腎功能不全者。
-
-      (5)Thymoglobuline inj.可用於預防心臟、腎臟移植引起之急性排斥。(109/4/1)
-
-      (6)作為異體造血幹細胞移植前之條件療法(109/4/1)。'
+    clinical_rules:
+    - indication: Anemia (貧血)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 8.1.4. Immunoglobulin（如：Thymoglobuline inj）(90/11/1、96/2/1、97/8/1、99/2/1、109/4/1)：
     full_text: '1.限符合下列適應症病患檢附病歷摘要（註明診斷、相關檢查報告及數據、體重、年齡、性別、病史)
@@ -148,9 +188,20 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.本類藥品使用於遭疑似狂犬病或麗沙病毒感染動物咬傷暴露後之接種，其使用對象及使用方式應依衛生福利部疾病管制署最新版「疑似狂犬病或麗沙病毒感染動物抓咬傷臨床處置指引」之接種建議辦理(請參閱疾病管制署狂犬病專區網頁http://www.cdc.gov.tw)。(106/3/1)
-
-      2.限於疾病管制署公布之人用狂犬病疫苗接種服務醫院(衛生所)施打。(103/5/1)'
+    summary: 規範【. 人用狂犬病疫苗及免疫球蛋白(如Rabipur)：】之健保給付條件。 規範重點：1.本類藥品使用於遭疑似狂犬病或麗沙病毒感染動物咬傷暴露後之接種，其使用對象及使用方式應依衛生福利部疾病管制署最新版「疑似狂犬病或麗沙病毒感染動物抓咬傷臨床處置指引」之接種建議辦理(請參閱疾病管制署狂犬病專區網頁http://www.cdc.gov.tw)。
+    clinical_rules:
+    - indication: 8.1.5. 人用狂犬病疫苗及免疫球蛋白(如Rabipur)：(103/1/1、103/5/1、106/3/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 8.1.5. 人用狂犬病疫苗及免疫球蛋白(如Rabipur)：(103/1/1、103/5/1、106/3/1)
     full_text: '1.本類藥品使用於遭疑似狂犬病或麗沙病毒感染動物咬傷暴露後之接種，其使用對象及使用方式應依衛生福利部疾病管制署最新版「疑似狂犬病或麗沙病毒感染動物抓咬傷臨床處置指引」之接種建議辦理(請參閱疾病管制署狂犬病專區網頁http://www.cdc.gov.tw)。(106/3/1)
@@ -168,7 +219,20 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 每人每次處方限申報0.5mL。
+    summary: 規範【. 破傷風類毒素Tetanus toxoid：】之健保給付條件。
+    clinical_rules:
+    - indication: 8.1.6. 破傷風類毒素Tetanus toxoid：(112/11/12)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 8.1.6. 破傷風類毒素Tetanus toxoid：(112/11/12)
     full_text: 每人每次處方限申報0.5mL。
@@ -180,7 +244,8 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Cyclosporin (如 Sandimmun)
   conditions_of_payment:
     indications:
     - Atopic Dermatitis (異位性皮膚炎)
@@ -188,19 +253,38 @@ regulations:
     - Rheumatoid Arthritis (類風濕性關節炎)
     - Anemia (貧血)
     laboratory_criteria: []
-    summary: '1.器官移植抗排斥藥物。
-
-      2. 嚴重乾癬或異位性皮膚炎引起之全身性紅皮症(需檢附照片)。(111/5/1）。
-
-      3.自體免疫性葡萄膜炎及貝西氏病病例使用，請檢附病歷摘要及診斷證明。
-
-      4.替代性療法無效或不適用之嚴重乾癬或異位性皮膚炎(需檢附三個月以上之病歷與用藥紀錄)。(111/5/1）。
-
-      5.標準療法無效或不適用之嚴重類風濕性關節炎(需檢附三個月以上之病歷與用藥紀錄)。
-
-      6.以類固醇治療無效或對類固醇有依賴性的原發性腎病症候群【經活體檢視（biopsy）主要為微小病變疾病或局部環節腎絲球硬化症】，經細胞穩定劑（cytostatics）治療無效且腎功能指數在正常值50%以上之病人。
-
-      7.若經病人...'
+    summary: 適用於【Atopic Dermatitis、Psoriasis / Psoriatic Arthritis、Rheumatoid Arthritis】之健保給付。
+    clinical_rules:
+    - indication: Atopic Dermatitis (異位性皮膚炎)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Psoriasis / Psoriatic Arthritis (乾癬)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Rheumatoid Arthritis (類風濕性關節炎)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Anemia (貧血)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 8.2.1. Cyclosporin（如Sandimmun）：（86/1/1、86/9/1、89/7/1、101/10/1、111/5/1）限
     full_text: '1.器官移植抗排斥藥物。
@@ -231,9 +315,22 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.成人肝、腎移植之第一線用藥。
-
-      2.成人肝、腎移植cyclosporin無效之第二線用藥。'
+    summary: 規範【. Tacrolimus持續性口服製劑：】之健保給付條件。
+    clinical_rules:
+    - indication: 8.2.2.1. Tacrolimus持續性口服製劑：(98/8/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy:
+      - 第一線用藥
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy:
+    - 第一線用藥
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 8.2.2.1. Tacrolimus持續性口服製劑：(98/8/1)
     full_text: '1.成人肝、腎移植之第一線用藥。
@@ -251,9 +348,22 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.肝臟及腎臟移植之第一線用藥或肝腎移植cyclosporin無效之第二線用藥。
-
-      2.心臟移植之第一線、第二線用藥。'
+    summary: 規範【. Tacrolimus 注射劑及其他非持續性口服製劑：】之健保給付條件。 規範重點：1.肝臟及腎臟移植之第一線用藥或肝腎移植cyclosporin無效之第二線用藥。
+    clinical_rules:
+    - indication: 8.2.2.2. Tacrolimus 注射劑及其他非持續性口服製劑： (88/8/1、93/12/1、102/7/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy:
+      - 第一線用藥
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy:
+    - 第一線用藥
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 8.2.2.2. Tacrolimus 注射劑及其他非持續性口服製劑： (88/8/1、93/12/1、102/7/1)
     full_text: '1.肝臟及腎臟移植之第一線用藥或肝腎移植cyclosporin無效之第二線用藥。
@@ -273,15 +383,93 @@ regulations:
   - (112/3/1、115/3/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Cladribine (如 Mavenclad)
+    - Dimethyl Fumarate (如 Tecfidera)
+    - Interferon Beta-La (如 Rebif)
+    - Ozanimod (如 Zeposia)
+    - Peginterferon Beta-1A (如 Plegridy)
+    - Teriflunomide (如 Aubagio)
   conditions_of_payment:
     indications:
     - Multiple Sclerosis (多發性硬化症)
-    laboratory_criteria: []
-    summary: "1.限用於復發型多發性硬化症。\n2.初次使用teriflunomide、dimethyl fumarate、peginterferon\
-      \ beta-1a、ozanimod及cladribine時需經事前審查核准後使用(109/11/1、112/3/1、115/3/1)。\n3.不適用於視神經脊髓炎（neuromyelitis\
-      \ optica, NMO），包括：(100/10/1)\n(1)有視神經及脊髓發作。\n(2)出現下列2種以上症狀：\ni.脊髓侵犯大於 3 節。\n\
-      ii. NMO-IgG or Aquaporin-4 抗體陽性。\niii.\t腦部磁振造影不符合多發性硬化症診斷標準。\n4.Ozanimo..."
+    laboratory_criteria:
+    - EDSS
+    - AQP4/NMO
+    summary: 適用於【Multiple Sclerosis】之健保給付。 主要條件包含：臨床檢驗需符合 EDSS > 5.5Score, AQP4/NMO
+      = 陽性；使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Multiple Sclerosis (多發性硬化症)
+      biomarkers:
+      - biomarker: EDSS
+        operator: '>'
+        value: '5.5'
+        unit: Score
+        duration: null
+        terminology_bindings:
+          loinc: 89256-2
+          snomed_ct: '273554001'
+          snomed_procedure: '273554001'
+          snomed_finding: '273554001'
+        source_grounding:
+          start_char: 361
+          end_char: 404
+          snippet: EDSS(Expanded Disabi1ity Status Scale)大於5.5
+      - biomarker: AQP4/NMO
+        operator: '='
+        value: 陽性
+        unit: ''
+        duration: null
+        terminology_bindings:
+          loinc: 61430-5
+          snomed_ct: '3021000237104'
+          snomed_procedure: '3021000237104'
+          snomed_finding: '713642006'
+        source_grounding:
+          start_char: 247
+          end_char: 263
+          snippet: Aquaporin-4 抗體陽性
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers:
+    - biomarker: EDSS
+      operator: '>'
+      value: '5.5'
+      unit: Score
+      duration: null
+      terminology_bindings:
+        loinc: 89256-2
+        snomed_ct: '273554001'
+        snomed_procedure: '273554001'
+        snomed_finding: '273554001'
+      source_grounding:
+        start_char: 361
+        end_char: 404
+        snippet: EDSS(Expanded Disabi1ity Status Scale)大於5.5
+    - biomarker: AQP4/NMO
+      operator: '='
+      value: 陽性
+      unit: ''
+      duration: null
+      terminology_bindings:
+        loinc: 61430-5
+        snomed_ct: '3021000237104'
+        snomed_procedure: '3021000237104'
+        snomed_finding: '713642006'
+      source_grounding:
+        start_char: 247
+        end_char: 263
+        snippet: Aquaporin-4 抗體陽性
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 98
+      end_char: 102
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 8.2.3.1. Interferon beta-la (如Rebif) 、teriflunomide 14mg (如Aubagio)、
       dimethyl fumarate (如Tecfidera)、peginterferon beta-1a (如Plegridy)、ozanimod (如Zeposia)、cladribine(如Mavenclad)：(91/4/1、97/8/1、100/10/1、106/10/1、107/7/1、107/10/1、109/11/1、112/3/1、115/3/1)
@@ -305,22 +493,55 @@ regulations:
   - (100/10/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Interferon Beta-1B (如 Betaferon 8MIU)
   conditions_of_payment:
     indications:
     - Multiple Sclerosis (多發性硬化症)
-    laboratory_criteria: []
-    summary: '限用於：
-
-      降低反覆發作型多發性硬化症的發作頻率及嚴重度。(100/10/1、106/10/1)
-
-      降低續發型多發性硬化症的發作頻率及嚴重度。(100/10/1、106/10/1)。
-
-      發生單一臨床症狀（Clinically Isolated Syndrome）疑似多發性硬化症的病患。使用時需符合下列規定：(99/10/1、106/10/1)
-
-      限神經科醫師申請使用，申請時必須附病歷及具2個以上MS-like病灶點之MRI影像，以確認符合Clinical Isolated Syndrome (CIS)。
-
-      不適用於視神經脊髓炎（neuromyelitis optica, NMO），包括：(100/10/...'
+    laboratory_criteria:
+    - AQP4/NMO
+    summary: 適用於【Multiple Sclerosis】之健保給付。 主要條件包含：臨床檢驗需符合 AQP4/NMO = 陽性。
+    clinical_rules:
+    - indication: Multiple Sclerosis (多發性硬化症)
+      biomarkers:
+      - biomarker: AQP4/NMO
+        operator: '='
+        value: 陽性
+        unit: ''
+        duration: null
+        terminology_bindings:
+          loinc: 61430-5
+          snomed_ct: '3021000237104'
+          snomed_procedure: '3021000237104'
+          snomed_finding: '713642006'
+        source_grounding:
+          start_char: 356
+          end_char: 371
+          snippet: Aquaporin-4抗體陽性
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers:
+    - biomarker: AQP4/NMO
+      operator: '='
+      value: 陽性
+      unit: ''
+      duration: null
+      terminology_bindings:
+        loinc: 61430-5
+        snomed_ct: '3021000237104'
+        snomed_procedure: '3021000237104'
+        snomed_finding: '713642006'
+      source_grounding:
+        start_char: 356
+        end_char: 371
+        snippet: Aquaporin-4抗體陽性
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 8.2.3.2. Interferon beta-1b (如Betaferon 8MIU)：(92/3/1、92/12/1、93/3/1、97/8/1、99/10/1、100/10/1、106/10/1)
     full_text: '限用於：
@@ -352,12 +573,26 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Glatiramer Acetate (如 Copaxone injection)
   conditions_of_payment:
     indications:
     - Multiple Sclerosis (多發性硬化症)
     laboratory_criteria: []
-    summary: 限用於復發型多發性硬化症，Copaxone用於減少復發型多發性硬化症病人的復發頻率。
+    summary: 適用於【Multiple Sclerosis】之健保給付。 規範重點：限用於復發型多發性硬化症，Copaxone用於減少復發型多發性硬化症病人的復發頻率。
+    clinical_rules:
+    - indication: Multiple Sclerosis (多發性硬化症)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 8.2.3.3. Glatiramer acetate (如Copaxone injection)：(94/10/1、97/8/1)
     full_text: 限用於復發型多發性硬化症，Copaxone用於減少復發型多發性硬化症病人的復發頻率。
@@ -369,22 +604,29 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Natalizumab (如 Tysabri)
   conditions_of_payment:
     indications:
     - Multiple Sclerosis (多發性硬化症)
     laboratory_criteria: []
-    summary: '1.限用於interferon-beta 或 glatiramer 治療無效之復發型多發性硬化症病人。
-
-      2.前述治療無效定義，係指患者臨床上每年有2次（含）以上的失能發作，且併下列條件之一：
-
-      (1)磁振攝影（MRI）影像的T2增強訊號病灶明顯增加。
-
-      (2)至少出現1 個釓增強病灶(gadolinium-enhancing lesions)。
-
-      3.病患若為眼神經脊髓炎(neuromyelitis optica)或曾經有脊髓發作超過三節或三節(≧3 vertebral bodies) 以上者，不得使用。
-
-      4.僅限於「多發性硬化症擴展殘疾狀況評分表」（Expanded Disability Stat...'
+    summary: 適用於【Multiple Sclerosis】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Multiple Sclerosis (多發性硬化症)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 328
+      end_char: 332
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: '8.2.3.4. Natalizumab (如Tysabri) （100/5/1）:'
     full_text: '1.限用於interferon-beta 或 glatiramer 治療無效之復發型多發性硬化症病人。
@@ -413,15 +655,88 @@ regulations:
   - (102/10/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Fingolimod (如 Gilenya)
   conditions_of_payment:
     indications:
     - Multiple Sclerosis (多發性硬化症)
-    laboratory_criteria: []
-    summary: "1.限用於雖已接受乙型干擾素或 glatiramer 治療，相較於前一年度復發率仍不變或反而上升之高度活躍型復發緩解之多發性硬化症病人(highly\
-      \ active relapsing– remitting multiple sclerosis即前一年有一次以上復發或是前兩年有兩次以上復發)，但排除使用於：\n\
-      (1)EDSS (Expanded Disabi1ity Status Scale)大於5.5之患者。\n(2)視神經脊髓炎(neuromyelitis\
-      \ optica,NMO)，包括：\nI. 有視神經及脊髓發作。\nII.出現下列2種以上症狀：\ni. 脊髓侵犯大於3節；\nii. \tNMO-IgG..."
+    laboratory_criteria:
+    - EDSS
+    - AQP4/NMO
+    summary: 適用於【Multiple Sclerosis】之健保給付。 主要條件包含：臨床檢驗需符合 EDSS > 5.5Score, AQP4/NMO
+      = 陽性；使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Multiple Sclerosis (多發性硬化症)
+      biomarkers:
+      - biomarker: EDSS
+        operator: '>'
+        value: '5.5'
+        unit: Score
+        duration: 一年
+        terminology_bindings:
+          loinc: 89256-2
+          snomed_ct: '273554001'
+          snomed_procedure: '273554001'
+          snomed_finding: '273554001'
+        source_grounding:
+          start_char: 157
+          end_char: 201
+          snippet: EDSS (Expanded Disabi1ity Status Scale)大於5.5
+      - biomarker: AQP4/NMO
+        operator: '='
+        value: 陽性
+        unit: ''
+        duration: null
+        terminology_bindings:
+          loinc: 61430-5
+          snomed_ct: '3021000237104'
+          snomed_procedure: '3021000237104'
+          snomed_finding: '713642006'
+        source_grounding:
+          start_char: 304
+          end_char: 320
+          snippet: Aquaporin-4 抗體陽性
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers:
+    - biomarker: EDSS
+      operator: '>'
+      value: '5.5'
+      unit: Score
+      duration: 一年
+      terminology_bindings:
+        loinc: 89256-2
+        snomed_ct: '273554001'
+        snomed_procedure: '273554001'
+        snomed_finding: '273554001'
+      source_grounding:
+        start_char: 157
+        end_char: 201
+        snippet: EDSS (Expanded Disabi1ity Status Scale)大於5.5
+    - biomarker: AQP4/NMO
+      operator: '='
+      value: 陽性
+      unit: ''
+      duration: null
+      terminology_bindings:
+        loinc: 61430-5
+        snomed_ct: '3021000237104'
+        snomed_procedure: '3021000237104'
+        snomed_finding: '713642006'
+      source_grounding:
+        start_char: 304
+        end_char: 320
+        snippet: Aquaporin-4 抗體陽性
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 352
+      end_char: 356
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 8.2.3.5. Fingolimod(如Gilenya)：(101/9/1、102/10/1、109/1/1、109/10/1、115/3/1)
     full_text: "1.限用於雖已接受乙型干擾素或 glatiramer 治療，相較於前一年度復發率仍不變或反而上升之高度活躍型復發緩解之多發性硬化症病人(highly\
@@ -441,27 +756,88 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Alemtuzumab (如 Lemtrada)
   conditions_of_payment:
     indications:
     - Multiple Sclerosis (多發性硬化症)
-    laboratory_criteria: []
-    summary: '1.限用曾經使用兩類或以上的多發性硬化症藥物治療後，仍控制不佳之高度活躍型復發緩解多發性硬化症病人(highly active relapsing–remitting
-      multiple sclerosis，意即前一年有一次以上復發或是前兩年有兩次以上復發)，但排除使用於：
-
-      (1)EDSS (Expanded Disabi1ity Status Scale)大於5.5之患者。
-
-      (2)視神經脊髓炎(neuromyelitis optica, NMO)，包括：
-
-      Ⅰ.有視神經及脊髓發作。
-
-      Ⅱ.出現下列2種以上症狀：
-
-      i.脊髓侵犯大於3節
-
-      ii.NMO-IgG or Aquaporin-4抗體陽性
-
-      ii...'
+    laboratory_criteria:
+    - EDSS
+    - AQP4/NMO
+    summary: 適用於【Multiple Sclerosis】之健保給付。 主要條件包含：臨床檢驗需符合 EDSS > 5.5Score, AQP4/NMO
+      = 陽性；使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Multiple Sclerosis (多發性硬化症)
+      biomarkers:
+      - biomarker: EDSS
+        operator: '>'
+        value: '5.5'
+        unit: Score
+        duration: 一年
+        terminology_bindings:
+          loinc: 89256-2
+          snomed_ct: '273554001'
+          snomed_procedure: '273554001'
+          snomed_finding: '273554001'
+        source_grounding:
+          start_char: 140
+          end_char: 184
+          snippet: EDSS (Expanded Disabi1ity Status Scale)大於5.5
+      - biomarker: AQP4/NMO
+        operator: '='
+        value: 陽性
+        unit: ''
+        duration: 三年
+        terminology_bindings:
+          loinc: 61430-5
+          snomed_ct: '3021000237104'
+          snomed_procedure: '3021000237104'
+          snomed_finding: '713642006'
+        source_grounding:
+          start_char: 282
+          end_char: 297
+          snippet: Aquaporin-4抗體陽性
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers:
+    - biomarker: EDSS
+      operator: '>'
+      value: '5.5'
+      unit: Score
+      duration: 一年
+      terminology_bindings:
+        loinc: 89256-2
+        snomed_ct: '273554001'
+        snomed_procedure: '273554001'
+        snomed_finding: '273554001'
+      source_grounding:
+        start_char: 140
+        end_char: 184
+        snippet: EDSS (Expanded Disabi1ity Status Scale)大於5.5
+    - biomarker: AQP4/NMO
+      operator: '='
+      value: 陽性
+      unit: ''
+      duration: 三年
+      terminology_bindings:
+        loinc: 61430-5
+        snomed_ct: '3021000237104'
+        snomed_procedure: '3021000237104'
+        snomed_finding: '713642006'
+      source_grounding:
+        start_char: 282
+        end_char: 297
+        snippet: Aquaporin-4抗體陽性
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 327
+      end_char: 331
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 8.2.3.6. Alemtuzumab（如Lemtrada）：（108/7/1）
     full_text: '1.限用曾經使用兩類或以上的多發性硬化症藥物治療後，仍控制不佳之高度活躍型復發緩解多發性硬化症病人(highly active relapsing–remitting
@@ -506,15 +882,199 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Siponimod (如 Mayzent)
   conditions_of_payment:
     indications:
     - Multiple Sclerosis (多發性硬化症)
-    laboratory_criteria: []
-    summary: "1.\t限用於曾被診斷為復發緩解型多發性硬化症之病人。\n2.\t須符合次發進展型多發性硬化症之診斷，即過去在沒有復發或與復發無關的情況下，出現失能惡化持續至少6個月以上。\n\
-      3.\t初次接受siponimod時，EDSS應小於或等於6.5分，且EDSS大於等於3分。\n4.\t初次接受siponimod之前2年內，需有明顯EDSS進展性惡化之證據，亦即符合以下二者其中之一：\n\
-      (1)申請時EDSS未滿6分者，過去2年內EDSS惡化1分以上。\n(2)申請時EDSS大於等於6分者，過去2年內EDSS惡化0.5分以上。\n5.\t\
-      須經事前審查核准後使用，每年需重新申請，併應提出整個用藥期間之EDSS分數(包括起始用藥..."
+    laboratory_criteria:
+    - EDSS
+    summary: 適用於【Multiple Sclerosis】之健保給付。 主要條件包含：臨床檢驗需符合 EDSS <= 6.5分, EDSS >= 3分,
+      EDSS < 6分；使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Multiple Sclerosis (多發性硬化症)
+      biomarkers:
+      - biomarker: EDSS
+        operator: <=
+        value: '6.5'
+        unit: 分
+        duration: 6個月以上
+        terminology_bindings:
+          loinc: 89256-2
+          snomed_ct: '273554001'
+          snomed_procedure: '273554001'
+          snomed_finding: '273554001'
+        source_grounding:
+          start_char: 102
+          end_char: 116
+          snippet: EDSS應小於或等於6.5分
+      - biomarker: EDSS
+        operator: '>='
+        value: '3'
+        unit: 分
+        duration: 6個月以上
+        terminology_bindings:
+          loinc: 89256-2
+          snomed_ct: '273554001'
+          snomed_procedure: '273554001'
+          snomed_finding: '273554001'
+        source_grounding:
+          start_char: 118
+          end_char: 128
+          snippet: EDSS大於等於3分
+      - biomarker: EDSS
+        operator: <
+        value: '6'
+        unit: 分
+        duration: 2年
+        terminology_bindings:
+          loinc: 89256-2
+          snomed_ct: '273554001'
+          snomed_procedure: '273554001'
+          snomed_finding: '273554001'
+        source_grounding:
+          start_char: 189
+          end_char: 197
+          snippet: EDSS未滿6分
+      - biomarker: EDSS
+        operator: '>='
+        value: '6'
+        unit: 分
+        duration: 2年
+        terminology_bindings:
+          loinc: 89256-2
+          snomed_ct: '273554001'
+          snomed_procedure: '273554001'
+          snomed_finding: '273554001'
+        source_grounding:
+          start_char: 222
+          end_char: 232
+          snippet: EDSS大於等於6分
+      - biomarker: EDSS
+        operator: <
+        value: '6'
+        unit: 分
+        duration: 6個月
+        terminology_bindings:
+          loinc: 89256-2
+          snomed_ct: '273554001'
+          snomed_procedure: '273554001'
+          snomed_finding: '273554001'
+        source_grounding:
+          start_char: 401
+          end_char: 409
+          snippet: EDSS未滿6分
+      - biomarker: EDSS
+        operator: '>='
+        value: '6'
+        unit: 分
+        duration: 2年
+        terminology_bindings:
+          loinc: 89256-2
+          snomed_ct: '273554001'
+          snomed_procedure: '273554001'
+          snomed_finding: '273554001'
+        source_grounding:
+          start_char: 421
+          end_char: 431
+          snippet: EDSS大於等於6分
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers:
+    - biomarker: EDSS
+      operator: <=
+      value: '6.5'
+      unit: 分
+      duration: 6個月以上
+      terminology_bindings:
+        loinc: 89256-2
+        snomed_ct: '273554001'
+        snomed_procedure: '273554001'
+        snomed_finding: '273554001'
+      source_grounding:
+        start_char: 102
+        end_char: 116
+        snippet: EDSS應小於或等於6.5分
+    - biomarker: EDSS
+      operator: '>='
+      value: '3'
+      unit: 分
+      duration: 6個月以上
+      terminology_bindings:
+        loinc: 89256-2
+        snomed_ct: '273554001'
+        snomed_procedure: '273554001'
+        snomed_finding: '273554001'
+      source_grounding:
+        start_char: 118
+        end_char: 128
+        snippet: EDSS大於等於3分
+    - biomarker: EDSS
+      operator: <
+      value: '6'
+      unit: 分
+      duration: 2年
+      terminology_bindings:
+        loinc: 89256-2
+        snomed_ct: '273554001'
+        snomed_procedure: '273554001'
+        snomed_finding: '273554001'
+      source_grounding:
+        start_char: 189
+        end_char: 197
+        snippet: EDSS未滿6分
+    - biomarker: EDSS
+      operator: '>='
+      value: '6'
+      unit: 分
+      duration: 2年
+      terminology_bindings:
+        loinc: 89256-2
+        snomed_ct: '273554001'
+        snomed_procedure: '273554001'
+        snomed_finding: '273554001'
+      source_grounding:
+        start_char: 222
+        end_char: 232
+        snippet: EDSS大於等於6分
+    - biomarker: EDSS
+      operator: <
+      value: '6'
+      unit: 分
+      duration: 6個月
+      terminology_bindings:
+        loinc: 89256-2
+        snomed_ct: '273554001'
+        snomed_procedure: '273554001'
+        snomed_finding: '273554001'
+      source_grounding:
+        start_char: 401
+        end_char: 409
+        snippet: EDSS未滿6分
+    - biomarker: EDSS
+      operator: '>='
+      value: '6'
+      unit: 分
+      duration: 2年
+      terminology_bindings:
+        loinc: 89256-2
+        snomed_ct: '273554001'
+        snomed_procedure: '273554001'
+        snomed_finding: '273554001'
+      source_grounding:
+        start_char: 421
+        end_char: 431
+        snippet: EDSS大於等於6分
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 258
+      end_char: 262
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 8.2.3.7. Siponimod(如Mayzent)：(110/3/1)
     full_text: "1.\t限用於曾被診斷為復發緩解型多發性硬化症之病人。\n2.\t須符合次發進展型多發性硬化症之診斷，即過去在沒有復發或與復發無關的情況下，出現失能惡化持續至少6個月以上。\n\
@@ -532,12 +1092,36 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Abatacept (如 Orencia)
+    - Adalimumab (阿達木單抗)
+    - Brodalumab (如 Lumicef)
+    - Certolizumab (如 Cimzia)
+    - Etanercept (恩博)
+    - Filgotinib (如 Jyseleca)
+    - Golimumab (如 Simponi)
+    - Ixekizumab (如 Taltz)
+    - Secukinumab (蘇金單抗)
+    - Tocilizumab (如 Actemra)
+    - Tofacitinib (托法替尼)
   conditions_of_payment:
     indications:
     - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     laboratory_criteria: []
-    summary: 使用本類藥品之醫事機構應注意監測病患用藥後之不良反應及可能發生的重大安全事件(如肺結核及病毒性肝炎)。（103/9/1）
+    summary: 適用於【Hepatitis B / Hepatitis C】之健保給付。 規範重點：使用本類藥品之醫事機構應注意監測病患用藥後之不良反應及可能發生的重大安全事件(如肺結核及病毒性肝炎)。
+    clinical_rules:
+    - indication: Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 8.2.4. Etanercept(如Enbrel); adalimumab（如Humira）;golimumab（如Simponi）；abatacept（如Orencia）；tocilizumab（如Actemra）；tofacitinib（如Xeljanz）；infliximab
       ；certolizumab (如Cimzia)；ixekizumab(如Taltz)；brodalumab(如Lumicef)；filgotinib(如Jyseleca)；secukinumab（如Cosentyx）(92/3/1、93/8/1、93/9/1、98/3/1、99/2/1、100/12/1、101/1/1、101/6/1、101/10/1、102/1/1、102/2/1、102/4/1、102/10/1、103/9/1、103/12/1、105/9/1、105/10/1、109/12/1、111/5/1、112/5/1、113/10/1、114/7/1、114/10/1)
@@ -557,16 +1141,29 @@ regulations:
     - Adalimumab (阿達木單抗)
     - Etanercept (恩博)
     - Secukinumab (蘇金單抗)
+    - Tocilizumab (如 Actemra)
     - Tofacitinib (托法替尼)
   conditions_of_payment:
     indications:
     - Rheumatoid Arthritis (類風濕性關節炎)
     laboratory_criteria: []
-    summary: '1.Etanercept限使用於4歲以上具有活動性多關節幼年型慢性關節炎患者。adalimumab、tocilizumab及tofacitinib限使用於2歲以上具有活動性多關節幼年型慢性關節炎患者（101/12/1、102/10/1、105/10/1、108/1/1、111/2/1、113/10/1）。secukinumab限使用6歲以上具有接骨點發炎相關型關節炎患者（114/7/1）。
-
-      2.限具有風濕病專科醫師證書之內科專科醫師或具有小兒過敏免疫專科醫師證書之小兒科專科醫師處方。（114/10/1）
-
-      3.年齡大於18歲的病患應由具有風濕病專科醫師證書之內科專科醫師或具有小兒過敏免疫專科醫師...'
+    summary: 適用於【Rheumatoid Arthritis】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Rheumatoid Arthritis (類風濕性關節炎)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 350
+      end_char: 354
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 8.2.4.1. Etanercept(如Enbrel)；adalimumab(如Humira)；tocilizumab（如Actemra）；tofacitinib（如Xeljanz）；secukinumab（如Cosentyx）(94/3/1、101/12/1、102/1/1、102/10/1、105/10/1、108/1/1、111/2/1、113/10/1、114/7/1、114/10/1)：兒童治療部分
     full_text: '1.Etanercept限使用於4歲以上具有活動性多關節幼年型慢性關節炎患者。adalimumab、tocilizumab及tofacitinib限使用於2歲以上具有活動性多關節幼年型慢性關節炎患者（101/12/1、102/10/1、105/10/1、108/1/1、111/2/1、113/10/1）。secukinumab限使用6歲以上具有接骨點發炎相關型關節炎患者（114/7/1）。

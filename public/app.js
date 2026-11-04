@@ -45,8 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         debounceTimer = setTimeout(() => {
             currentOffset = 0;
             performSearch();
-            checkATCExpansion();
-        }, 300);
+        }, 220);
     });
 
     clearSearch.addEventListener('click', () => {
@@ -85,12 +84,6 @@ document.addEventListener('DOMContentLoaded', () => {
         applyAdvSearchBtn.addEventListener('click', () => {
             currentOffset = 0;
             performSearch();
-            if (advDrugInput && advDrugInput.value.trim()) {
-                const oldVal = searchInput.value;
-                searchInput.value = advDrugInput.value.trim();
-                checkATCExpansion();
-                searchInput.value = oldVal;
-            }
         });
     }
 
@@ -140,6 +133,20 @@ document.addEventListener('DOMContentLoaded', () => {
     closeModal.addEventListener('click', () => detailModal.classList.add('hidden'));
     closeUploadModal.addEventListener('click', () => uploadModal.classList.add('hidden'));
     uploadBtn.addEventListener('click', () => uploadModal.classList.remove('hidden'));
+
+    // Close modals on Escape key or backdrop click
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            detailModal.classList.add('hidden');
+            uploadModal.classList.add('hidden');
+        }
+    });
+    detailModal.addEventListener('click', (e) => {
+        if (e.target === detailModal) detailModal.classList.add('hidden');
+    });
+    uploadModal.addEventListener('click', (e) => {
+        if (e.target === uploadModal) uploadModal.classList.add('hidden');
+    });
 
     // File Drop Zone
     dropZone.addEventListener('click', () => fileInput.click());
@@ -219,74 +226,73 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    async function checkATCExpansion() {
-        const q = searchInput.value.trim();
-        if (!q) {
+    function renderATCExpansions(expansions) {
+        if (!expansions || expansions.length === 0) {
             atcExpansion.classList.add('hidden');
             return;
         }
+        atcTags.innerHTML = '';
+        expansions.forEach(exp => {
+            const cardItem = document.createElement('div');
+            cardItem.className = 'atc-expansion-card';
 
-        if (atcAbortController) {
-            atcAbortController.abort();
-        }
-        atcAbortController = new AbortController();
-        const signal = atcAbortController.signal;
+            const primaryJumpBtn = exp.primary_regulation
+                ? `<button class="btn-jump-reg" data-sec="${escapeHtml(exp.primary_regulation)}" style="background:rgba(16,185,129,0.2); border:1px solid rgba(16,185,129,0.45); color:#6ee7b7; border-radius:4px; padding:0.15rem 0.5rem; font-size:0.75rem; font-weight:600; cursor:pointer;"><i class="fa-solid fa-bullseye"></i> 主規定 ${escapeHtml(exp.primary_regulation)}</button>`
+                : '';
 
-        try {
-            const res = await fetch(`/api/atc/expand?q=${encodeURIComponent(q)}`, { signal });
-            const data = await res.json();
-            if (data.status === 'success' && data.expansions.length > 0) {
-                atcTags.innerHTML = '';
-                data.expansions.forEach(exp => {
-                    const cardItem = document.createElement('div');
-                    cardItem.className = 'atc-expansion-card';
-                    
-                    let html = `
-                        <div class="atc-exp-header">
-                            <span class="atc-exp-code-badge"><i class="fa-solid fa-barcode"></i> 藥物完整 ATC 碼: ${exp.atc_code}</span>
-                            <span class="atc-exp-class-badge"><i class="fa-solid fa-layer-group"></i> 藥理分類: ${exp.class_code}</span>
-                        </div>
-                        <div class="atc-exp-body">
-                            <div class="atc-exp-row">
-                                <span class="atc-exp-label">藥理分類與給付規定 (ATC Class):</span>
-                                <span class="atc-exp-value"><strong>${exp.class_name_tc}</strong> <small style="opacity: 0.8; display: block;">${exp.class_name_en}</small></span>
-                            </div>
-                    `;
-                    
-                    if (exp.ingredient_en || exp.ingredient_tc) {
-                        html += `
-                            <div class="atc-exp-row">
-                                <span class="atc-exp-label">對應成分 (Generic Ingredient):</span>
-                                <span class="atc-exp-value"><strong>${exp.ingredient_en}</strong> ${exp.ingredient_tc ? `(${exp.ingredient_tc})` : ''}</span>
-                            </div>
-                        `;
-                    }
-                    
-                    if (exp.brand_en || (exp.brand_tc && exp.brand_tc.length > 0)) {
-                        const brandsList = [];
-                        if (exp.brand_en) brandsList.push(`<strong>${exp.brand_en}</strong> (英文)`);
-                        if (exp.brand_tc && exp.brand_tc.length > 0) brandsList.push(`<strong>${exp.brand_tc.join(', ')}</strong> (台灣品牌)`);
-                        
-                        html += `
-                            <div class="atc-exp-row">
-                                <span class="atc-exp-label">商品名稱 (Trade Brands):</span>
-                                <span class="atc-exp-value">${brandsList.join(' | ')}</span>
-                            </div>
-                        `;
-                    }
-                    
-                    html += `</div>`;
-                    cardItem.innerHTML = html;
-                    atcTags.appendChild(cardItem);
-                });
-                atcExpansion.classList.remove('hidden');
-            } else {
-                atcExpansion.classList.add('hidden');
+            let html = `
+                <div class="atc-exp-header">
+                    <span class="atc-exp-code-badge"><i class="fa-solid fa-barcode"></i> 藥物完整 ATC 碼: ${escapeHtml(exp.atc_code)}</span>
+                    <div style="display:flex; gap:0.4rem; align-items:center;">
+                        ${primaryJumpBtn}
+                        <span class="atc-exp-class-badge"><i class="fa-solid fa-layer-group"></i> 藥理分類: ${escapeHtml(exp.class_code)}</span>
+                    </div>
+                </div>
+                <div class="atc-exp-body">
+                    <div class="atc-exp-row">
+                        <span class="atc-exp-label">藥理分類與給付規定 (ATC Class):</span>
+                        <span class="atc-exp-value"><strong>${escapeHtml(exp.class_name_tc)}</strong> <small style="opacity: 0.8; display: block;">${escapeHtml(exp.class_name_en)}</small></span>
+                    </div>
+            `;
+
+            if (exp.ingredient_en || exp.ingredient_tc) {
+                html += `
+                    <div class="atc-exp-row">
+                        <span class="atc-exp-label">對應成分 (Generic Ingredient):</span>
+                        <span class="atc-exp-value"><strong>${escapeHtml(exp.ingredient_en)}</strong> ${exp.ingredient_tc ? `(${escapeHtml(exp.ingredient_tc)})` : ''}</span>
+                    </div>
+                `;
             }
-        } catch (err) {
-            if (err.name === 'AbortError') return;
-            console.error("Error expanding ATC:", err);
-        }
+
+            if (exp.brand_en || (exp.brand_tc && exp.brand_tc.length > 0)) {
+                const brandsList = [];
+                if (exp.brand_en) brandsList.push(`<strong>${escapeHtml(exp.brand_en)}</strong> (英文)`);
+                if (exp.brand_tc && exp.brand_tc.length > 0) brandsList.push(`<strong>${escapeHtml(exp.brand_tc.join(', '))}</strong> (台灣品牌)`);
+
+                html += `
+                    <div class="atc-exp-row">
+                        <span class="atc-exp-label">商品名稱 (Trade Brands):</span>
+                        <span class="atc-exp-value">${brandsList.join(' | ')}</span>
+                    </div>
+                `;
+            }
+
+            html += `</div>`;
+            cardItem.innerHTML = html;
+
+            const jumpBtn = cardItem.querySelector('.btn-jump-reg');
+            if (jumpBtn) {
+                jumpBtn.addEventListener('click', () => {
+                    searchInput.value = jumpBtn.getAttribute('data-sec');
+                    clearSearch.style.display = 'block';
+                    currentOffset = 0;
+                    performSearch();
+                });
+            }
+
+            atcTags.appendChild(cardItem);
+        });
+        atcExpansion.classList.remove('hidden');
     }
 
 
@@ -339,6 +345,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     loadMoreContainer.classList.add('hidden');
                 }
 
+                renderATCExpansions(q ? (data.atc_expansions || []) : []);
                 renderResults(data.results, false);
             }
         } catch (err) {
@@ -409,9 +416,36 @@ document.addEventListener('DOMContentLoaded', () => {
             const card = document.createElement('div');
             card.className = 'card';
             
-            const labs = reg.conditions_of_payment.laboratory_criteria || [];
-            const labBadges = labs.map(l => `<span class="badge-lab"><i class="fa-solid fa-flask"></i> ${l}</span>`).join(' ');
+            const structuredBios = reg.conditions_of_payment.structured_biomarkers || [];
+            let labBadges = '';
+            if (structuredBios.length > 0) {
+                const seenBios = new Set();
+                const uniqueBios = [];
+                structuredBios.forEach(b => {
+                    const key = `${b.biomarker}${b.operator}${b.value}`;
+                    if (!seenBios.has(key)) {
+                        seenBios.add(key);
+                        uniqueBios.push(b);
+                    }
+                });
+                labBadges = uniqueBios.slice(0, 5).map(b => {
+                    let bindingInfo = '';
+                    if (b.terminology_bindings && b.terminology_bindings.loinc) {
+                        const loincCode = typeof b.terminology_bindings.loinc === 'object' ? b.terminology_bindings.loinc.code : b.terminology_bindings.loinc;
+                        if (loincCode) bindingInfo = ` [LOINC:${loincCode}]`;
+                    }
+                    const snippetText = b.source_grounding ? (b.source_grounding.snippet || b.source_grounding.matched_text || '') : '';
+                    return `<span class="badge-biomarker" title="點擊內文可定位原始依據: ${escapeHtml(snippetText)}${escapeHtml(bindingInfo)}"><i class="fa-solid fa-vial-circle-check"></i> ${b.biomarker} ${b.operator === 'status' ? '' : b.operator}${b.value}${b.unit ? ' ' + b.unit : ''}</span>`;
+                }).join(' ');
+            } else {
+                const labs = reg.conditions_of_payment.laboratory_criteria || [];
+                labBadges = labs.map(l => `<span class="badge-lab"><i class="fa-solid fa-flask"></i> ${l}</span>`).join(' ');
+            }
             
+            const priorAuthBadge = reg.conditions_of_payment.prior_authorization_required 
+                ? `<span class="badge-prior-auth" title="本藥品需事前審查核准"><i class="fa-solid fa-stamp"></i> 事前審查</span>` 
+                : '';
+
             const indications = reg.conditions_of_payment.indications || [];
             const indicationBadges = indications.map(ind => `<span class="badge-indication"><i class="fa-solid fa-notes-medical"></i> ${ind}</span>`).join(' ');
 
@@ -419,7 +453,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div>
                     <div class="card-header">
                         <span class="sec-badge">#${existingCount + idx + 1} ${reg.section_number}</span>
-                        <span class="chapter-tag">${reg.chapter.split(' ')[0]}</span>
+                        <div style="display:flex; gap:0.4rem; align-items:center;">
+                            ${priorAuthBadge}
+                            <span class="chapter-tag">${reg.chapter.split(' ')[0]}</span>
+                        </div>
                     </div>
                     <h3 class="card-title">${cleanTitleForDisplay(reg.section_title)}</h3>
                     <div class="badge-group">${indicationBadges} ${labBadges}</div>
@@ -452,7 +489,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function cleanSummaryText(text) {
         if (!text) return '';
-        return text.replace(/【給付與評估表格.*?】:\s*/g, '').replace(/\|/g, ' - ').substring(0, 260) + '...';
+        const cleaned = text.replace(/【給付與評估表格.*?】:\s*/g, '').replace(/\|/g, ' - ');
+        return cleaned.length > 360 ? cleaned.substring(0, 360) + '...' : cleaned;
     }
 
     function openDetailModal(reg) {
@@ -461,8 +499,136 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('modalChapter').textContent = reg.chapter;
         document.getElementById('modalDates').textContent = formatDatesForDisplay(reg.effective_dates);
         
+        // Render LangExtract Structured Criteria & Grounding Chips
+        const criteriaSection = document.getElementById('modalStructuredCriteriaSection');
+        const chipsContainer = document.getElementById('modalStructuredChips');
+        const priorAuthEl = document.getElementById('modalPriorAuthBadge');
+        
+        if (criteriaSection && chipsContainer) {
+            chipsContainer.innerHTML = '';
+            const bios = reg.conditions_of_payment.structured_biomarkers || [];
+            const steps = reg.conditions_of_payment.step_therapy || [];
+            const stops = reg.conditions_of_payment.stopping_rules || [];
+            const evals = reg.conditions_of_payment.evaluation_intervals || [];
+            const priorAuth = reg.conditions_of_payment.prior_authorization_required;
+            const priorAuthGrounding = reg.conditions_of_payment.prior_authorization_grounding;
+
+            if (priorAuth) {
+                priorAuthEl.innerHTML = `<span class="badge-prior-auth" style="cursor:pointer;" id="priorAuthChip"><i class="fa-solid fa-stamp"></i> 需事前審查 (點擊定位)</span>`;
+                const paMatch = priorAuthGrounding ? (priorAuthGrounding.snippet || priorAuthGrounding.matched_text || '') : '事前審查';
+                if (paMatch) {
+                    const paBtn = priorAuthEl.querySelector('#priorAuthChip');
+                    if (paBtn) {
+                        paBtn.addEventListener('click', () => {
+                            scrollToHighlight(reg.reference_annotations.full_text, paMatch);
+                        });
+                    }
+                }
+            } else {
+                priorAuthEl.innerHTML = '';
+            }
+
+            let hasAnyStructured = bios.length > 0 || steps.length > 0 || stops.length > 0 || evals.length > 0 || priorAuth;
+            if (hasAnyStructured) {
+                criteriaSection.classList.remove('hidden');
+
+                bios.forEach((b) => {
+                    const chip = document.createElement('button');
+                    chip.className = 'criteria-chip';
+                    let loincBadge = '';
+                    const snippetText = b.source_grounding ? (b.source_grounding.snippet || b.source_grounding.matched_text || '') : '';
+                    let tooltip = `點擊定位原文: ${snippetText}`;
+                    if (b.terminology_bindings) {
+                        const loinc = b.terminology_bindings.loinc;
+                        const snomed = b.terminology_bindings.snomed_ct;
+                        const snomedAxis = b.terminology_bindings.snomed_finding || b.terminology_bindings.snomed_Result_Axis;
+                        if (loinc) {
+                            const lCode = typeof loinc === 'object' ? loinc.code : loinc;
+                            const lDisp = typeof loinc === 'object' && loinc.display ? ` (${loinc.display})` : '';
+                            loincBadge = `<span style="background:rgba(56,189,248,0.18); color:#7dd3fc; padding:1px 5px; border-radius:4px; font-size:0.7rem; margin-left:4px; font-family:monospace;">LOINC:${lCode}</span>`;
+                            tooltip += `\nLOINC: ${lCode}${lDisp}`;
+                        }
+                        if (snomed) {
+                            const sCode = typeof snomed === 'object' ? snomed.code : snomed;
+                            const sDisp = typeof snomed === 'object' && snomed.display ? ` (${snomed.display})` : '';
+                            tooltip += `\nSNOMED-CT: ${sCode}${sDisp}`;
+                        }
+                        if (snomedAxis) {
+                            const saCode = typeof snomedAxis === 'object' ? snomedAxis.code : snomedAxis;
+                            const saDisp = typeof snomedAxis === 'object' && snomedAxis.display ? ` (${snomedAxis.display})` : '';
+                            loincBadge += `<span style="background:rgba(168,85,247,0.2); color:#d8b4fe; padding:1px 5px; border-radius:4px; font-size:0.7rem; margin-left:3px; font-family:monospace;">SCT:${saCode}</span>`;
+                            tooltip += `\nSNOMED Finding: ${saCode}${saDisp}`;
+                        }
+                    }
+                    chip.title = tooltip;
+                    chip.innerHTML = `<i class="fa-solid fa-vial" style="color:#10b981;"></i> <strong>${escapeHtml(b.biomarker)}</strong> ${escapeHtml(b.operator === 'status' ? '' : b.operator)} ${escapeHtml(String(b.value))}${b.unit ? ' ' + escapeHtml(b.unit) : ''}${loincBadge}`;
+                    chip.addEventListener('click', () => {
+                        document.querySelectorAll('.criteria-chip').forEach(c => c.classList.remove('active'));
+                        chip.classList.add('active');
+                        if (snippetText) {
+                            scrollToHighlight(reg.reference_annotations.full_text, snippetText);
+                        }
+                    });
+                    chipsContainer.appendChild(chip);
+                });
+
+                evals.forEach((ev) => {
+                    const chip = document.createElement('button');
+                    chip.className = 'criteria-chip';
+                    const evLabel = typeof ev === 'string' ? ev : (ev.schedule || ev.frequency || '');
+                    const evSnippet = typeof ev === 'string' ? ev : (ev.source_grounding ? (ev.source_grounding.snippet || ev.source_grounding.matched_text) : evLabel);
+                    chip.innerHTML = `<i class="fa-regular fa-clock" style="color:#38bdf8;"></i> 評估/續用: ${escapeHtml(evLabel)}`;
+                    chip.addEventListener('click', () => {
+                        document.querySelectorAll('.criteria-chip').forEach(c => c.classList.remove('active'));
+                        chip.classList.add('active');
+                        if (evSnippet) {
+                            scrollToHighlight(reg.reference_annotations.full_text, evSnippet);
+                        }
+                    });
+                    chipsContainer.appendChild(chip);
+                });
+
+                steps.slice(0, 3).forEach((st) => {
+                    const chip = document.createElement('button');
+                    chip.className = 'criteria-chip';
+                    const stLabel = typeof st === 'string' ? st : (st.rule || st.requirement || '');
+                    const stSnippet = typeof st === 'string' ? st : (st.source_grounding ? (st.source_grounding.snippet || st.source_grounding.matched_text) : stLabel);
+                    const shortRule = stLabel.length > 28 ? stLabel.substring(0, 28) + '...' : stLabel;
+                    chip.innerHTML = `<i class="fa-solid fa-stairs" style="color:#f59e0b;"></i> 二線/轉換條件: ${escapeHtml(shortRule)}`;
+                    chip.addEventListener('click', () => {
+                        document.querySelectorAll('.criteria-chip').forEach(c => c.classList.remove('active'));
+                        chip.classList.add('active');
+                        if (stSnippet) {
+                            scrollToHighlight(reg.reference_annotations.full_text, stSnippet);
+                        }
+                    });
+                    chipsContainer.appendChild(chip);
+                });
+
+                stops.slice(0, 3).forEach((sp) => {
+                    const chip = document.createElement('button');
+                    chip.className = 'criteria-chip';
+                    const spLabel = typeof sp === 'string' ? sp : (sp.rule || sp.condition || '');
+                    const spSnippet = typeof sp === 'string' ? sp : (sp.source_grounding ? (sp.source_grounding.snippet || sp.source_grounding.matched_text) : spLabel);
+                    const shortRule = spLabel.length > 28 ? spLabel.substring(0, 28) + '...' : spLabel;
+                    chip.innerHTML = `<i class="fa-solid fa-ban" style="color:#ef4444;"></i> 停藥/排除: ${escapeHtml(shortRule)}`;
+                    chip.addEventListener('click', () => {
+                        document.querySelectorAll('.criteria-chip').forEach(c => c.classList.remove('active'));
+                        chip.classList.add('active');
+                        if (spSnippet) {
+                            scrollToHighlight(reg.reference_annotations.full_text, spSnippet);
+                        }
+                    });
+                    chipsContainer.appendChild(chip);
+                });
+            } else {
+                criteriaSection.classList.add('hidden');
+            }
+        }
+
         const fullTextContainer = document.getElementById('modalFullText');
-        renderFormattedText(fullTextContainer, reg.reference_annotations.full_text);
+        const activeQuery = searchInput.value.trim().split(',')[0].split('，')[0].trim();
+        renderFormattedText(fullTextContainer, reg.reference_annotations.full_text, activeQuery.length >= 2 ? activeQuery : null);
         
         if (window.jsyaml) {
             document.getElementById('modalOkfYaml').textContent = jsyaml.dump(reg);
@@ -473,7 +639,29 @@ document.addEventListener('DOMContentLoaded', () => {
         detailModal.classList.remove('hidden');
     }
 
-    function renderFormattedText(container, text) {
+    function scrollToHighlight(fullText, highlightSnippet) {
+        const fullTextContainer = document.getElementById('modalFullText');
+        renderFormattedText(fullTextContainer, fullText, highlightSnippet);
+        setTimeout(() => {
+            const mark = fullTextContainer.querySelector('.grounding-highlight');
+            if (mark) {
+                mark.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }, 60);
+    }
+
+    function escapeRegExp(string) {
+        return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+
+    function createHighlightRegex(snippet) {
+        const escaped = escapeHtml(snippet.trim());
+        const parts = escaped.split(/\s+/).filter(Boolean).map(p => escapeRegExp(p));
+        if (parts.length === 0) return null;
+        return new RegExp(`(${parts.join('[\\s\\u3000]*')})`, 'gi');
+    }
+
+    function renderFormattedText(container, text, highlightSnippet = null) {
         if (!text) { container.innerHTML = ''; return; }
         
         let lines = text.split('\n');
@@ -492,35 +680,52 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 if (inTable) {
                     inTable = false;
-                    htmlParts.push(buildTableHtml(tableRows));
+                    htmlParts.push(buildTableHtml(tableRows, highlightSnippet));
                     tableRows = [];
                 }
                 if (trimmed) {
+                    let safeLine = escapeHtml(trimmed);
+                    if (highlightSnippet) {
+                        const regex = createHighlightRegex(highlightSnippet);
+                        if (regex) {
+                            safeLine = safeLine.replace(regex, `<mark class="grounding-highlight pulse">$1</mark>`);
+                        }
+                    }
                     if (trimmed.startsWith('【')) {
-                        htmlParts.push(`<h4 style="color:#38bdf8; margin-top:1rem;"><i class="fa-solid fa-table-list"></i> ${escapeHtml(trimmed)}</h4>`);
+                        htmlParts.push(`<h4 style="color:#38bdf8; margin-top:1rem;"><i class="fa-solid fa-table-list"></i> ${safeLine}</h4>`);
                     } else {
-                        htmlParts.push(`<p style="margin-bottom:0.5rem;">${escapeHtml(trimmed)}</p>`);
+                        htmlParts.push(`<p style="margin-bottom:0.5rem;">${safeLine}</p>`);
                     }
                 }
             }
         });
 
         if (inTable) {
-            htmlParts.push(buildTableHtml(tableRows));
+            htmlParts.push(buildTableHtml(tableRows, highlightSnippet));
         }
 
         container.innerHTML = htmlParts.join('');
     }
 
-    function buildTableHtml(rows) {
+    function buildTableHtml(rows, highlightSnippet = null) {
         if (!rows.length) return '';
         let html = '<div class="table-responsive"><table class="clinical-table">';
         rows.forEach((rowStr, idx) => {
             let cells = rowStr.split('|').map(c => c.trim());
+            const formatCell = (c) => {
+                let s = escapeHtml(c);
+                if (highlightSnippet) {
+                    const regex = createHighlightRegex(highlightSnippet);
+                    if (regex) {
+                        s = s.replace(regex, `<mark class="grounding-highlight pulse">$1</mark>`);
+                    }
+                }
+                return s;
+            };
             if (idx === 0) {
-                html += '<thead><tr>' + cells.map(c => `<th>${escapeHtml(c)}</th>`).join('') + '</tr></thead><tbody>';
+                html += '<thead><tr>' + cells.map(c => `<th>${formatCell(c)}</th>`).join('') + '</tr></thead><tbody>';
             } else {
-                html += '<tr>' + cells.map(c => `<td>${escapeHtml(c)}</td>`).join('') + '</tr>';
+                html += '<tr>' + cells.map(c => `<td>${formatCell(c)}</td>`).join('') + '</tr>';
             }
         });
         html += '</tbody></table></div>';

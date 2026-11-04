@@ -57,8 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         debounceTimer = setTimeout(() => {
             currentOffset = 0;
             performMobileSearch();
-            checkMobileATC();
-        }, 300);
+        }, 220);
     });
 
     mobileClearBtn.addEventListener('click', () => {
@@ -94,12 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileApplyAdvSearchBtn.addEventListener('click', () => {
             currentOffset = 0;
             performMobileSearch();
-            if (mobileAdvDrugInput && mobileAdvDrugInput.value.trim()) {
-                const oldVal = mobileSearchInput.value;
-                mobileSearchInput.value = mobileAdvDrugInput.value.trim();
-                checkMobileATC();
-                mobileSearchInput.value = oldVal;
-            }
         });
     }
 
@@ -214,71 +207,55 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    async function checkMobileATC() {
-        const q = mobileSearchInput.value.trim();
-        if (!q) { mobileAtcExpansion.classList.add('hidden'); return; }
-
-        if (atcAbortController) {
-            atcAbortController.abort();
+    function renderMobileATC(expansions) {
+        if (!expansions || expansions.length === 0) {
+            mobileAtcExpansion.classList.add('hidden');
+            return;
         }
-        atcAbortController = new AbortController();
-        const signal = atcAbortController.signal;
+        mobileAtcTags.innerHTML = '';
+        expansions.forEach(exp => {
+            const cardItem = document.createElement('div');
+            cardItem.className = 'mobile-atc-card';
 
-        try {
-            const res = await fetch(`/api/atc/expand?q=${encodeURIComponent(q)}`, { signal });
-            const data = await res.json();
-            if (data.status === 'success' && data.expansions.length > 0) {
-                mobileAtcTags.innerHTML = '';
-                data.expansions.forEach(exp => {
-                    const cardItem = document.createElement('div');
-                    cardItem.className = 'mobile-atc-card';
-                    
-                    let html = `
-                        <div class="atc-exp-header" style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(56, 189, 248, 0.15); padding-bottom: 0.3rem; margin-bottom: 0.3rem;">
-                            <span style="font-size:0.75rem; font-weight:700; color:#38bdf8;"><i class="fa-solid fa-barcode"></i> ATC: ${exp.atc_code}</span>
-                            <span style="font-size:0.75rem; font-weight:600; color:#93c5fd;"><i class="fa-solid fa-layer-group"></i> 類別: ${exp.class_code}</span>
-                        </div>
-                        <div style="display:flex; flex-direction:column; gap:0.25rem; font-size:0.8rem;">
-                            <div>
-                                <span style="color:#94a3b8; font-weight:600; display:inline-block; width:110px;">分類 (ATC Class):</span>
-                                <span style="color:#f1f5f9;">${exp.class_name_tc}</span>
-                            </div>
-                    `;
-                    
-                    if (exp.ingredient_en || exp.ingredient_tc) {
-                        html += `
-                            <div>
-                                <span style="color:#94a3b8; font-weight:600; display:inline-block; width:110px;">成分 (Generic):</span>
-                                <span style="color:#f1f5f9; font-weight:600;">${exp.ingredient_en} ${exp.ingredient_tc ? `(${exp.ingredient_tc})` : ''}</span>
-                            </div>
-                        `;
-                    }
-                    
-                    if (exp.brand_en || (exp.brand_tc && exp.brand_tc.length > 0)) {
-                        const brandsList = [];
-                        if (exp.brand_en) brandsList.push(`${exp.brand_en} (Eng)`);
-                        if (exp.brand_tc && exp.brand_tc.length > 0) brandsList.push(`${exp.brand_tc.join(', ')} (台)`);
-                        
-                        html += `
-                            <div>
-                                <span style="color:#94a3b8; font-weight:600; display:inline-block; width:110px;">商品名 (Brands):</span>
-                                <span style="color:#f1f5f9;">${brandsList.join(' | ')}</span>
-                            </div>
-                        `;
-                    }
-                    
-                    html += `</div>`;
-                    cardItem.innerHTML = html;
-                    mobileAtcTags.appendChild(cardItem);
-                });
-                mobileAtcExpansion.classList.remove('hidden');
-            } else {
-                mobileAtcExpansion.classList.add('hidden');
+            let html = `
+                <div class="atc-exp-header" style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(56, 189, 248, 0.15); padding-bottom: 0.3rem; margin-bottom: 0.3rem;">
+                    <span style="font-size:0.75rem; font-weight:700; color:#38bdf8;"><i class="fa-solid fa-barcode"></i> ATC: ${escapeHtml(exp.atc_code)}</span>
+                    <span style="font-size:0.75rem; font-weight:600; color:#93c5fd;"><i class="fa-solid fa-layer-group"></i> 類別: ${escapeHtml(exp.class_code)}</span>
+                </div>
+                <div style="display:flex; flex-direction:column; gap:0.25rem; font-size:0.8rem;">
+                    <div>
+                        <span style="color:#94a3b8; font-weight:600; display:inline-block; width:110px;">分類 (ATC Class):</span>
+                        <span style="color:#f1f5f9;">${escapeHtml(exp.class_name_tc)}</span>
+                    </div>
+            `;
+
+            if (exp.ingredient_en || exp.ingredient_tc) {
+                html += `
+                    <div>
+                        <span style="color:#94a3b8; font-weight:600; display:inline-block; width:110px;">成分 (Generic):</span>
+                        <span style="color:#f1f5f9; font-weight:600;">${escapeHtml(exp.ingredient_en)} ${exp.ingredient_tc ? `(${escapeHtml(exp.ingredient_tc)})` : ''}</span>
+                    </div>
+                `;
             }
-        } catch (err) {
-            if (err.name === 'AbortError') return;
-            console.error("ATC error:", err);
-        }
+
+            if (exp.brand_en || (exp.brand_tc && exp.brand_tc.length > 0)) {
+                const brandsList = [];
+                if (exp.brand_en) brandsList.push(`${escapeHtml(exp.brand_en)} (Eng)`);
+                if (exp.brand_tc && exp.brand_tc.length > 0) brandsList.push(`${escapeHtml(exp.brand_tc.join(', '))} (台)`);
+
+                html += `
+                    <div>
+                        <span style="color:#94a3b8; font-weight:600; display:inline-block; width:110px;">商品名 (Brands):</span>
+                        <span style="color:#f1f5f9;">${brandsList.join(' | ')}</span>
+                    </div>
+                `;
+            }
+
+            html += `</div>`;
+            cardItem.innerHTML = html;
+            mobileAtcTags.appendChild(cardItem);
+        });
+        mobileAtcExpansion.classList.remove('hidden');
     }
 
 
@@ -323,6 +300,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
 
                 mobileLoadMoreContainer.classList.toggle('hidden', !data.has_more);
+                renderMobileATC(q ? (data.atc_expansions || []) : []);
                 renderMobileCards(data.results, false);
             }
         } catch (err) {
@@ -382,8 +360,29 @@ document.addEventListener('DOMContentLoaded', () => {
             const card = document.createElement('div');
             card.className = 'm-card';
 
-            const labs = reg.conditions_of_payment.laboratory_criteria || [];
-            const labBadges = labs.map(l => `<span class="m-tag-lab"><i class="fa-solid fa-flask"></i> ${l}</span>`).join(' ');
+            const structuredBios = reg.conditions_of_payment.structured_biomarkers || [];
+            let labBadges = '';
+            if (structuredBios.length > 0) {
+                const seenBios = new Set();
+                const uniqueBios = [];
+                structuredBios.forEach(b => {
+                    const key = `${b.biomarker}${b.operator}${b.value}`;
+                    if (!seenBios.has(key)) {
+                        seenBios.add(key);
+                        uniqueBios.push(b);
+                    }
+                });
+                labBadges = uniqueBios.slice(0, 4).map(b => 
+                    `<span class="badge-biomarker"><i class="fa-solid fa-vial-circle-check"></i> ${b.biomarker} ${b.operator === 'status' ? '' : b.operator}${b.value}${b.unit ? ' ' + b.unit : ''}</span>`
+                ).join(' ');
+            } else {
+                const labs = reg.conditions_of_payment.laboratory_criteria || [];
+                labBadges = labs.map(l => `<span class="m-tag-lab"><i class="fa-solid fa-flask"></i> ${l}</span>`).join(' ');
+            }
+
+            const priorAuthBadge = reg.conditions_of_payment.prior_authorization_required 
+                ? `<span class="badge-prior-auth"><i class="fa-solid fa-stamp"></i> 事前審查</span>` 
+                : '';
 
             const indications = reg.conditions_of_payment.indications || [];
             const indicationBadges = indications.map(ind => `<span class="m-tag-ind"><i class="fa-solid fa-notes-medical"></i> ${ind}</span>`).join(' ');
@@ -391,7 +390,10 @@ document.addEventListener('DOMContentLoaded', () => {
             card.innerHTML = `
                 <div class="m-card-header">
                     <span class="m-badge">#${existingCount + idx + 1} ${reg.section_number}</span>
-                    <span class="m-chapter">${reg.chapter.split(' ')[0]}</span>
+                    <div style="display:flex; gap:0.35rem; align-items:center;">
+                        ${priorAuthBadge}
+                        <span class="m-chapter">${reg.chapter.split(' ')[0]}</span>
+                    </div>
                 </div>
                 <h3 class="m-title">${cleanTitleForDisplay(reg.section_title)}</h3>
                 <div class="m-tags-group">${indicationBadges} ${labBadges}</div>
@@ -432,8 +434,48 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('sheetChapter').textContent = reg.chapter;
         document.getElementById('sheetDates').textContent = formatDatesForDisplay(reg.effective_dates);
 
+        const criteriaSection = document.getElementById('sheetStructuredCriteriaSection');
+        const chipsContainer = document.getElementById('sheetStructuredChips');
+        const priorAuthEl = document.getElementById('sheetPriorAuthBadge');
         const sheetFullText = document.getElementById('sheetFullText');
-        renderFormattedText(sheetFullText, reg.reference_annotations.full_text);
+
+        if (criteriaSection && chipsContainer) {
+            chipsContainer.innerHTML = '';
+            const bios = reg.conditions_of_payment.structured_biomarkers || [];
+            const evals = reg.conditions_of_payment.evaluation_intervals || [];
+            const priorAuth = reg.conditions_of_payment.prior_authorization_required;
+            const priorAuthGrounding = reg.conditions_of_payment.prior_authorization_grounding;
+
+            if (priorAuth && priorAuthEl) {
+                priorAuthEl.innerHTML = `<span class="badge-prior-auth" style="cursor:pointer;"><i class="fa-solid fa-stamp"></i> 事前審查</span>`;
+                const paMatch = priorAuthGrounding ? (priorAuthGrounding.snippet || priorAuthGrounding.matched_text || '') : '事前審查';
+                priorAuthEl.onclick = () => scrollToMobileHighlight(reg.reference_annotations.full_text, paMatch);
+            } else if (priorAuthEl) {
+                priorAuthEl.innerHTML = '';
+            }
+
+            if (bios.length > 0 || evals.length > 0 || priorAuth) {
+                criteriaSection.classList.remove('hidden');
+                bios.forEach((b) => {
+                    const chip = document.createElement('button');
+                    chip.style.cssText = 'background:rgba(30,41,59,0.9); border:1px solid rgba(56,189,248,0.3); border-radius:6px; padding:0.25rem 0.55rem; font-size:0.75rem; color:#e2e8f0; cursor:pointer;';
+                    const snippetText = b.source_grounding ? (b.source_grounding.snippet || b.source_grounding.matched_text || '') : '';
+                    const loinc = b.terminology_bindings && b.terminology_bindings.loinc
+                        ? (typeof b.terminology_bindings.loinc === 'object' ? b.terminology_bindings.loinc.code : b.terminology_bindings.loinc)
+                        : '';
+                    chip.innerHTML = `<i class="fa-solid fa-vial" style="color:#10b981;"></i> <strong>${escapeHtml(b.biomarker)}</strong> ${escapeHtml(b.operator === 'status' ? '' : b.operator)} ${escapeHtml(String(b.value))}${b.unit ? ' ' + escapeHtml(b.unit) : ''}${loinc ? ` <small style="color:#7dd3fc;">[LOINC:${escapeHtml(loinc)}]</small>` : ''}`;
+                    chip.addEventListener('click', () => {
+                        if (snippetText) scrollToMobileHighlight(reg.reference_annotations.full_text, snippetText);
+                    });
+                    chipsContainer.appendChild(chip);
+                });
+            } else {
+                criteriaSection.classList.add('hidden');
+            }
+        }
+
+        const activeQuery = mobileSearchInput.value.trim().split(',')[0].split('，')[0].trim();
+        renderFormattedText(sheetFullText, reg.reference_annotations.full_text, activeQuery.length >= 2 ? activeQuery : null);
 
         if (window.jsyaml) {
             document.getElementById('sheetOkfYaml').textContent = jsyaml.dump(reg);
@@ -444,7 +486,27 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileDetailSheet.classList.remove('hidden');
     }
 
-    function renderFormattedText(container, text) {
+    function scrollToMobileHighlight(fullText, highlightSnippet) {
+        const sheetFullText = document.getElementById('sheetFullText');
+        renderFormattedText(sheetFullText, fullText, highlightSnippet);
+        setTimeout(() => {
+            const mark = sheetFullText.querySelector('.grounding-highlight');
+            if (mark) mark.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 60);
+    }
+
+    function escapeRegExp(string) {
+        return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+
+    function createHighlightRegex(snippet) {
+        const escaped = escapeHtml(snippet.trim());
+        const parts = escaped.split(/\s+/).filter(Boolean).map(p => escapeRegExp(p));
+        if (parts.length === 0) return null;
+        return new RegExp(`(${parts.join('[\\s\\u3000]*')})`, 'gi');
+    }
+
+    function renderFormattedText(container, text, highlightSnippet = null) {
         if (!text) { container.innerHTML = ''; return; }
 
         let lines = text.split('\n');
@@ -463,35 +525,48 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 if (inTable) {
                     inTable = false;
-                    htmlParts.push(buildTableHtml(tableRows));
+                    htmlParts.push(buildTableHtml(tableRows, highlightSnippet));
                     tableRows = [];
                 }
                 if (trimmed) {
+                    let safeLine = escapeHtml(trimmed);
+                    if (highlightSnippet) {
+                        const regex = createHighlightRegex(highlightSnippet);
+                        if (regex) safeLine = safeLine.replace(regex, `<mark class="grounding-highlight">$1</mark>`);
+                    }
                     if (trimmed.startsWith('【')) {
-                        htmlParts.push(`<h4 style="color:#38bdf8; margin-top:1rem;"><i class="fa-solid fa-table-list"></i> ${escapeHtml(trimmed)}</h4>`);
+                        htmlParts.push(`<h4 style="color:#38bdf8; margin-top:1rem;"><i class="fa-solid fa-table-list"></i> ${safeLine}</h4>`);
                     } else {
-                        htmlParts.push(`<p style="margin-bottom:0.5rem;">${escapeHtml(trimmed)}</p>`);
+                        htmlParts.push(`<p style="margin-bottom:0.5rem;">${safeLine}</p>`);
                     }
                 }
             }
         });
 
         if (inTable) {
-            htmlParts.push(buildTableHtml(tableRows));
+            htmlParts.push(buildTableHtml(tableRows, highlightSnippet));
         }
 
         container.innerHTML = htmlParts.join('');
     }
 
-    function buildTableHtml(rows) {
+    function buildTableHtml(rows, highlightSnippet = null) {
         if (!rows.length) return '';
         let html = '<div class="table-responsive"><table class="clinical-table">';
         rows.forEach((rowStr, idx) => {
             let cells = rowStr.split('|').map(c => c.trim());
+            const formatCell = (c) => {
+                let s = escapeHtml(c);
+                if (highlightSnippet) {
+                    const regex = createHighlightRegex(highlightSnippet);
+                    if (regex) s = s.replace(regex, `<mark class="grounding-highlight">$1</mark>`);
+                }
+                return s;
+            };
             if (idx === 0) {
-                html += '<thead><tr>' + cells.map(c => `<th>${escapeHtml(c)}</th>`).join('') + '</tr></thead><tbody>';
+                html += '<thead><tr>' + cells.map(c => `<th>${formatCell(c)}</th>`).join('') + '</tr></thead><tbody>';
             } else {
-                html += '<tr>' + cells.map(c => `<td>${escapeHtml(c)}</td>`).join('') + '</tr>';
+                html += '<tr>' + cells.map(c => `<td>${formatCell(c)}</td>`).join('') + '</tr>';
             }
         });
         html += '</tbody></table></div>';

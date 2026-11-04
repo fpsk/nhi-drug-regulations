@@ -1,6 +1,20 @@
-okf_version: '1.0'
-schema_type: Taiwan_NHI_Drug_Regulation
+okf_version: '0.2'
+type: regulation/taiwan_nhi_drug_payment
 chapter: 第13節 皮膚科製劑 Dermatological preparations
+provenance:
+  authority: 衛生福利部中央健康保險署 (Taiwan NHIA)
+  source_document: 完整給付規定1150821.docx
+  jurisdiction: TW
+  legal_basis: 全民健康保險法第41條暨全民健康保險藥物給付項目及支付標準
+trust:
+  tier: machine-confirmed
+  extracted_by: LangExtract-NHI-Engine
+  grounding_verified: true
+  confidence_score: 0.98
+lifecycle:
+  status: active
+  last_synced: '2026-11-04'
+  stale_after: '2026-12-31'
 total_regulations: 17
 regulations:
 - regulation_id: REG-0503
@@ -11,11 +25,25 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Cadexomer Iodine (如 Iodosorb powder)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 限慢性腿部潰瘍病例及慢性感染性潰瘍傷口使用，每日用量超過一包時，需檢附傷口照片以利審查。
+    summary: 規範【. Cadexomer iodine（如Iodosorb powder）：】之健保給付條件。 規範重點：限慢性腿部潰瘍病例及慢性感染性潰瘍傷口使用，每日用量超過一包時，需檢附傷口照片以利審查。
+    clinical_rules:
+    - indication: 13.2. Cadexomer iodine（如Iodosorb powder）：（87/4/1）
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 13.2. Cadexomer iodine（如Iodosorb powder）：（87/4/1）
     full_text: 限慢性腿部潰瘍病例及慢性感染性潰瘍傷口使用，每日用量超過一包時，需檢附傷口照片以利審查。
@@ -32,7 +60,21 @@ regulations:
     indications:
     - Psoriasis / Psoriatic Arthritis (乾癬)
     laboratory_criteria: []
-    summary: 限確經診斷為尋常性牛皮癬（psoriasis）之病例使用，使用量以每星期不高於30gm或30mL為原則，若因病情需要使用量需超過每星期 30gm或30mL者，應於病歷詳細記錄理由。
+    summary: 適用於【Psoriasis / Psoriatic Arthritis】之健保給付。 規範重點：限確經診斷為尋常性牛皮癬（psoriasis）之病例使用，使用量以每星期不高於30gm或30mL為原則，若因病情需要使用量需超過每星期
+      30gm或30mL者，應於病歷詳細記錄理由。
+    clinical_rules:
+    - indication: Psoriasis / Psoriatic Arthritis (乾癬)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 13.3.1. Calcipotriol外用單方製劑（87/4/1、89/2/1、94/3/1、99/12/1）
     full_text: 限確經診斷為尋常性牛皮癬（psoriasis）之病例使用，使用量以每星期不高於30gm或30mL為原則，若因病情需要使用量需超過每星期
@@ -50,9 +92,20 @@ regulations:
     indications:
     - Psoriasis / Psoriatic Arthritis (乾癬)
     laboratory_criteria: []
-    summary: '1.限確診為尋常性乾癬（psoriasis）之病人使用，使用量以每星期不高於30gm為原則，若因病情需要使用量需超過每星期30gm者，應於病歷詳細記錄理由。（94/5/1、99/12/1、115/1/1）
-
-      2.若因病情需要需連續使用超過8週者，應於病歷詳細記錄理由。（109/10/1）'
+    summary: 適用於【Psoriasis / Psoriatic Arthritis】之健保給付。 規範重點：1.限確診為尋常性乾癬（psoriasis）之病人使用，使用量以每星期不高於30gm為原則，若因病情需要使用量需超過每星期30gm者，應於病歷詳細記錄理由。
+    clinical_rules:
+    - indication: Psoriasis / Psoriatic Arthritis (乾癬)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 13.3.2. 含calcipotriol及類固醇之外用複方製劑（如Daivobet、Enstilar）（94/5/1、99/12/1、109/10/1、115/1/1）
     full_text: '1.限確診為尋常性乾癬（psoriasis）之病人使用，使用量以每星期不高於30gm為原則，若因病情需要使用量需超過每星期30gm者，應於病歷詳細記錄理由。（94/5/1、99/12/1、115/1/1）
@@ -70,11 +123,23 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.限皮膚科專科醫師使用。
-
-      2.需檢附病人之服藥同意書 (詳附表十)，以及經傳統治療無效之病歷資料或治療前之照片，經事前審查核准後使用。
-
-      3.每次申請以一療程為限，若需再次療程，請檢附原來照片與最近照片再次申請事前審查核准後使用（每一療程最高總劑量為100 mg –120 mg/kg，於四至六個月完成)。'
+    summary: 規範【. Isotretinoin口服製劑 (如Roaccutane)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: 13.4. Isotretinoin口服製劑 (如Roaccutane)：（86/9/1、87/4/1、94/3/1）
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 58
+      end_char: 62
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 13.4. Isotretinoin口服製劑 (如Roaccutane)：（86/9/1、87/4/1、94/3/1）
     full_text: '1.限皮膚科專科醫師使用。
@@ -90,11 +155,25 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Acitretin (如 Neotigason)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 申報費用時需檢具病患同意書 (附表十一)，並檢送含確定診斷之詳細病歷資料，俾利審查。
+    summary: 規範【. Acitretin（如Neotigason）：】之健保給付條件。 規範重點：申報費用時需檢具病患同意書 (附表十一)，並檢送含確定診斷之詳細病歷資料，俾利審查。
+    clinical_rules:
+    - indication: 13.5. Acitretin（如Neotigason）：(87/11/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 13.5. Acitretin（如Neotigason）：(87/11/1)
     full_text: 申報費用時需檢具病患同意書 (附表十一)，並檢送含確定診斷之詳細病歷資料，俾利審查。
@@ -110,7 +189,20 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 限皮膚科專科醫師使用於PUVA治療 (配合紫外線照射)，申報費用時需檢送含確定診斷之詳細病歷資料，俾利審查。
+    summary: 規範【. Methoxsalen製劑：】之健保給付條件。 規範重點：限皮膚科專科醫師使用於PUVA治療 (配合紫外線照射)，申報費用時需檢送含確定診斷之詳細病歷資料，俾利審查。
+    clinical_rules:
+    - indication: 13.6. Methoxsalen製劑：(87/11/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 13.6. Methoxsalen製劑：(87/11/1)
     full_text: 限皮膚科專科醫師使用於PUVA治療 (配合紫外線照射)，申報費用時需檢送含確定診斷之詳細病歷資料，俾利審查。
@@ -122,11 +214,25 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Doxepin Hcl Cream (如 Ichderm)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 限成人使用，每次處方不超過七天。
+    summary: 規範【. Doxepin HCl cream (如Ichderm)：】之健保給付條件。
+    clinical_rules:
+    - indication: 13.7. Doxepin HCl cream (如Ichderm)：(88/6/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 13.7. Doxepin HCl cream (如Ichderm)：(88/6/1)
     full_text: 限成人使用，每次處方不超過七天。
@@ -145,12 +251,20 @@ regulations:
     indications:
     - Psoriasis / Psoriatic Arthritis (乾癬)
     laboratory_criteria: []
-    summary: '1.限乾癬之病例使用。
-
-      2.使用量以每星期不高於30gm為原則。若因病情需要，使用量需超過每星期30gm者，應於病歷詳細記載理由。(99/12/1)
-
-      3.與calcitriol (或calcipotriol)併用，兩者合計總量每星期不超過30gm或30mL，若因病情需要兩者合併使用量需超過每星期30gm
-      者，應於病歷詳細記載理由。(99/12/1)'
+    summary: 適用於【Psoriasis / Psoriatic Arthritis】之健保給付。
+    clinical_rules:
+    - indication: Psoriasis / Psoriatic Arthritis (乾癬)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 13.8. Tazarotene外用製劑：(91/4/1、99/12/1、101/2/1)
     full_text: '1.限乾癬之病例使用。
@@ -168,17 +282,26 @@ regulations:
   - (99/12/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Calcitriol (如 Silkis ointment)
   conditions_of_payment:
     indications:
     - Psoriasis / Psoriatic Arthritis (乾癬)
     laboratory_criteria: []
-    summary: '1.限用於小於35%體表面積之輕度至中重度乾癬之病例，使用量以每星期不高於30gm為原則，若因病情需要使用量需超過每星期30gm者，應於病歷詳細記錄理由。其面積計算:依照rule
-      of nines計算法。（同13.10備註1）
-
-      2.與tazarotene併用，兩者合計總量每星期不超過30gm或30mL，若因病情需要兩者合併使用量需超過每星期30gm者，應於病歷詳細記錄理由。
-
-      (99/12/1)'
+    summary: 適用於【Psoriasis / Psoriatic Arthritis】之健保給付。 規範重點：1.限用於小於35%體表面積之輕度至中重度乾癬之病例，使用量以每星期不高於30gm為原則，若因病情需要使用量需超過每星期30gm者，應於病歷詳細記錄理由。
+    clinical_rules:
+    - indication: Psoriasis / Psoriatic Arthritis (乾癬)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 13.9. Calcitriol (如Silkis ointment)：(92/11/1、93/9/1、99/12/1)
     full_text: '1.限用於小於35%體表面積之輕度至中重度乾癬之病例，使用量以每星期不高於30gm為原則，若因病情需要使用量需超過每星期30gm者，應於病歷詳細記錄理由。其面積計算:依照rule
@@ -199,20 +322,29 @@ regulations:
   - (99/12/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Tacrolimus (如 Protopic Ointment)
   conditions_of_payment:
     indications:
     - Atopic Dermatitis (異位性皮膚炎)
     laboratory_criteria: []
-    summary: '限2歲以上因為潛在危險而不宜使用其他傳統治療、或對其他傳統治療反應不充分、或無法耐受其他傳統治療且患部面積>30%之中、重度異位性皮膚炎之下列病患第二線使用(95/7/1、111/2/1)
-
-      1.成人患部面積30%~50%，每星期不超過30gm；患部面積>50%，每星期不超過60gm。(99/12/1)
-
-      2.孩童患部面積30%~50%，每兩星期不超過30gm；患部面積>50%，每星期不超過30gm。(99/12/1)
-
-      3.面積計算：成人依照 rule of nines(詳備註1)，由部位乘予大約比例之總和，兒童依比例 (備註2，Barkin公式) 修訂。
-
-      4.使用一個月後，症狀若無改善，應改用其...'
+    summary: 適用於【Atopic Dermatitis】之健保給付。 規範重點：限2歲以上因為潛在危險而不宜使用其他傳統治療、或對其他傳統治療反應不充分、或無法耐受其他傳統治療且患部面積>30%之中、重度異位性皮膚炎之下列病患第二線使用(95/7/1、111/2/1)
+      1.成人患部面積30%~50%，每星期不超過30gm；患部面積>50%，每星期不超過60gm。
+    clinical_rules:
+    - indication: Atopic Dermatitis (異位性皮膚炎)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 使用一個月
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 使用一個月
   reference_annotations:
     original_clause: 13.10. Tacrolimus (如Protopic Ointment )：(91/12/1、93/8/1、95/7/1、99/12/1、111/2/1)
     full_text: '限2歲以上因為潛在危險而不宜使用其他傳統治療、或對其他傳統治療反應不充分、或無法耐受其他傳統治療且患部面積>30%之中、重度異位性皮膚炎之下列病患第二線使用(95/7/1、111/2/1)
@@ -258,13 +390,23 @@ regulations:
     indications:
     - Atopic Dermatitis (異位性皮膚炎)
     laboratory_criteria: []
-    summary: '限2歲以上且患部面積>30%之中、重度異位性皮膚炎，或敏感性皮膚部位(頭頸部、眼瞼、耳後區、生殖器、皮膚彎曲處、腋下、鼠蹊部)異位性皮膚炎之下列病患第二線使用：(94/3/1、95/7/1、110/12/1、111/2/1)
-
-      1.成人患部面積30%~50%，每星期不超過30gm；患部面積>50%，每星期不超過60gm。(94/3/1、99/12/1)
-
-      2.孩童患部面積30%~50%，每兩星期不超過30gm；患部面積>50%，每星期不超過30gm。(99/12/1)
-
-      3.敏感性皮膚部位(頭頸部、眼瞼、耳後區、生殖器、皮膚彎曲處、腋下、鼠蹊部)異位性皮膚炎部分：成人每月不超過30gm，孩童每月不超...'
+    summary: 適用於【Atopic Dermatitis】之健保給付。 規範重點：限2歲以上且患部面積>30%之中、重度異位性皮膚炎，或敏感性皮膚部位(頭頸部、眼瞼、耳後區、生殖器、皮膚彎曲處、腋下、鼠蹊部)異位性皮膚炎之下列病患第二線使用：(94/3/1、95/7/1、110/12/1、111/2/1)
+      1.成人患部面積30%~50%，每星期不超過30gm；患部面積>50%，每星期不超過60gm。
+    clinical_rules:
+    - indication: Atopic Dermatitis (異位性皮膚炎)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 使用一個月
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 使用一個月
   reference_annotations:
     original_clause: 13.11. Pimecrolimus (Elidel 1% )：(92/11/1、93/8/1、94/3/1、95/7/1、99/12/1、110/12/1、111/2/1)
     full_text: '限2歲以上且患部面積>30%之中、重度異位性皮膚炎，或敏感性皮膚部位(頭頸部、眼瞼、耳後區、生殖器、皮膚彎曲處、腋下、鼠蹊部)異位性皮膚炎之下列病患第二線使用：(94/3/1、95/7/1、110/12/1、111/2/1)
@@ -296,16 +438,26 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Amorolfine (如 Amocoat)
   conditions_of_payment:
     indications:
     - Onychomycosis / Tinea Unguium (足趾甲癬)
     laboratory_criteria: []
-    summary: '1.限用於皮真菌、酵母菌及黴菌引起之甲癬。
-
-      2.每年限使用一瓶5mL。
-
-      3.許可證類別若變更為指示用藥，將不予給付。'
+    summary: 適用於【Onychomycosis / Tinea Unguium】之健保給付。 規範重點：1.限用於皮真菌、酵母菌及黴菌引起之甲癬。
+    clinical_rules:
+    - indication: Onychomycosis / Tinea Unguium (足趾甲癬)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 13.12. Amorolfine (如Amocoat)：(99/4/1)
     full_text: '1.限用於皮真菌、酵母菌及黴菌引起之甲癬。
@@ -321,15 +473,26 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Podophyllotoxin (如 Wart Del Cream)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.限皮膚、泌尿、婦產專科醫師或經病理診斷確認，使用於生殖器疣 (包括外生殖器及肛門附近)之治療。
-
-      2.每次限給付乙支(5gm)，一個月內不得重複處方，每次療程間應相隔至少3個月，治療期間不得與其它冷凍、電燒、雷射治療合併申報。
-
-      3.若病灶侵犯生殖器部位超過50%，每療程處方之總劑量以10gm為上限，並且需於病歷上詳載，併得合併申報冷凍、電燒或雷射治療。'
+    summary: 規範【. Podophyllotoxin (如Wart Del Cream)：】之健保給付條件。 規範重點：1.限皮膚、泌尿、婦產專科醫師或經病理診斷確認，使用於生殖器疣
+      (包括外生殖器及肛門附近)之治療。
+    clinical_rules:
+    - indication: 13.13. Podophyllotoxin (如Wart Del Cream)：(102/9/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 13.13. Podophyllotoxin (如Wart Del Cream)：(102/9/1)
     full_text: '1.限皮膚、泌尿、婦產專科醫師或經病理診斷確認，使用於生殖器疣 (包括外生殖器及肛門附近)之治療。
@@ -345,23 +508,26 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Ingenol (如 Picato)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '限用於治療局部性、非過度角化 (non-hyperkeratotic)、非肥厚型(non-hypertrophic)光化性角化症
-
+    summary: 規範【. Ingenol (如Picato) ：】之健保給付條件。 規範重點：限用於治療局部性、非過度角化 (non-hyperkeratotic)、非肥厚型(non-hypertrophic)光化性角化症
       1.限用於局部性治療25cm2的連續治療面積內，4個(含)以上病灶數量。
-
-      2.須經皮膚科醫師診斷為光化性角化症，並附照片備查。
-
-      3.療程:
-
-      (1)150微克/克(0.015%)用於臉部或頭皮，每天一次、連續塗抹3天，每部位每一次療程限處方3支； 500微克/克(0.05%)用於身軀或四肢，每天一次，連續塗抹2天，每部位每一次療程限處方2支。
-
-      (2)若未達完全清除、或病灶復發或出現新病灶，須進行第二次療程，須距第一次療程八週以上，一年內以兩療程為限。
-
-      (3)於局部治療...'
+    clinical_rules:
+    - indication: 13.14. Ingenol (如Picato) ：(105/11/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 13.14. Ingenol (如Picato) ：(105/11/1)
     full_text: '限用於治療局部性、非過度角化 (non-hyperkeratotic)、非肥厚型(non-hypertrophic)光化性角化症
@@ -389,9 +555,20 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.每人每次處方使用30gm一支，需要時得於7天後再處方使用一支(限30gm)；若第1次處方使用60gm一支，則7天後之第2次治療不得再處方一支(30gm或60gm)。（106/9/1、111/6/1、113/12/1）
-
-      2.半年內需使用第3次時，須經皮膚科醫師確診處方。'
+    summary: 規範【. Permethrin外用製劑：】之健保給付條件。 規範重點：1.每人每次處方使用30gm一支，需要時得於7天後再處方使用一支(限30gm)；若第1次處方使用60gm一支，則7天後之第2次治療不得再處方一支(30gm或60gm)。
+    clinical_rules:
+    - indication: 13.15. Permethrin外用製劑：（106/9/1、111/6/1、113/12/1）
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 13.15. Permethrin外用製劑：（106/9/1、111/6/1、113/12/1）
     full_text: '1.每人每次處方使用30gm一支，需要時得於7天後再處方使用一支(限30gm)；若第1次處方使用60gm一支，則7天後之第2次治療不得再處方一支(30gm或60gm)。（106/9/1、111/6/1、113/12/1）
@@ -405,17 +582,25 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Ivermectin (如 Stromectol)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.限鏡檢呈陽性之確診的疥瘡病患使用，須附照片備查。
-
-      2.結痂性疥瘡患者，可合併外用疥瘡藥物治療，但需附照片備查，且每次處方時，限仍有新典型臨床病灶及鏡檢呈陽性者。
-
-      3.保險對象收容於矯正機關者，依據「全民健康保險提供保險對象收容於矯正機關者醫療服務計畫」辦理。（112/12/1）
-
-      4.醫師於住宿型長期照顧機構為住民處方時，不限鏡檢確診者使用，惟須附照片備查。（113/4/1）'
+    summary: 規範【. Ivermectin (如Stromectol)：】之健保給付條件。 規範重點：1.限鏡檢呈陽性之確診的疥瘡病患使用，須附照片備查。
+    clinical_rules:
+    - indication: 13.16. Ivermectin (如Stromectol)：（107/8/1、112/12/1、113/4/1）
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 13.16. Ivermectin (如Stromectol)：（107/8/1、112/12/1、113/4/1）
     full_text: '1.限鏡檢呈陽性之確診的疥瘡病患使用，須附照片備查。
@@ -446,7 +631,10 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Abrocitinib (如 Cibinqo)
     - Dupilumab (杜匹魯單抗)
+    - Lebrikizumab (如 Ebglyss)
+    - Upadacitinib (如 Rinvoq)
   conditions_of_payment:
     indications:
     - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
@@ -460,15 +648,654 @@ regulations:
     - ALT
     - 血壓
     - 白血球
-    summary: '1.處方科別如下：(111/8/1)
-
-      (1)18歲以上患者：限皮膚科及風濕免疫科專科醫師處方。
-
-      (2)12歲以上至未滿18歲患者：限皮膚科專科醫師，或具兒童過敏免疫風濕專長之兒科專科醫師處方。
-
-      2.限用於經照光治療及其他系統性(全身性)治療無效(治療需6個月的完整療程，得合併它院就診病歷)，或因醫療因素而無法接受照光治療及其他系統性(全身性)治療之全身慢性中重度之異位性皮膚炎患者。(111/8/1)
-
-      (1)所稱慢性中重度之異位性皮膚炎，指病灶持續至少6個月，且Eczema area severity index (EASI) ≧16且異位性皮膚炎皮膚紅腫體表面積需≧30%且Investigat...'
+    - EASI
+    - IGA
+    summary: 適用於【Hepatitis B / Hepatitis C、Atopic Dermatitis、Chronic Urticaria】之健保給付。
+      主要條件包含：臨床檢驗需符合 ALT > 2.5U/L, ALT > 2.5U/L, EASI <= 16Score；使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+      biomarkers:
+      - biomarker: ALT
+        operator: '>'
+        value: '2.5'
+        unit: U/L
+        duration: 使用12週
+        terminology_bindings:
+          loinc: 1742-6
+          snomed_ct: '34608000'
+          snomed_procedure: '34608000'
+          snomed_finding: '34608000'
+        source_grounding:
+          start_char: 776
+          end_char: 785
+          snippet: 'ALT >2.5 '
+      - biomarker: ALT
+        operator: '>'
+        value: '2.5'
+        unit: U/L
+        duration: 使用12週
+        terminology_bindings:
+          loinc: 1742-6
+          snomed_ct: '34608000'
+          snomed_procedure: '34608000'
+          snomed_finding: '34608000'
+        source_grounding:
+          start_char: 987
+          end_char: 996
+          snippet: 'ALT >2.5 '
+      - biomarker: EASI
+        operator: <=
+        value: '16'
+        unit: Score
+        duration: 1年
+        terminology_bindings:
+          loinc: 89250-5
+          snomed_ct: '713601004'
+          snomed_procedure: '713601004'
+          snomed_finding: '713601004'
+        source_grounding:
+          start_char: 2964
+          end_char: 2971
+          snippet: EASI≦16
+      - biomarker: EASI
+        operator: '>='
+        value: '16'
+        unit: Score
+        duration: null
+        terminology_bindings:
+          loinc: 89250-5
+          snomed_ct: '713601004'
+          snomed_procedure: '713601004'
+          snomed_finding: '713601004'
+        source_grounding:
+          start_char: 3034
+          end_char: 3041
+          snippet: EASI≧16
+      - biomarker: IGA
+        operator: '='
+        value: 3~4
+        unit: Score
+        duration: null
+        terminology_bindings:
+          loinc: 89255-4
+          snomed_ct: '713602006'
+          snomed_procedure: '713602006'
+          snomed_finding: '713602006'
+        source_grounding:
+          start_char: 324
+          end_char: 333
+          snippet: (IGA):3~4
+      prior_authorization: true
+      step_therapy:
+      - 使用12週無效
+      - 使用12週治療無效
+      stopping_rules: []
+      evaluation_frequency:
+      - 使用12週
+      - 使用12週
+    - indication: Atopic Dermatitis (異位性皮膚炎)
+      biomarkers:
+      - biomarker: ALT
+        operator: '>'
+        value: '2.5'
+        unit: U/L
+        duration: 使用12週
+        terminology_bindings:
+          loinc: 1742-6
+          snomed_ct: '34608000'
+          snomed_procedure: '34608000'
+          snomed_finding: '34608000'
+        source_grounding:
+          start_char: 776
+          end_char: 785
+          snippet: 'ALT >2.5 '
+      - biomarker: ALT
+        operator: '>'
+        value: '2.5'
+        unit: U/L
+        duration: 使用12週
+        terminology_bindings:
+          loinc: 1742-6
+          snomed_ct: '34608000'
+          snomed_procedure: '34608000'
+          snomed_finding: '34608000'
+        source_grounding:
+          start_char: 987
+          end_char: 996
+          snippet: 'ALT >2.5 '
+      - biomarker: EASI
+        operator: <=
+        value: '16'
+        unit: Score
+        duration: 1年
+        terminology_bindings:
+          loinc: 89250-5
+          snomed_ct: '713601004'
+          snomed_procedure: '713601004'
+          snomed_finding: '713601004'
+        source_grounding:
+          start_char: 2964
+          end_char: 2971
+          snippet: EASI≦16
+      - biomarker: EASI
+        operator: '>='
+        value: '16'
+        unit: Score
+        duration: null
+        terminology_bindings:
+          loinc: 89250-5
+          snomed_ct: '713601004'
+          snomed_procedure: '713601004'
+          snomed_finding: '713601004'
+        source_grounding:
+          start_char: 3034
+          end_char: 3041
+          snippet: EASI≧16
+      - biomarker: IGA
+        operator: '='
+        value: 3~4
+        unit: Score
+        duration: null
+        terminology_bindings:
+          loinc: 89255-4
+          snomed_ct: '713602006'
+          snomed_procedure: '713602006'
+          snomed_finding: '713602006'
+        source_grounding:
+          start_char: 324
+          end_char: 333
+          snippet: (IGA):3~4
+      prior_authorization: true
+      step_therapy:
+      - 使用12週無效
+      - 使用12週治療無效
+      stopping_rules: []
+      evaluation_frequency:
+      - 使用12週
+      - 使用12週
+    - indication: Chronic Urticaria (蕁麻疹)
+      biomarkers:
+      - biomarker: ALT
+        operator: '>'
+        value: '2.5'
+        unit: U/L
+        duration: 使用12週
+        terminology_bindings:
+          loinc: 1742-6
+          snomed_ct: '34608000'
+          snomed_procedure: '34608000'
+          snomed_finding: '34608000'
+        source_grounding:
+          start_char: 776
+          end_char: 785
+          snippet: 'ALT >2.5 '
+      - biomarker: ALT
+        operator: '>'
+        value: '2.5'
+        unit: U/L
+        duration: 使用12週
+        terminology_bindings:
+          loinc: 1742-6
+          snomed_ct: '34608000'
+          snomed_procedure: '34608000'
+          snomed_finding: '34608000'
+        source_grounding:
+          start_char: 987
+          end_char: 996
+          snippet: 'ALT >2.5 '
+      - biomarker: EASI
+        operator: <=
+        value: '16'
+        unit: Score
+        duration: 1年
+        terminology_bindings:
+          loinc: 89250-5
+          snomed_ct: '713601004'
+          snomed_procedure: '713601004'
+          snomed_finding: '713601004'
+        source_grounding:
+          start_char: 2964
+          end_char: 2971
+          snippet: EASI≦16
+      - biomarker: EASI
+        operator: '>='
+        value: '16'
+        unit: Score
+        duration: null
+        terminology_bindings:
+          loinc: 89250-5
+          snomed_ct: '713601004'
+          snomed_procedure: '713601004'
+          snomed_finding: '713601004'
+        source_grounding:
+          start_char: 3034
+          end_char: 3041
+          snippet: EASI≧16
+      - biomarker: IGA
+        operator: '='
+        value: 3~4
+        unit: Score
+        duration: null
+        terminology_bindings:
+          loinc: 89255-4
+          snomed_ct: '713602006'
+          snomed_procedure: '713602006'
+          snomed_finding: '713602006'
+        source_grounding:
+          start_char: 324
+          end_char: 333
+          snippet: (IGA):3~4
+      prior_authorization: true
+      step_therapy:
+      - 使用12週無效
+      - 使用12週治療無效
+      stopping_rules: []
+      evaluation_frequency:
+      - 使用12週
+      - 使用12週
+    - indication: Psoriasis / Psoriatic Arthritis (乾癬)
+      biomarkers:
+      - biomarker: ALT
+        operator: '>'
+        value: '2.5'
+        unit: U/L
+        duration: 使用12週
+        terminology_bindings:
+          loinc: 1742-6
+          snomed_ct: '34608000'
+          snomed_procedure: '34608000'
+          snomed_finding: '34608000'
+        source_grounding:
+          start_char: 776
+          end_char: 785
+          snippet: 'ALT >2.5 '
+      - biomarker: ALT
+        operator: '>'
+        value: '2.5'
+        unit: U/L
+        duration: 使用12週
+        terminology_bindings:
+          loinc: 1742-6
+          snomed_ct: '34608000'
+          snomed_procedure: '34608000'
+          snomed_finding: '34608000'
+        source_grounding:
+          start_char: 987
+          end_char: 996
+          snippet: 'ALT >2.5 '
+      - biomarker: EASI
+        operator: <=
+        value: '16'
+        unit: Score
+        duration: 1年
+        terminology_bindings:
+          loinc: 89250-5
+          snomed_ct: '713601004'
+          snomed_procedure: '713601004'
+          snomed_finding: '713601004'
+        source_grounding:
+          start_char: 2964
+          end_char: 2971
+          snippet: EASI≦16
+      - biomarker: EASI
+        operator: '>='
+        value: '16'
+        unit: Score
+        duration: null
+        terminology_bindings:
+          loinc: 89250-5
+          snomed_ct: '713601004'
+          snomed_procedure: '713601004'
+          snomed_finding: '713601004'
+        source_grounding:
+          start_char: 3034
+          end_char: 3041
+          snippet: EASI≧16
+      - biomarker: IGA
+        operator: '='
+        value: 3~4
+        unit: Score
+        duration: null
+        terminology_bindings:
+          loinc: 89255-4
+          snomed_ct: '713602006'
+          snomed_procedure: '713602006'
+          snomed_finding: '713602006'
+        source_grounding:
+          start_char: 324
+          end_char: 333
+          snippet: (IGA):3~4
+      prior_authorization: true
+      step_therapy:
+      - 使用12週無效
+      - 使用12週治療無效
+      stopping_rules: []
+      evaluation_frequency:
+      - 使用12週
+      - 使用12週
+    - indication: Systemic Lupus Erythematosus (紅斑性狼瘡)
+      biomarkers:
+      - biomarker: ALT
+        operator: '>'
+        value: '2.5'
+        unit: U/L
+        duration: 使用12週
+        terminology_bindings:
+          loinc: 1742-6
+          snomed_ct: '34608000'
+          snomed_procedure: '34608000'
+          snomed_finding: '34608000'
+        source_grounding:
+          start_char: 776
+          end_char: 785
+          snippet: 'ALT >2.5 '
+      - biomarker: ALT
+        operator: '>'
+        value: '2.5'
+        unit: U/L
+        duration: 使用12週
+        terminology_bindings:
+          loinc: 1742-6
+          snomed_ct: '34608000'
+          snomed_procedure: '34608000'
+          snomed_finding: '34608000'
+        source_grounding:
+          start_char: 987
+          end_char: 996
+          snippet: 'ALT >2.5 '
+      - biomarker: EASI
+        operator: <=
+        value: '16'
+        unit: Score
+        duration: 1年
+        terminology_bindings:
+          loinc: 89250-5
+          snomed_ct: '713601004'
+          snomed_procedure: '713601004'
+          snomed_finding: '713601004'
+        source_grounding:
+          start_char: 2964
+          end_char: 2971
+          snippet: EASI≦16
+      - biomarker: EASI
+        operator: '>='
+        value: '16'
+        unit: Score
+        duration: null
+        terminology_bindings:
+          loinc: 89250-5
+          snomed_ct: '713601004'
+          snomed_procedure: '713601004'
+          snomed_finding: '713601004'
+        source_grounding:
+          start_char: 3034
+          end_char: 3041
+          snippet: EASI≧16
+      - biomarker: IGA
+        operator: '='
+        value: 3~4
+        unit: Score
+        duration: null
+        terminology_bindings:
+          loinc: 89255-4
+          snomed_ct: '713602006'
+          snomed_procedure: '713602006'
+          snomed_finding: '713602006'
+        source_grounding:
+          start_char: 324
+          end_char: 333
+          snippet: (IGA):3~4
+      prior_authorization: true
+      step_therapy:
+      - 使用12週無效
+      - 使用12週治療無效
+      stopping_rules: []
+      evaluation_frequency:
+      - 使用12週
+      - 使用12週
+    - indication: Vasculitis / Dermatomyositis (血管炎)
+      biomarkers:
+      - biomarker: ALT
+        operator: '>'
+        value: '2.5'
+        unit: U/L
+        duration: 使用12週
+        terminology_bindings:
+          loinc: 1742-6
+          snomed_ct: '34608000'
+          snomed_procedure: '34608000'
+          snomed_finding: '34608000'
+        source_grounding:
+          start_char: 776
+          end_char: 785
+          snippet: 'ALT >2.5 '
+      - biomarker: ALT
+        operator: '>'
+        value: '2.5'
+        unit: U/L
+        duration: 使用12週
+        terminology_bindings:
+          loinc: 1742-6
+          snomed_ct: '34608000'
+          snomed_procedure: '34608000'
+          snomed_finding: '34608000'
+        source_grounding:
+          start_char: 987
+          end_char: 996
+          snippet: 'ALT >2.5 '
+      - biomarker: EASI
+        operator: <=
+        value: '16'
+        unit: Score
+        duration: 1年
+        terminology_bindings:
+          loinc: 89250-5
+          snomed_ct: '713601004'
+          snomed_procedure: '713601004'
+          snomed_finding: '713601004'
+        source_grounding:
+          start_char: 2964
+          end_char: 2971
+          snippet: EASI≦16
+      - biomarker: EASI
+        operator: '>='
+        value: '16'
+        unit: Score
+        duration: null
+        terminology_bindings:
+          loinc: 89250-5
+          snomed_ct: '713601004'
+          snomed_procedure: '713601004'
+          snomed_finding: '713601004'
+        source_grounding:
+          start_char: 3034
+          end_char: 3041
+          snippet: EASI≧16
+      - biomarker: IGA
+        operator: '='
+        value: 3~4
+        unit: Score
+        duration: null
+        terminology_bindings:
+          loinc: 89255-4
+          snomed_ct: '713602006'
+          snomed_procedure: '713602006'
+          snomed_finding: '713602006'
+        source_grounding:
+          start_char: 324
+          end_char: 333
+          snippet: (IGA):3~4
+      prior_authorization: true
+      step_therapy:
+      - 使用12週無效
+      - 使用12週治療無效
+      stopping_rules: []
+      evaluation_frequency:
+      - 使用12週
+      - 使用12週
+    - indication: Hypertension (高血壓)
+      biomarkers:
+      - biomarker: ALT
+        operator: '>'
+        value: '2.5'
+        unit: U/L
+        duration: 使用12週
+        terminology_bindings:
+          loinc: 1742-6
+          snomed_ct: '34608000'
+          snomed_procedure: '34608000'
+          snomed_finding: '34608000'
+        source_grounding:
+          start_char: 776
+          end_char: 785
+          snippet: 'ALT >2.5 '
+      - biomarker: ALT
+        operator: '>'
+        value: '2.5'
+        unit: U/L
+        duration: 使用12週
+        terminology_bindings:
+          loinc: 1742-6
+          snomed_ct: '34608000'
+          snomed_procedure: '34608000'
+          snomed_finding: '34608000'
+        source_grounding:
+          start_char: 987
+          end_char: 996
+          snippet: 'ALT >2.5 '
+      - biomarker: EASI
+        operator: <=
+        value: '16'
+        unit: Score
+        duration: 1年
+        terminology_bindings:
+          loinc: 89250-5
+          snomed_ct: '713601004'
+          snomed_procedure: '713601004'
+          snomed_finding: '713601004'
+        source_grounding:
+          start_char: 2964
+          end_char: 2971
+          snippet: EASI≦16
+      - biomarker: EASI
+        operator: '>='
+        value: '16'
+        unit: Score
+        duration: null
+        terminology_bindings:
+          loinc: 89250-5
+          snomed_ct: '713601004'
+          snomed_procedure: '713601004'
+          snomed_finding: '713601004'
+        source_grounding:
+          start_char: 3034
+          end_char: 3041
+          snippet: EASI≧16
+      - biomarker: IGA
+        operator: '='
+        value: 3~4
+        unit: Score
+        duration: null
+        terminology_bindings:
+          loinc: 89255-4
+          snomed_ct: '713602006'
+          snomed_procedure: '713602006'
+          snomed_finding: '713602006'
+        source_grounding:
+          start_char: 324
+          end_char: 333
+          snippet: (IGA):3~4
+      prior_authorization: true
+      step_therapy:
+      - 使用12週無效
+      - 使用12週治療無效
+      stopping_rules: []
+      evaluation_frequency:
+      - 使用12週
+      - 使用12週
+    structured_biomarkers:
+    - biomarker: ALT
+      operator: '>'
+      value: '2.5'
+      unit: U/L
+      duration: 使用12週
+      terminology_bindings:
+        loinc: 1742-6
+        snomed_ct: '34608000'
+        snomed_procedure: '34608000'
+        snomed_finding: '34608000'
+      source_grounding:
+        start_char: 776
+        end_char: 785
+        snippet: 'ALT >2.5 '
+    - biomarker: ALT
+      operator: '>'
+      value: '2.5'
+      unit: U/L
+      duration: 使用12週
+      terminology_bindings:
+        loinc: 1742-6
+        snomed_ct: '34608000'
+        snomed_procedure: '34608000'
+        snomed_finding: '34608000'
+      source_grounding:
+        start_char: 987
+        end_char: 996
+        snippet: 'ALT >2.5 '
+    - biomarker: EASI
+      operator: <=
+      value: '16'
+      unit: Score
+      duration: 1年
+      terminology_bindings:
+        loinc: 89250-5
+        snomed_ct: '713601004'
+        snomed_procedure: '713601004'
+        snomed_finding: '713601004'
+      source_grounding:
+        start_char: 2964
+        end_char: 2971
+        snippet: EASI≦16
+    - biomarker: EASI
+      operator: '>='
+      value: '16'
+      unit: Score
+      duration: null
+      terminology_bindings:
+        loinc: 89250-5
+        snomed_ct: '713601004'
+        snomed_procedure: '713601004'
+        snomed_finding: '713601004'
+      source_grounding:
+        start_char: 3034
+        end_char: 3041
+        snippet: EASI≧16
+    - biomarker: IGA
+      operator: '='
+      value: 3~4
+      unit: Score
+      duration: null
+      terminology_bindings:
+        loinc: 89255-4
+        snomed_ct: '713602006'
+        snomed_procedure: '713602006'
+        snomed_finding: '713602006'
+      source_grounding:
+        start_char: 324
+        end_char: 333
+        snippet: (IGA):3~4
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 1407
+      end_char: 1411
+      snippet: 事前審查
+    step_therapy:
+    - 使用12週無效
+    - 使用12週治療無效
+    stopping_rules: []
+    evaluation_intervals:
+    - 使用12週
+    - 使用12週
   reference_annotations:
     original_clause: 13.17.1. Dupilumab(如Dupixent) ; upadacitinib(如Rinvoq) ; abrocitinib(如Cibinqo)
       ;lebrikizumab (如Ebglyss)（113/2/1、113/8/1、114/6/1、115/6/1）(12歲以上病人治療部分)

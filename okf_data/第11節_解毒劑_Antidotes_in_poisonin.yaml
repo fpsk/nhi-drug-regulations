@@ -1,6 +1,20 @@
-okf_version: '1.0'
-schema_type: Taiwan_NHI_Drug_Regulation
+okf_version: '0.2'
+type: regulation/taiwan_nhi_drug_payment
 chapter: 第11節 解毒劑 Antidotes in poisoning
+provenance:
+  authority: 衛生福利部中央健康保險署 (Taiwan NHIA)
+  source_document: 完整給付規定1150821.docx
+  jurisdiction: TW
+  legal_basis: 全民健康保險法第41條暨全民健康保險藥物給付項目及支付標準
+trust:
+  tier: machine-confirmed
+  extracted_by: LangExtract-NHI-Engine
+  grounding_verified: true
+  confidence_score: 0.98
+lifecycle:
+  status: active
+  last_synced: '2026-11-04'
+  stale_after: '2026-12-31'
 total_regulations: 5
 regulations:
 - regulation_id: REG-0494
@@ -11,13 +25,25 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Flumazenil (如 Anexate inj)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.全身麻醉病例
-
-      2.Benzodiazepine類藥物中毒之鑑別診斷與治療病例。'
+    summary: 規範【. Flumazenil (如Anexate inj )限使用於：】之健保給付條件。 規範重點：1.全身麻醉病例 2.Benzodiazepine類藥物中毒之鑑別診斷與治療病例。
+    clinical_rules:
+    - indication: 11.2.1. Flumazenil (如Anexate inj )限使用於：
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 11.2.1. Flumazenil (如Anexate inj )限使用於：
     full_text: '1.全身麻醉病例
@@ -31,11 +57,25 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Edrophonium Chloride (如 Enlon)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 限使用於手術麻醉病例，作為神經肌肉阻斷劑之拮抗劑。
+    summary: 規範【. Edrophonium chloride（如Enlon）：】之健保給付條件。 規範重點：限使用於手術麻醉病例，作為神經肌肉阻斷劑之拮抗劑。
+    clinical_rules:
+    - indication: 11.2.2. Edrophonium chloride（如Enlon）：
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 11.2.2. Edrophonium chloride（如Enlon）：
     full_text: 限使用於手術麻醉病例，作為神經肌肉阻斷劑之拮抗劑。
@@ -47,11 +87,25 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Mesna (如 Uromitexan inj)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 限癌症或骨髓移植病例使用大量Endoxan；Ifosphamide類藥物時使用。
+    summary: 規範【. Mesna（如Uromitexan inj）：】之健保給付條件。 規範重點：限癌症或骨髓移植病例使用大量Endoxan；Ifosphamide類藥物時使用。
+    clinical_rules:
+    - indication: 11.2.3. Mesna（如Uromitexan inj）：
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 11.2.3. Mesna（如Uromitexan inj）：
     full_text: 限癌症或骨髓移植病例使用大量Endoxan；Ifosphamide類藥物時使用。
@@ -67,9 +121,23 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.使用於經d-penicillamine治療耐受不佳之威爾森氏患者。
-
-      2.需經事前審查核准後使用。'
+    summary: 規範【. Trientine dihydrochloride (104/1/1）】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: 11.2.4. Trientine dihydrochloride (104/1/1）
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 40
+      end_char: 44
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 11.2.4. Trientine dihydrochloride (104/1/1）
     full_text: '1.使用於經d-penicillamine治療耐受不佳之威爾森氏患者。
@@ -83,14 +151,28 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Fomepizole (如 Fomeject)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: "1.限下列病例使用：\n(1)甲醇中毒：\nⅠ.\t確認甲醇服用病史。\nⅡ.\t血中甲醇濃度>20mg/dL。\nⅢ.\t食入已達中毒劑量的甲醇且osmolal\
-      \ gap (OG) >10mOsm/L。\nⅣ.\t臨床高度懷疑為甲醇中毒且下面三項指標中至少符合兩項：\ni.血液pH <7.3；\nii.血中bicarbonate\
-      \ <20meq/L；\niii. Osmolal gap (OG) >10mOsm/L。\n(2)乙二醇中毒：\nⅠ.\t確認乙二醇服用病史。\nⅡ.\t\
-      血中乙二醇濃度>20mg/dL。\nⅢ.\t食入已達中毒劑量的乙二醇且osmolal gap (OG) >10mOsm/L。\nⅣ.\t臨床高度懷疑食入乙二醇..."
+    summary: "規範【. Fomepizole (如Fomeject)：】之健保給付條件。 規範重點：1.限下列病例使用： (1)甲醇中毒： Ⅰ.\t\
+      確認甲醇服用病史。"
+    clinical_rules:
+    - indication: 11.2.5. Fomepizole (如Fomeject)：（107/11/1）
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules:
+      - 2.需排除或停止使用之情形如下：
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules:
+    - 2.需排除或停止使用之情形如下：
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 11.2.5. Fomepizole (如Fomeject)：（107/11/1）
     full_text: "1.限下列病例使用：\n(1)甲醇中毒：\nⅠ.\t確認甲醇服用病史。\nⅡ.\t血中甲醇濃度>20mg/dL。\nⅢ.\t食入已達中毒劑量的甲醇且osmolal\

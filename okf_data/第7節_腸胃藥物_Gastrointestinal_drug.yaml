@@ -1,6 +1,20 @@
-okf_version: '1.0'
-schema_type: Taiwan_NHI_Drug_Regulation
+okf_version: '0.2'
+type: regulation/taiwan_nhi_drug_payment
 chapter: 第7節 腸胃藥物 Gastrointestinal drugs
+provenance:
+  authority: 衛生福利部中央健康保險署 (Taiwan NHIA)
+  source_document: 完整給付規定1150821.docx
+  jurisdiction: TW
+  legal_basis: 全民健康保險法第41條暨全民健康保險藥物給付項目及支付標準
+trust:
+  tier: machine-confirmed
+  extracted_by: LangExtract-NHI-Engine
+  grounding_verified: true
+  confidence_score: 0.98
+lifecycle:
+  status: active
+  last_synced: '2026-11-04'
+  stale_after: '2026-12-31'
 total_regulations: 13
 regulations:
 - regulation_id: REG-0220
@@ -28,9 +42,9 @@ regulations:
     - PPI類 (氫離子幫浦抑制劑)
     ingredients:
     - Apixaban (阿哌沙班)
+    - Dabigatran (達比加群)
     - Edoxaban (艾多沙班)
     - Rivaroxaban (利伐沙班)
-    - Dabigatran (達比加群)
   conditions_of_payment:
     indications:
     - Peptic Ulcer Disease (消化性潰瘍)
@@ -44,28 +58,352 @@ regulations:
     laboratory_criteria:
     - eGFR
     - 血小板
-    summary: '1.藥品種類：
-
-      (1)制酸懸浮劑：
-
-      各廠牌瓶裝、袋裝制酸懸浮劑及袋裝顆粒制酸劑。
-
-      (2)乙型組織胺受體阻斷劑：
-
-      各廠牌乙型組織胺受體阻斷劑之口服製劑與針劑。
-
-      (3)氫離子幫浦阻斷劑：
-
-      各廠牌氫離子幫浦阻斷劑。
-
-      (4)細胞保護劑：如gefarnate、cetraxate、carbenoxolone等。
-
-      (5)其他消化性潰瘍用藥：
-
-      dibismuth trioxide, sucralfate, pirenzepine HCl, Gaspin, Caved-S, misoprostol,
-      proglumide及其他未列入之同類藥品，價格與其相當者比照辦理。
-
-      2.使用規定：(106/12/1、110/...'
+    - INR
+    summary: 適用於【Peptic Ulcer Disease、Gastroesophageal Reflux Disease、Systemic Lupus
+      Erythematosus】之健保給付。 主要條件包含：臨床檢驗需符合 eGFR < 15mL/min/1.73M2, INR > 1.7。
+    clinical_rules:
+    - indication: Peptic Ulcer Disease (消化性潰瘍)
+      biomarkers:
+      - biomarker: eGFR
+        operator: <
+        value: '15'
+        unit: mL/min/1.73M2
+        duration: null
+        terminology_bindings:
+          loinc: 62238-1
+          snomed_ct: '1011481000000105'
+          snomed_procedure: '1011481000000105'
+          snomed_finding: '1011481000000105'
+        source_grounding:
+          start_char: 1237
+          end_char: 1257
+          snippet: eGFR<15mL/min/1.73M2
+      - biomarker: INR
+        operator: '>'
+        value: '1.7'
+        unit: ''
+        duration: null
+        terminology_bindings:
+          loinc: 6301-6
+          snomed_ct: '396451008'
+          snomed_procedure: '396451008'
+          snomed_finding: '165582006'
+        source_grounding:
+          start_char: 1297
+          end_char: 1304
+          snippet: INR>1.7
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以四個月為限
+      - 以16週為限
+      - 以一年為限
+      - 療程以二週
+    - indication: Gastroesophageal Reflux Disease (逆流性食道炎)
+      biomarkers:
+      - biomarker: eGFR
+        operator: <
+        value: '15'
+        unit: mL/min/1.73M2
+        duration: null
+        terminology_bindings:
+          loinc: 62238-1
+          snomed_ct: '1011481000000105'
+          snomed_procedure: '1011481000000105'
+          snomed_finding: '1011481000000105'
+        source_grounding:
+          start_char: 1237
+          end_char: 1257
+          snippet: eGFR<15mL/min/1.73M2
+      - biomarker: INR
+        operator: '>'
+        value: '1.7'
+        unit: ''
+        duration: null
+        terminology_bindings:
+          loinc: 6301-6
+          snomed_ct: '396451008'
+          snomed_procedure: '396451008'
+          snomed_finding: '165582006'
+        source_grounding:
+          start_char: 1297
+          end_char: 1304
+          snippet: INR>1.7
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以四個月為限
+      - 以16週為限
+      - 以一年為限
+      - 療程以二週
+    - indication: Systemic Lupus Erythematosus (紅斑性狼瘡)
+      biomarkers:
+      - biomarker: eGFR
+        operator: <
+        value: '15'
+        unit: mL/min/1.73M2
+        duration: null
+        terminology_bindings:
+          loinc: 62238-1
+          snomed_ct: '1011481000000105'
+          snomed_procedure: '1011481000000105'
+          snomed_finding: '1011481000000105'
+        source_grounding:
+          start_char: 1237
+          end_char: 1257
+          snippet: eGFR<15mL/min/1.73M2
+      - biomarker: INR
+        operator: '>'
+        value: '1.7'
+        unit: ''
+        duration: null
+        terminology_bindings:
+          loinc: 6301-6
+          snomed_ct: '396451008'
+          snomed_procedure: '396451008'
+          snomed_finding: '165582006'
+        source_grounding:
+          start_char: 1297
+          end_char: 1304
+          snippet: INR>1.7
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以四個月為限
+      - 以16週為限
+      - 以一年為限
+      - 療程以二週
+    - indication: Rheumatoid Arthritis (類風濕性關節炎)
+      biomarkers:
+      - biomarker: eGFR
+        operator: <
+        value: '15'
+        unit: mL/min/1.73M2
+        duration: null
+        terminology_bindings:
+          loinc: 62238-1
+          snomed_ct: '1011481000000105'
+          snomed_procedure: '1011481000000105'
+          snomed_finding: '1011481000000105'
+        source_grounding:
+          start_char: 1237
+          end_char: 1257
+          snippet: eGFR<15mL/min/1.73M2
+      - biomarker: INR
+        operator: '>'
+        value: '1.7'
+        unit: ''
+        duration: null
+        terminology_bindings:
+          loinc: 6301-6
+          snomed_ct: '396451008'
+          snomed_procedure: '396451008'
+          snomed_finding: '165582006'
+        source_grounding:
+          start_char: 1297
+          end_char: 1304
+          snippet: INR>1.7
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以四個月為限
+      - 以16週為限
+      - 以一年為限
+      - 療程以二週
+    - indication: Ankylosing Spondylitis (僵直性脊椎炎)
+      biomarkers:
+      - biomarker: eGFR
+        operator: <
+        value: '15'
+        unit: mL/min/1.73M2
+        duration: null
+        terminology_bindings:
+          loinc: 62238-1
+          snomed_ct: '1011481000000105'
+          snomed_procedure: '1011481000000105'
+          snomed_finding: '1011481000000105'
+        source_grounding:
+          start_char: 1237
+          end_char: 1257
+          snippet: eGFR<15mL/min/1.73M2
+      - biomarker: INR
+        operator: '>'
+        value: '1.7'
+        unit: ''
+        duration: null
+        terminology_bindings:
+          loinc: 6301-6
+          snomed_ct: '396451008'
+          snomed_procedure: '396451008'
+          snomed_finding: '165582006'
+        source_grounding:
+          start_char: 1297
+          end_char: 1304
+          snippet: INR>1.7
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以四個月為限
+      - 以16週為限
+      - 以一年為限
+      - 療程以二週
+    - indication: Stroke / Cerebrovascular Accident (腦中風)
+      biomarkers:
+      - biomarker: eGFR
+        operator: <
+        value: '15'
+        unit: mL/min/1.73M2
+        duration: null
+        terminology_bindings:
+          loinc: 62238-1
+          snomed_ct: '1011481000000105'
+          snomed_procedure: '1011481000000105'
+          snomed_finding: '1011481000000105'
+        source_grounding:
+          start_char: 1237
+          end_char: 1257
+          snippet: eGFR<15mL/min/1.73M2
+      - biomarker: INR
+        operator: '>'
+        value: '1.7'
+        unit: ''
+        duration: null
+        terminology_bindings:
+          loinc: 6301-6
+          snomed_ct: '396451008'
+          snomed_procedure: '396451008'
+          snomed_finding: '165582006'
+        source_grounding:
+          start_char: 1297
+          end_char: 1304
+          snippet: INR>1.7
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以四個月為限
+      - 以16週為限
+      - 以一年為限
+      - 療程以二週
+    - indication: Myocardial Infarction (心肌梗塞)
+      biomarkers:
+      - biomarker: eGFR
+        operator: <
+        value: '15'
+        unit: mL/min/1.73M2
+        duration: null
+        terminology_bindings:
+          loinc: 62238-1
+          snomed_ct: '1011481000000105'
+          snomed_procedure: '1011481000000105'
+          snomed_finding: '1011481000000105'
+        source_grounding:
+          start_char: 1237
+          end_char: 1257
+          snippet: eGFR<15mL/min/1.73M2
+      - biomarker: INR
+        operator: '>'
+        value: '1.7'
+        unit: ''
+        duration: null
+        terminology_bindings:
+          loinc: 6301-6
+          snomed_ct: '396451008'
+          snomed_procedure: '396451008'
+          snomed_finding: '165582006'
+        source_grounding:
+          start_char: 1297
+          end_char: 1304
+          snippet: INR>1.7
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以四個月為限
+      - 以16週為限
+      - 以一年為限
+      - 療程以二週
+    - indication: Chronic Kidney Disease (慢性腎臟病)
+      biomarkers:
+      - biomarker: eGFR
+        operator: <
+        value: '15'
+        unit: mL/min/1.73M2
+        duration: null
+        terminology_bindings:
+          loinc: 62238-1
+          snomed_ct: '1011481000000105'
+          snomed_procedure: '1011481000000105'
+          snomed_finding: '1011481000000105'
+        source_grounding:
+          start_char: 1237
+          end_char: 1257
+          snippet: eGFR<15mL/min/1.73M2
+      - biomarker: INR
+        operator: '>'
+        value: '1.7'
+        unit: ''
+        duration: null
+        terminology_bindings:
+          loinc: 6301-6
+          snomed_ct: '396451008'
+          snomed_procedure: '396451008'
+          snomed_finding: '165582006'
+        source_grounding:
+          start_char: 1297
+          end_char: 1304
+          snippet: INR>1.7
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以四個月為限
+      - 以16週為限
+      - 以一年為限
+      - 療程以二週
+    structured_biomarkers:
+    - biomarker: eGFR
+      operator: <
+      value: '15'
+      unit: mL/min/1.73M2
+      duration: null
+      terminology_bindings:
+        loinc: 62238-1
+        snomed_ct: '1011481000000105'
+        snomed_procedure: '1011481000000105'
+        snomed_finding: '1011481000000105'
+      source_grounding:
+        start_char: 1237
+        end_char: 1257
+        snippet: eGFR<15mL/min/1.73M2
+    - biomarker: INR
+      operator: '>'
+      value: '1.7'
+      unit: ''
+      duration: null
+      terminology_bindings:
+        loinc: 6301-6
+        snomed_ct: '396451008'
+        snomed_procedure: '396451008'
+        snomed_finding: '165582006'
+      source_grounding:
+        start_char: 1297
+        end_char: 1304
+        snippet: INR>1.7
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 以四個月為限
+    - 以16週為限
+    - 以一年為限
+    - 療程以二週
   reference_annotations:
     original_clause: 7.1 .消化性潰瘍用藥：
     full_text: "1.藥品種類：\n(1)制酸懸浮劑：\n各廠牌瓶裝、袋裝制酸懸浮劑及袋裝顆粒制酸劑。\n(2)乙型組織胺受體阻斷劑：\n各廠牌乙型組織胺受體阻斷劑之口服製劑與針劑。\n\
@@ -109,7 +447,21 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 靜脈注射癌症化療藥品之致吐性風險與劑量標準，依NCCN (National Comprehensive Cancer Network)最新版治療指引內容。(101/02/1、101/4/1、107/5/1)
+    summary: 規範【. 止吐劑  Antiemetic drugs】之健保給付條件。 規範重點：靜脈注射癌症化療藥品之致吐性風險與劑量標準，依NCCN
+      (National Comprehensive Cancer Network)最新版治療指引內容。
+    clinical_rules:
+    - indication: 7.2. 止吐劑  Antiemetic drugs
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 7.2. 止吐劑  Antiemetic drugs
     full_text: 靜脈注射癌症化療藥品之致吐性風險與劑量標準，依NCCN (National Comprehensive Cancer Network)最新版治療指引內容。(101/02/1、101/4/1、107/5/1)
@@ -126,21 +478,41 @@ regulations:
   - (102/9/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Serotonin Antagonists (如 ondansetron)
   conditions_of_payment:
     indications:
     - Systemic Lupus Erythematosus (紅斑性狼瘡)
     - Rheumatoid Arthritis (類風濕性關節炎)
     - Vasculitis / Dermatomyositis (血管炎)
     laboratory_criteria: []
-    summary: '1.血液幹細胞移植患者接受高劑量化學治療時。
-
-      2.惡性腫瘤患者及風濕免疫疾病（如紅斑性狼瘡、類風濕性關節炎、貝西氏症、皮肌炎/多發性肌炎、硬皮症、血管炎等）患者接受化學治療時，依下述情形使用：(98/9/1、99/5/1)
-
-      (1)前述患者處方高致吐性藥品，可預防性使用ondansetron 8~32 mg、granisetron 1~3 mg、tropisetron 5 mg、ramosetron
-      0.3 mg一日劑量。必要時其使用以不得超過五日為原則。若發生嚴重延遲性嘔吐，得直接使用，每療程使用不得超過五日為原則。
-
-      (2)前述患者處方中致吐性藥品，可預防性使用ondansetron 8~32...'
+    summary: 適用於【Systemic Lupus Erythematosus、Rheumatoid Arthritis、Vasculitis / Dermatomyositis】之健保給付。
+      規範重點：1.血液幹細胞移植患者接受高劑量化學治療時。
+    clinical_rules:
+    - indication: Systemic Lupus Erythematosus (紅斑性狼瘡)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Rheumatoid Arthritis (類風濕性關節炎)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Vasculitis / Dermatomyositis (血管炎)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 7.2.1. Serotonin antagonists（如ondansetron、granisetron、tropisetron、ramosetron、palonosetron等）(93/2/1、93/9/1、98/9/1、99/5/1、101/4/1、102/9/1)
     full_text: '1.血液幹細胞移植患者接受高劑量化學治療時。
@@ -179,17 +551,26 @@ regulations:
   - (102/8/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Neurokinin-1 Receptor Antagonist (如 aprepitant)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.與其他止吐藥劑併用，以防止由高致吐性癌症化療藥物在初次或重覆使用時所引起的急性或延遲性噁心與嘔吐。(101/2/1)
-
-      2.口服製劑限用三天，每日限用一顆。注射製劑限於化療第一天使用。(101/4/1、101/12/1)
-
-      3.本品除第一天外，不得併用5-HT3之藥物。(101/4/1)
-
-      4.若於化療第四天（含）後仍有Grade 2 以上之嘔吐，則於第四天及第五天可依照7.2.1.規範給予serotonin antagonist。(102/8/1)'
+    summary: 規範【. Neurokinin-1 receptor antagonist （如aprepitant、fosaprepitant）】之健保給付條件。
+      規範重點：1.與其他止吐藥劑併用，以防止由高致吐性癌症化療藥物在初次或重覆使用時所引起的急性或延遲性噁心與嘔吐。
+    clinical_rules:
+    - indication: 7.2.2. Neurokinin-1 receptor antagonist （如aprepitant、fosaprepitant）(94/10/1、101/02/1、101/4/1、101/12/1、102/8/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 7.2.2. Neurokinin-1 receptor antagonist （如aprepitant、fosaprepitant）(94/10/1、101/02/1、101/4/1、101/12/1、102/8/1)
     full_text: '1.與其他止吐藥劑併用，以防止由高致吐性癌症化療藥物在初次或重覆使用時所引起的急性或延遲性噁心與嘔吐。(101/2/1)
@@ -212,15 +593,20 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.限用於
-
-      (1)防止由高致吐性癌症化療藥物在初次或重覆使用時所引起的急性或延遲性噁心與嘔吐。
-
-      (2)初次使用中致吐性癌症化療藥物時併用含serotonin antagonist止吐處方，仍發生急性或延遲性噁心與嘔吐之病人，並限於後續重覆使用原化療藥物處方之療程預防性使用。(114/8/1)
-
-      2.每次化療限使用1粒。
-
-      3.自使用本案藥品之日起3天內不得併用其他serotonin antagonist或neurokinin-1 receptor antagonist止吐劑。'
+    summary: 規範【. 含palonosetron及netupitant之複方製劑(如Akynzeo)】之健保給付條件。 規範重點：1.限用於 (1)防止由高致吐性癌症化療藥物在初次或重覆使用時所引起的急性或延遲性噁心與嘔吐。
+    clinical_rules:
+    - indication: 7.2.3. 含palonosetron及netupitant之複方製劑(如Akynzeo)(108/1/1、114/8/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 7.2.3. 含palonosetron及netupitant之複方製劑(如Akynzeo)(108/1/1、114/8/1)
     full_text: '1.限用於
@@ -240,12 +626,27 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Balsalazide (如 Basazyde)
+    - Mesalazine (如 Asacol)
   conditions_of_payment:
     indications:
     - Ulcerative Colitis (UC) (潰瘍性結腸炎)
     laboratory_criteria: []
-    summary: 限潰瘍性結腸炎、庫隆氏症病例使用。
+    summary: 適用於【Ulcerative Colitis】之健保給付。 規範重點：限潰瘍性結腸炎、庫隆氏症病例使用。
+    clinical_rules:
+    - indication: Ulcerative Colitis (UC) (潰瘍性結腸炎)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 7.3.1. Mesalazine（如Asacol）、balsalazide (如Basazyde)(94/5/1)：
     full_text: 限潰瘍性結腸炎、庫隆氏症病例使用。
@@ -261,7 +662,20 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 限用於接受放射治療、化學療法患者，治療期間造成的腹瀉。（97/8/1）
+    summary: 規範【. 益生菌類藥物Antidiarrheal microorganisms：】之健保給付條件。 規範重點：限用於接受放射治療、化學療法患者，治療期間造成的腹瀉。
+    clinical_rules:
+    - indication: 7.3.2. 益生菌類藥物Antidiarrheal microorganisms：
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 7.3.2. 益生菌類藥物Antidiarrheal microorganisms：
     full_text: 限用於接受放射治療、化學療法患者，治療期間造成的腹瀉。（97/8/1）
@@ -273,11 +687,25 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Racecadotril (如 Hidrasec)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 每療程使用不得超過5 天。
+    summary: 規範【. Racecadotril (如Hidrasec)】之健保給付條件。
+    clinical_rules:
+    - indication: 7.3.3. Racecadotril (如Hidrasec)(106/3/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 7.3.3. Racecadotril (如Hidrasec)(106/3/1)
     full_text: 每療程使用不得超過5 天。
@@ -289,25 +717,30 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Cholic Acid (如 Cholbam)
   conditions_of_payment:
     indications: []
     laboratory_criteria:
     - ALT
     - AST
-    summary: '限E7870先天性膽酸合成障礙、E71.510 Zellweger氏症候群病患使用。
-
-      1.需符合以下診斷條件之一者：
-
-      除臨床表徵外，須佐證患者尿液膽酸質譜分析顯示尿液膽汁酸異常，或證明患者基因經分子生物學檢驗確認有一處已知或必然會引起單一酵素缺乏造成先天性膽酸合成障礙之突變。
-
-      過氧化體代謝異常（包括Zellweger spectrum disorders）病人呈現之肝病表現、脂肪瀉或脂溶性維生素吸收降低所引起的併發症。
-
-      2.限兒科消化次專科醫師，或兒童神經科醫師，或兒科專科經醫學遺傳學次專訓練取得證書之醫師使用。
-
-      3.應定期追蹤評估治療效果及下列事項：
-
-      用藥後第一年至少每3個月監測一次血清as...'
+    summary: 規範【. Cholic acid（如Cholbam）：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: 7.3.4. Cholic acid（如Cholbam）（108/7/1）：
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 390
+      end_char: 394
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 7.3.4. Cholic acid（如Cholbam）（108/7/1）：
     full_text: '限E7870先天性膽酸合成障礙、E71.510 Zellweger氏症候群病患使用。
@@ -334,18 +767,26 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Budesonide (如 Cortiment MMX)
   conditions_of_payment:
     indications:
     - Ulcerative Colitis (UC) (潰瘍性結腸炎)
     laboratory_criteria: []
-    summary: '1.限符合下列各項條件之病患使用：
-
-      (1)對已接受aminosalicylate類藥物治療效果不佳或不能耐受之成人患者。
-
-      (2)領有潰瘍性結腸炎重大傷病卡。
-
-      2.每療程限使用8週，每日限使用1粒。'
+    summary: 適用於【Ulcerative Colitis】之健保給付。 規範重點：1.限符合下列各項條件之病患使用： (1)對已接受aminosalicylate類藥物治療效果不佳或不能耐受之成人患者。
+    clinical_rules:
+    - indication: Ulcerative Colitis (UC) (潰瘍性結腸炎)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: '7.3.5. Budesonide(如Cortiment MMX)(108/7/1):'
     full_text: '1.限符合下列各項條件之病患使用：
@@ -367,15 +808,20 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.適用因疾病所導致之胰液分泌不全：如囊狀性纖維化疾病、慢性胰臟炎、胰臟切除手術、胃腸繞道手術，或其他因腫瘤引發之胰管膽管阻塞之情形。
-
-      2.申報費用時應檢附病歷資料及相關檢驗（查）報告：
-
-      (1)胰液分泌不全之疾病。
-
-      (2)有營養不良或脂肪痢便之記載。
-
-      3.功能性腸胃炎不得使用本類藥品。'
+    summary: 規範【. 含amylase+lipase+protease複方製劑(如Protase、Creon)：】之健保給付條件。 規範重點：1.適用因疾病所導致之胰液分泌不全：如囊狀性纖維化疾病、慢性胰臟炎、胰臟切除手術、胃腸繞道手術，或其他因腫瘤引發之胰管膽管阻塞之情形。
+    clinical_rules:
+    - indication: 7.3.6. 含amylase+lipase+protease複方製劑(如Protase、Creon)：(110/1/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 7.3.6. 含amylase+lipase+protease複方製劑(如Protase、Creon)：(110/1/1)
     full_text: '1.適用因疾病所導致之胰液分泌不全：如囊狀性纖維化疾病、慢性胰臟炎、胰臟切除手術、胃腸繞道手術，或其他因腫瘤引發之胰管膽管阻塞之情形。
@@ -399,7 +845,20 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 限用於2歲以上至未滿18歲兒童。
+    summary: 規範【. Dioctahedral smectite口服懸液劑(如Smectite oral suspension)：】之健保給付條件。
+    clinical_rules:
+    - indication: 7.3.7. Dioctahedral smectite口服懸液劑(如Smectite oral suspension)：(113/4/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 7.3.7. Dioctahedral smectite口服懸液劑(如Smectite oral suspension)：(113/4/1)
     full_text: 限用於2歲以上至未滿18歲兒童。
@@ -411,33 +870,30 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Teduglutide (如 Revestive)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.限用於1歲以上18歲以下患有短腸症，且依賴靜脈營養的兒童病人，應完全符合下列條件：
-
-      (1)處於腸道手術適應期後之穩定狀態(6個月內無腸胃道手術)。
-
-      (2)須排除以下任一情形：
-
-      腸阻塞或腸道狹窄。
-
-      最近5年內有胃腸道惡性腫瘤病史或活動性惡性腫瘤。
-
-      2.需經事前審查核准後使用。
-
-      3.初次使用條件需符合以下各項條件：
-
-      (1)依賴靜脈營養輸注達持續12個月以上。
-
-      (2)在過去4週中，超過30%的熱量或液體/電解質需求依賴靜脈輸注。
-
-      4.續用申請條件：
-
-      (1)應定期追蹤評估治療效果，每次門診時應記錄靜脈營養及輸液使用量。
-
-      (2)初次治療6個月後評估治療反應，相較於初次治療前之基期，應降低依賴靜脈營養...'
+    summary: 規範【. Teduglutide (如Revestive)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: 7.3.8. Teduglutide (如Revestive)：(114/8/1)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 每6個月評估一次
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 129
+      end_char: 133
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 每6個月評估一次
   reference_annotations:
     original_clause: 7.3.8. Teduglutide (如Revestive)：(114/8/1)
     full_text: '1.限用於1歲以上18歲以下患有短腸症，且依賴靜脈營養的兒童病人，應完全符合下列條件：

@@ -1,6 +1,20 @@
-okf_version: '1.0'
-schema_type: Taiwan_NHI_Drug_Regulation
+okf_version: '0.2'
+type: regulation/taiwan_nhi_drug_payment
 chapter: 第1節 神經系統藥物 Drugs acting on the nervous system
+provenance:
+  authority: 衛生福利部中央健康保險署 (Taiwan NHIA)
+  source_document: 完整給付規定1150821.docx
+  jurisdiction: TW
+  legal_basis: 全民健康保險法第41條暨全民健康保險藥物給付項目及支付標準
+trust:
+  tier: machine-confirmed
+  extracted_by: LangExtract-NHI-Engine
+  grounding_verified: true
+  confidence_score: 0.98
+lifecycle:
+  status: active
+  last_synced: '2026-11-04'
+  stale_after: '2026-12-31'
 total_regulations: 45
 regulations:
 - regulation_id: REG-0002
@@ -14,24 +28,26 @@ regulations:
   - (109/2/1)
   - (109/2/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients: []
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.外用非類固醇抗發炎軟膏，不得同時併用口服或其他外用非類固醇抗發炎製劑，每4週至多以處方40gm為限(94/9/1、109/2/1)。
-
-      2.Flurbiprofen 40mg patch (如Flur Di Fen Patch)：
-
-      限同時符合下列條件之病患使用：(92/2/1、109/2/1)
-
-      (1)單一關節（部位）或軟組織風濕症。
-
-      (2)不適合口服非類固醇抗發炎製劑者。
-
-      (3)不得同時併用口服或其他外用非類固醇抗發炎製劑，亦不得開立慢性連續處方箋(109/2/1)。
-
-      (4)每4週限處方16片以內(109/2/1)。'
+    summary: 規範【. 非類固醇抗發炎劑外用製劑：】之健保給付條件。 規範重點：1.外用非類固醇抗發炎軟膏，不得同時併用口服或其他外用非類固醇抗發炎製劑，每4週至多以處方40gm為限(94/9/1、109/2/1)。
+    clinical_rules:
+    - indication: 1.1.1. 非類固醇抗發炎劑外用製劑：(88/9/1、92/2/1、94/9/1、109/2/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.1.1. 非類固醇抗發炎劑外用製劑：(88/9/1、92/2/1、94/9/1、109/2/1)
     full_text: '1.外用非類固醇抗發炎軟膏，不得同時併用口服或其他外用非類固醇抗發炎製劑，每4週至多以處方40gm為限(94/9/1、109/2/1)。
@@ -61,17 +77,21 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.非類固醇抗發炎劑 (NSAIDs) 之注射劑（ketorolac成分之注射劑除外）：
-
+    summary: 規範【. 非類固醇抗發炎劑 (NSAIDs) 之注射劑：】之健保給付條件。 規範重點：1.非類固醇抗發炎劑 (NSAIDs) 之注射劑（ketorolac成分之注射劑除外）：
       (1)限不能口服，且不能使用肛門栓劑之病患使用。
-
-      (2)本類藥品不可作為急性上呼吸道感染之例行或長期性使用。
-
-      (3)使用本類藥品，每次不可連續超過五天。
-
-      2.Ketorolac成分之注射劑：(97/7/1)
-
-      限用於無法口服之病人且為手術後中重度急性疼痛之短期治療（治療期間為≦5天），惟禁止使用於產科止痛。'
+    clinical_rules:
+    - indication: 1.1.2. 非類固醇抗發炎劑 (NSAIDs) 之注射劑：(88/12/1、97/7/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.1.2. 非類固醇抗發炎劑 (NSAIDs) 之注射劑：(88/12/1、97/7/1)
     full_text: '1.非類固醇抗發炎劑 (NSAIDs) 之注射劑（ketorolac成分之注射劑除外）：
@@ -97,12 +117,20 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '限
-
-      1.癌症病例使用。
-
-      2.用於非癌症慢性頑固性疼痛（疼痛期超過六個月）之病人，需同時符合下述條件：(1)需為服用NSAIDs仍無法控制疼痛或有嚴重副作用者。(2)需檢附疼痛評估報告，內容需包括疼痛強度及疼痛緩解的VAS與VRS
-      (Visual Analogue Scale和Verbal Rating Scale)。'
+    summary: 規範【. Tramadol】之健保給付條件。
+    clinical_rules:
+    - indication: 1.1.3. Tramadol (87/4/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.1.3. Tramadol (87/4/1)
     full_text: '限
@@ -119,16 +147,26 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Acetaminophen (如 Ultracet Tablets)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '限用於中度至嚴重性疼痛之病人，需符合下述條件：
-
+    summary: 規範【. Tramadol HCl＋acetaminophen (如Ultracet Tablets)】之健保給付條件。 規範重點：限用於中度至嚴重性疼痛之病人，需符合下述條件：
       1.經其他止痛藥、或非類固醇抗發炎藥物（NSAIDs）治療後仍無法控制疼痛或有嚴重副作用者。
-
-      2.非癌症病患使用超過五天時，需檢附疼痛評估報告，並每隔三個月再評估乙次，內容需包括疼痛強度及疼痛緩解的VAS與VRS (Visual Analogue
-      Scale和Verbal Rating Scale)。'
+    clinical_rules:
+    - indication: 1.1.4. Tramadol HCl＋acetaminophen (如Ultracet Tablets) (93/7/1、95/5/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.1.4. Tramadol HCl＋acetaminophen (如Ultracet Tablets) (93/7/1、95/5/1)
     full_text: '限用於中度至嚴重性疼痛之病人，需符合下述條件：
@@ -153,9 +191,10 @@ regulations:
   - (101/10/1)
   medications:
     drug_classes:
-    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     - PPI類 (氫離子幫浦抑制劑)
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients:
+    - Celecoxib (塞來昔布)
     - Esomeprazole (埃索美拉唑)
     - Omeprazole (歐美拉唑)
   conditions_of_payment:
@@ -166,23 +205,45 @@ regulations:
     - Rheumatoid Arthritis (類風濕性關節炎)
     - Stroke / Cerebrovascular Accident (腦中風)
     laboratory_criteria: []
-    summary: '1.本類製劑之使用需符合下列條件之一者(99/10/1、111/7/1)：
-
-      (1)骨關節炎病患。(106/12/1、111/2/1、111/7/1、115/4/1)
-
-      Ⅰ.每日藥費為4.5元以下，可用於18歲以上病患。
-
-      Ⅱ.依個別成分規定如下(111/7/1、115/4/1)：
-
-      ⅰ含nabumetone成分之No-Ton、Nabuton及Labuton僅可
-
-      使用於60歲以上病患。(111/7/1、115/4/1)
-
-      ⅱ含etodolac成分之緩釋錠劑膠囊劑及一般錠劑膠囊劑僅可使用於
-
-      60歲以上病患，惟單價低於2.25元(如Etopin、Etodon、Jenac、
-
-      Doloc)且每日處方不超過2粒者...'
+    summary: 適用於【Liver Cirrhosis、Peptic Ulcer Disease、Psoriasis / Psoriatic Arthritis】之健保給付。
+      規範重點：1.本類製劑之使用需符合下列條件之一者(99/10/1、111/7/1)： (1)骨關節炎病患。
+    clinical_rules:
+    - indication: Liver Cirrhosis (肝硬化)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Peptic Ulcer Disease (消化性潰瘍)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Psoriasis / Psoriatic Arthritis (乾癬)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Rheumatoid Arthritis (類風濕性關節炎)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Stroke / Cerebrovascular Accident (腦中風)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.1.5. 非類固醇抗發炎劑（NSAIDs）藥品，屬下列成分之口服製劑：celecoxib、nabumetone、meloxicam、etodolac、nimesulide
       (90/7/1、97/9/1)、etoricoxib (96/1/1、99/10/1)、含naproxen及esomeprazole複方製劑(101/10/1、106/12/1、111/2/1、111/7/1、115/4/1)
@@ -236,17 +297,21 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '限使用於帶狀疱疹皮膚病灶後神經痛，並符合下列條件：
-
-      1.使用其他止痛劑或非類固醇抗發炎劑（NSAIDs）藥品治療後仍無法控制疼痛或有嚴重副作用者。(97/12/1、98/4/1)
-
-      2.Gabapentin成分口服製劑，限每日最大劑量為3,600mg，且日劑量超過2,400mg時，需於病歷記載理由。臨床症狀改善，應逐步調低劑量。 (97/12/1、98/4/1、98/9/1、101/5/1)
-
-      3.Lidocaine貼片劑：（98/9/1、110/5/1）
-
-      (1)限每日最大劑量為3片，且日劑量超過2片時，需於病歷記載理由。臨床症狀改善，應逐步調低劑量。（98/9/1、110/5/1）
-
-      (2) Li...'
+    summary: 規範【. Gabapentin、lidocaine貼片劑】之健保給付條件。 規範重點：限使用於帶狀疱疹皮膚病灶後神經痛，並符合下列條件：
+      1.使用其他止痛劑或非類固醇抗發炎劑（NSAIDs）藥品治療後仍無法控制疼痛或有嚴重副作用者。
+    clinical_rules:
+    - indication: 1.1.6. Gabapentin、lidocaine貼片劑（97/12/1、98/4/1、98/9/1、101/2/1、101/5/1、102/2/1、110/5/1）
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.1.6. Gabapentin、lidocaine貼片劑（97/12/1、98/4/1、98/9/1、101/2/1、101/5/1、102/2/1、110/5/1）
     full_text: '限使用於帶狀疱疹皮膚病灶後神經痛，並符合下列條件：
@@ -281,18 +346,30 @@ regulations:
     indications:
     - Diabetes Mellitus (糖尿病)
     laboratory_criteria: []
-    summary: '1.使用於帶狀疱疹皮膚病灶後神經痛，並符合下列條件：
-
-      (1)經使用其他止痛劑或非類固醇抗發炎劑（NSAIDs）藥品治療後仍無法控制疼痛或有嚴重副作用者。(97/12/1、98/4/1)
-
-      (2)每日最大劑量為600mg。
-
-      2.使用於纖維肌痛(fibromyalgia)
-
-      (1)需符合American College of Rheumatology (ACR)及臨床試驗實證纖維肌痛診斷標準：
-
-      Ⅰ.WPI(wide spread pain index)≧7、Symptom severity (SS)≧5且pain rating scale≧6分或WPI
-      3-6、SS scale≧9且pain rati...'
+    summary: 適用於【Diabetes Mellitus】之健保給付。 規範重點：1.使用於帶狀疱疹皮膚病灶後神經痛，並符合下列條件： (1)經使用其他止痛劑或非類固醇抗發炎劑（NSAIDs）藥品治療後仍無法控制疼痛或有嚴重副作用者。
+    clinical_rules:
+    - indication: Diabetes Mellitus (糖尿病)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules:
+      - ing scale較前一次評估之數值未改善或未持續改善，應予停止使用。
+      - ating scale較前次評估數值未改善或未持續改善，應予停止使用。
+      evaluation_frequency:
+      - 每3個月評估一次
+      - 每3個月評估一次
+      - 使用3個月
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules:
+    - ing scale較前一次評估之數值未改善或未持續改善，應予停止使用。
+    - ating scale較前次評估數值未改善或未持續改善，應予停止使用。
+    evaluation_intervals:
+    - 每3個月評估一次
+    - 每3個月評估一次
+    - 使用3個月
   reference_annotations:
     original_clause: 1.1.7. Pregabalin（101/2/1、102/2/1、105/1/1、106/3/1、109/5/1、113/12/1）
     full_text: '1.使用於帶狀疱疹皮膚病灶後神經痛，並符合下列條件：
@@ -357,26 +434,33 @@ regulations:
   - (113/12/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Duloxetine (如 Cymbalta)
   conditions_of_payment:
     indications:
     - Diabetes Mellitus (糖尿病)
     laboratory_criteria: []
-    summary: '1.使用於糖尿病併發周邊神經病變並具有臨床神經疼痛 (neuropathic pain)，且符合以下條件:
-
-      (1)經神經科專科醫師診斷或經神經傳導(NCV) 檢查證實之多發性神經病變(polyneuropathy)。
-
-      (2)Pain rating scale≧4分。
-
-      (3)不得併用同類適應症之藥品。
-
-      (4)使用後應每3個月評估一次，並於病歷中記載評估結果，倘Pain rating scale較前一次評估之數值未改善或未持續改善，應予停止使用。
-
-      (5)每日最大劑量為60 mg。
-
-      2.使用於纖維肌痛(fibromyalgia)(105/2/1)
-
-      (1)需符合American College of ...'
+    summary: '適用於【Diabetes Mellitus】之健保給付。 規範重點：1.使用於糖尿病併發周邊神經病變並具有臨床神經疼痛 (neuropathic
+      pain)，且符合以下條件: (1)經神經科專科醫師診斷或經神經傳導(NCV) 檢查證實之多發性神經病變(polyneuropathy)。'
+    clinical_rules:
+    - indication: Diabetes Mellitus (糖尿病)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules:
+      - ing scale較前一次評估之數值未改善或未持續改善，應予停止使用。
+      evaluation_frequency:
+      - 每3個月評估一次
+      - 使用3個月
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules:
+    - ing scale較前一次評估之數值未改善或未持續改善，應予停止使用。
+    evaluation_intervals:
+    - 每3個月評估一次
+    - 使用3個月
   reference_annotations:
     original_clause: 1.1.8. Duloxetine（如Cymbalta）：(102/8/1、105/2/1、113/12/1)
     full_text: '1.使用於糖尿病併發周邊神經病變並具有臨床神經疼痛 (neuropathic pain)，且符合以下條件:
@@ -427,9 +511,20 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.限用於突發性疼痛(breakthrough pain)，並已接受過口服morphine至少60mg/day、oxycodone至少30mg/day、hydromorphone至少8mg/day、或fentanyl貼片劑至少25/mcg/hr或其他等止痛劑量之類鴉片藥物達一星期(含)以上之18歲以上癌症患者(111/2/1)。
-
-      2.不得用於急性或術後疼痛之處置。'
+    summary: 規範【. Fentanyl citrate口頰溶片或口頰錠】之健保給付條件。 規範重點：1.限用於突發性疼痛(breakthrough pain)，並已接受過口服morphine至少60mg/day、oxycodone至少30mg/day、hydromorphone至少8mg/day、或fentanyl貼片劑至少25/mcg/hr或其他等止痛劑量之類鴉片藥物達一星期(含)以上之18歲以上癌症患者(111/2/1)。
+    clinical_rules:
+    - indication: 1.1.9. Fentanyl citrate口頰溶片或口頰錠(108/10/1、111/2/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.1.9. Fentanyl citrate口頰溶片或口頰錠(108/10/1、111/2/1)
     full_text: '1.限用於突發性疼痛(breakthrough pain)，並已接受過口服morphine至少60mg/day、oxycodone至少30mg/day、hydromorphone至少8mg/day、或fentanyl貼片劑至少25/mcg/hr或其他等止痛劑量之類鴉片藥物達一星期(含)以上之18歲以上癌症患者(111/2/1)。
@@ -448,7 +543,23 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 使用時病歷上應詳細註明診斷依據及使用理由。
+    summary: 規範【. 選擇性血清促進素再吸收抑制劑 (SSRI)、血清促進素及正腎上腺素再吸收抑制劑 (SNRI)及其他抗憂鬱劑（fluvoxamine
+      maleate、fluoxetine、paroxetine、sertraline、venlafaxine、milnacipran、mirtazapine、citalopram、escitalopram、duloxetine、agomelatine、vortioxetine等製劑）：】之健保給付條件。
+      規範重點：使用時病歷上應詳細註明診斷依據及使用理由。
+    clinical_rules:
+    - indication: 1.2.1. 選擇性血清促進素再吸收抑制劑 (SSRI)、血清促進素及正腎上腺素再吸收抑制劑 (SNRI)及其他抗憂鬱劑（fluvoxamine
+        maleate、fluoxetine、paroxetine、sertraline、venlafaxine、milnacipran、mirtazapine、citalopram、escitalopram、duloxetine、agomelatine、vortioxetine等製劑）：(88/12/1、89/10/1、91/5/1、92/6/1、93/5/1、94/2/1、94/12/1、99/10/1、101/7/1、107/3/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.2.1. 選擇性血清促進素再吸收抑制劑 (SSRI)、血清促進素及正腎上腺素再吸收抑制劑 (SNRI)及其他抗憂鬱劑（fluvoxamine
       maleate、fluoxetine、paroxetine、sertraline、venlafaxine、milnacipran、mirtazapine、citalopram、escitalopram、duloxetine、agomelatine、vortioxetine等製劑）：(88/12/1、89/10/1、91/5/1、92/6/1、93/5/1、94/2/1、94/12/1、99/10/1、101/7/1、107/3/1)
@@ -465,7 +576,20 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 作為戒菸治療者不予給付。
+    summary: 規範【. Bupropion HCL：】之健保給付條件。
+    clinical_rules:
+    - indication: 1.2.1.1. Bupropion HCL：(92/1/1、99/10/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.2.1.1. Bupropion HCL：(92/1/1、99/10/1)
     full_text: 作為戒菸治療者不予給付。
@@ -477,16 +601,30 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Clozapine (如 Clozaril)
   conditions_of_payment:
     indications: []
     laboratory_criteria:
     - 白血球
-    summary: '1.限精神科專科醫師使用。
-
-      2.前18週使用時，每週需作白血球檢驗，每次處方以七日為限，使用18週後，每月作一次白血球檢驗。
-
-      3.申報費用時，應檢附白血球檢驗報告。'
+    summary: 規範【. Clozapine（如Clozaril）】之健保給付條件。
+    clinical_rules:
+    - indication: 1.2.2.1. Clozapine（如Clozaril）
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以七日為限
+      - 使用18週
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 以七日為限
+    - 使用18週
   reference_annotations:
     original_clause: 1.2.2.1. Clozapine（如Clozaril）
     full_text: '1.限精神科專科醫師使用。
@@ -514,25 +652,22 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1. 本類製劑之使用需符合下列條件(95/10/1、97/5/1、99/10/1、106/1/1、109/1/1、112/7/1)：
-
-      (1) 開始使用「第二代抗精神病藥品」時需於病歷記載：醫療理由或診斷。(112/7/1)。
-
-      (2)日劑量超過下列治療劑量時，需於病歷記載理由：
-
-      clozapine 400 mg/day
-
-      risperidone 6 mg/day
-
-      olanzapine 20 mg/day
-
-      quetiapine 600 mg/day
-
-      amisulpride 800mg/day (92/1/1)
-
-      ziprasidone 120mg/day (92/7/1)
-
-      aripiprazole 1...'
+    summary: 規範【. Second generation antipsychotics(簡稱第二代抗精神病藥品，如clozapine、olanzapine、risperidone、quetiapine、amisulpride、ziprasidone、aripiprazole、paliperidone、lurasidone、brexpiprazole等)：】之健保給付條件。
+      規範重點：1. 本類製劑之使用需符合下列條件(95/10/1、97/5/1、99/10/1、106/1/1、109/1/1、112/7/1)： (1)
+      開始使用「第二代抗精神病藥品」時需於病歷記載：醫療理由或診斷。
+    clinical_rules:
+    - indication: 1.2.2.2. Second generation antipsychotics(簡稱第二代抗精神病藥品，如clozapine、olanzapine、risperidone、quetiapine、amisulpride、ziprasidone、aripiprazole、paliperidone、lurasidone、brexpiprazole等)：(91/9/1、92/1/1、92/7/1、94/1/1、95/10/1、97/5/1、99/10/1、106/1/1、109/1/1、109/6/1、112/7/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.2.2.2. Second generation antipsychotics(簡稱第二代抗精神病藥品，如clozapine、olanzapine、risperidone、quetiapine、amisulpride、ziprasidone、aripiprazole、paliperidone、lurasidone、brexpiprazole等)：(91/9/1、92/1/1、92/7/1、94/1/1、95/10/1、97/5/1、99/10/1、106/1/1、109/1/1、109/6/1、112/7/1)
     full_text: '1. 本類製劑之使用需符合下列條件(95/10/1、97/5/1、99/10/1、106/1/1、109/1/1、112/7/1)：
@@ -582,13 +717,20 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.使用安眠藥物，病歷應詳載病人發生睡眠障礙的情形，並作適當的評估和診斷，探討可能的原因，並提供衛教建立良好睡眠習慣。(98/5/1)
-
-      2.非精神科醫師、神經科專科醫師若需開立本類藥品，每日不宜超過一顆，連續治療期間不宜超過6個月。若因病情需長期使用，病歷應載明原因，必要時轉精神科、神經科專科醫師評估其繼續使用的適當性。(98/5/1、98/10/1)
-
-      3.精神科、神經科專科醫師應針對必須連續使用本藥的個案，提出合理的診斷，並在病歷上詳細記錄。(98/5/1、98/10/1)
-
-      4.依一般使用指引不建議各種安眠藥併用，應依睡眠障礙型態處方安眠藥，若需不同半衰期之藥物併用應有明確之睡眠障礙型態描述...'
+    summary: 規範【. Zaleplon、zolpidem、zopiclone及eszopiclone】之健保給付條件。 規範重點：1.使用安眠藥物，病歷應詳載病人發生睡眠障礙的情形，並作適當的評估和診斷，探討可能的原因，並提供衛教建立良好睡眠習慣。
+    clinical_rules:
+    - indication: 1.2.3. Zaleplon、zolpidem、zopiclone及eszopiclone（98/1/1、98/5/1、98/10/1、102/11/1）
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.2.3. Zaleplon、zolpidem、zopiclone及eszopiclone（98/1/1、98/5/1、98/10/1、102/11/1）
     full_text: '1.使用安眠藥物，病歷應詳載病人發生睡眠障礙的情形，並作適當的評估和診斷，探討可能的原因，並提供衛教建立良好睡眠習慣。(98/5/1)
@@ -613,15 +755,25 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Tizanidine Hcl (如 Sirdalud tab)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '限下列病患使用
-
-      1.神經系統疾病引起痙攣症狀之病例。
-
-      2.急性疼痛性肌肉痙攣病例。'
+    summary: 規範【. Tizanidine HCl (如Sirdalud tab)：】之健保給付條件。 規範重點：限下列病患使用 1.神經系統疾病引起痙攣症狀之病例。
+    clinical_rules:
+    - indication: 1.3.1.1. Tizanidine HCl (如Sirdalud tab)：(90/10/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.3.1.1. Tizanidine HCl (如Sirdalud tab)：(90/10/1)
     full_text: '限下列病患使用
@@ -642,13 +794,21 @@ regulations:
     indications:
     - Epilepsy (癲癇)
     laboratory_criteria: []
-    summary: '限癲癇症病患使用，且符合以下其中之一項者使用：
-
-      1.對phenytoin注射劑無效或無法忍受phenytoin副作用且無法口服valproic acid之病患。
-
-      2.癲癇連續發作 (Seizure clusters) 之病患。
-
-      3.癲癇重積狀態(Status epilepticus) 之病患。'
+    summary: 適用於【Epilepsy】之健保給付。 規範重點：限癲癇症病患使用，且符合以下其中之一項者使用： 1.對phenytoin注射劑無效或無法忍受phenytoin副作用且無法口服valproic
+      acid之病患。
+    clinical_rules:
+    - indication: Epilepsy (癲癇)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.3.2.1. Sodium valproate注射劑 (如Depakine Lyophilized Injection)(89/7/1、93/2/1、93/6/1、102/10/1)
     full_text: '限癲癇症病患使用，且符合以下其中之一項者使用：
@@ -666,12 +826,29 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Gabapentin (如 Neurontin)
+    - Pregabalin (如 Lyrica)
+    - Tiagabine (如 Gabitril)
+    - Vigabatrin (如 Sabril)
   conditions_of_payment:
     indications:
     - Epilepsy (癲癇)
     laboratory_criteria: []
-    summary: 限用於其他抗癲癇藥物無法有效控制之局部癲癇發作之輔助性治療(add on therapy)。
+    summary: 適用於【Epilepsy】之健保給付。 規範重點：限用於其他抗癲癇藥物無法有效控制之局部癲癇發作之輔助性治療(add on therapy)。
+    clinical_rules:
+    - indication: Epilepsy (癲癇)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.3.2.2. Gabapentin (如Neurontin)、vigabatrin (如Sabril)、tiagabine
       (如Gabitril)、pregabalin(如Lyrica)：(89/9/1、89/2/1、93/6/1、96/3/1、97/1/1、97/10/1、101/2/1、102/1/1、104/6/1、104/11/1、107/2/1、107/8/1、110/5/1）
@@ -684,25 +861,34 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Topiramate (如 Topamax)
   conditions_of_payment:
     indications:
     - Migraine (偏頭痛)
     - Epilepsy (癲癇)
     laboratory_criteria: []
-    summary: '1.限用於其他抗癲癇藥物無法有效控制之局部癲癇發作之輔助治療(add on therapy)或作為第二線之單一藥物治療。
-
-      2.用於預防偏頭痛之治療：(94/3/1、94/9/1、95/1/1、99/5/1、99/10/1、110/12/1）
-
-      (1)限符合國際頭痛協會偏頭痛診斷標準並有以下任一狀況之偏頭痛患者，且對現有預防藥物療效不佳或無法忍受副作用或有使用禁忌者使用。
-
-      I.即使使用急性藥物，反覆發作偏頭痛已嚴重影響到患者的日常生活。
-
-      Ⅱ.特殊病例，如偏癱性偏頭痛、基底性偏頭痛、偏頭痛之前預兆時間過長或是偏頭痛梗塞等。
-
-      Ⅲ.偏頭痛發作頻繁，每星期2次(含)以上。
-
-      (2)Topiramate每日治...'
+    summary: 適用於【Migraine、Epilepsy】之健保給付。 規範重點：1.限用於其他抗癲癇藥物無法有效控制之局部癲癇發作之輔助治療(add
+      on therapy)或作為第二線之單一藥物治療。
+    clinical_rules:
+    - indication: Migraine (偏頭痛)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Epilepsy (癲癇)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.3.2.3. Topiramate(如Topamax 、Trokendi）：（90/9/1、92/11/1、93/6/1、94/3/1、94/9/1、95/1/1、99/5/1、99/10/1、107/11/1、110/12/1)
     full_text: '1.限用於其他抗癲癇藥物無法有效控制之局部癲癇發作之輔助治療(add on therapy)或作為第二線之單一藥物治療。
@@ -735,19 +921,21 @@ regulations:
     indications:
     - Epilepsy (癲癇)
     laboratory_criteria: []
-    summary: '1.一般錠劑膠囊劑（如Keppra Film-Coated Tablets）：（97/1/1、101/6/1)
-
+    summary: 適用於【Epilepsy】之健保給付。 規範重點：1.一般錠劑膠囊劑（如Keppra Film-Coated Tablets）：（97/1/1、101/6/1)
       (1)限用於其他抗癲癇藥物無法有效控制之局部癲癇發作之輔助性治療 (add on therapy) 或作為第二線之單一藥物治療。
-
-      (2)12歲以上病患之肌抽躍性癲癇發作之輔助治療(111/2/1)。
-
-      2.緩釋錠劑膠囊劑：（101/6/1、108/5/1）
-
-      限使用於16歲以上病患之局部癲癇發作之輔助治療(111/2/1)。
-
-      3.口服液劑（如Keppra Oral Solution）：（97/4/1）
-
-      限用於其他抗癲癇藥物無法有效控制之局部癲癇發作之輔助性治療 (add on thera...'
+    clinical_rules:
+    - indication: Epilepsy (癲癇)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.3.2.4. Levetiracetam（101/6/1、102/10/1、108/5/1、111/2/1)
     full_text: '1.一般錠劑膠囊劑（如Keppra Film-Coated Tablets）：（97/1/1、101/6/1)
@@ -782,22 +970,27 @@ regulations:
   - (111/2/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Lamotrigine (如 Lamictal)
   conditions_of_payment:
     indications:
     - Epilepsy (癲癇)
     laboratory_criteria: []
-    summary: '限下列病患使用：
-
-      1.限用於其他抗癲癇藥物無法有效控制之局部癲癇發作之輔助性治療(add on therapy)或作為第二線之單一藥物治療。
-
-      2.限使用於18歲以上且為雙極性疾患者，並依下列原則使用(111/2/1)：
-
-      (1)急性鬱期: 限使用於鋰鹽、carbamazepine、valproate 藥品治療療效不佳或治療後由鬱症轉為躁症之個案。
-
-      (2)雙極性疾患之鬱症預防: 限使用於鋰鹽、carbamazepine、valproate 藥品治療療效不佳或無法耐受其副作用者，單純用於躁症預防者不得使用。
-
-      (3)日劑量超過200mg時，需於病歷記載理由。'
+    summary: 適用於【Epilepsy】之健保給付。 規範重點：限下列病患使用： 1.限用於其他抗癲癇藥物無法有效控制之局部癲癇發作之輔助性治療(add
+      on therapy)或作為第二線之單一藥物治療。
+    clinical_rules:
+    - indication: Epilepsy (癲癇)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.3.2.5. Lamotrigine (如Lamictal) （97/10/1、111/2/1)
     full_text: '限下列病患使用：
@@ -823,17 +1016,21 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.使用於新病患：
-
-      (1)處方使用carbamazepine成分藥品之前，應先檢查病患IC健保卡是否已註記曾檢測帶有HLA-B 1502基因，檢測結果為陽性者，不得開立carbamazepine成分藥品之處方。
-
-      (2)醫師欲為病患處方carbamazepine成分藥品前，應先詢問病患是否對該藥品有過敏病史，若為不確認者或未檢測者，宜先行作HLA-B 1502基因檢測。
-
-      2.使用於舊病患：
-
-      若病患已服用4個月以上，且確認未曾出現喉嚨痛、嘴巴破或皮膚症狀（如分散的斑點或斑丘疹症狀）等類似Steven-Johnson症候群或其他不良反應時，可依病情繼續處方治療，但仍需提醒病患注意上述症狀之發生。
-
-      3...'
+    summary: 規範【Carbamazepine】之健保給付條件。 規範重點：1.使用於新病患： (1)處方使用carbamazepine成分藥品之前，應先檢查病患IC健保卡是否已註記曾檢測帶有HLA-B
+      1502基因，檢測結果為陽性者，不得開立carbamazepine成分藥品之處方。
+    clinical_rules:
+    - indication: 1.3.2.6 Carbamazepine（100/8/1）
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.3.2.6 Carbamazepine（100/8/1）
     full_text: '1.使用於新病患：
@@ -855,12 +1052,26 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Rufinamide (如 Inovelon)
   conditions_of_payment:
     indications:
     - Epilepsy (癲癇)
     laboratory_criteria: []
-    summary: 限用於1歲以上病患之Lennox-Gastaut症候群相關癲癇發作之輔助治療，且使用lamotrigine、topiramate無效或無法耐受副作用者。
+    summary: 適用於【Epilepsy】之健保給付。 規範重點：限用於1歲以上病患之Lennox-Gastaut症候群相關癲癇發作之輔助治療，且使用lamotrigine、topiramate無效或無法耐受副作用者。
+    clinical_rules:
+    - indication: Epilepsy (癲癇)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.3.2.7. Rufinamide (如Inovelon) (106/5/1、110/5/1)
     full_text: 限用於1歲以上病患之Lennox-Gastaut症候群相關癲癇發作之輔助治療，且使用lamotrigine、topiramate無效或無法耐受副作用者。
@@ -872,12 +1083,26 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Zonisamide (如 Zonegran)
   conditions_of_payment:
     indications:
     - Epilepsy (癲癇)
     laboratory_criteria: []
-    summary: 限用於其他抗癲癇藥物無法有效控制之局部癲癇發作之輔助性治療(add on therapy)或作為新診斷成人局部癲癇發作之單一藥物治療。
+    summary: 適用於【Epilepsy】之健保給付。 規範重點：限用於其他抗癲癇藥物無法有效控制之局部癲癇發作之輔助性治療(add on therapy)或作為新診斷成人局部癲癇發作之單一藥物治療。
+    clinical_rules:
+    - indication: Epilepsy (癲癇)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.3.2.8. Zonisamide(如Zonegran) (107/2/1)
     full_text: 限用於其他抗癲癇藥物無法有效控制之局部癲癇發作之輔助性治療(add on therapy)或作為新診斷成人局部癲癇發作之單一藥物治療。
@@ -894,18 +1119,21 @@ regulations:
     indications:
     - Epilepsy (癲癇)
     laboratory_criteria: []
-    summary: '1.一般錠劑膠囊劑(如Vimpat  film-coated tablets)：限用於其他抗癲癇藥物無法有效控制之局部癲癇發作之輔助性治療(add
+    summary: 適用於【Epilepsy】之健保給付。 規範重點：1.一般錠劑膠囊劑(如Vimpat  film-coated tablets)：限用於其他抗癲癇藥物無法有效控制之局部癲癇發作之輔助性治療(add
       on therapy)。
-
-      2.注射劑(如Vimpat solution for infusion)：
-
-      限癲癇症病患使用，且符合以下其中之一項者使用：
-
-      (1)對phenytoin注射劑無效或無法忍受phenytoin副作用且無法口服lacosamide之病患。
-
-      (2)癲癇連續發作(Seizure clusters)之病患。
-
-      (3)癲癇重積狀態(Status epilepticus)之病患。'
+    clinical_rules:
+    - indication: Epilepsy (癲癇)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.3.2.9. Lacosamide (107/8/1）
     full_text: '1.一般錠劑膠囊劑(如Vimpat  film-coated tablets)：限用於其他抗癲癇藥物無法有效控制之局部癲癇發作之輔助性治療(add
@@ -929,24 +1157,27 @@ regulations:
   - (112/3/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Brivaracetam (如 Briviact)
   conditions_of_payment:
     indications:
     - Epilepsy (癲癇)
     laboratory_criteria: []
-    summary: '1.一般錠劑膠囊劑（如Briviact Film-Coated Tablet)：（110/1/1、111/3/1)
-
+    summary: 適用於【Epilepsy】之健保給付。 規範重點：1.一般錠劑膠囊劑（如Briviact Film-Coated Tablet)：（110/1/1、111/3/1)
       (1)限用於4歲以上經使用其他抗癲癇藥物後仍然無法有效控制之局部癲癇發作病人的單一療法或輔助性治療(addon therapy)。
-
-      (2)每日限使用2粒。
-
-      2.注射劑（如Briviact Solution for Injection）：（111/3/1)
-
-      限用於16歲以上癲癇症病患且符合下列條件之一者使用：
-
-      (1)對phenytoin注射劑無效或無法忍受phenytoin副作用且無法口服bivaracetam之病患。
-
-      (2)癲癇連續發作（Seizure clusters）之病患。...'
+    clinical_rules:
+    - indication: Epilepsy (癲癇)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.3.2.10. Brivaracetam(如 Briviact)（110/1/1、111/3/1、112/3/1)
     full_text: '1.一般錠劑膠囊劑（如Briviact Film-Coated Tablet)：（110/1/1、111/3/1)
@@ -976,20 +1207,27 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Perampanel (如 Fycompa)
   conditions_of_payment:
     indications:
     - Epilepsy (癲癇)
     laboratory_criteria: []
-    summary: '1.一般錠劑膠囊劑（如Fycompa Film-coated Tablets）：（104/6/1、110/5/1)
-
+    summary: 適用於【Epilepsy】之健保給付。 規範重點：1.一般錠劑膠囊劑（如Fycompa Film-coated Tablets）：（104/6/1、110/5/1)
       限用於其他抗癲癇藥物無法有效控制之局部癲癇發作之輔助性治療 (add on therapy)。
-
-      2.口服液劑（如Fycompa oral suspension）：（110/5/1)
-
-      (1)限用於其他抗癲癇藥物無法有效控制之局部癲癇發作之輔助性治療 (add on therapy)。
-
-      (2)12歲以上成人及青少年患者原發型全身性強直陣攣癲癇發作併有原發性全身發作之輔助治療。'
+    clinical_rules:
+    - indication: Epilepsy (癲癇)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.3.2.11. Perampanel(如Fycompa)
     full_text: '1.一般錠劑膠囊劑（如Fycompa Film-coated Tablets）：（104/6/1、110/5/1)
@@ -1009,19 +1247,29 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Stiripentol (如 Diacomit)
   conditions_of_payment:
     indications:
     - Epilepsy (癲癇)
     laboratory_criteria: []
-    summary: '1.限用於經衛生福利部國民健康署認定之嬰兒期嚴重肌痙攣性癲癇(SMEI,Dravet syndrome)病人，並且合併服用clobazam及valproate兩種藥物無法充分控制癲癇發作時，併用本藥品作為輔助治療難治的全身性強直陣攣性發作(generalized
+    summary: 適用於【Epilepsy】之健保給付。 規範重點：1.限用於經衛生福利部國民健康署認定之嬰兒期嚴重肌痙攣性癲癇(SMEI,Dravet syndrome)病人，並且合併服用clobazam及valproate兩種藥物無法充分控制癲癇發作時，併用本藥品作為輔助治療難治的全身性強直陣攣性發作(generalized
       tonic-clonic seizure)。
-
-      2.停止治療條件：在持續使用(含自費使用)1年後，若病人全身陣攣性及強直陣攣性發作頻率未比用藥前減少超過50%者，則應停止使用。
-
-      註：減少超過50%之定義為「【用藥前3個月之平均每個月全身陣攣性及強直陣攣性發作次數(a)-用藥後1年平均每個月全身性強直陣攣性發作次數(b)】/a」
-
-      3.本藥...'
+    clinical_rules:
+    - indication: Epilepsy (癲癇)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules:
+      - 身陣攣性及強直陣攣性發作頻率未比用藥前減少超過50%者，則應停止使用。
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules:
+    - 身陣攣性及強直陣攣性發作頻率未比用藥前減少超過50%者，則應停止使用。
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.3.2.12. Stiripentol（如Diacomit）：（113/2/1）
     full_text: '1.限用於經衛生福利部國民健康署認定之嬰兒期嚴重肌痙攣性癲癇(SMEI,Dravet syndrome)病人，並且合併服用clobazam及valproate兩種藥物無法充分控制癲癇發作時，併用本藥品作為輔助治療難治的全身性強直陣攣性發作(generalized
@@ -1040,28 +1288,33 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Cannabidiol (如 Epidyolex)
   conditions_of_payment:
     indications:
     - Epilepsy (癲癇)
     laboratory_criteria: []
-    summary: '病人須符合以下(1)、(2)條件之一：
-
-      (1)經衛生福利部國民健康署認定之年滿2歲之Dravet症候群病人，且符合下列條件：
-
-      Ⅰ.限用於至少使用三種以上抗癲癇藥物，仍無法有效控制癲癇發作之輔助性治療。
-
-      Ⅱ.最大建議維持劑量為20mg/kg/day。
-
-      Ⅲ.須先經stiripentol治療後仍無法改善癲癇大發作次數或產生藥物不良反應時，方可使用本類藥品。
-
-      (2)經衛生福利部國民健康署認定之年滿1歲之結節性硬化症病人，且符合下列各項條件：
-
-      I.限用於至少使用三種以上抗癲癇藥物，仍無法有效控制癲癇發作之輔助性治療。
-
-      Ⅱ.最大建議維持劑量為25mg/kg/day。
-
-      Ⅲ.須先經癲癇病灶切除術評估或迷走神經...'
+    summary: 適用於【Epilepsy】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Epilepsy (癲癇)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules:
+      - 身陣攣性及強直陣攣性發作頻率未比用藥前減少超過50%者，則應停止使用。
+      evaluation_frequency:
+      - 每次申請以1年為限
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 524
+      end_char: 528
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules:
+    - 身陣攣性及強直陣攣性發作頻率未比用藥前減少超過50%者，則應停止使用。
+    evaluation_intervals:
+    - 每次申請以1年為限
   reference_annotations:
     original_clause: 1.3.2.13. Cannabidiol（如Epidyolex）：（113/4/1）
     full_text: '病人須符合以下(1)、(2)條件之一：
@@ -1118,22 +1371,134 @@ regulations:
     indications:
     - Parkinson's Disease (帕金森氏症)
     - Alzheimer's Disease / Dementia (阿茲海默症)
-    laboratory_criteria: []
-    summary: '1.限用於依NINCDS-ADRDA或DSM或ICD標準診斷為阿滋海默氏症或帕金森氏症之失智症病患。
-
-      2.臨床診斷為「血管性失智症」，或有嚴重心臟傳導阻斷（heart block）之病患，不建議使用。(108/12/1)
-
-      3.初次使用者，需於病歷上記載以下資料：(106/10/1)
-
-      (1)CT、MRI或哈金斯氏量表（Hachinski lschemic Score）三項其中之任一結果報告。
-
-      (2)CBC, VDRL, BUN, Creatinine, GOT, GPT, T4, TSH檢驗。
-
-      (3)MMSE或CDR智能測驗報告。
-
-      4.依疾病別及嚴重度，另規定如下：
-
-      (1)阿滋海默氏症之失智症由...'
+    laboratory_criteria:
+    - MMSE
+    summary: 適用於【Parkinson's Disease、Alzheimer's Disease / Dementia】之健保給付。 主要條件包含：臨床檢驗需符合
+      MMSE <= 14分, MMSE <= 14分。
+    clinical_rules:
+    - indication: Parkinson's Disease (帕金森氏症)
+      biomarkers:
+      - biomarker: MMSE
+        operator: <=
+        value: '14'
+        unit: 分
+        duration: 一年
+        terminology_bindings:
+          loinc: 72106-8
+          snomed_ct: '273617000'
+          snomed_procedure: '273617000'
+          snomed_finding: '273617000'
+        source_grounding:
+          start_char: 814
+          end_char: 822
+          snippet: MMSE≦14分
+      - biomarker: MMSE
+        operator: <=
+        value: '14'
+        unit: 分
+        duration: 一年
+        terminology_bindings:
+          loinc: 72106-8
+          snomed_ct: '273617000'
+          snomed_procedure: '273617000'
+          snomed_finding: '273617000'
+        source_grounding:
+          start_char: 963
+          end_char: 971
+          snippet: MMSE≦14分
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 每一年需重新評估
+      - 每一年需重新評估
+      - 每一年需重新評估
+      - 每一年需重新評估
+      - 每一年需重新評估
+      - 每一年需重新評估
+      - 每一年需重新評估
+    - indication: Alzheimer's Disease / Dementia (阿茲海默症)
+      biomarkers:
+      - biomarker: MMSE
+        operator: <=
+        value: '14'
+        unit: 分
+        duration: 一年
+        terminology_bindings:
+          loinc: 72106-8
+          snomed_ct: '273617000'
+          snomed_procedure: '273617000'
+          snomed_finding: '273617000'
+        source_grounding:
+          start_char: 814
+          end_char: 822
+          snippet: MMSE≦14分
+      - biomarker: MMSE
+        operator: <=
+        value: '14'
+        unit: 分
+        duration: 一年
+        terminology_bindings:
+          loinc: 72106-8
+          snomed_ct: '273617000'
+          snomed_procedure: '273617000'
+          snomed_finding: '273617000'
+        source_grounding:
+          start_char: 963
+          end_char: 971
+          snippet: MMSE≦14分
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 每一年需重新評估
+      - 每一年需重新評估
+      - 每一年需重新評估
+      - 每一年需重新評估
+      - 每一年需重新評估
+      - 每一年需重新評估
+      - 每一年需重新評估
+    structured_biomarkers:
+    - biomarker: MMSE
+      operator: <=
+      value: '14'
+      unit: 分
+      duration: 一年
+      terminology_bindings:
+        loinc: 72106-8
+        snomed_ct: '273617000'
+        snomed_procedure: '273617000'
+        snomed_finding: '273617000'
+      source_grounding:
+        start_char: 814
+        end_char: 822
+        snippet: MMSE≦14分
+    - biomarker: MMSE
+      operator: <=
+      value: '14'
+      unit: 分
+      duration: 一年
+      terminology_bindings:
+        loinc: 72106-8
+        snomed_ct: '273617000'
+        snomed_procedure: '273617000'
+        snomed_finding: '273617000'
+      source_grounding:
+        start_char: 963
+        end_char: 971
+        snippet: MMSE≦14分
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 每一年需重新評估
+    - 每一年需重新評估
+    - 每一年需重新評估
+    - 每一年需重新評估
+    - 每一年需重新評估
+    - 每一年需重新評估
+    - 每一年需重新評估
   reference_annotations:
     original_clause: 1.3.3. 失智症治療藥品
     full_text: '1.限用於依NINCDS-ADRDA或DSM或ICD標準診斷為阿滋海默氏症或帕金森氏症之失智症病患。
@@ -1219,10 +1584,20 @@ regulations:
     indications:
     - Parkinson's Disease (帕金森氏症)
     laboratory_criteria: []
-    summary: '1.如病人開始出現功能障礙，在使用levodopa之前或同時，得使用一種dopamine agonist（ropinirole、pramipexole、pergolide、lisuride及rotigotine），或amantadine，或是levodopa併用
-      COMT抑制劑（entacapone：如Comtan film-coated tab.；opicapone：如Ongentys hard capsules）。(110/11/1）
-
-      2. Levodopa＋carbidopa＋entacapone三合一製劑（如Stalevo）：限用於表現藥效終期運動功能波動現象，以左多巴/多巴脫羧基酶抑...'
+    summary: 適用於【Parkinson's Disease】之健保給付。
+    clinical_rules:
+    - indication: Parkinson's Disease (帕金森氏症)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.3.4. 帕金森氏症治療藥品：(91/11/1、93/2/1、95/9/1、96/9/1、97/7/1、100/6/1、101/6/1、108/10/1、110/11/1、111/3/1)
     full_text: '1.如病人開始出現功能障礙，在使用levodopa之前或同時，得使用一種dopamine agonist（ropinirole、pramipexole、pergolide、lisuride及rotigotine），或amantadine，或是levodopa併用
@@ -1267,13 +1642,29 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Atomoxetine Hcl (如 Strattera Hard capsules)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.限6歲以上至18歲以下，依DSM或ICD標準診斷為注意力不全過動症患者，並於病歷上詳細記載其症狀、病程及診斷。（96/9/1、106/3/1、111/2/1）
-
-      2.如符合前項規定且已使用本類藥品治療半年以上，而18歲以上仍需服用者，需於病歷上詳細記載以往病史及使用理由。（96/9/1、111/2/1）'
+    summary: 規範【. Methylphenidate HCl緩釋劑型（如Concerta Extended Release Tablets、Methydur
+      Sustained Release Capsules）；atomoxetine HCl（如Strattera Hard capsules、Atotine
+      oral Solution）】之健保給付條件。 規範重點：1.限6歲以上至18歲以下，依DSM或ICD標準診斷為注意力不全過動症患者，並於病歷上詳細記載其症狀、病程及診斷。
+    clinical_rules:
+    - indication: 1.3.5. Methylphenidate HCl緩釋劑型（如Concerta Extended Release Tablets、Methydur
+        Sustained Release Capsules）；atomoxetine HCl（如Strattera Hard capsules、Atotine
+        oral Solution）(93/9/1、96/5/1、96/9/1、97/5/1、106/3/1、109/9/1、111/2/1、111/8/1、113/11/1、114/10/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.3.5. Methylphenidate HCl緩釋劑型（如Concerta Extended Release Tablets、Methydur
       Sustained Release Capsules）；atomoxetine HCl（如Strattera Hard capsules、Atotine
@@ -1299,23 +1690,47 @@ regulations:
     - Bipolar Disorder (雙相情緒障礙症)
     - Major Depressive Disorder (憂鬱症)
     laboratory_criteria: []
-    summary: '(1)注意力測驗(Continuous Performance Test ,CPT)或Gordon
-
-      Diagnostic System,GDS。
-
-      (2)世界衛生組織公告之Adult ADHD Self report Scale, ASRS (傳統中
-
-      文版)、Global Assessment of Functioning Scaling ,GAF。
-
-      (3)需由精神科醫師診斷及處方，臨床醫師對個案之診斷及處方有疑慮
-
-      時，宜由具有兒童青少年精神科訓練之專科醫師確認診斷。
-
-      (4)排除其他疾病因素：
-
-      Ⅰ.任何使用之藥品/物質、身體及注意力不全過動症以外之各種精神
-
-      病等對注意力及衝動控制功能、症狀之影響...'
+    summary: 適用於【Alzheimer's Disease / Dementia、Schizophrenia、Bipolar Disorder】之健保給付。
+      主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Alzheimer's Disease / Dementia (阿茲海默症)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy:
+      - 藥物3個月無效
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Schizophrenia (思覺失調症)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy:
+      - 藥物3個月無效
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Bipolar Disorder (雙相情緒障礙症)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy:
+      - 藥物3個月無效
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Major Depressive Disorder (憂鬱症)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy:
+      - 藥物3個月無效
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 508
+      end_char: 512
+      snippet: 事前審查
+    step_therapy:
+    - 藥物3個月無效
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 3.19 歲以上至未滿41歲才第一次診斷者，須符合下列條件並檢附詳細病歷紀錄及相關資料，經事前審查核准後使用(限用含atomoxetine
       HCl成分一般錠劑膠囊劑藥品)：（111/8/1、114/10/1）
@@ -1372,22 +1787,30 @@ regulations:
   - (112/3/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Modafinil (如 Provigil)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '同時需符合下列條件：
-
-      1.限猝睡症(narcolepsy)患者有日間過度睡眠症狀。(109/12/1）
-
-      2.猝睡症之診斷需符合ICSD-3診斷準則（2014國際睡眠障礙分類標準）為Narcolepsy Type 1及Type 2，如下：(109/12/1）
-
-      Ⅰ.病人必須出現3個月以上白天不可擋的嗜睡症狀。
-
-      Ⅱ.以下兩項至少出現一項以上。
-
-      (i)Type I Narcolepsy必須出現猝倒（cataplexy）及多次入睡睡眠檢查（Multiple Sleep Latency Test,MSLT）出現的平均入睡潛伏期（sleep
-      latency）小於等於8分鐘，且有兩次以上的快速動眼期（SORE...'
+    summary: 規範【. Modafinil(如Provigil)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: 1.3.6.1. Modafinil(如Provigil)：(96/2/1、109/12/1、110/12/1、112/3/1)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 每次核准3年
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 1108
+      end_char: 1112
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 每次核准3年
   reference_annotations:
     original_clause: 1.3.6.1. Modafinil(如Provigil)：(96/2/1、109/12/1、110/12/1、112/3/1)
     full_text: '同時需符合下列條件：
@@ -1436,20 +1859,30 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Pitolisant (如 Wakix)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.限18歲以上之成人猝睡症 (narcolepsy)患者。
-
-      2.猝睡症之診斷需符合ICSD-3診斷準則（2014國際睡眠障礙分類標準）為Narcolepsy Type 1及Type 2，如下：
-
-      Ⅰ.病人必須出現3個月以上白天不可擋的嗜睡症狀。
-
-      Ⅱ.以下兩項至少出現一項以上：
-
-      (i)Type I Narcolepsy必須出現猝倒（cataplexy）及多次入睡睡眠檢查（Multiple Sleep Latency Test,MSLT）出現的平均入睡潛伏期（sleep
-      latency）小於等於8分鐘，且有兩次以上的快速動眼期（SOREMPs）；或者前一晚多頻睡眠檢查 (Polysomnograp...'
+    summary: 規範【. Pitolisant (如Wakix)：（112/3/1)】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: 1.3.6.2. Pitolisant (如Wakix)：（112/3/1)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 每次核准3年
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 953
+      end_char: 957
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 每次核准3年
   reference_annotations:
     original_clause: 1.3.6.2. Pitolisant (如Wakix)：（112/3/1)
     full_text: '1.限18歲以上之成人猝睡症 (narcolepsy)患者。
@@ -1506,8 +1939,20 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: "1.限使用人工呼吸器治療且需要每日進行神智評估之病例使用(100/7/1)。\n2.\t每次使用以不超過七十二小時為原則，依病程需要至多延長至七天。超過三天之使用需醫師評估病患在非重度鎮靜之輕、中度鎮靜狀態下使用，且需做相關預防Propofol之併發症的評估(109/2/1)。\n\
-      3.不得作為例行性使用。"
+    summary: 規範【. Propofol：】之健保給付條件。 規範重點：1.限使用人工呼吸器治療且需要每日進行神智評估之病例使用(100/7/1)。
+    clinical_rules:
+    - indication: 1.4.1. Propofol：(91/2/1、100/7/1、109/2/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.4.1. Propofol：(91/2/1、100/7/1、109/2/1)
     full_text: "1.限使用人工呼吸器治療且需要每日進行神智評估之病例使用(100/7/1)。\n2.\t每次使用以不超過七十二小時為原則，依病程需要至多延長至七天。超過三天之使用需醫師評估病患在非重度鎮靜之輕、中度鎮靜狀態下使用，且需做相關預防Propofol之併發症的評估(109/2/1)。\n\
@@ -1525,11 +1970,20 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.限使用人工呼吸器治療且肝或腎功能衰竭之病患使用(100/7/1)。
-
-      2.每次使用以不超過七十二小時為原則。
-
-      3.不得作為例行性使用。'
+    summary: 規範【. Cis-atracurium、atracurium：】之健保給付條件。 規範重點：1.限使用人工呼吸器治療且肝或腎功能衰竭之病患使用(100/7/1)。
+    clinical_rules:
+    - indication: 1.4.2. Cis-atracurium、atracurium：(91/2/1、100/7/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.4.2. Cis-atracurium、atracurium：(91/2/1、100/7/1)
     full_text: '1.限使用人工呼吸器治療且肝或腎功能衰竭之病患使用(100/7/1)。
@@ -1550,15 +2004,21 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.限使用人工呼吸器治療之血液動力學不穩定之重症病患，且具有下述情形者(100/7/1)：
-
+    summary: 規範【. Vecuronium、rocuronium：】之健保給付條件。 規範重點：1.限使用人工呼吸器治療之血液動力學不穩定之重症病患，且具有下述情形者(100/7/1)：
       (1)心臟功能不穩定者。
-
-      (2)心搏過速可能惡化者。
-
-      2.每次使用以不超過七十二小時為原則。
-
-      3.不得作為例行性使用。'
+    clinical_rules:
+    - indication: 1.4.3. Vecuronium、rocuronium：(91/2/1、100/7/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.4.3. Vecuronium、rocuronium：(91/2/1、100/7/1)
     full_text: '1.限使用人工呼吸器治療之血液動力學不穩定之重症病患，且具有下述情形者(100/7/1)：
@@ -1582,9 +2042,20 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 'Xylocaine 2 % jelly：
-
-      限直腸外科人工肛門造口病例需居家定期插入導管或脊椎畸型合併有神經功能障礙之病童需長期居家間歇導尿病例使用。'
+    summary: 規範【. 局部麻醉劑（local anesthetics）】之健保給付條件。 規範重點：Xylocaine 2 % jelly： 限直腸外科人工肛門造口病例需居家定期插入導管或脊椎畸型合併有神經功能障礙之病童需長期居家間歇導尿病例使用。
+    clinical_rules:
+    - indication: 1.4.4. 局部麻醉劑（local anesthetics）
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.4.4. 局部麻醉劑（local anesthetics）
     full_text: 'Xylocaine 2 % jelly：
@@ -1598,13 +2069,25 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Dexmedetomidine (如 Precedex)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.限用於短期可拔管需鎮靜之18歲以上加護病房病人使用，連續使用不得超過24小時，再次使用需間隔6小時以上，每次住院最多使用3次。
-
-      2.申報費用時檢附病歷紀錄(資料)。'
+    summary: 規範【. Dexmedetomidine（如Precedex）：】之健保給付條件。 規範重點：1.限用於短期可拔管需鎮靜之18歲以上加護病房病人使用，連續使用不得超過24小時，再次使用需間隔6小時以上，每次住院最多使用3次。
+    clinical_rules:
+    - indication: 1.4.5. Dexmedetomidine（如Precedex）：(96/8/1、108/3/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.4.5. Dexmedetomidine（如Precedex）：(96/8/1、108/3/1)
     full_text: '1.限用於短期可拔管需鎮靜之18歲以上加護病房病人使用，連續使用不得超過24小時，再次使用需間隔6小時以上，每次住院最多使用3次。
@@ -1623,20 +2106,23 @@ regulations:
     indications:
     - Head and Neck Cancer (頭頸部癌)
     laboratory_criteria: []
-    summary: '1.使用於修格蘭氏症候群 (Sjogren''s syndrome) 病人：
-
-      (1)使用對象：需符合修格蘭氏症候群之診斷標準。
-
-      (2)使用時機：原發性或續發性修格蘭氏症候群病人具有口乾燥症狀者。
-
-      (3)治療期程及評量：使用後每半年需檢附pilocarpine hydrochloride口服劑型治療後症狀改善評量表 (如附表十九) 於病歷上，證明pilocarpine
-      hydrochloride口服劑型治療有效方可繼續使用。（102/2/1)
-
-      (4)使用劑量：每日三至四次，每次一錠 (5mg/tab) 依病人反映，可做劑量調整參考。
-
-      2.使用於頭頸部癌放射線治療病人
-
-      (1)使用對象：頭頸部癌放射線...'
+    summary: 適用於【Head and Neck Cancer】之健保給付。 規範重點：1.使用於修格蘭氏症候群 (Sjogren's syndrome)
+      病人： (1)使用對象：需符合修格蘭氏症候群之診斷標準。
+    clinical_rules:
+    - indication: Head and Neck Cancer (頭頸部癌)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 2002年
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 2002年
   reference_annotations:
     original_clause: 1.5.1. Pilocarpine hydrochloride口服劑型
     full_text: '1.使用於修格蘭氏症候群 (Sjogren''s syndrome) 病人：
@@ -1717,18 +2203,26 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Cevimeline Hydrochloride (如 Evoxac Capsules)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.使用對象：需符合修格蘭氏症候群之診斷標準。
-
-      2.使用時機：原發性或續發性修格蘭氏症候群病人具有口乾燥症狀者。
-
-      3.治療期程及評量：使用後每半年需檢附cevimeline hydrochloride治療後症狀改善評量表（如附表二十）於病歷上，證明cevimeline
-      hydrochloride治療有效方可繼續使用。（102/2/1)。
-
-      4.使用劑量：每日三次，每次一顆 (30mg/cap) 依病人反映，可做劑量調整參考。'
+    summary: 規範【. Cevimeline hydrochloride（如Evoxac Capsules）（97/5/1、102/2/1)】之健保給付條件。
+      規範重點：1.使用對象：需符合修格蘭氏症候群之診斷標準。
+    clinical_rules:
+    - indication: 1.5.2. Cevimeline hydrochloride（如Evoxac Capsules）（97/5/1、102/2/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.5.2. Cevimeline hydrochloride（如Evoxac Capsules）（97/5/1、102/2/1)
     full_text: '1.使用對象：需符合修格蘭氏症候群之診斷標準。
@@ -1749,16 +2243,26 @@ regulations:
   - (112/7/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Riluzole (如 Rilutek)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.經兩位神經科專科醫師診斷為運動神經元疾病 (ALS/MND)，且未氣管切開或未使用人工呼吸器之病患。(92/11/1、95/4/1、112/7/1)
-
-      2.遺傳性運動神經元萎縮症 (如spinal muscular atrophy等)，幼年性遠端肢體萎縮症 (如segmental or focal motor
-      neuron disease等)，感染性神經元疾病 (如polio等) 不適用。
-
-      3. 錠劑膠囊劑限使用於無裝置鼻胃管或胃造廔餵食之病患。(112/7/1)'
+    summary: 規範【. Riluzole (如Rilutek、Teglutik)】之健保給付條件。 規範重點：1.經兩位神經科專科醫師診斷為運動神經元疾病
+      (ALS/MND)，且未氣管切開或未使用人工呼吸器之病患。
+    clinical_rules:
+    - indication: 1.6.1. Riluzole (如Rilutek、Teglutik) (87/4/1、92/11/1、95/4/1、112/7/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.6.1. Riluzole (如Rilutek、Teglutik) (87/4/1、92/11/1、95/4/1、112/7/1)
     full_text: '1.經兩位神經科專科醫師診斷為運動神經元疾病 (ALS/MND)，且未氣管切開或未使用人工呼吸器之病患。(92/11/1、95/4/1、112/7/1)
@@ -1780,7 +2284,22 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 本類藥品限以下適應症使用，每一個案每一年需重新評估一次(98/5/1、107/2/1)。
+    summary: 規範【. Botulinum toxin type A】之健保給付條件。 規範重點：本類藥品限以下適應症使用，每一個案每一年需重新評估一次(98/5/1、107/2/1)。
+    clinical_rules:
+    - indication: 1.6.2. Botulinum toxin type A
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 每一年需重新評估
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 每一年需重新評估
   reference_annotations:
     original_clause: 1.6.2. Botulinum toxin type A
     full_text: 本類藥品限以下適應症使用，每一個案每一年需重新評估一次(98/5/1、107/2/1)。
@@ -1812,19 +2331,32 @@ regulations:
     - Stroke / Cerebrovascular Accident (腦中風)
     - Migraine (偏頭痛)
     laboratory_criteria: []
-    summary: '1.使用於眼瞼痙攣或半面痙攣：
-
-      (1)限12歲以上，經區域以上（含）教學醫院之眼科、神經內科或小兒神經科專科醫師診斷為眼瞼痙攣或半面痙攣之病患使用。
-
-      (2)需符合Spasm Intensity Scale 3級（含）以上，另有病歷記載病史6個月以上者可申請治療。(94/6/1)
-
-      (3)每次注射最高劑量：眼瞼痙攣為每側20單位，半面痙攣為每側30單位。每年最多注射3次為原則。
-
-      2.使用於局部肌張力不全症（focal dystonia）（如斜頸、書寫性痙攣、口顎部肌張力不全等）
-
-      (1)限12歲以上，經區域以上（含）教學醫院之神經內科、小兒神經科或復健科專科醫師診斷為局部張力不全症之病患使用。
-
-      (2...'
+    summary: 適用於【Stroke / Cerebrovascular Accident、Migraine】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Stroke / Cerebrovascular Accident (腦中風)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy:
+      - 藥物治療三個月無效
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Migraine (偏頭痛)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy:
+      - 藥物治療三個月無效
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 773
+      end_char: 777
+      snippet: 事前審查
+    step_therapy:
+    - 藥物治療三個月無效
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.6.2.1. Botox(90/1/1、93/1/1、94/6/1、98/3/1、98/5/1、100/8/1、104/5/1、104/9/1、107/2/1、109/2/1、109/12/1、110/3/1、111/3/1、115/2/1)
     full_text: '1.使用於眼瞼痙攣或半面痙攣：
@@ -1943,19 +2475,23 @@ regulations:
     indications:
     - Stroke / Cerebrovascular Accident (腦中風)
     laboratory_criteria: []
-    summary: '1.使用於眼瞼痙攣或半面痙攣：
-
-      (1)限12歲以上，經區域以上（含）教學醫院之眼科、神經內科或小兒神經科專科醫師診斷為眼瞼痙攣或半面痙攣之病患使用。
-
-      (2)需符合Spasm Intensity Scale 3級（含）以上，另有病歷記載病史6個月以上者可申請治療。(94/6/1)
-
-      (3)每次注射最高劑量：眼瞼痙攣為每側80單位，半面痙攣為每側120單位。每年最多注射3次為原則。
-
-      2.使用於局部肌張力不全症（focal dystonia）（如斜頸、書寫性痙攣、口顎部肌張力不全等）
-
-      (1)限12歲以上，經區域以上（含）教學醫院之神經內科、小兒神經科或復健科專科醫師診斷為局部張力不全症之病患使用。
-
-      (...'
+    summary: 適用於【Stroke / Cerebrovascular Accident】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Stroke / Cerebrovascular Accident (腦中風)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 773
+      end_char: 777
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 1.6.2.2. Dysport (91/2/1、93/1/1、94/6/1、98/3/1、98/5/1、100/8/1、107/2/1、109/2/1、109/12/1、112/11/1)
     full_text: "1.使用於眼瞼痙攣或半面痙攣：\n(1)限12歲以上，經區域以上（含）教學醫院之眼科、神經內科或小兒神經科專科醫師診斷為眼瞼痙攣或半面痙攣之病患使用。\n\

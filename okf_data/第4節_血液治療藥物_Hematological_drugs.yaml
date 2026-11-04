@@ -1,6 +1,20 @@
-okf_version: '1.0'
-schema_type: Taiwan_NHI_Drug_Regulation
+okf_version: '0.2'
+type: regulation/taiwan_nhi_drug_payment
 chapter: 第4節 血液治療藥物 Hematological drugs
+provenance:
+  authority: 衛生福利部中央健康保險署 (Taiwan NHIA)
+  source_document: 完整給付規定1150821.docx
+  jurisdiction: TW
+  legal_basis: 全民健康保險法第41條暨全民健康保險藥物給付項目及支付標準
+trust:
+  tier: machine-confirmed
+  extracted_by: LangExtract-NHI-Engine
+  grounding_verified: true
+  confidence_score: 0.98
+lifecycle:
+  status: active
+  last_synced: '2026-11-04'
+  stale_after: '2026-12-31'
 total_regulations: 20
 regulations:
 - regulation_id: REG-0149
@@ -20,23 +34,171 @@ regulations:
   - (105/9/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Darbepoetin Alfa (如 Aranesp)
+    - Hu-Erythropoietin (如 Eprex)
+    - Oxy Polyethylene Glycol-Epoetin Beta (如 Mircera solution for injection in pre-filled
+      syringe)
   conditions_of_payment:
     indications:
     - Chronic Kidney Disease (慢性腎臟病)
     - Anemia (貧血)
     laboratory_criteria:
     - eGFR
-    summary: '1.使用前和治療後每三至六個月應作體內鐵質貯存評估，如Hb在8 gm/dL以下，且ferritin小於100 mg/dL(非透析病人)、或200
-      mg/dL(透析病人)，有可能是鐵質缺乏。(104/12/1)。
-
-      2.使用期間應排除維他命B12或葉酸缺乏，腸胃道出血，全身性感染或發炎疾病等情況，始得繼續。(104/12/1)。
-
-      3.限腎臟病並符合下列條件使用：(104/12/1)
-
-      (1)末期腎臟病接受透析病人，其Hb <9gm/dL，或第五期慢性腎臟病病人 (eGFR < 15 mL/min/1.73 m2)，其Hb < 9gm/dL。
-
-      Ⅰ.使用時，應從小劑量開始，Hb目標為10 gm/dL，符...'
+    - Hemoglobin
+    summary: 適用於【Chronic Kidney Disease、Anemia】之健保給付。 主要條件包含：臨床檢驗需符合 eGFR < 15mL/min,
+      Hemoglobin < 9g/dL, Hemoglobin < 9g/dL。
+    clinical_rules:
+    - indication: Chronic Kidney Disease (慢性腎臟病)
+      biomarkers:
+      - biomarker: eGFR
+        operator: <
+        value: '15'
+        unit: mL/min
+        duration: null
+        terminology_bindings:
+          loinc: 62238-1
+          snomed_ct: '1011481000000105'
+          snomed_procedure: '1011481000000105'
+          snomed_finding: '1011481000000105'
+        source_grounding:
+          start_char: 231
+          end_char: 247
+          snippet: eGFR < 15 mL/min
+      - biomarker: Hemoglobin
+        operator: <
+        value: '9'
+        unit: g/dL
+        duration: null
+        terminology_bindings:
+          loinc: 718-7
+          snomed_ct: '104141003'
+          snomed_procedure: '104141003'
+          snomed_finding: '250220000'
+        source_grounding:
+          start_char: 207
+          end_char: 212
+          snippet: Hb <9
+      - biomarker: Hemoglobin
+        operator: <
+        value: '9'
+        unit: g/dL
+        duration: null
+        terminology_bindings:
+          loinc: 718-7
+          snomed_ct: '104141003'
+          snomed_procedure: '104141003'
+          snomed_finding: '250220000'
+        source_grounding:
+          start_char: 258
+          end_char: 264
+          snippet: Hb < 9
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules:
+      - (4)符合下列情形之病人，應即停止使用本類藥品：
+      evaluation_frequency:
+      - 療程最長24週
+    - indication: Anemia (貧血)
+      biomarkers:
+      - biomarker: eGFR
+        operator: <
+        value: '15'
+        unit: mL/min
+        duration: null
+        terminology_bindings:
+          loinc: 62238-1
+          snomed_ct: '1011481000000105'
+          snomed_procedure: '1011481000000105'
+          snomed_finding: '1011481000000105'
+        source_grounding:
+          start_char: 231
+          end_char: 247
+          snippet: eGFR < 15 mL/min
+      - biomarker: Hemoglobin
+        operator: <
+        value: '9'
+        unit: g/dL
+        duration: null
+        terminology_bindings:
+          loinc: 718-7
+          snomed_ct: '104141003'
+          snomed_procedure: '104141003'
+          snomed_finding: '250220000'
+        source_grounding:
+          start_char: 207
+          end_char: 212
+          snippet: Hb <9
+      - biomarker: Hemoglobin
+        operator: <
+        value: '9'
+        unit: g/dL
+        duration: null
+        terminology_bindings:
+          loinc: 718-7
+          snomed_ct: '104141003'
+          snomed_procedure: '104141003'
+          snomed_finding: '250220000'
+        source_grounding:
+          start_char: 258
+          end_char: 264
+          snippet: Hb < 9
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules:
+      - (4)符合下列情形之病人，應即停止使用本類藥品：
+      evaluation_frequency:
+      - 療程最長24週
+    structured_biomarkers:
+    - biomarker: eGFR
+      operator: <
+      value: '15'
+      unit: mL/min
+      duration: null
+      terminology_bindings:
+        loinc: 62238-1
+        snomed_ct: '1011481000000105'
+        snomed_procedure: '1011481000000105'
+        snomed_finding: '1011481000000105'
+      source_grounding:
+        start_char: 231
+        end_char: 247
+        snippet: eGFR < 15 mL/min
+    - biomarker: Hemoglobin
+      operator: <
+      value: '9'
+      unit: g/dL
+      duration: null
+      terminology_bindings:
+        loinc: 718-7
+        snomed_ct: '104141003'
+        snomed_procedure: '104141003'
+        snomed_finding: '250220000'
+      source_grounding:
+        start_char: 207
+        end_char: 212
+        snippet: Hb <9
+    - biomarker: Hemoglobin
+      operator: <
+      value: '9'
+      unit: g/dL
+      duration: null
+      terminology_bindings:
+        loinc: 718-7
+        snomed_ct: '104141003'
+        snomed_procedure: '104141003'
+        snomed_finding: '250220000'
+      source_grounding:
+        start_char: 258
+        end_char: 264
+        snippet: Hb < 9
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules:
+    - (4)符合下列情形之病人，應即停止使用本類藥品：
+    evaluation_intervals:
+    - 療程最長24週
   reference_annotations:
     original_clause: 4.1.1. 紅血球生成素(簡稱EPO) hu-erythropoietin (如Eprex、Recormon)、darbepoetin
       alfa（如Aranesp ）、methoxy polyethylene glycol-epoetin beta（如 Mircera solution
@@ -104,19 +266,72 @@ regulations:
     laboratory_criteria:
     - 血壓
     - 白血球
-    summary: '1.限
-
-      (1)用於造血幹細胞移植患者。
-
-      (2)血液惡性疾病接受靜注化學治療後。
-
-      (3)先天性或循環性中性白血球低下症者(當白血球數量少於1000/cumm，或中性白血球 (ANC) 少於500/cumm)。
-
-      (4)其他惡性疾病患者在接受化學治療後，曾經發生白血球少於1000/cumm，或中性白血球 (ANC) 少於500/cumm者，即可使用。(96/1/1)
-
-      (5)重度再生不良性貧血病人嚴重感染時使用，惟不得作為此類病人之預防性使用 。(86/9/1)
-
-      (6)化學治療，併中性白血球缺乏之發燒，若中性白血球小於100/cumm、癌症不受控制、肺炎、低血壓、多器官衰竭或侵犯性黴菌感染等危機程度高...'
+    - ANC
+    summary: 適用於【Fungal Infection / Mycosis、Anemia】之健保給付。 主要條件包含：臨床檢驗需符合 ANC < 500/cumm。
+    clinical_rules:
+    - indication: Fungal Infection / Mycosis (黴菌感染)
+      biomarkers:
+      - biomarker: ANC
+        operator: <
+        value: '500'
+        unit: /cumm
+        duration: 5日
+        terminology_bindings:
+          loinc: 751-8
+          snomed_ct: '104096007'
+          snomed_procedure: '104096007'
+          snomed_finding: '165519006'
+        source_grounding:
+          start_char: 344
+          end_char: 356
+          snippet: ANC<500/cumm
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules:
+      - 過4000/cumm，或中性白血球超過2000/cumm時，應即停藥。惟當預估其骨髓功能不易恢復時，雖其血球已達上述標準，仍可給予半量之治療，若仍可維持血球數，則可給予
+      evaluation_frequency: []
+    - indication: Anemia (貧血)
+      biomarkers:
+      - biomarker: ANC
+        operator: <
+        value: '500'
+        unit: /cumm
+        duration: 5日
+        terminology_bindings:
+          loinc: 751-8
+          snomed_ct: '104096007'
+          snomed_procedure: '104096007'
+          snomed_finding: '165519006'
+        source_grounding:
+          start_char: 344
+          end_char: 356
+          snippet: ANC<500/cumm
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules:
+      - 過4000/cumm，或中性白血球超過2000/cumm時，應即停藥。惟當預估其骨髓功能不易恢復時，雖其血球已達上述標準，仍可給予半量之治療，若仍可維持血球數，則可給予
+      evaluation_frequency: []
+    structured_biomarkers:
+    - biomarker: ANC
+      operator: <
+      value: '500'
+      unit: /cumm
+      duration: 5日
+      terminology_bindings:
+        loinc: 751-8
+        snomed_ct: '104096007'
+        snomed_procedure: '104096007'
+        snomed_finding: '165519006'
+      source_grounding:
+        start_char: 344
+        end_char: 356
+        snippet: ANC<500/cumm
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules:
+    - 過4000/cumm，或中性白血球超過2000/cumm時，應即停藥。惟當預估其骨髓功能不易恢復時，雖其血球已達上述標準，仍可給予半量之治療，若仍可維持血球數，則可給予
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 4.1.2.1. 短效型注射劑（如filgrastim、lenograstim）：(85/10/1、93/4/1、96/1/1、101/6/1)
     full_text: '1.限
@@ -153,9 +368,20 @@ regulations:
     indications: []
     laboratory_criteria:
     - 白血球
-    summary: '1.限非骨髓性癌症病人(不限合併有骨髓侵犯)，在骨髓抑制性抗癌藥物治療後，且曾經發生白血球少於1000/cumm，或嗜中性白血球(ANC)少於500/cumm者使用。(112/10/1、113/11/1、114/9/1)
-
-      2.同一化學治療療程內限用1支，亦不可併用短效型注射劑。(112/10/1)'
+    summary: 規範【. 長效型注射劑(如pegfilgrastim)：】之健保給付條件。 規範重點：1.限非骨髓性癌症病人(不限合併有骨髓侵犯)，在骨髓抑制性抗癌藥物治療後，且曾經發生白血球少於1000/cumm，或嗜中性白血球(ANC)少於500/cumm者使用。
+    clinical_rules:
+    - indication: 4.1.2.2. 長效型注射劑(如pegfilgrastim)：(101/6/1、112/10/1、113/11/1、114/9/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 4.1.2.2. 長效型注射劑(如pegfilgrastim)：(101/6/1、112/10/1、113/11/1、114/9/1)
     full_text: '1.限非骨髓性癌症病人(不限合併有骨髓侵犯)，在骨髓抑制性抗癌藥物治療後，且曾經發生白血球少於1000/cumm，或嗜中性白血球(ANC)少於500/cumm者使用。(112/10/1、113/11/1、114/9/1)
@@ -174,15 +400,20 @@ regulations:
     indications:
     - Liver Cirrhosis (肝硬化)
     laboratory_criteria: []
-    summary: '1.本保險對象因病使用Human Albumin以符合下列適應症為限：（96/6/1、104/11/1、111/2/1）
-
-      (1)休克病人擴充有效循環血液量
-
-      Ⅰ休克病人至少已給生理鹽水或林格爾液等類溶液1000 mL後尚不能維持穩定血流動態，血比容 (hematocrit) ＞30%，或血色素 (hemoglobin)
-      ＞10 gm/dL需要繼續靜脈輸液時，宜優先使用合成膠類溶液，如dextran、hydroxyethylstarch、polyvinylpyrolidone等。若無上述合適製劑，可給白蛋白溶液，每一病人用量限50
-      gm。（86/1/1）
-
-      Ⅱ70歲以上及2歲以下或併有心衰竭的休克病...'
+    summary: 適用於【Liver Cirrhosis】之健保給付。
+    clinical_rules:
+    - indication: Liver Cirrhosis (肝硬化)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 4.2.1. Human Albumin：（100/8/1、111/2/1）
     full_text: "1.本保險對象因病使用Human Albumin以符合下列適應症為限：（96/6/1、104/11/1、111/2/1）\n(1)休克病人擴充有效循環血液量\n\
@@ -225,15 +456,21 @@ regulations:
     indications:
     - Hemophilia (血友病)
     laboratory_criteria: []
-    summary: '1.門診之血友病人得攜回二~三劑量繞徑治療藥物備用(施打rVIIa 270μg/kg IV單次注射劑量除外)，繼續治療時，比照化療以「療程」方式處理，並查驗上次治療紀錄（如附表十八之二─全民健康保險血友病患者使用「繞徑治療藥物」在家治療紀錄）及登錄醫療評估追蹤紀錄表(附表十八之五)。醫療機構、醫師開立使用血液製劑時，應依血液製劑條例之規定辦理。（103/4/1、108/10/1、109/12/1)
-
-      2.缺乏第七凝血因子之病患：
-
-      可以使用rVIIa 10~20μg/kg IV，q 2~3 hr，1~3劑至止血為止。
-
-      3.發生第八因子抗體之A型血友病患者：
-
-      (1)低反應者 (low respond...'
+    summary: 適用於【Hemophilia】之健保給付。 規範重點：1.門診之血友病人得攜回二~三劑量繞徑治療藥物備用(施打rVIIa 270μg/kg
+      IV單次注射劑量除外)，繼續治療時，比照化療以「療程」方式處理，並查驗上次治療紀錄（如附表十八之二─全民健康保險血友病患者使用「繞徑治療藥物」在家治療紀錄）及登錄醫療評估追蹤紀錄表(附表十八之五)。
+    clinical_rules:
+    - indication: Hemophilia (血友病)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 4.2.2. 繞徑治療藥物(活化的第七因子 rVIIa, 如NovoSeven和活化的凝血酶原複合物濃縮劑 APCC, 如Feiba)：(88/6/1、93/7/1、94/2/1、98/8/1、103/4/1、105/2/1、105/8/1、108/10/1、109/12/1)
     full_text: "1.門診之血友病人得攜回二~三劑量繞徑治療藥物備用(施打rVIIa 270μg/kg IV單次注射劑量除外)，繼續治療時，比照化療以「療程」方式處理，並查驗上次治療紀錄（如附表十八之二─全民健康保險血友病患者使用「繞徑治療藥物」在家治療紀錄）及登錄醫療評估追蹤紀錄表(附表十八之五)。醫療機構、醫師開立使用血液製劑時，應依血液製劑條例之規定辦理。（103/4/1、108/10/1、109/12/1)\n\
@@ -289,12 +526,23 @@ regulations:
     indications:
     - Hemophilia (血友病)
     laboratory_criteria: []
-    summary: '1.門診之血友病人得攜回二~三劑量(至多攜回一個月)第八、第九凝血因子備用，繼續治療時，比照化療以「療程」方式處理，並查驗上次治療紀錄（如附表十八之一─全民健康保險血友病患者使用第八、第九凝血因子在家治療紀錄）及登錄醫療評估追蹤紀錄表(附表十八之五)。醫療機構、醫師開立使用血液製劑時，應依血液製劑條例之規定辦理。（103/4/1、108/10/1、109/12/1)
-
-      2.用於A型或B型無抗體存在之血友病人：(111/1/1）
-
-      (1) 突發性出血治療(episodic therapy)：適用一般型血友病病人，建議劑量均如附表十八之三－全民健康保險一般型血友病患突發性出血治療(episodic
-      t...'
+    summary: 適用於【Hemophilia】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Hemophilia (血友病)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 626
+      end_char: 630
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 4.2.3. 第八、第九凝血因子製劑（103/4/1、106/9/1、106/12/1、107/11/1、108/10/1、109/3/1、109/9/1、109/12/1、110/3/1、111/1/1、111/3/1、112/3/1、112/5/1、113/7/1、114/3/1）：
     full_text: '1.門診之血友病人得攜回二~三劑量(至多攜回一個月)第八、第九凝血因子備用，繼續治療時，比照化療以「療程」方式處理，並查驗上次治療紀錄（如附表十八之一─全民健康保險血友病患者使用第八、第九凝血因子在家治療紀錄）及登錄醫療評估追蹤紀錄表(附表十八之五)。醫療機構、醫師開立使用血液製劑時，應依血液製劑條例之規定辦理。（103/4/1、108/10/1、109/12/1)
@@ -399,15 +647,21 @@ regulations:
     - Hemophilia (血友病)
     laboratory_criteria:
     - 血小板
-    summary: '1.各分型類血友病治療規定：
-
-      (1)第一型類血友病(Type 1 von-Willebrand Disease)：
-
-      Ⅰ.以DDAVP治療為原則，如患者VWF:RCo ＜10 IU/dL，則不建議使用DDAVP。
-
-      Ⅱ.輕度出血或小手術處置：使用DDAVP，治療目標為VWF:RCo及VIII:C 都上升到30-50 IU/dL以上，維持1-5天，若DDAVP治療無效或有禁忌症時可使用VWF/FVIII濃縮製劑。
-
-      Ⅲ.嚴重出血治療或重大手術處置：使用VWF/FVIII濃縮製劑，治療目標為VWF:RCo及VIII:C起初濃度都上升到至少100 IU/dL以上，接下來劑量於7-10日內維持VWF:RCo...'
+    summary: 適用於【Hemophilia】之健保給付。 規範重點：1.各分型類血友病治療規定： (1)第一型類血友病(Type 1 von-Willebrand
+      Disease)： Ⅰ.以DDAVP治療為原則，如患者VWF:RCo ＜10 IU/dL，則不建議使用DDAVP。
+    clinical_rules:
+    - indication: Hemophilia (血友病)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 4.2.4. 類血友病治療藥品，VWF/FVIII濃縮製劑(如 Haemate P, Alphanate等)、 Desmopressin(DDAVP)
       等：(103/4/1)
@@ -447,17 +701,27 @@ regulations:
     - Liver Cirrhosis (肝硬化)
     - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     laboratory_criteria: []
-    summary: '限用於下列情況以矯正凝血因子缺乏，且須同時針對出血原因進行處置：
-
+    summary: 適用於【Liver Cirrhosis、Hepatitis B / Hepatitis C】之健保給付。 規範重點：限用於下列情況以矯正凝血因子缺乏，且須同時針對出血原因進行處置：
       1.在缺乏單一的凝血因子製劑可使用的情況，因先天性單一或多重缺乏第二、第七、第九或第十凝血因子，有出血或接受侵犯性處理及手術時的預防出血性治療。
-
-      2.在缺乏單一的凝血因子製劑可使用的情況，因單一或多重缺乏第二、第七、第九或第十凝血因子造成的新生兒嚴重出血。
-
-      3.因嚴重的肝臟實質傷害(如猛爆性肝炎、肝硬化末期、肝中毒、肝創傷等)或極度肝萎縮引起的食道胃靜脈瘤出血。
-
-      4.因服用coumarin類抗凝血劑造成併發症引起的嚴重出血。
-
-      5.缺乏維生素K併發的嚴重出血或需緊急手術時。'
+    clinical_rules:
+    - indication: Liver Cirrhosis (肝硬化)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 4.2.5. 第二、七、九、十凝血因子複合製劑(如Beriplex)：(105/7/1)
     full_text: '限用於下列情況以矯正凝血因子缺乏，且須同時針對出血原因進行處置：
@@ -480,15 +744,29 @@ regulations:
   - (107/8/1、108/10/1、109/12/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Human Plasma Coagulation Factor Xiii (如 Fibrogammin)
   conditions_of_payment:
     indications:
     - Hemophilia (血友病)
     laboratory_criteria: []
-    summary: "1.用於第十三凝血因子缺乏之病人。\n(1)\t有急性出血時\nA.\t輕度至中度出血：\n10-20 IU/Kg注射1-3次至止血。\n\
-      B.\t嚴重出血：\n20-30 IU/Kg注射數次，可間隔數日至一周，直至止血。如有顱內出血，建議30-40 IU/Kg注射，間隔每天至一週給藥，直至止血。\n\
-      C.\t手術：\n20-30 IU/Kg，每天注射1-3天，嗣後10-20 IU/Kg注射2-3天。\n(2)\t預防性給予：\n建議10-40 IU/Kg，每4至6週注射一次；視突破性出血情況可增至40\
-      \ IU/Kg每4至6週注射一次。\n(3)\t懷孕時：\n在5~6週懷孕時即建議開始給予，至懷孕後期劑量可視患者情況增加。\n(4)..."
+    summary: 適用於【Hemophilia】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Hemophilia (血友病)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 651
+      end_char: 655
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 4.2.6. Human plasma coagulation factor XIII (如Fibrogammin) (107/8/1、108/10/1、109/12/1)
     full_text: "1.用於第十三凝血因子缺乏之病人。\n(1)\t有急性出血時\nA.\t輕度至中度出血：\n10-20 IU/Kg注射1-3次至止血。\n\
@@ -514,15 +792,31 @@ regulations:
   - (113/7/1、115/8/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Fitusiran (費妥斯蘭)
   conditions_of_payment:
     indications:
     - Hemophilia (血友病)
     laboratory_criteria: []
-    summary: "限用於A型血友病且有抗體病人及嚴重(FVIII小於1%)未帶有抗體A型血友病病人之預防性治療：\n1.用於A型血友病且有抗體病人預防性治療，並符合以下情形：\n\
-      (1)\t經Bethesda分析法不只一次證實帶有第八凝血因子抑制性抗體≥5.0BU。(108/11/1、109/8/1)\n(2)使用emicizumab\
-      \ 24 小時以前繞徑藥物須停止使用。病人領取的Feiba必須先使用完後，才能考慮開始使用Hemlibra。(108/11/1、109/8/1)\n(3)\t\
-      若發生突破性出血時，第一線藥物為rVIIa或第八凝血因子；除非沒有其他選擇，儘量避免使用Feiba。\nI.\t用rVIIa，需要從低劑量(45..."
+    summary: 適用於【Hemophilia】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Hemophilia (血友病)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules:
+      - (2)使用emicizumab 24 小時以前繞徑藥物須停止使用。病人領取的Feiba必須先使用完後，才能考慮開始使用Hemlibra。(108/11/1、109/
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 562
+      end_char: 566
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules:
+    - (2)使用emicizumab 24 小時以前繞徑藥物須停止使用。病人領取的Feiba必須先使用完後，才能考慮開始使用Hemlibra。(108/11/1、109/
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 4.2.7. 雙特異性單株抗體藥物(如emicizumab)：(108/11/1、109/8/1、109/12/1、112/7/1、113/7/1、115/3/1、115/8/1)
     full_text: "限用於A型血友病且有抗體病人及嚴重(FVIII小於1%)未帶有抗體A型血友病病人之預防性治療：\n1.用於A型血友病且有抗體病人預防性治療，並符合以下情形：\n\
@@ -543,23 +837,42 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Fitusiran (費妥斯蘭)
   conditions_of_payment:
     indications:
     - Thrombosis / Pulmonary Embolism (血栓)
     - Hemophilia (血友病)
     laboratory_criteria: []
-    summary: '用於12歲以上帶有抗體及未帶有抗體的嚴重A型（FVIII小於1%）或B型(FIX小於1%）血友病病人之預防性治療。
-
-      在病人最初開始使用fitusiran治療的7天內，可以繼續使用原先的凝血因子或繞徑治療藥物預防性治療。在fitusiran開始治療7天後，則需要停用凝血因子或繞徑治療藥物預防性治療。
-
-      使用fitusiran預防性治療，若發生突破性出血或需要進行手術，需使用的凝血因子或繞徑治療藥物劑量則依fitusiran仿單「突破性出血處置指引」中的建議劑量使用。
-
-      需經事前審查後核准後使用。
-
-      初次申請以6個月為限，確定維持劑量後，每次申請1年為限。
-
-      期滿須再次申請並經核准後方得續用。申請續用時，...'
+    summary: 適用於【Thrombosis / Pulmonary Embolism、Hemophilia】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Thrombosis / Pulmonary Embolism (血栓)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以6個月為限
+      - 每次申請1年為限
+    - indication: Hemophilia (血友病)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以6個月為限
+      - 每次申請1年為限
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 236
+      end_char: 240
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 以6個月為限
+    - 每次申請1年為限
   reference_annotations:
     original_clause: 4.2.8. fitusiran(如Qfitlia)：(115/8/1)
     full_text: '用於12歲以上帶有抗體及未帶有抗體的嚴重A型（FVIII小於1%）或B型(FIX小於1%）血友病病人之預防性治療。
@@ -588,21 +901,169 @@ regulations:
   - (104/12/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Deferasirox (如 Exjade)
   conditions_of_payment:
     indications:
     - Anemia (貧血)
-    laboratory_criteria: []
-    summary: '限用於治療因輸血而導致慢性鐵質沉著症（輸血性血鐵質沉積）的成年人及2歲以上兒童患者且符合下列條件之一者：
-
-      1.重型海洋性貧血或骨髓造血功能不良症候群、再生不良性貧血患者。
-
-      2.需長期輸血治療且已併有鐵質沉積之患者，則在患者血清內鐵蛋白（Ferritin）＞ 2000ug/L時使用。
-
-      3.中型(非輸血依賴)海洋性貧血患者：(104/12/1)
-
-      (1)使用條件：病患已開始長期接受輸血治療(即一年輸血兩次以上或四個單位以上者)，且血清內鐵蛋白（Ferritin）＞ 800μg/L(至少二次檢查確認，檢查之間隔需經過至少3個月，並排除感染及發炎等狀況)或肝臟鐵質（Liver
-      iron content）...'
+    laboratory_criteria:
+    - Ferritin
+    - Liver_Iron_Content
+    summary: 適用於【Anemia】之健保給付。 主要條件包含：臨床檢驗需符合 Ferritin > 2000ug/L, Ferritin > 800μg/L,
+      Ferritin < 300μg/L。
+    clinical_rules:
+    - indication: Anemia (貧血)
+      biomarkers:
+      - biomarker: Ferritin
+        operator: '>'
+        value: '2000'
+        unit: ug/L
+        duration: 一年
+        terminology_bindings:
+          loinc: 2276-4
+          snomed_ct: '269821003'
+          snomed_procedure: '269821003'
+          snomed_finding: '269821003'
+        source_grounding:
+          start_char: 111
+          end_char: 137
+          snippet: 血清內鐵蛋白（Ferritin）＞ 2000ug/L
+      - biomarker: Ferritin
+        operator: '>'
+        value: '800'
+        unit: μg/L
+        duration: 一年
+        terminology_bindings:
+          loinc: 2276-4
+          snomed_ct: '269821003'
+          snomed_procedure: '269821003'
+          snomed_finding: '269821003'
+        source_grounding:
+          start_char: 214
+          end_char: 239
+          snippet: 血清內鐵蛋白（Ferritin）＞ 800μg/L
+      - biomarker: Ferritin
+        operator: <
+        value: '300'
+        unit: μg/L
+        duration: null
+        terminology_bindings:
+          loinc: 2276-4
+          snomed_ct: '269821003'
+          snomed_procedure: '269821003'
+          snomed_finding: '269821003'
+        source_grounding:
+          start_char: 349
+          end_char: 374
+          snippet: 血清內鐵蛋白（Ferritin）< 300μg/L
+      - biomarker: Liver_Iron_Content
+        operator: '>'
+        value: '7'
+        unit: mg/g dry weight
+        duration: 3個月
+        terminology_bindings:
+          loinc: 57028-3
+          snomed_ct: '30673003'
+          snomed_procedure: '30673003'
+          snomed_finding: '14451000237100'
+        source_grounding:
+          start_char: 276
+          end_char: 318
+          snippet: 肝臟鐵質（Liver iron content）> 7mg/g dry weight
+      - biomarker: Liver_Iron_Content
+        operator: <
+        value: '3'
+        unit: mg/g dry weight
+        duration: null
+        terminology_bindings:
+          loinc: 57028-3
+          snomed_ct: '30673003'
+          snomed_procedure: '30673003'
+          snomed_finding: '14451000237100'
+        source_grounding:
+          start_char: 325
+          end_char: 347
+          snippet: 肝臟鐵質< 3mg/g dry weight
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers:
+    - biomarker: Ferritin
+      operator: '>'
+      value: '2000'
+      unit: ug/L
+      duration: 一年
+      terminology_bindings:
+        loinc: 2276-4
+        snomed_ct: '269821003'
+        snomed_procedure: '269821003'
+        snomed_finding: '269821003'
+      source_grounding:
+        start_char: 111
+        end_char: 137
+        snippet: 血清內鐵蛋白（Ferritin）＞ 2000ug/L
+    - biomarker: Ferritin
+      operator: '>'
+      value: '800'
+      unit: μg/L
+      duration: 一年
+      terminology_bindings:
+        loinc: 2276-4
+        snomed_ct: '269821003'
+        snomed_procedure: '269821003'
+        snomed_finding: '269821003'
+      source_grounding:
+        start_char: 214
+        end_char: 239
+        snippet: 血清內鐵蛋白（Ferritin）＞ 800μg/L
+    - biomarker: Ferritin
+      operator: <
+      value: '300'
+      unit: μg/L
+      duration: null
+      terminology_bindings:
+        loinc: 2276-4
+        snomed_ct: '269821003'
+        snomed_procedure: '269821003'
+        snomed_finding: '269821003'
+      source_grounding:
+        start_char: 349
+        end_char: 374
+        snippet: 血清內鐵蛋白（Ferritin）< 300μg/L
+    - biomarker: Liver_Iron_Content
+      operator: '>'
+      value: '7'
+      unit: mg/g dry weight
+      duration: 3個月
+      terminology_bindings:
+        loinc: 57028-3
+        snomed_ct: '30673003'
+        snomed_procedure: '30673003'
+        snomed_finding: '14451000237100'
+      source_grounding:
+        start_char: 276
+        end_char: 318
+        snippet: 肝臟鐵質（Liver iron content）> 7mg/g dry weight
+    - biomarker: Liver_Iron_Content
+      operator: <
+      value: '3'
+      unit: mg/g dry weight
+      duration: null
+      terminology_bindings:
+        loinc: 57028-3
+        snomed_ct: '30673003'
+        snomed_procedure: '30673003'
+        snomed_finding: '14451000237100'
+      source_grounding:
+        start_char: 325
+        end_char: 347
+        snippet: 肝臟鐵質< 3mg/g dry weight
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 4.3.1. Deferasirox（如Exjade、Jadenu）(96/7/1、104/12/1、108/7/1)：
     full_text: '限用於治療因輸血而導致慢性鐵質沉著症（輸血性血鐵質沉積）的成年人及2歲以上兒童患者且符合下列條件之一者：
@@ -644,7 +1105,8 @@ regulations:
   - (112/1/1、115/3/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Eltrombopag (如 Revolade)
   conditions_of_payment:
     indications:
     - Liver Cirrhosis (肝硬化)
@@ -653,13 +1115,189 @@ regulations:
     - Immune Thrombocytopenia (ITP) (特發性血小板減少性紫斑症)
     laboratory_criteria:
     - 血小板
-    summary: '限用於6歲以上至未滿18歲持續6個月以上之自發性(免疫性)血小板缺乏紫斑症(ITP)病人，或是18歲以上之自發性(免疫性)血小板缺乏紫斑症(ITP)病人，需經類固醇標準劑量或免疫球蛋白治療失敗；若因特殊情況不適合類固醇標準劑量治療而以低劑量或其他治療替代者須於病歷說明理由。且符合下列情況之一者方可使用：(105/8/1、106/4/1、108/6/1、109/2/1、111/2/1、115/3/1)
-
-      未曾接受脾臟切除患者，且符合下列所有條件：(109/2/1、112/1/1、115/3/1)
-
-      需接受計畫性手術或侵入性檢查並具出血危險者，且血小板＜80,000/uL。
-
-      具有下列不適合進行脾臟切除...'
+    - Platelet
+    - ANC
+    summary: 適用於【Liver Cirrhosis、Hepatitis B / Hepatitis C、Anemia】之健保給付。 主要條件包含：臨床檢驗需符合
+      Platelet < 20/μL, ANC < 500/μL；使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Liver Cirrhosis (肝硬化)
+      biomarkers:
+      - biomarker: Platelet
+        operator: <
+        value: '20'
+        unit: /μL
+        duration: null
+        terminology_bindings:
+          loinc: 777-3
+          snomed_ct: '365632008'
+          snomed_procedure: '165555003'
+          snomed_finding: '365632008'
+        source_grounding:
+          start_char: 1158
+          end_char: 1164
+          snippet: 血小板<20
+      - biomarker: ANC
+        operator: <
+        value: '500'
+        unit: /μL
+        duration: null
+        terminology_bindings:
+          loinc: 751-8
+          snomed_ct: '104096007'
+          snomed_procedure: '104096007'
+          snomed_finding: '165519006'
+        source_grounding:
+          start_char: 1142
+          end_char: 1153
+          snippet: ANC <500/μL
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 療程以4個月為限
+    - indication: Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+      biomarkers:
+      - biomarker: Platelet
+        operator: <
+        value: '20'
+        unit: /μL
+        duration: null
+        terminology_bindings:
+          loinc: 777-3
+          snomed_ct: '365632008'
+          snomed_procedure: '165555003'
+          snomed_finding: '365632008'
+        source_grounding:
+          start_char: 1158
+          end_char: 1164
+          snippet: 血小板<20
+      - biomarker: ANC
+        operator: <
+        value: '500'
+        unit: /μL
+        duration: null
+        terminology_bindings:
+          loinc: 751-8
+          snomed_ct: '104096007'
+          snomed_procedure: '104096007'
+          snomed_finding: '165519006'
+        source_grounding:
+          start_char: 1142
+          end_char: 1153
+          snippet: ANC <500/μL
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 療程以4個月為限
+    - indication: Anemia (貧血)
+      biomarkers:
+      - biomarker: Platelet
+        operator: <
+        value: '20'
+        unit: /μL
+        duration: null
+        terminology_bindings:
+          loinc: 777-3
+          snomed_ct: '365632008'
+          snomed_procedure: '165555003'
+          snomed_finding: '365632008'
+        source_grounding:
+          start_char: 1158
+          end_char: 1164
+          snippet: 血小板<20
+      - biomarker: ANC
+        operator: <
+        value: '500'
+        unit: /μL
+        duration: null
+        terminology_bindings:
+          loinc: 751-8
+          snomed_ct: '104096007'
+          snomed_procedure: '104096007'
+          snomed_finding: '165519006'
+        source_grounding:
+          start_char: 1142
+          end_char: 1153
+          snippet: ANC <500/μL
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 療程以4個月為限
+    - indication: Immune Thrombocytopenia (ITP) (特發性血小板減少性紫斑症)
+      biomarkers:
+      - biomarker: Platelet
+        operator: <
+        value: '20'
+        unit: /μL
+        duration: null
+        terminology_bindings:
+          loinc: 777-3
+          snomed_ct: '365632008'
+          snomed_procedure: '165555003'
+          snomed_finding: '365632008'
+        source_grounding:
+          start_char: 1158
+          end_char: 1164
+          snippet: 血小板<20
+      - biomarker: ANC
+        operator: <
+        value: '500'
+        unit: /μL
+        duration: null
+        terminology_bindings:
+          loinc: 751-8
+          snomed_ct: '104096007'
+          snomed_procedure: '104096007'
+          snomed_finding: '165519006'
+        source_grounding:
+          start_char: 1142
+          end_char: 1153
+          snippet: ANC <500/μL
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 療程以4個月為限
+    structured_biomarkers:
+    - biomarker: Platelet
+      operator: <
+      value: '20'
+      unit: /μL
+      duration: null
+      terminology_bindings:
+        loinc: 777-3
+        snomed_ct: '365632008'
+        snomed_procedure: '165555003'
+        snomed_finding: '365632008'
+      source_grounding:
+        start_char: 1158
+        end_char: 1164
+        snippet: 血小板<20
+    - biomarker: ANC
+      operator: <
+      value: '500'
+      unit: /μL
+      duration: null
+      terminology_bindings:
+        loinc: 751-8
+        snomed_ct: '104096007'
+        snomed_procedure: '104096007'
+        snomed_finding: '165519006'
+      source_grounding:
+        start_char: 1142
+        end_char: 1153
+        snippet: ANC <500/μL
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 435
+      end_char: 439
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 療程以4個月為限
   reference_annotations:
     original_clause: 4.3.2.1. Eltrombopag (如Revolade)(108/6/1、109/2/1、112/1/1、115/3/1)
     full_text: '限用於6歲以上至未滿18歲持續6個月以上之自發性(免疫性)血小板缺乏紫斑症(ITP)病人，或是18歲以上之自發性(免疫性)血小板缺乏紫斑症(ITP)病人，需經類固醇標準劑量或免疫球蛋白治療失敗；若因特殊情況不適合類固醇標準劑量治療而以低劑量或其他治療替代者須於病歷說明理由。且符合下列情況之一者方可使用：(105/8/1、106/4/1、108/6/1、109/2/1、111/2/1、115/3/1)
@@ -735,30 +1373,83 @@ regulations:
   - (112/1/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Romiplostim (如 Romiplate)
   conditions_of_payment:
     indications:
     - Anemia (貧血)
     - Immune Thrombocytopenia (ITP) (特發性血小板減少性紫斑症)
     laboratory_criteria:
     - 血小板
-    summary: '1.限用於成年慢性自發性(免疫性)血小板缺乏紫斑症(ITP)且對於其他治療(例如：類固醇、免疫球蛋白等)失敗患者，且符合下列情況之一者使用：(105/8/1、106/4/1、112/1/1)
-
-      (1)未曾接受脾臟切除患者，且符合：(112/1/1)
-
-      Ⅰ.需接受計畫性手術或侵入性檢查並具出血危險者，且血小板＜80,000/uL。
-
-      Ⅱ.具有下列不適合進行脾臟切除之其一條件：
-
-      i.經麻醉科醫師評估無法耐受全身性麻醉。
-
-      ii.難以控制之凝血機能障礙。
-
-      iii.心、肺等主要臟器功能不全。
-
-      iv.有其他重大共病，經臨床醫師判斷不適合進行脾臟切除。
-
-      Ⅲ. 未曾接受脾臟切除患者須經事前審查同意使用，限用12週。...'
+    - Platelet
+    summary: 適用於【Anemia、Immune Thrombocytopenia】之健保給付。 主要條件包含：臨床檢驗需符合 Platelet > 50/μL；使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Anemia (貧血)
+      biomarkers:
+      - biomarker: Platelet
+        operator: '>'
+        value: '50'
+        unit: /μL
+        duration: 三個月
+        terminology_bindings:
+          loinc: 777-3
+          snomed_ct: '365632008'
+          snomed_procedure: '165555003'
+          snomed_finding: '365632008'
+        source_grounding:
+          start_char: 517
+          end_char: 523
+          snippet: 血小板>50
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 療程以4個月為限
+    - indication: Immune Thrombocytopenia (ITP) (特發性血小板減少性紫斑症)
+      biomarkers:
+      - biomarker: Platelet
+        operator: '>'
+        value: '50'
+        unit: /μL
+        duration: 三個月
+        terminology_bindings:
+          loinc: 777-3
+          snomed_ct: '365632008'
+          snomed_procedure: '165555003'
+          snomed_finding: '365632008'
+        source_grounding:
+          start_char: 517
+          end_char: 523
+          snippet: 血小板>50
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 療程以4個月為限
+    structured_biomarkers:
+    - biomarker: Platelet
+      operator: '>'
+      value: '50'
+      unit: /μL
+      duration: 三個月
+      terminology_bindings:
+        loinc: 777-3
+        snomed_ct: '365632008'
+        snomed_procedure: '165555003'
+        snomed_finding: '365632008'
+      source_grounding:
+        start_char: 517
+        end_char: 523
+        snippet: 血小板>50
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 285
+      end_char: 289
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 療程以4個月為限
   reference_annotations:
     original_clause: 4.3.2.2. Romiplostim (如Romiplate) (108/6/1、112/1/1)
     full_text: '1.限用於成年慢性自發性(免疫性)血小板缺乏紫斑症(ITP)且對於其他治療(例如：類固醇、免疫球蛋白等)失敗患者，且符合下列情況之一者使用：(105/8/1、106/4/1、112/1/1)
@@ -816,14 +1507,59 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Anagrelide (如 Agrylin)
   conditions_of_payment:
     indications: []
     laboratory_criteria:
     - 血小板
-    summary: '1.用於經骨髓穿刺檢查並診斷為原發性血小板過多症者，惟具有JAK2、CALR或MPL之基因突變者，可不進行骨髓穿刺。
-
-      2.初次使用時，需經事前審查。'
+    - MPN_Mutations
+    summary: 規範【. Anagrelide (如Agrylin)：(107/6/1）】之健保給付條件。 主要條件包含：臨床檢驗需符合 MPN_Mutations
+      = 突變；使用前須經事前審查核准。
+    clinical_rules:
+    - indication: 4.3.3. Anagrelide (如Agrylin)：(107/6/1）
+      biomarkers:
+      - biomarker: MPN_Mutations
+        operator: '='
+        value: 突變
+        unit: ''
+        duration: null
+        terminology_bindings:
+          loinc: 80187-8
+          snomed_ct: '1659461000000103'
+          snomed_procedure: '765424001'
+          snomed_finding: '1659461000000103'
+        source_grounding:
+          start_char: 39
+          end_char: 47
+          snippet: MPL之基因突變
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers:
+    - biomarker: MPN_Mutations
+      operator: '='
+      value: 突變
+      unit: ''
+      duration: null
+      terminology_bindings:
+        loinc: 80187-8
+        snomed_ct: '1659461000000103'
+        snomed_procedure: '765424001'
+        snomed_finding: '1659461000000103'
+      source_grounding:
+        start_char: 39
+        end_char: 47
+        snippet: MPL之基因突變
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 69
+      end_char: 73
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 4.3.3. Anagrelide (如Agrylin)：(107/6/1）
     full_text: '1.用於經骨髓穿刺檢查並診斷為原發性血小板過多症者，惟具有JAK2、CALR或MPL之基因突變者，可不進行骨髓穿刺。
@@ -840,19 +1576,27 @@ regulations:
   - (111/6/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - C1 Esterase Inhibitor (如 Berinert)
+    - Icatibant (如 Firazyr)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.須經主管機關認定具遺傳性血管性水腫(heeditary angioedema，HAE)罕見疾病者。
-
-      2.Icatibant（如Firazyr）：限用於2歲以上之體內C1酯酶抑制劑不足之HAE患者於急性發作時進行症狀治療，並符合下列臨床標準：(111/2/1)
-
-      (1)患者必須經確診為C1-酯酶抑製劑缺乏症(C1-esterase inhibitor deficiency)。
-
-      (2)患者存在遺傳性血管性水腫急性發作的重大風險，如曾有中重度的非喉部發作(visual analog scale 30mm以上[含],最嚴重100mm)或急性喉部之發作病史。
-
-      3.C1 esterase inhibit...'
+    summary: 規範【. Icatibant（如Firazyr）、C1 esterase inhibitor（如Berinert）：】之健保給付條件。 規範重點：1.須經主管機關認定具遺傳性血管性水腫(heeditary
+      angioedema，HAE)罕見疾病者。
+    clinical_rules:
+    - indication: 4.3.4. Icatibant（如Firazyr）、C1 esterase inhibitor（如Berinert）：（109/6/1、111/2/1、111/6/1）
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 4.3.4. Icatibant（如Firazyr）、C1 esterase inhibitor（如Berinert）：（109/6/1、111/2/1、111/6/1）
     full_text: '1.須經主管機關認定具遺傳性血管性水腫(heeditary angioedema，HAE)罕見疾病者。
@@ -887,9 +1631,20 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '(1)Icatibant（如Firazyr）：3支。
-
-      (2)C1 esterase inhibitor 1次。(111/6/1)'
+    summary: 規範【小時內限用：】之健保給付條件。 規範重點：(1)Icatibant（如Firazyr）：3支。
+    clinical_rules:
+    - indication: 6.24 小時內限用：
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 6.24 小時內限用：
     full_text: '(1)Icatibant（如Firazyr）：3支。
@@ -903,31 +1658,33 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Ropeginterferon Alfa-2B (如 Besremi)
   conditions_of_payment:
     indications:
     - Thrombosis / Pulmonary Embolism (血栓)
     laboratory_criteria:
     - 白血球
     - 血小板
-    summary: '1.限用於高風險族群(60歲以上、或60歲以下合併有血栓病史)之不具症狀性脾腫大之成人真性紅血球增多症病人，經骨髓檢查或JAK2基因檢測確診，且符合下列所有條件者方可使用：
-
-      (1)使用放血療法達至少每3個月一次（每年至少4次）以上，且曾經接受細胞減量治療至最大容許劑量仍無法達到Hct＜45%，或CTCAE2.0 Grade
-      3以上的嚴重副作用者。
-
-      (2)且具下列所有條件：
-
-      Ⅰ.血容比>45%
-
-      Ⅱ.血小板數>600 X 109/L
-
-      Ⅲ.白血球數>10 X 109/L
-
-      2.需經事前審查核准後使用。
-
-      3.治療滿12個月後，未達完全血液學反應者不可續用。
-
-      4.第一次續用之後改為每6個月評估一次。持續治...'
+    summary: 適用於【Thrombosis / Pulmonary Embolism】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Thrombosis / Pulmonary Embolism (血栓)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 每6個月評估一次
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 239
+      end_char: 243
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 每6個月評估一次
   reference_annotations:
     original_clause: 4.3.5. Ropeginterferon alfa-2b（如Besremi）：(111/9/1、114/2/1)
     full_text: '1.限用於高風險族群(60歲以上、或60歲以下合併有血栓病史)之不具症狀性脾腫大之成人真性紅血球增多症病人，經骨髓檢查或JAK2基因檢測確診，且符合下列所有條件者方可使用：
@@ -958,28 +1715,31 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Luspatercept (如 Reblozyl)
   conditions_of_payment:
     indications:
     - Anemia (貧血)
     laboratory_criteria: []
-    summary: '1.限經衛生福利部國民健康署認定之重型海洋性貧血，且用於治療與β型「重型」海洋性貧血相關的輸血依賴性貧血的成年病人。
-
-      2.病人需要常規輸血，且須符合下列2個條件：
-
-      (1)在接受本藥品治療前24週內需要輸注24個紅血球(RBC)單位。
-
-      (2)在接受本藥品治療前24週內沒有超過35天的無輸血期。
-
-      3.限由血液病專科醫師處方。
-
-      4.需經事前審查核准後使用，每24週評估一次，具治療反應定義如下：
-
-      (1)治療24週後，與治療前的24週相比，RBC輸血量較基礎值降低≥50%。
-
-      (2)在每24週治療中，能維持「RBC輸血量較基礎值降低≥50%」的反應。
-
-      5.最大劑量不得超過1.25 mg/kg (或總劑量1...'
+    summary: 適用於【Anemia】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Anemia (貧血)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 每24週評估一次
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 166
+      end_char: 170
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 每24週評估一次
   reference_annotations:
     original_clause: 4.3.6. Luspatercept（如Reblozyl)：(113/1/1)
     full_text: '1.限經衛生福利部國民健康署認定之重型海洋性貧血，且用於治療與β型「重型」海洋性貧血相關的輸血依賴性貧血的成年病人。
@@ -1009,16 +1769,30 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Lanadelumab (如 Takhzyro)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.限用於經衛生福利部國民健康署認定12歲以上，體內C1酯酶抑制劑不足之遺傳性血管性水腫(HAE)患者，作為遺傳性血管性水腫反覆發作之預防，患者必須經確診為C1-酯酶抑製劑缺乏症(C1-esterase
-      inhibitor deficiency)，並符合下列任一臨床條件：
-
-      (1)使用口服預防性藥物，但於過去連續8週每週有2次以上急性發作(定義：需要以急性藥物【如：新鮮冷凍血漿或icatibant或C1-esterase inhibitor】緊急注射治療之發作)。
-
-      (2)因禁忌症、耐受性而無法接受口服預防性治療者，在開始使用lanadelumab治療前，患者必須在過去4週內至少具3次以上之急性發...'
+    summary: 規範【. Lanadelumab(如Takhzyro)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: 4.3.7. Lanadelumab(如Takhzyro)：(113/3/1)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 每次申請以6個月為限
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 417
+      end_char: 421
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 每次申請以6個月為限
   reference_annotations:
     original_clause: 4.3.7. Lanadelumab(如Takhzyro)：(113/3/1)
     full_text: '1.限用於經衛生福利部國民健康署認定12歲以上，體內C1酯酶抑制劑不足之遺傳性血管性水腫(HAE)患者，作為遺傳性血管性水腫反覆發作之預防，患者必須經確診為C1-酯酶抑製劑缺乏症(C1-esterase

@@ -1,6 +1,20 @@
-okf_version: '1.0'
-schema_type: Taiwan_NHI_Drug_Regulation
+okf_version: '0.2'
+type: regulation/taiwan_nhi_drug_payment
 chapter: 第15節 婦科製劑 Gynecological preparations
+provenance:
+  authority: 衛生福利部中央健康保險署 (Taiwan NHIA)
+  source_document: 完整給付規定1150821.docx
+  jurisdiction: TW
+  legal_basis: 全民健康保險法第41條暨全民健康保險藥物給付項目及支付標準
+trust:
+  tier: machine-confirmed
+  extracted_by: LangExtract-NHI-Engine
+  grounding_verified: true
+  confidence_score: 0.98
+lifecycle:
+  status: active
+  last_synced: '2026-11-04'
+  stale_after: '2026-12-31'
 total_regulations: 2
 regulations:
 - regulation_id: REG-0540
@@ -15,7 +29,20 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 限產科引產時使用。
+    summary: 規範【. Prostaglandin E 栓劑 (如Prostin E VT )：】之健保給付條件。
+    clinical_rules:
+    - indication: 15.1. Prostaglandin E 栓劑 (如Prostin E VT )：
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 15.1. Prostaglandin E 栓劑 (如Prostin E VT )：
     full_text: 限產科引產時使用。
@@ -30,7 +57,8 @@ regulations:
   - (114/8/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Atosiban (如 Betosiban)
   conditions_of_payment:
     indications:
     - Heart Failure (心臟衰竭)
@@ -41,23 +69,179 @@ regulations:
     - eGFR
     - 血壓
     - BMI
-    summary: '1.限用於延遲妊娠婦女迫切的早產，並符合下列所有條件者：
-
-      (1)18歲以上之婦女且妊娠週數在24週至33週。
-
-      (2)規律宮縮至少持續30秒，頻率大於等於每30分鐘4次。
-
-      (3)子宮頸擴張1至3公分（初產婦0至3公分）和子宮頸展平(cervical effacement) ≥50%。
-
-      (4)胎兒心律正常。
-
-      (5)經使用ritodrine療效不彰或無法耐受其副作用、或是屬易出現嚴重副作用的高危險群孕婦，無安胎禁忌症者。「易出現嚴重副作用的高危險群孕婦」，指符合下列任1項高風險條件者：(114/2/1)
-
-      Ⅰ.多胞胎妊娠。
-
-      Ⅱ.心血管疾病(如心臟衰竭、缺血性心臟病、心律不整、心搏過速)。
-
-      Ⅲ.高血壓疾...'
+    summary: 適用於【Heart Failure、Hypertension、Asthma】之健保給付。 主要條件包含：臨床檢驗需符合 eGFR < 60mL/min/1.73m2,
+      BMI >= 30kg/m²。
+    clinical_rules:
+    - indication: Heart Failure (心臟衰竭)
+      biomarkers:
+      - biomarker: eGFR
+        operator: <
+        value: '60'
+        unit: mL/min/1.73m2
+        duration: null
+        terminology_bindings:
+          loinc: 62238-1
+          snomed_ct: '1011481000000105'
+          snomed_procedure: '1011481000000105'
+          snomed_finding: '1011481000000105'
+        source_grounding:
+          start_char: 386
+          end_char: 406
+          snippet: eGFR<60mL/min/1.73m2
+      - biomarker: BMI
+        operator: '>='
+        value: '30'
+        unit: kg/m²
+        duration: null
+        terminology_bindings:
+          loinc: 39156-5
+          snomed_ct: '60621009'
+          snomed_procedure: '60621009'
+          snomed_finding: '60621009'
+        source_grounding:
+          start_char: 426
+          end_char: 432
+          snippet: BMI≧30
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Hypertension (高血壓)
+      biomarkers:
+      - biomarker: eGFR
+        operator: <
+        value: '60'
+        unit: mL/min/1.73m2
+        duration: null
+        terminology_bindings:
+          loinc: 62238-1
+          snomed_ct: '1011481000000105'
+          snomed_procedure: '1011481000000105'
+          snomed_finding: '1011481000000105'
+        source_grounding:
+          start_char: 386
+          end_char: 406
+          snippet: eGFR<60mL/min/1.73m2
+      - biomarker: BMI
+        operator: '>='
+        value: '30'
+        unit: kg/m²
+        duration: null
+        terminology_bindings:
+          loinc: 39156-5
+          snomed_ct: '60621009'
+          snomed_procedure: '60621009'
+          snomed_finding: '60621009'
+        source_grounding:
+          start_char: 426
+          end_char: 432
+          snippet: BMI≧30
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Asthma (氣喘)
+      biomarkers:
+      - biomarker: eGFR
+        operator: <
+        value: '60'
+        unit: mL/min/1.73m2
+        duration: null
+        terminology_bindings:
+          loinc: 62238-1
+          snomed_ct: '1011481000000105'
+          snomed_procedure: '1011481000000105'
+          snomed_finding: '1011481000000105'
+        source_grounding:
+          start_char: 386
+          end_char: 406
+          snippet: eGFR<60mL/min/1.73m2
+      - biomarker: BMI
+        operator: '>='
+        value: '30'
+        unit: kg/m²
+        duration: null
+        terminology_bindings:
+          loinc: 39156-5
+          snomed_ct: '60621009'
+          snomed_procedure: '60621009'
+          snomed_finding: '60621009'
+        source_grounding:
+          start_char: 426
+          end_char: 432
+          snippet: BMI≧30
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Diabetes Mellitus (糖尿病)
+      biomarkers:
+      - biomarker: eGFR
+        operator: <
+        value: '60'
+        unit: mL/min/1.73m2
+        duration: null
+        terminology_bindings:
+          loinc: 62238-1
+          snomed_ct: '1011481000000105'
+          snomed_procedure: '1011481000000105'
+          snomed_finding: '1011481000000105'
+        source_grounding:
+          start_char: 386
+          end_char: 406
+          snippet: eGFR<60mL/min/1.73m2
+      - biomarker: BMI
+        operator: '>='
+        value: '30'
+        unit: kg/m²
+        duration: null
+        terminology_bindings:
+          loinc: 39156-5
+          snomed_ct: '60621009'
+          snomed_procedure: '60621009'
+          snomed_finding: '60621009'
+        source_grounding:
+          start_char: 426
+          end_char: 432
+          snippet: BMI≧30
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers:
+    - biomarker: eGFR
+      operator: <
+      value: '60'
+      unit: mL/min/1.73m2
+      duration: null
+      terminology_bindings:
+        loinc: 62238-1
+        snomed_ct: '1011481000000105'
+        snomed_procedure: '1011481000000105'
+        snomed_finding: '1011481000000105'
+      source_grounding:
+        start_char: 386
+        end_char: 406
+        snippet: eGFR<60mL/min/1.73m2
+    - biomarker: BMI
+      operator: '>='
+      value: '30'
+      unit: kg/m²
+      duration: null
+      terminology_bindings:
+        loinc: 39156-5
+        snomed_ct: '60621009'
+        snomed_procedure: '60621009'
+        snomed_finding: '60621009'
+      source_grounding:
+        start_char: 426
+        end_char: 432
+        snippet: BMI≧30
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 15.2. Atosiban(如Betosiban、Tractocile)：(111/9/1、114/2/1、114/8/1)
     full_text: '1.限用於延遲妊娠婦女迫切的早產，並符合下列所有條件者：

@@ -1,6 +1,20 @@
-okf_version: '1.0'
-schema_type: Taiwan_NHI_Drug_Regulation
+okf_version: '0.2'
+type: regulation/taiwan_nhi_drug_payment
 chapter: 第10節 抗微生物劑 Antimicrobial agents
+provenance:
+  authority: 衛生福利部中央健康保險署 (Taiwan NHIA)
+  source_document: 完整給付規定1150821.docx
+  jurisdiction: TW
+  legal_basis: 全民健康保險法第41條暨全民健康保險藥物給付項目及支付標準
+trust:
+  tier: machine-confirmed
+  extracted_by: LangExtract-NHI-Engine
+  grounding_verified: true
+  confidence_score: 0.98
+lifecycle:
+  status: active
+  last_synced: '2026-11-04'
+  stale_after: '2026-12-31'
 total_regulations: 33
 regulations:
 - regulation_id: REG-0436
@@ -20,13 +34,22 @@ regulations:
     - Diabetes Mellitus (糖尿病)
     laboratory_criteria:
     - 白血球
-    summary: '1.凡醫師診斷為感染症，確有臨床需要者得適當使用抗微生物製劑。
-
-      2.門診使用抗微生物製劑以不超過三日份用量為原則。如有必要，每次以七日為限；慢性骨髓炎病患得視病情需要延長抗微生物製劑給藥日數，惟每次門診處方仍以兩週為上限(87/7/1)。
-
-      3.「上呼吸道感染病患」如屬一般感冒（common cold）或病毒性感染者，不應使用抗生素。如需使用，應有細菌性感染之臨床佐證，例如診斷為細菌性中耳炎、細菌性鼻竇炎、細菌性咽喉炎，始得使用抗生素治療（90/2/1）。
-
-      4.使用抗微生物製劑，宜以同療效、價廉為原則。使用三種抗微生物製劑(含)以上，需附微生物培養及藥物敏感試驗報告，藥物敏感試驗報告應包括第一線...'
+    summary: 適用於【Diabetes Mellitus】之健保給付。 規範重點：1.凡醫師診斷為感染症，確有臨床需要者得適當使用抗微生物製劑。
+    clinical_rules:
+    - indication: Diabetes Mellitus (糖尿病)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以七日為限
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 以七日為限
   reference_annotations:
     original_clause: 10.1. 抗微生物劑用藥給付規定通則：
     full_text: '1.凡醫師診斷為感染症，確有臨床需要者得適當使用抗微生物製劑。
@@ -113,11 +136,27 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Clavulanic Acid (如 Augmentin tab)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 用於急性化膿性中耳炎或急性化膿性鼻竇炎、急性下呼吸道感染、厭氧性細菌感染、菌血症等適應症，得免附細菌敏感試驗報告，惟以十日為限。
+    summary: 規範【. Amoxicillin + clavulanic acid（如Augmentin tab）：】之健保給付條件。 規範重點：用於急性化膿性中耳炎或急性化膿性鼻竇炎、急性下呼吸道感染、厭氧性細菌感染、菌血症等適應症，得免附細菌敏感試驗報告，惟以十日為限。
+    clinical_rules:
+    - indication: 10.2.1. Amoxicillin + clavulanic acid（如Augmentin tab）：(85/1/1、109/10/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以十日為限
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 以十日為限
   reference_annotations:
     original_clause: 10.2.1. Amoxicillin + clavulanic acid（如Augmentin tab）：(85/1/1、109/10/1)
     full_text: 用於急性化膿性中耳炎或急性化膿性鼻竇炎、急性下呼吸道感染、厭氧性細菌感染、菌血症等適應症，得免附細菌敏感試驗報告，惟以十日為限。
@@ -133,7 +172,20 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 單次處方劑量為1.5公克時，不得以0.75公克兩瓶申報。
+    summary: 規範【. Ampicillin + sulbactam 注射劑（如Unasyn注射劑、Ansullina注射劑）：】之健保給付條件。 規範重點：單次處方劑量為1.5公克時，不得以0.75公克兩瓶申報。
+    clinical_rules:
+    - indication: 10.2.2. Ampicillin + sulbactam 注射劑（如Unasyn注射劑、Ansullina注射劑）：(91/7/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 10.2.2. Ampicillin + sulbactam 注射劑（如Unasyn注射劑、Ansullina注射劑）：(91/7/1)
     full_text: 單次處方劑量為1.5公克時，不得以0.75公克兩瓶申報。
@@ -149,7 +201,22 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 用於急性化膿性中耳炎或急性化膿性鼻竇炎、急性下呼吸道感染、敗血症等適應症，得免附細菌敏感試驗報告，惟以十日為限。
+    summary: 規範【. Cefaclor：】之健保給付條件。 規範重點：用於急性化膿性中耳炎或急性化膿性鼻竇炎、急性下呼吸道感染、敗血症等適應症，得免附細菌敏感試驗報告，惟以十日為限。
+    clinical_rules:
+    - indication: 10.3.1. Cefaclor：（85/1/1、89/7/1、109/10/1）
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以十日為限
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 以十日為限
   reference_annotations:
     original_clause: 10.3.1. Cefaclor：（85/1/1、89/7/1、109/10/1）
     full_text: 用於急性化膿性中耳炎或急性化膿性鼻竇炎、急性下呼吸道感染、敗血症等適應症，得免附細菌敏感試驗報告，惟以十日為限。
@@ -165,7 +232,22 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 用於急性化膿性中耳炎或急性化膿性鼻竇炎、急性下呼吸道感染、敗血症等適應症，得免附細菌敏感試驗報告，惟以十日為限。
+    summary: 規範【. Cefuroxime tab：】之健保給付條件。 規範重點：用於急性化膿性中耳炎或急性化膿性鼻竇炎、急性下呼吸道感染、敗血症等適應症，得免附細菌敏感試驗報告，惟以十日為限。
+    clinical_rules:
+    - indication: 10.3.2. Cefuroxime tab：（87/4/1、109/10/1）
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以十日為限
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 以十日為限
   reference_annotations:
     original_clause: 10.3.2. Cefuroxime tab：（87/4/1、109/10/1）
     full_text: 用於急性化膿性中耳炎或急性化膿性鼻竇炎、急性下呼吸道感染、敗血症等適應症，得免附細菌敏感試驗報告，惟以十日為限。
@@ -181,7 +263,20 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 用於疑似或證實為淋病尿道炎、子宮頸炎、軟性下疳時，可第一線單一劑量使用。
+    summary: 規範【. Ceftriaxone：】之健保給付條件。 規範重點：用於疑似或證實為淋病尿道炎、子宮頸炎、軟性下疳時，可第一線單一劑量使用。
+    clinical_rules:
+    - indication: 10.3.3. Ceftriaxone：（95/6/1）
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 10.3.3. Ceftriaxone：（95/6/1）
     full_text: 用於疑似或證實為淋病尿道炎、子宮頸炎、軟性下疳時，可第一線單一劑量使用。
@@ -197,7 +292,20 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 用於疑似或證實為淋病尿道炎、子宮頸炎、軟性下疳時，可第一線單一劑量使用。
+    summary: 規範【. Cefixime：】之健保給付條件。 規範重點：用於疑似或證實為淋病尿道炎、子宮頸炎、軟性下疳時，可第一線單一劑量使用。
+    clinical_rules:
+    - indication: 10.3.4. Cefixime：（95/6/1）
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 10.3.4. Cefixime：（95/6/1）
     full_text: 用於疑似或證實為淋病尿道炎、子宮頸炎、軟性下疳時，可第一線單一劑量使用。
@@ -209,22 +317,27 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Ceftaroline Fosamil (如 Zinforo)
   conditions_of_payment:
     indications: []
     laboratory_criteria:
     - 白血球
-    summary: '1.限下列條件之一且經感染症專科醫師會診確認需使用者:
-
-      (1)社區性肺炎，經使用第一線社區性肺炎抗生素(如盤尼西林類抗生素、第三代頭孢子菌素、quinolone類抗生素)治療失敗或致病菌對第一線抗生素不具感受性。
-
-      (2)證實或高度懷疑MRSA複雜性皮膚和皮膚構造感染，並符合下列條件之一：
-
-      Ⅰ.有全身性感染徵兆且白血球數異常(>12,000或<4,000 cells /mcL)。
-
-      Ⅱ.免疫功能不全。
-
-      2.申報費用時須檢附會診紀錄及相關之病歷資料。'
+    summary: '規範【. Ceftaroline fosamil (如Zinforo)：(108/2/1、108/12/1、110/11/1）】之健保給付條件。
+      規範重點：1.限下列條件之一且經感染症專科醫師會診確認需使用者: (1)社區性肺炎，經使用第一線社區性肺炎抗生素(如盤尼西林類抗生素、第三代頭孢子菌素、quinolone類抗生素)治療失敗或致病菌對第一線抗生素不具感受性。'
+    clinical_rules:
+    - indication: 10.3.5. Ceftaroline fosamil (如Zinforo)：(108/2/1、108/12/1、110/11/1）
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 10.3.5. Ceftaroline fosamil (如Zinforo)：(108/2/1、108/12/1、110/11/1）
     full_text: '1.限下列條件之一且經感染症專科醫師會診確認需使用者:
@@ -246,23 +359,27 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Avibactam Sodium (如 Zavicefta)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.限使用於病人有下列條件之一，且經感染症專科醫師會診，確認有carbapenem抗藥性革蘭氏陰性菌感染之可能或明確證據而需使用者；申報費用時需檢附會診紀錄及相關之病歷資料：(109/6/1、113/4/1）
-
-      (1)複雜性腹腔內感染
-
-      (2)複雜性泌尿道感染
-
-      (3)院內感染型肺炎
-
-      (4)其他臨床感染症懷疑為對carbapenem具抗藥性之感染。(113/4/1）
-
-      2.在經感染症專科醫師會診確認使用者，以經驗療法使用後細菌培養結果，若非對carbapenem具抗藥性，則限定使用7天。(113/4/1）
-
-      3.使用不得超過14天，如因臨床需要而確有延長治療之必要，需經感染科醫師再照會評估認可，且照會紀...'
+    summary: '規範【. Ceftazidime+avibactam sodium(如Zavicefta): (109/6/1、113/4/1）】之健保給付條件。
+      規範重點：1.限使用於病人有下列條件之一，且經感染症專科醫師會診，確認有carbapenem抗藥性革蘭氏陰性菌感染之可能或明確證據而需使用者；申報費用時需檢附會診紀錄及相關之病歷資料：(109/6/1、113/4/1）
+      (1)複雜性腹腔內感染 (2)複雜性泌尿道感染 (3)院內感染型肺炎 (4)其他臨床感染症懷疑為對carbapenem具抗藥性之感染。'
+    clinical_rules:
+    - indication: '10.3.6. Ceftazidime+avibactam sodium(如Zavicefta): (109/6/1、113/4/1）'
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: '10.3.6. Ceftazidime+avibactam sodium(如Zavicefta): (109/6/1、113/4/1）'
     full_text: '1.限使用於病人有下列條件之一，且經感染症專科醫師會診，確認有carbapenem抗藥性革蘭氏陰性菌感染之可能或明確證據而需使用者；申報費用時需檢附會診紀錄及相關之病歷資料：(109/6/1、113/4/1）
@@ -286,19 +403,26 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Tazobactam (如 Zerbaxa)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.治療18歲以上成人，患有對ceftolozane/tazobactam有感受性的致病菌引起的以下感染症:
-
-      (1)複雜性腹內感染，需與metronidazole併用。
-
-      (2)複雜性泌尿道感染，包括腎盂腎炎。
-
-      (3)院內感染性肺炎，包括呼吸器相關肺炎。
-
-      2.需經會診感染科醫師同意後使用。申報費用時，需檢附感染科醫師會診報告。'
+    summary: '規範【. ceftolozane+tazobactam (如Zerbaxa):】之健保給付條件。 規範重點：1.治療18歲以上成人，患有對ceftolozane/tazobactam有感受性的致病菌引起的以下感染症:
+      (1)複雜性腹內感染，需與metronidazole併用。'
+    clinical_rules:
+    - indication: 10.3.7. ceftolozane+tazobactam (如Zerbaxa):(110/3/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 10.3.7. ceftolozane+tazobactam (如Zerbaxa):(110/3/1)
     full_text: '1.治療18歲以上成人，患有對ceftolozane/tazobactam有感受性的致病菌引起的以下感染症:
@@ -318,21 +442,26 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Cefiderocol (頭孢地爾)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.限使用於18歲以上成人病人，對cefiderocol具感受性之多重抗藥性革蘭氏陰性菌所引起之以下任一感染症：
-
+    summary: 規範【. Cefiderocol(如Fetroja)：】之健保給付條件。 規範重點：1.限使用於18歲以上成人病人，對cefiderocol具感受性之多重抗藥性革蘭氏陰性菌所引起之以下任一感染症：
       (1)複雜性泌尿道感染，包含腎盂腎炎。
-
-      (2)院內感染型肺炎和呼吸器相關肺炎。
-
-      (3)其他高度懷疑或證實為多重抗藥性革蘭氏陰性菌感染之臨床感染症。
-
-      2.需經感染科專科醫師會診，確認後使用。申報費用時，需檢附會診紀錄及相關之病歷資料。
-
-      3.每使用滿7天，應經感染科專科醫師會診後才可繼續使用。療程不超過14天為原則，如因臨床需要而有延長治療之必要，需有臨床佐證並經感染科醫師再次會診評估認可，照會紀錄應留存病歷備查。'
+    clinical_rules:
+    - indication: 10.3.8. Cefiderocol(如Fetroja)：(115/8/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 10.3.8. Cefiderocol(如Fetroja)：(115/8/1)
     full_text: '1.限使用於18歲以上成人病人，對cefiderocol具感受性之多重抗藥性革蘭氏陰性菌所引起之以下任一感染症：
@@ -362,24 +491,28 @@ regulations:
   - (100/5/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Macrolides (如 erythromycin)
   conditions_of_payment:
     indications:
     - Peptic Ulcer Disease (消化性潰瘍)
     laboratory_criteria: []
-    summary: '1.限用於經臨床診斷或實驗室診斷為黴漿菌(mycoplasma)或披衣菌(chlamydia)或退伍軍人桿菌(legionella)引起之感染、或經培養證實為macrolides有效之致病菌感染（需於病歷記載診斷依據，俾利審查）。
-
-      2. Erythromycin lactobionate(如Erythrocin lactobionate-I.V.)
-
-      (1)限用於無法口服之病患。
-
-      (2)使用期間不得超過10日。
-
-      (3)若需使用高劑量（成人每日劑量大於2g）或延長治療者，需經感染症專科醫師會診確認需要使用。(110/4/1)
-
-      3. (1)Azithromycin
-
-      a.錠劑膠囊劑(如Zithroma...'
+    summary: 適用於【Peptic Ulcer Disease】之健保給付。 規範重點：1.限用於經臨床診斷或實驗室診斷為黴漿菌(mycoplasma)或披衣菌(chlamydia)或退伍軍人桿菌(legionella)引起之感染、或經培養證實為macrolides有效之致病菌感染（需於病歷記載診斷依據，俾利審查）。
+    clinical_rules:
+    - indication: Peptic Ulcer Disease (消化性潰瘍)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 使用6個月
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 使用6個月
   reference_annotations:
     original_clause: 10.4. 巨環類Macrolides（如erythromycin、azithromycin、clarithromycin、roxithromycin）：(90/11/1、93/9/1、97/12/1、98/10/1、100/5/1、108/1/1、110/4/1、111/3/1)
     full_text: '1.限用於經臨床診斷或實驗室診斷為黴漿菌(mycoplasma)或披衣菌(chlamydia)或退伍軍人桿菌(legionella)引起之感染、或經培養證實為macrolides有效之致病菌感染（需於病歷記載診斷依據，俾利審查）。
@@ -424,18 +557,29 @@ regulations:
   effective_dates:
   - (93/5/1)
   medications:
-    drug_classes: []
-    ingredients: []
+    drug_classes:
+    - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
+    ingredients:
+    - Cilastatin (如 Tienam)
+    - Meropenem (如 Mepem)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.經細菌培養證實有意義之致病菌且對其他抗微生物製劑均具抗藥性，而對carbapenem具有感受性 (sensitivity)。
-
-      2.經細菌培養，發現有意義之致病菌對carbapenem及其他抗微生物製劑具有感受性，但病患對其他抗微生物製劑過敏無其他藥物可供選用時。
-
-      3.臨床上為嚴重之細菌感染，且經其他廣效性的非第一線抗微生物製劑治療仍無法控制病情者。
-
-      4.經感染症專科醫師會診，確認有感染症需使用者 (申報費用時需檢附會診紀錄及相關之病歷資料)。(93/5/1)'
+    summary: 規範【. Imipenem + cilastatin（如Tienam）；meropenem（如Mepem）：】之健保給付條件。 規範重點：1.經細菌培養證實有意義之致病菌且對其他抗微生物製劑均具抗藥性，而對carbapenem具有感受性
+      (sensitivity)。
+    clinical_rules:
+    - indication: 10.5.1. Imipenem + cilastatin（如Tienam）；meropenem（如Mepem）：(87/11/1、93/2/1、93/5/1、99/5/1、99/8/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 10.5.1. Imipenem + cilastatin（如Tienam）；meropenem（如Mepem）：(87/11/1、93/2/1、93/5/1、99/5/1、99/8/1)
     full_text: '1.經細菌培養證實有意義之致病菌且對其他抗微生物製劑均具抗藥性，而對carbapenem具有感受性 (sensitivity)。
@@ -453,19 +597,26 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Ertapenem (如 Invanz inj.)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.臨床上為中、重度細菌感染，且經其他抗微生物製劑治療仍無法控制病情者，但限用於：
-
-      (1)複雜的腹腔內感染
-
-      (2)感染性肺炎
-
-      (3)急性骨盆感染
-
-      2.經感染症專科醫師會診，確認有感染症需使用者（申報費用時需檢附會診紀錄及相關之病歷資料）。'
+    summary: 規範【. Ertapenem（如Invanz inj.）：】之健保給付條件。 規範重點：1.臨床上為中、重度細菌感染，且經其他抗微生物製劑治療仍無法控制病情者，但限用於：
+      (1)複雜的腹腔內感染 (2)感染性肺炎 (3)急性骨盆感染 2.經感染症專科醫師會診，確認有感染症需使用者（申報費用時需檢附會診紀錄及相關之病歷資料）。
+    clinical_rules:
+    - indication: 10.5.2. Ertapenem（如Invanz inj.）：(93/5/1、96/12/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 10.5.2. Ertapenem（如Invanz inj.）：(93/5/1、96/12/1)
     full_text: '1.臨床上為中、重度細菌感染，且經其他抗微生物製劑治療仍無法控制病情者，但限用於：
@@ -485,15 +636,25 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Doripenem (如 Finibax)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.經細菌培養證實有意義之致病菌且對其他抗微生物製劑均具抗藥性或對其他具有感受性抗微生物製劑過敏，而對carbapenem具有感受性(sensitivity)之複雜性泌尿道感染(包括腎盂腎炎)及複雜性腹腔內感染。
-
-      2.臨床上為嚴重之複雜性泌尿道感染(包括腎盂腎炎)及複雜性腹腔內感染，且經其他廣效性的非第一線抗微生物製劑治療仍無法控制病情者。
-
-      3.經感染症專科醫師會診，確認有感染症需使用者(申報費用時需檢附會診紀錄及相關之病歷資料)。'
+    summary: 規範【. Doripenem (如Finibax)：】之健保給付條件。 規範重點：1.經細菌培養證實有意義之致病菌且對其他抗微生物製劑均具抗藥性或對其他具有感受性抗微生物製劑過敏，而對carbapenem具有感受性(sensitivity)之複雜性泌尿道感染(包括腎盂腎炎)及複雜性腹腔內感染。
+    clinical_rules:
+    - indication: 10.5.3. Doripenem (如Finibax)：(99/8/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 10.5.3. Doripenem (如Finibax)：(99/8/1)
     full_text: '1.經細菌培養證實有意義之致病菌且對其他抗微生物製劑均具抗藥性或對其他具有感受性抗微生物製劑過敏，而對carbapenem具有感受性(sensitivity)之複雜性泌尿道感染(包括腎盂腎炎)及複雜性腹腔內感染。
@@ -510,19 +671,26 @@ regulations:
   medications:
     drug_classes:
     - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
-    ingredients: []
+    ingredients:
+    - Relebactam (如 Recarbrio)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.治療18歲以上成人，患有對carbapenem有抗藥性且對imipenem/cilastatin/relebactam有感受性的致病菌引起的以下感染症：
-
+    summary: 規範【. Imipenem＋cilastatin＋relebactam (如Recarbrio)：(114/1/1）】之健保給付條件。 規範重點：1.治療18歲以上成人，患有對carbapenem有抗藥性且對imipenem/cilastatin/relebactam有感受性的致病菌引起的以下感染症：
       (1)複雜性腹腔內感染。
-
-      (2)複雜性泌尿道感染。
-
-      (3)院內感染型肺炎。
-
-      2.需經會診感染科醫師同意後使用，申報費用時需檢附會診紀錄及相關之病歷資料。'
+    clinical_rules:
+    - indication: 10.5.4. Imipenem＋cilastatin＋relebactam (如Recarbrio)：(114/1/1）
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 10.5.4. Imipenem＋cilastatin＋relebactam (如Recarbrio)：(114/1/1）
     full_text: '1.治療18歲以上成人，患有對carbapenem有抗藥性且對imipenem/cilastatin/relebactam有感受性的致病菌引起的以下感染症：
@@ -547,15 +715,20 @@ regulations:
     indications:
     - Fungal Infection / Mycosis (黴菌感染)
     laboratory_criteria: []
-    summary: '限
-
-      1.全身黴菌感染之治療。
-
-      2.免疫不全病例，治療或預防黴菌感染時使用。
-
-      3.非愛滋病隱球菌腦膜炎患者使用，原則上使用6到8週，視病人臨床反應，抗原效價及培養結果調整療期，而治黴菌藥物之終止以效價下降四倍及兩次培養陰性為原則。
-
-      4.用於念珠性陰道炎，限頑固性疾病或無性經驗病人無法使用塞劑治療者單一劑量使用。'
+    summary: 適用於【Fungal Infection / Mycosis】之健保給付。
+    clinical_rules:
+    - indication: Fungal Infection / Mycosis (黴菌感染)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 10.6.1.1. Fluconazole錠劑膠囊劑（如Diflucan oral）：（85/10/1、87/4/1、108/12/1）
     full_text: '限
@@ -580,11 +753,20 @@ regulations:
     indications:
     - Fungal Infection / Mycosis (黴菌感染)
     laboratory_criteria: []
-    summary: '限
-
-      1.已證實為全身性黴菌感染(經組織或培養證實)病例使用。
-
-      2.非愛滋病隱球菌腦膜炎患者使用，原則上使用6到8週，視病人臨床反應，抗原效價及培養結果調整療期，而治黴菌藥物之終止以效價下降四倍及兩次培養陰性為原則。'
+    summary: 適用於【Fungal Infection / Mycosis】之健保給付。 規範重點：限 1.已證實為全身性黴菌感染(經組織或培養證實)病例使用。
+    clinical_rules:
+    - indication: Fungal Infection / Mycosis (黴菌感染)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 10.6.1.2. Fluconazole注射劑（如Diflucan inj）：（85/10/1、108/12/1）
     full_text: '限
@@ -605,13 +787,21 @@ regulations:
     indications:
     - Fungal Infection / Mycosis (黴菌感染)
     laboratory_criteria: []
-    summary: '1. 限用於12歲以下或吞嚥困難患者，併下列條件之一使用(111/2/1）：
-
+    summary: 適用於【Fungal Infection / Mycosis】之健保給付。 規範重點：1. 限用於12歲以下或吞嚥困難患者，併下列條件之一使用(111/2/1）：
       念珠球菌局部或全身感染、囊珠菌感染。
-
-      預防後天免疫缺乏症候群病人的黴菌感染。
-
-      2.病人接受本品治療期間，不得併用其他同類藥品。'
+    clinical_rules:
+    - indication: Fungal Infection / Mycosis (黴菌感染)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 10.6.1.3. Fluconazole口服液劑（如Fluzole powder for oral suspension）：（108/12/1、111/2/1）
     full_text: '1. 限用於12歲以下或吞嚥困難患者，併下列條件之一使用(111/2/1）：
@@ -639,17 +829,32 @@ regulations:
     - Tinea (Ringworm / Dermatophytosis) (體癬)
     - Fungal Infection / Mycosis (黴菌感染)
     laboratory_criteria: []
-    summary: '限
-
-      1.甲癬病人使用。使用時，手指甲癬限用84顆，每顆100mg (以 itraconazole 100mg計算，每日服用2顆)，需於9週內使用完畢。足趾甲癬限用168顆，需於17週內使用完畢。治療結束日起算，並各在6及12個月內不得重複使用本品或其他同類口服藥品。(91/4/1、98/8/1)
-
-      2.念珠性陰道炎(限頑固性疾病或無性經驗病人無法使用塞劑治療病人)。
-
-      3.其他頑固性體癬。
-
-      4.全身性或侵入性黴菌感染(經組織切片、微生物或抗原檢測確定之全身性或侵入性黴菌感染，且經感染症專科醫師或皮膚科專科醫師判定需使用本劑者，以12週至24週為原則)。(91/8/1、98/8/1)
-
-      5.用於復發性...'
+    summary: 適用於【Onychomycosis / Tinea Unguium、Tinea、Fungal Infection / Mycosis】之健保給付。
+    clinical_rules:
+    - indication: Onychomycosis / Tinea Unguium (足趾甲癬)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Tinea (Ringworm / Dermatophytosis) (體癬)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Fungal Infection / Mycosis (黴菌感染)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 10.6.3.1. Itraconazole膠囊劑 (如Sporanox cap)：（85/1/1、91/4/1、91/8/1、98/8/1、104/1/1）
     full_text: '限
@@ -681,11 +886,28 @@ regulations:
     indications:
     - Fungal Infection / Mycosis (黴菌感染)
     laboratory_criteria: []
-    summary: '1.限用於第一線治療藥物amphotericin B治療無效或有嚴重副作用之侵入性麴菌症、侵入性念珠菌感染症、組織漿病菌之第二線用藥使用，以14日為限。
-
-      2.限用於第一線治療藥物無法使用或無效的免疫功能不全及中樞神經系統罹患隱球菌病(包括隱球菌腦膜炎)的病人，並以14日為限。
-
-      3.因病情需要，經感染症專科醫師會診確認需要使用者(申報費用時需檢附會診紀錄及相關之病歷資料)。(96/8/1、99/10/1)'
+    summary: 適用於【Fungal Infection / Mycosis】之健保給付。 規範重點：1.限用於第一線治療藥物amphotericin B治療無效或有嚴重副作用之侵入性麴菌症、侵入性念珠菌感染症、組織漿病菌之第二線用藥使用，以14日為限。
+    clinical_rules:
+    - indication: Fungal Infection / Mycosis (黴菌感染)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy:
+      - 第一線治療
+      - 第一線治療
+      stopping_rules: []
+      evaluation_frequency:
+      - 以14日為限
+      - 以14日為限
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy:
+    - 第一線治療
+    - 第一線治療
+    stopping_rules: []
+    evaluation_intervals:
+    - 以14日為限
+    - 以14日為限
   reference_annotations:
     original_clause: 10.6.3.2. Itraconazole注射劑 (如Sporanox inj.)：（96/6/1、96/8/1、99/10/1）
     full_text: '1.限用於第一線治療藥物amphotericin B治療無效或有嚴重副作用之侵入性麴菌症、侵入性念珠菌感染症、組織漿病菌之第二線用藥使用，以14日為限。
@@ -706,7 +928,20 @@ regulations:
     indications:
     - Fungal Infection / Mycosis (黴菌感染)
     laboratory_criteria: []
-    summary: 限用於HIV陽性反應及其它免疫功能不全病人的口腔念珠菌感染及食道念珠菌感染者。
+    summary: 適用於【Fungal Infection / Mycosis】之健保給付。 規範重點：限用於HIV陽性反應及其它免疫功能不全病人的口腔念珠菌感染及食道念珠菌感染者。
+    clinical_rules:
+    - indication: Fungal Infection / Mycosis (黴菌感染)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 10.6.3.3. Itraconazole 內服液劑 (如Itrazole oral solution)：（96/10/1）
     full_text: 限用於HIV陽性反應及其它免疫功能不全病人的口腔念珠菌感染及食道念珠菌感染者。
@@ -720,19 +955,34 @@ regulations:
   - (98/8/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Terbinafine (如 Lamisil tab)
   conditions_of_payment:
     indications:
     - Onychomycosis / Tinea Unguium (足趾甲癬)
     - Tinea (Ringworm / Dermatophytosis) (體癬)
     laboratory_criteria: []
-    summary: '限
-
-      1.手指甲癬及足趾甲癬病例使用，每日250 mg，手指甲癬限用42顆，需於8週內使用完畢。足趾甲癬限用84顆，需於16週內使用完畢。治療結束日起算，各在6及12個月內不得重複使用本品或其他同類口服藥品。(98/8/1)
-
-      2.其他頑固性體癬及股癬病例使用，每日一次，最長使用2週，治療期間不得併用其他同類藥品。
-
-      3.頭癬病例使用，每日一次，最長使用4週，若確需延長治療時間，需於病歷詳細載明備查。(98/8/1)'
+    summary: 適用於【Onychomycosis / Tinea Unguium、Tinea】之健保給付。 規範重點：限 1.手指甲癬及足趾甲癬病例使用，每日250
+      mg，手指甲癬限用42顆，需於8週內使用完畢。
+    clinical_rules:
+    - indication: Onychomycosis / Tinea Unguium (足趾甲癬)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Tinea (Ringworm / Dermatophytosis) (體癬)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 10.6.4. Terbinafine (如Lamisil tab)：(85/1/1、91/4/1、98/8/1)
     full_text: '限
@@ -756,7 +1006,21 @@ regulations:
     indications:
     - Fungal Infection / Mycosis (黴菌感染)
     laboratory_criteria: []
-    summary: 限用於侵入性黴菌感染（invasive fungal infection），且腎功能不全患者
+    summary: 適用於【Fungal Infection / Mycosis】之健保給付。 規範重點：限用於侵入性黴菌感染（invasive fungal
+      infection），且腎功能不全患者。
+    clinical_rules:
+    - indication: Fungal Infection / Mycosis (黴菌感染)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 10.6.5. Amphotericin B Injection colloidal dispersion及liposomal
       complex劑型（如Amphocil Injection、AmBisome for Injection）：(91/8/1、93/2/1)
@@ -775,11 +1039,20 @@ regulations:
     indications:
     - Fungal Infection / Mycosis (黴菌感染)
     laboratory_criteria: []
-    summary: '限符合下列規定之一：
-
-      1.限用於其他黴菌藥物治療無效或有嚴重副作用之侵入性麴菌症、侵入性念珠菌感染症之第二線用藥。
-
-      2.經感染症專科醫師認定需使用者，惟治療食道念珠菌感染限用於fluconazole無效或有嚴重副作用者。(99/10/1)'
+    summary: 適用於【Fungal Infection / Mycosis】之健保給付。 規範重點：限符合下列規定之一： 1.限用於其他黴菌藥物治療無效或有嚴重副作用之侵入性麴菌症、侵入性念珠菌感染症之第二線用藥。
+    clinical_rules:
+    - indication: Fungal Infection / Mycosis (黴菌感染)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 10.6.6. Caspofungin Injection劑型 (如Cancidas Injection 50mg)：(92/8/1、94/1/1、96/7/1、99/10/1)
     full_text: '限符合下列規定之一：
@@ -802,13 +1075,20 @@ regulations:
     indications:
     - Fungal Infection / Mycosis (黴菌感染)
     laboratory_criteria: []
-    summary: '限用於
-
-      1.治療16歲以上的食道念珠菌感染(111/2/1)。
-
-      2.預防接受造血幹細胞移植病患的念珠菌感染。
-
-      3.治療念珠菌血症與其他侵襲性之念珠菌感染。(97/10/1)'
+    summary: 適用於【Fungal Infection / Mycosis】之健保給付。 規範重點：限用於 1.治療16歲以上的食道念珠菌感染(111/2/1)。
+    clinical_rules:
+    - indication: Fungal Infection / Mycosis (黴菌感染)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 10.6.7. Micafungin Injection劑型(如Mycamine for Injection)：(96/4/1、97/10/1、111/2/1)
     full_text: '限用於
@@ -826,11 +1106,25 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Flucytosine (如 Flusine Tablets)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 限用於Cryptococcus infection的病患。
+    summary: 規範【. Flucytosine (如Flusine Tablets)】之健保給付條件。 規範重點：限用於Cryptococcus infection的病患。
+    clinical_rules:
+    - indication: 10.6.8. Flucytosine (如Flusine Tablets)(96/6/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 10.6.8. Flucytosine (如Flusine Tablets)(96/6/1)
     full_text: 限用於Cryptococcus infection的病患。
@@ -847,7 +1141,20 @@ regulations:
     indications:
     - Fungal Infection / Mycosis (黴菌感染)
     laboratory_criteria: []
-    summary: 限用於治療一個月以上患者之侵襲性念珠菌感染。
+    summary: 適用於【Fungal Infection / Mycosis】之健保給付。 規範重點：限用於治療一個月以上患者之侵襲性念珠菌感染。
+    clinical_rules:
+    - indication: Fungal Infection / Mycosis (黴菌感染)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 10.6.9. Anidulafungin注射劑 (如Eraxis for Injection) (97/10/1、105/8/1、111/5/1)
     full_text: 限用於治療一個月以上患者之侵襲性念珠菌感染。
@@ -865,18 +1172,44 @@ regulations:
   - (106/5/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Posaconazole (如 Posanol)
   conditions_of_payment:
     indications:
     - Leukemia (白血病)
     - Fungal Infection / Mycosis (黴菌感染)
     laboratory_criteria:
     - 白血球
-    summary: '1.限下列條件之一使用：
-
-      (1)對amphotericin B或itraconazole或voriconazole治療無效或不能忍受之成人侵入性麴菌病（invasive aspergillosis）的第二線用藥。（無效的定義是先前用有效抗黴菌劑的治療劑量至少7天，感染惡化或未改善）。
-
-      (2)對itraconazole或fluconazole治療無效或不能忍受之成人口咽念珠菌感染（oropharyngeal candidiasis）的第二線用藥。（無效的定義是先前用有效抗黴菌劑的治療劑量至少治療一段時間：持續性黴菌血症3天，非黴菌血症型感染7天，食道念珠菌病14天，感染惡化或未改善）限使用口服懸...'
+    summary: 適用於【Leukemia、Fungal Infection / Mycosis】之健保給付。 規範重點：1.限下列條件之一使用： (1)對amphotericin
+      B或itraconazole或voriconazole治療無效或不能忍受之成人侵入性麴菌病（invasive aspergillosis）的第二線用藥。
+    clinical_rules:
+    - indication: Leukemia (白血病)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules:
+      - unt,ANC)大於500/mm3，或出現侵入性黴菌感染時應停止使用。每次療程投予posaconazole預防以一個月為限，最多給付2次誘導性化學治療療程。
+      evaluation_frequency:
+      - 以3個月為限
+      - 以一個月為限
+    - indication: Fungal Infection / Mycosis (黴菌感染)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules:
+      - unt,ANC)大於500/mm3，或出現侵入性黴菌感染時應停止使用。每次療程投予posaconazole預防以一個月為限，最多給付2次誘導性化學治療療程。
+      evaluation_frequency:
+      - 以3個月為限
+      - 以一個月為限
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules:
+    - unt,ANC)大於500/mm3，或出現侵入性黴菌感染時應停止使用。每次療程投予posaconazole預防以一個月為限，最多給付2次誘導性化學治療療程。
+    evaluation_intervals:
+    - 以3個月為限
+    - 以一個月為限
   reference_annotations:
     original_clause: 10.6.10. Posaconazole (如Posanol)：(101/1/1、104/7/1、106/5/1、111/2/1)
     full_text: '1.限下列條件之一使用：
@@ -910,19 +1243,26 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Isavuconazole (如 Cresemba)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.限用於:
-
-      (1)侵犯性麴菌症（invasive aspergillosis）
-
-      (2)使用於不適合接受 amphotericin B 的病人治療白黴菌病（mucormycosis）
-
-      2.使用本藥須經感染症專科醫師會診確認需要使用，申報費用時需檢附會診紀錄及相關之病歷資料。
-
-      3.注射劑限用於無法口服之病人。'
+    summary: '規範【. Isavuconazole (如Cresemba)：】之健保給付條件。 規範重點：1.限用於: (1)侵犯性麴菌症（invasive
+      aspergillosis） (2)使用於不適合接受 amphotericin B 的病人治療白黴菌病（mucormycosis） 2.使用本藥須經感染症專科醫師會診確認需要使用，申報費用時需檢附會診紀錄及相關之病歷資料。'
+    clinical_rules:
+    - indication: 10.6.11. Isavuconazole (如Cresemba)：(110/2/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 10.6.11. Isavuconazole (如Cresemba)：(110/2/1)
     full_text: '1.限用於:
@@ -952,21 +1292,26 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.Acyclovir：(98/11/1、100/7/1、107/12/1、108/3/1、108/6/1)
-
+    summary: 規範【. 全身性抗疱疹病毒劑】之健保給付條件。 規範重點：1.Acyclovir：(98/11/1、100/7/1、107/12/1、108/3/1、108/6/1)
       (1)使用本類製劑，除200mg(限Deherp)、400mg及800mg(限Virless)規格量口服錠劑外，應以下列條件為限：(107/12/1、108/3/1、108/6/1)
-
       I.疱疹性腦炎。
-
-      Ⅱ.帶狀疱疹或單純性疱疹侵犯三叉神經第一分枝VI皮節，可能危及眼角膜者。
-
-      Ⅲ.帶狀疱疹或單純性疱疹侵犯薦椎S2皮節，將影響排泄功能者。
-
-      Ⅳ.免疫機能不全、癌症、器官移植等病患之感染帶狀疱疹或單純性疱疹者。
-
-      Ⅴ.新生兒或免疫機能不全患者的水痘感染。
-
-      Ⅵ.罹患水痘，合併高燒(口溫38℃以上)...'
+    clinical_rules:
+    - indication: 10.7.1.1. 全身性抗疱疹病毒劑
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 療程以7天為限
+      - 以10天為限
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 療程以7天為限
+    - 以10天為限
   reference_annotations:
     original_clause: 10.7.1.1. 全身性抗疱疹病毒劑
     full_text: '1.Acyclovir：(98/11/1、100/7/1、107/12/1、108/3/1、108/6/1)
@@ -1037,11 +1382,21 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.單純性疱疹(感染部位在頭頸部、生殖器周圍、嘴唇、口腔、陰部)3日內可使用acyclovir或tromantadine藥膏，每次給予藥量限5公克以內(100/7/1）。
-
-      2.Penciclovir藥膏用於治療由單純皰疹病毒引起之復發性唇皰疹，每次處方以1支(2公克)為原則。(102/7/1)
-
-      3.口服、注射劑及外用藥膏擇一使用，不得合併使用。'
+    summary: 規範【. 局部抗疱疹病毒劑（如Acyclovir外用製劑；tromantadine外用製劑；penciclovir外用製劑）：(97/12/1、98/11/1、100/7/1、102/7/1）】之健保給付條件。
+      規範重點：1.單純性疱疹(感染部位在頭頸部、生殖器周圍、嘴唇、口腔、陰部)3日內可使用acyclovir或tromantadine藥膏，每次給予藥量限5公克以內(100/7/1）。
+    clinical_rules:
+    - indication: 10.7.1.2. 局部抗疱疹病毒劑（如Acyclovir外用製劑；tromantadine外用製劑；penciclovir外用製劑）：(97/12/1、98/11/1、100/7/1、102/7/1）
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 10.7.1.2. 局部抗疱疹病毒劑（如Acyclovir外用製劑；tromantadine外用製劑；penciclovir外用製劑）：(97/12/1、98/11/1、100/7/1、102/7/1）
     full_text: '1.單純性疱疹(感染部位在頭頸部、生殖器周圍、嘴唇、口腔、陰部)3日內可使用acyclovir或tromantadine藥膏，每次給予藥量限5公克以內(100/7/1）。
@@ -1062,15 +1417,80 @@ regulations:
   conditions_of_payment:
     indications:
     - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
-    laboratory_criteria: []
-    summary: '1.限用於下列慢性病毒性C型肝炎患者且應與interferon-alfa 2a或interferon-alfa 2b或interferon
-      alfacon-1或peginterferon alfa-2b或peginterferon alfa-2a合併治療：
-
-      (1)限ALT值異常者，且Anti-HCV 與HCV RNA 均為陽性，或經由肝組織切片，以METAVIR system證實輕度纖維化大於或等於F1及肝炎變化，且無肝功能代償不全者。（98/11/1、114/6/1）
-
-      (2)療程依Viral Kinetics區分如下:（98/11/1）
-
-      Ⅰ.有RVR (rapid virological r...'
+    laboratory_criteria:
+    - Anti-HCV
+    - HCV RNA
+    summary: 適用於【Hepatitis B / Hepatitis C】之健保給付。 主要條件包含：臨床檢驗需符合 Anti-HCV = 陽性, HCV
+      RNA = 陽性。
+    clinical_rules:
+    - indication: Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+      biomarkers:
+      - biomarker: Anti-HCV
+        operator: '='
+        value: 陽性
+        unit: ''
+        duration: null
+        terminology_bindings:
+          loinc: 13955-0
+          snomed_ct: '314706002'
+          snomed_procedure: '1659191000000103'
+          snomed_finding: '314706002'
+        source_grounding:
+          start_char: 142
+          end_char: 164
+          snippet: Anti-HCV 與HCV RNA 均為陽性
+      - biomarker: HCV RNA
+        operator: '='
+        value: 陽性
+        unit: ''
+        duration: null
+        terminology_bindings:
+          loinc: 11011-4
+          snomed_ct: '122366001'
+          snomed_procedure: '122366001'
+          snomed_finding: '39331000237108'
+        source_grounding:
+          start_char: 152
+          end_char: 164
+          snippet: HCV RNA 均為陽性
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers:
+    - biomarker: Anti-HCV
+      operator: '='
+      value: 陽性
+      unit: ''
+      duration: null
+      terminology_bindings:
+        loinc: 13955-0
+        snomed_ct: '314706002'
+        snomed_procedure: '1659191000000103'
+        snomed_finding: '314706002'
+      source_grounding:
+        start_char: 142
+        end_char: 164
+        snippet: Anti-HCV 與HCV RNA 均為陽性
+    - biomarker: HCV RNA
+      operator: '='
+      value: 陽性
+      unit: ''
+      duration: null
+      terminology_bindings:
+        loinc: 11011-4
+        snomed_ct: '122366001'
+        snomed_procedure: '122366001'
+        snomed_finding: '39331000237108'
+      source_grounding:
+        start_char: 152
+        end_char: 164
+        snippet: HCV RNA 均為陽性
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 10.7.2. Ribavirin 膠囊劑（如Robatrol、Rebetol）(93/2/1、93/7/1、93/8/1、95/11/1、98/11/1、100/4/1、109/7/1、114/6/1）：
     full_text: '1.限用於下列慢性病毒性C型肝炎患者且應與interferon-alfa 2a或interferon-alfa 2b或interferon

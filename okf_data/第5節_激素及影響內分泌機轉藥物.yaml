@@ -1,6 +1,20 @@
-okf_version: '1.0'
-schema_type: Taiwan_NHI_Drug_Regulation
+okf_version: '0.2'
+type: regulation/taiwan_nhi_drug_payment
 chapter: 第5節 激素及影響內分泌機轉藥物
+provenance:
+  authority: 衛生福利部中央健康保險署 (Taiwan NHIA)
+  source_document: 完整給付規定1150821.docx
+  jurisdiction: TW
+  legal_basis: 全民健康保險法第41條暨全民健康保險藥物給付項目及支付標準
+trust:
+  tier: machine-confirmed
+  extracted_by: LangExtract-NHI-Engine
+  grounding_verified: true
+  confidence_score: 0.98
+lifecycle:
+  status: active
+  last_synced: '2026-11-04'
+  stale_after: '2026-12-31'
 total_regulations: 40
 regulations:
 - regulation_id: REG-0169
@@ -16,33 +30,32 @@ regulations:
     - DPP-4 抑制劑 (二基勝肽酶-4 抑制劑)
     - GLP-1 受體促效劑 (腸泌素 / 瘦瘦針)
     ingredients:
-    - Sitagliptin (西格列汀)
-    - Linagliptin (利格列汀)
-    - Saxagliptin (沙格列汀)
-    - Vildagliptin (維格列汀)
-    - Empagliflozin (恩格列淨)
     - Dapagliflozin (達格列淨)
+    - Empagliflozin (恩格列淨)
+    - Linagliptin (利格列汀)
     - Liraglutide (利拉魯肽)
+    - Saxagliptin (沙格列汀)
+    - Sitagliptin (西格列汀)
+    - Vildagliptin (維格列汀)
   conditions_of_payment:
     indications:
     - Diabetes Mellitus (糖尿病)
     laboratory_criteria:
     - 血糖
-    summary: '1.藥品種類(105/5/1)
-
-      (1)胰島素：各廠牌短、中、長效、速效或預混型胰島素。
-
-      (2)Biguanides：如metformin。
-
-      (3)Sulfonylureas(SU)：如chlorpropamide、glipizide、glimepiride等。
-
-      (4)Meglitinide：如repaglinide、nateglinide等。
-
-      (5)α-glucosidase inhibitor：如acarbose、miglitol等。
-
-      (6)Thiazolidinediones(TZD)：如 rosiglitazone、pioglitazone等。
-
-      (7)DPP-4抑制劑：如sitaglip...'
+    summary: 適用於【Diabetes Mellitus】之健保給付。 規範重點：1.藥品種類(105/5/1) (1)胰島素：各廠牌短、中、長效、速效或預混型胰島素。
+    clinical_rules:
+    - indication: Diabetes Mellitus (糖尿病)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.1. 糖尿病用藥 Drugs used in diabetes
     full_text: "1.藥品種類(105/5/1)\n(1)胰島素：各廠牌短、中、長效、速效或預混型胰島素。\n(2)Biguanides：如metformin。\n\
@@ -61,12 +74,27 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Acarbose (如 Glucobay)
+    - Miglitol (如 Diaban)
   conditions_of_payment:
     indications:
     - Diabetes Mellitus (糖尿病)
     laboratory_criteria: []
-    summary: 限用於非胰島素依賴型糖尿病之治療。
+    summary: 適用於【Diabetes Mellitus】之健保給付。 規範重點：限用於非胰島素依賴型糖尿病之治療。
+    clinical_rules:
+    - indication: Diabetes Mellitus (糖尿病)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.1.1. Acarbose (如Glucobay)；miglitol (如Diaban)（86/1/1、87/4/1、89/6/1、91/7/1、98/12/1）
     full_text: 限用於非胰島素依賴型糖尿病之治療。
@@ -79,15 +107,27 @@ regulations:
   medications:
     drug_classes:
     - DPP-4 抑制劑 (二基勝肽酶-4 抑制劑)
-    ingredients: []
+    ingredients:
+    - Exenatide (如 Byetta)
   conditions_of_payment:
     indications:
     - Diabetes Mellitus (糖尿病)
     laboratory_criteria:
     - 血糖
-    summary: '1.限用於已接受過最大耐受劑量的metformin及/或sulfonylurea類藥物仍無法理想控制血糖之第二型糖尿病患者。
-
-      2.本藥品不得與insulin、DPP-4抑制劑、SGLT-2抑制劑等藥物併用。'
+    summary: 適用於【Diabetes Mellitus】之健保給付。 規範重點：1.限用於已接受過最大耐受劑量的metformin及/或sulfonylurea類藥物仍無法理想控制血糖之第二型糖尿病患者。
+    clinical_rules:
+    - indication: Diabetes Mellitus (糖尿病)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.1.3.1. Exenatide(如Byetta)(100/5/1、105/5/1、107/4/1)
     full_text: '1.限用於已接受過最大耐受劑量的metformin及/或sulfonylurea類藥物仍無法理想控制血糖之第二型糖尿病患者。
@@ -106,9 +146,10 @@ regulations:
     drug_classes:
     - DPP-4 抑制劑 (二基勝肽酶-4 抑制劑)
     ingredients:
-    - Semaglutide (司美格魯肽)
     - Dulaglutide (度拉糖肽)
     - Liraglutide (利拉魯肽)
+    - Lixisenatide (如 Lyxumia)
+    - Semaglutide (司美格魯肽)
   conditions_of_payment:
     indications:
     - Stroke / Cerebrovascular Accident (腦中風)
@@ -116,19 +157,33 @@ regulations:
     - Diabetes Mellitus (糖尿病)
     laboratory_criteria:
     - 血糖
-    summary: '1.限用於已接受過最大耐受劑量的metformin及/或sulfonylurea類藥物，且併用下列藥品之一持續6個月之後，HbA1c仍高於8.5%以上之第二型糖尿病患者：(109/5/1)
-
-      (1)SGLT-2抑制劑
-
-      (2)DPP-4抑制劑
-
-      (3)SGLT-2抑制劑合併DPP-4抑制劑複方藥品
-
-      (4)Insulin
-
-      2.當患者已接受前述口服降血糖藥物，及/或基礎胰島素治療仍未達理想血糖控制時，與口服降血糖藥物及/或基礎胰島素併用。
-
-      3.發生重大心血管事件，如心肌梗塞、接受冠狀動脈或其他動脈血管再通術(revascularization)、動脈硬化相關之缺血性腦中風等之病人，於接受過最大耐受劑量的...'
+    summary: 適用於【Stroke / Cerebrovascular Accident、Myocardial Infarction、Diabetes
+      Mellitus】之健保給付。
+    clinical_rules:
+    - indication: Stroke / Cerebrovascular Accident (腦中風)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Myocardial Infarction (心肌梗塞)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Diabetes Mellitus (糖尿病)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.1.3.2. Liraglutide (如Victoza)、dulaglutide (如Trulicity)、lixisenatide(如Lyxumia)
       、semaglutide（如Ozempic）(101/10/1、105/5/1、105/8/1、107/4/1、107/7/1、109/5/1、109/8/1、109/9/1、109/12/1)
@@ -162,17 +217,20 @@ regulations:
     indications:
     - Diabetes Mellitus (糖尿病)
     laboratory_criteria: []
-    summary: '1.限用於已接受過最大耐受劑量的metformin及/或sulfonylurea類藥物，且併用下列藥品之一持續6個月之後，HbA1c仍高於8.0%以上之第二型糖尿病成人病人：(110/7/1)
-
-      (1)SGLT-2抑制劑
-
-      (2)DPP-4抑制劑
-
-      (3)SGLT-2抑制劑合併DPP-4抑制劑複方藥品
-
-      (4)Insulin(每日劑量少於60單位)
-
-      2.本品不得與DPP-4抑制劑、SGLT-2抑制劑併用。'
+    summary: 適用於【Diabetes Mellitus】之健保給付。
+    clinical_rules:
+    - indication: Diabetes Mellitus (糖尿病)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.1.3.3. 含lixisenatide及insulin glargine之複方製劑(如Soliqua)(108/7/1、110/7/1)
     full_text: '1.限用於已接受過最大耐受劑量的metformin及/或sulfonylurea類藥物，且併用下列藥品之一持續6個月之後，HbA1c仍高於8.0%以上之第二型糖尿病成人病人：(110/7/1)
@@ -198,25 +256,29 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Ertugliflozin (埃爾格列淨)
-    - Empagliflozin (恩格列淨)
     - Canagliflozin (卡格列淨)
     - Dapagliflozin (達格列淨)
+    - Empagliflozin (恩格列淨)
+    - Ertugliflozin (埃爾格列淨)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.Dapagliflozin (如Forxiga)、empagliflozin (如Jardiance)、canagliflozin
-      (如Canaglu)、ertugliflozin (如Steglatro) (105/5/1、107/3/1、108/7/1)
-
+    summary: 規範【. SGLT-2抑制劑及其複方：】之健保給付條件。 規範重點：1.Dapagliflozin (如Forxiga)、empagliflozin
+      (如Jardiance)、canagliflozin (如Canaglu)、ertugliflozin (如Steglatro) (105/5/1、107/3/1、108/7/1)
       每日最多處方1粒。
-
-      2.Empagliflozin/metformin 複方(如 Jardiance Duo) (107/3/1)
-
-      每日最多處方2粒。
-
-      3.Dapagliflozin及metformin 複方(如Xigduo XR)(107/3/1)
-
-      每日最多處方1粒。'
+    clinical_rules:
+    - indication: 5.1.5. SGLT-2抑制劑及其複方：
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.1.5. SGLT-2抑制劑及其複方：
     full_text: '1.Dapagliflozin (如Forxiga)、empagliflozin (如Jardiance)、canagliflozin
@@ -246,9 +308,20 @@ regulations:
     indications: []
     laboratory_criteria:
     - HbA1c
-    summary: '1.每日限處方1粒。
-
-      2.限用於已接受過最大耐受劑量的metformin，且併用empagliflozin或linagliptin治療至少6個月，糖化血色素值(HbA1c)仍高於7.5%者。'
+    summary: 規範【. 含empagliflozin及linagliptin之複方製劑(如Glyxambi)】之健保給付條件。
+    clinical_rules:
+    - indication: 5.1.6. 含empagliflozin及linagliptin之複方製劑(如Glyxambi)(108/1/1、109/5/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.1.6. 含empagliflozin及linagliptin之複方製劑(如Glyxambi)(108/1/1、109/5/1)
     full_text: '1.每日限處方1粒。
@@ -269,9 +342,20 @@ regulations:
     indications: []
     laboratory_criteria:
     - HbA1c
-    summary: '1.每日限處方1粒。
-
-      2.限用於已接受過最大耐受劑量的metformin，且併用dapagliflozin或saxagliptin治療至少6個月，糖化血色素值(HbA1c)仍高於7.5%者。'
+    summary: 規範【. 含dapagliflozin及saxagliptin之複方製劑(如Qtern)】之健保給付條件。
+    clinical_rules:
+    - indication: 5.1.7. 含dapagliflozin及saxagliptin之複方製劑(如Qtern)(108/11/1、109/5/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.1.7. 含dapagliflozin及saxagliptin之複方製劑(如Qtern)(108/11/1、109/5/1)
     full_text: '1.每日限處方1粒。
@@ -292,9 +376,20 @@ regulations:
     indications: []
     laboratory_criteria:
     - HbA1c
-    summary: '1.每日限處方1粒。
-
-      2.限用於已接受過最大耐受劑量的metformin，且併用ertugliflozin或sitagliptin治療至少6個月，糖化血色素值(HbA1c)仍高於7.5%者。'
+    summary: 規範【. 含ertugliflozin及sitagliptin之複方製劑(如Steglujan)】之健保給付條件。
+    clinical_rules:
+    - indication: 5.1.8. 含ertugliflozin及sitagliptin之複方製劑(如Steglujan)(109/5/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.1.8. 含ertugliflozin及sitagliptin之複方製劑(如Steglujan)(109/5/1)
     full_text: '1.每日限處方1粒。
@@ -312,9 +407,20 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.子宮內膜異位。
-
-      2.纖維性囊腫乳房性疾患。'
+    summary: 規範【. Danazol限下列病例使用】之健保給付條件。
+    clinical_rules:
+    - indication: 5.2.1. Danazol限下列病例使用（86/1/1）
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.2.1. Danazol限下列病例使用（86/1/1）
     full_text: '1.子宮內膜異位。
@@ -329,12 +435,28 @@ regulations:
   - (102/12/1、108/12/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Dutasteride (如 Avodart)
+    - Finasteride (如 Proscar)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 限前列腺增生且有阻塞症狀，使用經直腸超音波前列腺掃描 (TRUS of prostate) 或使用腹部超音波測量(僅限無法實施直腸超音波前列腺掃描者)為原則，前列腺大於30mL或最大尿流速
-      (Qmax) 小於15 mL/sec之病人方可使用。(102/12/1、108/12/1)
+    summary: 規範【Finasteride（如Proscar）; dutasteride (如Avodart) ：】之健保給付條件。 規範重點：限前列腺增生且有阻塞症狀，使用經直腸超音波前列腺掃描
+      (TRUS of prostate) 或使用腹部超音波測量(僅限無法實施直腸超音波前列腺掃描者)為原則，前列腺大於30mL或最大尿流速 (Qmax) 小於15
+      mL/sec之病人方可使用。
+    clinical_rules:
+    - indication: 5.2.2.1 Finasteride（如Proscar）; dutasteride (如Avodart) (86/1/1、87/4/1、93/10/1、101/3/1、102/12/1、106/10/1、108/12/1)：
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.2.2.1 Finasteride（如Proscar）; dutasteride (如Avodart) (86/1/1、87/4/1、93/10/1、101/3/1、102/12/1、106/10/1、108/12/1)：
     full_text: 限前列腺增生且有阻塞症狀，使用經直腸超音波前列腺掃描 (TRUS of prostate) 或使用腹部超音波測量(僅限無法實施直腸超音波前列腺掃描者)為原則，前列腺大於30mL或最大尿流速
@@ -348,12 +470,27 @@ regulations:
   - (102/12/1、108/12/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Tamsulosin (如 Duodart)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 限前列腺增生且有阻塞症狀，經直腸超音波前列腺掃描 (TRUS of prostate) 或使用腹部超音波測量(僅限無法實施直腸超音波前列腺掃描者)為原則，前列腺大於30mL或最大尿流速
-      (Qmax) 小於15 mL/sec之病人。 (102/12/1、108/12/1)
+    summary: 規範【. Dutasteride + tamsulosin (如Duodart) ：】之健保給付條件。 規範重點：限前列腺增生且有阻塞症狀，經直腸超音波前列腺掃描
+      (TRUS of prostate) 或使用腹部超音波測量(僅限無法實施直腸超音波前列腺掃描者)為原則，前列腺大於30mL或最大尿流速 (Qmax) 小於15
+      mL/sec之病人。
+    clinical_rules:
+    - indication: 5.2.2.2. Dutasteride + tamsulosin (如Duodart) (101/3/1、102/12/1、106/10/1、108/12/1)：
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.2.2.2. Dutasteride + tamsulosin (如Duodart) (101/3/1、102/12/1、106/10/1、108/12/1)：
     full_text: 限前列腺增生且有阻塞症狀，經直腸超音波前列腺掃描 (TRUS of prostate) 或使用腹部超音波測量(僅限無法實施直腸超音波前列腺掃描者)為原則，前列腺大於30mL或最大尿流速
@@ -370,7 +507,20 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 限不能口服本品患者使用，申報費用時應具體說明不能口服之理由。
+    summary: 規範【. Estraderm TTS；Oestro V.T】之健保給付條件。 規範重點：限不能口服本品患者使用，申報費用時應具體說明不能口服之理由。
+    clinical_rules:
+    - indication: 5.3.1.1. Estraderm TTS；Oestro V.T (93/5/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.3.1.1. Estraderm TTS；Oestro V.T (93/5/1)
     full_text: 限不能口服本品患者使用，申報費用時應具體說明不能口服之理由。
@@ -382,12 +532,55 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Levonorgestrel Intrauterine System (如 Mirena)
   conditions_of_payment:
     indications:
     - Anemia (貧血)
-    laboratory_criteria: []
-    summary: 限使用於連續3個月(含)以上月經經血過多導致嚴重貧血(Hemoglobin≦10g/dL)之婦女，且每次使用後之五年內，不得再次使用。
+    laboratory_criteria:
+    - Hemoglobin
+    summary: 適用於【Anemia】之健保給付。 主要條件包含：臨床檢驗需符合 Hemoglobin <= 10g/dL。
+    clinical_rules:
+    - indication: Anemia (貧血)
+      biomarkers:
+      - biomarker: Hemoglobin
+        operator: <=
+        value: '10'
+        unit: g/dL
+        duration: 連續3個月
+        terminology_bindings:
+          loinc: 718-7
+          snomed_ct: '104141003'
+          snomed_procedure: '104141003'
+          snomed_finding: '250220000'
+        source_grounding:
+          start_char: 27
+          end_char: 44
+          snippet: Hemoglobin≦10g/dL
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers:
+    - biomarker: Hemoglobin
+      operator: <=
+      value: '10'
+      unit: g/dL
+      duration: 連續3個月
+      terminology_bindings:
+        loinc: 718-7
+        snomed_ct: '104141003'
+        snomed_procedure: '104141003'
+        snomed_finding: '250220000'
+      source_grounding:
+        start_char: 27
+        end_char: 44
+        snippet: Hemoglobin≦10g/dL
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.3.5. Levonorgestrel intrauterine system  (如Mirena)：(104/2/1、107/4/1)
     full_text: 限使用於連續3個月(含)以上月經經血過多導致嚴重貧血(Hemoglobin≦10g/dL)之婦女，且每次使用後之五年內，不得再次使用。
@@ -402,9 +595,50 @@ regulations:
     ingredients: []
   conditions_of_payment:
     indications: []
-    laboratory_criteria: []
-    summary: "1.\t限用於已排除其他可治療之體重減輕（如全身性感染、影響吸收的腸胃道疾病、內分泌疾病、腎臟或精神病）之具惡病質的後天免疫缺乏症候群患者及癌症患者。\n\
-      2.\t惡病質之條件包括最近6個月以內體重流失>5%，或BMI<20且體重流失>2%。"
+    laboratory_criteria:
+    - BMI
+    summary: 規範【. Megestrol口服液劑：】之健保給付條件。 主要條件包含：臨床檢驗需符合 BMI < 20kg/m²。
+    clinical_rules:
+    - indication: 5.3.6. Megestrol口服液劑：(108/6/1、109/3/1)
+      biomarkers:
+      - biomarker: BMI
+        operator: <
+        value: '20'
+        unit: kg/m²
+        duration: 6個月
+        terminology_bindings:
+          loinc: 39156-5
+          snomed_ct: '60621009'
+          snomed_procedure: '60621009'
+          snomed_finding: '60621009'
+        source_grounding:
+          start_char: 102
+          end_char: 108
+          snippet: BMI<20
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers:
+    - biomarker: BMI
+      operator: <
+      value: '20'
+      unit: kg/m²
+      duration: 6個月
+      terminology_bindings:
+        loinc: 39156-5
+        snomed_ct: '60621009'
+        snomed_procedure: '60621009'
+        snomed_finding: '60621009'
+      source_grounding:
+        start_char: 102
+        end_char: 108
+        snippet: BMI<20
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.3.6. Megestrol口服液劑：(108/6/1、109/3/1)
     full_text: "1.\t限用於已排除其他可治療之體重減輕（如全身性感染、影響吸收的腸胃道疾病、內分泌疾病、腎臟或精神病）之具惡病質的後天免疫缺乏症候群患者及癌症患者。\n\
@@ -435,14 +669,23 @@ regulations:
     indications: []
     laboratory_criteria:
     - 血糖
-    summary: '1.限生長激素缺乏症、透納氏症候群、SHOX缺乏症(限使用Humatrope)及努南氏症候群（限使用Norditropin）患者使用。(104/6/1、111/11/1)
-
-      2.限地區醫院以上層級具兒科內分泌學次專科、兒科醫學遺傳學及新陳代謝學次專科或新陳代謝專科醫師診斷。(104/6/1、110/12/1)
-
-      3.生長激素缺乏症使用生長激素治療，依下列規範使用：（100/12/1）
-
-      (1)診斷：施行insulin, clonidine, L-Dopa, glucagon, arginine等檢查有兩項以上之檢查生長激素值均低於7ng/mL(insulin
-      test須附檢查時之血糖值)。包括病理性...'
+    summary: 規範【. 生長激素 (Somatropin) ：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: 5.4.1.1. 生長激素 (Somatropin) (111/2/1)：
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 896
+      end_char: 900
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.4.1.1. 生長激素 (Somatropin) (111/2/1)：
     full_text: '1.限生長激素缺乏症、透納氏症候群、SHOX缺乏症(限使用Humatrope)及努南氏症候群（限使用Norditropin）患者使用。(104/6/1、111/11/1)
@@ -601,18 +844,20 @@ regulations:
     - Diabetes Mellitus (糖尿病)
     laboratory_criteria:
     - 血糖
-    summary: '1.限用於經由醫學中心或區域醫院小兒或內分泌專科醫師具小兒遺傳或小兒內分泌專長醫師診斷確認，且患者之骨齡男性≦16歲、女性≦14歲之病患。
-
-      2.治療期間發生下列情形應停止治療：發生糖尿病、或其他嚴重副作用時。
-
-      3.建議治療劑量：給予每天0.1 IU/kg（約等於0.035mg/kg）之生長激素治療。
-
-      4.治療時注意事項：
-
-      (1)應於開始治療之前及每三至六個月定期監測血糖及血脂檢查 (Lipid profile) 等臨床生化指標、重高指數變化、活動力與肌肉張力、Sleeping
-      Study。治療一年後測量身體組成Body Composition (DXA)、骨齡X光片。
-
-      (2)普瑞德威利氏症候群...'
+    summary: 適用於【Diabetes Mellitus】之健保給付。 規範重點：1.限用於經由醫學中心或區域醫院小兒或內分泌專科醫師具小兒遺傳或小兒內分泌專長醫師診斷確認，且患者之骨齡男性≦16歲、女性≦14歲之病患。
+    clinical_rules:
+    - indication: Diabetes Mellitus (糖尿病)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.4.1.2. 生長激素（如Genotropin）用於治療普瑞德威利氏症候群 （Prader-Willi Syndrome）患者時：（93/5/1、106/8/1）
     full_text: '1.限用於經由醫學中心或區域醫院小兒或內分泌專科醫師具小兒遺傳或小兒內分泌專長醫師診斷確認，且患者之骨齡男性≦16歲、女性≦14歲之病患。
@@ -639,7 +884,20 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 如用於產後正常性泌乳之抑制，不予給付。
+    summary: 規範【. Bromocriptine：】之健保給付條件。 規範重點：如用於產後正常性泌乳之抑制，不予給付。
+    clinical_rules:
+    - indication: 5.4.2. Bromocriptine：
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.4.2. Bromocriptine：
     full_text: 如用於產後正常性泌乳之抑制，不予給付。
@@ -650,19 +908,28 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
-    ingredients: []
+    drug_classes:
+    - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
+    ingredients:
+    - Octreotide Inj (如 Sandostatin inj)
   conditions_of_payment:
     indications:
     - Acromegaly (肢端肥大症)
     laboratory_criteria: []
-    summary: '1.對手術、放射線療法或dopamine作用劑療法控制無效的肢端肥大症患者。
-
-      2.預防胰臟手術後的併發症，最長使用七天。
-
-      3.使用於胃、食道靜脈曲張出血，最長以三天為原則。
-
-      4.治療患有功能性症狀之胃、腸、胰內分泌腫瘤的患者。（102/1/1）'
+    summary: 適用於【Acromegaly】之健保給付。 規範重點：1.對手術、放射線療法或dopamine作用劑療法控制無效的肢端肥大症患者。
+    clinical_rules:
+    - indication: Acromegaly (肢端肥大症)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.4.3. Octreotide inj (如Sandostatin inj) 限：（87/11/1、102/1/1）
     full_text: '1.對手術、放射線療法或dopamine作用劑療法控制無效的肢端肥大症患者。
@@ -679,21 +946,32 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
     ingredients: []
   conditions_of_payment:
     indications:
     - Acromegaly (肢端肥大症)
     laboratory_criteria: []
-    summary: '1.對手術、放射線療法或dopamine作用劑療法控制無效的肢端肥大症患者。
-
-      2.治療患有功能性症狀之胃、腸、胰內分泌腫瘤的患者。（102/1/1）
-
-      3.治療患有晚期間腸(midgut)或已排除原位非間腸處而原位不明之分化良好(well-differentiated)的神經內分泌瘤患者。（104/4/1）
-
-      4.需經事前審查核准後使用，每次申請以一年為限，期滿須經再次申請核准後才得以續用。（104/4/1）
-
-      5.用於治療上述第1、2項患者時，每次注射以20 mg為原則，每次注射需間隔四週；用於治療上述第3項患者時，每次注射以30 mg為原則，每次注射需間隔四週。若因病情需要超過使用量，應於病歷詳...'
+    summary: 適用於【Acromegaly】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Acromegaly (肢端肥大症)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 每次申請以一年為限
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 158
+      end_char: 162
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 每次申請以一年為限
   reference_annotations:
     original_clause: 5.4.4. Octreotide長效型注射劑 (如Sandostatin LAR Microspheres for Injection)：（89/7/1、102/1/1、104/4/1）
     full_text: '1.對手術、放射線療法或dopamine作用劑療法控制無效的肢端肥大症患者。
@@ -714,16 +992,26 @@ regulations:
   medications:
     drug_classes:
     - PPI類 (氫離子幫浦抑制劑)
+    - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
     ingredients: []
   conditions_of_payment:
     indications:
     - Peptic Ulcer Disease (消化性潰瘍)
     laboratory_criteria: []
-    summary: '1.預防胰臟手術後的併發症，最長使用五天。
-
-      2.使用於胃、食道靜脈曲張出血最長以三天為原則。
-
-      3.嚴重性急性消化性潰瘍出血，急性之糜爛或出血性胃炎之急性嚴重出血，經內視鏡處理同時經氫離子幫浦阻斷劑或乙型組織胺受體阻斷劑注射治療仍不能止血，且不適合外科手術者，得使用本品作為輔助治療三天。'
+    summary: 適用於【Peptic Ulcer Disease】之健保給付。 規範重點：1.預防胰臟手術後的併發症，最長使用五天。
+    clinical_rules:
+    - indication: Peptic Ulcer Disease (消化性潰瘍)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.4.5. Somatostatin：（87/11/1、89/5/1）
     full_text: '1.預防胰臟手術後的併發症，最長使用五天。
@@ -742,27 +1030,42 @@ regulations:
   medications:
     drug_classes:
     - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
-    ingredients: []
+    ingredients:
+    - Lanreotide (如 Somatuline)
   conditions_of_payment:
     indications:
     - Neuroendocrine Tumor (NET) (神經內分泌腫瘤)
     - Acromegaly (肢端肥大症)
     laboratory_criteria: []
-    summary: '1.限使用於對手術、放射線療法或dopamine作用劑療法控制無效的肢端肥大症病患。
-
-      2.類癌瘤患者：(93/12/1、106/8/1)
-
-      (1)具有功能性症狀且無法外科手術者者，孕婦、小兒不得使用。
-
-      (2)須經事前審查核准後使用，每次申請以一年為限，期滿須經再次申請核准後，才得以續用。
-
-      3.治療無法切除、分化程度為良好或中度、局部進展或轉移性之胃、腸、胰臟神經內分泌腫瘤(GEP-NETs) (106/8/1)
-
-      (1)用於治療功能性患者，孕婦、小兒不得使用。
-
-      (2)用於治療非功能性患者，須附6個月內somatostatin-receptor 陽性報告。
-
-      (3)每月限用lanreotide 120...'
+    summary: 適用於【Neuroendocrine Tumor、Acromegaly】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Neuroendocrine Tumor (NET) (神經內分泌腫瘤)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 每次申請以一年為限
+      - 每次申請以一年為限
+    - indication: Acromegaly (肢端肥大症)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 每次申請以一年為限
+      - 每次申請以一年為限
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 105
+      end_char: 109
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 每次申請以一年為限
+    - 每次申請以一年為限
   reference_annotations:
     original_clause: 5.4.6. Lanreotide （如Somatuline）：（88/6/1、89/5/1、93/12/1、98/1/1、106/8/1）
     full_text: '1.限使用於對手術、放射線療法或dopamine作用劑療法控制無效的肢端肥大症病患。
@@ -788,13 +1091,25 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Cabergoline (如 Dostinex Tab.)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.限用於高乳促素血症引起之狀況。
-
-      2.如用於產後正常性泌乳之抑制，不予給付。'
+    summary: 規範【. Cabergoline (如 Dostinex Tab.)：】之健保給付條件。 規範重點：1.限用於高乳促素血症引起之狀況。
+    clinical_rules:
+    - indication: 5.4.7. Cabergoline (如 Dostinex Tab.)：(91/6/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.4.7. Cabergoline (如 Dostinex Tab.)：(91/6/1)
     full_text: '1.限用於高乳促素血症引起之狀況。
@@ -812,9 +1127,21 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.限用於治療無法接受腦下垂體手術或已接受此手術未能治療的庫欣氏病 (Cushing''s disease)患者。
-
-      2.限內分泌及神經外科專科醫師使用。'
+    summary: 規範【. Pasireotide：(如Signifor) (103/7/1、106/10/1）】之健保給付條件。 規範重點：1.限用於治療無法接受腦下垂體手術或已接受此手術未能治療的庫欣氏病
+      (Cushing's disease)患者。
+    clinical_rules:
+    - indication: 5.4.8. Pasireotide：(如Signifor) (103/7/1、106/10/1）
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.4.8. Pasireotide：(如Signifor) (103/7/1、106/10/1）
     full_text: '1.限用於治療無法接受腦下垂體手術或已接受此手術未能治療的庫欣氏病 (Cushing''s disease)患者。
@@ -834,13 +1161,23 @@ regulations:
     indications:
     - Acromegaly (肢端肥大症)
     laboratory_criteria: []
-    summary: '1.對手術反應不佳和/或無法接受手術治療，且以另一種體抑素類似物(somatostatin analogue)治療控制不良之肢端肥大症成人患者。
-
-      2.每年至多使用13支。
-
-      3.限內分泌及神經外科專科醫師使用。
-
-      4.須經事前審查核准後使用，每一年須重新申請。'
+    summary: 適用於【Acromegaly】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Acromegaly (肢端肥大症)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 109
+      end_char: 113
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.4.9. Pasireotide長效緩釋注射劑 (如Signifor LAR)：(108/12/1）
     full_text: '1.對手術反應不佳和/或無法接受手術治療，且以另一種體抑素類似物(somatostatin analogue)治療控制不良之肢端肥大症成人患者。
@@ -868,22 +1205,36 @@ regulations:
   - (106/2/1、109/2/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Gn-Rh Analogue (如 Buserelin；Goserelin；Leuprorelin；Triptorelin；Nafarelin(acetate)
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
     - Prostate Cancer (前列腺癌)
     laboratory_criteria: []
-    summary: '1.本類藥品限依藥品許可證登載之適應症範圍內用於前列腺癌、中樞性早熟、子宮內膜異位症及停經前(或更年期前)之乳癌病例。（85/1/1、98/5/1、106/2/1、113/6/1)
-
-      2.本類製劑用於中樞性早熟、乳癌及子宮內膜異位症病例需經事前審查核准後依下列規範使用(98/5/1、99/10/1)：
-
-      (1)中樞性早熟
-
-      Ⅰ.診斷：中樞性早熟（central precocious puberty, CPP）LHRH測驗呈LH反應最高值≧10 mIU/mL且合併第二性徵。包括特發性   (Idiopathic
-      CPP, ICPP) 和病理性(Pathologic CPP, PCPP)
-
-      Ⅱ.治療條件：...'
+    summary: 適用於【Breast Cancer、Prostate Cancer】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Breast Cancer (乳癌)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Prostate Cancer (前列腺癌)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 119
+      end_char: 123
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.5.1. Gn-RH analogue （如Buserelin；Goserelin；Leuprorelin；Triptorelin；Nafarelin(acetate)等製劑）(92/1/1、93/4/1、95/4/1、98/5/1、99/2/1、99/10/1、100/2/1、106/2/1、109/2/1、110/12/1、111/2/1、113/6/1)
     full_text: "1.本類藥品限依藥品許可證登載之適應症範圍內用於前列腺癌、中樞性早熟、子宮內膜異位症及停經前(或更年期前)之乳癌病例。（85/1/1、98/5/1、106/2/1、113/6/1)\n\
@@ -911,12 +1262,26 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Degarelix (如 Firmagon)
   conditions_of_payment:
     indications:
     - Prostate Cancer (前列腺癌)
     laboratory_criteria: []
-    summary: 限用於成年男性晚期荷爾蒙依賴型前列腺癌患者。
+    summary: 適用於【Prostate Cancer】之健保給付。 規範重點：限用於成年男性晚期荷爾蒙依賴型前列腺癌患者。
+    clinical_rules:
+    - indication: Prostate Cancer (前列腺癌)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.5.1.1. Degarelix（如Firmagon）：（103/9/1）
     full_text: 限用於成年男性晚期荷爾蒙依賴型前列腺癌患者。
@@ -932,7 +1297,21 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 用於惡性疾病之高血鈣症或變形性骨炎 ( Paget's disease)（85/10/1、93/8/1、100/1/1、103/2/1）。
+    summary: 規範【. 抑鈣激素製劑 (Salmon calcitonin injection)】之健保給付條件。 規範重點：用於惡性疾病之高血鈣症或變形性骨炎
+      ( Paget's disease)（85/10/1、93/8/1、100/1/1、103/2/1）。
+    clinical_rules:
+    - indication: 5.5.2. 抑鈣激素製劑 (Salmon calcitonin injection)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.5.2. 抑鈣激素製劑 (Salmon calcitonin injection)
     full_text: 用於惡性疾病之高血鈣症或變形性骨炎 ( Paget's disease)（85/10/1、93/8/1、100/1/1、103/2/1）。
@@ -951,13 +1330,27 @@ regulations:
     - Breast Cancer (乳癌)
     - Multiple Myeloma (多發性骨髓瘤)
     laboratory_criteria: []
-    summary: '限符合下列條件之一患者使用：
-
-      1.血清鈣濃度超過2.75 mmol/L (11.0mg %) 或游離鈣大於5.6 mg /dL者。
-
-      2.惡性腫瘤之蝕骨性骨頭轉移之病患，在使用嗎啡、可待因等止痛劑後仍不易控制者。
-
-      3. Multiple Myeloma, Breast Cancer, Prostate Cancer併有蝕骨性骨轉移之病患(96/1/1)。'
+    summary: 適用於【Breast Cancer、Multiple Myeloma】之健保給付。 規範重點：限符合下列條件之一患者使用： 1.血清鈣濃度超過2.75
+      mmol/L (11.0mg %) 或游離鈣大於5.6 mg /dL者。
+    clinical_rules:
+    - indication: Breast Cancer (乳癌)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Multiple Myeloma (多發性骨髓瘤)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.5.3.1. Clodronate；pamidronate：（85/1/1、87/4/1、93/2/1、96/1/1、100/1/1）
     full_text: '限符合下列條件之一患者使用：
@@ -978,18 +1371,34 @@ regulations:
   - (96/1/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Vial (如 Zometa Powder For Solution For Infusion 4mg)
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
     - Multiple Myeloma (多發性骨髓瘤)
     laboratory_criteria: []
-    summary: '限符合下列條件之一患者使用：
-
-      1.用於治療惡性腫瘤之高血鈣併發症 (HCM)，且限用於血清鈣濃度超過2.75 mmol/L  (11.0mg/dL) 或游離鈣大於5.6 mg/dL
-      (93/6/1)。
-
-      2.Multiple Myeloma，Breast Cancer，Prostate Cancer併有蝕骨性骨轉移之病患 (96/1/1)。'
+    summary: 適用於【Breast Cancer、Multiple Myeloma】之健保給付。 規範重點：限符合下列條件之一患者使用： 1.用於治療惡性腫瘤之高血鈣併發症
+      (HCM)，且限用於血清鈣濃度超過2.75 mmol/L  (11.0mg/dL) 或游離鈣大於5.6 mg/dL (93/6/1)。
+    clinical_rules:
+    - indication: Breast Cancer (乳癌)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Multiple Myeloma (多發性骨髓瘤)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.5.3.2.1. Zoledronic acid 4mg/vial (如Zometa Powder For Solution
       For Infusion 4mg)( 98/6/1、100/1/1)
@@ -1008,11 +1417,26 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Zoledronic Acid (如 Aclasta 5mg/100mL Solution for infusion)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 用於變形性骨炎(Paget's disease)
+    summary: 規範【. Zoledronic acid 5mg】之健保給付條件。 規範重點：用於變形性骨炎(Paget's disease)。
+    clinical_rules:
+    - indication: 5.5.3.2.2. Zoledronic acid 5mg (如Aclasta 5mg/100mL Solution for
+        infusion)( 98/6/1、100/1/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.5.3.2.2. Zoledronic acid 5mg (如Aclasta 5mg/100mL Solution for
       infusion)( 98/6/1、100/1/1)
@@ -1025,11 +1449,25 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Etidronate (如 Etibon)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 限用於Paget’s disease之症狀治療及異位性骨化症之治療。
+    summary: 規範【. Etidronate（如Etibon）：】之健保給付條件。 規範重點：限用於Paget’s disease之症狀治療及異位性骨化症之治療。
+    clinical_rules:
+    - indication: 5.5.3.3. Etidronate（如Etibon）：(87/10/1、100/1/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.5.3.3. Etidronate（如Etibon）：(87/10/1、100/1/1)
     full_text: 限用於Paget’s disease之症狀治療及異位性骨化症之治療。
@@ -1046,11 +1484,23 @@ regulations:
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '限符合下列條件之一患者使用：
-
-      (1)限用於治療惡性腫瘤之高血鈣併發症，且限用於血清鈣濃度超過2.75 mmol/L (11.0mg/dL)或游離鈣大於5.6 mg/dL之病例。
-
-      (2)限Breast Cancer併有蝕骨性骨轉移之病患。'
+    summary: 規範【. Ibandronic acid 2mg/2mL；6mg/6mL（如Bondronat concentrate for solution
+      for infusion）】之健保給付條件。 規範重點：限符合下列條件之一患者使用： (1)限用於治療惡性腫瘤之高血鈣併發症，且限用於血清鈣濃度超過2.75
+      mmol/L (11.0mg/dL)或游離鈣大於5.6 mg/dL之病例。
+    clinical_rules:
+    - indication: 5.5.3.4.1. Ibandronic acid 2mg/2mL；6mg/6mL（如Bondronat concentrate
+        for solution for infusion）(96/8/1、100/1/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.5.3.4.1. Ibandronic acid 2mg/2mL；6mg/6mL（如Bondronat concentrate
       for solution for infusion）(96/8/1、100/1/1)
@@ -1067,7 +1517,8 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Denosumab (如 Xgeva)
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
@@ -1078,9 +1529,56 @@ regulations:
     - Colorectal Cancer (大腸直腸癌)
     - Multiple Myeloma (多發性骨髓瘤)
     laboratory_criteria: []
-    summary: '限用於：
-
-      多發性骨髓瘤病人與乳癌、前列腺癌、肺癌、結腸直腸癌、膀胱癌、腎癌、子宮頸癌、卵巢癌、食道癌、胃癌及胰癌併有蝕骨性骨轉移之病人。'
+    summary: 適用於【Breast Cancer、Lung Cancer、Prostate Cancer】之健保給付。 規範重點：限用於： 多發性骨髓瘤病人與乳癌、前列腺癌、肺癌、結腸直腸癌、膀胱癌、腎癌、子宮頸癌、卵巢癌、食道癌、胃癌及胰癌併有蝕骨性骨轉移之病人。
+    clinical_rules:
+    - indication: Breast Cancer (乳癌)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Lung Cancer (肺癌)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Prostate Cancer (前列腺癌)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Ovarian Cancer (卵巢癌)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Urothelial Carcinoma / Bladder Cancer (尿路上皮癌)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Colorectal Cancer (大腸直腸癌)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Multiple Myeloma (多發性骨髓瘤)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.5.4. Denosumab（如Xgeva）(102/1/1、104/12/1、109/2/1、113/10/1)
     full_text: '限用於：
@@ -1094,20 +1592,28 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Rasburicase (如 Fasturtec注射劑)
   conditions_of_payment:
     indications:
     - Leukemia (白血病)
     laboratory_criteria: []
-    summary: '1.限用於血液腫瘤（急性白血病和high grade淋巴瘤）患者之下列情形：
-
-      (1)治療前或療程開始後，血清尿酸值高於10mg/dL；兒童高於8mg/dL者。
-
-      (2)有心臟或腎臟衰竭，無法忍受大量靜脈輸液者。
-
-      (3)對allopurinol過敏者。
-
-      2.使用以每日一至二劑並以三日為限。'
+    summary: 適用於【Leukemia】之健保給付。 規範重點：1.限用於血液腫瘤（急性白血病和high grade淋巴瘤）患者之下列情形： (1)治療前或療程開始後，血清尿酸值高於10mg/dL；兒童高於8mg/dL者。
+    clinical_rules:
+    - indication: Leukemia (白血病)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以三日為限
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 以三日為限
   reference_annotations:
     original_clause: 5.5.6. Rasburicase（如Fasturtec注射劑）(93/5/1)
     full_text: '1.限用於血液腫瘤（急性白血病和high grade淋巴瘤）患者之下列情形：
@@ -1130,14 +1636,25 @@ regulations:
   - (111/2/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Mecasermin (如 Increlex注射劑)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: "1.限由醫學中心或區域醫院小兒內分泌或新陳代謝專科醫師實施。\n2.Primary IGF-I deficiency\n(1)診斷：GH-IGF\
-      \ axis有明確的基因突變（即homozygotes或compound heterozygotes）（請檢附檢驗報告）。\n(2)開始治療條件：\n\
-      I. 2歲以上(111/2/1)。\nII.\t身高低於同性別同年齡正常孩童之-3SD。\nIII.生長速率一年小於4公分，需具醫療機構之身高檢查每隔三個月一次，至少六個月以上之紀錄。\n\
-      IV.骨齡比實際年齡遲緩至少二個標準差。\nV.血清生長激素濃度之基礎值或施行生長激素刺激試驗的最高值超過10 ng/mL。\nVI.血清I..."
+    summary: 規範【. Mecasermin（如Increlex注射劑）】之健保給付條件。 規範重點：1.限由醫學中心或區域醫院小兒內分泌或新陳代謝專科醫師實施。
+    clinical_rules:
+    - indication: 5.5.7. Mecasermin（如Increlex注射劑）(98/5/1、111/2/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.5.7. Mecasermin（如Increlex注射劑）(98/5/1、111/2/1)
     full_text: "1.限由醫學中心或區域醫院小兒內分泌或新陳代謝專科醫師實施。\n2.Primary IGF-I deficiency\n(1)診斷：GH-IGF\
@@ -1159,26 +1676,60 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Vosoritide (如 Voxzogo)
   conditions_of_payment:
     indications: []
     laboratory_criteria:
     - 血壓
-    summary: '限用於經衛生福利部國民健康署認定之2歲以上罕見疾病軟骨發育不全症（achondroplasia, ACH）且骨骺未閉合之病人，並符合下列所有條件：
-
-      經基因檢測具FGFR3基因變異者，需檢附基因診斷報告及衛生福利部國民健康署通報通過證明。
-
-      身高低於第三百分位，需檢附經地區醫院以上每3個月追蹤1次且至少追蹤半年之身高體重紀錄。
-
-      骨齡符合下列任一規範：
-
-      女性骨齡14歲以前，男性骨齡16歲以前。
-
-      女性骨齡14歲以後，男性骨齡16歲以後者，需每3個月追蹤生長速率，且至少追蹤半年，生長速率（AGV）每年需至少大於1.5公分。
-
-      限地區醫院以上層級具兒科遺傳學及新陳代謝學次專科醫師使用。
-
-      需經事前審查核准後使...'
+    - FGFR
+    summary: 規範【. Vosoritide（如Voxzogo）：】之健保給付條件。 主要條件包含：臨床檢驗需符合 FGFR = 變異；使用前須經事前審查核准。
+    clinical_rules:
+    - indication: 5.5.8. Vosoritide（如Voxzogo）：（114/5/1）
+      biomarkers:
+      - biomarker: FGFR
+        operator: '='
+        value: 變異
+        unit: ''
+        duration: 3個月
+        terminology_bindings:
+          loinc: 48972-4
+          snomed_ct: '450942006'
+          snomed_procedure: '766008006'
+          snomed_finding: '450942006'
+        source_grounding:
+          start_char: 80
+          end_char: 89
+          snippet: FGFR3基因變異
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 每次申請以1年為限
+    structured_biomarkers:
+    - biomarker: FGFR
+      operator: '='
+      value: 變異
+      unit: ''
+      duration: 3個月
+      terminology_bindings:
+        loinc: 48972-4
+        snomed_ct: '450942006'
+        snomed_procedure: '766008006'
+        snomed_finding: '450942006'
+      source_grounding:
+        start_char: 80
+        end_char: 89
+        snippet: FGFR3基因變異
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 292
+      end_char: 296
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 每次申請以1年為限
   reference_annotations:
     original_clause: 5.5.8. Vosoritide（如Voxzogo）：（114/5/1）
     full_text: '限用於經衛生福利部國民健康署認定之2歲以上罕見疾病軟骨發育不全症（achondroplasia, ACH）且骨骺未閉合之病人，並符合下列所有條件：
@@ -1233,15 +1784,70 @@ regulations:
     indications:
     - Diabetes Mellitus (糖尿病)
     - Osteoporosis (骨質疏鬆症)
-    laboratory_criteria: []
-    summary: '1.藥品種類
-
-      (1)Bisphosphonates（雙磷酸鹽類）：alendronate（如Fosamax）、 zoledronate 5mg (如Aclasta 5mg/100mL
-      solution for infusion)、risedronate（如Reosteo）、ibandronate 3mg/3mL (如Bonviva  3mg/3mL
-      solution for injection)
-
-      (2)Selective estrogen receptor modulators (SERM，選擇性雌激素接受體調節劑）：raloxifene（如Evista
-      ）、bazedoxifene（如Viv...'
+    laboratory_criteria:
+    - T-score
+    summary: 適用於【Diabetes Mellitus、Osteoporosis】之健保給付。 主要條件包含：臨床檢驗需符合 T-score <= -2.5。
+    clinical_rules:
+    - indication: Diabetes Mellitus (糖尿病)
+      biomarkers:
+      - biomarker: T-score
+        operator: <=
+        value: '-2.5'
+        unit: ''
+        duration: null
+        terminology_bindings:
+          loinc: 38265-5
+          snomed_ct: '312681000'
+          snomed_procedure: '312681000'
+          snomed_finding: '449781000'
+        source_grounding:
+          start_char: 871
+          end_char: 883
+          snippet: T-score≦-2.5
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Osteoporosis (骨質疏鬆症)
+      biomarkers:
+      - biomarker: T-score
+        operator: <=
+        value: '-2.5'
+        unit: ''
+        duration: null
+        terminology_bindings:
+          loinc: 38265-5
+          snomed_ct: '312681000'
+          snomed_procedure: '312681000'
+          snomed_finding: '449781000'
+        source_grounding:
+          start_char: 871
+          end_char: 883
+          snippet: T-score≦-2.5
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers:
+    - biomarker: T-score
+      operator: <=
+      value: '-2.5'
+      unit: ''
+      duration: null
+      terminology_bindings:
+        loinc: 38265-5
+        snomed_ct: '312681000'
+        snomed_procedure: '312681000'
+        snomed_finding: '449781000'
+      source_grounding:
+        start_char: 871
+        end_char: 883
+        snippet: T-score≦-2.5
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.6.1. 抗骨質再吸收劑（anti- resorptive）(101/3/1、101/5/1、102/2/1、102/8/1、103/2/1、103/10/1、104/8/1、106/12/1、114/3/1、115/7/1、115/8/1、115/9/1)
     full_text: '1.藥品種類
@@ -1284,29 +1890,28 @@ regulations:
   effective_dates:
   - (110/5/1)
   medications:
-    drug_classes: []
-    ingredients: []
+    drug_classes:
+    - 副甲狀腺素及類似劑 / 骨質疏鬆症治療藥物
+    ingredients:
+    - Teriparatide (特立帕肽 (副甲狀腺素))
   conditions_of_payment:
     indications:
     - Osteoporosis (骨質疏鬆症)
     laboratory_criteria: []
-    summary: '限用於
-
-      1.停經後骨質疏鬆婦女。
-
-      2.原發性或次發於性腺功能低下症造成骨質疏鬆之男性。
-
-      3.需符合下列條件：
-
-      (1)引起脊椎或髖部多於2 (含)處骨折，經評估（須於病歷載明）無法耐受副作用或在持續配合使用抗骨質吸收劑至少連續12個月的情況下仍發生至少1處新的骨折之病患。
-
-      (2)骨質疏鬆之程度，須經DXA 檢測 BMD 之T-score 小於或等於-3.0。
-
-      4.使用不得超過18支並於二年內使用完畢，使用期間內不得併用其他骨質疏鬆症治療藥物。
-
-      5.與romosozumab僅得擇一使用，除因耐受性不良，不得互換。(110/5/1)
-
-      備註DXA: Dual energy X-ray absorpti...'
+    summary: 適用於【Osteoporosis】之健保給付。
+    clinical_rules:
+    - indication: Osteoporosis (骨質疏鬆症)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.6.2. Parathyroid hormones and analogues （副甲狀腺素及類似劑）：teriparatide注射劑(101/7/1、110/5/1)
     full_text: '限用於
@@ -1341,14 +1946,26 @@ regulations:
     drug_classes:
     - 副甲狀腺素及類似劑 / 骨質疏鬆症治療藥物
     ingredients:
+    - Romosozumab (如 Evenity)
     - Teriparatide (特立帕肽 (副甲狀腺素))
   conditions_of_payment:
     indications:
     - Osteoporosis (骨質疏鬆症)
     laboratory_criteria: []
-    summary: "限用於停經後骨質疏鬆婦女。\n1.\t遠端橈骨、近端肱骨、脊椎或髖部，經DXA檢測BMD之T-score小於或等於-3.0，且需符合下列條件之一：(110/5/1、114/3/1、115/8/1)\n\
-      (1)\t於24個月內，多於2（含）處骨折，其中包含1處新診斷骨折。(110/5/1、114/3/1、115/8/1)\n(2)\t於24個月內，經評估（須於病歷載明）無法耐受副作用或在持續配合使用抗骨質吸收劑的情況下，仍發生至少1處新診斷骨折。(110/5/1、114/3/1、115/8/1)\n\
-      2.\t使用不得超過24支並於一年內使用完畢。\n3.\t使用期間內不得併用其他骨質疏鬆症治療藥物。\n4.\t與terip..."
+    summary: 適用於【Osteoporosis】之健保給付。
+    clinical_rules:
+    - indication: Osteoporosis (骨質疏鬆症)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 5.6.3. Romosozumab(如Evenity)：(110/5/1、114/3/1、115/8/1)
     full_text: "限用於停經後骨質疏鬆婦女。\n1.\t遠端橈骨、近端肱骨、脊椎或髖部，經DXA檢測BMD之T-score小於或等於-3.0，且需符合下列條件之一：(110/5/1、114/3/1、115/8/1)\n\

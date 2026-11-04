@@ -19,7 +19,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_DIR
 
 indexer = NHIIndexer(data_dir=DATA_DIR)
 parser = NHIRegulationParser(output_dir=DATA_DIR)
-atc_engine = ATCEngine()
+atc_engine = indexer.atc_engine  # Share single ATCEngine instance and cache!
 
 @app.route('/')
 def index():
@@ -39,8 +39,9 @@ def api_version():
     return jsonify({
         "status": "success",
         "app_name": "Taiwan NHI Drug Regulations Query Engine",
-        "version": "2026.08.21-v0.4",
-        "latest_features": "2026 August Official Update (583 regulations) + Google LangExtract entity grounding",
+        "version": "2026.08.21-OKF-v0.2",
+        "okf_version": "0.2",
+        "latest_features": "2026 August Official Update (583 regulations) + Unified Google OKF v0.2 & LangExtract entity grounding",
         "total_regulations": len(indexer.regulations),
         "who_atc_items": len(atc_engine.who_db),
         "atc_db_items": len(atc_engine.atc_db)
@@ -77,15 +78,25 @@ def api_search():
         has_more = False if not query.strip() else (offset + limit) < total_count
         is_limited = False
 
+    # Strip internal index helper keys ('_title_lower', etc.) for clean JSON serialization
+    clean_results = [
+        {k: v for k, v in r.items() if not k.startswith('_') and k != 'norm_full_text'}
+        for r in display_results
+    ]
+
+    primary_q = query.split(',')[0].split('，')[0].strip() if query else ''
+    expansions = atc_engine.expand_query(primary_q) if primary_q else []
+
     return jsonify({
         "status": "success",
         "total_count": total_count,
-        "count": len(display_results),
+        "count": len(clean_results),
         "offset": offset,
         "limit": limit,
         "has_more": has_more,
         "is_limited": is_limited,
-        "results": display_results
+        "atc_expansions": expansions,
+        "results": clean_results
     })
 
 @app.route('/api/chapters', methods=['GET'])
@@ -132,7 +143,7 @@ def api_upload():
         else:
             return jsonify({"status": "error", "message": "格式不符。僅支援 .docx 與 .pdf 檔案"}), 400
             
-        generated_files = parser.save_to_okf_yaml(recs)
+        generated_files = parser.save_to_okf_yaml(recs, source_doc=filename)
         indexer.load_and_index()
         
         return jsonify({
@@ -145,6 +156,6 @@ def api_upload():
         return jsonify({"status": "error", "message": str(e)}), 500
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
+    port = int(os.environ.get("PORT", 5001))
     print(f"Starting NHI Regulation Web Server on port {port}...")
-    app.run(host="0.0.0.0", port=port, debug=True)
+    app.run(host="0.0.0.0", port=port, debug=False)

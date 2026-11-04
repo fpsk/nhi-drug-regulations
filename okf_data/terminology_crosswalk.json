@@ -1,0 +1,2107 @@
+{
+  "standard_version": "2.0",
+  "description": "Standardized LOINC and Dual-Axis SNOMED CT Terminology Crosswalk for Taiwan NHI Payment Regulations (OKF v0.2) - Pass 2 Deep Clinical & Neo4j OMOP Athena Audited",
+  "total_biomarkers": 98,
+  "crosswalk": {
+    "PD-L1": {
+      "domain": "Precision Oncology",
+      "default_unit": "%",
+      "synonyms": [
+        "TPS",
+        "CPS",
+        "TC",
+        "IC",
+        "PDL1",
+        "PD-L1表現量"
+      ],
+      "loinc": {
+        "code": "85147-7",
+        "display": "PD-L1 by clone 22C3 in Tissue by Immune stain Report",
+        "variants": {
+          "clone_22C3": "85147-7",
+          "clone_SP142": "88185-4",
+          "clone_SP263": "94747-3"
+        }
+      },
+      "snomed_ct": {
+        "concept_id": "1255770005",
+        "display": "Presence of programmed cell death 1 ligand 1 in primary malignant neoplasm of lung by immunohistochemistry",
+        "procedure_id": "713028004",
+        "procedure_display": "Evaluation of programmed cell death ligand 1 (procedure)",
+        "finding_id": "1255770005",
+        "finding_display": "Presence of programmed cell death 1 ligand 1 in primary malignant neoplasm of lung by immunohistochemistry"
+      }
+    },
+    "HER2": {
+      "domain": "Precision Oncology",
+      "default_unit": "",
+      "synonyms": [
+        "HER-2",
+        "ERBB2",
+        "IHC 3+",
+        "FISH+",
+        "HER2過度表現",
+        "HER2弱陽性"
+      ],
+      "loinc": {
+        "code": "48676-1",
+        "display": "HER2 [Interpretation] in Tissue",
+        "variants": {
+          "IHC_immuno": "48676-1",
+          "FISH_rearrangement": "49683-6"
+        }
+      },
+      "snomed_ct": {
+        "concept_id": "285201000000109",
+        "display": "Human epidermal growth factor receptor-2 measurement (procedure)",
+        "procedure_id": "285201000000109",
+        "procedure_display": "Human epidermal growth factor receptor-2 measurement (procedure)",
+        "finding_id": "1162602001",
+        "finding_display": "Human epidermal growth factor receptor 2 gene amplification detected (clinical finding)"
+      }
+    },
+    "EGFR": {
+      "domain": "Precision Oncology",
+      "default_unit": "",
+      "synonyms": [
+        "Exon 19 del",
+        "L858R",
+        "T790M",
+        "EGFR突變"
+      ],
+      "loinc": {
+        "code": "21665-5",
+        "display": "EGFR gene mutations found in Blood or Tissue by Molecular genetics method Nominal",
+        "variants": {
+          "exon_19_del": "55764-5",
+          "exon_21_L858R": "55766-0",
+          "exon_20_T790M": "55769-4",
+          "exon_20_ins": "55770-2"
+        }
+      },
+      "snomed_ct": {
+        "concept_id": "1259776007",
+        "display": "Primary epidermal growth factor receptor positive non-small cell lung cancer",
+        "procedure_id": "427494002",
+        "procedure_display": "Epidermal growth factor receptor mutation analysis (procedure)",
+        "finding_id": "1259776007",
+        "finding_display": "Primary epidermal growth factor receptor positive non-small cell lung cancer"
+      }
+    },
+    "ALK": {
+      "domain": "Precision Oncology",
+      "default_unit": "",
+      "synonyms": [
+        "ALK融合",
+        "ALK重排",
+        "ALK陽性"
+      ],
+      "loinc": {
+        "code": "78205-2",
+        "display": "ALK gene rearrangements in Blood or Tissue by FISH",
+        "variants": {
+          "FISH": "78205-2",
+          "IHC": "47303-3"
+        }
+      },
+      "snomed_ct": {
+        "concept_id": "1255768001",
+        "display": "Presence of ALK tyrosine kinase receptor in primary malignant neoplasm of lung by immunohistochemistry",
+        "procedure_id": "63231000000107",
+        "procedure_display": "ALK whole genome sequencing/molecular test",
+        "finding_id": "1255768001",
+        "finding_display": "Presence of ALK tyrosine kinase receptor in primary malignant neoplasm of lung"
+      }
+    },
+    "ROS1": {
+      "domain": "Precision Oncology",
+      "default_unit": "",
+      "synonyms": [
+        "ROS-1",
+        "ROS1融合",
+        "ROS1陽性"
+      ],
+      "loinc": {
+        "code": "82535-6",
+        "display": "ROS1 gene rearrangement in Tissue by FISH"
+      },
+      "snomed_ct": {
+        "concept_id": "1255769009",
+        "display": "Presence of proto-oncogene tyrosine-protein kinase ROS in primary malignant neoplasm of lung by immunohistochemistry",
+        "procedure_id": "703714008",
+        "procedure_display": "ROS1 gene rearrangement test",
+        "finding_id": "1255769009",
+        "finding_display": "Presence of proto-oncogene tyrosine-protein kinase ROS in primary malignant neoplasm of lung"
+      }
+    },
+    "BRAF": {
+      "domain": "Precision Oncology",
+      "default_unit": "",
+      "synonyms": [
+        "V600E",
+        "BRAF V600",
+        "BRAF突變"
+      ],
+      "loinc": {
+        "code": "53844-7",
+        "display": "BRAF gene targeted mutation analysis in Blood or Tissue by Molecular genetics method",
+        "variants": {
+          "V600E_specific": "58415-1"
+        }
+      },
+      "snomed_ct": {
+        "concept_id": "1010891000000102",
+        "display": "BRAF targeted genetic test (observable entity)",
+        "procedure_id": "1010891000000102",
+        "procedure_display": "BRAF targeted genetic test",
+        "finding_id": "444309000",
+        "finding_display": "BRAF gene mutation positive (finding)"
+      }
+    },
+    "RAS": {
+      "domain": "Precision Oncology",
+      "default_unit": "",
+      "synonyms": [
+        "All-RAS",
+        "KRAS",
+        "NRAS",
+        "wild-type",
+        "野生型"
+      ],
+      "loinc": {
+        "code": "21702-6",
+        "display": "KRAS gene mutations found in Blood or Tissue by Molecular genetics method Nominal"
+      },
+      "snomed_ct": {
+        "concept_id": "444185007",
+        "display": "Wild type RAS gene (finding)",
+        "procedure_id": "412745001",
+        "procedure_display": "KRAS gene mutation analysis (procedure)",
+        "finding_id": "444185007",
+        "finding_display": "Wild type RAS gene (finding)"
+      }
+    },
+    "BCR-ABL": {
+      "domain": "Hematologic Oncology",
+      "default_unit": "",
+      "synonyms": [
+        "費城染色體",
+        "Ph+",
+        "BCR-ABL1",
+        "BCR-ABL1轉錄本"
+      ],
+      "loinc": {
+        "code": "21822-2",
+        "display": "t(9;22)(q34.1;q11)(ABL1,BCR) fusion transcript major break points in Blood or Tissue by Molecular genetics method"
+      },
+      "snomed_ct": {
+        "concept_id": "1237368006",
+        "display": "Acute myeloid leukemia with BCR-ABL1 (disorder)",
+        "procedure_id": "278183005",
+        "procedure_display": "BCR positive test (qualifier)",
+        "finding_id": "1237368006",
+        "finding_display": "Acute myeloid leukemia with BCR-ABL1 (disorder)"
+      }
+    },
+    "FLT3": {
+      "domain": "Hematologic Oncology",
+      "default_unit": "",
+      "synonyms": [
+        "FLT3-ITD",
+        "FLT3-TKD",
+        "FLT3突變"
+      ],
+      "loinc": {
+        "code": "54447-8",
+        "display": "FLT3 gene targeted mutation analysis in Bone marrow by Molecular genetics method"
+      },
+      "snomed_ct": {
+        "concept_id": "1251595001",
+        "display": "Myeloid/lymphoid neoplasm with FLT3 rearrangement (morphologic abnormality)",
+        "procedure_id": "444431006",
+        "procedure_display": "FLT3 mutation analysis (procedure)",
+        "finding_id": "1251595001",
+        "finding_display": "Myeloid/lymphoid neoplasm with FLT3 rearrangement"
+      }
+    },
+    "NTRK": {
+      "domain": "Precision Oncology",
+      "default_unit": "",
+      "synonyms": [
+        "NTRK1",
+        "NTRK2",
+        "NTRK3",
+        "NTRK基因融合"
+      ],
+      "loinc": {
+        "code": "93813-4",
+        "display": "NTRK1, NTRK2 and NTRK3 gene rearrangements in Tissue by Molecular genetics method"
+      },
+      "snomed_ct": {
+        "concept_id": "1290756000",
+        "display": "NTRK-rearranged spindle cell neoplasm (morphologic abnormality)",
+        "procedure_id": "836402004",
+        "procedure_display": "NTRK gene fusion test",
+        "finding_id": "1290756000",
+        "finding_display": "NTRK-rearranged spindle cell neoplasm"
+      }
+    },
+    "FGFR": {
+      "domain": "Precision Oncology",
+      "default_unit": "",
+      "synonyms": [
+        "FGFR1",
+        "FGFR2",
+        "FGFR3",
+        "FGFR4",
+        "FGFR融合",
+        "FGFR突變"
+      ],
+      "loinc": {
+        "code": "48972-4",
+        "display": "FGFR2 gene+FGFR3 gene mutations found in Blood or Tissue by Molecular genetics method Nominal"
+      },
+      "snomed_ct": {
+        "concept_id": "450942006",
+        "display": "Myeloid/lymphoid neoplasm with FGFR1 rearrangement (morphologic abnormality)",
+        "procedure_id": "766008006",
+        "procedure_display": "FGFR gene mutation test",
+        "finding_id": "450942006",
+        "finding_display": "Myeloid/lymphoid neoplasm with FGFR1 rearrangement"
+      }
+    },
+    "BRCA": {
+      "domain": "Precision Oncology",
+      "default_unit": "",
+      "synonyms": [
+        "BRCA1",
+        "BRCA2",
+        "gBRCA",
+        "sBRCA",
+        "BRCA突變"
+      ],
+      "loinc": {
+        "code": "21636-6",
+        "display": "BRCA1 gene mutations found in Blood or Tissue by Molecular genetics method Nominal"
+      },
+      "snomed_ct": {
+        "concept_id": "412734009",
+        "display": "BRCA1 gene mutation detected (clinical finding)",
+        "procedure_id": "412734009",
+        "procedure_display": "BRCA mutation test",
+        "finding_id": "412734009",
+        "finding_display": "BRCA1 gene mutation detected"
+      }
+    },
+    "HRD": {
+      "domain": "Precision Oncology",
+      "default_unit": "",
+      "synonyms": [
+        "HRD",
+        "GIS",
+        "Homologous Recombination Deficiency",
+        "同源重組修復缺失"
+      ],
+      "loinc": {
+        "code": "107286-7",
+        "display": "Homologous recombination deficiency status analysis in Tissue by Molecular genetics method"
+      },
+      "snomed_ct": {
+        "concept_id": "1255472001",
+        "display": "Deficiency of homologous recombination deoxyribonucleic acid repair (clinical finding)",
+        "procedure_id": "1156828005",
+        "procedure_display": "Homologous recombination deficiency test",
+        "finding_id": "1255472001",
+        "finding_display": "Deficiency of homologous recombination deoxyribonucleic acid repair"
+      }
+    },
+    "MSI-H/dMMR": {
+      "domain": "Precision Oncology",
+      "default_unit": "",
+      "synonyms": [
+        "MSI-H",
+        "dMMR",
+        "MSI",
+        "MMR",
+        "微衛星不穩定",
+        "錯配修復缺失"
+      ],
+      "loinc": {
+        "code": "81695-9",
+        "display": "Microsatellite instability in Cancer specimen Qualitative"
+      },
+      "snomed_ct": {
+        "concept_id": "925031000000104",
+        "display": "Mismatch repair microsatellite instability genetic test (procedure)",
+        "procedure_id": "925031000000104",
+        "procedure_display": "Mismatch repair microsatellite instability genetic test",
+        "finding_id": "735385007",
+        "finding_display": "Microsatellite instability-high solid malignant tumor"
+      }
+    },
+    "Bone_Marrow_Blasts": {
+      "domain": "Hematologic Oncology",
+      "default_unit": "%",
+      "synonyms": [
+        "骨髓芽細胞",
+        "blast cell",
+        "blasts",
+        "骨髓中之芽細胞"
+      ],
+      "loinc": {
+        "code": "11150-0",
+        "display": "Blasts/cells in Bone marrow"
+      },
+      "snomed_ct": {
+        "concept_id": "55161000237100",
+        "display": "Blast cell percent count in bone marrow (observable entity)",
+        "procedure_id": "165548000",
+        "procedure_display": "Blast cell count procedure",
+        "finding_id": "55161000237100",
+        "finding_display": "Blast cell percent count in bone marrow"
+      }
+    },
+    "MRD": {
+      "domain": "Hematologic Oncology",
+      "default_unit": "",
+      "synonyms": [
+        "微量殘留病灶",
+        "MRD",
+        "MRD陰性",
+        "MRD陽性"
+      ],
+      "loinc": {
+        "code": "93813-4",
+        "display": "Minimal residual disease assessment by Molecular genetics method"
+      },
+      "snomed_ct": {
+        "concept_id": "765421008",
+        "display": "Minimal residual disease positive (finding)",
+        "procedure_id": "765421008",
+        "procedure_display": "Minimal residual disease evaluation",
+        "finding_id": "765421008",
+        "finding_display": "Minimal residual disease positive"
+      }
+    },
+    "CD20": {
+      "domain": "Precision Oncology",
+      "default_unit": "%",
+      "synonyms": [
+        "CD20",
+        "CD-20",
+        "CD20陽性",
+        "CD20表現"
+      ],
+      "loinc": {
+        "code": "8119-0",
+        "display": "CD20 cells/cells in Blood"
+      },
+      "snomed_ct": {
+        "concept_id": "68761000237104",
+        "display": "CD20 positive percent count in blood (observable entity)",
+        "procedure_id": "68761000237104",
+        "procedure_display": "CD20 positive percent count in blood",
+        "finding_id": "124046001",
+        "finding_display": "CD20 positive (finding)"
+      }
+    },
+    "CD30": {
+      "domain": "Precision Oncology",
+      "default_unit": "%",
+      "synonyms": [
+        "CD30",
+        "Ki-1",
+        "CD30陽性"
+      ],
+      "loinc": {
+        "code": "29591-5",
+        "display": "CD30 cells/cells in Blood"
+      },
+      "snomed_ct": {
+        "concept_id": "117574005",
+        "display": "Lymphocyte positive for CD30 antigen (body structure)",
+        "procedure_id": "117574005",
+        "procedure_display": "CD30 evaluation",
+        "finding_id": "128804002",
+        "finding_display": "CD30 antigen positive lymphoproliferative disorder"
+      }
+    },
+    "CD19": {
+      "domain": "Precision Oncology",
+      "default_unit": "/uL",
+      "synonyms": [
+        "CD19",
+        "CD-19",
+        "CD19陽性"
+      ],
+      "loinc": {
+        "code": "8116-6",
+        "display": "CD19 cells [#/volume] in Blood"
+      },
+      "snomed_ct": {
+        "concept_id": "67881000237100",
+        "display": "CD19 positive absolute count in blood (observable entity)",
+        "procedure_id": "67881000237100",
+        "procedure_display": "CD19 positive absolute count in blood",
+        "finding_id": "124045002",
+        "finding_display": "CD19 positive (finding)"
+      }
+    },
+    "CD22": {
+      "domain": "Precision Oncology",
+      "default_unit": "%",
+      "synonyms": [
+        "CD22",
+        "CD22陽性"
+      ],
+      "loinc": {
+        "code": "8118-2",
+        "display": "CD2 cells/cells in Blood"
+      },
+      "snomed_ct": {
+        "concept_id": "68201000237106",
+        "display": "CD22 positive percent count in blood (observable entity)",
+        "procedure_id": "68201000237106",
+        "procedure_display": "CD22 positive percent count in blood",
+        "finding_id": "124048000",
+        "finding_display": "CD22 positive (finding)"
+      }
+    },
+    "CD33": {
+      "domain": "Precision Oncology",
+      "default_unit": "%",
+      "synonyms": [
+        "CD33",
+        "Siglec-3",
+        "CD33陽性"
+      ],
+      "loinc": {
+        "code": "20593-0",
+        "display": "CD33 cells/cells in Blood"
+      },
+      "snomed_ct": {
+        "concept_id": "67531000237101",
+        "display": "CD33 percent count in blood (observable entity)",
+        "procedure_id": "67531000237101",
+        "procedure_display": "CD33 percent count in blood",
+        "finding_id": "124053000",
+        "finding_display": "CD33 positive (finding)"
+      }
+    },
+    "CLDN18.2": {
+      "domain": "Precision Oncology",
+      "default_unit": "%",
+      "synonyms": [
+        "Claudin 18.2",
+        "CLDN18",
+        "Claudin-18.2",
+        "CLDN18.2陽性"
+      ],
+      "loinc": {
+        "code": "105011-1",
+        "display": "Claudin 18 [Interpretation] in Tissue by Immune stain Narrative"
+      },
+      "snomed_ct": {
+        "concept_id": "1230377002",
+        "display": "Claudin 18.2 positive neoplasm (finding)",
+        "procedure_id": "1230377002",
+        "procedure_display": "Claudin 18.2 immunohistochemistry test",
+        "finding_id": "1230377002",
+        "finding_display": "Claudin 18.2 positive neoplasm"
+      }
+    },
+    "Mitotic Index": {
+      "domain": "Precision Oncology",
+      "default_unit": "/50 HPF",
+      "synonyms": [
+        "核分裂像",
+        "mitotic count",
+        "HPF",
+        "核分裂計數"
+      ],
+      "loinc": {
+        "code": "44650-0",
+        "display": "Mitotic count per 10 HPF in Tumor"
+      },
+      "snomed_ct": {
+        "concept_id": "124980004",
+        "display": "Increased cell mitotic activity (clinical finding)",
+        "procedure_id": "399628005",
+        "procedure_display": "Mitotic count (observable entity)",
+        "finding_id": "124980004",
+        "finding_display": "Increased cell mitotic activity"
+      }
+    },
+    "MPN_Mutations": {
+      "domain": "Hematologic Oncology",
+      "default_unit": "",
+      "synonyms": [
+        "JAK2",
+        "CALR",
+        "MPL",
+        "V617F",
+        "JAK2突變"
+      ],
+      "loinc": {
+        "code": "80187-8",
+        "display": "JAK2 gene exon 14 targeted mutation analysis in Blood or Tissue by Molecular genetics method"
+      },
+      "snomed_ct": {
+        "concept_id": "1659461000000103",
+        "display": "JAK2-positive PV (polycythaemia vera) (disorder)",
+        "procedure_id": "765424001",
+        "procedure_display": "CALR/MPL/JAK2 mutation test",
+        "finding_id": "1659461000000103",
+        "finding_display": "JAK2-positive myeloproliferative disorder"
+      }
+    },
+    "AFP": {
+      "domain": "Precision Oncology",
+      "default_unit": "ng/mL",
+      "synonyms": [
+        "甲型胎兒蛋白",
+        "Alpha-fetoprotein",
+        "AFP"
+      ],
+      "loinc": {
+        "code": "1834-1",
+        "display": "Alpha-1-Fetoprotein [Mass/volume] in Serum or Plasma"
+      },
+      "snomed_ct": {
+        "concept_id": "166561008",
+        "display": "Alpha-fetoprotein above reference range (clinical finding)",
+        "procedure_id": "313868001",
+        "procedure_display": "Serum alpha-fetoprotein measurement",
+        "finding_id": "166561008",
+        "finding_display": "Alpha-fetoprotein above reference range"
+      }
+    },
+    "PSA": {
+      "domain": "Precision Oncology",
+      "default_unit": "ng/mL",
+      "synonyms": [
+        "前列腺特異抗原",
+        "PSA"
+      ],
+      "loinc": {
+        "code": "2857-1",
+        "display": "Prostate specific Ag [Mass/volume] in Serum or Plasma"
+      },
+      "snomed_ct": {
+        "concept_id": "396152005",
+        "display": "Prostate specific antigen above reference range (finding)",
+        "procedure_id": "396152005",
+        "procedure_display": "Prostate specific antigen measurement",
+        "finding_id": "396152005",
+        "finding_display": "Prostate specific antigen above reference range"
+      }
+    },
+    "ECOG": {
+      "domain": "Clinical Assessment",
+      "default_unit": "",
+      "synonyms": [
+        "日常體能狀態",
+        "ECOG",
+        "PS",
+        "體能狀況"
+      ],
+      "loinc": {
+        "code": "89247-1",
+        "display": "ECOG Performance Status score"
+      },
+      "snomed_ct": {
+        "concept_id": "424122007",
+        "display": "ECOG performance status finding (finding)",
+        "procedure_id": "423740007",
+        "procedure_display": "ECOG performance status assessment",
+        "finding_id": "424122007",
+        "finding_display": "ECOG performance status finding"
+      }
+    },
+    "HBV DNA": {
+      "domain": "Infectious Disease",
+      "default_unit": "IU/mL",
+      "synonyms": [
+        "B肝病毒量",
+        "HBV viral load",
+        "HBV DNA"
+      ],
+      "loinc": {
+        "code": "29615-2",
+        "display": "Hepatitis B virus DNA [#/volume] (viral load) in Serum or Plasma by NAA with probe detection"
+      },
+      "snomed_ct": {
+        "concept_id": "121912002",
+        "display": "Hepatitis B virus DNA assay (procedure)",
+        "procedure_id": "121912002",
+        "procedure_display": "Hepatitis B virus DNA assay",
+        "finding_id": "24771000237109",
+        "finding_display": "Hepatitis B virus DNA arbitrary concentration by NAA"
+      }
+    },
+    "HBeAg": {
+      "domain": "Infectious Disease",
+      "default_unit": "",
+      "synonyms": [
+        "e抗原",
+        "HBeAg陽性",
+        "HBeAg陰性"
+      ],
+      "loinc": {
+        "code": "13954-3",
+        "display": "Hepatitis B virus e Ag [Presence] in Serum or Plasma by Immunoassay"
+      },
+      "snomed_ct": {
+        "concept_id": "313476009",
+        "display": "Hepatitis B e antigen test (procedure)",
+        "procedure_id": "313476009",
+        "procedure_display": "Hepatitis B e antigen test",
+        "finding_id": "1001321000000104",
+        "finding_display": "Hepatitis B e antigen level (observable entity)"
+      }
+    },
+    "HBsAg": {
+      "domain": "Infectious Disease",
+      "default_unit": "",
+      "synonyms": [
+        "表面抗原",
+        "HBsAg陽性"
+      ],
+      "loinc": {
+        "code": "5196-1",
+        "display": "Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Immunoassay"
+      },
+      "snomed_ct": {
+        "concept_id": "165806002",
+        "display": "Hepatitis B surface antigen detected (clinical finding)",
+        "procedure_id": "1111171000000105",
+        "procedure_display": "Hepatitis B virus surface antigen presence in serum",
+        "finding_id": "165806002",
+        "finding_display": "Hepatitis B surface antigen detected"
+      }
+    },
+    "Anti-HCV": {
+      "domain": "Infectious Disease",
+      "default_unit": "",
+      "synonyms": [
+        "C肝抗體",
+        "Anti-HCV陽性"
+      ],
+      "loinc": {
+        "code": "13955-0",
+        "display": "Hepatitis C virus Ab [Presence] in Serum or Plasma by Immunoassay"
+      },
+      "snomed_ct": {
+        "concept_id": "314706002",
+        "display": "Hepatitis C antibody detected (clinical finding)",
+        "procedure_id": "1659191000000103",
+        "procedure_display": "Hepatitis C antibody testing service",
+        "finding_id": "314706002",
+        "finding_display": "Hepatitis C antibody detected"
+      }
+    },
+    "HCV RNA": {
+      "domain": "Infectious Disease",
+      "default_unit": "IU/mL",
+      "synonyms": [
+        "C肝病毒量",
+        "HCV RNA"
+      ],
+      "loinc": {
+        "code": "11011-4",
+        "display": "Hepatitis C virus RNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection"
+      },
+      "snomed_ct": {
+        "concept_id": "122366001",
+        "display": "Hepatitis C virus RNA assay (procedure)",
+        "procedure_id": "122366001",
+        "procedure_display": "Hepatitis C virus RNA assay",
+        "finding_id": "39331000237108",
+        "finding_display": "Hepatitis C virus RNA arbitrary concentration"
+      }
+    },
+    "CD4": {
+      "domain": "Infectious Disease",
+      "default_unit": "cells/uL",
+      "synonyms": [
+        "CD4淋巴球",
+        "CD4計數"
+      ],
+      "loinc": {
+        "code": "8123-2",
+        "display": "CD3+CD4+ (T4 helper) cells/cells in Blood"
+      },
+      "snomed_ct": {
+        "concept_id": "67961000237103",
+        "display": "CD4 positive percent count in blood (observable entity)",
+        "procedure_id": "314330005",
+        "procedure_display": "CD4 lymphocyte count procedure",
+        "finding_id": "67961000237103",
+        "finding_display": "CD4 positive percent count in blood"
+      }
+    },
+    "METAVIR": {
+      "domain": "Hepatology",
+      "default_unit": "",
+      "synonyms": [
+        "METAVIR",
+        "肝纖維化",
+        "F3",
+        "F4"
+      ],
+      "loinc": {
+        "code": "48794-2",
+        "display": "Fibrosis stage"
+      },
+      "snomed_ct": {
+        "concept_id": "770585004",
+        "display": "Liver transient elastography fibrosis score (observable entity)",
+        "procedure_id": "770585004",
+        "procedure_display": "Liver transient elastography examination",
+        "finding_id": "1197739005",
+        "finding_display": "Fibrosis of liver"
+      }
+    },
+    "HbA1c": {
+      "domain": "Metabolic",
+      "default_unit": "%",
+      "synonyms": [
+        "糖化血色素",
+        "糖化血紅素",
+        "A1C"
+      ],
+      "loinc": {
+        "code": "4548-4",
+        "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+      },
+      "snomed_ct": {
+        "concept_id": "43396009",
+        "display": "Hemoglobin A1c measurement (procedure)",
+        "procedure_id": "43396009",
+        "procedure_display": "Hemoglobin A1c measurement",
+        "finding_id": "43396009",
+        "finding_display": "Hemoglobin A1c measurement"
+      }
+    },
+    "Blood Glucose": {
+      "domain": "Metabolic",
+      "default_unit": "mg/dL",
+      "synonyms": [
+        "血糖",
+        "空腹血糖",
+        "飯後血糖"
+      ],
+      "loinc": {
+        "code": "2345-7",
+        "display": "Glucose [Mass/volume] in Serum or Plasma"
+      },
+      "snomed_ct": {
+        "concept_id": "33747003",
+        "display": "Glucose measurement, blood (procedure)",
+        "procedure_id": "33747003",
+        "procedure_display": "Glucose measurement, blood",
+        "finding_id": "365812005",
+        "finding_display": "Blood glucose level - finding"
+      }
+    },
+    "eGFR": {
+      "domain": "Renal",
+      "default_unit": "mL/min/1.73m2",
+      "synonyms": [
+        "腎絲球過濾率",
+        "eGFR"
+      ],
+      "loinc": {
+        "code": "62238-1",
+        "display": "Glomerular filtration rate [Volume Rate/Area] by Creatinine-based formula (CKD-EPI)/1.73 sq M",
+        "variants": {
+          "CKD_EPI_2009": "62238-1",
+          "CKD_EPI_2021": "98979-8",
+          "MDRD": "48642-3"
+        }
+      },
+      "snomed_ct": {
+        "concept_id": "1011481000000105",
+        "display": "eGFR using creatinine CKD-EPI equation per 1.73 square metres (observable entity)",
+        "procedure_id": "1011481000000105",
+        "procedure_display": "eGFR calculation procedure",
+        "finding_id": "1011481000000105",
+        "finding_display": "eGFR using creatinine CKD-EPI equation"
+      }
+    },
+    "Scr": {
+      "domain": "Renal",
+      "default_unit": "mg/dL",
+      "synonyms": [
+        "血清肌酸酐",
+        "肌酸酐",
+        "Creatinine",
+        "Scr"
+      ],
+      "loinc": {
+        "code": "2160-0",
+        "display": "Creatinine [Mass/volume] in Serum or Plasma"
+      },
+      "snomed_ct": {
+        "concept_id": "113075003",
+        "display": "Creatinine measurement, serum (procedure)",
+        "procedure_id": "113075003",
+        "procedure_display": "Creatinine measurement, serum",
+        "finding_id": "113075003",
+        "finding_display": "Creatinine measurement, serum"
+      }
+    },
+    "UACR": {
+      "domain": "Renal",
+      "default_unit": "mg/g",
+      "synonyms": [
+        "尿液微量白蛋白/肌酸酐比值",
+        "UACR",
+        "ACR"
+      ],
+      "loinc": {
+        "code": "9318-7",
+        "display": "Albumin/Creatinine [Mass Ratio] in Urine"
+      },
+      "snomed_ct": {
+        "concept_id": "149861000000104",
+        "display": "ACR (albumin to creatinine ratio) in urine by test strip semi-quantitative result (observable entity)",
+        "procedure_id": "149621000000106",
+        "procedure_display": "Provision of ACR urinalysis test",
+        "finding_id": "149861000000104",
+        "finding_display": "ACR in urine result"
+      }
+    },
+    "Total Cholesterol": {
+      "domain": "Cardiovascular",
+      "default_unit": "mg/dL",
+      "synonyms": [
+        "總膽固醇",
+        "Cholesterol",
+        "TC"
+      ],
+      "loinc": {
+        "code": "2093-3",
+        "display": "Cholesterol [Mass/volume] in Serum or Plasma"
+      },
+      "snomed_ct": {
+        "concept_id": "166830008",
+        "display": "Serum cholesterol above reference range (finding)",
+        "procedure_id": "121853004",
+        "procedure_display": "Measurement of cholesterol",
+        "finding_id": "166830008",
+        "finding_display": "Serum cholesterol above reference range"
+      }
+    },
+    "LDL-C": {
+      "domain": "Cardiovascular",
+      "default_unit": "mg/dL",
+      "synonyms": [
+        "低密度脂蛋白膽固醇",
+        "低密度脂蛋白",
+        "LDL",
+        "LDL-C"
+      ],
+      "loinc": {
+        "code": "13457-7",
+        "display": "Cholesterol in LDL [Mass/volume] in Serum or Plasma by calculation"
+      },
+      "snomed_ct": {
+        "concept_id": "166833005",
+        "display": "Serum LDL cholesterol level within reference range (finding)",
+        "procedure_id": "166833005",
+        "procedure_display": "Serum LDL cholesterol measurement",
+        "finding_id": "166833005",
+        "finding_display": "Serum LDL cholesterol level"
+      }
+    },
+    "HDL-C": {
+      "domain": "Cardiovascular",
+      "default_unit": "mg/dL",
+      "synonyms": [
+        "高密度脂蛋白膽固醇",
+        "高密度脂蛋白",
+        "HDL",
+        "HDL-C"
+      ],
+      "loinc": {
+        "code": "2085-9",
+        "display": "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+      },
+      "snomed_ct": {
+        "concept_id": "166832000",
+        "display": "Serum HDL cholesterol measurement (procedure)",
+        "procedure_id": "166832000",
+        "procedure_display": "Serum HDL cholesterol measurement",
+        "finding_id": "166832000",
+        "finding_display": "Serum HDL cholesterol measurement"
+      }
+    },
+    "TG": {
+      "domain": "Cardiovascular",
+      "default_unit": "mg/dL",
+      "synonyms": [
+        "三酸甘油酯",
+        "Triglyceride",
+        "TG"
+      ],
+      "loinc": {
+        "code": "2571-8",
+        "display": "Triglyceride [Mass/volume] in Serum or Plasma"
+      },
+      "snomed_ct": {
+        "concept_id": "166848004",
+        "display": "Serum triglycerides above reference range (finding)",
+        "procedure_id": "166848004",
+        "procedure_display": "Serum triglycerides measurement",
+        "finding_id": "166848004",
+        "finding_display": "Serum triglycerides above reference range"
+      }
+    },
+    "LVEF": {
+      "domain": "Cardiovascular",
+      "default_unit": "%",
+      "synonyms": [
+        "左心室射出分率",
+        "LVEF",
+        "心室射出分率"
+      ],
+      "loinc": {
+        "code": "10230-1",
+        "display": "Left ventricular Ejection fraction"
+      },
+      "snomed_ct": {
+        "concept_id": "250908004",
+        "display": "Left ventricular ejection fraction (observable entity)",
+        "procedure_id": "250908004",
+        "procedure_display": "Left ventricular ejection fraction assessment",
+        "finding_id": "863932003",
+        "finding_display": "Left ventricular ejection fraction decreased (finding)"
+      }
+    },
+    "NT-proBNP": {
+      "domain": "Cardiovascular",
+      "default_unit": "pg/mL",
+      "synonyms": [
+        "NT-proBNP",
+        "BNP"
+      ],
+      "loinc": {
+        "code": "33762-6",
+        "display": "Natriuretic peptide.B prohormone N-Terminal [Mass/volume] in Serum or Plasma"
+      },
+      "snomed_ct": {
+        "concept_id": "2531000237101",
+        "display": "B-type natriuretic peptide mass concentration in serum (observable entity)",
+        "procedure_id": "400977007",
+        "procedure_display": "Serum NT-proBNP measurement",
+        "finding_id": "681121000124101",
+        "finding_display": "B-type natriuretic peptide above reference range"
+      }
+    },
+    "NYHA": {
+      "domain": "Cardiovascular",
+      "default_unit": "",
+      "synonyms": [
+        "NYHA",
+        "紐約心臟學會心功能分級",
+        "NYHA Class"
+      ],
+      "loinc": {
+        "code": "88020-3",
+        "display": "Functional capacity NYHA"
+      },
+      "snomed_ct": {
+        "concept_id": "420816009",
+        "display": "New York Heart Association Classification (staging/scale)",
+        "procedure_id": "420816009",
+        "procedure_display": "New York Heart Association Classification",
+        "finding_id": "420816009",
+        "finding_display": "New York Heart Association Classification"
+      }
+    },
+    "Blood Pressure": {
+      "domain": "Cardiovascular",
+      "default_unit": "mmHg",
+      "synonyms": [
+        "血壓",
+        "收縮壓",
+        "舒張壓",
+        "BP",
+        "SBP",
+        "DBP"
+      ],
+      "loinc": {
+        "code": "85354-9",
+        "display": "Blood pressure panel with all children optional"
+      },
+      "snomed_ct": {
+        "concept_id": "75367002",
+        "display": "Blood pressure (observable entity)",
+        "procedure_id": "75367002",
+        "procedure_display": "Blood pressure measurement",
+        "finding_id": "75367002",
+        "finding_display": "Blood pressure"
+      }
+    },
+    "BMI": {
+      "domain": "Clinical Assessment",
+      "default_unit": "kg/m2",
+      "synonyms": [
+        "身體質量指數",
+        "BMI"
+      ],
+      "loinc": {
+        "code": "39156-5",
+        "display": "Body mass index (BMI) [Ratio]"
+      },
+      "snomed_ct": {
+        "concept_id": "60621009",
+        "display": "Body mass index (observable entity)",
+        "procedure_id": "60621009",
+        "procedure_display": "Body mass index measurement",
+        "finding_id": "60621009",
+        "finding_display": "Body mass index"
+      }
+    },
+    "Serum_Sodium": {
+      "domain": "Electrolytes",
+      "default_unit": "mEq/L",
+      "synonyms": [
+        "血清鈉",
+        "鈉離子",
+        "Sodium",
+        "Na"
+      ],
+      "loinc": {
+        "code": "2951-2",
+        "display": "Sodium [Moles/volume] in Serum or Plasma"
+      },
+      "snomed_ct": {
+        "concept_id": "104934005",
+        "display": "Sodium measurement, serum (procedure)",
+        "procedure_id": "104934005",
+        "procedure_display": "Sodium measurement, serum",
+        "finding_id": "104934005",
+        "finding_display": "Sodium measurement, serum"
+      }
+    },
+    "Albumin": {
+      "domain": "Hepatology",
+      "default_unit": "g/dL",
+      "synonyms": [
+        "血清白蛋白",
+        "白蛋白",
+        "Albumin"
+      ],
+      "loinc": {
+        "code": "1751-7",
+        "display": "Albumin [Mass/volume] in Serum or Plasma"
+      },
+      "snomed_ct": {
+        "concept_id": "104485008",
+        "display": "Albumin measurement, serum (procedure)",
+        "procedure_id": "104485008",
+        "procedure_display": "Albumin measurement, serum",
+        "finding_id": "1153477009",
+        "finding_display": "Serum albumin below reference range"
+      }
+    },
+    "ALT": {
+      "domain": "Hepatology",
+      "default_unit": "U/L",
+      "synonyms": [
+        "丙胺酸轉胺酶",
+        "ALT",
+        "GPT"
+      ],
+      "loinc": {
+        "code": "1742-6",
+        "display": "Alanine aminotransferase in Serum or Plasma"
+      },
+      "snomed_ct": {
+        "concept_id": "34608000",
+        "display": "Alanine aminotransferase measurement (procedure)",
+        "procedure_id": "34608000",
+        "procedure_display": "Alanine aminotransferase measurement",
+        "finding_id": "34608000",
+        "finding_display": "Alanine aminotransferase measurement"
+      }
+    },
+    "AST": {
+      "domain": "Hepatology",
+      "default_unit": "U/L",
+      "synonyms": [
+        "天門冬胺酸轉胺酶",
+        "AST",
+        "GOT"
+      ],
+      "loinc": {
+        "code": "1920-8",
+        "display": "Aspartate aminotransferase in Serum or Plasma"
+      },
+      "snomed_ct": {
+        "concept_id": "45896001",
+        "display": "Aspartate aminotransferase measurement (procedure)",
+        "procedure_id": "45896001",
+        "procedure_display": "Aspartate aminotransferase measurement",
+        "finding_id": "45896001",
+        "finding_display": "Aspartate aminotransferase measurement"
+      }
+    },
+    "Total Bilirubin": {
+      "domain": "Hepatology",
+      "default_unit": "mg/dL",
+      "synonyms": [
+        "總膽紅素",
+        "Total Bilirubin",
+        "T-Bil"
+      ],
+      "loinc": {
+        "code": "1975-2",
+        "display": "Bilirubin.total [Mass/volume] in Serum or Plasma"
+      },
+      "snomed_ct": {
+        "concept_id": "104174003",
+        "display": "Bilirubin measurement, total (procedure)",
+        "procedure_id": "104174003",
+        "procedure_display": "Bilirubin measurement, total",
+        "finding_id": "104174003",
+        "finding_display": "Bilirubin measurement, total"
+      }
+    },
+    "Child-Pugh": {
+      "domain": "Hepatology",
+      "default_unit": "",
+      "synonyms": [
+        "Child-Pugh",
+        "肝功能分級",
+        "Child-Pugh分級"
+      ],
+      "loinc": {
+        "code": "98152-2",
+        "display": "Total score [Child-Pugh]"
+      },
+      "snomed_ct": {
+        "concept_id": "3191000175106",
+        "display": "Child-Pugh score (observable entity)",
+        "procedure_id": "3191000175106",
+        "procedure_display": "Child-Pugh assessment",
+        "finding_id": "710065009",
+        "finding_display": "Child-Pugh score class A"
+      }
+    },
+    "Mayo": {
+      "domain": "Gastroenterology",
+      "default_unit": "",
+      "synonyms": [
+        "Mayo score",
+        "Mayo評分",
+        "梅奧分數"
+      ],
+      "loinc": {
+        "code": "54785-1",
+        "display": "Ulcerative colitis score in last 7 days"
+      },
+      "snomed_ct": {
+        "concept_id": "444061006",
+        "display": "Mayo score for ulcerative colitis (staging/scale)",
+        "procedure_id": "444061006",
+        "procedure_display": "Mayo score assessment",
+        "finding_id": "444061006",
+        "finding_display": "Mayo score for ulcerative colitis"
+      }
+    },
+    "Platelet": {
+      "domain": "Hematology",
+      "default_unit": "10^3/uL",
+      "synonyms": [
+        "血小板",
+        "Platelet",
+        "PLT"
+      ],
+      "loinc": {
+        "code": "777-3",
+        "display": "Platelets [#/volume] in Blood by Automated count"
+      },
+      "snomed_ct": {
+        "concept_id": "365632008",
+        "display": "Platelet count - finding (finding)",
+        "procedure_id": "165555003",
+        "procedure_display": "Platelet count within reference range",
+        "finding_id": "365632008",
+        "finding_display": "Platelet count - finding"
+      }
+    },
+    "WBC": {
+      "domain": "Hematology",
+      "default_unit": "/uL",
+      "synonyms": [
+        "白血球",
+        "WBC",
+        "Leukocyte"
+      ],
+      "loinc": {
+        "code": "6690-2",
+        "display": "Leukocytes [#/volume] in Blood by Automated count"
+      },
+      "snomed_ct": {
+        "concept_id": "767002",
+        "display": "White blood cell count (procedure)",
+        "procedure_id": "767002",
+        "procedure_display": "White blood cell count",
+        "finding_id": "767002",
+        "finding_display": "White blood cell count"
+      }
+    },
+    "ANC": {
+      "domain": "Hematology",
+      "default_unit": "/uL",
+      "synonyms": [
+        "中性球絕對計數",
+        "ANC"
+      ],
+      "loinc": {
+        "code": "751-8",
+        "display": "Neutrophils [#/volume] in Blood by Automated count"
+      },
+      "snomed_ct": {
+        "concept_id": "104096007",
+        "display": "Segmented neutrophil count, blood (procedure)",
+        "procedure_id": "104096007",
+        "procedure_display": "Segmented neutrophil count, blood",
+        "finding_id": "165519006",
+        "finding_display": "Neutrophil count outside reference range"
+      }
+    },
+    "Hemoglobin": {
+      "domain": "Hematology",
+      "default_unit": "g/dL",
+      "synonyms": [
+        "血紅素",
+        "血色素",
+        "Hemoglobin",
+        "Hb"
+      ],
+      "loinc": {
+        "code": "718-7",
+        "display": "Hemoglobin [Mass/volume] in Blood"
+      },
+      "snomed_ct": {
+        "concept_id": "104141003",
+        "display": "Semi-quantitative measurement of total hemoglobin in blood specimen (procedure)",
+        "procedure_id": "104141003",
+        "procedure_display": "Measurement of total hemoglobin",
+        "finding_id": "250220000",
+        "finding_display": "Hemoglobin finding"
+      }
+    },
+    "Ferritin": {
+      "domain": "Hematology",
+      "default_unit": "ng/mL",
+      "synonyms": [
+        "血清鐵蛋白",
+        "鐵蛋白",
+        "Ferritin"
+      ],
+      "loinc": {
+        "code": "2276-4",
+        "display": "Ferritin [Mass/volume] in Serum or Plasma"
+      },
+      "snomed_ct": {
+        "concept_id": "269821003",
+        "display": "Serum ferritin measurement (procedure)",
+        "procedure_id": "269821003",
+        "procedure_display": "Serum ferritin measurement",
+        "finding_id": "269821003",
+        "finding_display": "Serum ferritin measurement"
+      }
+    },
+    "Liver_Iron_Content": {
+      "domain": "Hematology",
+      "default_unit": "mg Fe/g",
+      "synonyms": [
+        "肝鐵濃度",
+        "LIC",
+        "Liver iron concentration"
+      ],
+      "loinc": {
+        "code": "57028-3",
+        "display": "Iron [Mass/mass] in Liver"
+      },
+      "snomed_ct": {
+        "concept_id": "30673003",
+        "display": "Iron measurement, liver tissue (procedure)",
+        "procedure_id": "30673003",
+        "procedure_display": "Iron measurement, liver tissue",
+        "finding_id": "14451000237100",
+        "finding_display": "Iron moles/mass in liver (observable entity)"
+      }
+    },
+    "INR": {
+      "domain": "Coagulation",
+      "default_unit": "",
+      "synonyms": [
+        "國際標準化比值",
+        "INR"
+      ],
+      "loinc": {
+        "code": "6301-6",
+        "display": "INR in Platelet poor plasma by Coagulation assay"
+      },
+      "snomed_ct": {
+        "concept_id": "396451008",
+        "display": "Prothrombin time (procedure)",
+        "procedure_id": "396451008",
+        "procedure_display": "Prothrombin time",
+        "finding_id": "165582006",
+        "finding_display": "International normalized ratio within reference range"
+      }
+    },
+    "Eosinophil": {
+      "domain": "Hematology",
+      "default_unit": "cells/uL",
+      "synonyms": [
+        "嗜酸性白血球",
+        "Eosinophil",
+        "EOS"
+      ],
+      "loinc": {
+        "code": "711-2",
+        "display": "Eosinophils [#/volume] in Blood by Automated count"
+      },
+      "snomed_ct": {
+        "concept_id": "365601007",
+        "display": "Eosinophil count - finding (finding)",
+        "procedure_id": "165522008",
+        "procedure_display": "Eosinophil count procedure",
+        "finding_id": "365601007",
+        "finding_display": "Eosinophil count - finding"
+      }
+    },
+    "PASI": {
+      "domain": "Dermatology",
+      "default_unit": "",
+      "synonyms": [
+        "PASI",
+        "乾癬面積暨嚴重度指數"
+      ],
+      "loinc": {
+        "code": "89244-8",
+        "display": "Psoriasis Area and Severity Index"
+      },
+      "snomed_ct": {
+        "concept_id": "866311000000102",
+        "display": "Psoriasis area and severity index (assessment scale)",
+        "procedure_id": "866311000000102",
+        "procedure_display": "Psoriasis area and severity index assessment",
+        "finding_id": "866341000000101",
+        "finding_display": "Psoriasis area and severity index score"
+      }
+    },
+    "EASI": {
+      "domain": "Dermatology",
+      "default_unit": "",
+      "synonyms": [
+        "EASI",
+        "濕疹面積與嚴重度指數"
+      ],
+      "loinc": {
+        "code": "89250-5",
+        "display": "Eczema Area and Severity Index score"
+      },
+      "snomed_ct": {
+        "concept_id": "713601004",
+        "display": "Eczema Area and Severity Index (observable entity)",
+        "procedure_id": "713601004",
+        "procedure_display": "Eczema Area and Severity Index assessment",
+        "finding_id": "713601004",
+        "finding_display": "Eczema Area and Severity Index"
+      }
+    },
+    "BSA": {
+      "domain": "Dermatology",
+      "default_unit": "%",
+      "synonyms": [
+        "體表面積",
+        "BSA"
+      ],
+      "loinc": {
+        "code": "8277-6",
+        "display": "Body surface area"
+      },
+      "snomed_ct": {
+        "concept_id": "301898006",
+        "display": "Body surface area (observable entity)",
+        "procedure_id": "301898006",
+        "procedure_display": "Body surface area measurement",
+        "finding_id": "301898006",
+        "finding_display": "Body surface area"
+      }
+    },
+    "DAS28": {
+      "domain": "Rheumatology",
+      "default_unit": "",
+      "synonyms": [
+        "DAS28",
+        "DAS-28"
+      ],
+      "loinc": {
+        "code": "75633-8",
+        "display": "Rheumatoid arthritis disease activity score Calculated by VectraDA"
+      },
+      "snomed_ct": {
+        "concept_id": "441870009",
+        "display": "Disease activity score using 28 joint count (observable entity)",
+        "procedure_id": "441870009",
+        "procedure_display": "Disease activity score using 28 joint count",
+        "finding_id": "444060007",
+        "finding_display": "Disease activity score in rheumatoid arthritis using CRP"
+      }
+    },
+    "BASDAI": {
+      "domain": "Rheumatology",
+      "default_unit": "",
+      "synonyms": [
+        "BASDAI",
+        "僵直性脊椎炎疾病活動指數"
+      ],
+      "loinc": {
+        "code": "89252-1",
+        "display": "Bath Ankylosing Spondylitis Disease Activity Index"
+      },
+      "snomed_ct": {
+        "concept_id": "441562009",
+        "display": "Bath Ankylosing Spondylitis Disease Activity Index score (observable entity)",
+        "procedure_id": "441562009",
+        "procedure_display": "BASDAI assessment",
+        "finding_id": "441562009",
+        "finding_display": "Bath Ankylosing Spondylitis Disease Activity Index score"
+      }
+    },
+    "CDAI": {
+      "domain": "Gastroenterology",
+      "default_unit": "",
+      "synonyms": [
+        "CDAI",
+        "克隆氏症疾病活動指數"
+      ],
+      "loinc": {
+        "code": "89253-9",
+        "display": "Crohn's Disease Activity Index"
+      },
+      "snomed_ct": {
+        "concept_id": "273364009",
+        "display": "Crohn's Disease Activity Index (assessment scale)",
+        "procedure_id": "1162446003",
+        "procedure_display": "Assessment using Crohn's Disease Activity Index",
+        "finding_id": "273364009",
+        "finding_display": "Crohn's Disease Activity Index"
+      }
+    },
+    "CRP": {
+      "domain": "Inflammation",
+      "default_unit": "mg/dL",
+      "synonyms": [
+        "C反應蛋白",
+        "CRP",
+        "hs-CRP"
+      ],
+      "loinc": {
+        "code": "1988-5",
+        "display": "C reactive protein [Mass/volume] in Serum or Plasma"
+      },
+      "snomed_ct": {
+        "concept_id": "55235003",
+        "display": "C-reactive protein measurement (procedure)",
+        "procedure_id": "55235003",
+        "procedure_display": "C-reactive protein measurement",
+        "finding_id": "55235003",
+        "finding_display": "C-reactive protein measurement"
+      }
+    },
+    "ESR": {
+      "domain": "Inflammation",
+      "default_unit": "mm/hr",
+      "synonyms": [
+        "紅血球沉降率",
+        "ESR"
+      ],
+      "loinc": {
+        "code": "4537-7",
+        "display": "Erythrocyte sedimentation rate by Westergren method"
+      },
+      "snomed_ct": {
+        "concept_id": "365649001",
+        "display": "Erythrocyte sedimentation rate - finding (finding)",
+        "procedure_id": "165468009",
+        "procedure_display": "ESR above reference range",
+        "finding_id": "365649001",
+        "finding_display": "Erythrocyte sedimentation rate - finding"
+      }
+    },
+    "SLEDAI": {
+      "domain": "Rheumatology",
+      "default_unit": "",
+      "synonyms": [
+        "SLEDAI",
+        "全身性紅斑狼瘡活動指數"
+      ],
+      "loinc": {
+        "code": "89254-7",
+        "display": "SLE Disease Activity Index"
+      },
+      "snomed_ct": {
+        "concept_id": "273863009",
+        "display": "Systemic lupus erythematosus disease activity index (staging/scale)",
+        "procedure_id": "273863009",
+        "procedure_display": "SLEDAI assessment",
+        "finding_id": "273863009",
+        "finding_display": "Systemic lupus erythematosus disease activity index"
+      }
+    },
+    "anti-dsDNA": {
+      "domain": "Rheumatology",
+      "default_unit": "IU/mL",
+      "synonyms": [
+        "抗雙股去氧核糖核酸抗體",
+        "anti-dsDNA",
+        "dsDNA"
+      ],
+      "loinc": {
+        "code": "5130-0",
+        "display": "DNA double strand Ab [Units/volume] in Serum"
+      },
+      "snomed_ct": {
+        "concept_id": "1107211000000103",
+        "display": "Double stranded DNA antibody arbitrary concentration in serum (observable entity)",
+        "procedure_id": "1107211000000103",
+        "procedure_display": "Double stranded DNA antibody measurement",
+        "finding_id": "165874005",
+        "finding_display": "Anti-dsDNA antibody positive"
+      }
+    },
+    "AQP4/NMO": {
+      "domain": "Immunology",
+      "default_unit": "",
+      "synonyms": [
+        "AQP4",
+        "NMO",
+        "泛視神經脊髓炎抗體"
+      ],
+      "loinc": {
+        "code": "61430-5",
+        "display": "Aquaporin 4 water channel Ab in Serum or Plasma by Immunoassay"
+      },
+      "snomed_ct": {
+        "concept_id": "3021000237104",
+        "display": "AQP4 antibody arbitrary concentration in serum (observable entity)",
+        "procedure_id": "3021000237104",
+        "procedure_display": "Aquaporin-4 antibody measurement",
+        "finding_id": "713642006",
+        "finding_display": "Neuromyelitis optica antibody positive"
+      }
+    },
+    "IgE": {
+      "domain": "Immunology",
+      "default_unit": "IU/mL",
+      "synonyms": [
+        "免疫球蛋白E",
+        "IgE"
+      ],
+      "loinc": {
+        "code": "19113-0",
+        "display": "IgE [Units/volume] in Serum or Plasma"
+      },
+      "snomed_ct": {
+        "concept_id": "181081000000106",
+        "display": "Total immunoglobulin E level (procedure)",
+        "procedure_id": "181081000000106",
+        "procedure_display": "Total immunoglobulin E level",
+        "finding_id": "165870001",
+        "finding_display": "Serum IgE level"
+      }
+    },
+    "IGA": {
+      "domain": "Dermatology",
+      "default_unit": "",
+      "synonyms": [
+        "IGA",
+        "主持人整體評估"
+      ],
+      "loinc": {
+        "code": "89255-4",
+        "display": "Investigator Global Assessment score"
+      },
+      "snomed_ct": {
+        "concept_id": "713602006",
+        "display": "Investigator Global Assessment score (observable entity)",
+        "procedure_id": "713602006",
+        "procedure_display": "Investigator Global Assessment",
+        "finding_id": "713602006",
+        "finding_display": "Investigator Global Assessment score"
+      }
+    },
+    "HLA-B": {
+      "domain": "Pharmacogenomics",
+      "default_unit": "",
+      "synonyms": [
+        "HLA-B*58:01",
+        "HLA-B*15:02",
+        "HLA-B"
+      ],
+      "loinc": {
+        "code": "79711-8",
+        "display": "HLA-B*58:01 [Presence] in Blood or Tissue"
+      },
+      "snomed_ct": {
+        "concept_id": "739072007",
+        "display": "HLA-B*58:01 positive (clinical finding)",
+        "procedure_id": "103562002",
+        "procedure_display": "Human leukocyte antigen B typing",
+        "finding_id": "739072007",
+        "finding_display": "HLA-B*58:01 positive"
+      }
+    },
+    "SpO2": {
+      "domain": "Pulmonary",
+      "default_unit": "%",
+      "synonyms": [
+        "血氧飽和度",
+        "SpO2",
+        "氧氣飽和度"
+      ],
+      "loinc": {
+        "code": "59408-5",
+        "display": "Oxygen saturation in Arterial blood by Pulse oximetry"
+      },
+      "snomed_ct": {
+        "concept_id": "431314004",
+        "display": "Peripheral oxygen saturation (observable entity)",
+        "procedure_id": "431314004",
+        "procedure_display": "Pulse oximetry",
+        "finding_id": "431314004",
+        "finding_display": "Peripheral oxygen saturation"
+      }
+    },
+    "FEV1": {
+      "domain": "Pulmonary",
+      "default_unit": "%",
+      "synonyms": [
+        "第一秒吐氣量",
+        "FEV1"
+      ],
+      "loinc": {
+        "code": "20150-9",
+        "display": "FEV1"
+      },
+      "snomed_ct": {
+        "concept_id": "447254005",
+        "display": "Percentage predicted FEV1 after bronchodilation (observable entity)",
+        "procedure_id": "447254005",
+        "procedure_display": "FEV1 measurement",
+        "finding_id": "46154005",
+        "finding_display": "Decreased forced expiratory volume"
+      }
+    },
+    "FVC": {
+      "domain": "Pulmonary",
+      "default_unit": "%",
+      "synonyms": [
+        "用力肺活量",
+        "FVC"
+      ],
+      "loinc": {
+        "code": "19868-9",
+        "display": "Forced vital capacity Respiratory system by Spirometry"
+      },
+      "snomed_ct": {
+        "concept_id": "50834005",
+        "display": "Forced vital capacity (procedure)",
+        "procedure_id": "50834005",
+        "procedure_display": "Forced vital capacity",
+        "finding_id": "50834005",
+        "finding_display": "Forced vital capacity"
+      }
+    },
+    "DLCO": {
+      "domain": "Pulmonary",
+      "default_unit": "%",
+      "synonyms": [
+        "一氧化碳擴散量",
+        "DLCO"
+      ],
+      "loinc": {
+        "code": "19911-7",
+        "display": "Diffusion capacity.carbon monoxide"
+      },
+      "snomed_ct": {
+        "concept_id": "36421003",
+        "display": "Carbon monoxide diffusing capacity measurement (procedure)",
+        "procedure_id": "36421003",
+        "procedure_display": "Carbon monoxide diffusing capacity measurement",
+        "finding_id": "36421003",
+        "finding_display": "Carbon monoxide diffusing capacity measurement"
+      }
+    },
+    "PaO2/FiO2": {
+      "domain": "Critical Care",
+      "default_unit": "mmHg",
+      "synonyms": [
+        "PaO2/FiO2",
+        "氧合指數",
+        "P/F ratio"
+      ],
+      "loinc": {
+        "code": "50989-3",
+        "display": "Horowitz index adjusted to temperature in Arterial blood"
+      },
+      "snomed_ct": {
+        "concept_id": "442440005",
+        "display": "Capillary oxygen saturation (finding)",
+        "procedure_id": "50989-3",
+        "procedure_display": "Horowitz index calculation",
+        "finding_id": "442440005",
+        "finding_display": "Capillary oxygen saturation"
+      }
+    },
+    "EDSS": {
+      "domain": "Neurology",
+      "default_unit": "",
+      "synonyms": [
+        "EDSS",
+        "擴展殘疾狀態量表"
+      ],
+      "loinc": {
+        "code": "89256-2",
+        "display": "Expanded Disability Status Scale"
+      },
+      "snomed_ct": {
+        "concept_id": "273554001",
+        "display": "Kurtzke multiple sclerosis rating scale (assessment scale)",
+        "procedure_id": "273554001",
+        "procedure_display": "Kurtzke multiple sclerosis rating scale",
+        "finding_id": "273554001",
+        "finding_display": "Kurtzke multiple sclerosis rating scale"
+      }
+    },
+    "MMSE": {
+      "domain": "Neurology",
+      "default_unit": "",
+      "synonyms": [
+        "簡易心智狀態問卷",
+        "MMSE"
+      ],
+      "loinc": {
+        "code": "72106-8",
+        "display": "Total score [MMSE]"
+      },
+      "snomed_ct": {
+        "concept_id": "273617000",
+        "display": "Mini-mental state examination (staging/scale)",
+        "procedure_id": "273617000",
+        "procedure_display": "Mini-mental state examination",
+        "finding_id": "273617000",
+        "finding_display": "Mini-mental state examination"
+      }
+    },
+    "NIHSS": {
+      "domain": "Neurology",
+      "default_unit": "",
+      "synonyms": [
+        "腦中風量表",
+        "NIHSS"
+      ],
+      "loinc": {
+        "code": "70182-1",
+        "display": "NIH Stroke Scale"
+      },
+      "snomed_ct": {
+        "concept_id": "450743008",
+        "display": "National Institutes of Health stroke scale score (observable entity)",
+        "procedure_id": "450742003",
+        "procedure_display": "Assessment using NIH stroke scale",
+        "finding_id": "450743008",
+        "finding_display": "National Institutes of Health stroke scale score"
+      }
+    },
+    "SMN2": {
+      "domain": "Rare Disease",
+      "default_unit": "copies",
+      "synonyms": [
+        "SMN2",
+        "SMN2基因套數"
+      ],
+      "loinc": {
+        "code": "97654-8",
+        "display": "SMN2 gene copy number in Blood or Tissue by Molecular genetics method"
+      },
+      "snomed_ct": {
+        "concept_id": "765426004",
+        "display": "SMN2 gene copy number (observable entity)",
+        "procedure_id": "765426004",
+        "procedure_display": "SMN2 gene copy number test",
+        "finding_id": "765426004",
+        "finding_display": "SMN2 gene copy number"
+      }
+    },
+    "Motor_Milestones": {
+      "domain": "Rare Disease",
+      "default_unit": "",
+      "synonyms": [
+        "HINE-2",
+        "CHOP-INTEND",
+        "運動里程碑"
+      ],
+      "loinc": {
+        "code": "LA24693-6",
+        "display": "Delayed motor milestones"
+      },
+      "snomed_ct": {
+        "concept_id": "881501000000104",
+        "display": "Gross Motor Function Classification System level finding",
+        "procedure_id": "909011000000102",
+        "procedure_display": "Developmental milestones assessment",
+        "finding_id": "881501000000104",
+        "finding_display": "Gross Motor Function Classification System level finding"
+      }
+    },
+    "Anti-AAV9": {
+      "domain": "Rare Disease",
+      "default_unit": "titer",
+      "synonyms": [
+        "抗AAV9抗體效價",
+        "AAV9"
+      ],
+      "loinc": {
+        "code": "101750-8",
+        "display": "Adeno-associated virus serotype Rh74 [Presence] in Serum"
+      },
+      "snomed_ct": {
+        "concept_id": "765428003",
+        "display": "Adeno-associated virus 9 antibody titer (observable entity)",
+        "procedure_id": "765428003",
+        "procedure_display": "AAV9 antibody titer assay",
+        "finding_id": "765428003",
+        "finding_display": "Adeno-associated virus 9 antibody titer"
+      }
+    },
+    "Ammonia": {
+      "domain": "Metabolic",
+      "default_unit": "umol/L",
+      "synonyms": [
+        "血氨",
+        "Ammonia",
+        "血中氨值"
+      ],
+      "loinc": {
+        "code": "16362-6",
+        "display": "Ammonia [Moles/volume] in Plasma"
+      },
+      "snomed_ct": {
+        "concept_id": "166604007",
+        "display": "Blood ammonia measurement (procedure)",
+        "procedure_id": "166604007",
+        "procedure_display": "Blood ammonia measurement",
+        "finding_id": "55281000237103",
+        "finding_display": "Ammonia molar concentration in blood"
+      }
+    },
+    "Phenylalanine": {
+      "domain": "Rare Disease",
+      "default_unit": "umol/L",
+      "synonyms": [
+        "苯丙胺酸",
+        "Phenylalanine",
+        "Phe"
+      ],
+      "loinc": {
+        "code": "14875-9",
+        "display": "Phenylalanine [Moles/volume] in Serum or Plasma"
+      },
+      "snomed_ct": {
+        "concept_id": "271060003",
+        "display": "Blood spot phenylalanine measurement (procedure)",
+        "procedure_id": "271060003",
+        "procedure_display": "Blood spot phenylalanine measurement",
+        "finding_id": "67711000237102",
+        "finding_display": "Phenylalanine molar concentration in blood spot"
+      }
+    },
+    "Carnitine": {
+      "domain": "Rare Disease",
+      "default_unit": "umol/L",
+      "synonyms": [
+        "游離肉鹼",
+        "Carnitine",
+        "Free carnitine"
+      ],
+      "loinc": {
+        "code": "14286-9",
+        "display": "Carnitine free (C0) in Serum or Plasma"
+      },
+      "snomed_ct": {
+        "concept_id": "104465009",
+        "display": "Acylcarnitine measurement (procedure)",
+        "procedure_id": "104465009",
+        "procedure_display": "Acylcarnitine measurement",
+        "finding_id": "104465009",
+        "finding_display": "Acylcarnitine measurement"
+      }
+    },
+    "tHcy": {
+      "domain": "Metabolic",
+      "default_unit": "umol/L",
+      "synonyms": [
+        "同半胱胺酸",
+        "同型半胱胺酸",
+        "tHcy",
+        "Homocysteine"
+      ],
+      "loinc": {
+        "code": "13965-9",
+        "display": "Homocysteine [Moles/volume] in Serum or Plasma"
+      },
+      "snomed_ct": {
+        "concept_id": "104733005",
+        "display": "Homocysteine measurement (procedure)",
+        "procedure_id": "104733005",
+        "procedure_display": "Homocysteine measurement",
+        "finding_id": "104733005",
+        "finding_display": "Homocysteine measurement"
+      }
+    },
+    "Ca_x_P": {
+      "domain": "Mineral & Bone",
+      "default_unit": "mg2/dL2",
+      "synonyms": [
+        "鈣磷乘積",
+        "Ca x P",
+        "鈣磷積"
+      ],
+      "loinc": {
+        "code": "13454-4",
+        "display": "Calcium-phosphorus product in Serum or Plasma"
+      },
+      "snomed_ct": {
+        "concept_id": "166732003",
+        "display": "Calcium-phosphate product (observable entity)",
+        "procedure_id": "50676-6",
+        "procedure_display": "Calcium-phosphorus product panel",
+        "finding_id": "166732003",
+        "finding_display": "Calcium-phosphate product"
+      }
+    },
+    "Calcium": {
+      "domain": "Mineral & Bone",
+      "default_unit": "mg/dL",
+      "synonyms": [
+        "血鈣",
+        "血清鈣",
+        "Calcium",
+        "Ca"
+      ],
+      "loinc": {
+        "code": "17861-6",
+        "display": "Calcium [Mass/volume] in Serum or Plasma"
+      },
+      "snomed_ct": {
+        "concept_id": "166701009",
+        "display": "Serum calcium level within reference range (finding)",
+        "procedure_id": "104934005",
+        "procedure_display": "Calcium measurement, serum",
+        "finding_id": "166701009",
+        "finding_display": "Serum calcium level within reference range"
+      }
+    },
+    "PTH-i": {
+      "domain": "Mineral & Bone",
+      "default_unit": "pg/mL",
+      "synonyms": [
+        "副甲狀腺素",
+        "完整副甲狀腺素",
+        "iPTH",
+        "PTH-i"
+      ],
+      "loinc": {
+        "code": "2731-8",
+        "display": "Parathyrin.intact [Mass/volume] in Serum or Plasma"
+      },
+      "snomed_ct": {
+        "concept_id": "1109581000000102",
+        "display": "PTH mass concentration in serum (observable entity)",
+        "procedure_id": "1109581000000102",
+        "procedure_display": "Parathyroid hormone measurement",
+        "finding_id": "1109581000000102",
+        "finding_display": "PTH mass concentration in serum"
+      }
+    },
+    "BCVA": {
+      "domain": "Ophthalmology",
+      "default_unit": "letters",
+      "synonyms": [
+        "最佳矯正視力",
+        "BCVA"
+      ],
+      "loinc": {
+        "code": "98507-7",
+        "display": "Visual acuity.binocular best corrected Eye"
+      },
+      "snomed_ct": {
+        "concept_id": "591361000124100",
+        "display": "Visual acuity test using LEA SYMBOLS distance visual acuity chart (procedure)",
+        "procedure_id": "591361000124100",
+        "procedure_display": "Visual acuity test using distance chart",
+        "finding_id": "422240008",
+        "finding_display": "Best corrected visual acuity"
+      }
+    },
+    "CRT": {
+      "domain": "Ophthalmology",
+      "default_unit": "um",
+      "synonyms": [
+        "中心視網膜厚度",
+        "CRT",
+        "CST"
+      ],
+      "loinc": {
+        "code": "79816-5",
+        "display": "Right retina Foveal thickness by OCT",
+        "variants": {
+          "right_eye": "79816-5",
+          "left_eye": "79817-3"
+        }
+      },
+      "snomed_ct": {
+        "concept_id": "713606009",
+        "display": "Central foveal thickness (observable entity)",
+        "procedure_id": "713606009",
+        "procedure_display": "Optical coherence tomography of retina",
+        "finding_id": "713606009",
+        "finding_display": "Central foveal thickness"
+      }
+    },
+    "T-score": {
+      "domain": "Bone Density",
+      "default_unit": "SD",
+      "synonyms": [
+        "骨質密度T值",
+        "T-score",
+        "T-Score",
+        "T值"
+      ],
+      "loinc": {
+        "code": "38265-5",
+        "display": "DXA Radius and Ulna [T-score] Bone density"
+      },
+      "snomed_ct": {
+        "concept_id": "312681000",
+        "display": "Bone density scan (procedure)",
+        "procedure_id": "312681000",
+        "procedure_display": "Bone density scan",
+        "finding_id": "449781000",
+        "finding_display": "Bone density below reference range"
+      }
+    }
+  }
+}

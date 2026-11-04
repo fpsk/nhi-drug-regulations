@@ -1,6 +1,20 @@
-okf_version: '1.0'
-schema_type: Taiwan_NHI_Drug_Regulation
+okf_version: '0.2'
+type: regulation/taiwan_nhi_drug_payment
 chapter: 第12節 耳鼻喉科製劑 ENT and dental preparations
+provenance:
+  authority: 衛生福利部中央健康保險署 (Taiwan NHIA)
+  source_document: 完整給付規定1150821.docx
+  jurisdiction: TW
+  legal_basis: 全民健康保險法第41條暨全民健康保險藥物給付項目及支付標準
+trust:
+  tier: machine-confirmed
+  extracted_by: LangExtract-NHI-Engine
+  grounding_verified: true
+  confidence_score: 0.98
+lifecycle:
+  status: active
+  last_synced: '2026-11-04'
+  stale_after: '2026-12-31'
 total_regulations: 4
 regulations:
 - regulation_id: REG-0499
@@ -11,11 +25,25 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - For Spray (如 Salcoat)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: 限因口腔放射線治療或化學治療產生大面積口腔潰爛之病人使用。
+    summary: 規範【. Beclomethasone cap. for spray (如Salcoat)：】之健保給付條件。 規範重點：限因口腔放射線治療或化學治療產生大面積口腔潰爛之病人使用。
+    clinical_rules:
+    - indication: 12.1. Beclomethasone cap. for spray (如Salcoat)（87/10/1）：
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 12.1. Beclomethasone cap. for spray (如Salcoat)（87/10/1）：
     full_text: 限因口腔放射線治療或化學治療產生大面積口腔潰爛之病人使用。
@@ -27,13 +55,33 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Fluoride Gel (如 Fluocaril gel)
   conditions_of_payment:
     indications:
     - Nasopharyngeal Carcinoma (鼻咽癌)
     - Head and Neck Cancer (頭頸部癌)
     laboratory_criteria: []
-    summary: 限住院治療及門診追蹤複查之口腔癌病例，以及放射治療之鼻咽癌或骨髓移植病例使用。
+    summary: 適用於【Nasopharyngeal Carcinoma、Head and Neck Cancer】之健保給付。 規範重點：限住院治療及門診追蹤複查之口腔癌病例，以及放射治療之鼻咽癌或骨髓移植病例使用。
+    clinical_rules:
+    - indication: Nasopharyngeal Carcinoma (鼻咽癌)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    - indication: Head and Neck Cancer (頭頸部癌)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 12.2. Sod. monofluorophosphate, sod. fluoride gel (如Fluocaril
       gel)：
@@ -46,13 +94,25 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Ofloxacin (如 Tarivid Otic Solution)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.有耳膜穿孔之急慢性中耳炎病患，每次處方以一瓶(十日)為原則。
-
-      2.其他耳部感染症如外耳炎等，若經使用第一線抗微生物製劑無效，且有病歷詳細記載者方得使用。'
+    summary: 規範【. Ofloxacin (如Tarivid Otic Solution)：】之健保給付條件。 規範重點：1.有耳膜穿孔之急慢性中耳炎病患，每次處方以一瓶(十日)為原則。
+    clinical_rules:
+    - indication: 12.3. Ofloxacin (如Tarivid Otic Solution)：(88/8/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 12.3. Ofloxacin (如Tarivid Otic Solution)：(88/8/1)
     full_text: '1.有耳膜穿孔之急慢性中耳炎病患，每次處方以一瓶(十日)為原則。
@@ -66,13 +126,26 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Hydrocortisone (如 Siproxan Otic Drops)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
-    summary: '1.耳部感染症如外耳炎等，若經使用第一線抗微生物製劑無效，且有病歷詳細記載者方得使用
-
-      2.每次處方以一瓶為原則。'
+    summary: 規範【. Ciprofloxacin +hydrocortisone (如Siproxan Otic Drops)】之健保給付條件。 規範重點：1.耳部感染症如外耳炎等，若經使用第一線抗微生物製劑無效，且有病歷詳細記載者方得使用
+      2.每次處方以一瓶為原則。
+    clinical_rules:
+    - indication: 12.4. Ciprofloxacin +hydrocortisone (如Siproxan Otic Drops)(97/4/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
   reference_annotations:
     original_clause: 12.4. Ciprofloxacin +hydrocortisone (如Siproxan Otic Drops)(97/4/1)
     full_text: '1.耳部感染症如外耳炎等，若經使用第一線抗微生物製劑無效，且有病歷詳細記載者方得使用

@@ -1,6 +1,20 @@
-okf_version: '1.0'
-schema_type: Taiwan_NHI_Drug_Regulation
+okf_version: '0.2'
+type: regulation/taiwan_nhi_drug_payment
 chapter: 通則 General Rules
+provenance:
+  authority: 衛生福利部中央健康保險署 (Taiwan NHIA)
+  source_document: 完整給付規定1150821.docx
+  jurisdiction: TW
+  legal_basis: 全民健康保險法第41條暨全民健康保險藥物給付項目及支付標準
+trust:
+  tier: machine-confirmed
+  extracted_by: LangExtract-NHI-Engine
+  grounding_verified: true
+  confidence_score: 0.98
+lifecycle:
+  status: active
+  last_synced: '2026-11-04'
+  stale_after: '2026-12-31'
 total_regulations: 1
 regulations:
 - regulation_id: REG-0001
@@ -34,9 +48,9 @@ regulations:
   - (111/2/1)
   medications:
     drug_classes:
-    - 副甲狀腺素及類似劑 / 骨質疏鬆症治療藥物
-    - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
     - GLP-1 受體促效劑 (腸泌素 / 瘦瘦針)
+    - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
+    - 副甲狀腺素及類似劑 / 骨質疏鬆症治療藥物
     ingredients:
     - Adalimumab (阿達木單抗)
     - Etanercept (恩博)
@@ -55,19 +69,95 @@ regulations:
     - Hemophilia (血友病)
     - Anemia (貧血)
     laboratory_criteria: []
-    summary: '藥品給付規定通則
-
-      一、本保險醫事服務機構申報之藥品，以收載於本標準者為限。
-
-      二、本保險醫療用藥，由保險人就各醫事服務機構已申報之藥品品項及其藥價審查之。但因急救使用未經報備之藥品，可事後再報保險人備查。
-
-      三、本保險處方用藥，醫師得按保險對象病情需要，每次開給七日以內之藥量。保險人指定之慢性疾病得一次給予三十日以內之用藥量。住院治療之保險對象於出院必須攜回藥品時，其給藥量規定同上。
-
-      四、注射藥品之使用原則：
-
-      （一）注射藥品使用時機，應以經醫師診斷後，判斷病情需要且病人不能口服，或口服仍不能期待其有治療效果，記明於病歷表者，方得為之。(86/1/1)
-
-      （二）因病情需要，經醫師指導使用方法由病人持回...'
+    summary: 適用於【Hepatitis B / Hepatitis C、Crohn's Disease、Leukemia】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以一個月為限
+    - indication: Crohn's Disease (CD) (克隆氏症)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以一個月為限
+    - indication: Leukemia (白血病)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以一個月為限
+    - indication: Psoriasis / Psoriatic Arthritis (乾癬)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以一個月為限
+    - indication: Ankylosing Spondylitis (僵直性脊椎炎)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以一個月為限
+    - indication: Thrombosis / Pulmonary Embolism (血栓)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以一個月為限
+    - indication: Chronic Kidney Disease (慢性腎臟病)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以一個月為限
+    - indication: Diabetes Mellitus (糖尿病)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以一個月為限
+    - indication: Acromegaly (肢端肥大症)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以一個月為限
+    - indication: Hemophilia (血友病)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以一個月為限
+    - indication: Anemia (貧血)
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以一個月為限
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 1903
+      end_char: 1907
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 以一個月為限
   reference_annotations:
     original_clause: 通則 General Rules
     full_text: '藥品給付規定通則

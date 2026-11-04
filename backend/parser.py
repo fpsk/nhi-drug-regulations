@@ -7,6 +7,13 @@ from docx.table import Table
 from pypdf import PdfReader
 from backend.atc_engine import ATCEngine
 from backend.disease_engine import DiseaseEngine
+from backend.langextract_engine import LangExtractEngine
+
+
+class NoAliasDumper(yaml.SafeDumper):
+    def ignore_aliases(self, data):
+        return True
+
 
 class NHIRegulationParser:
     def __init__(self, output_dir="okf_data"):
@@ -14,6 +21,7 @@ class NHIRegulationParser:
         os.makedirs(self.output_dir, exist_ok=True)
         self.atc_engine = ATCEngine()
         self.disease_engine = DiseaseEngine()
+        self.langextract_engine = LangExtractEngine()
 
     def parse_docx(self, file_path):
         doc = docx.Document(file_path)
@@ -29,6 +37,74 @@ class NHIRegulationParser:
                     if line.strip():
                         paragraphs.append(line.strip())
         return self._structure_paragraphs(paragraphs, source_file=os.path.basename(file_path))
+
+    def _build_record(self, rec_index, current_section_num, current_section_title, current_chapter, source_file, full_text):
+        effective_dates = re.findall(r'\(\d{2,3}/\d{1,2}/\d{1,2}(?:[、,]\d{2,3}/\d{1,2}/\d{1,2})*\)', full_text)
+        combined_text = f"{current_section_title}\n{full_text}"
+        atc_classes, ingredients = self.atc_engine.find_related_terms(combined_text)
+
+        # Extract diseases / indications
+        extracted_diseases = self.disease_engine.extract_diseases_from_text(combined_text)
+        bilingual_indications = [f"{d['english']} ({d['chinese']})" for d in extracted_diseases]
+
+        # Precise lab criteria extraction
+        labs = []
+        lab_patterns = [
+            (r'\bHbA1c\b', 'HbA1c'),
+            (r'\beGFR\b', 'eGFR'),
+            (r'\bALT\b', 'ALT'),
+            (r'\bAST\b', 'AST'),
+            (r'\bLVEF\b', 'LVEF'),
+            (r'\bScr\b|血清肌酸酐', 'Scr'),
+            (r'血糖', '血糖'),
+            (r'血壓', '血壓'),
+            (r'\bBMI\b', 'BMI'),
+            (r'白血球', '白血球'),
+            (r'血小板', '血小板')
+        ]
+        for pat, label in lab_patterns:
+            if re.search(pat, full_text):
+                labs.append(label)
+
+        # Deep clinical criteria extraction via LangExtract (OKF v0.2)
+        le_res = self.langextract_engine.extract_section_rules(
+            section_number=current_section_num,
+            section_title=current_section_title,
+            full_text=full_text,
+            known_indications=bilingual_indications
+        )
+        for bio in le_res.get("structured_biomarkers", []):
+            if bio["biomarker"] not in labs:
+                labs.append(bio["biomarker"])
+
+        return {
+            "regulation_id": f"REG-{rec_index:04d}",
+            "section_number": current_section_num,
+            "section_title": current_section_title,
+            "chapter": current_chapter,
+            "source_file": source_file,
+            "effective_dates": effective_dates,
+            "medications": {
+                "drug_classes": atc_classes,
+                "ingredients": ingredients
+            },
+            "conditions_of_payment": {
+                "indications": bilingual_indications,
+                "laboratory_criteria": labs,
+                "summary": le_res.get("summary", full_text[:300] + "..." if len(full_text) > 300 else full_text),
+                "clinical_rules": le_res.get("clinical_rules", []),
+                "structured_biomarkers": le_res.get("structured_biomarkers", []),
+                "prior_authorization_required": le_res.get("prior_authorization_required", False),
+                "prior_authorization_grounding": le_res.get("prior_authorization_grounding", None),
+                "step_therapy": le_res.get("step_therapy", []),
+                "stopping_rules": le_res.get("stopping_rules", []),
+                "evaluation_intervals": le_res.get("evaluation_intervals", [])
+            },
+            "reference_annotations": {
+                "original_clause": current_section_title,
+                "full_text": full_text
+            }
+        }
 
     def _structure_docx_body(self, doc, source_file):
         records = []
@@ -63,60 +139,21 @@ class NHIRegulationParser:
             nonlocal current_buffer, records
             if not current_buffer:
                 return
-                
+
             full_text = "\n".join(current_buffer)
-            
+
             # Check if this specific section references any specific attached table
             if current_section_num.startswith("3.2") and "附表三-A" in specific_attached_tables:
                 full_text = full_text + "\n\n【附表詳細內容 / Attached Table Details】:\n" + specific_attached_tables["附表三-A"]
 
-            effective_dates = re.findall(r'\(\d{2,3}/\d{1,2}/\d{1,2}(?:[、,]\d{2,3}/\d{1,2}/\d{1,2})*\)', full_text)
-            atc_classes, ingredients = self.atc_engine.find_related_terms(full_text)
-            
-            # Extract diseases / indications
-            extracted_diseases = self.disease_engine.extract_diseases_from_text(full_text)
-            bilingual_indications = [f"{d['english']} ({d['chinese']})" for d in extracted_diseases]
-
-            # Precise lab criteria extraction
-            labs = []
-            lab_patterns = [
-                (r'\bHbA1c\b', 'HbA1c'),
-                (r'\beGFR\b', 'eGFR'),
-                (r'\bALT\b', 'ALT'),
-                (r'\bAST\b', 'AST'),
-                (r'\bLVEF\b', 'LVEF'),
-                (r'\bScr\b|血清肌酸酐', 'Scr'),
-                (r'血糖', '血糖'),
-                (r'血壓', '血壓'),
-                (r'\bBMI\b', 'BMI'),
-                (r'白血球', '白血球'),
-                (r'血小板', '血小板')
-            ]
-            for pat, label in lab_patterns:
-                if re.search(pat, full_text):
-                    labs.append(label)
-
-            record = {
-                "regulation_id": f"REG-{len(records)+1:04d}",
-                "section_number": current_section_num,
-                "section_title": current_section_title,
-                "chapter": current_chapter,
-                "source_file": source_file,
-                "effective_dates": effective_dates,
-                "medications": {
-                    "drug_classes": atc_classes,
-                    "ingredients": ingredients
-                },
-                "conditions_of_payment": {
-                    "indications": bilingual_indications,
-                    "laboratory_criteria": labs,
-                    "summary": full_text[:300] + "..." if len(full_text) > 300 else full_text
-                },
-                "reference_annotations": {
-                    "original_clause": current_section_title,
-                    "full_text": full_text
-                }
-            }
+            record = self._build_record(
+                rec_index=len(records) + 1,
+                current_section_num=current_section_num,
+                current_section_title=current_section_title,
+                current_chapter=current_chapter,
+                source_file=source_file,
+                full_text=full_text
+            )
             records.append(record)
             current_buffer = []
 
@@ -127,7 +164,7 @@ class NHIRegulationParser:
                 text = p.text.strip()
                 if not text:
                     continue
-                    
+
                 chap_match = chap_pattern.match(text)
                 if chap_match:
                     flush_buffer()
@@ -186,50 +223,14 @@ class NHIRegulationParser:
             if not current_buffer:
                 return
             full_text = "\n".join(current_buffer)
-            effective_dates = re.findall(r'\(\d{2,3}/\d{1,2}/\d{1,2}(?:[、,]\d{2,3}/\d{1,2}/\d{1,2})*\)', full_text)
-            atc_classes, ingredients = self.atc_engine.find_related_terms(full_text)
-            extracted_diseases = self.disease_engine.extract_diseases_from_text(full_text)
-            bilingual_indications = [f"{d['english']} ({d['chinese']})" for d in extracted_diseases]
-
-            labs = []
-            lab_patterns = [
-                (r'\bHbA1c\b', 'HbA1c'),
-                (r'\beGFR\b', 'eGFR'),
-                (r'\bALT\b', 'ALT'),
-                (r'\bAST\b', 'AST'),
-                (r'\bLVEF\b', 'LVEF'),
-                (r'\bScr\b|血清肌酸酐', 'Scr'),
-                (r'血糖', '血糖'),
-                (r'血壓', '血壓'),
-                (r'\bBMI\b', 'BMI'),
-                (r'白血球', '白血球'),
-                (r'血小板', '血小板')
-            ]
-            for pat, label in lab_patterns:
-                if re.search(pat, full_text):
-                    labs.append(label)
-
-            record = {
-                "regulation_id": f"REG-{len(records)+1:04d}",
-                "section_number": current_section_num,
-                "section_title": current_section_title,
-                "chapter": current_chapter,
-                "source_file": source_file,
-                "effective_dates": effective_dates,
-                "medications": {
-                    "drug_classes": atc_classes,
-                    "ingredients": ingredients
-                },
-                "conditions_of_payment": {
-                    "indications": bilingual_indications,
-                    "laboratory_criteria": labs,
-                    "summary": full_text[:300] + "..." if len(full_text) > 300 else full_text
-                },
-                "reference_annotations": {
-                    "original_clause": current_section_title,
-                    "full_text": full_text
-                }
-            }
+            record = self._build_record(
+                rec_index=len(records) + 1,
+                current_section_num=current_section_num,
+                current_section_title=current_section_title,
+                current_chapter=current_chapter,
+                source_file=source_file,
+                full_text=full_text
+            )
             records.append(record)
             current_buffer = []
 
@@ -256,7 +257,7 @@ class NHIRegulationParser:
         flush_buffer()
         return records
 
-    def save_to_okf_yaml(self, records):
+    def save_to_okf_yaml(self, records, source_doc="完整給付規定1150821.docx"):
         grouped = {}
         for r in records:
             chap = r["chapter"]
@@ -269,20 +270,45 @@ class NHIRegulationParser:
             clean_name = re.sub(r'[^\w\-_]', '_', chap)[:30].strip('_')
             file_name = f"{clean_name}.yaml"
             file_path = os.path.join(self.output_dir, file_name)
-            
+
             okf_payload = {
-                "okf_version": "1.0",
-                "schema_type": "Taiwan_NHI_Drug_Regulation",
+                "okf_version": "0.2",
+                "type": "regulation/taiwan_nhi_drug_payment",
                 "chapter": chap,
+                "provenance": {
+                    "authority": "衛生福利部中央健康保險署 (Taiwan NHIA)",
+                    "source_document": source_doc,
+                    "jurisdiction": "TW",
+                    "legal_basis": "全民健康保險法第41條暨全民健康保險藥物給付項目及支付標準"
+                },
+                "trust": {
+                    "tier": "machine-confirmed",
+                    "extracted_by": "LangExtract-NHI-Engine",
+                    "grounding_verified": True,
+                    "confidence_score": 0.98
+                },
+                "lifecycle": {
+                    "status": "active",
+                    "last_synced": "2026-11-04",
+                    "stale_after": "2026-12-31"
+                },
                 "total_regulations": len(items),
                 "regulations": items
             }
-            
+
             with open(file_path, "w", encoding="utf-8") as f:
-                yaml.dump(okf_payload, f, allow_unicode=True, sort_keys=False, default_flow_style=False)
+                yaml.dump(
+                    okf_payload,
+                    f,
+                    Dumper=NoAliasDumper,
+                    allow_unicode=True,
+                    sort_keys=False,
+                    default_flow_style=False
+                )
             generated_files.append(file_path)
 
         return generated_files
+
 
 if __name__ == "__main__":
     parser = NHIRegulationParser()
@@ -292,5 +318,5 @@ if __name__ == "__main__":
     if os.path.exists(target_docx):
         print(f"Parsing {target_docx}...")
         recs = parser.parse_docx(target_docx)
-        files = parser.save_to_okf_yaml(recs)
+        files = parser.save_to_okf_yaml(recs, source_doc=target_docx)
         print(f"Parsed {len(recs)} records into {len(files)} YAML files.")

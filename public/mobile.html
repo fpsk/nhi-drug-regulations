@@ -28,7 +28,7 @@
                 <i class="fa-solid fa-prescription-bottle-medical brand-icon"></i>
                 <div>
                     <h2 style="font-size: 1.15rem; font-weight: 700; color: var(--text-main);">台灣健保藥物給付規定查詢</h2>
-                    <p class="brand-sub" style="color: #38bdf8; font-weight: 600;">2026年8月更新  v 0.4</p>
+                    <p class="brand-sub" style="color: #38bdf8; font-weight: 600;">2026年8月更新 · OKF v0.2</p>
                 </div>
             </div>
             <button id="themeToggleBtn" class="btn-theme" aria-label="Toggle Theme">
@@ -160,6 +160,13 @@
                             <i class="fa-regular fa-calendar-days"></i> 修訂：<span id="sheetDates"></span>
                         </div>
                     </div>
+                    <div id="sheetStructuredCriteriaSection" class="hidden" style="margin: 0.75rem 0; background: rgba(15, 23, 42, 0.55); border: 1px solid rgba(56, 189, 248, 0.25); border-radius: 10px; padding: 0.75rem;">
+                        <div style="font-size: 0.82rem; font-weight: 700; color: #38bdf8; margin-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: center;">
+                            <span><i class="fa-solid fa-microscope"></i> LangExtract 臨床門檻 (點選定位)</span>
+                            <span id="sheetPriorAuthBadge"></span>
+                        </div>
+                        <div id="sheetStructuredChips" style="display: flex; flex-wrap: wrap; gap: 0.4rem;"></div>
+                    </div>
                     <div class="sheet-text-box">
                         <div id="sheetFullText" class="sheet-full-text"></div>
                     </div>
@@ -205,6 +212,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
-    <script src="mobile.js?v=5"></script>
+    <script src="mobile.js?v=6"></script>
 </body>
 </html>

@@ -26,7 +26,7 @@
             <i class="fa-solid fa-prescription-bottle-medical logo-icon"></i>
             <div>
                 <h1 style="font-size: 1.5rem; font-weight: 700; color: #f8fafc;">台灣健保藥物給付規定查詢</h1>
-                <p class="subtitle" style="color: #38bdf8; font-weight: 600; margin-top: 0.15rem; font-size: 0.9rem;">2026年8月更新  v 0.4</p>
+                <p id="appVersionSubtitle" class="subtitle" style="color: #38bdf8; font-weight: 600; margin-top: 0.15rem; font-size: 0.9rem;">2026年8月更新 · Google OKF v0.2 (583 條規定)</p>
             </div>
         </div>
         <div class="nav-actions">
@@ -85,14 +85,49 @@
                     </select>
                 </div>
                 <div class="filter-item">
-                    <label><i class="fa-solid fa-vial-circle-check"></i> 檢驗指標 (Lab Criteria):</label>
+                    <label><i class="fa-solid fa-vial-circle-check"></i> 臨床指標 / 審查 (Clinical Criteria):</label>
                     <select id="labFilter">
-                        <option value="">全部檢驗指標 (All Labs)</option>
-                        <option value="HbA1c">HbA1c (糖化血色素)</option>
-                        <option value="eGFR">eGFR (腎絲球過濾率)</option>
-                        <option value="ALT">ALT / AST (肝功能)</option>
-                        <option value="LVEF">LVEF (左心室射出分率)</option>
-                        <option value="Scr">Scr / 血清肌酸酐</option>
+                        <option value="">全部指標與審查條件 (All Criteria)</option>
+                        <optgroup label="審查條件 (Authorization)">
+                            <option value="PRIOR_AUTH">需事前審查 (Prior Authorization Required)</option>
+                        </optgroup>
+                        <optgroup label="代謝、腎肝與心血管指標 (Metabolic / Renal / CV)">
+                            <option value="HbA1c">HbA1c (糖化血色素)</option>
+                            <option value="eGFR">eGFR (腎絲球過濾率)</option>
+                            <option value="LDL-C">LDL-C (低密度脂蛋白膽固醇)</option>
+                            <option value="LVEF">LVEF (左心室射出分率)</option>
+                            <option value="BNP/NT-proBNP">BNP / NT-proBNP (心衰竭指標)</option>
+                            <option value="UACR">UACR / UPCR (尿蛋白比值)</option>
+                            <option value="ALT">ALT / AST (肝功能轉胺酶)</option>
+                            <option value="Scr">Scr (血清肌酸酐)</option>
+                            <option value="Child-Pugh">Child-Pugh (肝硬化分級)</option>
+                            <option value="BMI">BMI (身體質量指數)</option>
+                        </optgroup>
+                        <optgroup label="腫瘤與基因生物標記 (Oncology Biomarkers)">
+                            <option value="PD-L1">PD-L1 (免疫檢查點表現量)</option>
+                            <option value="EGFR">EGFR (表皮生長因子受體突變)</option>
+                            <option value="HER2">HER2 (人類表皮生長因子受體2)</option>
+                            <option value="ALK">ALK (間變性淋巴瘤激酶)</option>
+                            <option value="BRCA">BRCA 1/2 (同源重組修復基因)</option>
+                            <option value="BRAF">BRAF / KRAS / ROS1</option>
+                            <option value="ECOG">ECOG (體能狀態評分)</option>
+                            <option value="PSA">PSA / AFP (腫瘤標記)</option>
+                        </optgroup>
+                        <optgroup label="免疫風濕、神經與骨質評估量表 (Clinical Scales)">
+                            <option value="DAS28">DAS28 (類風濕性關節炎活動度)</option>
+                            <option value="PASI">PASI / EASI (乾癬 / 異位性皮膚炎量表)</option>
+                            <option value="BASDAI">BASDAI (僵直性脊椎炎量表)</option>
+                            <option value="EDSS">EDSS (多發性硬化症失能量表)</option>
+                            <option value="MMSE">MMSE / CDR (認知功能量表)</option>
+                            <option value="DEXA/BMD">DEXA / BMD (骨質密度 T-score)</option>
+                        </optgroup>
+                        <optgroup label="病毒量與血液學指標 (Virology / Hematology)">
+                            <option value="HBV DNA">HBV DNA / HBsAg (B肝病毒指標)</option>
+                            <option value="HCV RNA">HCV RNA (C肝病毒指標)</option>
+                            <option value="Hb">Hb (血紅素)</option>
+                            <option value="ANC">ANC / 白血球 (嗜中性白血球)</option>
+                            <option value="Platelet">Platelet / 血小板</option>
+                        </optgroup>
                     </select>
                 </div>
                 <div class="stats-counter" id="statsCounter">
@@ -149,6 +184,13 @@
                             <span id="modalDates"></span>
                         </div>
                     </div>
+                    <div id="modalStructuredCriteriaSection" class="structured-criteria-section hidden">
+                        <div class="structured-criteria-header">
+                            <span><i class="fa-solid fa-microscope"></i> LangExtract 結構化臨床核對門檻 (點擊可高亮原始條文)</span>
+                            <span id="modalPriorAuthBadge"></span>
+                        </div>
+                        <div id="modalStructuredChips" class="criteria-chip-list"></div>
+                    </div>
                     <div class="annotated-text-box">
                         <h4><i class="fa-solid fa-quote-left"></i> 原始條文內文 (與給付條件標註)</h4>
                         <div id="modalFullText" class="full-text"></div>
@@ -195,6 +237,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
-    <script src="app.js?v=5"></script>
+    <script src="app.js?v=6"></script>
 </body>
 </html>

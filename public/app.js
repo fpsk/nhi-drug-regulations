@@ -429,13 +429,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 });
                 labBadges = uniqueBios.slice(0, 5).map(b => {
-                    let bindingInfo = '';
-                    if (b.terminology_bindings && b.terminology_bindings.loinc) {
-                        const loincCode = typeof b.terminology_bindings.loinc === 'object' ? b.terminology_bindings.loinc.code : b.terminology_bindings.loinc;
-                        if (loincCode) bindingInfo = ` [LOINC:${loincCode}]`;
-                    }
                     const snippetText = b.source_grounding ? (b.source_grounding.snippet || b.source_grounding.matched_text || '') : '';
-                    return `<span class="badge-biomarker" title="點擊內文可定位原始依據: ${escapeHtml(snippetText)}${escapeHtml(bindingInfo)}"><i class="fa-solid fa-vial-circle-check"></i> ${b.biomarker} ${b.operator === 'status' ? '' : b.operator}${b.value}${b.unit ? ' ' + b.unit : ''}</span>`;
+                    return `<span class="badge-biomarker" title="點擊內文可定位原始依據: ${escapeHtml(snippetText)}"><i class="fa-solid fa-vial-circle-check"></i> ${b.biomarker} ${b.operator === 'status' ? '' : b.operator}${b.value}${b.unit ? ' ' + b.unit : ''}</span>`;
                 }).join(' ');
             } else {
                 const labs = reg.conditions_of_payment.laboratory_criteria || [];
@@ -535,33 +530,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 bios.forEach((b) => {
                     const chip = document.createElement('button');
                     chip.className = 'criteria-chip';
-                    let loincBadge = '';
                     const snippetText = b.source_grounding ? (b.source_grounding.snippet || b.source_grounding.matched_text || '') : '';
-                    let tooltip = `點擊定位原文: ${snippetText}`;
-                    if (b.terminology_bindings) {
-                        const loinc = b.terminology_bindings.loinc;
-                        const snomed = b.terminology_bindings.snomed_ct;
-                        const snomedAxis = b.terminology_bindings.snomed_finding || b.terminology_bindings.snomed_Result_Axis;
-                        if (loinc) {
-                            const lCode = typeof loinc === 'object' ? loinc.code : loinc;
-                            const lDisp = typeof loinc === 'object' && loinc.display ? ` (${loinc.display})` : '';
-                            loincBadge = `<span style="background:rgba(56,189,248,0.18); color:#7dd3fc; padding:1px 5px; border-radius:4px; font-size:0.7rem; margin-left:4px; font-family:monospace;">LOINC:${lCode}</span>`;
-                            tooltip += `\nLOINC: ${lCode}${lDisp}`;
-                        }
-                        if (snomed) {
-                            const sCode = typeof snomed === 'object' ? snomed.code : snomed;
-                            const sDisp = typeof snomed === 'object' && snomed.display ? ` (${snomed.display})` : '';
-                            tooltip += `\nSNOMED-CT: ${sCode}${sDisp}`;
-                        }
-                        if (snomedAxis) {
-                            const saCode = typeof snomedAxis === 'object' ? snomedAxis.code : snomedAxis;
-                            const saDisp = typeof snomedAxis === 'object' && snomedAxis.display ? ` (${snomedAxis.display})` : '';
-                            loincBadge += `<span style="background:rgba(168,85,247,0.2); color:#d8b4fe; padding:1px 5px; border-radius:4px; font-size:0.7rem; margin-left:3px; font-family:monospace;">SCT:${saCode}</span>`;
-                            tooltip += `\nSNOMED Finding: ${saCode}${saDisp}`;
-                        }
-                    }
-                    chip.title = tooltip;
-                    chip.innerHTML = `<i class="fa-solid fa-vial" style="color:#10b981;"></i> <strong>${escapeHtml(b.biomarker)}</strong> ${escapeHtml(b.operator === 'status' ? '' : b.operator)} ${escapeHtml(String(b.value))}${b.unit ? ' ' + escapeHtml(b.unit) : ''}${loincBadge}`;
+                    chip.title = snippetText ? `點擊定位原文: ${snippetText}` : '點擊定位原文';
+                    chip.innerHTML = `<i class="fa-solid fa-vial" style="color:#10b981;"></i> <strong>${escapeHtml(b.biomarker)}</strong> ${escapeHtml(b.operator === 'status' ? '' : b.operator)} ${escapeHtml(String(b.value))}${b.unit ? ' ' + escapeHtml(b.unit) : ''}`;
                     chip.addEventListener('click', () => {
                         document.querySelectorAll('.criteria-chip').forEach(c => c.classList.remove('active'));
                         chip.classList.add('active');

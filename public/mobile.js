@@ -460,10 +460,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     const chip = document.createElement('button');
                     chip.style.cssText = 'background:rgba(30,41,59,0.9); border:1px solid rgba(56,189,248,0.3); border-radius:6px; padding:0.25rem 0.55rem; font-size:0.75rem; color:#e2e8f0; cursor:pointer;';
                     const snippetText = b.source_grounding ? (b.source_grounding.snippet || b.source_grounding.matched_text || '') : '';
-                    const loinc = b.terminology_bindings && b.terminology_bindings.loinc
-                        ? (typeof b.terminology_bindings.loinc === 'object' ? b.terminology_bindings.loinc.code : b.terminology_bindings.loinc)
-                        : '';
-                    chip.innerHTML = `<i class="fa-solid fa-vial" style="color:#10b981;"></i> <strong>${escapeHtml(b.biomarker)}</strong> ${escapeHtml(b.operator === 'status' ? '' : b.operator)} ${escapeHtml(String(b.value))}${b.unit ? ' ' + escapeHtml(b.unit) : ''}${loinc ? ` <small style="color:#7dd3fc;">[LOINC:${escapeHtml(loinc)}]</small>` : ''}`;
+                    chip.innerHTML = `<i class="fa-solid fa-vial" style="color:#10b981;"></i> <strong>${escapeHtml(b.biomarker)}</strong> ${escapeHtml(b.operator === 'status' ? '' : b.operator)} ${escapeHtml(String(b.value))}${b.unit ? ' ' + escapeHtml(b.unit) : ''}`;
                     chip.addEventListener('click', () => {
                         if (snippetText) scrollToMobileHighlight(reg.reference_annotations.full_text, snippetText);
                     });

@@ -17,7 +17,7 @@ lifecycle:
   stale_after: '2026-12-31'
 total_regulations: 5
 regulations:
-- regulation_id: REG-0494
+- regulation_id: REG-0484
   section_number: 11.2.1.
   section_title: 11.2.1. Flumazenil (如Anexate inj )限使用於：
   chapter: 第11節 解毒劑 Antidotes in poisoning
@@ -49,7 +49,7 @@ regulations:
     full_text: '1.全身麻醉病例
 
       2.Benzodiazepine類藥物中毒之鑑別診斷與治療病例。'
-- regulation_id: REG-0495
+- regulation_id: REG-0485
   section_number: 11.2.2.
   section_title: 11.2.2. Edrophonium chloride（如Enlon）：
   chapter: 第11節 解毒劑 Antidotes in poisoning
@@ -79,7 +79,7 @@ regulations:
   reference_annotations:
     original_clause: 11.2.2. Edrophonium chloride（如Enlon）：
     full_text: 限使用於手術麻醉病例，作為神經肌肉阻斷劑之拮抗劑。
-- regulation_id: REG-0496
+- regulation_id: REG-0486
   section_number: 11.2.3.
   section_title: 11.2.3. Mesna（如Uromitexan inj）：
   chapter: 第11節 解毒劑 Antidotes in poisoning
@@ -109,7 +109,7 @@ regulations:
   reference_annotations:
     original_clause: 11.2.3. Mesna（如Uromitexan inj）：
     full_text: 限癌症或骨髓移植病例使用大量Endoxan；Ifosphamide類藥物時使用。
-- regulation_id: REG-0497
+- regulation_id: REG-0487
   section_number: 11.2.4.
   section_title: 11.2.4. Trientine dihydrochloride (104/1/1）
   chapter: 第11節 解毒劑 Antidotes in poisoning
@@ -117,7 +117,9 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Penicillamine
+    - Trientine
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -143,7 +145,7 @@ regulations:
     full_text: '1.使用於經d-penicillamine治療耐受不佳之威爾森氏患者。
 
       2.需經事前審查核准後使用。'
-- regulation_id: REG-0498
+- regulation_id: REG-0488
   section_number: 11.2.5.
   section_title: 11.2.5. Fomepizole (如Fomeject)：（107/11/1）
   chapter: 第11節 解毒劑 Antidotes in poisoning

@@ -17,7 +17,7 @@ lifecycle:
   stale_after: '2026-12-31'
 total_regulations: 2
 regulations:
-- regulation_id: REG-0540
+- regulation_id: REG-0530
   section_number: 15.1.
   section_title: 15.1. Prostaglandin E 栓劑 (如Prostin E VT )：
   chapter: 第15節 婦科製劑 Gynecological preparations
@@ -25,7 +25,8 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Prostaglandin E (如 Prostin E VT)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -46,7 +47,7 @@ regulations:
   reference_annotations:
     original_clause: 15.1. Prostaglandin E 栓劑 (如Prostin E VT )：
     full_text: 限產科引產時使用。
-- regulation_id: REG-0541
+- regulation_id: REG-0531
   section_number: 15.2.
   section_title: 15.2. Atosiban(如Betosiban、Tractocile)：(111/9/1、114/2/1、114/8/1)
   chapter: 第15節 婦科製劑 Gynecological preparations
@@ -59,6 +60,7 @@ regulations:
     drug_classes: []
     ingredients:
     - Atosiban (如 Betosiban)
+    - Ritodrine
   conditions_of_payment:
     indications:
     - Heart Failure (心臟衰竭)

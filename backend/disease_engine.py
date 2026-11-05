@@ -255,8 +255,8 @@ DISEASE_DATABASE = {
     # Cardiology & Cardiovascular (心血管)
     "heart_failure": {
         "en": "Heart Failure",
-        "tc_terms": ["心臟衰竭", "心力衰竭", "充血性心臟衰竭"],
-        "aliases": ["heart failure", "chf"]
+        "tc_terms": ["心臟衰竭", "心衰竭", "慢性心衰竭", "收縮性心衰竭", "急性心衰竭", "心力衰竭", "充血性心臟衰竭"],
+        "aliases": ["heart failure", "chf", "hfref", "hfpef"]
     },
     "stroke": {
         "en": "Stroke / Cerebrovascular Accident",

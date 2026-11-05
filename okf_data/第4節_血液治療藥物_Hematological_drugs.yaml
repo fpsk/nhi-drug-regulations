@@ -15,9 +15,9 @@ lifecycle:
   status: active
   last_synced: '2026-11-04'
   stale_after: '2026-12-31'
-total_regulations: 20
+total_regulations: 19
 regulations:
-- regulation_id: REG-0149
+- regulation_id: REG-0147
   section_number: 4.1.1.
   section_title: 4.1.1. 紅血球生成素(簡稱EPO) hu-erythropoietin (如Eprex、Recormon)、darbepoetin
     alfa（如Aranesp ）、methoxy polyethylene glycol-epoetin beta（如 Mircera solution for
@@ -37,8 +37,9 @@ regulations:
     ingredients:
     - Darbepoetin Alfa (如 Aranesp)
     - Hu-Erythropoietin (如 Eprex)
-    - Oxy Polyethylene Glycol-Epoetin Beta (如 Mircera solution for injection in pre-filled
-      syringe)
+    - Mcg (如 Aranesp)
+    - Methoxy Polyethylene Glycol-Epoetin Beta (如 Mircera solution for injection in
+      pre-filled syringe)
   conditions_of_payment:
     indications:
     - Chronic Kidney Disease (慢性腎臟病)
@@ -248,7 +249,7 @@ regulations:
       Ⅱ.於接受治療第6週到第8週內Hb之上升值未達1 gm/dL。
 
       Ⅲ.化學治療結束後4週(104/12/1）。'
-- regulation_id: REG-0150
+- regulation_id: REG-0148
   section_number: 4.1.2.1.
   section_title: 4.1.2.1. 短效型注射劑（如filgrastim、lenograstim）：(85/10/1、93/4/1、96/1/1、101/6/1)
   chapter: 第4節 血液治療藥物 Hematological drugs
@@ -258,7 +259,8 @@ regulations:
   - (86/9/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Filgrastim
   conditions_of_payment:
     indications:
     - Fungal Infection / Mycosis (黴菌感染)
@@ -353,7 +355,7 @@ regulations:
       (8)週邊血液幹細胞的趨動─不論在自體或異體幹細胞的收集，應於收集前之4~5日開始皮下注射G-CSF，其劑量為10μg /KG/day。
 
       2.患者如白血球超過4000/cumm，或中性白血球超過2000/cumm時，應即停藥。惟當預估其骨髓功能不易恢復時，雖其血球已達上述標準，仍可給予半量之治療，若仍可維持血球數，則可給予四分之一劑量，若仍可維持血球數，則停用。任何時候，若白血球或中性白血球數過度增高，即應停藥。'
-- regulation_id: REG-0151
+- regulation_id: REG-0149
   section_number: 4.1.2.2.
   section_title: 4.1.2.2. 長效型注射劑(如pegfilgrastim)：(101/6/1、112/10/1、113/11/1、114/9/1)
   chapter: 第4節 血液治療藥物 Hematological drugs
@@ -363,7 +365,8 @@ regulations:
   - (112/10/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Pegfilgrastim
   conditions_of_payment:
     indications: []
     laboratory_criteria:
@@ -387,7 +390,7 @@ regulations:
     full_text: '1.限非骨髓性癌症病人(不限合併有骨髓侵犯)，在骨髓抑制性抗癌藥物治療後，且曾經發生白血球少於1000/cumm，或嗜中性白血球(ANC)少於500/cumm者使用。(112/10/1、113/11/1、114/9/1)
 
       2.同一化學治療療程內限用1支，亦不可併用短效型注射劑。(112/10/1)'
-- regulation_id: REG-0152
+- regulation_id: REG-0150
   section_number: 4.2.1.
   section_title: 4.2.1. Human Albumin：（100/8/1、111/2/1）
   chapter: 第4節 血液治療藥物 Hematological drugs
@@ -395,10 +398,14 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Albumin
+    - Dextran
+    - Protein
   conditions_of_payment:
     indications:
     - Liver Cirrhosis (肝硬化)
+    - Heart Failure (心臟衰竭)
     laboratory_criteria: []
     summary: 適用於【Liver Cirrhosis】之健保給付。
     clinical_rules:
@@ -427,7 +434,7 @@ regulations:
       \ %）\nⅢ開心手術用於維持體外循環液，用量限 37.5 gm。\n2.注意事項\n(1)血清白蛋白濃度檢驗日期限最近3天以內，如係多次注射，限上次注射後，最近3天內之結果。\n\
       (2)醫院於病例發生時，應填寫「全民健康保險病人使用Human Albumin申報表」(請詳附表四)，並附原始治療醫囑單於當月份申報醫療費用時送局辦理。\n\
       (3)醫療機構、醫師開立使用血液製劑時，應依血液製劑條例之規定辦理。（100/8/1）"
-- regulation_id: REG-0153
+- regulation_id: REG-0151
   section_number: 4.2.2.
   section_title: 4.2.2. 繞徑治療藥物(活化的第七因子 rVIIa, 如NovoSeven和活化的凝血酶原複合物濃縮劑 APCC, 如Feiba)：(88/6/1、93/7/1、94/2/1、98/8/1、103/4/1、105/2/1、105/8/1、108/10/1、109/12/1)
   chapter: 第4節 血液治療藥物 Hematological drugs
@@ -451,7 +458,9 @@ regulations:
   - (108/10/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Desmopressin
+    - Protein
   conditions_of_payment:
     indications:
     - Hemophilia (血友病)
@@ -502,7 +511,7 @@ regulations:
       \ 70~90μg/kg IV，q2-8 hr。\nⅡ.於術前、術中至傷口癒合期間，依患者實際出血及傷口癒合情況，使用APCC 50~100 U/kg\
       \ IV，q6-12 hr。\nⅢ.使用期間以傷口癒合即終止治療，並以7~10天為原則。(108/10/1)\n8.APCC，如Feiba，應依藥品仿單記載，每次使用劑量勿超過100U/kg，每日劑量勿超過200U/kg。(94/2/1)\n\
       9.二種繞徑治療藥物不得倂用，若有特殊情形需要併用(如接續性併用,sequential therapy)，須詳細記載病歷(含影像檢查、肌肉骨骼超音波或出血照片等)資料。(108/10/1)"
-- regulation_id: REG-0154
+- regulation_id: REG-0152
   section_number: 4.2.3.
   section_title: 4.2.3. 第八、第九凝血因子製劑（103/4/1、106/9/1、106/12/1、107/11/1、108/10/1、109/3/1、109/9/1、109/12/1、110/3/1、111/1/1、111/3/1、112/3/1、112/5/1、113/7/1、114/3/1）：
   chapter: 第4節 血液治療藥物 Hematological drugs
@@ -521,7 +530,9 @@ regulations:
   - (109/9/1、110/3/1、111/1/1、112/5/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Emicizumab
+    - Immune
   conditions_of_payment:
     indications:
     - Hemophilia (血友病)
@@ -632,7 +643,7 @@ regulations:
       (6)不得與emicizumab合併使用。
 
       (7)限未滿9歲之兒童使用。'
-- regulation_id: REG-0155
+- regulation_id: REG-0153
   section_number: 4.2.4.
   section_title: 4.2.4. 類血友病治療藥品，VWF/FVIII濃縮製劑(如 Haemate P, Alphanate等)、 Desmopressin(DDAVP)
     等：(103/4/1)
@@ -641,7 +652,9 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Desmopressin
+    - Tranexamic
   conditions_of_payment:
     indications:
     - Hemophilia (血友病)
@@ -687,7 +700,7 @@ regulations:
       Ⅲ.Type 2 VWD：剖腹生產或自然生產預期要進行episiotomy時，要給予藥物預防性治療。\nⅣ.Type 3 VWD：各種生產方式都需要給予藥物預防性治療。\n\
       Ⅴ.對於Type 1及Type 2 VWD的懷孕婦女，應該要在懷孕第三期與生產前檢查VWF:RCo與VIII:C。如果VWF:RCo <50IU/dL，產程期間則應該給予藥物預防治療。Type\
       \ 2B懷孕婦女應特別注意血小板有無減少。\nⅥ.生產後至少應該維持VWF:RCo > 50IU/dL 3-5天。"
-- regulation_id: REG-0156
+- regulation_id: REG-0154
   section_number: 4.2.5.
   section_title: 4.2.5. 第二、七、九、十凝血因子複合製劑(如Beriplex)：(105/7/1)
   chapter: 第4節 血液治療藥物 Hematological drugs
@@ -695,7 +708,8 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Coumarin
   conditions_of_payment:
     indications:
     - Liver Cirrhosis (肝硬化)
@@ -735,7 +749,7 @@ regulations:
       4.因服用coumarin類抗凝血劑造成併發症引起的嚴重出血。
 
       5.缺乏維生素K併發的嚴重出血或需緊急手術時。'
-- regulation_id: REG-0157
+- regulation_id: REG-0155
   section_number: 4.2.6.
   section_title: 4.2.6. Human plasma coagulation factor XIII (如Fibrogammin) (107/8/1、108/10/1、109/12/1)
   chapter: 第4節 血液治療藥物 Hematological drugs
@@ -777,7 +791,7 @@ regulations:
       \ 全民健康保險血友病患使用第十三凝血因子在家治療紀錄）及登錄醫療評估追蹤紀錄表(附表十八之五)。醫療機構、醫師開立使用血液製劑時，應依血液製劑條例之規定辦理。(107/8/1、108/10/1、109/12/1)\n\
       3.\t預防性治療(primary  prophylaxis)：限嚴重型或中度(Factor XIIIa小於5IU/dL) 之XIII因子缺乏病人。預防性使用之病患建議每隔1-2年監測血清中之第十三凝血因子濃度。\n\
       4.\t初次使用需經事前審查核准後使用。"
-- regulation_id: REG-0158
+- regulation_id: REG-0156
   section_number: 4.2.7.
   section_title: 4.2.7. 雙特異性單株抗體藥物(如emicizumab)：(108/11/1、109/8/1、109/12/1、112/7/1、113/7/1、115/3/1、115/8/1)
   chapter: 第4節 血液治療藥物 Hematological drugs
@@ -793,6 +807,7 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Emicizumab
     - Fitusiran (費妥斯蘭)
   conditions_of_payment:
     indications:
@@ -829,7 +844,7 @@ regulations:
       4.初次使用需經事前審查後核准後使用。(108/11/1、109/8/1、112/7/1、115/3/1)\n5.門診之血友病病人得攜回一至二劑量(至多攜回一個月)備用，繼續治療時，比照化療以「療程」方式處理，並查驗上次治療紀錄(如附表十八之六─全民健康保險血友病患者使用雙特異性單株抗體藥物在家治療紀錄表)及登錄醫療評估追蹤紀錄表(附表十八之五)：(109/8/1、109/12/1)\n\
       (1)\t每1週皮下注射一次者，可攜回二次劑量。\n(2)\t每2週皮下注射一次者，可攜回一次劑量。\n(3)\t每4週皮下注射一次者，則每4週均回醫院領藥注射並觀察追蹤。\n\
       6.不得與第八凝血因子製劑及fitusiran併用。(113/7/1、115/8/1)"
-- regulation_id: REG-0159
+- regulation_id: REG-0157
   section_number: 4.2.8.
   section_title: 4.2.8. fitusiran(如Qfitlia)：(115/8/1)
   chapter: 第4節 血液治療藥物 Hematological drugs
@@ -838,6 +853,7 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Emicizumab
     - Fitusiran (費妥斯蘭)
   conditions_of_payment:
     indications:
@@ -892,7 +908,7 @@ regulations:
       排除使用的情形：出現肝功能損害者(Child-Pugh分級A、B或C)。
 
       與雙特異性單株抗體藥物(如emicizumab)不得併用。'
-- regulation_id: REG-0160
+- regulation_id: REG-0158
   section_number: 4.3.1.
   section_title: 4.3.1. Deferasirox（如Exjade、Jadenu）(96/7/1、104/12/1、108/7/1)：
   chapter: 第4節 血液治療藥物 Hematological drugs
@@ -903,6 +919,7 @@ regulations:
     drug_classes: []
     ingredients:
     - Deferasirox (如 Exjade)
+    - Liver
   conditions_of_payment:
     indications:
     - Anemia (貧血)
@@ -1078,7 +1095,7 @@ regulations:
       iron content）> 7mg/g dry weight者。
 
       (2)當肝臟鐵質< 3mg/g dry weight，或血清內鐵蛋白（Ferritin）< 300μg/L時即停藥。'
-- regulation_id: REG-0161
+- regulation_id: REG-0159
   section_number: 4.3.2.1.
   section_title: 4.3.2.1. Eltrombopag (如Revolade)(108/6/1、109/2/1、112/1/1、115/3/1)
   chapter: 第4節 血液治療藥物 Hematological drugs
@@ -1107,6 +1124,7 @@ regulations:
     drug_classes: []
     ingredients:
     - Eltrombopag (如 Revolade)
+    - Romiplostim
   conditions_of_payment:
     indications:
     - Liver Cirrhosis (肝硬化)
@@ -1355,7 +1373,7 @@ regulations:
       需經事前審查核准後使用，使用劑量上限為 150 mg/天。首次申請之療程以4個月為限，之後每6個月評估及申請，送審時需檢附血液檢查報告。(108/6/1、115/3/1)
 
       Eltrombopag與romiplostim僅得擇一使用，惟有在耐受不良時方可轉換使用。(112/1/1、115/3/1)'
-- regulation_id: REG-0162
+- regulation_id: REG-0160
   section_number: 4.3.2.2.
   section_title: 4.3.2.2. Romiplostim (如Romiplate) (108/6/1、112/1/1)
   chapter: 第4節 血液治療藥物 Hematological drugs
@@ -1374,6 +1392,7 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Eltrombopag
     - Romiplostim (如 Romiplate)
   conditions_of_payment:
     indications:
@@ -1499,7 +1518,7 @@ regulations:
       (3)需經事前審查核准後使用。首次申請之療程以4個月為限，之後每6個月評估及申請，送審時需檢附血液檢查報告。
 
       (4)本藥品與eltrombopag僅得擇一使用，惟有在耐受不良時方可轉換使用。'
-- regulation_id: REG-0163
+- regulation_id: REG-0161
   section_number: 4.3.3.
   section_title: 4.3.3. Anagrelide (如Agrylin)：(107/6/1）
   chapter: 第4節 血液治療藥物 Hematological drugs
@@ -1565,13 +1584,14 @@ regulations:
     full_text: '1.用於經骨髓穿刺檢查並診斷為原發性血小板過多症者，惟具有JAK2、CALR或MPL之基因突變者，可不進行骨髓穿刺。
 
       2.初次使用時，需經事前審查。'
-- regulation_id: REG-0164
+- regulation_id: REG-0162
   section_number: 4.3.4.
   section_title: 4.3.4. Icatibant（如Firazyr）、C1 esterase inhibitor（如Berinert）：（109/6/1、111/2/1、111/6/1）
   chapter: 第4節 血液治療藥物 Hematological drugs
   source_file: 完整給付規定1150821.docx
   effective_dates:
   - (111/2/1)
+  - (111/6/1)
   - (111/6/1)
   - (111/6/1)
   medications:
@@ -1617,40 +1637,14 @@ regulations:
       (2)C1 esterase inhibitor：1次劑量。(111/6/1)
 
       5.於處方本藥品時，應附原始治療醫囑單及治療紀錄(載明發作部位、症狀及嚴重程度)；於處方備用icatibant/C1 esterase inhibitor時，應衛教病人用藥規範及附上用藥資料表(如附表三十三-全民健康保險遺傳性血管性水腫患者使用Icatibant/C1
-      esterase inhibitor治療紀錄表)，並於病歷載明前次發作之部位、症狀及嚴重程度以供審查。(111/6/1)'
-- regulation_id: REG-0165
-  section_number: '6.24'
-  section_title: 6.24 小時內限用：
-  chapter: 第4節 血液治療藥物 Hematological drugs
-  source_file: 完整給付規定1150821.docx
-  effective_dates:
-  - (111/6/1)
-  medications:
-    drug_classes: []
-    ingredients: []
-  conditions_of_payment:
-    indications: []
-    laboratory_criteria: []
-    summary: 規範【小時內限用：】之健保給付條件。 規範重點：(1)Icatibant（如Firazyr）：3支。
-    clinical_rules:
-    - indication: 6.24 小時內限用：
-      biomarkers: []
-      prior_authorization: false
-      step_therapy: []
-      stopping_rules: []
-      evaluation_frequency: []
-    structured_biomarkers: []
-    prior_authorization_required: false
-    prior_authorization_grounding: null
-    step_therapy: []
-    stopping_rules: []
-    evaluation_intervals: []
-  reference_annotations:
-    original_clause: 6.24 小時內限用：
-    full_text: '(1)Icatibant（如Firazyr）：3支。
+      esterase inhibitor治療紀錄表)，並於病歷載明前次發作之部位、症狀及嚴重程度以供審查。(111/6/1)
+
+      6.24小時內限用：
+
+      (1)Icatibant（如Firazyr）：3支。
 
       (2)C1 esterase inhibitor 1次。(111/6/1)'
-- regulation_id: REG-0166
+- regulation_id: REG-0163
   section_number: 4.3.5.
   section_title: 4.3.5. Ropeginterferon alfa-2b（如Besremi）：(111/9/1、114/2/1)
   chapter: 第4節 血液治療藥物 Hematological drugs
@@ -1660,6 +1654,7 @@ regulations:
     drug_classes: []
     ingredients:
     - Ropeginterferon Alfa-2B (如 Besremi)
+    - Ruxolitinib
   conditions_of_payment:
     indications:
     - Thrombosis / Pulmonary Embolism (血栓)
@@ -1707,7 +1702,7 @@ regulations:
       4.第一次續用之後改為每6個月評估一次。持續治療1年後，原則上改為維持治療(1個月施打一次)。
 
       5.本品不得併用ruxolitinib成分藥品。'
-- regulation_id: REG-0167
+- regulation_id: REG-0164
   section_number: 4.3.6.
   section_title: 4.3.6. Luspatercept（如Reblozyl)：(113/1/1)
   chapter: 第4節 血液治療藥物 Hematological drugs
@@ -1761,7 +1756,7 @@ regulations:
       5.最大劑量不得超過1.25 mg/kg (或總劑量120毫克)。
 
       6.停藥條件：若接受本藥品最大劑量治療24週後仍未達到治療反應，則應停藥。'
-- regulation_id: REG-0168
+- regulation_id: REG-0165
   section_number: 4.3.7.
   section_title: 4.3.7. Lanadelumab(如Takhzyro)：(113/3/1)
   chapter: 第4節 血液治療藥物 Hematological drugs
@@ -1770,6 +1765,7 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Icatibant
     - Lanadelumab (如 Takhzyro)
   conditions_of_payment:
     indications: []

@@ -379,6 +379,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const indications = reg.conditions_of_payment.indications || [];
             const indicationBadges = indications.map(ind => `<span class="m-tag-ind"><i class="fa-solid fa-notes-medical"></i> ${escapeHtml(ind)}</span>`).join(' ');
 
+            const displayTitle = cleanTitleForDisplay(reg.section_title);
+            const ingredients = (reg.medications && reg.medications.ingredients) ? reg.medications.ingredients : [];
+            let drugBadges = '';
+            if (ingredients.length > 0 && !/[A-Za-z]{4,}/.test(displayTitle)) {
+                drugBadges = ingredients.slice(0, 4).map(ing => `<span class="m-tag-lab" style="border-color:rgba(56,189,248,0.35); color:#38bdf8;"><i class="fa-solid fa-pills"></i> ${escapeHtml(ing)}</span>`).join(' ');
+            }
+
             card.innerHTML = `
                 <div class="m-card-header">
                     <span class="m-badge">#${existingCount + idx + 1} ${reg.section_number}</span>
@@ -387,8 +394,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         <span class="m-chapter">${reg.chapter.split(' ')[0]}</span>
                     </div>
                 </div>
-                <h3 class="m-title">${cleanTitleForDisplay(reg.section_title)}</h3>
-                <div class="m-tags-group">${indicationBadges} ${labBadges}</div>
+                <h3 class="m-title">${displayTitle}</h3>
+                <div class="m-tags-group">${drugBadges} ${indicationBadges} ${labBadges}</div>
                 <p class="m-summary">${cleanSummaryText(reg.conditions_of_payment.summary)}</p>
                 <div class="m-card-footer">
                     <button class="btn-m-detail" data-id="${reg.regulation_id}">
@@ -425,6 +432,20 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('sheetTitle').textContent = cleanTitleForDisplay(reg.section_title);
         document.getElementById('sheetChapter').textContent = reg.chapter;
         document.getElementById('sheetDates').textContent = formatDatesForDisplay(reg.effective_dates);
+
+        const sheetDrugsBox = document.getElementById('sheetDrugsBox');
+        const sheetDrugsList = document.getElementById('sheetDrugsList');
+        if (sheetDrugsBox && sheetDrugsList) {
+            const ings = (reg.medications && reg.medications.ingredients) ? reg.medications.ingredients : [];
+            const classes = (reg.medications && reg.medications.drug_classes) ? reg.medications.drug_classes : [];
+            const combined = ings.length > 0 ? ings : classes;
+            if (combined.length > 0) {
+                sheetDrugsList.textContent = combined.join(', ');
+                sheetDrugsBox.classList.remove('hidden');
+            } else {
+                sheetDrugsBox.classList.add('hidden');
+            }
+        }
 
         const criteriaSection = document.getElementById('sheetStructuredCriteriaSection');
         const chipsContainer = document.getElementById('sheetStructuredChips');

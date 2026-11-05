@@ -52,9 +52,30 @@ regulations:
     - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
     - 副甲狀腺素及類似劑 / 骨質疏鬆症治療藥物
     ingredients:
+    - Abatacept
     - Adalimumab (阿達木單抗)
+    - Aldesleukin (如 Proleukin Inj)
+    - Apomorphine Hydrochloride (如 Apo-Go Pen)
+    - Brodalumab
+    - Certolizumab
+    - Desferrioxamine (如 Desferal)
+    - Enviomycin
     - Etanercept (恩博)
+    - Fondaparinux (如 Arixtra)
+    - G-Csf (如 filgrastim)
+    - Glatiramer
+    - Insulin
+    - Interferon
+    - Kanamycin
+    - Lanreotide (如 Sandostatin)
+    - Lanreotide Inj (如 Somatuline)
+    - Mcg (如 Aranesp)
+    - Octreotide (如 Sandostatin等)
+    - Octreotide Lar (如 Sandostatin LAR Microspheres for Inj.)
+    - Opinercept
+    - Streptomycin
     - Teriparatide (特立帕肽 (副甲狀腺素))
+    - Tocilizumab
   conditions_of_payment:
     indications:
     - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)

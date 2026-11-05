@@ -17,7 +17,7 @@ lifecycle:
   stale_after: '2026-12-31'
 total_regulations: 4
 regulations:
-- regulation_id: REG-0499
+- regulation_id: REG-0489
   section_number: 12.1.
   section_title: 12.1. Beclomethasone cap. for spray (如Salcoat)（87/10/1）：
   chapter: 第12節 耳鼻喉科製劑 ENT and dental preparations
@@ -26,7 +26,7 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - For Spray (如 Salcoat)
+    - Beclomethasone Cap. For Spray (如 Salcoat)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -47,7 +47,7 @@ regulations:
   reference_annotations:
     original_clause: 12.1. Beclomethasone cap. for spray (如Salcoat)（87/10/1）：
     full_text: 限因口腔放射線治療或化學治療產生大面積口腔潰爛之病人使用。
-- regulation_id: REG-0500
+- regulation_id: REG-0490
   section_number: 12.2.
   section_title: 12.2. Sod. monofluorophosphate, sod. fluoride gel (如Fluocaril gel)：
   chapter: 第12節 耳鼻喉科製劑 ENT and dental preparations
@@ -56,7 +56,7 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Fluoride Gel (如 Fluocaril gel)
+    - Sod. Fluoride Gel (如 Fluocaril gel)
   conditions_of_payment:
     indications:
     - Nasopharyngeal Carcinoma (鼻咽癌)
@@ -86,7 +86,7 @@ regulations:
     original_clause: 12.2. Sod. monofluorophosphate, sod. fluoride gel (如Fluocaril
       gel)：
     full_text: 限住院治療及門診追蹤複查之口腔癌病例，以及放射治療之鼻咽癌或骨髓移植病例使用。
-- regulation_id: REG-0501
+- regulation_id: REG-0491
   section_number: 12.3.
   section_title: 12.3. Ofloxacin (如Tarivid Otic Solution)：(88/8/1)
   chapter: 第12節 耳鼻喉科製劑 ENT and dental preparations
@@ -118,7 +118,7 @@ regulations:
     full_text: '1.有耳膜穿孔之急慢性中耳炎病患，每次處方以一瓶(十日)為原則。
 
       2.其他耳部感染症如外耳炎等，若經使用第一線抗微生物製劑無效，且有病歷詳細記載者方得使用。'
-- regulation_id: REG-0502
+- regulation_id: REG-0492
   section_number: 12.4.
   section_title: 12.4. Ciprofloxacin +hydrocortisone (如Siproxan Otic Drops)(97/4/1)
   chapter: 第12節 耳鼻喉科製劑 ENT and dental preparations
@@ -127,7 +127,7 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Hydrocortisone (如 Siproxan Otic Drops)
+    - Ciprofloxacin +Hydrocortisone (如 Siproxan Otic Drops)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []

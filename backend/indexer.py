@@ -124,6 +124,7 @@ class NHIIndexer:
 
         reg["norm_full_text"] = re.sub(r'[\s\-_/]+', '', full_text_lower)
         reg["_title_lower"] = title_lower
+        reg["_body_lower"] = body_str.lower()
         reg["_full_text_lower"] = full_text_lower
         reg["_classes_lower"] = [c.lower() for c in reg.get("medications", {}).get("drug_classes", [])]
         reg["_ingredients_lower"] = [i.lower() for i in reg.get("medications", {}).get("ingredients", [])]
@@ -369,6 +370,7 @@ class NHIIndexer:
                 continue
 
             title_lower = reg["_title_lower"]
+            body_lower = reg["_body_lower"]
             full_text = reg["_full_text_lower"]
             norm_full_text = reg["norm_full_text"]
             reg_classes = reg["_classes_lower"]
@@ -425,6 +427,14 @@ class NHIIndexer:
             for mdn in matched_disease_names:
                 if any(mdn in ind for ind in reg_indications):
                     score += 100
+                if mdn in title_lower:
+                    score += 350
+                first_lines_lower = "\n".join(body_lower.split('\n', 2)[:2])
+                if mdn in first_lines_lower:
+                    score += 260
+                occ = body_lower.count(mdn)
+                if occ > 0:
+                    score += min(occ, 8) * 35
 
             for mc in matched_class_names:
                 if any(mc in rc or rc in mc for rc in reg_classes):

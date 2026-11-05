@@ -17,9 +17,9 @@ lifecycle:
   stale_after: '2026-12-31'
 total_regulations: 13
 regulations:
-- regulation_id: REG-0220
-  section_number: '7.1'
-  section_title: 7.1 .消化性潰瘍用藥：
+- regulation_id: REG-0217
+  section_number: 7.1.
+  section_title: 7.1. 消化性潰瘍用藥：
   chapter: 第7節 腸胃藥物 Gastrointestinal drugs
   source_file: 完整給付規定1150821.docx
   effective_dates:
@@ -42,9 +42,24 @@ regulations:
     - PPI類 (氫離子幫浦抑制劑)
     ingredients:
     - Apixaban (阿哌沙班)
+    - Aspirin
+    - Carbenoxolone
+    - Cetraxate
+    - Cilostazol
     - Dabigatran (達比加群)
     - Edoxaban (艾多沙班)
+    - Gefarnate
+    - Misoprostol
+    - P2Y12 Inhibitor (如 clopidogrel)
+    - Pirenzepine
+    - Prasugrel
+    - Proglumide
     - Rivaroxaban (利伐沙班)
+    - Sucralfate
+    - Ticagrelor
+    - Ticlopidine
+    - Tirofiban
+    - Warfarin
   conditions_of_payment:
     indications:
     - Peptic Ulcer Disease (消化性潰瘍)
@@ -405,7 +420,7 @@ regulations:
     - 以一年為限
     - 療程以二週
   reference_annotations:
-    original_clause: 7.1 .消化性潰瘍用藥：
+    original_clause: 7.1. 消化性潰瘍用藥：
     full_text: "1.藥品種類：\n(1)制酸懸浮劑：\n各廠牌瓶裝、袋裝制酸懸浮劑及袋裝顆粒制酸劑。\n(2)乙型組織胺受體阻斷劑：\n各廠牌乙型組織胺受體阻斷劑之口服製劑與針劑。\n\
       (3)氫離子幫浦阻斷劑：\n各廠牌氫離子幫浦阻斷劑。\n(4)細胞保護劑：如gefarnate、cetraxate、carbenoxolone等。\n\
       (5)其他消化性潰瘍用藥：\ndibismuth trioxide, sucralfate, pirenzepine HCl, Gaspin, Caved-S,\
@@ -434,7 +449,7 @@ regulations:
       \ continuous between the tops of two or more mucosal folds but which involve\
       \ less than 75% of the esophageal circumference。\nGrade D:\tMucosal breaks which\
       \ involve less than 75% of the esophageal circumference。\n2.\t醫療院所使用單價新台幣四元(含)以下之消化性潰瘍用藥時，得由醫師視病情決定是否需要上消化道內視鏡檢查。(92/10/1)"
-- regulation_id: REG-0221
+- regulation_id: REG-0218
   section_number: 7.2.
   section_title: 7.2. 止吐劑  Antiemetic drugs
   chapter: 第7節 腸胃藥物 Gastrointestinal drugs
@@ -443,7 +458,18 @@ regulations:
   - (101/02/1、101/4/1、107/5/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Dexamethasone
+    - Granisetron
+    - Metoclopramide
+    - Palonosetron
+    - Prochlorperazine
+    - Ramosetron
+    - Serotonin Antagonists (如 ondansetron)
+    - Tropisetron
+    - Fosaprepitant
+    - Neurokinin-1 Receptor Antagonist (如 aprepitant)
+    - Netupitant
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -465,7 +491,7 @@ regulations:
   reference_annotations:
     original_clause: 7.2. 止吐劑  Antiemetic drugs
     full_text: 靜脈注射癌症化療藥品之致吐性風險與劑量標準，依NCCN (National Comprehensive Cancer Network)最新版治療指引內容。(101/02/1、101/4/1、107/5/1)
-- regulation_id: REG-0222
+- regulation_id: REG-0219
   section_number: 7.2.1.
   section_title: 7.2.1. Serotonin antagonists（如ondansetron、granisetron、tropisetron、ramosetron、palonosetron等）(93/2/1、93/9/1、98/9/1、99/5/1、101/4/1、102/9/1)
   chapter: 第7節 腸胃藥物 Gastrointestinal drugs
@@ -479,7 +505,14 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Dexamethasone
+    - Granisetron
+    - Metoclopramide
+    - Palonosetron
+    - Prochlorperazine
+    - Ramosetron
     - Serotonin Antagonists (如 ondansetron)
+    - Tropisetron
   conditions_of_payment:
     indications:
     - Systemic Lupus Erythematosus (紅斑性狼瘡)
@@ -539,7 +572,7 @@ regulations:
       (3)腹部放射治療中產生嘔吐，經使用dexamethasone、metoclopramide或prochlorperazine等傳統止吐劑無效，仍發生嚴重嘔吐之患者。
 
       4.穿皮貼片劑限用於無法口服之病患。(102/9/1)'
-- regulation_id: REG-0223
+- regulation_id: REG-0220
   section_number: 7.2.2.
   section_title: 7.2.2. Neurokinin-1 receptor antagonist （如aprepitant、fosaprepitant）(94/10/1、101/02/1、101/4/1、101/12/1、102/8/1)
   chapter: 第7節 腸胃藥物 Gastrointestinal drugs
@@ -552,6 +585,7 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Fosaprepitant
     - Neurokinin-1 Receptor Antagonist (如 aprepitant)
   conditions_of_payment:
     indications: []
@@ -580,7 +614,7 @@ regulations:
       3.本品除第一天外，不得併用5-HT3之藥物。(101/4/1)
 
       4.若於化療第四天（含）後仍有Grade 2 以上之嘔吐，則於第四天及第五天可依照7.2.1.規範給予serotonin antagonist。(102/8/1)'
-- regulation_id: REG-0224
+- regulation_id: REG-0221
   section_number: 7.2.3.
   section_title: 7.2.3. 含palonosetron及netupitant之複方製劑(如Akynzeo)(108/1/1、114/8/1)
   chapter: 第7節 腸胃藥物 Gastrointestinal drugs
@@ -589,7 +623,9 @@ regulations:
   - (114/8/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Netupitant
+    - Palonosetron
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -618,7 +654,7 @@ regulations:
       2.每次化療限使用1粒。
 
       3.自使用本案藥品之日起3天內不得併用其他serotonin antagonist或neurokinin-1 receptor antagonist止吐劑。'
-- regulation_id: REG-0225
+- regulation_id: REG-0222
   section_number: 7.3.1.
   section_title: 7.3.1. Mesalazine（如Asacol）、balsalazide (如Basazyde)(94/5/1)：
   chapter: 第7節 腸胃藥物 Gastrointestinal drugs
@@ -650,7 +686,7 @@ regulations:
   reference_annotations:
     original_clause: 7.3.1. Mesalazine（如Asacol）、balsalazide (如Basazyde)(94/5/1)：
     full_text: 限潰瘍性結腸炎、庫隆氏症病例使用。
-- regulation_id: REG-0226
+- regulation_id: REG-0223
   section_number: 7.3.2.
   section_title: 7.3.2. 益生菌類藥物Antidiarrheal microorganisms：
   chapter: 第7節 腸胃藥物 Gastrointestinal drugs
@@ -679,7 +715,7 @@ regulations:
   reference_annotations:
     original_clause: 7.3.2. 益生菌類藥物Antidiarrheal microorganisms：
     full_text: 限用於接受放射治療、化學療法患者，治療期間造成的腹瀉。（97/8/1）
-- regulation_id: REG-0227
+- regulation_id: REG-0224
   section_number: 7.3.3.
   section_title: 7.3.3. Racecadotril (如Hidrasec)(106/3/1)
   chapter: 第7節 腸胃藥物 Gastrointestinal drugs
@@ -709,7 +745,7 @@ regulations:
   reference_annotations:
     original_clause: 7.3.3. Racecadotril (如Hidrasec)(106/3/1)
     full_text: 每療程使用不得超過5 天。
-- regulation_id: REG-0228
+- regulation_id: REG-0225
   section_number: 7.3.4.
   section_title: 7.3.4. Cholic acid（如Cholbam）（108/7/1）：
   chapter: 第7節 腸胃藥物 Gastrointestinal drugs
@@ -718,6 +754,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Alanine
+    - Aspartate
     - Cholic Acid (如 Cholbam)
   conditions_of_payment:
     indications: []
@@ -759,7 +797,7 @@ regulations:
       (ALT)，膽紅素等之血中濃度，之後每6個月監測一次。
 
       4.需經事前審查核准後使用。'
-- regulation_id: REG-0229
+- regulation_id: REG-0226
   section_number: 7.3.5.
   section_title: '7.3.5. Budesonide(如Cortiment MMX)(108/7/1):'
   chapter: 第7節 腸胃藥物 Gastrointestinal drugs
@@ -768,6 +806,7 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Aminosalicylate
     - Budesonide (如 Cortiment MMX)
   conditions_of_payment:
     indications:
@@ -796,7 +835,7 @@ regulations:
       (2)領有潰瘍性結腸炎重大傷病卡。
 
       2.每療程限使用8週，每日限使用1粒。'
-- regulation_id: REG-0230
+- regulation_id: REG-0227
   section_number: 7.3.6.
   section_title: 7.3.6. 含amylase+lipase+protease複方製劑(如Protase、Creon)：(110/1/1)
   chapter: 第7節 腸胃藥物 Gastrointestinal drugs
@@ -804,7 +843,10 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Amylase
+    - Lipase
+    - Protase
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -833,7 +875,7 @@ regulations:
       (2)有營養不良或脂肪痢便之記載。
 
       3.功能性腸胃炎不得使用本類藥品。'
-- regulation_id: REG-0231
+- regulation_id: REG-0228
   section_number: 7.3.7.
   section_title: 7.3.7. Dioctahedral smectite口服懸液劑(如Smectite oral suspension)：(113/4/1)
   chapter: 第7節 腸胃藥物 Gastrointestinal drugs
@@ -841,7 +883,8 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Dioctahedral
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -862,7 +905,7 @@ regulations:
   reference_annotations:
     original_clause: 7.3.7. Dioctahedral smectite口服懸液劑(如Smectite oral suspension)：(113/4/1)
     full_text: 限用於2歲以上至未滿18歲兒童。
-- regulation_id: REG-0232
+- regulation_id: REG-0229
   section_number: 7.3.8.
   section_title: 7.3.8. Teduglutide (如Revestive)：(114/8/1)
   chapter: 第7節 腸胃藥物 Gastrointestinal drugs

@@ -434,6 +434,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const indications = reg.conditions_of_payment.indications || [];
             const indicationBadges = indications.map(ind => `<span class="badge-indication"><i class="fa-solid fa-notes-medical"></i> ${escapeHtml(ind)}</span>`).join(' ');
 
+            const displayTitle = cleanTitleForDisplay(reg.section_title);
+            const ingredients = (reg.medications && reg.medications.ingredients) ? reg.medications.ingredients : [];
+            let drugBadges = '';
+            if (ingredients.length > 0 && !/[A-Za-z]{4,}/.test(displayTitle)) {
+                drugBadges = ingredients.slice(0, 5).map(ing => `<span class="badge-lab" style="border-color:rgba(56,189,248,0.35); color:#38bdf8;"><i class="fa-solid fa-pills"></i> ${escapeHtml(ing)}</span>`).join(' ');
+            }
+
             card.innerHTML = `
                 <div>
                     <div class="card-header">
@@ -443,8 +450,8 @@ document.addEventListener('DOMContentLoaded', () => {
                             <span class="chapter-tag">${reg.chapter.split(' ')[0]}</span>
                         </div>
                     </div>
-                    <h3 class="card-title">${cleanTitleForDisplay(reg.section_title)}</h3>
-                    <div class="badge-group">${indicationBadges} ${labBadges}</div>
+                    <h3 class="card-title">${displayTitle}</h3>
+                    <div class="badge-group">${drugBadges} ${indicationBadges} ${labBadges}</div>
                     <p class="card-summary">${cleanSummaryText(reg.conditions_of_payment.summary)}</p>
                 </div>
                 <div class="card-footer">
@@ -483,6 +490,20 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('modalTitle').textContent = cleanTitleForDisplay(reg.section_title);
         document.getElementById('modalChapter').textContent = reg.chapter;
         document.getElementById('modalDates').textContent = formatDatesForDisplay(reg.effective_dates);
+
+        const modalDrugsBox = document.getElementById('modalDrugsBox');
+        const modalDrugsList = document.getElementById('modalDrugsList');
+        if (modalDrugsBox && modalDrugsList) {
+            const ings = (reg.medications && reg.medications.ingredients) ? reg.medications.ingredients : [];
+            const classes = (reg.medications && reg.medications.drug_classes) ? reg.medications.drug_classes : [];
+            const combined = ings.length > 0 ? ings : classes;
+            if (combined.length > 0) {
+                modalDrugsList.textContent = combined.join(', ');
+                modalDrugsBox.classList.remove('hidden');
+            } else {
+                modalDrugsBox.classList.add('hidden');
+            }
+        }
         
         // Render LangExtract Structured Criteria & Grounding Chips
         const criteriaSection = document.getElementById('modalStructuredCriteriaSection');

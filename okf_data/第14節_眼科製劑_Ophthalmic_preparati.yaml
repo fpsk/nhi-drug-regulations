@@ -17,7 +17,7 @@ lifecycle:
   stale_after: '2026-12-31'
 total_regulations: 17
 regulations:
-- regulation_id: REG-0523
+- regulation_id: REG-0513
   section_number: 14.1.
   section_title: 14.1. 高眼壓及青光眼眼用製劑(101/12/1、102/8/1、104/4/1、106/2/1、110/5/1、111/7/1、114/6/1)
   chapter: 第14節 眼科製劑 Ophthalmic preparations
@@ -35,7 +35,9 @@ regulations:
   - (114/6/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Omidenepag (如 Eybelis)
+    - Timolol
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -64,9 +66,9 @@ regulations:
       (3)治療時，不得併用其他同類藥品。另Omidenepag(如Eybelis)不得併用前列腺素衍生物類。(111/7/1)\n2.限眼科醫師開立本類藥品慢性病連續處方箋，且應檢附當次眼壓數據。(114/6/1)\n\
       3.非眼科醫師限開立1個月本類藥品，並指導病人應量眼壓，且至少3個月內須會診眼科量眼壓(眼壓限眼科專科醫師申報)，及定期追蹤視神經及視野。(114/6/1)\n\
       4.全民健保公告之醫療資源缺乏地區及山地離島地區之就醫病人，倘符合「全民健康保險遠距醫療給付計畫」，由當地醫師與眼科醫師透過視訊方式共同診察，經評估診斷符合規定開立處方，並檢附相關眼壓數據資料，亦得由當地醫師開立本類藥品慢性病連續處方箋。(114/6/1)"
-- regulation_id: REG-0524
+- regulation_id: REG-0514
   section_number: 14.1.1.
-  section_title: '14.1.1. 單方製劑(90/10/1、101/12/1、104/4/1、106/2/1、111/7/1):'
+  section_title: '14.1.1. 高眼壓及青光眼眼用製劑 - 單方製劑(90/10/1、101/12/1、104/4/1、106/2/1、111/7/1):'
   chapter: 第14節 眼科製劑 Ophthalmic preparations
   source_file: 完整給付規定1150821.docx
   effective_dates:
@@ -75,7 +77,8 @@ regulations:
   - (111/7/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Omidenepag (如 Eybelis)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -95,7 +98,7 @@ regulations:
     stopping_rules: []
     evaluation_intervals: []
   reference_annotations:
-    original_clause: '14.1.1. 單方製劑(90/10/1、101/12/1、104/4/1、106/2/1、111/7/1):'
+    original_clause: '14.1.1. 高眼壓及青光眼眼用製劑 - 單方製劑(90/10/1、101/12/1、104/4/1、106/2/1、111/7/1):'
     full_text: '1.β-交感神經阻斷劑(β-blockers )
 
       2.碳酸酐酶抑制劑(Carbonic anhydrase inhibitor) :
@@ -115,9 +118,9 @@ regulations:
       (1)限對β-blockers有禁忌、不適或使用效果不佳之病患使用。宜先以單獨使用為原則。
 
       (2)療效仍不足時，得併用其他降眼壓用藥(含複方製劑)，但不得併用前列腺素衍生物類。'
-- regulation_id: REG-0525
+- regulation_id: REG-0515
   section_number: 14.1.2.
-  section_title: 14.1.2. 複方製劑：(92/2/1、101/12/1、104/4/1、106/2/1)
+  section_title: 14.1.2. 高眼壓及青光眼眼用製劑 - 複方製劑：(92/2/1、101/12/1、104/4/1、106/2/1)
   chapter: 第14節 眼科製劑 Ophthalmic preparations
   source_file: 完整給付規定1150821.docx
   effective_dates:
@@ -143,9 +146,9 @@ regulations:
     stopping_rules: []
     evaluation_intervals: []
   reference_annotations:
-    original_clause: 14.1.2. 複方製劑：(92/2/1、101/12/1、104/4/1、106/2/1)
+    original_clause: 14.1.2. 高眼壓及青光眼眼用製劑 - 複方製劑：(92/2/1、101/12/1、104/4/1、106/2/1)
     full_text: 限經單一降眼壓藥物治療後，眼壓仍控制不良之患者第二線(含)以上用藥。(91/12/1、97/8/1、97/9/1、101/12/1)
-- regulation_id: REG-0526
+- regulation_id: REG-0516
   section_number: 14.2.
   section_title: 14.2. Acyclovir眼用製劑：限下列病例使用
   chapter: 第14節 眼科製劑 Ophthalmic preparations
@@ -153,7 +156,8 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Acyclovir
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -180,7 +184,7 @@ regulations:
       3.急性視網膜壞死症 (acute retina necrosis)。
 
       4.本品不宜與口服、外用或注射製劑合併使用。'
-- regulation_id: REG-0527
+- regulation_id: REG-0517
   section_number: 14.3.
   section_title: 14.3. Maxitrol oph oint；pimafucin oint：
   chapter: 第14節 眼科製劑 Ophthalmic preparations
@@ -209,7 +213,7 @@ regulations:
   reference_annotations:
     original_clause: 14.3. Maxitrol oph oint；pimafucin oint：
     full_text: 門診處方限一支。
-- regulation_id: REG-0528
+- regulation_id: REG-0518
   section_number: 14.4.1.
   section_title: 14.4.1. Ofloxacin, norfloxacin, ciprofloxacin, moxifloxacin, levofloxacin眼用製劑：（87/4/1、93/2/1、94/7/1、96/5/1）
   chapter: 第14節 眼科製劑 Ophthalmic preparations
@@ -217,7 +221,11 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Ciprofloxacin
+    - Levofloxacin
+    - Moxifloxacin
+    - Norfloxacin
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -242,7 +250,7 @@ regulations:
     full_text: '1.限用於角膜潰瘍或嚴重角膜炎病例。
 
       2.其餘眼科疾患，則列為第二線用藥，申報費用時需檢附細菌敏感試驗報告。'
-- regulation_id: REG-0529
+- regulation_id: REG-0519
   section_number: 14.4.2.
   section_title: 14.4.2. Lomefloxacin (Okacin)：(90/12/1、93/2/1）
   chapter: 第14節 眼科製劑 Ophthalmic preparations
@@ -250,7 +258,8 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Lomefloxacin
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -274,7 +283,7 @@ regulations:
     full_text: '1.對lomefloxacin hydrochloride易感性細菌所造成之結膜炎、眼瞼炎等之第二線用藥。
 
       2.申報費用時需檢附細菌敏感試驗報告。'
-- regulation_id: REG-0530
+- regulation_id: REG-0520
   section_number: 14.5.
   section_title: 14.5. 人工淚液：（87/7/1、93/2/1、113/7/1）
   chapter: 第14節 眼科製劑 Ophthalmic preparations
@@ -311,7 +320,7 @@ regulations:
       (2)因乾眼症導致角膜病變、暴露性角膜病變或其它相關之角膜病變必須時之使用。(93/2/1)
 
       2. 規格量15mL者，每個月限處方1瓶；規格量≦10mL者，3個月限處方4瓶。(113/7/1）'
-- regulation_id: REG-0531
+- regulation_id: REG-0521
   section_number: 14.8.
   section_title: 14.8. Ketorolac tromethamine（如Acular Ophthalmic Solution）：(89/11/1)
   chapter: 第14節 眼科製劑 Ophthalmic preparations
@@ -341,7 +350,7 @@ regulations:
   reference_annotations:
     original_clause: 14.8. Ketorolac tromethamine（如Acular Ophthalmic Solution）：(89/11/1)
     full_text: 限白內障手術後之眼部發炎使用。
-- regulation_id: REG-0532
+- regulation_id: REG-0522
   section_number: 14.9.2.
   section_title: '14.9.2. 新生血管抑制劑 (Anti-angiogenic agents) : ranibizumab (如Lucentis)、aflibercept
     (如Eylea)、faricimab (如Vabysmo) (100/1/1、 101/5/1、102/2/1、103/8/1、104/5/1、105/2/1、105/7/1、105/11/1、105/12/1、106/4/1、106/12/1、108/4/1、109/2/1、109/3/1、109/6/1、109/12/1、112/2/1、112/3/1、113/1/1、114/5/1、115/5/1)'
@@ -400,8 +409,10 @@ regulations:
     drug_classes: []
     ingredients:
     - Aflibercept (如 Eylea)
+    - Dexamethasone
     - Faricimab (如 Vabysmo)
     - Ranibizumab (如 Lucentis)
+    - Verteporfin
   conditions_of_payment:
     indications:
     - Stroke / Cerebrovascular Accident (腦中風)
@@ -712,7 +723,7 @@ regulations:
       備註1:DME、CRVO、CNV及BRVO事前審查申請表以附表二十九之一。(109/12/1、115/5/1)
 
       備註2:wAMD及PCV事前審查申請表以附表二十九之二。(109/12/1、115/5/1)'
-- regulation_id: REG-0533
+- regulation_id: REG-0523
   section_number: 14.9.3.
   section_title: 14.9.3. Cyclosporine眼用製劑 (如Restasis)  (100/08/1、103/4/1、105/5/1)
     (附表二十七)
@@ -726,7 +737,8 @@ regulations:
   - (105/5/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Cyclosporine (如 Restasis)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -774,7 +786,7 @@ regulations:
       Ⅲ角膜病變-螢光染色照片。
 
       Ⅳ結膜充血或結膜染色-症狀改善。'
-- regulation_id: REG-0534
+- regulation_id: REG-0524
   section_number: 14.9.4.
   section_title: 14.9.4. Dexamethasone intravitreal implant (如Ozurdex) (104/05/1、105/8/1、106/4/1、108/4/1、109/2/1、109/3/1、115/6/1)
   chapter: 第14節 眼科製劑 Ophthalmic preparations
@@ -803,7 +815,9 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Aflibercept
     - Dexamethasone Intravitreal Implant (如 Ozurdex)
+    - Ranibizumab
   conditions_of_payment:
     indications:
     - Diabetes Mellitus (糖尿病)
@@ -1050,7 +1064,7 @@ regulations:
       Ⅰ.因其他因素(如玻璃體牽引)所造成之黃斑部水腫。(108/4/1)
 
       Ⅱ.青光眼。'
-- regulation_id: REG-0535
+- regulation_id: REG-0525
   section_number: 14.9.5.
   section_title: 14.9.5. Verteporfin(如Visudyne)(109/2/1)
   chapter: 第14節 眼科製劑 Ophthalmic preparations
@@ -1104,7 +1118,7 @@ regulations:
       7.每次申請給付1支，每次治療間隔至少3個月，每人每眼給付以3次為上限。
 
       8.每次申請時需另檢附一個月內有效之ICGA照片、治療紀錄及病歷等資料。'
-- regulation_id: REG-0536
+- regulation_id: REG-0526
   section_number: 14.9.6.
   section_title: 14.9.6. Atropine sulfate  0.1 mg/mL- 0.5 mg/mL眼用製劑：(112/5/1、113/10/1、115/8/1)
   chapter: 第14節 眼科製劑 Ophthalmic preparations
@@ -1112,7 +1126,8 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Atropine
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -1134,7 +1149,7 @@ regulations:
   reference_annotations:
     original_clause: 14.9.6. Atropine sulfate  0.1 mg/mL- 0.5 mg/mL眼用製劑：(112/5/1、113/10/1、115/8/1)
     full_text: 限用於18歲以下兒童及青少年，規格量≧ 3.5 mL項目，每4週處方為1瓶。
-- regulation_id: REG-0537
+- regulation_id: REG-0527
   section_number: 14.9.7.
   section_title: '14.9.7. 新生血管抑制劑 (Anti-angiogenic agents) : ranibizumab (如Lucentis)、aflibercept
     (如Eylea)、bevacizumab (如Avastin) (114/3/1)：'
@@ -1211,7 +1226,7 @@ regulations:
       7.使用本藥品需填具病人藥物使用同意書，以示瞭解藥品之潛在益處及風險。
 
       8.早產兒視網膜病變眼內注射anti-VEGF治療，須依臺灣兒科醫學會最新版治療指引內容。'
-- regulation_id: REG-0538
+- regulation_id: REG-0528
   section_number: 14.9.8.
   section_title: 14.9.8. Idebenone(如Raxone)：（114/6/1）
   chapter: 第14節 眼科製劑 Ophthalmic preparations
@@ -1286,7 +1301,7 @@ regulations:
       對藥物有無法克服之嚴重不良反應或嚴重過敏反應者。
 
       初次療程治療效果不彰：矯正視力從「on-chart」退步到「off-chart」，或於「on-chart」視力退步至少15個字母以上。'
-- regulation_id: REG-0539
+- regulation_id: REG-0529
   section_number: 14.9.9.
   section_title: 14.9.9. Cysteamine（如Cystadrops）：（114/7/1）
   chapter: 第14節 眼科製劑 Ophthalmic preparations

@@ -15,9 +15,9 @@ lifecycle:
   status: active
   last_synced: '2026-11-04'
   stale_after: '2026-12-31'
-total_regulations: 33
+total_regulations: 58
 regulations:
-- regulation_id: REG-0436
+- regulation_id: REG-0426
   section_number: 10.1.
   section_title: 10.1. 抗微生物劑用藥給付規定通則：
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -28,7 +28,12 @@ regulations:
   - (99/11/1、102/7/23、108/12/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Amoxicillin
+    - Ampicillin
+    - Cefmetazole
+    - Cefoxitin
+    - Sulbactam
   conditions_of_payment:
     indications:
     - Diabetes Mellitus (糖尿病)
@@ -128,7 +133,7 @@ regulations:
       12.非第一線抗微生物製劑其於本藥品給付規定中另訂有規定者，依各該規定給付之。
 
       13.有關結核病治療選擇的藥物種類、使用的劑量與治療的時程，應依衛生福利部疾病管制署最新版「結核病診治指引」辦理。(99/11/1、102/7/23、108/12/1)'
-- regulation_id: REG-0437
+- regulation_id: REG-0427
   section_number: 10.2.1.
   section_title: 10.2.1. Amoxicillin + clavulanic acid（如Augmentin tab）：(85/1/1、109/10/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -137,7 +142,7 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Clavulanic Acid (如 Augmentin tab)
+    - Amoxicillin + Clavulanic Acid (如 Augmentin tab)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -160,7 +165,7 @@ regulations:
   reference_annotations:
     original_clause: 10.2.1. Amoxicillin + clavulanic acid（如Augmentin tab）：(85/1/1、109/10/1)
     full_text: 用於急性化膿性中耳炎或急性化膿性鼻竇炎、急性下呼吸道感染、厭氧性細菌感染、菌血症等適應症，得免附細菌敏感試驗報告，惟以十日為限。
-- regulation_id: REG-0438
+- regulation_id: REG-0428
   section_number: 10.2.2.
   section_title: 10.2.2. Ampicillin + sulbactam 注射劑（如Unasyn注射劑、Ansullina注射劑）：(91/7/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -168,7 +173,8 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Ampicillin + Sulbactam (如 Unasyn注射劑)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -189,7 +195,7 @@ regulations:
   reference_annotations:
     original_clause: 10.2.2. Ampicillin + sulbactam 注射劑（如Unasyn注射劑、Ansullina注射劑）：(91/7/1)
     full_text: 單次處方劑量為1.5公克時，不得以0.75公克兩瓶申報。
-- regulation_id: REG-0439
+- regulation_id: REG-0429
   section_number: 10.3.1.
   section_title: 10.3.1. Cefaclor：（85/1/1、89/7/1、109/10/1）
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -197,7 +203,8 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Cefaclor
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -220,7 +227,7 @@ regulations:
   reference_annotations:
     original_clause: 10.3.1. Cefaclor：（85/1/1、89/7/1、109/10/1）
     full_text: 用於急性化膿性中耳炎或急性化膿性鼻竇炎、急性下呼吸道感染、敗血症等適應症，得免附細菌敏感試驗報告，惟以十日為限。
-- regulation_id: REG-0440
+- regulation_id: REG-0430
   section_number: 10.3.2.
   section_title: 10.3.2. Cefuroxime tab：（87/4/1、109/10/1）
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -228,7 +235,8 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Cefuroxime
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -251,7 +259,7 @@ regulations:
   reference_annotations:
     original_clause: 10.3.2. Cefuroxime tab：（87/4/1、109/10/1）
     full_text: 用於急性化膿性中耳炎或急性化膿性鼻竇炎、急性下呼吸道感染、敗血症等適應症，得免附細菌敏感試驗報告，惟以十日為限。
-- regulation_id: REG-0441
+- regulation_id: REG-0431
   section_number: 10.3.3.
   section_title: 10.3.3. Ceftriaxone：（95/6/1）
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -259,7 +267,8 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Ceftriaxone
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -280,7 +289,7 @@ regulations:
   reference_annotations:
     original_clause: 10.3.3. Ceftriaxone：（95/6/1）
     full_text: 用於疑似或證實為淋病尿道炎、子宮頸炎、軟性下疳時，可第一線單一劑量使用。
-- regulation_id: REG-0442
+- regulation_id: REG-0432
   section_number: 10.3.4.
   section_title: 10.3.4. Cefixime：（95/6/1）
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -288,7 +297,8 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Cefixime
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -309,7 +319,7 @@ regulations:
   reference_annotations:
     original_clause: 10.3.4. Cefixime：（95/6/1）
     full_text: 用於疑似或證實為淋病尿道炎、子宮頸炎、軟性下疳時，可第一線單一劑量使用。
-- regulation_id: REG-0443
+- regulation_id: REG-0433
   section_number: 10.3.5.
   section_title: 10.3.5. Ceftaroline fosamil (如Zinforo)：(108/2/1、108/12/1、110/11/1）
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -351,7 +361,7 @@ regulations:
       Ⅱ.免疫功能不全。
 
       2.申報費用時須檢附會診紀錄及相關之病歷資料。'
-- regulation_id: REG-0444
+- regulation_id: REG-0434
   section_number: 10.3.6.
   section_title: '10.3.6. Ceftazidime+avibactam sodium(如Zavicefta): (109/6/1、113/4/1）'
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -360,7 +370,7 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Avibactam Sodium (如 Zavicefta)
+    - Ceftazidime+Avibactam Sodium (如 Zavicefta)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -395,7 +405,7 @@ regulations:
       2.在經感染症專科醫師會診確認使用者，以經驗療法使用後細菌培養結果，若非對carbapenem具抗藥性，則限定使用7天。(113/4/1）
 
       3.使用不得超過14天，如因臨床需要而確有延長治療之必要，需經感染科醫師再照會評估認可，且照會紀錄應留存病歷備查。(113/4/1）'
-- regulation_id: REG-0445
+- regulation_id: REG-0435
   section_number: 10.3.7.
   section_title: 10.3.7. ceftolozane+tazobactam (如Zerbaxa):(110/3/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -404,7 +414,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Tazobactam (如 Zerbaxa)
+    - Ceftolozane+Tazobactam (如 Zerbaxa)
+    - Metronidazole
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -434,7 +445,7 @@ regulations:
       (3)院內感染性肺炎，包括呼吸器相關肺炎。
 
       2.需經會診感染科醫師同意後使用。申報費用時，需檢附感染科醫師會診報告。'
-- regulation_id: REG-0446
+- regulation_id: REG-0436
   section_number: 10.3.8.
   section_title: 10.3.8. Cefiderocol(如Fetroja)：(115/8/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -475,7 +486,7 @@ regulations:
       2.需經感染科專科醫師會診，確認後使用。申報費用時，需檢附會診紀錄及相關之病歷資料。
 
       3.每使用滿7天，應經感染科專科醫師會診後才可繼續使用。療程不超過14天為原則，如因臨床需要而有延長治療之必要，需有臨床佐證並經感染科醫師再次會診評估認可，照會紀錄應留存病歷備查。'
-- regulation_id: REG-0447
+- regulation_id: REG-0437
   section_number: 10.4.
   section_title: 10.4. 巨環類Macrolides（如erythromycin、azithromycin、clarithromycin、roxithromycin）：(90/11/1、93/9/1、97/12/1、98/10/1、100/5/1、108/1/1、110/4/1、111/3/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -492,7 +503,11 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Azithromycin
+    - Clarithromycin (如 Klaricid Tab)
+    - Erythromycin Lactobionate (如 Erythrocin lactobionate-I.V.)
     - Macrolides (如 erythromycin)
+    - Roxithromycin (如 Rulid)
   conditions_of_payment:
     indications:
     - Peptic Ulcer Disease (消化性潰瘍)
@@ -549,7 +564,7 @@ regulations:
       5. Roxithromycin (如Rulid)使用期間不得超過10日，每日最大劑量500mg。(100/5/1)
 
       6.本類製劑應儘量避免合併使用其他抗生素，用於治療「非結核分枝(耐酸)桿菌 (NTM)」者不在此限。(100/5/1)'
-- regulation_id: REG-0448
+- regulation_id: REG-0438
   section_number: 10.5.1.
   section_title: 10.5.1. Imipenem + cilastatin（如Tienam）；meropenem（如Mepem）：(87/11/1、93/2/1、93/5/1、99/5/1、99/8/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -560,7 +575,7 @@ regulations:
     drug_classes:
     - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
     ingredients:
-    - Cilastatin (如 Tienam)
+    - Imipenem + Cilastatin (如 Tienam)
     - Meropenem (如 Mepem)
   conditions_of_payment:
     indications: []
@@ -589,7 +604,7 @@ regulations:
       3.臨床上為嚴重之細菌感染，且經其他廣效性的非第一線抗微生物製劑治療仍無法控制病情者。
 
       4.經感染症專科醫師會診，確認有感染症需使用者 (申報費用時需檢附會診紀錄及相關之病歷資料)。(93/5/1)'
-- regulation_id: REG-0449
+- regulation_id: REG-0439
   section_number: 10.5.2.
   section_title: 10.5.2. Ertapenem（如Invanz inj.）：(93/5/1、96/12/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -628,7 +643,7 @@ regulations:
       (3)急性骨盆感染
 
       2.經感染症專科醫師會診，確認有感染症需使用者（申報費用時需檢附會診紀錄及相關之病歷資料）。'
-- regulation_id: REG-0450
+- regulation_id: REG-0440
   section_number: 10.5.3.
   section_title: 10.5.3. Doripenem (如Finibax)：(99/8/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -662,7 +677,7 @@ regulations:
       2.臨床上為嚴重之複雜性泌尿道感染(包括腎盂腎炎)及複雜性腹腔內感染，且經其他廣效性的非第一線抗微生物製劑治療仍無法控制病情者。
 
       3.經感染症專科醫師會診，確認有感染症需使用者(申報費用時需檢附會診紀錄及相關之病歷資料)。'
-- regulation_id: REG-0451
+- regulation_id: REG-0441
   section_number: 10.5.4.
   section_title: 10.5.4. Imipenem＋cilastatin＋relebactam (如Recarbrio)：(114/1/1）
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -672,6 +687,7 @@ regulations:
     drug_classes:
     - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
     ingredients:
+    - Imipenem
     - Relebactam (如 Recarbrio)
   conditions_of_payment:
     indications: []
@@ -702,7 +718,7 @@ regulations:
       (3)院內感染型肺炎。
 
       2.需經會診感染科醫師同意後使用，申報費用時需檢附會診紀錄及相關之病歷資料。'
-- regulation_id: REG-0452
+- regulation_id: REG-0442
   section_number: 10.6.1.1.
   section_title: 10.6.1.1. Fluconazole錠劑膠囊劑（如Diflucan oral）：（85/10/1、87/4/1、108/12/1）
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -710,7 +726,8 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Fluconazole
   conditions_of_payment:
     indications:
     - Fungal Infection / Mycosis (黴菌感染)
@@ -740,7 +757,7 @@ regulations:
       3.非愛滋病隱球菌腦膜炎患者使用，原則上使用6到8週，視病人臨床反應，抗原效價及培養結果調整療期，而治黴菌藥物之終止以效價下降四倍及兩次培養陰性為原則。
 
       4.用於念珠性陰道炎，限頑固性疾病或無性經驗病人無法使用塞劑治療者單一劑量使用。'
-- regulation_id: REG-0453
+- regulation_id: REG-0443
   section_number: 10.6.1.2.
   section_title: 10.6.1.2. Fluconazole注射劑（如Diflucan inj）：（85/10/1、108/12/1）
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -748,7 +765,8 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Fluconazole (如 Diflucan inj)
   conditions_of_payment:
     indications:
     - Fungal Infection / Mycosis (黴菌感染)
@@ -774,7 +792,7 @@ regulations:
       1.已證實為全身性黴菌感染(經組織或培養證實)病例使用。
 
       2.非愛滋病隱球菌腦膜炎患者使用，原則上使用6到8週，視病人臨床反應，抗原效價及培養結果調整療期，而治黴菌藥物之終止以效價下降四倍及兩次培養陰性為原則。'
-- regulation_id: REG-0454
+- regulation_id: REG-0444
   section_number: 10.6.1.3.
   section_title: 10.6.1.3. Fluconazole口服液劑（如Fluzole powder for oral suspension）：（108/12/1、111/2/1）
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -782,7 +800,8 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Fluconazole
   conditions_of_payment:
     indications:
     - Fungal Infection / Mycosis (黴菌感染)
@@ -811,7 +830,7 @@ regulations:
       預防後天免疫缺乏症候群病人的黴菌感染。
 
       2.病人接受本品治療期間，不得併用其他同類藥品。'
-- regulation_id: REG-0455
+- regulation_id: REG-0445
   section_number: 10.6.3.1.
   section_title: 10.6.3.1. Itraconazole膠囊劑 (如Sporanox cap)：（85/1/1、91/4/1、91/8/1、98/8/1、104/1/1）
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -822,7 +841,8 @@ regulations:
   - (104/1/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Itraconazole
   conditions_of_payment:
     indications:
     - Onychomycosis / Tinea Unguium (足趾甲癬)
@@ -872,7 +892,7 @@ regulations:
       6.每次門診時，應註明使用日期，目前已使用週數及預定停藥日期。
 
       7.病人接受本品治療期間，不得併用其他同類藥品。'
-- regulation_id: REG-0456
+- regulation_id: REG-0446
   section_number: 10.6.3.2.
   section_title: 10.6.3.2. Itraconazole注射劑 (如Sporanox inj.)：（96/6/1、96/8/1、99/10/1）
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -881,7 +901,9 @@ regulations:
   - (96/8/1、99/10/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Amphotericin
+    - Itraconazole (如 Sporanox inj.)
   conditions_of_payment:
     indications:
     - Fungal Infection / Mycosis (黴菌感染)
@@ -915,7 +937,7 @@ regulations:
       2.限用於第一線治療藥物無法使用或無效的免疫功能不全及中樞神經系統罹患隱球菌病(包括隱球菌腦膜炎)的病人，並以14日為限。
 
       3.因病情需要，經感染症專科醫師會診確認需要使用者(申報費用時需檢附會診紀錄及相關之病歷資料)。(96/8/1、99/10/1)'
-- regulation_id: REG-0457
+- regulation_id: REG-0447
   section_number: 10.6.3.3.
   section_title: 10.6.3.3. Itraconazole 內服液劑 (如Itrazole oral solution)：（96/10/1）
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -923,7 +945,8 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Itraconazole (如 Itrazole oral solution)
   conditions_of_payment:
     indications:
     - Fungal Infection / Mycosis (黴菌感染)
@@ -945,7 +968,7 @@ regulations:
   reference_annotations:
     original_clause: 10.6.3.3. Itraconazole 內服液劑 (如Itrazole oral solution)：（96/10/1）
     full_text: 限用於HIV陽性反應及其它免疫功能不全病人的口腔念珠菌感染及食道念珠菌感染者。
-- regulation_id: REG-0458
+- regulation_id: REG-0448
   section_number: 10.6.4.
   section_title: 10.6.4. Terbinafine (如Lamisil tab)：(85/1/1、91/4/1、98/8/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -992,7 +1015,7 @@ regulations:
       2.其他頑固性體癬及股癬病例使用，每日一次，最長使用2週，治療期間不得併用其他同類藥品。
 
       3.頭癬病例使用，每日一次，最長使用4週，若確需延長治療時間，需於病歷詳細載明備查。(98/8/1)'
-- regulation_id: REG-0459
+- regulation_id: REG-0449
   section_number: 10.6.5.
   section_title: 10.6.5. Amphotericin B Injection colloidal dispersion及liposomal complex劑型（如Amphocil
     Injection、AmBisome for Injection）：(91/8/1、93/2/1)
@@ -1001,7 +1024,8 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Amphotericin
   conditions_of_payment:
     indications:
     - Fungal Infection / Mycosis (黴菌感染)
@@ -1025,7 +1049,7 @@ regulations:
     original_clause: 10.6.5. Amphotericin B Injection colloidal dispersion及liposomal
       complex劑型（如Amphocil Injection、AmBisome for Injection）：(91/8/1、93/2/1)
     full_text: 限用於侵入性黴菌感染（invasive fungal infection），且腎功能不全患者
-- regulation_id: REG-0460
+- regulation_id: REG-0450
   section_number: 10.6.6.
   section_title: 10.6.6. Caspofungin Injection劑型 (如Cancidas Injection 50mg)：(92/8/1、94/1/1、96/7/1、99/10/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -1034,7 +1058,9 @@ regulations:
   - (99/10/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Caspofungin
+    - Fluconazole
   conditions_of_payment:
     indications:
     - Fungal Infection / Mycosis (黴菌感染)
@@ -1060,7 +1086,7 @@ regulations:
       1.限用於其他黴菌藥物治療無效或有嚴重副作用之侵入性麴菌症、侵入性念珠菌感染症之第二線用藥。
 
       2.經感染症專科醫師認定需使用者，惟治療食道念珠菌感染限用於fluconazole無效或有嚴重副作用者。(99/10/1)'
-- regulation_id: REG-0461
+- regulation_id: REG-0451
   section_number: 10.6.7.
   section_title: 10.6.7. Micafungin Injection劑型(如Mycamine for Injection)：(96/4/1、97/10/1、111/2/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -1070,7 +1096,8 @@ regulations:
   - (97/10/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Micafungin
   conditions_of_payment:
     indications:
     - Fungal Infection / Mycosis (黴菌感染)
@@ -1098,7 +1125,7 @@ regulations:
       2.預防接受造血幹細胞移植病患的念珠菌感染。
 
       3.治療念珠菌血症與其他侵襲性之念珠菌感染。(97/10/1)'
-- regulation_id: REG-0462
+- regulation_id: REG-0452
   section_number: 10.6.8.
   section_title: 10.6.8. Flucytosine (如Flusine Tablets)(96/6/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -1128,7 +1155,7 @@ regulations:
   reference_annotations:
     original_clause: 10.6.8. Flucytosine (如Flusine Tablets)(96/6/1)
     full_text: 限用於Cryptococcus infection的病患。
-- regulation_id: REG-0463
+- regulation_id: REG-0453
   section_number: 10.6.9.
   section_title: 10.6.9. Anidulafungin注射劑 (如Eraxis for Injection) (97/10/1、105/8/1、111/5/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -1136,7 +1163,8 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Anidulafungin (如 Eraxis for Injection)
   conditions_of_payment:
     indications:
     - Fungal Infection / Mycosis (黴菌感染)
@@ -1158,7 +1186,7 @@ regulations:
   reference_annotations:
     original_clause: 10.6.9. Anidulafungin注射劑 (如Eraxis for Injection) (97/10/1、105/8/1、111/5/1)
     full_text: 限用於治療一個月以上患者之侵襲性念珠菌感染。
-- regulation_id: REG-0464
+- regulation_id: REG-0454
   section_number: 10.6.10.
   section_title: 10.6.10. Posaconazole (如Posanol)：(101/1/1、104/7/1、106/5/1、111/2/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -1173,7 +1201,13 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Amphotericin
+    - Cytarabine
+    - Fluconazole
+    - Itraconazole
     - Posaconazole (如 Posanol)
+    - Prednisolone
+    - Voriconazole
   conditions_of_payment:
     indications:
     - Leukemia (白血病)
@@ -1235,7 +1269,7 @@ regulations:
       2.使用本藥須經感染症專科醫師會診確認需要使用，申報費用時需檢附會診紀錄及相關之病歷資料。
 
       3.注射劑限用於無法口服之病人。(106/5/1)'
-- regulation_id: REG-0465
+- regulation_id: REG-0455
   section_number: 10.6.11.
   section_title: 10.6.11. Isavuconazole (如Cresemba)：(110/2/1)
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -1244,6 +1278,7 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Amphotericin
     - Isavuconazole (如 Cresemba)
   conditions_of_payment:
     indications: []
@@ -1274,9 +1309,9 @@ regulations:
       2.使用本藥須經感染症專科醫師會診確認需要使用，申報費用時需檢附會診紀錄及相關之病歷資料。
 
       3.注射劑限用於無法口服之病人。'
-- regulation_id: REG-0466
+- regulation_id: REG-0456
   section_number: 10.7.1.1.
-  section_title: 10.7.1.1. 全身性抗疱疹病毒劑
+  section_title: 10.7.1.1. 抗疱疹病毒劑 - 全身性抗疱疹病毒劑
   chapter: 第10節 抗微生物劑 Antimicrobial agents
   source_file: 完整給付規定1150821.docx
   effective_dates:
@@ -1288,7 +1323,10 @@ regulations:
   - (101/5/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Acyclovir
+    - Famciclovir
+    - Valaciclovir
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -1313,7 +1351,7 @@ regulations:
     - 療程以7天為限
     - 以10天為限
   reference_annotations:
-    original_clause: 10.7.1.1. 全身性抗疱疹病毒劑
+    original_clause: 10.7.1.1. 抗疱疹病毒劑 - 全身性抗疱疹病毒劑
     full_text: '1.Acyclovir：(98/11/1、100/7/1、107/12/1、108/3/1、108/6/1)
 
       (1)使用本類製劑，除200mg(限Deherp)、400mg及800mg(限Virless)規格量口服錠劑外，應以下列條件為限：(107/12/1、108/3/1、108/6/1)
@@ -1369,7 +1407,7 @@ regulations:
       B.接受高劑量化療或全身放射治療 (TBI) 前一天至移植術後第30天為止。
 
       3.Acyclovir、famciclovir及valaciclovir除上述特別規定外，使用療程原則以10天為限，口服、注射劑及外用藥膏擇一使用，不得合併使用。（95/6/1、100/7/1、101/5/1）'
-- regulation_id: REG-0467
+- regulation_id: REG-0457
   section_number: 10.7.1.2.
   section_title: 10.7.1.2. 局部抗疱疹病毒劑（如Acyclovir外用製劑；tromantadine外用製劑；penciclovir外用製劑）：(97/12/1、98/11/1、100/7/1、102/7/1）
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -1378,7 +1416,10 @@ regulations:
   - (102/7/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Acyclovir
+    - Penciclovir
+    - Tromantadine
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -1404,7 +1445,7 @@ regulations:
       2.Penciclovir藥膏用於治療由單純皰疹病毒引起之復發性唇皰疹，每次處方以1支(2公克)為原則。(102/7/1)
 
       3.口服、注射劑及外用藥膏擇一使用，不得合併使用。'
-- regulation_id: REG-0468
+- regulation_id: REG-0458
   section_number: 10.7.2.
   section_title: 10.7.2. Ribavirin 膠囊劑（如Robatrol、Rebetol）(93/2/1、93/7/1、93/8/1、95/11/1、98/11/1、100/4/1、109/7/1、114/6/1）：
   chapter: 第10節 抗微生物劑 Antimicrobial agents
@@ -1413,7 +1454,10 @@ regulations:
   - (109/7/1、111/9/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Interferon
+    - Peginterferon
+    - Ribavirin
   conditions_of_payment:
     indications:
     - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
@@ -1523,3 +1567,2357 @@ regulations:
       Ⅰ.須具有消化系內科或消化系兒科專任專科醫師之基層院所。
 
       Ⅱ.肝炎治療醫療資源不足地區及山地離島地區，具有消化系內科或消化系兒科兼任專科醫師之基層院所，亦得開立處方，惟離島地區(如金門縣、連江縣、澎湖縣、台東縣蘭嶼鄉、台東縣綠島鄉)內科醫師之基層院所，亦得開立處方。'
+- regulation_id: REG-0459
+  section_number: 10.7.3.
+  section_title: 10.7.3. Lamivudine 100mg(如Zeffix)；entecavir (如Baraclude)；telbivudine
+    (如Sebivo)；tenofovir disoproxil (如Viread)；tenofovir alafenamide (如Vemlidy)：（92/10/1、93/2/1、93/8/1、94/10/1、95/10/1、95/11/1、97/8/1、98/11/1、99/5/1、99/7/1、100/6/1、102/2/1、104/12/1、106/1/1、106/4/1、107/2/1、108/2/1、108/5/1、109/1/1、109/7/1、110/3/1、111/3/1、111/9/1、112/10/1、113/1/1、113/4/1、114/6/1)
+  chapter: 第10節 抗微生物劑 Antimicrobial agents
+  source_file: 完整給付規定1150821.docx
+  effective_dates:
+  - (98/11/1、110/3/1)
+  - (93/2/1、94/10/1、98/11/1)
+  - (95/10/1、98/11/1)
+  - (99/7/1、110/3/1、114/6/1)
+  - (99/7/1、110/3/1、114/6/1)
+  - (110/3/1)
+  - (110/3/1)
+  - (110/3/1)
+  - (104/12/1)
+  - (109/1/1)
+  - (110/3/1)
+  - (110/3/1、114/6/1)
+  - (110/3/1、112/10/1、113/1/1、113/4/1、114/6/1)
+  - (112/10/1)
+  - (104/12/1、110/3/1)
+  - (109/7/1、111/9/1、114/6/1)
+  - (111/9/1)
+  medications:
+    drug_classes:
+    - 核苷及核苷酸反轉錄酶抑制劑 / B型肝炎口服抗病毒藥物
+    ingredients:
+    - Entecavir (恩替卡韋)
+    - Lamivudine (拉米夫定)
+    - Prednisolone
+    - Rituximab
+    - Telbivudine (如 Sebivo)
+    - Tenofovir alafenamide (替諾福韋丙酚酚胺)
+    - Tenofovir disoproxil (替諾福韋雙索酯)
+  conditions_of_payment:
+    indications:
+    - Liver Cirrhosis (肝硬化)
+    - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+    - Liver Cancer / Hepatocellular Carcinoma (肝癌)
+    laboratory_criteria:
+    - ALT
+    - AST
+    - 血小板
+    - HBV DNA
+    - HBeAg
+    - HBsAg
+    - METAVIR
+    - Platelet
+    summary: 適用於【Liver Cirrhosis、Hepatitis B / Hepatitis C、Liver Cancer / Hepatocellular
+      Carcinoma】之健保給付。 主要條件包含：臨床檢驗需符合 HBV DNA >= 2×105IU/mL, HBV DNA >= 20000IU/mL,
+      HBV DNA >= 20000IU/mL。
+    clinical_rules:
+    - indication: Liver Cirrhosis (肝硬化)
+      biomarkers:
+      - biomarker: HBV DNA
+        operator: '>='
+        value: 2×105
+        unit: IU/mL
+        duration: 一週
+        terminology_bindings:
+          loinc: 29615-2
+          snomed_ct: '121912002'
+          snomed_procedure: '121912002'
+          snomed_finding: '24771000237109'
+        source_grounding:
+          start_char: 1480
+          end_char: 1500
+          snippet: HBV DNA≧ 2×105 IU/mL
+      - biomarker: HBV DNA
+        operator: '>='
+        value: '20000'
+        unit: IU/mL
+        duration: null
+        terminology_bindings:
+          loinc: 29615-2
+          snomed_ct: '121912002'
+          snomed_procedure: '121912002'
+          snomed_finding: '24771000237109'
+        source_grounding:
+          start_char: 2280
+          end_char: 2300
+          snippet: HBV DNA≧20,000 IU/mL
+      - biomarker: HBV DNA
+        operator: '>='
+        value: '20000'
+        unit: IU/mL
+        duration: 3個月
+        terminology_bindings:
+          loinc: 29615-2
+          snomed_ct: '121912002'
+          snomed_procedure: '121912002'
+          snomed_finding: '24771000237109'
+        source_grounding:
+          start_char: 2451
+          end_char: 2472
+          snippet: HBV DNA≧ 20,000 IU/mL
+      - biomarker: HBV DNA
+        operator: '>='
+        value: '2000'
+        unit: IU/mL
+        duration: null
+        terminology_bindings:
+          loinc: 29615-2
+          snomed_ct: '121912002'
+          snomed_procedure: '121912002'
+          snomed_finding: '24771000237109'
+        source_grounding:
+          start_char: 3032
+          end_char: 3051
+          snippet: HBV DNA≧2,000 IU/mL
+      - biomarker: HBV DNA
+        operator: '>='
+        value: '20000'
+        unit: IU/mL
+        duration: 3 個月
+        terminology_bindings:
+          loinc: 29615-2
+          snomed_ct: '121912002'
+          snomed_procedure: '121912002'
+          snomed_finding: '24771000237109'
+        source_grounding:
+          start_char: 3372
+          end_char: 3393
+          snippet: HBV DNA≧ 20,000 IU/mL
+      - biomarker: HBeAg
+        operator: '='
+        value: 陽性
+        unit: ''
+        duration: 12個月
+        terminology_bindings:
+          loinc: 13954-3
+          snomed_ct: '313476009'
+          snomed_procedure: '313476009'
+          snomed_finding: '1001321000000104'
+        source_grounding:
+          start_char: 210
+          end_char: 217
+          snippet: HBeAg陽性
+      - biomarker: HBeAg
+        operator: '='
+        value: 陰性
+        unit: ''
+        duration: 12個月
+        terminology_bindings:
+          loinc: 13954-3
+          snomed_ct: '313476009'
+          snomed_procedure: '313476009'
+          snomed_finding: '1001321000000104'
+        source_grounding:
+          start_char: 244
+          end_char: 251
+          snippet: HBeAg陰性
+      - biomarker: HBsAg
+        operator: '='
+        value: 陽性
+        unit: ''
+        duration: null
+        terminology_bindings:
+          loinc: 5196-1
+          snomed_ct: '165806002'
+          snomed_procedure: '1111171000000105'
+          snomed_finding: '165806002'
+        source_grounding:
+          start_char: 1281
+          end_char: 1289
+          snippet: HBsAg為陽性
+      - biomarker: HBsAg
+        operator: '='
+        value: 陽性
+        unit: ''
+        duration: 一週
+        terminology_bindings:
+          loinc: 5196-1
+          snomed_ct: '165806002'
+          snomed_procedure: '1111171000000105'
+          snomed_finding: '165806002'
+        source_grounding:
+          start_char: 1382
+          end_char: 1390
+          snippet: HBsAg為陽性
+      - biomarker: HBsAg
+        operator: '='
+        value: 陽性
+        unit: ''
+        duration: 一週
+        terminology_bindings:
+          loinc: 5196-1
+          snomed_ct: '165806002'
+          snomed_procedure: '1111171000000105'
+          snomed_finding: '165806002'
+        source_grounding:
+          start_char: 1399
+          end_char: 1407
+          snippet: HBsAg為陽性
+      - biomarker: METAVIR
+        operator: '='
+        value: F4
+        unit: Stage
+        duration: null
+        terminology_bindings:
+          loinc: 48794-2
+          snomed_ct: '770585004'
+          snomed_procedure: '770585004'
+          snomed_finding: '1197739005'
+        source_grounding:
+          start_char: 937
+          end_char: 947
+          snippet: Metavir F4
+      - biomarker: ALT
+        operator: '>='
+        value: '5'
+        unit: U/L
+        duration: null
+        terminology_bindings:
+          loinc: 1742-6
+          snomed_ct: '34608000'
+          snomed_procedure: '34608000'
+          snomed_finding: '34608000'
+        source_grounding:
+          start_char: 2236
+          end_char: 2241
+          snippet: ALT≧5
+      - biomarker: ALT
+        operator: <
+        value: '5'
+        unit: U/L
+        duration: null
+        terminology_bindings:
+          loinc: 1742-6
+          snomed_ct: '34608000'
+          snomed_procedure: '34608000'
+          snomed_finding: '34608000'
+        source_grounding:
+          start_char: 2269
+          end_char: 2274
+          snippet: ALT<5
+      - biomarker: ALT
+        operator: '>='
+        value: '2'
+        unit: U/L
+        duration: null
+        terminology_bindings:
+          loinc: 1742-6
+          snomed_ct: '34608000'
+          snomed_procedure: '34608000'
+          snomed_finding: '34608000'
+        source_grounding:
+          start_char: 3019
+          end_char: 3025
+          snippet: ALT≧ 2
+      - biomarker: ALT
+        operator: '>='
+        value: '2'
+        unit: U/L
+        duration: 3 個月
+        terminology_bindings:
+          loinc: 1742-6
+          snomed_ct: '34608000'
+          snomed_procedure: '34608000'
+          snomed_finding: '34608000'
+        source_grounding:
+          start_char: 3242
+          end_char: 3248
+          snippet: ALT≧ 2
+      - biomarker: Platelet
+        operator: <
+        value: '120'
+        unit: /μL
+        duration: null
+        terminology_bindings:
+          loinc: 777-3
+          snomed_ct: '365632008'
+          snomed_procedure: '165555003'
+          snomed_finding: '365632008'
+        source_grounding:
+          start_char: 1017
+          end_char: 1025
+          snippet: 血小板< 120
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 給付36個月
+      - 給付36個月
+    - indication: Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+      biomarkers:
+      - biomarker: HBV DNA
+        operator: '>='
+        value: 2×105
+        unit: IU/mL
+        duration: 一週
+        terminology_bindings:
+          loinc: 29615-2
+          snomed_ct: '121912002'
+          snomed_procedure: '121912002'
+          snomed_finding: '24771000237109'
+        source_grounding:
+          start_char: 1480
+          end_char: 1500
+          snippet: HBV DNA≧ 2×105 IU/mL
+      - biomarker: HBV DNA
+        operator: '>='
+        value: '20000'
+        unit: IU/mL
+        duration: null
+        terminology_bindings:
+          loinc: 29615-2
+          snomed_ct: '121912002'
+          snomed_procedure: '121912002'
+          snomed_finding: '24771000237109'
+        source_grounding:
+          start_char: 2280
+          end_char: 2300
+          snippet: HBV DNA≧20,000 IU/mL
+      - biomarker: HBV DNA
+        operator: '>='
+        value: '20000'
+        unit: IU/mL
+        duration: 3個月
+        terminology_bindings:
+          loinc: 29615-2
+          snomed_ct: '121912002'
+          snomed_procedure: '121912002'
+          snomed_finding: '24771000237109'
+        source_grounding:
+          start_char: 2451
+          end_char: 2472
+          snippet: HBV DNA≧ 20,000 IU/mL
+      - biomarker: HBV DNA
+        operator: '>='
+        value: '2000'
+        unit: IU/mL
+        duration: null
+        terminology_bindings:
+          loinc: 29615-2
+          snomed_ct: '121912002'
+          snomed_procedure: '121912002'
+          snomed_finding: '24771000237109'
+        source_grounding:
+          start_char: 3032
+          end_char: 3051
+          snippet: HBV DNA≧2,000 IU/mL
+      - biomarker: HBV DNA
+        operator: '>='
+        value: '20000'
+        unit: IU/mL
+        duration: 3 個月
+        terminology_bindings:
+          loinc: 29615-2
+          snomed_ct: '121912002'
+          snomed_procedure: '121912002'
+          snomed_finding: '24771000237109'
+        source_grounding:
+          start_char: 3372
+          end_char: 3393
+          snippet: HBV DNA≧ 20,000 IU/mL
+      - biomarker: HBeAg
+        operator: '='
+        value: 陽性
+        unit: ''
+        duration: 12個月
+        terminology_bindings:
+          loinc: 13954-3
+          snomed_ct: '313476009'
+          snomed_procedure: '313476009'
+          snomed_finding: '1001321000000104'
+        source_grounding:
+          start_char: 210
+          end_char: 217
+          snippet: HBeAg陽性
+      - biomarker: HBeAg
+        operator: '='
+        value: 陰性
+        unit: ''
+        duration: 12個月
+        terminology_bindings:
+          loinc: 13954-3
+          snomed_ct: '313476009'
+          snomed_procedure: '313476009'
+          snomed_finding: '1001321000000104'
+        source_grounding:
+          start_char: 244
+          end_char: 251
+          snippet: HBeAg陰性
+      - biomarker: HBsAg
+        operator: '='
+        value: 陽性
+        unit: ''
+        duration: null
+        terminology_bindings:
+          loinc: 5196-1
+          snomed_ct: '165806002'
+          snomed_procedure: '1111171000000105'
+          snomed_finding: '165806002'
+        source_grounding:
+          start_char: 1281
+          end_char: 1289
+          snippet: HBsAg為陽性
+      - biomarker: HBsAg
+        operator: '='
+        value: 陽性
+        unit: ''
+        duration: 一週
+        terminology_bindings:
+          loinc: 5196-1
+          snomed_ct: '165806002'
+          snomed_procedure: '1111171000000105'
+          snomed_finding: '165806002'
+        source_grounding:
+          start_char: 1382
+          end_char: 1390
+          snippet: HBsAg為陽性
+      - biomarker: HBsAg
+        operator: '='
+        value: 陽性
+        unit: ''
+        duration: 一週
+        terminology_bindings:
+          loinc: 5196-1
+          snomed_ct: '165806002'
+          snomed_procedure: '1111171000000105'
+          snomed_finding: '165806002'
+        source_grounding:
+          start_char: 1399
+          end_char: 1407
+          snippet: HBsAg為陽性
+      - biomarker: METAVIR
+        operator: '='
+        value: F4
+        unit: Stage
+        duration: null
+        terminology_bindings:
+          loinc: 48794-2
+          snomed_ct: '770585004'
+          snomed_procedure: '770585004'
+          snomed_finding: '1197739005'
+        source_grounding:
+          start_char: 937
+          end_char: 947
+          snippet: Metavir F4
+      - biomarker: ALT
+        operator: '>='
+        value: '5'
+        unit: U/L
+        duration: null
+        terminology_bindings:
+          loinc: 1742-6
+          snomed_ct: '34608000'
+          snomed_procedure: '34608000'
+          snomed_finding: '34608000'
+        source_grounding:
+          start_char: 2236
+          end_char: 2241
+          snippet: ALT≧5
+      - biomarker: ALT
+        operator: <
+        value: '5'
+        unit: U/L
+        duration: null
+        terminology_bindings:
+          loinc: 1742-6
+          snomed_ct: '34608000'
+          snomed_procedure: '34608000'
+          snomed_finding: '34608000'
+        source_grounding:
+          start_char: 2269
+          end_char: 2274
+          snippet: ALT<5
+      - biomarker: ALT
+        operator: '>='
+        value: '2'
+        unit: U/L
+        duration: null
+        terminology_bindings:
+          loinc: 1742-6
+          snomed_ct: '34608000'
+          snomed_procedure: '34608000'
+          snomed_finding: '34608000'
+        source_grounding:
+          start_char: 3019
+          end_char: 3025
+          snippet: ALT≧ 2
+      - biomarker: ALT
+        operator: '>='
+        value: '2'
+        unit: U/L
+        duration: 3 個月
+        terminology_bindings:
+          loinc: 1742-6
+          snomed_ct: '34608000'
+          snomed_procedure: '34608000'
+          snomed_finding: '34608000'
+        source_grounding:
+          start_char: 3242
+          end_char: 3248
+          snippet: ALT≧ 2
+      - biomarker: Platelet
+        operator: <
+        value: '120'
+        unit: /μL
+        duration: null
+        terminology_bindings:
+          loinc: 777-3
+          snomed_ct: '365632008'
+          snomed_procedure: '165555003'
+          snomed_finding: '365632008'
+        source_grounding:
+          start_char: 1017
+          end_char: 1025
+          snippet: 血小板< 120
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 給付36個月
+      - 給付36個月
+    - indication: Liver Cancer / Hepatocellular Carcinoma (肝癌)
+      biomarkers:
+      - biomarker: HBV DNA
+        operator: '>='
+        value: 2×105
+        unit: IU/mL
+        duration: 一週
+        terminology_bindings:
+          loinc: 29615-2
+          snomed_ct: '121912002'
+          snomed_procedure: '121912002'
+          snomed_finding: '24771000237109'
+        source_grounding:
+          start_char: 1480
+          end_char: 1500
+          snippet: HBV DNA≧ 2×105 IU/mL
+      - biomarker: HBV DNA
+        operator: '>='
+        value: '20000'
+        unit: IU/mL
+        duration: null
+        terminology_bindings:
+          loinc: 29615-2
+          snomed_ct: '121912002'
+          snomed_procedure: '121912002'
+          snomed_finding: '24771000237109'
+        source_grounding:
+          start_char: 2280
+          end_char: 2300
+          snippet: HBV DNA≧20,000 IU/mL
+      - biomarker: HBV DNA
+        operator: '>='
+        value: '20000'
+        unit: IU/mL
+        duration: 3個月
+        terminology_bindings:
+          loinc: 29615-2
+          snomed_ct: '121912002'
+          snomed_procedure: '121912002'
+          snomed_finding: '24771000237109'
+        source_grounding:
+          start_char: 2451
+          end_char: 2472
+          snippet: HBV DNA≧ 20,000 IU/mL
+      - biomarker: HBV DNA
+        operator: '>='
+        value: '2000'
+        unit: IU/mL
+        duration: null
+        terminology_bindings:
+          loinc: 29615-2
+          snomed_ct: '121912002'
+          snomed_procedure: '121912002'
+          snomed_finding: '24771000237109'
+        source_grounding:
+          start_char: 3032
+          end_char: 3051
+          snippet: HBV DNA≧2,000 IU/mL
+      - biomarker: HBV DNA
+        operator: '>='
+        value: '20000'
+        unit: IU/mL
+        duration: 3 個月
+        terminology_bindings:
+          loinc: 29615-2
+          snomed_ct: '121912002'
+          snomed_procedure: '121912002'
+          snomed_finding: '24771000237109'
+        source_grounding:
+          start_char: 3372
+          end_char: 3393
+          snippet: HBV DNA≧ 20,000 IU/mL
+      - biomarker: HBeAg
+        operator: '='
+        value: 陽性
+        unit: ''
+        duration: 12個月
+        terminology_bindings:
+          loinc: 13954-3
+          snomed_ct: '313476009'
+          snomed_procedure: '313476009'
+          snomed_finding: '1001321000000104'
+        source_grounding:
+          start_char: 210
+          end_char: 217
+          snippet: HBeAg陽性
+      - biomarker: HBeAg
+        operator: '='
+        value: 陰性
+        unit: ''
+        duration: 12個月
+        terminology_bindings:
+          loinc: 13954-3
+          snomed_ct: '313476009'
+          snomed_procedure: '313476009'
+          snomed_finding: '1001321000000104'
+        source_grounding:
+          start_char: 244
+          end_char: 251
+          snippet: HBeAg陰性
+      - biomarker: HBsAg
+        operator: '='
+        value: 陽性
+        unit: ''
+        duration: null
+        terminology_bindings:
+          loinc: 5196-1
+          snomed_ct: '165806002'
+          snomed_procedure: '1111171000000105'
+          snomed_finding: '165806002'
+        source_grounding:
+          start_char: 1281
+          end_char: 1289
+          snippet: HBsAg為陽性
+      - biomarker: HBsAg
+        operator: '='
+        value: 陽性
+        unit: ''
+        duration: 一週
+        terminology_bindings:
+          loinc: 5196-1
+          snomed_ct: '165806002'
+          snomed_procedure: '1111171000000105'
+          snomed_finding: '165806002'
+        source_grounding:
+          start_char: 1382
+          end_char: 1390
+          snippet: HBsAg為陽性
+      - biomarker: HBsAg
+        operator: '='
+        value: 陽性
+        unit: ''
+        duration: 一週
+        terminology_bindings:
+          loinc: 5196-1
+          snomed_ct: '165806002'
+          snomed_procedure: '1111171000000105'
+          snomed_finding: '165806002'
+        source_grounding:
+          start_char: 1399
+          end_char: 1407
+          snippet: HBsAg為陽性
+      - biomarker: METAVIR
+        operator: '='
+        value: F4
+        unit: Stage
+        duration: null
+        terminology_bindings:
+          loinc: 48794-2
+          snomed_ct: '770585004'
+          snomed_procedure: '770585004'
+          snomed_finding: '1197739005'
+        source_grounding:
+          start_char: 937
+          end_char: 947
+          snippet: Metavir F4
+      - biomarker: ALT
+        operator: '>='
+        value: '5'
+        unit: U/L
+        duration: null
+        terminology_bindings:
+          loinc: 1742-6
+          snomed_ct: '34608000'
+          snomed_procedure: '34608000'
+          snomed_finding: '34608000'
+        source_grounding:
+          start_char: 2236
+          end_char: 2241
+          snippet: ALT≧5
+      - biomarker: ALT
+        operator: <
+        value: '5'
+        unit: U/L
+        duration: null
+        terminology_bindings:
+          loinc: 1742-6
+          snomed_ct: '34608000'
+          snomed_procedure: '34608000'
+          snomed_finding: '34608000'
+        source_grounding:
+          start_char: 2269
+          end_char: 2274
+          snippet: ALT<5
+      - biomarker: ALT
+        operator: '>='
+        value: '2'
+        unit: U/L
+        duration: null
+        terminology_bindings:
+          loinc: 1742-6
+          snomed_ct: '34608000'
+          snomed_procedure: '34608000'
+          snomed_finding: '34608000'
+        source_grounding:
+          start_char: 3019
+          end_char: 3025
+          snippet: ALT≧ 2
+      - biomarker: ALT
+        operator: '>='
+        value: '2'
+        unit: U/L
+        duration: 3 個月
+        terminology_bindings:
+          loinc: 1742-6
+          snomed_ct: '34608000'
+          snomed_procedure: '34608000'
+          snomed_finding: '34608000'
+        source_grounding:
+          start_char: 3242
+          end_char: 3248
+          snippet: ALT≧ 2
+      - biomarker: Platelet
+        operator: <
+        value: '120'
+        unit: /μL
+        duration: null
+        terminology_bindings:
+          loinc: 777-3
+          snomed_ct: '365632008'
+          snomed_procedure: '165555003'
+          snomed_finding: '365632008'
+        source_grounding:
+          start_char: 1017
+          end_char: 1025
+          snippet: 血小板< 120
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 給付36個月
+      - 給付36個月
+    structured_biomarkers:
+    - biomarker: HBV DNA
+      operator: '>='
+      value: 2×105
+      unit: IU/mL
+      duration: 一週
+      terminology_bindings:
+        loinc: 29615-2
+        snomed_ct: '121912002'
+        snomed_procedure: '121912002'
+        snomed_finding: '24771000237109'
+      source_grounding:
+        start_char: 1480
+        end_char: 1500
+        snippet: HBV DNA≧ 2×105 IU/mL
+    - biomarker: HBV DNA
+      operator: '>='
+      value: '20000'
+      unit: IU/mL
+      duration: null
+      terminology_bindings:
+        loinc: 29615-2
+        snomed_ct: '121912002'
+        snomed_procedure: '121912002'
+        snomed_finding: '24771000237109'
+      source_grounding:
+        start_char: 2280
+        end_char: 2300
+        snippet: HBV DNA≧20,000 IU/mL
+    - biomarker: HBV DNA
+      operator: '>='
+      value: '20000'
+      unit: IU/mL
+      duration: 3個月
+      terminology_bindings:
+        loinc: 29615-2
+        snomed_ct: '121912002'
+        snomed_procedure: '121912002'
+        snomed_finding: '24771000237109'
+      source_grounding:
+        start_char: 2451
+        end_char: 2472
+        snippet: HBV DNA≧ 20,000 IU/mL
+    - biomarker: HBV DNA
+      operator: '>='
+      value: '2000'
+      unit: IU/mL
+      duration: null
+      terminology_bindings:
+        loinc: 29615-2
+        snomed_ct: '121912002'
+        snomed_procedure: '121912002'
+        snomed_finding: '24771000237109'
+      source_grounding:
+        start_char: 3032
+        end_char: 3051
+        snippet: HBV DNA≧2,000 IU/mL
+    - biomarker: HBV DNA
+      operator: '>='
+      value: '20000'
+      unit: IU/mL
+      duration: 3 個月
+      terminology_bindings:
+        loinc: 29615-2
+        snomed_ct: '121912002'
+        snomed_procedure: '121912002'
+        snomed_finding: '24771000237109'
+      source_grounding:
+        start_char: 3372
+        end_char: 3393
+        snippet: HBV DNA≧ 20,000 IU/mL
+    - biomarker: HBeAg
+      operator: '='
+      value: 陽性
+      unit: ''
+      duration: 12個月
+      terminology_bindings:
+        loinc: 13954-3
+        snomed_ct: '313476009'
+        snomed_procedure: '313476009'
+        snomed_finding: '1001321000000104'
+      source_grounding:
+        start_char: 210
+        end_char: 217
+        snippet: HBeAg陽性
+    - biomarker: HBeAg
+      operator: '='
+      value: 陰性
+      unit: ''
+      duration: 12個月
+      terminology_bindings:
+        loinc: 13954-3
+        snomed_ct: '313476009'
+        snomed_procedure: '313476009'
+        snomed_finding: '1001321000000104'
+      source_grounding:
+        start_char: 244
+        end_char: 251
+        snippet: HBeAg陰性
+    - biomarker: HBsAg
+      operator: '='
+      value: 陽性
+      unit: ''
+      duration: null
+      terminology_bindings:
+        loinc: 5196-1
+        snomed_ct: '165806002'
+        snomed_procedure: '1111171000000105'
+        snomed_finding: '165806002'
+      source_grounding:
+        start_char: 1281
+        end_char: 1289
+        snippet: HBsAg為陽性
+    - biomarker: HBsAg
+      operator: '='
+      value: 陽性
+      unit: ''
+      duration: 一週
+      terminology_bindings:
+        loinc: 5196-1
+        snomed_ct: '165806002'
+        snomed_procedure: '1111171000000105'
+        snomed_finding: '165806002'
+      source_grounding:
+        start_char: 1382
+        end_char: 1390
+        snippet: HBsAg為陽性
+    - biomarker: HBsAg
+      operator: '='
+      value: 陽性
+      unit: ''
+      duration: 一週
+      terminology_bindings:
+        loinc: 5196-1
+        snomed_ct: '165806002'
+        snomed_procedure: '1111171000000105'
+        snomed_finding: '165806002'
+      source_grounding:
+        start_char: 1399
+        end_char: 1407
+        snippet: HBsAg為陽性
+    - biomarker: METAVIR
+      operator: '='
+      value: F4
+      unit: Stage
+      duration: null
+      terminology_bindings:
+        loinc: 48794-2
+        snomed_ct: '770585004'
+        snomed_procedure: '770585004'
+        snomed_finding: '1197739005'
+      source_grounding:
+        start_char: 937
+        end_char: 947
+        snippet: Metavir F4
+    - biomarker: ALT
+      operator: '>='
+      value: '5'
+      unit: U/L
+      duration: null
+      terminology_bindings:
+        loinc: 1742-6
+        snomed_ct: '34608000'
+        snomed_procedure: '34608000'
+        snomed_finding: '34608000'
+      source_grounding:
+        start_char: 2236
+        end_char: 2241
+        snippet: ALT≧5
+    - biomarker: ALT
+      operator: <
+      value: '5'
+      unit: U/L
+      duration: null
+      terminology_bindings:
+        loinc: 1742-6
+        snomed_ct: '34608000'
+        snomed_procedure: '34608000'
+        snomed_finding: '34608000'
+      source_grounding:
+        start_char: 2269
+        end_char: 2274
+        snippet: ALT<5
+    - biomarker: ALT
+      operator: '>='
+      value: '2'
+      unit: U/L
+      duration: null
+      terminology_bindings:
+        loinc: 1742-6
+        snomed_ct: '34608000'
+        snomed_procedure: '34608000'
+        snomed_finding: '34608000'
+      source_grounding:
+        start_char: 3019
+        end_char: 3025
+        snippet: ALT≧ 2
+    - biomarker: ALT
+      operator: '>='
+      value: '2'
+      unit: U/L
+      duration: 3 個月
+      terminology_bindings:
+        loinc: 1742-6
+        snomed_ct: '34608000'
+        snomed_procedure: '34608000'
+        snomed_finding: '34608000'
+      source_grounding:
+        start_char: 3242
+        end_char: 3248
+        snippet: ALT≧ 2
+    - biomarker: Platelet
+      operator: <
+      value: '120'
+      unit: /μL
+      duration: null
+      terminology_bindings:
+        loinc: 777-3
+        snomed_ct: '365632008'
+        snomed_procedure: '165555003'
+        snomed_finding: '365632008'
+      source_grounding:
+        start_char: 1017
+        end_char: 1025
+        snippet: 血小板< 120
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 給付36個月
+    - 給付36個月
+  reference_annotations:
+    original_clause: 10.7.3. Lamivudine 100mg(如Zeffix)；entecavir (如Baraclude)；telbivudine
+      (如Sebivo)；tenofovir disoproxil (如Viread)；tenofovir alafenamide (如Vemlidy)：（92/10/1、93/2/1、93/8/1、94/10/1、95/10/1、95/11/1、97/8/1、98/11/1、99/5/1、99/7/1、100/6/1、102/2/1、104/12/1、106/1/1、106/4/1、107/2/1、108/2/1、108/5/1、109/1/1、109/7/1、110/3/1、111/3/1、111/9/1、112/10/1、113/1/1、113/4/1、114/6/1)
+    full_text: "用於慢性病毒性B型肝炎患者之條件如下：\n1.HBsAg(+)且已發生肝代償不全者，以lamivudine 100mg、entecavir\
+      \ 1.0mg、telbivudine、tenofovir disoproxil或tenofovir alafenamide治療，其給付療程如下：（98/11/1、100/6/1、102/2/1、104/12/1、106/1/1、106/4/1、108/5/1、111/3/1）\n\
+      (1)HBeAg陽性病患治療至e抗原轉陰並再給付最多12個月治療。\n(2)HBeAg陰性病患治療至少二年，治療期間需檢驗血清HBV DNA，並於檢驗血清HBV\
+      \ DNA連續三次，每次間隔6個月，均檢驗不出HBV DNA時停藥，每次療程至多給付36個月。\n註：\nⅠ.肝代償不全條件為prothrombin time延長≧3秒或bilirubin\
+      \ (total)≧2.0mg/dL，prothrombin time延長係以該次檢驗control值為準。\nⅡ.Entecavir每日限使用1粒。\n\
+      2.慢性Ｂ型肝炎病毒帶原者HBsAg(+)，或HBsAg(-)但B型肝炎核心抗體(anti-HBc)陽性者：（98/11/1、110/3/1、114/6/1）\n\
+      (1)接受非肝臟之器官移植者，自移植前7天內可開始預防性使用，或接受非肝臟之器官移植後，B型肝炎發作者，可長期使用。(98/11/1、110/3/1)\n\
+      (2)接受癌症化學療法中，B型肝炎發作者，經照會消化系專科醫師同意後，可長期使用。(93/2/1、94/10/1、98/11/1)\n(3)接受肝臟移植者，可預防性使用。(95/10/1、98/11/1)\n\
+      (4)接受癌症化學療法，經照會消化系專科醫師同意後，可於化學療法前1週開始給付使用，直至化學療法結束後6個月，以預防Ｂ型肝炎發作。（98/11/1）\n\
+      (5)肝硬化病患，可長期使用。(99/7/1、110/3/1、114/6/1)\n註：肝硬化條件為需同時符合下列二項條件: (99/7/1、110/3/1、114/6/1)\n\
+      I.HBsAg(+)且可檢驗到血清HBV DNA。(110/3/1)\nⅡ.診斷標準（99/7/1、114/6/1）：\na.肝組織切片（Metavir\
+      \ F4或Ishak F5以上）（114/6/1）；或\nb.超音波診斷為肝硬化併食道或胃靜脈曲張，或超音波診斷為肝硬化併脾腫大、超音波診斷為肝硬化且血小板<\
+      \ 120,000/μL，或肝硬度超音波診斷為肝硬化。若患者因其他臨床適應症接受電腦斷層或核磁共振檢查而被診斷為肝硬化時，可做為診斷依據。(110/3/1)\n\
+      註：以肝硬度超音波證實等同METAVIR system纖維化等於F4之定義：transient elastography (Fibroscan)≧ 12\
+      \ Kpa或Acoustic Radiation Force Impulse elastography (ARFI)≧ 1.98。(110/3/1)\n\
+      (6)在異體造血幹細胞移植時：(104/12/1)\nⅠ.捐贈者之HBsAg為陽性反應，則捐贈者可自其確認為移植捐贈者後開始使用預防性抗病毒藥物治療，原則上治療到血液中偵測不到HBV\
+      \ DNA；若捐贈者符合10.7.3之3至5項治療條件，則依其規範給付。\nⅡ.\t受贈者之HBsAg為陽性反應，或捐贈來源之HBsAg為陽性反應，則受贈者可在經照會消化系專科醫師同意後，於移植前一週起至移植後免疫抑制藥物停用後6個月內，給付使用抗B型肝炎病毒藥物以預防發作。\n\
+      (7)血清HBV DNA≧ 2×105 IU/mL之懷孕者，可於懷孕滿27週後開始給付使用telbivudine、tenofovir disoproxil或tenofovir\
+      \ alafenamide，直至產後4週。（107/2/1、108/5/1、114/6/1）\n(8)確診為肝癌並接受根除性治療且可檢驗到血清HBV DNA，可長期使用，直至肝癌復發且未能再次接受根除性治療止。（108/2/1、110/3/1）\n\
+      註：\na.根除性治療包括手術切除、肝臟移植、射頻燒灼(radiofrequency ablation) 、局部酒精注射及微波消融(microwave\
+      \ ablation)、冷凍治療(cryotherapy)。(109/1/1)\nb.已符合肝硬化給付條件可長期使用者，不在此限。\n(9)接受免疫抑制劑治療者：(110/3/1)\n\
+      Ⅰ.預防使用：HBsAg(+)者，於接受下列免疫抑制藥物治療前一週起，至免疫抑制藥物停用後6個月內，免疫抑制藥物如下列:\ni.Rituximab。\n\
+      ii.Anthracycline類衍生物。\niii.中高劑量類固醇（指prednisolone≧ 20mg/day或相當之劑量，使用時問超過4週。）\n\
+      Ⅱ.HBsAg(+)者，或HBsAg(-)但B型肝炎核心抗體陽性者，於接受免疫抑制藥物治療後B型肝炎發作，開始給付使用抗病毒藥物治療，給付至免疫抑制劑停用後6個月。\n\
+      3.HBsAg(+)超過6個月(或IgM anti-HBc為陰性)及HBeAg(+)，且符合以下條件之一者，其給付療程為治療至e抗原轉陰並再給付最多12個月：（93/8/1、95/11/1、98/11/1、99/5/1、106/1/1、110/3/1、114/6/1）\n\
+      (1)ALT值大於(或等於)正常值上限5倍以上(ALT≧5X)。\n(2)ALT值介於正常值上限2至5倍之間(2X≦ALT<5X)，且血清HBV DNA≧20,000\
+      \ IU/mL，或經由肝組織切片證實HBcAg陽性。（93/8/1、98/11/1、114/6/1）\n(3)經由肝組織切片或肝臟纖維化掃描或Fibrosis-4\
+      \ (FIB-4)證實，等同METAVIR system纖維化大於或等於F3者，其ALT值半年有兩次以上（間隔大於3個月）大於正常值上限(ALT>X)，且血清HBV\
+      \ DNA≧ 20,000 IU/mL或經由肝組織切片證實HBcAg陽性之患者。(110/3/1、114/6/1)\n註：以肝臟纖維化掃描或Fibrosis-4\
+      \ (FIB-4)證實等同METAVIR system纖維化大於或等於F3之定義為：\nⅠ.肝臟纖維化掃描transient elastography\
+      \ (Fibroscan)≧9.5Kpa或Acoustic Radiation Force Impulse elastography (ARFI)≧1.81。\n\
+      Ⅱ.Fibrosis-4 (FIB-4)≧3.25，計算公式為[Age(years) × AST(U/L)] / [Platelet count(109/L)\
+      \ × √ALT(U/L)]。\n4.HBsAg(+)超過6個月(或IgM anti-HBc為陰性)及HBeAg(-)，且符合以下條件之一者，其療程至少二年，治療期間需檢驗血清HBV\
+      \ DNA，並於檢驗血清HBV DNA連續三次，每次間隔6個月，均檢驗不出HBV DNA時停藥，每次療程至多給付36個月：（93/8/1、95/11/1、98/11/1、106/1/1、106/4/1、110/3/1、112/10/1、113/1/1、113/4/1、114/6/1）\n\
+      (1) ALT值大於或等於正常值上限 2 倍以上(ALT≧ 2X)，且血清 HBV DNA≧2,000 IU/mL，或經由肝組織切片證實 HBcAg 陽性。惟Fofnir、Hepwin、Sebivo、Ricovir、Hepuri、Virclean、Teno\
+      \ B、Tenof、Viread、Livepro、Lamidine、Hepar-Pro、Hepato-Ease、Barazer、Becavir等除上述條件外，應符合ALT值半年有兩次以上(每次間隔\
+      \ 3 個月)大於或等於正常值上限 2 倍以上(ALT≧ 2X)。（93/8/1、 95/11/1、98/11/1、112/10/1、113/1/1、113/4/1、114/6/1）\n\
+      (2) 肝纖維化程度大於或等於 F2，其 ALT 值半年有兩次以上（間隔大於 3 個月）大於正常值上限(ALT>X)，且血清HBV DNA≧ 20,000\
+      \ IU/mL或經由肝組織切片證實 HBcAg陽性。惟Fofnir、Hepwin、Sebivo、Ricovir、Hepuri、Virclean、Teno\
+      \ B、Tenof、Viread、Livepro、Lamidine、Hepar-Pro、Hepato-Ease、Barazer、Becavir等除上述條件外，應符合肝纖維化程度大於或等於F3。(110/3/1、112/10/1、113/1/1、113/4/1、114/6/1)\n\
+      註：以肝臟纖維化掃描或Fibrosis-4(FIB-4)證實等同METAVIR system纖維化大於或等於F2之定義為：(112/10/1)\nⅠ.肝臟纖維化掃描transient\
+      \ elastography (Fibroscan)≧8Kpa或Acoustic Radiation Force Impulse elastography\
+      \ (ARFI)≧1.5。\nⅡ.Fibrosis-4 (FIB-4) ≧2.1，計算公式為[Age(years) × AST(U/L)] / [Platelet\
+      \ count(109/L) × √ALT(U/L)]。\n5.若上述治療中出現lamivudine 100mg、entecavir、telbivudine抗藥性病毒株，可改換對於抗藥株有效之B型肝炎抗病毒藥劑治療，治療藥物及療程之規定詳如10.7.4.之\
+      \ 1至4項。（98/11/1、99/5/1、99/7/1、102/2/1、104/12/1）\n6.符合第3至4項條件者，若使用entecavir，劑量為每日0.5mg。(104/12/1、110/3/1)\n\
+      7.醫事服務機構及醫師資格：(109/7/1、111/9/1、114/6/1)\n(1)醫院：\nⅠ.有消化系內科或消化系兒科專科醫師之醫院。\nⅡ.醫師資格為前開醫院之消化系內科專科醫師、消化系兒科專科醫師、血液病專科醫師、腫瘤內科專科醫師、癌症相關科醫師、符合器官移植手術資格及風濕免疫科專科醫師之專任或兼任專科醫師。(111/9/1)\n\
+      Ⅲ.前開非消化系專科醫師，需先照會消化系專科醫師，惟愛滋病毒感染患者併有B型或C肝炎感染者，得由其照護之感染症內科專科醫師開立處方；另懷孕滿 27 週直至產後\
+      \ 4 週之孕產婦接受第2次以後治療者，得由其婦產科專科醫師開立處方。（111/9/1、114/6/1）。\n(2)基層院所：\nⅠ.須具有消化系內科或消化系兒科專任專科醫師之基層院所。\n\
+      Ⅱ.肝炎治療醫療資源不足地區及山地離島地區，具有消化系內科或消化系兒科兼任專科醫師之基層院所，亦得開立處方，惟離島地區(如金門縣、連江縣、澎湖縣、台東縣蘭嶼鄉、台東縣綠島鄉)內科醫師之基層院所，亦得開立處方。\n\
+      Ⅲ.懷孕滿 27 週直至產後 4 週之孕產婦接受第2次以後治療者，得由其婦產科專科醫師開立處方。（114/6/1）"
+- regulation_id: REG-0460
+  section_number: 10.7.4.
+  section_title: 10.7.4. Adefovir dipivoxil (如Hepsera Tablets 10mg) ；Entecavir (如Baraclude
+    1.0mg)；tenofovir disoproxil (如Viread)；tenofovir alafenamide (如Vemlidy)：(95/9/1、95/10/1、97/8/1、98/11/1、99/5/1、99/7/1、102/2/1、104/12/1、106/1/1、106/4/1、108/5/1、109/7/1、111/9/1）
+  chapter: 第10節 抗微生物劑 Antimicrobial agents
+  source_file: 完整給付規定1150821.docx
+  effective_dates:
+  - (95/9/1、95/10/1、97/8/1、98/11/1、99/5/1、99/7/1、106/4/1)
+  - (104/12/1、106/4/1、108/5/1)
+  - (104/12/1、106/4/1、108/5/1)
+  - (99/7/1、104/12/1、106/1/1、106/4/1、108/5/1)
+  - (99/7/1)
+  - (104/12/1、106/4/1、108/5/1)
+  - (104/12/1)
+  - (106/4/1)
+  - (109/7/1、111/9/1)
+  - (111/9/1)
+  medications:
+    drug_classes:
+    - 核苷及核苷酸反轉錄酶抑制劑 / B型肝炎口服抗病毒藥物
+    ingredients:
+    - Adefovir Dipivoxil (如 Hepsera Tablets 10mg)
+    - Entecavir (恩替卡韋)
+    - Interferon Alpha-2A (如 Roferon-A)
+    - Interferon Alpha-2B (如 Intron A)
+    - Lamivudine (拉米夫定)
+    - Peginterferon Alfa-2A (如 Pegasys)
+    - Telbivudine
+    - Tenofovir alafenamide (替諾福韋丙酚酚胺)
+    - Tenofovir disoproxil (替諾福韋雙索酯)
+  conditions_of_payment:
+    indications:
+    - Liver Cirrhosis (肝硬化)
+    - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+    laboratory_criteria: []
+    summary: 適用於【Liver Cirrhosis、Hepatitis B / Hepatitis C】之健保給付。
+    clinical_rules:
+    - indication: Liver Cirrhosis (肝硬化)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 給付36個月
+    - indication: Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 給付36個月
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 給付36個月
+  reference_annotations:
+    original_clause: 10.7.4. Adefovir dipivoxil (如Hepsera Tablets 10mg) ；Entecavir
+      (如Baraclude 1.0mg)；tenofovir disoproxil (如Viread)；tenofovir alafenamide (如Vemlidy)：(95/9/1、95/10/1、97/8/1、98/11/1、99/5/1、99/7/1、102/2/1、104/12/1、106/1/1、106/4/1、108/5/1、109/7/1、111/9/1）
+    full_text: '用於慢性病毒性B型肝炎患者之條件如下：
+
+      1.經使用lamivudine 100mg、entecavir 0.5mg或1.0mg、telbivudine治療或預防B型肝炎發作出現抗藥株(指於治療中一旦HBV
+      DNA從治療期間之最低值上升超過一個對數值（1 log IU/mL），以下條件擇一給付：（98/11/1、99/5/1、102/2/1、104/12/1、106/4/1）
+
+      (1)得以原治療藥物再加上adefovir進行合併救援治療（rescue therapy）；(95/9/1、95/10/1、97/8/1、98/11/1、99/5/1、99/7/1、106/4/1)
+
+      (2)改用entecavir 1.0mg(僅限於lamivudine產生抗藥性之病人)單一藥物治療；（98/11/1、99/5/1、99/7/1、106/4/1）
+
+      (3)以Interferon alpha-2a（如Roferon-A）或interferon alpha-2b（如Intron A）或 peginterferon
+      alfa-2a（如Pegasys）治療1年。（98/11/1、99/5/1、99/7/1）
+
+      (4)改用tenofovir disoproxil或tenofovir alafenamide單一藥物治療。(104/12/1、106/4/1、108/5/1)
+
+      (5)原已接受其他口服抗病毒藥物救援治療，治療期間出現抗藥株，或治療未達預期之病毒學反應，得改以tenofovir disoproxil或tenofovir
+      alafenamide單一藥物救援治療。(104/12/1、106/4/1、108/5/1)
+
+      2.若停藥後復發，得以合併療法，或tenofovir disoproxil或tenofovir alafenamide單一藥物再治療，或以干擾素再治療1年。(99/7/1、104/12/1、106/1/1、106/4/1、108/5/1)
+
+      3.慢性B型肝炎表面抗原（HBsAg）帶原者：
+
+      (1)肝硬化之病患。(99/7/1)
+
+      (2)接受非肝臟之器官移植後發作或接受肝臟移植，須持續接受免疫抑制劑時。（95/10/1、97/8/1、99/5/1）上述病患長期使用lamivudine
+      100mg、entecavir 0.5mg、telbivudine，以治療或預防B型肝炎發作，若出現抗藥性病毒株者，治療藥物及療程之規定詳如10.7.4.之1項。（95/10/1、97/8/1、99/5/1、
+      99/7/1、102/2/1）
+
+      4.臨床上若產生多重抗藥病毒株時可給予tenofovir disoproxil或tenofovir alafenamide單一藥物治療，或合併entecavir
+      1.0mg及tenofovir disoproxil治療，或合併entecavir 1.0mg及tenofovir alafenamide治療。(104/12/1、106/4/1、108/5/1)
+
+      註：多重抗藥病毒株指病毒對lamivudine、telbivudine、entecavir或adefovir產生二種(含)藥物以上之抗藥性。(104/12/1)
+
+      5.前述以口服抗病毒藥物治療之給付療程依HBeAg(+)或HBeAg(-)而定：HBeAg(+)病患治療至e抗原轉陰並再給付最多12個月；HBeAg(-)病患治療至少二年，治療期間需檢驗血清HBV
+      DNA，並於檢驗血清HBV DNA連續三次，每次間隔6個月，均檢驗不出HBV DNA時停藥，每次療程至多給付36個月。再次復發時得再接受治療，不限治療次數。(106/4/1)
+
+      6.醫事服務機構及醫師資格：(109/7/1、111/9/1)
+
+      (1)醫院：
+
+      Ⅰ.有消化系內科或消化系兒科專科醫師之醫院。
+
+      Ⅱ.醫師資格為前開醫院之消化系內科專科醫師、消化系兒科專科醫師、血液病專科醫師、腫瘤內科專科醫師、癌症相關科醫師、符合器官移植手術資格及風濕免疫科專科醫師之專任或兼任專科醫師。(111/9/1)
+
+      Ⅲ.前開非消化系專科醫師，需先照會消化系專科醫師，惟愛滋病毒感染患者併有B型或C肝炎感染者，得由其照護之感染症內科專科醫師開立處方。
+
+      (2)基層院所：
+
+      Ⅰ.須具有消化系內科或消化系兒科專任專科醫師之基層院所。
+
+      Ⅱ.肝炎治療醫療資源不足地區及山地離島地區，具有消化系內科或消化系兒科兼任專科醫師之基層院所，亦得開立處方，惟離島地區(如金門縣、連江縣、澎湖縣、台東縣蘭嶼鄉、台東縣綠島鄉)內科醫師之基層院所，亦得開立處方。'
+- regulation_id: REG-0461
+  section_number: 10.7.7.
+  section_title: 10.7.7. Elbasvir/grazoprevir（如Zepatier）(106/8/1、107/6/1、108/1/1、108/6/1、109/1/1、109/7/1、110/6/1）：
+  chapter: 第10節 抗微生物劑 Antimicrobial agents
+  source_file: 完整給付規定1150821.docx
+  effective_dates:
+  - (107/6/1、108/1/1、108/6/1)
+  medications:
+    drug_classes: []
+    ingredients:
+    - Elbasvir/Grazoprevir (如 Zepatier)
+    - Interferon
+    - Ribavirin
+  conditions_of_payment:
+    indications:
+    - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+    laboratory_criteria:
+    - HCV RNA
+    summary: 適用於【Hepatitis B / Hepatitis C】之健保給付。 主要條件包含：臨床檢驗需符合 HCV RNA = 陽性。
+    clinical_rules:
+    - indication: Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+      biomarkers:
+      - biomarker: HCV RNA
+        operator: '='
+        value: 陽性
+        unit: ''
+        duration: 4週
+        terminology_bindings:
+          loinc: 11011-4
+          snomed_ct: '122366001'
+          snomed_procedure: '122366001'
+          snomed_finding: '39331000237108'
+        source_grounding:
+          start_char: 68
+          end_char: 78
+          snippet: HCV RNA為陽性
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以4週為限
+      - 給付12週
+      - 給付12週
+      - 給付16週
+      - 給付12週
+      - 給付12週
+      - 給付12週
+      - 給付16週
+    structured_biomarkers:
+    - biomarker: HCV RNA
+      operator: '='
+      value: 陽性
+      unit: ''
+      duration: 4週
+      terminology_bindings:
+        loinc: 11011-4
+        snomed_ct: '122366001'
+        snomed_procedure: '122366001'
+        snomed_finding: '39331000237108'
+      source_grounding:
+        start_char: 68
+        end_char: 78
+        snippet: HCV RNA為陽性
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 以4週為限
+    - 給付12週
+    - 給付12週
+    - 給付16週
+    - 給付12週
+    - 給付12週
+    - 給付12週
+    - 給付16週
+  reference_annotations:
+    original_clause: 10.7.7. Elbasvir/grazoprevir（如Zepatier）(106/8/1、107/6/1、108/1/1、108/6/1、109/1/1、109/7/1、110/6/1）：
+    full_text: '1.限用於成人慢性病毒性C型肝炎患者，並依據「C型肝炎全口服新藥健保給付執行計畫」辦理。(109/1/1、109/7/1）
+
+      2.限使用於HCV RNA為陽性及無肝功能代償不全之病毒基因型第1型或第4型成人病患。(107/6/1、108/1/1、108/6/1)
+
+      3.給付療程如下，醫師每次開藥以4週為限。(108/1/1）
+
+      (1)基因型第1a型且治療前未帶有NS5A抗藥性相關多形性病毒株：
+
+      Ⅰ.給付12週。
+
+      Ⅱ.若為先前使用interferon/ ribavirin/蛋白酶抑制劑(protease inhibitor)合併治療失敗者，需合併ribavirin治療，給付12週。
+
+      (2)基因型第1a型且治療前帶有NS5A抗藥性相關多形性病毒株，需合併ribavirin治療，給付16週。
+
+      (3)基因型第1b型：
+
+      Ⅰ.給付12週。
+
+      Ⅱ.若為先前使用interferon/ ribavirin/蛋白酶抑制劑合併治療失敗者，需合併ribavirin治療，給付12週。
+
+      (4)基因型第4型：
+
+      Ⅰ.給付12週。
+
+      Ⅱ.若為先前使用interferon/ ribavirin合併治療中發生病毒學失敗者，需合併ribavirin治療，給付16週。
+
+      4.限未曾申請給付其他同類全口服直接抗病毒藥物(direct-acting anti-viral, DAAs)，且不得併用其他DAAs，惟若曾接受本項藥品或其他DAAs第一次治療並符合下列情形之一者，可再治療一次（一個療程）：(110/6/1）
+
+      (1)接受第一次治療時中斷療程，且中斷原因屬專業醫療評估必須停藥者。
+
+      (2)接受第一次治療結束後第12週，血中偵測不到病毒，目前血中又再次偵測到病毒者。'
+- regulation_id: REG-0462
+  section_number: 10.7.8.
+  section_title: 10.7.8. Sofosbuvir/ledipasvir（如Harvoni）(107/1/1、107/6/1、107/10/1、108/1/1、108/6/1、109/1/1、109/7/1、110/6/1、111/2/1、114/6/1、114/12/1）：
+  chapter: 第10節 抗微生物劑 Antimicrobial agents
+  source_file: 完整給付規定1150821.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients:
+    - Interferon
+    - Ribavirin
+    - Sofosbuvir/Ledipasvir (如 Harvoni)
+  conditions_of_payment:
+    indications:
+    - Liver Cirrhosis (肝硬化)
+    - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+    laboratory_criteria: []
+    summary: 適用於【Liver Cirrhosis、Hepatitis B / Hepatitis C】之健保給付。 規範重點：1.限用於慢性病毒性C型肝炎患者，並依據「C型肝炎全口服新藥健保給付執行計畫」辦理。
+    clinical_rules:
+    - indication: Liver Cirrhosis (肝硬化)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以4週為限
+      - 給付12週
+      - 給付12週
+    - indication: Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以4週為限
+      - 給付12週
+      - 給付12週
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 以4週為限
+    - 給付12週
+    - 給付12週
+  reference_annotations:
+    original_clause: 10.7.8. Sofosbuvir/ledipasvir（如Harvoni）(107/1/1、107/6/1、107/10/1、108/1/1、108/6/1、109/1/1、109/7/1、110/6/1、111/2/1、114/6/1、114/12/1）：
+    full_text: "1.限用於慢性病毒性C型肝炎患者，並依據「C型肝炎全口服新藥健保給付執行計畫」辦理。(109/1/1、109/7/1）\n2.限使用於HCV\
+      \ RNA或HCV core Ag為陽性之下列病患：(107/6/1、107/10/1、108/1/1、108/6/1、114/6/1）)\n(1)\t\
+      病毒基因型第1型、第2型、第4型、第5型或第6型成人病患。\n(2)\t12歲以上且未併有失代償性肝硬化之病毒基因型第1型兒童患者(111/2/1）。\n\
+      3.給付療程如下，醫師每次開藥以4週為限。(108/1/1）\n(1)給付12週。\n(2)下列情況需合併ribavirin治療，給付12週：\nⅠ.若為先前使用interferon、ribavirin且合併或未合併蛋白酶抑制劑治療失敗，且具代償性肝硬化(Child-Pugh\
+      \ score A)者。\nⅡ.肝功能代償不全(Child-Pugh score B或C)者。\nⅢ.無肝功能代償不全之基因型第1型或第4型肝臟移植者。\n\
+      4.限未曾申請給付其他同類全口服直接抗病毒藥物(direct-acting anti-viral, DAAs)，且不得併用其他DAAs，惟若曾接受本項藥品或其他DAAs第一次治療且符合下列情形之一者，可再治療一次（一個療程）：(110/6/1）\n\
+      (1)接受第一次治療時中斷療程，且中斷原因屬專業醫療評估必須停藥者。\n(2)接受第一次治療結束後第12週，血中偵測不到病毒，目前血中又再次偵測到病毒者。\n\
+      5.高風險族群（監獄受刑人、注射藥癮者、愛滋病毒帶原者/愛滋病人、發生危險性行為者）病人，若符合前述規定即可接受治療，以治療三次為限。（114/12/1）"
+- regulation_id: REG-0463
+  section_number: 10.7.9.
+  section_title: 10.7.9. Sofosbuvir（如Sovaldi）(107/1/1、107/6/1、108/1/1、108/6/1、109/1/1、109/7/1）：
+  chapter: 第10節 抗微生物劑 Antimicrobial agents
+  source_file: 完整給付規定1150821.docx
+  effective_dates:
+  - (107/6/1、108/1/1、108/6/1)
+  medications:
+    drug_classes: []
+    ingredients:
+    - Ribavirin
+    - Sofosbuvir (如 Sovaldi)
+  conditions_of_payment:
+    indications:
+    - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+    laboratory_criteria:
+    - HCV RNA
+    summary: 適用於【Hepatitis B / Hepatitis C】之健保給付。 主要條件包含：臨床檢驗需符合 HCV RNA = 陽性。
+    clinical_rules:
+    - indication: Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+      biomarkers:
+      - biomarker: HCV RNA
+        operator: '='
+        value: 陽性
+        unit: ''
+        duration: 12週
+        terminology_bindings:
+          loinc: 11011-4
+          snomed_ct: '122366001'
+          snomed_procedure: '122366001'
+          snomed_finding: '39331000237108'
+        source_grounding:
+          start_char: 68
+          end_char: 78
+          snippet: HCV RNA為陽性
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 給付療程12週
+      - 以4週為限
+    structured_biomarkers:
+    - biomarker: HCV RNA
+      operator: '='
+      value: 陽性
+      unit: ''
+      duration: 12週
+      terminology_bindings:
+        loinc: 11011-4
+        snomed_ct: '122366001'
+        snomed_procedure: '122366001'
+        snomed_finding: '39331000237108'
+      source_grounding:
+        start_char: 68
+        end_char: 78
+        snippet: HCV RNA為陽性
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 給付療程12週
+    - 以4週為限
+  reference_annotations:
+    original_clause: 10.7.9. Sofosbuvir（如Sovaldi）(107/1/1、107/6/1、108/1/1、108/6/1、109/1/1、109/7/1）：
+    full_text: '1.限用於成人慢性病毒性C型肝炎患者，並依據「C型肝炎全口服新藥健保給付執行計畫」辦理。(109/1/1、109/7/1）
+
+      2.限使用於HCV RNA為陽性及無肝功能代償不全之病毒基因型第2型成人病患。(107/6/1、108/1/1、108/6/1)
+
+      3.需合併ribavirin治療，每人給付療程12週，醫師每次開藥以4週為限。(108/1/1）
+
+      4.限未曾申請給付其他同類全口服直接抗病毒藥物(direct-acting anti-viral, DAAs)，且不得併用其他DAAs。'
+- regulation_id: REG-0464
+  section_number: 10.7.10.
+  section_title: 10.7.10. Glecaprevir/pibrentasvir（如Maviret）(107/8/1、108/1/1、108/6/1、109/1/1、109/4/1、109/7/1、109/8/1、110/6/1、111/2/1、114/6/1、114/12/1）：
+  chapter: 第10節 抗微生物劑 Antimicrobial agents
+  source_file: 完整給付規定1150821.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients:
+    - Glecaprevir/Pibrentasvir (如 Maviret)
+    - Interferon
+    - Ribavirin
+    - Sofosbuvir
+  conditions_of_payment:
+    indications:
+    - Liver Cirrhosis (肝硬化)
+    - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+    laboratory_criteria: []
+    summary: 適用於【Liver Cirrhosis、Hepatitis B / Hepatitis C】之健保給付。 規範重點：1.限用於成人慢性病毒性C型肝炎患者，並依據「C型肝炎全口服新藥健保給付執行計畫」辦理。
+    clinical_rules:
+    - indication: Liver Cirrhosis (肝硬化)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以4週為限
+      - 給付12週
+      - 給付16週
+      - 給付12週
+      - 給付16週
+    - indication: Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以4週為限
+      - 給付12週
+      - 給付16週
+      - 給付12週
+      - 給付16週
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 以4週為限
+    - 給付12週
+    - 給付16週
+    - 給付12週
+    - 給付16週
+  reference_annotations:
+    original_clause: 10.7.10. Glecaprevir/pibrentasvir（如Maviret）(107/8/1、108/1/1、108/6/1、109/1/1、109/4/1、109/7/1、109/8/1、110/6/1、111/2/1、114/6/1、114/12/1）：
+    full_text: '1.限用於成人慢性病毒性C型肝炎患者，並依據「C型肝炎全口服新藥健保給付執行計畫」辦理。(109/1/1、109/7/1）
+
+      2.限使用於HCV RNA或HCV core Ag為陽性及無肝功能代償不全之病毒基因型第1型、第2型、第3型、第4型、第5型或第6型12歲以上病患。（108/1/1、108/6/1、109/8/1、111/2/1、114/6/1）
+
+      3.給付療程如下，醫師每次開藥以4週為限。（108/1/1、109/4/1、110/6/1）
+
+      (1)未曾接受治療之患者，給付8週。（109/4/1、109/8/1）
+
+      (2)曾接受含(peg)interferon及ribavirin及合併或不合併sofosbuvir治療組合之患者：（110/6/1）
+
+      Ⅰ.基因型第1、2、4、5或6型：
+
+      i.無肝硬化者，給付8週。
+
+      ii.具代償性肝硬化(Child-Pugh score A)者，給付12週。
+
+      Ⅱ.基因型第3型，且無肝硬化或具代償性肝硬化(Child-Pugh score A)者，給付16週。
+
+      (3)曾接受含NS5A抑制劑或NS3/4A蛋白酶抑制劑治療之基因型第1型患者：
+
+      Ⅰ.若曾接受NS3/4A蛋白酶抑制劑治療，但未曾接受NS5A抑制劑治療者，給付12週。
+
+      Ⅱ.若曾接受NS5A抑制劑治療，但未曾接受NS3/4A蛋白酶抑制劑治療者，給付16週。
+
+      4.限未曾申請給付其他同類全口服直接抗病毒藥物(direct-acting anti-viral, DAAs)，且不得併用其他DAAs，惟若符合下列情形之一者，可再治療一次（一個療程）：（110/6/1）
+
+      (1)接受本項藥品或其他DAAs第一次治療時中斷療程，且中斷原因屬專業醫療評估必須停藥者。
+
+      (2)接受本項藥品或其他DAAs第一次治療結束後第12週，血中偵測不到病毒，目前血中又再次偵測到病毒者。
+
+      (3)接受其他DAAs第一次治療，於治療完成時或治療結束後第12週，血中仍偵測到病毒者，或治療4週後之病毒量未能下降超過二個對數值(即下降未達100倍)發生在108年1月1日前者。
+
+      5.高風險族群（監獄受刑人、注射藥癮者、愛滋病毒帶原者/愛滋病人、發生危險性行為者）病人，若符合前述規定即可接受治療，以治療三次為限。（114/12/1）'
+- regulation_id: REG-0465
+  section_number: 10.7.11.
+  section_title: 10.7.11. Sofosbuvir/velpatasvir（如Epclusa）(108/6/1、109/1/1、109/7/1、110/6/1、112/5/1、114/6/1、114/12/1）：
+  chapter: 第10節 抗微生物劑 Antimicrobial agents
+  source_file: 完整給付規定1150821.docx
+  effective_dates:
+  - (109/1/1、109/7/1、112/5/1)
+  - (112/5/1、114/6/1)
+  - (112/5/1)
+  - (112/5/1)
+  - (112/5/1)
+  medications:
+    drug_classes: []
+    ingredients:
+    - Ribavirin
+    - Sofosbuvir/Velpatasvir (如 Epclusa)
+  conditions_of_payment:
+    indications:
+    - Liver Cirrhosis (肝硬化)
+    - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+    laboratory_criteria:
+    - Child-Pugh
+    summary: 適用於【Liver Cirrhosis、Hepatitis B / Hepatitis C】之健保給付。 主要條件包含：臨床檢驗需符合 Child-Pugh
+      = BClass。
+    clinical_rules:
+    - indication: Liver Cirrhosis (肝硬化)
+      biomarkers:
+      - biomarker: Child-Pugh
+        operator: '='
+        value: B
+        unit: Class
+        duration: 108年
+        terminology_bindings:
+          loinc: 98152-2
+          snomed_ct: '3191000175106'
+          snomed_procedure: '3191000175106'
+          snomed_finding: '710065009'
+        source_grounding:
+          start_char: 822
+          end_char: 834
+          snippet: Child-Pugh B
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以4週為限
+      - 給付12週
+      - 給付12週
+      - 給付24週
+    - indication: Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+      biomarkers:
+      - biomarker: Child-Pugh
+        operator: '='
+        value: B
+        unit: Class
+        duration: 108年
+        terminology_bindings:
+          loinc: 98152-2
+          snomed_ct: '3191000175106'
+          snomed_procedure: '3191000175106'
+          snomed_finding: '710065009'
+        source_grounding:
+          start_char: 822
+          end_char: 834
+          snippet: Child-Pugh B
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以4週為限
+      - 給付12週
+      - 給付12週
+      - 給付24週
+    structured_biomarkers:
+    - biomarker: Child-Pugh
+      operator: '='
+      value: B
+      unit: Class
+      duration: 108年
+      terminology_bindings:
+        loinc: 98152-2
+        snomed_ct: '3191000175106'
+        snomed_procedure: '3191000175106'
+        snomed_finding: '710065009'
+      source_grounding:
+        start_char: 822
+        end_char: 834
+        snippet: Child-Pugh B
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 以4週為限
+    - 給付12週
+    - 給付12週
+    - 給付24週
+  reference_annotations:
+    original_clause: 10.7.11. Sofosbuvir/velpatasvir（如Epclusa）(108/6/1、109/1/1、109/7/1、110/6/1、112/5/1、114/6/1、114/12/1）：
+    full_text: '1.限用於慢性病毒性C型肝炎患者，並依據「C型肝炎全口服新藥健保給付執行計畫」辦理。(109/1/1、109/7/1、112/5/1)
+
+      2.限使用於HCV RNA或HCV core Ag為陽性之病毒基因型第1型、第2型、第3型、第4型、第5型或第6型12歲以上且體重至少30公斤之兒童與成人病患。(112/5/1、114/6/1)
+
+      3.給付療程如下，醫師每次開藥以4週為限。（110/6/1、112/5/1)
+
+      (1)未曾接受全口服直接抗病毒藥物(direct-acting anti-viral, DAAs)或曾接受DAAs治療，未併有或併有代償性肝硬化(Child-Pugh
+      score A)者，給付12週。
+
+      (2)未曾接受DAAs或曾接受DAAs治療（含NS5A抑制劑之DAAs治療失敗者除外)，併有失代償性肝硬化(Child-Pugh score B或C)者，需合併ribavirin治療，給付12週。(112/5/1)
+
+      (3)曾接受含NS5A抑制劑之DAAs治療失敗，併有失代償性肝硬化(Child-Pugh score B或C)者，需合併ribavirin治療，給付24週。(112/5/1)
+
+      4.限未曾申請給付其他同類全口服直接抗病毒藥物(direct-acting anti-viral, DAAs)，且不得併用其他DAAs，惟若符合下列情形之一者，可再治療一次（一個療程）：（110/6/1、112/5/1）
+
+      (1)接受本項藥品或其他DAAs第一次治療時中斷療程，且中斷原因屬專業醫療評估必須停藥者。
+
+      (2)接受本項藥品或其他DAAs第一次治療結束後第12週，血中偵測不到病毒，目前血中又再次偵測到病毒者。
+
+      (3)接受未含NS5A抑制劑之DAAs第一次治療，於治療完成時或治療結束後第12週，血中仍偵測到病毒者，或治療4週後之病毒量未能下降超過二個對數值(即下降未達100倍)發生在108年1月1日前者。
+
+      (4)失代償性肝硬化（Child-Pugh B或C）病患，先前接受含NS5A抑制劑之DAAs第一次治療失敗者(治療完成時或治療結束後第12週，血中仍偵測到病毒者)。(112/5/1)
+
+      5.高風險族群（監獄受刑人、注射藥癮者、愛滋病毒帶原者/愛滋病人、發生危險性行為者）病人，若符合前述規定即可接受治療，以治療三次為限。（114/12/1）'
+- regulation_id: REG-0466
+  section_number: 10.7.12.
+  section_title: 10.7.12. Letermovir（如Prevymis）：（109/6/1）
+  chapter: 第10節 抗微生物劑 Antimicrobial agents
+  source_file: 完整給付規定1150821.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients:
+    - Letermovir (如 Prevymis)
+  conditions_of_payment:
+    indications: []
+    laboratory_criteria: []
+    summary: 規範【. Letermovir（如Prevymis）：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: 10.7.12. Letermovir（如Prevymis）：（109/6/1）
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 4
+      end_char: 8
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
+  reference_annotations:
+    original_clause: 10.7.12. Letermovir（如Prevymis）：（109/6/1）
+    full_text: "1.\t經事前審查核准後使用。\n2.\t適用於接受異體造血幹細胞移植(allogeneic HSCT)的18歲以上且受贈者為CMV血清抗體陽性之病患，藉以預防巨細胞病毒(CMV)感染及相關疾病。\n\
+      3.\t僅限於第一次接受異體造血幹細胞移植時可使用。\n4.\t限用於移植術後至第84天為止。\n5.\t具下列條件之一的CMV 感染之高風險病患方得使用：\n\
+      (1)親屬間捐贈：其HLA-A/B/C/DR 具有2個或以上之位點不相符者。\n(2)非親屬間捐贈：其HLA-A/B/C/DR 具有1個或以上之位點不相符者。\n\
+      (3)接受臍帶血移植者。"
+- regulation_id: REG-0467
+  section_number: 10.7.13.
+  section_title: 10.7.13. Sofosbuvir/ velpatasvir/ voxilaprevir（如Vosevi）：（110/9/1、114/6/1、114/12/1）
+  chapter: 第10節 抗微生物劑 Antimicrobial agents
+  source_file: 完整給付規定1150821.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients:
+    - Sofosbuvir/ Velpatasvir/ Voxilaprevir (如 Vosevi)
+  conditions_of_payment:
+    indications:
+    - Liver Cirrhosis (肝硬化)
+    - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+    laboratory_criteria:
+    - Child-Pugh
+    summary: 適用於【Liver Cirrhosis、Hepatitis B / Hepatitis C】之健保給付。 主要條件包含：臨床檢驗需符合 Child-Pugh
+      = AClass。
+    clinical_rules:
+    - indication: Liver Cirrhosis (肝硬化)
+      biomarkers:
+      - biomarker: Child-Pugh
+        operator: '='
+        value: A
+        unit: Class
+        duration: 4週
+        terminology_bindings:
+          loinc: 98152-2
+          snomed_ct: '3191000175106'
+          snomed_procedure: '3191000175106'
+          snomed_finding: '710065009'
+        source_grounding:
+          start_char: 91
+          end_char: 104
+          snippet: Child-Pugh A級
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以4週為限
+      - 給付12週
+      - 給付12週
+    - indication: Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+      biomarkers:
+      - biomarker: Child-Pugh
+        operator: '='
+        value: A
+        unit: Class
+        duration: 4週
+        terminology_bindings:
+          loinc: 98152-2
+          snomed_ct: '3191000175106'
+          snomed_procedure: '3191000175106'
+          snomed_finding: '710065009'
+        source_grounding:
+          start_char: 91
+          end_char: 104
+          snippet: Child-Pugh A級
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 以4週為限
+      - 給付12週
+      - 給付12週
+    structured_biomarkers:
+    - biomarker: Child-Pugh
+      operator: '='
+      value: A
+      unit: Class
+      duration: 4週
+      terminology_bindings:
+        loinc: 98152-2
+        snomed_ct: '3191000175106'
+        snomed_procedure: '3191000175106'
+        snomed_finding: '710065009'
+      source_grounding:
+        start_char: 91
+        end_char: 104
+        snippet: Child-Pugh A級
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 以4週為限
+    - 給付12週
+    - 給付12週
+  reference_annotations:
+    original_clause: 10.7.13. Sofosbuvir/ velpatasvir/ voxilaprevir（如Vosevi）：（110/9/1、114/6/1、114/12/1）
+    full_text: '1.限用於成人慢性病毒性C型肝炎患者，並依據「C型肝炎全口服新藥健保給付執行計畫」辦理。
+
+      2.限使用於HCV RNA或HCV core Ag為陽性，且未併有肝硬化或併有代償性肝硬化（Child-Pugh A級）之病毒基因型第1型、第2型、第3型、第4型、第5型或第6型病患。（114/6/1）
+
+      3.給付療程如下，醫師每次開藥以4週為限。
+
+      (1)基因型1、2、3、4、5、6，且曾接受含NS5A抑制劑治療失敗者，給付12週。
+
+      (2)基因型1a或3，且曾經接受含sofosbuvir但無NS5A抑制劑治療失敗者，給付12週。
+
+      4.限未曾申請給付本藥品且曾接受其他全口服直接抗病毒藥物（direct-acting anti-viral, DAAs）第一次治療並符合下列情形之一者：
+
+      (1)接受第一次治療時中斷療程，且中斷原因屬專業醫療評估必須停藥者。
+
+      (2)接受第一次治療完成時或治療結束後第12週，血中仍偵測到病毒者，或治療4週後之病毒量未能下降超過二個對數值（即下降未達100倍）發生在108年1月1日前者。
+
+      5.高風險族群（監獄受刑人、注射藥癮者、愛滋病毒帶原者/愛滋病人、發生危險性行為者）病人，若符合前述規定即可接受治療，以治療三次為限。（114/12/1）'
+- regulation_id: REG-0468
+  section_number: 10.7.14.
+  section_title: 10.7.14. Maribavir（如Livtencity）：（113/11/1）
+  chapter: 第10節 抗微生物劑 Antimicrobial agents
+  source_file: 完整給付規定1150821.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients:
+    - Maribavir (如 Livtencity)
+  conditions_of_payment:
+    indications: []
+    laboratory_criteria: []
+    summary: 規範【. Maribavir（如Livtencity）：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    clinical_rules:
+    - indication: 10.7.14. Maribavir（如Livtencity）：（113/11/1）
+      biomarkers: []
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency:
+      - 療程以12週
+    structured_biomarkers: []
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 279
+      end_char: 283
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals:
+    - 療程以12週
+  reference_annotations:
+    original_clause: 10.7.14. Maribavir（如Livtencity）：（113/11/1）
+    full_text: '1.適用於對一種或多種先前療法，具抗藥性、難治或耐受度不佳的成人病人，治療接受造血幹細胞移植(Haematopoietic Stem
+      Cell Transplant，HSCT)或固體器官移植(Solid Organ Transplant，SOT)後發生巨細胞病毒(cytomegalovirus，CMV)感染或疾病。
+
+      2.開始治療需符合下列任一臨床條件：
+
+      (1)偵測到先前其他抗巨細胞病毒療法抗性突變，或
+
+      (2)先前接受其他抗巨細胞病毒療法至少2週，當巨細胞病毒(CMV)DNA濃度未下降或甚至上升，或
+
+      (3)先前接受其他抗巨細胞病毒療法且無法耐受。
+
+      3.經事前審查核准後使用。
+
+      4.本品首次申請治療療程限8週，療程期間有下列任一情況應停藥：
+
+      (1)開始治療療程4週後，巨細胞病毒(CMV)DNA濃度並未下降或甚至上升時。
+
+      (2)療程期間，偵測到抗性突變。
+
+      5.首次申請治療療程後，若未達清除巨細胞病毒(CMV)治療目的或仍有治療需求，且不符合前述停藥條件者，可經事前審查核准後續用4週。事前申請時需檢附巨細胞病毒(CMV)DNA濃度或相關檢測報告，且總療程以12週為上限。'
+- regulation_id: REG-0469
+  section_number: 10.8.1.1.
+  section_title: 10.8.1.1. Teicoplanin及vancomycin注射劑：(88/3/1、110/7/1)
+  chapter: 第10節 抗微生物劑 Antimicrobial agents
+  source_file: 完整給付規定1150821.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients:
+    - Metronidazole
+    - Teicoplanin
+    - Vancomycin
+  conditions_of_payment:
+    indications: []
+    laboratory_criteria: []
+    summary: 規範【. Teicoplanin及vancomycin注射劑：】之健保給付條件。 規範重點：1.對其他抗生素有抗藥性之革蘭氏陽性菌感染。
+    clinical_rules:
+    - indication: 10.8.1.1. Teicoplanin及vancomycin注射劑：(88/3/1、110/7/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
+  reference_annotations:
+    original_clause: 10.8.1.1. Teicoplanin及vancomycin注射劑：(88/3/1、110/7/1)
+    full_text: '1.對其他抗生素有抗藥性之革蘭氏陽性菌感染。
+
+      2.病患對其他抗生素有嚴重過敏反應之革蘭氏陽性菌感染。
+
+      3.治療抗生素引起之腸炎(antibiotics-associated colitis)，經使用metronidazole無效者始可使用口服vancomycin。
+
+      4.vancomycin 10 gm(溶液用粉劑)限骨髓移植病例使用。
+
+      5.其他經感染症專科醫師認定需使用者。'
+- regulation_id: REG-0470
+  section_number: 10.8.1.2.
+  section_title: 10.8.1.2. Vancomycin口服製劑(110/7/1)
+  chapter: 第10節 抗微生物劑 Antimicrobial agents
+  source_file: 完整給付規定1150821.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients:
+    - Vancomycin
+  conditions_of_payment:
+    indications: []
+    laboratory_criteria: []
+    summary: "規範【. Vancomycin口服製劑】之健保給付條件。 規範重點：1.\t限用於梭狀桿菌引起之假膜性結腸炎，且需符合下列診斷方法之一：\
+      \ (1)內視鏡檢查證實有假膜性結腸炎之病理變化。"
+    clinical_rules:
+    - indication: 10.8.1.2. Vancomycin口服製劑(110/7/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
+  reference_annotations:
+    original_clause: 10.8.1.2. Vancomycin口服製劑(110/7/1)
+    full_text: "1.\t限用於梭狀桿菌引起之假膜性結腸炎，且需符合下列診斷方法之一：\n(1)內視鏡檢查證實有假膜性結腸炎之病理變化。\n(2)臨床上有腸炎、結腸炎之相關症狀，如腹瀉、腹痛、腸阻塞(ileus)等，加上下列任一種條件：\n\
+      I.糞便檢驗證實有梭狀桿菌之toxin A或toxin B存在、或其毒素基因存在。\nII.糞便細菌培養證實有梭狀桿菌或糞便之抗原檢測證實有GDH(glutamate\
+      \ dehydrogenase)存在。\n2.\t申報時應檢附下列報告之一：\n(1)內視鏡檢查報告。\n(2)臨床症狀敘述，加上Toxin A+B檢測報告、糞便細菌培養結果、糞便細菌抗原檢測(GDH)結果或PCR基因檢測結果。"
+- regulation_id: REG-0471
+  section_number: 10.8.2.
+  section_title: 10.8.2. Quinolone類：（96/9/1、97/9/1、107/1/1、108/12/1）
+  chapter: 第10節 抗微生物劑 Antimicrobial agents
+  source_file: 完整給付規定1150821.docx
+  effective_dates:
+  - (96/9/1、108/12/1)
+  medications:
+    drug_classes: []
+    ingredients:
+    - Moxifloxacin (如 Avelox)
+    - Gemifloxacin (如 Factive)
+    - Levofloxacin (如 Cravit)
+    - Nemonoxacin
+  conditions_of_payment:
+    indications: []
+    laboratory_criteria: []
+    summary: 規範【. Quinolone類：】之健保給付條件。 規範重點：限使用於下列疾病，若使用於結核病不予給付，請向衛生福利部疾病管制署申請並依最新版「結核病診治指引」辦理。
+    clinical_rules:
+    - indication: 10.8.2. Quinolone類：（96/9/1、97/9/1、107/1/1、108/12/1）
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
+  reference_annotations:
+    original_clause: 10.8.2. Quinolone類：（96/9/1、97/9/1、107/1/1、108/12/1）
+    full_text: 限使用於下列疾病，若使用於結核病不予給付，請向衛生福利部疾病管制署申請並依最新版「結核病診治指引」辦理。(96/9/1、108/12/1)
+- regulation_id: REG-0472
+  section_number: 10.8.2.1.
+  section_title: 10.8.2.1. Moxifloxacin (如Avelox)：(91/2/1、92/11/1、94/3/1、97/9/1、105/8/1)
+  chapter: 第10節 抗微生物劑 Antimicrobial agents
+  source_file: 完整給付規定1150821.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients:
+    - Moxifloxacin (如 Avelox)
+  conditions_of_payment:
+    indications:
+    - Chronic Obstructive Pulmonary Disease (慢性阻塞性肺病)
+    laboratory_criteria: []
+    summary: 適用於【Chronic Obstructive Pulmonary Disease】之健保給付。 規範重點：限用於成人(18歲以上)之下列感染症：
+      1.慢性支氣管炎的急性惡化、社區性肺炎、複雜性腹腔內感染。
+    clinical_rules:
+    - indication: Chronic Obstructive Pulmonary Disease (慢性阻塞性肺病)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
+  reference_annotations:
+    original_clause: 10.8.2.1. Moxifloxacin (如Avelox)：(91/2/1、92/11/1、94/3/1、97/9/1、105/8/1)
+    full_text: '限用於成人(18歲以上)之下列感染症：
+
+      1.慢性支氣管炎的急性惡化、社區性肺炎、複雜性腹腔內感染。
+
+      2.急性鼻竇炎或複雜性皮膚和軟組織感染，因抗藥性細菌感染及病情需要，經感染科醫師會診確認需要使用者。'
+- regulation_id: REG-0473
+  section_number: 10.8.2.2.
+  section_title: 10.8.2.2. Gemifloxacin (如Factive)：(96/6/1、97/9/1)
+  chapter: 第10節 抗微生物劑 Antimicrobial agents
+  source_file: 完整給付規定1150821.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients:
+    - Gemifloxacin (如 Factive)
+  conditions_of_payment:
+    indications:
+    - Chronic Obstructive Pulmonary Disease (慢性阻塞性肺病)
+    laboratory_criteria: []
+    summary: 適用於【Chronic Obstructive Pulmonary Disease】之健保給付。 規範重點：限用於成人(18歲以上)之慢性支氣管炎的急性惡化、社區性肺炎。
+    clinical_rules:
+    - indication: Chronic Obstructive Pulmonary Disease (慢性阻塞性肺病)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
+  reference_annotations:
+    original_clause: 10.8.2.2. Gemifloxacin (如Factive)：(96/6/1、97/9/1)
+    full_text: 限用於成人(18歲以上)之慢性支氣管炎的急性惡化、社區性肺炎。
+- regulation_id: REG-0474
+  section_number: 10.8.2.3.
+  section_title: 10.8.2.3. Levofloxacin（如Cravit）（97/9/1）
+  chapter: 第10節 抗微生物劑 Antimicrobial agents
+  source_file: 完整給付規定1150821.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients:
+    - Levofloxacin (如 Cravit)
+  conditions_of_payment:
+    indications:
+    - Chronic Obstructive Pulmonary Disease (慢性阻塞性肺病)
+    laboratory_criteria: []
+    summary: 適用於【Chronic Obstructive Pulmonary Disease】之健保給付。 規範重點：限用於成人(18歲以上)之慢性支氣管炎的急性惡化、社區性肺炎、複雜性泌尿道感染。
+    clinical_rules:
+    - indication: Chronic Obstructive Pulmonary Disease (慢性阻塞性肺病)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
+  reference_annotations:
+    original_clause: 10.8.2.3. Levofloxacin（如Cravit）（97/9/1）
+    full_text: 限用於成人(18歲以上)之慢性支氣管炎的急性惡化、社區性肺炎、複雜性泌尿道感染。
+- regulation_id: REG-0475
+  section_number: 10.8.2.4.
+  section_title: 10.8.2.4. Nemonoxacin膠囊劑及注射劑(如Taigexyn)：(107/1/1、111/3/1)
+  chapter: 第10節 抗微生物劑 Antimicrobial agents
+  source_file: 完整給付規定1150821.docx
+  effective_dates:
+  - (111/3/1)
+  medications:
+    drug_classes: []
+    ingredients:
+    - Nemonoxacin
+  conditions_of_payment:
+    indications: []
+    laboratory_criteria: []
+    summary: 規範【. Nemonoxacin膠囊劑及注射劑(如Taigexyn)：】之健保給付條件。 規範重點：1.膠囊劑限用於18歲以上適合於門診治療之輕度社區性肺炎。
+    clinical_rules:
+    - indication: 10.8.2.4. Nemonoxacin膠囊劑及注射劑(如Taigexyn)：(107/1/1、111/3/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
+  reference_annotations:
+    original_clause: 10.8.2.4. Nemonoxacin膠囊劑及注射劑(如Taigexyn)：(107/1/1、111/3/1)
+    full_text: '1.膠囊劑限用於18歲以上適合於門診治療之輕度社區性肺炎。
+
+      2.注射劑限用治療對Nemonoxacin 有感受性的致病菌所引起之18歲以上社區型肺炎。(111/3/1)'
+- regulation_id: REG-0476
+  section_number: 10.8.3.
+  section_title: 10.8.3. Linezolid（如Zyvox Injection及Tablets）：（91/4/1、100/7/1、105/2/1、108/4/1）
+  chapter: 第10節 抗微生物劑 Antimicrobial agents
+  source_file: 完整給付規定1150821.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients:
+    - Ampicillin
+    - Linezolid (如 Zyvox Injection及Tablets)
+    - Vancomycin
+  conditions_of_payment:
+    indications: []
+    laboratory_criteria:
+    - BMI
+    - 白血球
+    summary: 規範【. Linezolid（如Zyvox Injection及Tablets）：】之健保給付條件。 主要條件包含：臨床檢驗需符合 BMI
+      >= 30kg/m²。
+    clinical_rules:
+    - indication: 10.8.3. Linezolid（如Zyvox Injection及Tablets）：（91/4/1、100/7/1、105/2/1、108/4/1）
+      biomarkers:
+      - biomarker: BMI
+        operator: '>='
+        value: '30'
+        unit: kg/m²
+        duration: 90天
+        terminology_bindings:
+          loinc: 39156-5
+          snomed_ct: '60621009'
+          snomed_procedure: '60621009'
+          snomed_finding: '60621009'
+        source_grounding:
+          start_char: 117
+          end_char: 123
+          snippet: BMI≧30
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules:
+      - ；惟後續呼吸道微生物學檢查結果無MRSA呼吸道感染證據時，應停止使用。（108/4/1）
+      evaluation_frequency: []
+    structured_biomarkers:
+    - biomarker: BMI
+      operator: '>='
+      value: '30'
+      unit: kg/m²
+      duration: 90天
+      terminology_bindings:
+        loinc: 39156-5
+        snomed_ct: '60621009'
+        snomed_procedure: '60621009'
+        snomed_finding: '60621009'
+      source_grounding:
+        start_char: 117
+        end_char: 123
+        snippet: BMI≧30
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules:
+    - ；惟後續呼吸道微生物學檢查結果無MRSA呼吸道感染證據時，應停止使用。（108/4/1）
+    evaluation_intervals: []
+  reference_annotations:
+    original_clause: 10.8.3. Linezolid（如Zyvox Injection及Tablets）：（91/4/1、100/7/1、105/2/1、108/4/1）
+    full_text: '1.限下列條件之一使用：
+
+      (1)確定或高度懷疑為MRSA肺炎（痰液培養出MRSA，伴隨全身發炎反應，且CXR出現新的浸潤或痰液性狀改變或氧氣需求增加），並符合下列危險因子之一：（105/2/1、108/4/1）
+
+      Ⅰ.65歲以上。
+
+      Ⅱ.BMI≧30。
+
+      Ⅲ.急性腎衰竭、腎功能不穩定時。
+
+      Ⅳ.過去90天內曾使用glycopeptides者。（108/4/1）
+
+      (2)因嚴重肺炎致呼吸衰竭或合併嚴重敗血症之患者，同時有其他部位懷疑或證實為MRSA感染，得以經驗性使用；惟後續呼吸道微生物學檢查結果無MRSA呼吸道感染證據時，應停止使用。（108/4/1）
+
+      (3)證實為MRSA複雜性皮膚和皮膚構造感染，並符合下列條件之一：（108/4/1）
+
+      Ⅰ.有全身性感染徵兆且白血球數異常（>12,000或<4,000 cells/mcL）。
+
+      Ⅱ.免疫功能不全。
+
+      (4)證實為VRE（vancomycin-resistant enterococci)感染，且其VRE菌株對ampicillin為抗藥者。（108/4/1）
+
+      (5)其他抗藥性革蘭氏陽性球菌感染，因病情需要，經感染症專科醫師會診確認需要使用者。
+
+      2.心內膜炎（endocarditis）病患不建議使用。（108/4/1）
+
+      3.申報費用時需檢附會診紀錄或相關之病歷資料。'
+- regulation_id: REG-0477
+  section_number: 10.8.5.
+  section_title: 10.8.5. Tigecycline（如Tygacil）：(95/12/1、100/7/1)
+  chapter: 第10節 抗微生物劑 Antimicrobial agents
+  source_file: 完整給付規定1150821.docx
+  effective_dates:
+  - (100/7/1)
+  medications:
+    drug_classes: []
+    ingredients:
+    - Tigecycline (如 Tygacil)
+  conditions_of_payment:
+    indications: []
+    laboratory_criteria: []
+    summary: 規範【. Tigecycline（如Tygacil）：】之健保給付條件。 規範重點：1.限下列條件之一使用： (1)經細菌培養證實有意義之致病菌且對其他抗微生物製劑均具抗藥性或對其他具有感受性抗微生物製劑過敏，而對tigecycline具有感受性(sensitivity)之複雜性皮膚及皮膚結構感染或複雜性腹腔內感染症使用。
+    clinical_rules:
+    - indication: 10.8.5. Tigecycline（如Tygacil）：(95/12/1、100/7/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
+  reference_annotations:
+    original_clause: 10.8.5. Tigecycline（如Tygacil）：(95/12/1、100/7/1)
+    full_text: '1.限下列條件之一使用：
+
+      (1)經細菌培養證實有意義之致病菌且對其他抗微生物製劑均具抗藥性或對其他具有感受性抗微生物製劑過敏，而對tigecycline具有感受性(sensitivity)之複雜性皮膚及皮膚結構感染或複雜性腹腔內感染症使用。
+
+      (2)其他經感染症專科醫師會診，認定需使用之下列感染症：複雜性皮膚及皮膚結構感染、複雜性腹腔內感染、社區感染性肺炎。(100/7/1)
+
+      2.申報費用時需檢附會診紀錄或相關之病歷資料。'
+- regulation_id: REG-0478
+  section_number: 10.8.6.
+  section_title: 10.8.6. Colistin可用於靜脈注射劑(97/9/1、98/9/1、99/2/1)
+  chapter: 第10節 抗微生物劑 Antimicrobial agents
+  source_file: 完整給付規定1150821.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients:
+    - Colistin
+  conditions_of_payment:
+    indications: []
+    laboratory_criteria: []
+    summary: 規範【. Colistin可用於靜脈注射劑】之健保給付條件。 規範重點：限經感染症專科醫師會診，確定使用於一般抗生素無效，且具多重抗藥性之革蘭氏陰性菌之嚴重感染。
+    clinical_rules:
+    - indication: 10.8.6. Colistin可用於靜脈注射劑(97/9/1、98/9/1、99/2/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
+  reference_annotations:
+    original_clause: 10.8.6. Colistin可用於靜脈注射劑(97/9/1、98/9/1、99/2/1)
+    full_text: 限經感染症專科醫師會診，確定使用於一般抗生素無效，且具多重抗藥性之革蘭氏陰性菌之嚴重感染。
+- regulation_id: REG-0479
+  section_number: 10.8.7.
+  section_title: 10.8.7. Daptomycin注射劑：(98/1/1)
+  chapter: 第10節 抗微生物劑 Antimicrobial agents
+  source_file: 完整給付規定1150821.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients:
+    - Daptomycin
+    - Teicoplanin
+    - Vancomycin
+  conditions_of_payment:
+    indications: []
+    laboratory_criteria: []
+    summary: 規範【. Daptomycin注射劑：】之健保給付條件。 規範重點：1.證實為MRSA (methicillin-resistant staphylococcus
+      aureus)複雜皮膚和皮膚組織感染，且證明為vancomycin抗藥菌株或使用vancomycin、teicoplanin治療失敗者或對vancomycin、teicoplanin治療無法耐受者。
+    clinical_rules:
+    - indication: 10.8.7. Daptomycin注射劑：(98/1/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
+  reference_annotations:
+    original_clause: 10.8.7. Daptomycin注射劑：(98/1/1)
+    full_text: '1.證實為MRSA (methicillin-resistant staphylococcus aureus)複雜皮膚和皮膚組織感染，且證明為vancomycin抗藥菌株或使用vancomycin、teicoplanin治療失敗者或對vancomycin、teicoplanin治療無法耐受者。
+
+      2.其他抗藥性革蘭氏陽性菌引起的複雜皮膚和皮膚組織感染或MRSA菌血症(含右側感染性心內膜炎)，因病情需要經感染症專科醫師會診確認需要使用者(申報費用時需檢附會診及相關之病歷資料)。'
+- regulation_id: REG-0480
+  section_number: 10.8.8.
+  section_title: 10.8.8. Fidaxomicin(如Dificid)：(103/9/1)
+  chapter: 第10節 抗微生物劑 Antimicrobial agents
+  source_file: 完整給付規定1150821.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients:
+    - Fidaxomicin (如 Dificid)
+    - Metronidazole
+    - Vancomycin
+  conditions_of_payment:
+    indications: []
+    laboratory_criteria: []
+    summary: 規範【. Fidaxomicin(如Dificid)：】之健保給付條件。 規範重點：1.限用於經第一線藥物metronidazole及vancomycin治療無效或復發，且細菌培養或毒素分析(toxin
+      assay)報告證實為困難梭狀桿菌相關腹瀉(C. difficile-associated diarrhoea, CDAD)，並經感染症專科醫師會診，確認有感染症需使用者。
+    clinical_rules:
+    - indication: 10.8.8. Fidaxomicin(如Dificid)：(103/9/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
+  reference_annotations:
+    original_clause: 10.8.8. Fidaxomicin(如Dificid)：(103/9/1)
+    full_text: '1.限用於經第一線藥物metronidazole及vancomycin治療無效或復發，且細菌培養或毒素分析(toxin assay)報告證實為困難梭狀桿菌相關腹瀉(C.
+      difficile-associated diarrhoea, CDAD)，並經感染症專科醫師會診，確認有感染症需使用者。
+
+      2.申報費用時需檢附會診紀錄及相關之病歷資料。'
+- regulation_id: REG-0481
+  section_number: 10.8.9.
+  section_title: 10.8.9. Minocycline注射劑：(112/4/1、114/1/1)
+  chapter: 第10節 抗微生物劑 Antimicrobial agents
+  source_file: 完整給付規定1150821.docx
+  effective_dates:
+  - (114/1/1)
+  - (114/1/1)
+  medications:
+    drug_classes: []
+    ingredients:
+    - Minocycline
+  conditions_of_payment:
+    indications: []
+    laboratory_criteria: []
+    summary: "規範【. Minocycline注射劑：】之健保給付條件。 規範重點：限經感染症專科醫師會診，且符合下列條件之一使用: 1.\t對Carbapenem具抗藥性之Acinetobacter\
+      \ baumannii感染(CRAB)。"
+    clinical_rules:
+    - indication: 10.8.9. Minocycline注射劑：(112/4/1、114/1/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
+  reference_annotations:
+    original_clause: 10.8.9. Minocycline注射劑：(112/4/1、114/1/1)
+    full_text: "限經感染症專科醫師會診，且符合下列條件之一使用:\n1.\t對Carbapenem具抗藥性之Acinetobacter baumannii感染(CRAB)。\n\
+      2.\tCRAB以外具敏感性之抗藥性菌株。(114/1/1)\n3.其他臨床上懷疑或確定由立克次氏體、披衣菌等引起之感染。(114/1/1)"
+- regulation_id: REG-0482
+  section_number: 10.8.10.
+  section_title: 10.8.10. Polymyxin B sulfate靜脈注射劑：(113/12/1)
+  chapter: 第10節 抗微生物劑 Antimicrobial agents
+  source_file: 完整給付規定1150821.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients:
+    - Polymyxin
+  conditions_of_payment:
+    indications: []
+    laboratory_criteria: []
+    summary: "規範【. Polymyxin B sulfate靜脈注射劑：】之健保給付條件。 規範重點：1.\t確定使用於一般抗生素無效，用於患有對Polymyxin\
+      \ B 具感受性且具多重抗藥性之革蘭氏陰性菌引起之嚴重感染成人病人，不適合用於治療泌尿道感染。"
+    clinical_rules:
+    - indication: 10.8.10. Polymyxin B sulfate靜脈注射劑：(113/12/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
+  reference_annotations:
+    original_clause: 10.8.10. Polymyxin B sulfate靜脈注射劑：(113/12/1)
+    full_text: "1.\t確定使用於一般抗生素無效，用於患有對Polymyxin B 具感受性且具多重抗藥性之革蘭氏陰性菌引起之嚴重感染成人病人，不適合用於治療泌尿道感染。\n\
+      2.\t需經會診感染科醫師同意後使用，申報費用時需檢附會診紀錄及相關之病歷資料。"
+- regulation_id: REG-0483
+  section_number: 10.9.
+  section_title: 10.9. 抗人類免疫缺乏病毒藥品使用規定(106/2/4)
+  chapter: 第10節 抗微生物劑 Antimicrobial agents
+  source_file: 完整給付規定1150821.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients: []
+  conditions_of_payment:
+    indications: []
+    laboratory_criteria: []
+    summary: 規範【. 抗人類免疫缺乏病毒藥品使用規定】之健保給付條件。 規範重點：1.限在台灣地區確診且服藥兩年以上之病患使用。
+    clinical_rules:
+    - indication: 10.9. 抗人類免疫缺乏病毒藥品使用規定(106/2/4)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
+  reference_annotations:
+    original_clause: 10.9. 抗人類免疫缺乏病毒藥品使用規定(106/2/4)
+    full_text: '1.限在台灣地區確診且服藥兩年以上之病患使用。
+
+      2.依衛生福利部疾病管制署最新版「抗人類免疫缺乏病毒藥品處方使用規範」之建議辦理。'

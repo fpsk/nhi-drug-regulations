@@ -15,9 +15,9 @@ lifecycle:
   status: active
   last_synced: '2026-11-04'
   stale_after: '2026-12-31'
-total_regulations: 17
+total_regulations: 20
 regulations:
-- regulation_id: REG-0503
+- regulation_id: REG-0493
   section_number: 13.2.
   section_title: 13.2. Cadexomer iodine（如Iodosorb powder）：（87/4/1）
   chapter: 第13節 皮膚科製劑 Dermatological preparations
@@ -47,7 +47,7 @@ regulations:
   reference_annotations:
     original_clause: 13.2. Cadexomer iodine（如Iodosorb powder）：（87/4/1）
     full_text: 限慢性腿部潰瘍病例及慢性感染性潰瘍傷口使用，每日用量超過一包時，需檢附傷口照片以利審查。
-- regulation_id: REG-0504
+- regulation_id: REG-0494
   section_number: 13.3.1.
   section_title: 13.3.1. Calcipotriol外用單方製劑（87/4/1、89/2/1、94/3/1、99/12/1）
   chapter: 第13節 皮膚科製劑 Dermatological preparations
@@ -55,7 +55,8 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Calcipotriol
   conditions_of_payment:
     indications:
     - Psoriasis / Psoriatic Arthritis (乾癬)
@@ -79,15 +80,18 @@ regulations:
     original_clause: 13.3.1. Calcipotriol外用單方製劑（87/4/1、89/2/1、94/3/1、99/12/1）
     full_text: 限確經診斷為尋常性牛皮癬（psoriasis）之病例使用，使用量以每星期不高於30gm或30mL為原則，若因病情需要使用量需超過每星期
       30gm或30mL者，應於病歷詳細記錄理由。
-- regulation_id: REG-0505
+- regulation_id: REG-0495
   section_number: 13.3.2.
   section_title: 13.3.2. 含calcipotriol及類固醇之外用複方製劑（如Daivobet、Enstilar）（94/5/1、99/12/1、109/10/1、115/1/1）
   chapter: 第13節 皮膚科製劑 Dermatological preparations
   source_file: 完整給付規定1150821.docx
-  effective_dates: []
+  effective_dates:
+  - (99/12/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Calcipotriol
+    - Tazarotene
   conditions_of_payment:
     indications:
     - Psoriasis / Psoriatic Arthritis (乾癬)
@@ -110,8 +114,10 @@ regulations:
     original_clause: 13.3.2. 含calcipotriol及類固醇之外用複方製劑（如Daivobet、Enstilar）（94/5/1、99/12/1、109/10/1、115/1/1）
     full_text: '1.限確診為尋常性乾癬（psoriasis）之病人使用，使用量以每星期不高於30gm為原則，若因病情需要使用量需超過每星期30gm者，應於病歷詳細記錄理由。（94/5/1、99/12/1、115/1/1）
 
-      2.若因病情需要需連續使用超過8週者，應於病歷詳細記錄理由。（109/10/1）'
-- regulation_id: REG-0506
+      2.若因病情需要需連續使用超過8週者，應於病歷詳細記錄理由。（109/10/1）
+
+      13.3.3與tazarotene併用，兩者合計總量每星期不超過30gm或30mL，若因病情需要兩者合併使用量需超過每星期30gm 者，應於病歷詳細記錄理由。(99/12/1)'
+- regulation_id: REG-0496
   section_number: 13.4.
   section_title: 13.4. Isotretinoin口服製劑 (如Roaccutane)：（86/9/1、87/4/1、94/3/1）
   chapter: 第13節 皮膚科製劑 Dermatological preparations
@@ -119,7 +125,8 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Isotretinoin (如 Roaccutane)
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -147,7 +154,7 @@ regulations:
       2.需檢附病人之服藥同意書 (詳附表十)，以及經傳統治療無效之病歷資料或治療前之照片，經事前審查核准後使用。
 
       3.每次申請以一療程為限，若需再次療程，請檢附原來照片與最近照片再次申請事前審查核准後使用（每一療程最高總劑量為100 mg –120 mg/kg，於四至六個月完成)。'
-- regulation_id: REG-0507
+- regulation_id: REG-0497
   section_number: 13.5.
   section_title: 13.5. Acitretin（如Neotigason）：(87/11/1)
   chapter: 第13節 皮膚科製劑 Dermatological preparations
@@ -177,7 +184,7 @@ regulations:
   reference_annotations:
     original_clause: 13.5. Acitretin（如Neotigason）：(87/11/1)
     full_text: 申報費用時需檢具病患同意書 (附表十一)，並檢送含確定診斷之詳細病歷資料，俾利審查。
-- regulation_id: REG-0508
+- regulation_id: REG-0498
   section_number: 13.6.
   section_title: 13.6. Methoxsalen製劑：(87/11/1)
   chapter: 第13節 皮膚科製劑 Dermatological preparations
@@ -185,7 +192,8 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Methoxsalen
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -206,7 +214,7 @@ regulations:
   reference_annotations:
     original_clause: 13.6. Methoxsalen製劑：(87/11/1)
     full_text: 限皮膚科專科醫師使用於PUVA治療 (配合紫外線照射)，申報費用時需檢送含確定診斷之詳細病歷資料，俾利審查。
-- regulation_id: REG-0509
+- regulation_id: REG-0499
   section_number: 13.7.
   section_title: 13.7. Doxepin HCl cream (如Ichderm)：(88/6/1)
   chapter: 第13節 皮膚科製劑 Dermatological preparations
@@ -236,7 +244,7 @@ regulations:
   reference_annotations:
     original_clause: 13.7. Doxepin HCl cream (如Ichderm)：(88/6/1)
     full_text: 限成人使用，每次處方不超過七天。
-- regulation_id: REG-0510
+- regulation_id: REG-0500
   section_number: 13.8.
   section_title: 13.8. Tazarotene外用製劑：(91/4/1、99/12/1、101/2/1)
   chapter: 第13節 皮膚科製劑 Dermatological preparations
@@ -246,7 +254,10 @@ regulations:
   - (99/12/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Calcipotriol
+    - Calcitriol
+    - Tazarotene
   conditions_of_payment:
     indications:
     - Psoriasis / Psoriatic Arthritis (乾癬)
@@ -273,7 +284,7 @@ regulations:
 
       3.與calcitriol (或calcipotriol)併用，兩者合計總量每星期不超過30gm或30mL，若因病情需要兩者合併使用量需超過每星期30gm
       者，應於病歷詳細記載理由。(99/12/1)'
-- regulation_id: REG-0511
+- regulation_id: REG-0501
   section_number: 13.9.
   section_title: 13.9. Calcitriol (如Silkis ointment)：(92/11/1、93/9/1、99/12/1)
   chapter: 第13節 皮膚科製劑 Dermatological preparations
@@ -284,6 +295,7 @@ regulations:
     drug_classes: []
     ingredients:
     - Calcitriol (如 Silkis ointment)
+    - Tazarotene
   conditions_of_payment:
     indications:
     - Psoriasis / Psoriatic Arthritis (乾癬)
@@ -310,7 +322,7 @@ regulations:
       2.與tazarotene併用，兩者合計總量每星期不超過30gm或30mL，若因病情需要兩者合併使用量需超過每星期30gm者，應於病歷詳細記錄理由。
 
       (99/12/1)'
-- regulation_id: REG-0512
+- regulation_id: REG-0502
   section_number: 13.10.
   section_title: 13.10. Tacrolimus (如Protopic Ointment )：(91/12/1、93/8/1、95/7/1、99/12/1、111/2/1)
   chapter: 第13節 皮膚科製劑 Dermatological preparations
@@ -323,6 +335,7 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Pimecrolimus
     - Tacrolimus (如 Protopic Ointment)
   conditions_of_payment:
     indications:
@@ -372,7 +385,7 @@ regulations:
       備註1：Rule of nines計算法：頭頸9%，兩上肢18%，軀幹18%，背18%，兩下肢36%，陰部1%。
 
       備註2：兒童患部面積計算如附表十七 (From Roger M. Barkin)'
-- regulation_id: REG-0513
+- regulation_id: REG-0503
   section_number: 13.11.
   section_title: 13.11. Pimecrolimus (Elidel 1% )：(92/11/1、93/8/1、94/3/1、95/7/1、99/12/1、110/12/1、111/2/1)
   chapter: 第13節 皮膚科製劑 Dermatological preparations
@@ -385,7 +398,9 @@ regulations:
   - (99/12/1)
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Pimecrolimus
+    - Tacrolimus
   conditions_of_payment:
     indications:
     - Atopic Dermatitis (異位性皮膚炎)
@@ -430,7 +445,7 @@ regulations:
       (2)孩童：患部面積30%~50%，每兩星期兩者合併用量不超過30gm；患部面積>50%，每星期兩者合併用量不超過30gm。
 
       (3)若因病情需要兩者合併使用量需超過限制者，應於病歷詳細記錄理由。'
-- regulation_id: REG-0514
+- regulation_id: REG-0504
   section_number: 13.12.
   section_title: 13.12. Amorolfine (如Amocoat)：(99/4/1)
   chapter: 第13節 皮膚科製劑 Dermatological preparations
@@ -465,7 +480,7 @@ regulations:
       2.每年限使用一瓶5mL。
 
       3.許可證類別若變更為指示用藥，將不予給付。'
-- regulation_id: REG-0515
+- regulation_id: REG-0505
   section_number: 13.13.
   section_title: 13.13. Podophyllotoxin (如Wart Del Cream)：(102/9/1)
   chapter: 第13節 皮膚科製劑 Dermatological preparations
@@ -500,7 +515,7 @@ regulations:
       2.每次限給付乙支(5gm)，一個月內不得重複處方，每次療程間應相隔至少3個月，治療期間不得與其它冷凍、電燒、雷射治療合併申報。
 
       3.若病灶侵犯生殖器部位超過50%，每療程處方之總劑量以10gm為上限，並且需於病歷上詳載，併得合併申報冷凍、電燒或雷射治療。'
-- regulation_id: REG-0516
+- regulation_id: REG-0506
   section_number: 13.14.
   section_title: 13.14. Ingenol (如Picato) ：(105/11/1)
   chapter: 第13節 皮膚科製劑 Dermatological preparations
@@ -543,7 +558,7 @@ regulations:
       (2)若未達完全清除、或病灶復發或出現新病灶，須進行第二次療程，須距第一次療程八週以上，一年內以兩療程為限。
 
       (3)於局部治療範圍處，八週內不得同時併用其他光化性角化症治療，如冷凍治療、雷射、電燒等。'
-- regulation_id: REG-0517
+- regulation_id: REG-0507
   section_number: 13.15.
   section_title: 13.15. Permethrin外用製劑：（106/9/1、111/6/1、113/12/1）
   chapter: 第13節 皮膚科製劑 Dermatological preparations
@@ -551,7 +566,8 @@ regulations:
   effective_dates: []
   medications:
     drug_classes: []
-    ingredients: []
+    ingredients:
+    - Permethrin
   conditions_of_payment:
     indications: []
     laboratory_criteria: []
@@ -574,7 +590,7 @@ regulations:
     full_text: '1.每人每次處方使用30gm一支，需要時得於7天後再處方使用一支(限30gm)；若第1次處方使用60gm一支，則7天後之第2次治療不得再處方一支(30gm或60gm)。（106/9/1、111/6/1、113/12/1）
 
       2.半年內需使用第3次時，須經皮膚科醫師確診處方。'
-- regulation_id: REG-0518
+- regulation_id: REG-0508
   section_number: 13.16.
   section_title: 13.16. Ivermectin (如Stromectol)：（107/8/1、112/12/1、113/4/1）
   chapter: 第13節 皮膚科製劑 Dermatological preparations
@@ -610,7 +626,7 @@ regulations:
       3.保險對象收容於矯正機關者，依據「全民健康保險提供保險對象收容於矯正機關者醫療服務計畫」辦理。（112/12/1）
 
       4.醫師於住宿型長期照顧機構為住民處方時，不限鏡檢確診者使用，惟須附照片備查。（113/4/1）'
-- regulation_id: REG-0519
+- regulation_id: REG-0509
   section_number: 13.17.1.
   section_title: 13.17.1. Dupilumab(如Dupixent) ; upadacitinib(如Rinvoq) ; abrocitinib(如Cibinqo)
     ;lebrikizumab (如Ebglyss)（113/2/1、113/8/1、114/6/1、115/6/1）(12歲以上病人治療部分)
@@ -632,8 +648,10 @@ regulations:
     drug_classes: []
     ingredients:
     - Abrocitinib (如 Cibinqo)
+    - Azathioprine
     - Dupilumab (杜匹魯單抗)
     - Lebrikizumab (如 Ebglyss)
+    - Methotrexate
     - Upadacitinib (如 Rinvoq)
   conditions_of_payment:
     indications:
@@ -1409,3 +1427,447 @@ regulations:
       (2)暫緩續用後若疾病再復發，可重新申請使用，須符合至少有50%復發或EASI≧16 (需附上次療程治療前、後，及本次照片)。(111/8/1)
 
       7. Dupilumab、upadacitinib、abrocitinib及lebrikizumab不得併用；upadacitinib及abrocitinib不得併用cyclosporin。（112/4/1、112/6/1、115/6/1）'
+- regulation_id: REG-0510
+  section_number: 13.17.2.
+  section_title: 13.17.2. Dupilumab (如Dupixent)：（113/2/1）(6歲以上未滿12歲兒童治療部分)
+  chapter: 第13節 皮膚科製劑 Dermatological preparations
+  source_file: 完整給付規定1150821.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients:
+    - Azathioprine
+    - Dupilumab (杜匹魯單抗)
+    - Methotrexate
+  conditions_of_payment:
+    indications:
+    - Atopic Dermatitis (異位性皮膚炎)
+    - Psoriasis / Psoriatic Arthritis (乾癬)
+    - Hypertension (高血壓)
+    laboratory_criteria:
+    - 血壓
+    - 白血球
+    - EASI
+    - IGA
+    summary: 適用於【Atopic Dermatitis、Psoriasis / Psoriatic Arthritis、Hypertension】之健保給付。
+      主要條件包含：臨床檢驗需符合 EASI <= 16Score, EASI >= 16Score, IGA = 3Score；使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Atopic Dermatitis (異位性皮膚炎)
+      biomarkers:
+      - biomarker: EASI
+        operator: <=
+        value: '16'
+        unit: Score
+        duration: 治療1年
+        terminology_bindings:
+          loinc: 89250-5
+          snomed_ct: '713601004'
+          snomed_procedure: '713601004'
+          snomed_finding: '713601004'
+        source_grounding:
+          start_char: 1540
+          end_char: 1547
+          snippet: EASI≦16
+      - biomarker: EASI
+        operator: '>='
+        value: '16'
+        unit: Score
+        duration: 治療1年
+        terminology_bindings:
+          loinc: 89250-5
+          snomed_ct: '713601004'
+          snomed_procedure: '713601004'
+          snomed_finding: '713601004'
+        source_grounding:
+          start_char: 1582
+          end_char: 1589
+          snippet: EASI≧16
+      - biomarker: IGA
+        operator: '='
+        value: '3'
+        unit: Score
+        duration: null
+        terminology_bindings:
+          loinc: 89255-4
+          snomed_ct: '713602006'
+          snomed_procedure: '713602006'
+          snomed_finding: '713602006'
+        source_grounding:
+          start_char: 208
+          end_char: 215
+          snippet: (IGA)≧3
+      prior_authorization: true
+      step_therapy:
+      - 使用12週無效
+      stopping_rules:
+      - Ⅲ.若臨床上使用上述外用藥物發生皮膚萎縮或感染，得停止使用外用藥物，惟須於病歷中詳述說明。
+      evaluation_frequency:
+      - 使用12週
+    - indication: Psoriasis / Psoriatic Arthritis (乾癬)
+      biomarkers:
+      - biomarker: EASI
+        operator: <=
+        value: '16'
+        unit: Score
+        duration: 治療1年
+        terminology_bindings:
+          loinc: 89250-5
+          snomed_ct: '713601004'
+          snomed_procedure: '713601004'
+          snomed_finding: '713601004'
+        source_grounding:
+          start_char: 1540
+          end_char: 1547
+          snippet: EASI≦16
+      - biomarker: EASI
+        operator: '>='
+        value: '16'
+        unit: Score
+        duration: 治療1年
+        terminology_bindings:
+          loinc: 89250-5
+          snomed_ct: '713601004'
+          snomed_procedure: '713601004'
+          snomed_finding: '713601004'
+        source_grounding:
+          start_char: 1582
+          end_char: 1589
+          snippet: EASI≧16
+      - biomarker: IGA
+        operator: '='
+        value: '3'
+        unit: Score
+        duration: null
+        terminology_bindings:
+          loinc: 89255-4
+          snomed_ct: '713602006'
+          snomed_procedure: '713602006'
+          snomed_finding: '713602006'
+        source_grounding:
+          start_char: 208
+          end_char: 215
+          snippet: (IGA)≧3
+      prior_authorization: true
+      step_therapy:
+      - 使用12週無效
+      stopping_rules:
+      - Ⅲ.若臨床上使用上述外用藥物發生皮膚萎縮或感染，得停止使用外用藥物，惟須於病歷中詳述說明。
+      evaluation_frequency:
+      - 使用12週
+    - indication: Hypertension (高血壓)
+      biomarkers:
+      - biomarker: EASI
+        operator: <=
+        value: '16'
+        unit: Score
+        duration: 治療1年
+        terminology_bindings:
+          loinc: 89250-5
+          snomed_ct: '713601004'
+          snomed_procedure: '713601004'
+          snomed_finding: '713601004'
+        source_grounding:
+          start_char: 1540
+          end_char: 1547
+          snippet: EASI≦16
+      - biomarker: EASI
+        operator: '>='
+        value: '16'
+        unit: Score
+        duration: 治療1年
+        terminology_bindings:
+          loinc: 89250-5
+          snomed_ct: '713601004'
+          snomed_procedure: '713601004'
+          snomed_finding: '713601004'
+        source_grounding:
+          start_char: 1582
+          end_char: 1589
+          snippet: EASI≧16
+      - biomarker: IGA
+        operator: '='
+        value: '3'
+        unit: Score
+        duration: null
+        terminology_bindings:
+          loinc: 89255-4
+          snomed_ct: '713602006'
+          snomed_procedure: '713602006'
+          snomed_finding: '713602006'
+        source_grounding:
+          start_char: 208
+          end_char: 215
+          snippet: (IGA)≧3
+      prior_authorization: true
+      step_therapy:
+      - 使用12週無效
+      stopping_rules:
+      - Ⅲ.若臨床上使用上述外用藥物發生皮膚萎縮或感染，得停止使用外用藥物，惟須於病歷中詳述說明。
+      evaluation_frequency:
+      - 使用12週
+    structured_biomarkers:
+    - biomarker: EASI
+      operator: <=
+      value: '16'
+      unit: Score
+      duration: 治療1年
+      terminology_bindings:
+        loinc: 89250-5
+        snomed_ct: '713601004'
+        snomed_procedure: '713601004'
+        snomed_finding: '713601004'
+      source_grounding:
+        start_char: 1540
+        end_char: 1547
+        snippet: EASI≦16
+    - biomarker: EASI
+      operator: '>='
+      value: '16'
+      unit: Score
+      duration: 治療1年
+      terminology_bindings:
+        loinc: 89250-5
+        snomed_ct: '713601004'
+        snomed_procedure: '713601004'
+        snomed_finding: '713601004'
+      source_grounding:
+        start_char: 1582
+        end_char: 1589
+        snippet: EASI≧16
+    - biomarker: IGA
+      operator: '='
+      value: '3'
+      unit: Score
+      duration: null
+      terminology_bindings:
+        loinc: 89255-4
+        snomed_ct: '713602006'
+        snomed_procedure: '713602006'
+        snomed_finding: '713602006'
+      source_grounding:
+        start_char: 208
+        end_char: 215
+        snippet: (IGA)≧3
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 859
+      end_char: 863
+      snippet: 事前審查
+    step_therapy:
+    - 使用12週無效
+    stopping_rules:
+    - Ⅲ.若臨床上使用上述外用藥物發生皮膚萎縮或感染，得停止使用外用藥物，惟須於病歷中詳述說明。
+    evaluation_intervals:
+    - 使用12週
+  reference_annotations:
+    original_clause: 13.17.2. Dupilumab (如Dupixent)：（113/2/1）(6歲以上未滿12歲兒童治療部分)
+    full_text: '限皮膚科專科醫師，或具兒童過敏免疫風濕專長之兒科專科醫師處方。
+
+      限用於經外用藥物及一種全身性免疫抑制劑治療無效(需治療3個月完整療程，得合併他院就診病歷)，且適合以全身性療法治療之全身慢性中重度之異位性皮膚炎患者。
+
+      所稱慢性中重度之異位性皮膚炎，指病灶持續至少6個月，且符合Eczema area severity index (EASI) ≧16及Investigator’s
+      Global Assessment (IGA)≧3。
+
+      註：Eczema area severity index (EASI)之異位性皮膚炎面積計算，只含皮膚紅腫濕疹部位，單純的皮膚乾燥、脫皮、抓痕，不可列入計算。
+
+      所稱治療無效，指經完整療程後，3個月內連續兩次評估，嚴重度均符合上列第(1)點情況，且兩次評估之間相隔至少4週。
+
+      Ⅰ.治療必須包括中效強度 (medium potency)或中效強度以上之外用類固醇(topical corticosteroid)，及外用鈣調磷酸酶抑制劑(topical
+      calcineurin inhibitor)，規律使用達12週。
+
+      Ⅱ.治療必須包括以下三種系統性(全身性)治療至少一種，包括methotrexate、azathioprine、cyclosporin，且可與前開外用藥物合併使用。
+
+      Ⅲ.若臨床上使用上述外用藥物發生皮膚萎縮或感染，得停止使用外用藥物，惟須於病歷中詳述說明。
+
+      Ⅳ.前開免疫抑制劑之劑量：Methotrexate合理劑量需達每週10mg、azathioprine為1.0mg/kg/d、cyclosporin為2.5mg/kg/d，足量治療至少使用12週無效或是有客觀證據產生不良反應(如肝功能異常、白血球低下、高血壓或腎功能異常，或是經培養確診之皰疹性皮膚炎)或有禁忌症。
+
+      V.若臨床上發生無法耐受或特殊體質者(例如NUDT15或TPMT代謝不良基因變異型、肝腎功能不佳、或曾因服用上述藥物發生嚴重感染)，得降低前述系統性治療藥物之合理劑量(病歷中須詳述說明及記載)。
+
+      需經事前審查核准後使用。
+
+      初次申請時，以6個月為1個療程。經評估需續用者，每6個月需再次提出事前審查申請續用評估，且應於期滿前1個月提出，並於申請時檢附照片。
+
+      初次申請經核准，於治療滿6個月後，經評估需續用者，申請續用時，需檢附照片證明初次申請治療6個月後，與初次治療前之療效達EASI 50方可申請使用。停藥超過3個月再申請者，視同新申請案件，否則視為續用案件。
+
+      使用劑量：
+
+      Ⅰ.體重15公斤以上至未滿30公斤：起始劑量600mg (限300mg注射兩劑) ，接著以300mg隔4週注射一次，且於16週時，須先行評估，至少有EASI
+      50療效方可使用。
+
+      Ⅱ.體重30公斤以上至未滿60公斤：起始劑量400mg (限200mg注射兩劑) ，接著以200mg隔週注射一次，且於16週時，須先行評估，至少有EASI
+      50療效方可使用。
+
+      Ⅲ.體重60公斤以上：起始劑量600mg (限300mg注射兩劑) ，接著以300mg隔週注射一次，且於16週時，須先行評估，至少有EASI 50療效方可使用。
+
+      若患者曾核准使用治療乾癬之生物製劑，需等到乾癬症狀消失後，至少兩年才能提出申請。或申請前須切片確定排除乾癬診斷並經皮膚科專科醫師確立診斷。
+
+      需排除使用的情形應參照藥物仿單資訊，重要之排除使用狀況包括：寄生蟲 (蠕蟲) 感染。
+
+      如果發生下列現象應停止治療：
+
+      不良事件，包括：
+
+      Ⅰ.惡性腫瘤。
+
+      Ⅱ.寄生蟲 (蠕蟲) 感染。
+
+      療效不彰：患者經過6個月治療（初次療程）後未達療效者，療效定義指EASI改善未達50%。
+
+      暫緩續用之相關規定：
+
+      暫緩續用時機：使用生物製劑治療1年後符合EASI≦16者。
+
+      暫緩續用後若疾病再復發，可重新申請使用，須符合至少有50%復發或EASI≧16 (需附上次療程治療前、後，及本次照片)。'
+- regulation_id: REG-0511
+  section_number: 13.18.
+  section_title: 13.18. Nadifloxacin外用製劑(如Nadixa) (110/6/1)
+  chapter: 第13節 皮膚科製劑 Dermatological preparations
+  source_file: 完整給付規定1150821.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients:
+    - Nadifloxacin (如 Nadixa)
+  conditions_of_payment:
+    indications: []
+    laboratory_criteria: []
+    summary: 規範【. Nadifloxacin外用製劑(如Nadixa)】之健保給付條件。 規範重點：1.限用於傳統外用抗生素治療無效之毛囊炎及尋常性鬚瘡，不得合併其他局部抗生素藥膏使用。
+    clinical_rules:
+    - indication: 13.18. Nadifloxacin外用製劑(如Nadixa) (110/6/1)
+      biomarkers: []
+      prior_authorization: false
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers: []
+    prior_authorization_required: false
+    prior_authorization_grounding: null
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
+  reference_annotations:
+    original_clause: 13.18. Nadifloxacin外用製劑(如Nadixa) (110/6/1)
+    full_text: '1.限用於傳統外用抗生素治療無效之毛囊炎及尋常性鬚瘡，不得合併其他局部抗生素藥膏使用。
+
+      2.臉部每個月限用一條（25gm）。'
+- regulation_id: REG-0512
+  section_number: 13.19.
+  section_title: 13.19. Centella asiatica extract, plectranthus amboinicus extract外用製劑(如Fespixon
+    cream)：(112/8/1)
+  chapter: 第13節 皮膚科製劑 Dermatological preparations
+  source_file: 完整給付規定1150821.docx
+  effective_dates: []
+  medications:
+    drug_classes: []
+    ingredients:
+    - Albumin
+    - Centella
+    - Plectranthus Amboinicus Extract (如 Fespixon cream)
+  conditions_of_payment:
+    indications:
+    - Diabetes Mellitus (糖尿病)
+    laboratory_criteria:
+    - HbA1c
+    - 血糖
+    - Albumin
+    summary: 適用於【Diabetes Mellitus】之健保給付。 主要條件包含：臨床檢驗需符合 HbA1c < 8.5%, Albumin >=
+      3.0g/dL；使用前須經事前審查核准。
+    clinical_rules:
+    - indication: Diabetes Mellitus (糖尿病)
+      biomarkers:
+      - biomarker: HbA1c
+        operator: <
+        value: '8.5'
+        unit: '%'
+        duration: 12週
+        terminology_bindings:
+          loinc: 4548-4
+          snomed_ct: '43396009'
+          snomed_procedure: '43396009'
+          snomed_finding: '43396009'
+        source_grounding:
+          start_char: 158
+          end_char: 168
+          snippet: HbA1c<8.5%
+      - biomarker: Albumin
+        operator: '>='
+        value: '3.0'
+        unit: g/dL
+        duration: 12週
+        terminology_bindings:
+          loinc: 1751-7
+          snomed_ct: '104485008'
+          snomed_procedure: '104485008'
+          snomed_finding: '1153477009'
+        source_grounding:
+          start_char: 169
+          end_char: 187
+          snippet: albumin ≧ 3.0 g/dL
+      prior_authorization: true
+      step_therapy: []
+      stopping_rules: []
+      evaluation_frequency: []
+    structured_biomarkers:
+    - biomarker: HbA1c
+      operator: <
+      value: '8.5'
+      unit: '%'
+      duration: 12週
+      terminology_bindings:
+        loinc: 4548-4
+        snomed_ct: '43396009'
+        snomed_procedure: '43396009'
+        snomed_finding: '43396009'
+      source_grounding:
+        start_char: 158
+        end_char: 168
+        snippet: HbA1c<8.5%
+    - biomarker: Albumin
+      operator: '>='
+      value: '3.0'
+      unit: g/dL
+      duration: 12週
+      terminology_bindings:
+        loinc: 1751-7
+        snomed_ct: '104485008'
+        snomed_procedure: '104485008'
+        snomed_finding: '1153477009'
+      source_grounding:
+        start_char: 169
+        end_char: 187
+        snippet: albumin ≧ 3.0 g/dL
+    prior_authorization_required: true
+    prior_authorization_grounding:
+      start_char: 383
+      end_char: 387
+      snippet: 事前審查
+    step_therapy: []
+    stopping_rules: []
+    evaluation_intervals: []
+  reference_annotations:
+    original_clause: 13.19. Centella asiatica extract, plectranthus amboinicus extract外用製劑(如Fespixon
+      cream)：(112/8/1)
+    full_text: '1.限整形外科或皮膚科專科醫師使用。
+
+      2.限用於糖尿病足部傷口潰瘍(Wagner grade 2級)，接受積極血糖控制及清創手術後，其治療最大傷口面積不超過5cm2，且應符合下列所有條件：
+
+      (1)糖尿病足部傷口潰瘍，傷口深及肌肉層且經抗生素藥膏或燙傷藥膏治療及使用傷口敷料12週後，該傷口癒合面積小於50%。
+
+      (2)HbA1c<8.5%、albumin ≧ 3.0 g/dL。
+
+      (3)治療前ABI（Ankle Brachial Index）≧0.9。
+
+      3.每年限申請1次，每次申請為2支，每次處方限1支。
+
+      4.排除條件:
+
+      (1)急性發炎感染不穩定之傷口。
+
+      (2)周邊動脈阻塞(peripheral artery disease,PAD)病人未施行經皮血管擴張術 (percutaneous transluminal
+      angioplasty,PTA)治療者。
+
+      5.需經事前審查核准後使用；應附有HbA1c、albumin、ABI資料及相隔12週以上清創前後照片。
+
+      6.再次申請時除前條所需資料外，需加附前次治療後該傷口完全癒合之照片。
+
+      備註:積極血糖控制，係指糖化血色素不高於個別目標值1.5%以上，惟一般病人的糖化血色素目標值為7.0%以下，因此8.5%為指標。'

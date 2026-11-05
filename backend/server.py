@@ -40,7 +40,7 @@ def api_version():
         "status": "success",
         "app_name": "Taiwan NHI Drug Regulations Query Engine",
         "version": "2026.08.21-v0.5",
-        "latest_features": "2026 August Official Update (583 regulations) + LangExtract entity grounding",
+        "latest_features": "2026 August Official Update (573 regulations) + LangExtract entity grounding",
         "total_regulations": len(indexer.regulations),
         "who_atc_items": len(atc_engine.who_db),
         "atc_db_items": len(atc_engine.atc_db)

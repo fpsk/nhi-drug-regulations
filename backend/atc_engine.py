@@ -484,6 +484,19 @@ class ATCEngine:
                                 "tc": self.clean_taiwan_brand(chi) if chi else "",
                                 "atc": atc
                             }
+                        ing_base = ing_low.split()[0]
+                        if (
+                            len(ing_base) >= 5
+                            and ing_base.isalpha()
+                            and ing_base not in {"sodium", "calcium", "potassium", "magnesium", "human", "extract", "solution", "water", "glucose", "vitamin", "compound", "normal", "sterile", "purified", "dried", "activated"}
+                            and ing_base not in self._db_ingredients_map
+                            and atc
+                        ):
+                            self._db_ingredients_map[ing_base] = {
+                                "en": ing_base.title(),
+                                "tc": self.clean_taiwan_brand(chi) if chi else "",
+                                "atc": atc
+                            }
             conn.close()
         except Exception:
             pass
@@ -782,16 +795,24 @@ class ATCEngine:
             if info7["en"].lower() in text_lower or info7["tc"].lower() in text_lower:
                 found_ingredients.add(f"{info7['en']} ({info7['tc']})")
 
-        # Also extract explicit "GenericName (如BrandName)" patterns from the regulation header/first line
-        first_line = text.split('\n')[0]
-        for m in re.finditer(r'([A-Za-z][A-Za-z0-9\-\s]{2,35}?)\s*[（\(]\s*如\s*([^）\)]+)[）\)]', first_line):
+        # Also extract explicit "GenericName (如BrandName)" patterns across title and body text
+        stopwords = {"level", "stage", "class", "grade", "score", "type", "phase", "group", "table", "child-pugh", "nyha", "ecog", "era", "sglt2", "sglt-2", "nsaid", "nsaids", "dmard", "dmards"}
+        for m in re.finditer(r'([A-Za-z][A-Za-z0-9\-\+\.\/\s]{2,45}?)\s*(?:注射劑|口服製劑|內服液劑|緩釋劑型|眼用製劑|外用製劑|栓劑|植入劑|凍晶注射劑|膠囊|錠劑)?\s*[（\(]\s*如\s*[:：]?\s*([^）\)]+)[）\)]', text):
             gen_name = m.group(1).strip()
-            brand_name = m.group(2).strip().split('、')[0].split(',')[0].strip()
-            # Clean leading section numbers or dosage tokens
+            brand_name = m.group(2).strip().split('、')[0].split('，')[0].split(',')[0].split('；')[0].split(';')[0].strip()
+            # Clean leading section numbers or trailing dosage tokens
             gen_name = re.sub(r'^(?:\d+(?:\.\d+)*\.?\s*)+', '', gen_name).strip()
-            gen_name = re.sub(r'\s+\d+\s*(?:mg|mcg|g|ml|iu)\b.*$', '', gen_name, flags=re.IGNORECASE).strip()
-            if len(gen_name) >= 3 and not any(gen_name.lower() in existing.lower() for existing in found_ingredients):
+            gen_name = re.sub(r'\s+\d+(?:\.\d+)?\s*(?:mg|mcg|ug|g|ml|iu|%)\b.*$', '', gen_name, flags=re.IGNORECASE).strip()
+            if len(gen_name) >= 3 and gen_name.lower() not in stopwords and not any(gen_name.lower() in existing.lower() for existing in found_ingredients):
                 found_ingredients.add(f"{gen_name.title()} (如 {brand_name})")
+
+        # Match single-word generic ingredient names from NHI drug master DB (using ASCII boundary so Chinese-adjacent words match)
+        self._ensure_vocab_loaded()
+        if self._db_ingredients_map:
+            for word in set(re.findall(r'[a-z]{5,}', text_lower)):
+                if word in self._db_ingredients_map and word not in stopwords:
+                    if not any(word in existing.lower() for existing in found_ingredients):
+                        found_ingredients.add(word.title())
 
         return sorted(list(found_classes)), sorted(list(found_ingredients))
 

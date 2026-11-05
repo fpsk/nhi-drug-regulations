@@ -109,12 +109,16 @@ class NHIRegulationParser:
     def _structure_docx_body(self, doc, source_file):
         records = []
         current_chapter = "通則 General Rules"
+        active_chapter = "通則 General Rules"
+        active_chap_num = "0"
         current_section_num = "0.0"
         current_section_title = "通則 General Rules"
         current_buffer = []
+        section_title_map = {}
 
         chap_pattern = re.compile(r'^第\s*(\d+)\s*節\s*(.*)')
         sec_pattern = re.compile(r'^(\d+\.\d+[\d\.]*)\s*(.*)')
+        false_sec_prefix = re.compile(r'^[歲年個週天日小~～至項\*]')
         appendix_pattern = re.compile(r'^(?:◎\s*附表|附表[一二三四五六七八九十0-9]+|全民健康保險保險對象使用.*協議書)')
 
         # Dictionary of specific attached appendix tables
@@ -169,18 +173,42 @@ class NHIRegulationParser:
                 if chap_match:
                     flush_buffer()
                     chap_num, chap_name = chap_match.groups()
-                    current_chapter = f"第{chap_num}節 {chap_name}".strip()
+                    active_chap_num = chap_num
+                    active_chapter = f"第{chap_num}節 {chap_name}".strip()
+                    current_chapter = active_chapter
                     current_section_num = f"{chap_num}.0"
                     current_section_title = current_chapter
                     continue
 
                 sec_match = sec_pattern.match(text)
                 if sec_match:
-                    flush_buffer()
                     s_num, s_title = sec_match.groups()
-                    current_section_num = s_num
-                    current_section_title = f"{s_num} {s_title}".strip()
-                    continue
+                    first_num = s_num.split('.')[0]
+                    is_valid_sec = (
+                        first_num == active_chap_num
+                        and not false_sec_prefix.match(s_title)
+                        and not (s_num == "13.3.3" and s_title.startswith("與tazarotene"))
+                    )
+                    if is_valid_sec:
+                        flush_buffer()
+                        if s_title.startswith('.'):
+                            s_title = s_title.lstrip('.').strip()
+                        s_num_norm = s_num.rstrip('.') + '.'
+                        clean_sec = s_num.rstrip('.')
+                        clean_t = re.sub(r'[（\(][^）\)]*\d+[^）\)]*[）\)]', '', s_title).strip(' ：:。')
+                        section_title_map[clean_sec] = clean_t
+
+                        # Prepend parent section context for generic subsection headers (e.g. 單方製劑 / 複方製劑)
+                        if clean_t in ("單方製劑", "複方製劑", "全身性抗疱疹病毒劑"):
+                            parent_sec = ".".join(clean_sec.split(".")[:-1])
+                            parent_t = section_title_map.get(parent_sec, "")
+                            if parent_t:
+                                s_title = f"{parent_t} - {s_title}"
+
+                        current_chapter = active_chapter
+                        current_section_num = s_num_norm
+                        current_section_title = f"{s_num_norm} {s_title}".strip()
+                        continue
 
                 if appendix_pattern.match(text):
                     flush_buffer()
@@ -206,17 +234,41 @@ class NHIRegulationParser:
                         current_buffer.append(tbl_formatted)
 
         flush_buffer()
+        self._enrich_parent_ingredients(records)
         return records
+
+    def _enrich_parent_ingredients(self, records):
+        """If a parent section (e.g. 2.8.2. or 5.6.) has no extracted ingredients of its own, roll up child section ingredients."""
+        for r in records:
+            sec = r["section_number"]
+            if sec in ("0.0", "APP") or sec.endswith(".0"):
+                continue
+            if not r["medications"]["ingredients"]:
+                child_ings = []
+                seen = set()
+                for child in records:
+                    c_sec = child["section_number"]
+                    if c_sec != sec and c_sec.startswith(sec):
+                        for ing in child["medications"]["ingredients"]:
+                            base_ing = ing.split("(")[0].strip().lower()
+                            if base_ing not in seen:
+                                seen.add(base_ing)
+                                child_ings.append(ing)
+                if child_ings:
+                    r["medications"]["ingredients"] = child_ings
 
     def _structure_paragraphs(self, paragraphs, source_file):
         records = []
         current_chapter = "通則 General Rules"
+        active_chapter = "通則 General Rules"
+        active_chap_num = "0"
         current_section_num = "0.0"
         current_section_title = "通則 General Rules"
         current_buffer = []
 
         chap_pattern = re.compile(r'^第\s*(\d+)\s*節\s*(.*)')
         sec_pattern = re.compile(r'^(\d+\.\d+[\d\.]*)\s*(.*)')
+        false_sec_prefix = re.compile(r'^[歲年個週天日小~～至項\*]')
 
         def flush_buffer():
             nonlocal current_buffer, records
@@ -239,22 +291,31 @@ class NHIRegulationParser:
             if chap_match:
                 flush_buffer()
                 chap_num, chap_name = chap_match.groups()
-                current_chapter = f"第{chap_num}節 {chap_name}".strip()
+                active_chap_num = chap_num
+                active_chapter = f"第{chap_num}節 {chap_name}".strip()
+                current_chapter = active_chapter
                 current_section_num = f"{chap_num}.0"
                 current_section_title = current_chapter
                 continue
 
             sec_match = sec_pattern.match(p)
             if sec_match:
-                flush_buffer()
                 s_num, s_title = sec_match.groups()
-                current_section_num = s_num
-                current_section_title = f"{s_num} {s_title}".strip()
-                continue
+                first_num = s_num.split('.')[0]
+                if first_num == active_chap_num and not false_sec_prefix.match(s_title):
+                    flush_buffer()
+                    if s_title.startswith('.'):
+                        s_title = s_title.lstrip('.').strip()
+                    s_num_norm = s_num.rstrip('.') + '.'
+                    current_chapter = active_chapter
+                    current_section_num = s_num_norm
+                    current_section_title = f"{s_num_norm} {s_title}".strip()
+                    continue
 
             current_buffer.append(p)
 
         flush_buffer()
+        self._enrich_parent_ingredients(records)
         return records
 
     def save_to_okf_yaml(self, records, source_doc="完整給付規定1150821.docx"):

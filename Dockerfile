@@ -25,5 +25,5 @@ COPY . /app/
 # Expose port
 EXPOSE 5001
 
-# Run Gunicorn WSGI server for production hosting
-CMD ["gunicorn", "--bind", "0.0.0.0:5001", "--workers", "4", "--threads", "2", "wsgi:app"]
+# Run Gunicorn WSGI server for production hosting (single worker + threads for 512MB cloud tiers)
+CMD ["sh", "-c", "gunicorn --bind 0.0.0.0:${PORT:-5001} --workers 1 --threads 4 wsgi:app"]

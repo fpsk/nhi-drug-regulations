@@ -113,6 +113,9 @@ class NHIIndexer:
                 print(f"Error loading {yf}: {e}")
 
     def _index_record(self, reg):
+        # Drop duplicate per-indication clinical_rules list from memory (all biomarkers/rules are already on conditions_of_payment)
+        reg.get("conditions_of_payment", {}).pop("clinical_rules", None)
+
         title_str = reg.get("section_title", "")
         body_str = reg.get("reference_annotations", {}).get("full_text", "")
         full_text = f"{title_str} {body_str}"

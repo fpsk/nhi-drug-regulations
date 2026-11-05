@@ -203,7 +203,7 @@ ATC_DATABASE = {
         "atc_code": "A02BC",
         "class_name_en": "Proton pump inhibitors (PPIs)",
         "class_name_tc": "PPI類 (氫離子幫浦抑制劑)",
-        "aliases": ["a02bc", "a02bc01", "a02bc02", "a02bc03", "a02bc04", "a02bc05", "a02bc06", "ppi", "ppis", "質子泵抑制劑", "幫浦抑制劑", "氫離子幫浦"],
+        "aliases": ["a02bc", "a02bc01", "a02bc02", "a02bc03", "a02bc04", "a02bc05", "a02bc06", "ppi", "ppis", "質子泵抑制劑", "幫浦抑制劑", "氫離子幫浦", "氫離子幫浦阻斷劑", "消化性潰瘍用藥"],
         "ingredients": [
             {
                 "atc7": "A02BC01",
@@ -240,6 +240,44 @@ ATC_DATABASE = {
                 "en": "Rabeprazole",
                 "tc": "雷貝拉唑",
                 "brand": "Pariet (百抑潰)"
+            },
+            {
+                "atc7": "A02BC08",
+                "en": "Vonoprazan",
+                "tc": "沃諾拉贊",
+                "brand": "Vocinti (富星錠)"
+            }
+        ]
+    },
+    "A02BA": {
+        "atc_code": "A02BA",
+        "class_name_en": "H2-receptor antagonists (H2 Blockers)",
+        "class_name_tc": "H2受體阻斷劑 (乙型組織胺受體阻斷劑)",
+        "aliases": ["a02ba", "a02ba01", "a02ba02", "a02ba03", "a02ba04", "h2 blocker", "h2-blocker", "h2ra", "乙型組織胺受體阻斷劑", "組織胺受體阻斷劑"],
+        "ingredients": [
+            {
+                "atc7": "A02BA03",
+                "en": "Famotidine",
+                "tc": "法莫替丁",
+                "brand": "Gaster (胃治潰)"
+            },
+            {
+                "atc7": "A02BA01",
+                "en": "Cimetidine",
+                "tc": "西咪替丁",
+                "brand": "Tagamet (泰胃美)"
+            },
+            {
+                "atc7": "A02BA02",
+                "en": "Ranitidine",
+                "tc": "雷尼替丁",
+                "brand": "Zantac (善胃得)"
+            },
+            {
+                "atc7": "A02BA04",
+                "en": "Nizatidine",
+                "tc": "尼扎替丁",
+                "brand": "Axid (艾胃得)"
             }
         ]
     },
@@ -427,8 +465,209 @@ ATC_DATABASE = {
         "atc_code": "J05AR",
         "class_name_en": "Antivirals for treatment of HIV infections, combinations",
         "class_name_tc": "HIV抗病毒藥物複方製劑 (人類免疫缺乏病毒)",
-        "aliases": ["j05ar", "j05ar03", "j05ar18", "j05ar20", "truvada", "biktarvy", "genvoya", "hiv", "愛滋病", "愛滋"],
-        "ingredients": []
+        "aliases": ["j05ar", "j05ar03", "j05ar18", "j05ar20", "truvada", "biktarvy", "genvoya", "hiv", "愛滋病", "愛滋", "抗人類免疫缺乏病毒藥品"],
+        "ingredients": [
+            {
+                "atc7": "J05AR20",
+                "en": "Bictegravir / Emtricitabine / Tenofovir Alafenamide",
+                "tc": "比克替拉韋複方 (如 Biktarvy 必妥維)",
+                "brand": "Biktarvy (必妥維)"
+            },
+            {
+                "atc7": "J05AR13",
+                "en": "Dolutegravir / Abacavir / Lamivudine",
+                "tc": "多替拉韋複方 (如 Triumeq 綏美凱)",
+                "brand": "Triumeq (綏美凱)"
+            },
+            {
+                "atc7": "J05AR18",
+                "en": "Elvitegravir / Cobicistat / Emtricitabine / Tenofovir",
+                "tc": "艾維雷韋複方 (如 Genvoya 捷扶康)",
+                "brand": "Genvoya (捷扶康)"
+            },
+            {
+                "atc7": "J05AR03",
+                "en": "Emtricitabine / Tenofovir",
+                "tc": "恩曲他濱複方 (如 Truvada 舒發泰 / Descovy 達可揮)",
+                "brand": "Truvada (舒發泰), Descovy (達可揮)"
+            }
+        ]
+    },
+    "S01ED": {
+        "atc_code": "S01ED",
+        "class_name_en": "Antiglaucoma preparations and miotics",
+        "class_name_tc": "青光眼及高眼壓眼用製劑 (前列腺素衍生物 / β-阻斷劑 / 碳酸酐酶抑制劑)",
+        "aliases": ["s01ed", "s01ee", "s01ec", "s01ea", "高眼壓及青光眼眼用製劑", "青光眼眼用製劑", "β-交感神經阻斷劑", "碳酸酐酶抑制劑", "前列腺素衍生物"],
+        "ingredients": [
+            {
+                "atc7": "S01EE01",
+                "en": "Latanoprost",
+                "tc": "拉坦前列素 (如 Xalatan 舒而坦)",
+                "brand": "Xalatan (舒而坦)"
+            },
+            {
+                "atc7": "S01EE04",
+                "en": "Travoprost",
+                "tc": "曲伏前列素 (如 Travatan 舒壓坦)",
+                "brand": "Travatan (舒壓坦)"
+            },
+            {
+                "atc7": "S01EE03",
+                "en": "Bimatoprost",
+                "tc": "比馬前列素 (如 Lumigan 盧美根)",
+                "brand": "Lumigan (盧美根)"
+            },
+            {
+                "atc7": "S01EE05",
+                "en": "Tafluprost",
+                "tc": "他氟前列素 (如 Tapros 泰普羅斯)",
+                "brand": "Tapros (泰普羅斯)"
+            },
+            {
+                "atc7": "S01ED01",
+                "en": "Timolol",
+                "tc": "噻嗎洛爾 (如 Timoptol 青眼露)",
+                "brand": "Timoptol (青眼露)"
+            },
+            {
+                "atc7": "S01ED05",
+                "en": "Carteolol",
+                "tc": "卡替洛爾 (如 Mikelan 美開朗)",
+                "brand": "Mikelan (美開朗)"
+            },
+            {
+                "atc7": "S01EA05",
+                "en": "Brimonidine",
+                "tc": "溴莫尼定 (如 Alphagan 艾弗目)",
+                "brand": "Alphagan (艾弗目)"
+            },
+            {
+                "atc7": "S01EC03",
+                "en": "Dorzolamide",
+                "tc": "多佐胺 (如 Trusopt 舒露達)",
+                "brand": "Trusopt (舒露達)"
+            },
+            {
+                "atc7": "S01EC04",
+                "en": "Brinzolamide",
+                "tc": "布林佐胺 (如 Azopt 派頓)",
+                "brand": "Azopt (派頓)"
+            }
+        ]
+    },
+    "S01XA": {
+        "atc_code": "S01XA",
+        "class_name_en": "Artificial tears and ocular lubricants",
+        "class_name_tc": "人工淚液 / 乾眼症眼用製劑",
+        "aliases": ["s01xa", "s01xa20", "人工淚液", "乾眼症眼用製劑"],
+        "ingredients": [
+            {
+                "atc7": "S01XA20",
+                "en": "Sodium Hyaluronate",
+                "tc": "玻尿酸鈉人工淚液 (如 Hialid 愛麗點眼液)",
+                "brand": "Hialid (愛麗點眼液)"
+            },
+            {
+                "atc7": "S01XA20",
+                "en": "Hypromellose / Carboxymethylcellulose",
+                "tc": "纖維素類人工淚液 (如 Refresh / Tears Naturale)",
+                "brand": "Refresh, Tears Naturale"
+            },
+            {
+                "atc7": "S01XA20",
+                "en": "Carbomer",
+                "tc": "卡波姆眼用凝膠 (如 Vidisic 維蒂斯)",
+                "brand": "Vidisic (維蒂斯)"
+            }
+        ]
+    },
+    "N06AB": {
+        "atc_code": "N06AB",
+        "class_name_en": "SSRIs / SNRIs / Antidepressants",
+        "class_name_tc": "抗憂鬱劑 (SSRI / SNRI / 選擇性血清促進素再吸收抑制劑)",
+        "aliases": ["n06ab", "n06ax", "ssri", "snri", "選擇性血清促進素再吸收抑制劑", "血清促進素及正腎上腺素再吸收抑制劑"],
+        "ingredients": [
+            {
+                "atc7": "N06AB03",
+                "en": "Fluoxetine",
+                "tc": "氟西汀 (如 Prozac 百憂解)",
+                "brand": "Prozac (百憂解)"
+            },
+            {
+                "atc7": "N06AB06",
+                "en": "Sertraline",
+                "tc": "捨曲林 (如 Zoloft 樂復得)",
+                "brand": "Zoloft (樂復得)"
+            },
+            {
+                "atc7": "N06AB10",
+                "en": "Escitalopram",
+                "tc": "艾司西酞普蘭 (如 Lexapro 立普能)",
+                "brand": "Lexapro (立普能)"
+            },
+            {
+                "atc7": "N06AB05",
+                "en": "Paroxetine",
+                "tc": "帕羅西汀 (如 Seroxat 克憂果)",
+                "brand": "Seroxat (克憂果)"
+            },
+            {
+                "atc7": "N06AX16",
+                "en": "Venlafaxine",
+                "tc": "文拉法辛 (如 Efexor 速悅)",
+                "brand": "Efexor (速悅)"
+            },
+            {
+                "atc7": "N06AX21",
+                "en": "Duloxetine",
+                "tc": "度洛西汀 (如 Cymbalta 千憂解)",
+                "brand": "Cymbalta (千憂解)"
+            }
+        ]
+    },
+    "N05AH": {
+        "atc_code": "N05AH",
+        "class_name_en": "Second generation antipsychotics (Atypical antipsychotics)",
+        "class_name_tc": "第二代抗精神病藥品 (非典型抗精神病藥物)",
+        "aliases": ["n05ah", "n05ax", "second generation antipsychotics", "第二代抗精神病藥品"],
+        "ingredients": [
+            {
+                "atc7": "N05AX08",
+                "en": "Risperidone",
+                "tc": "利培酮 (如 Risperdal 理思必妥)",
+                "brand": "Risperdal (理思必妥)"
+            },
+            {
+                "atc7": "N05AH03",
+                "en": "Olanzapine",
+                "tc": "奧氮平 (如 Zyprexa 金普薩)",
+                "brand": "Zyprexa (金普薩)"
+            },
+            {
+                "atc7": "N05AH04",
+                "en": "Quetiapine",
+                "tc": "喹硫平 (如 Seroquel 思樂康)",
+                "brand": "Seroquel (思樂康)"
+            },
+            {
+                "atc7": "N05AX12",
+                "en": "Aripiprazole",
+                "tc": "阿立哌唑 (如 Abilify 安立復)",
+                "brand": "Abilify (安立復)"
+            },
+            {
+                "atc7": "N05AX13",
+                "en": "Paliperidone",
+                "tc": "帕利哌酮 (如 Invega 思維佳)",
+                "brand": "Invega (思維佳)"
+            },
+            {
+                "atc7": "N05AE05",
+                "en": "Lurasidone",
+                "tc": "魯拉西酮 (如 Latuda 樂途達)",
+                "brand": "Latuda (樂途達)"
+            }
+        ]
     }
 }
 
@@ -440,10 +679,18 @@ CLASS_REGULATION_MAPPING = {
     "L01FF": "9.69",    # PD-1/PD-L1 -> Immunotherapy
     "A10BK": "2.16",    # SGLT2 -> Heart Failure / CKD / Diabetes
     "A10BJ": "5.1.3",   # GLP-1 -> Diabetes / Obesity
+    "A02BC": "7.1",     # PPIs -> Peptic Ulcer Drugs
+    "A02BA": "7.1",     # H2 Blockers -> Peptic Ulcer Drugs
+    "A05BA": "3.3.1",   # Hepatoprotectants -> Liver Therapy
     "B01AF": "2.1.4",   # Direct Xa inhibitors -> Anticoagulants
     "L04AB": "8.2.4",   # TNF-alpha -> Rheumatoid Arthritis
     "L04AC": "8.2.4",   # IL inhibitors -> Rheumatoid Arthritis
     "J05AF": "10.7.3",  # B-hepatitis antivirals -> HBV
+    "J05AR": "10.9",    # HIV antivirals -> HIV
+    "S01ED": "14.1",    # Glaucoma eye drops -> Glaucoma
+    "S01XA": "14.5",    # Artificial tears -> Dry Eye
+    "N06AB": "1.2.1",   # SSRIs/SNRIs -> Antidepressants
+    "N05AH": "1.2.2.2", # Second generation antipsychotics
     "L01CD": "9.137",   # Taxanes (Cabazitaxel)
     "J01DI": "10.3.8",  # Siderophore cephalosporins (Cefiderocol)
     "B02BX": "4.2.8",   # Hemophilia siRNA (Fitusiran)
@@ -769,52 +1016,104 @@ class ATCEngine:
 
     def find_related_terms(self, text):
         """Find ATC classes and ingredients mentioned in text (including section title drug patterns)."""
-        text_lower = text.lower()
+        # Strip concomitant background medication clauses (e.g. antiplatelets/anticoagulants in 7.1. Clause 2.(5))
+        cleaned_text = re.sub(r'而需使用[^。；]*?病人得以使用', '病人得以使用', text)
+        text_lower = cleaned_text.lower()
+        header_lower = cleaned_text[:300].lower()
+        title_lower = cleaned_text.split('\n', 1)[0].lower()
+
         found_classes = set()
-        found_ingredients = set()
+        primary_ingredients = set()
+        secondary_ingredients = set()
+
+        is_class_section_title = (
+            not re.search(r'[a-z]{4,}', title_lower)
+            or 'antipsychotics' in title_lower
+            or 'ssri' in title_lower
+            or 'nsaid' in title_lower
+        )
 
         for code, info in self.atc_db.items():
             class_matched = False
+            class_in_header = False
             for alias in info["aliases"]:
-                if len(alias) <= 4:
-                    if re.search(r'\b' + re.escape(alias.lower()) + r'\b', text_lower):
+                alias_low = alias.lower()
+                if re.match(r'^[a-z0-9\-\s]+$', alias_low):
+                    pat = r'(?<![a-z0-9])' + re.escape(alias_low) + r'(?![a-z0-9])'
+                    if re.search(pat, text_lower):
                         class_matched = True
-                        break
+                        if re.search(pat, header_lower):
+                            class_in_header = True
+                            break
                 else:
-                    if alias.lower() in text_lower:
+                    if alias_low in text_lower:
                         class_matched = True
-                        break
+                        if alias_low in header_lower:
+                            class_in_header = True
+                            break
             if class_matched:
                 found_classes.add(info["class_name_tc"])
+                # When a pharmacological class is the subject of a class-level section header/藥品種類, populate its representative drugs
+                if is_class_section_title and class_in_header and code in {"A02BC", "A02BA", "A05BA", "C10AA", "J05AR", "S01ED", "S01XA", "N06AB", "N05AH"}:
+                    for ing in info["ingredients"]:
+                        primary_ingredients.add(f"{ing['en']} ({ing['tc']})")
 
             for ing in info["ingredients"]:
-                if ing["en"].lower() in text_lower or ing["tc"].lower() in text_lower:
-                    found_ingredients.add(f"{ing['en']} ({ing['tc']})")
+                en_low = ing["en"].lower()
+                tc_low = ing["tc"].lower()
+                if en_low in text_lower or tc_low in text_lower:
+                    label = f"{ing['en']} ({ing['tc']})"
+                    if en_low in title_lower or tc_low in title_lower:
+                        primary_ingredients.add(label)
+                    else:
+                        secondary_ingredients.add(label)
 
         for code7, info7 in self.who_db.items():
-            if info7["en"].lower() in text_lower or info7["tc"].lower() in text_lower:
-                found_ingredients.add(f"{info7['en']} ({info7['tc']})")
+            en_low = info7["en"].lower()
+            tc_low = info7["tc"].lower()
+            if en_low in text_lower or tc_low in text_lower:
+                label = f"{info7['en']} ({info7['tc']})"
+                if en_low in title_lower or tc_low in title_lower:
+                    primary_ingredients.add(label)
+                else:
+                    secondary_ingredients.add(label)
 
         # Also extract explicit "GenericName (如BrandName)" patterns across title and body text
-        stopwords = {"level", "stage", "class", "grade", "score", "type", "phase", "group", "table", "child-pugh", "nyha", "ecog", "era", "sglt2", "sglt-2", "nsaid", "nsaids", "dmard", "dmards"}
-        for m in re.finditer(r'([A-Za-z][A-Za-z0-9\-\+\.\/\s]{2,45}?)\s*(?:注射劑|口服製劑|內服液劑|緩釋劑型|眼用製劑|外用製劑|栓劑|植入劑|凍晶注射劑|膠囊|錠劑)?\s*[（\(]\s*如\s*[:：]?\s*([^）\)]+)[）\)]', text):
+        stopwords = {
+            "level", "stage", "class", "grade", "score", "type", "phase", "group", "table",
+            "child-pugh", "nyha", "ecog", "era", "sglt2", "sglt-2", "nsaid", "nsaids", "dmard", "dmards",
+            "immune", "factor", "recombinant", "human", "tablets", "injection", "solution", "capsules"
+        }
+        for m in re.finditer(r'([A-Za-z][A-Za-z0-9\-\+\.\/\s]{2,45}?)\s*(?:注射劑|口服製劑|內服液劑|緩釋劑型|眼用製劑|外用製劑|栓劑|植入劑|凍晶注射劑|膠囊|錠劑)?\s*[（\(]\s*[:：]?如\s*[:：]?\s*([^）\)]+)[）\)]', cleaned_text):
             gen_name = m.group(1).strip()
             brand_name = m.group(2).strip().split('、')[0].split('，')[0].split(',')[0].split('；')[0].split(';')[0].strip()
             # Clean leading section numbers or trailing dosage tokens
             gen_name = re.sub(r'^(?:\d+(?:\.\d+)*\.?\s*)+', '', gen_name).strip()
             gen_name = re.sub(r'\s+\d+(?:\.\d+)?\s*(?:mg|mcg|ug|g|ml|iu|%)\b.*$', '', gen_name, flags=re.IGNORECASE).strip()
-            if len(gen_name) >= 3 and gen_name.lower() not in stopwords and not any(gen_name.lower() in existing.lower() for existing in found_ingredients):
-                found_ingredients.add(f"{gen_name.title()} (如 {brand_name})")
+            all_existing = primary_ingredients | secondary_ingredients
+            if len(gen_name) >= 3 and gen_name.lower() not in stopwords and not any(gen_name.lower() in existing.lower() for existing in all_existing):
+                label = f"{gen_name.title()} (如 {brand_name})"
+                if m.start() <= len(title_lower):
+                    primary_ingredients.add(label)
+                else:
+                    secondary_ingredients.add(label)
 
         # Match single-word generic ingredient names from NHI drug master DB (using ASCII boundary so Chinese-adjacent words match)
         self._ensure_vocab_loaded()
         if self._db_ingredients_map:
             for word in set(re.findall(r'[a-z]{5,}', text_lower)):
                 if word in self._db_ingredients_map and word not in stopwords:
-                    if not any(word in existing.lower() for existing in found_ingredients):
-                        found_ingredients.add(word.title())
+                    all_existing = primary_ingredients | secondary_ingredients
+                    if not any(word in existing.lower() for existing in all_existing):
+                        if word in title_lower:
+                            primary_ingredients.add(word.title())
+                        else:
+                            secondary_ingredients.add(word.title())
 
-        return sorted(list(found_classes)), sorted(list(found_ingredients))
+        ordered_ingredients = sorted(list(primary_ingredients)) + [
+            x for x in sorted(list(secondary_ingredients)) if x not in primary_ingredients
+        ]
+        return sorted(list(found_classes)), ordered_ingredients
 
 
 if __name__ == "__main__":

@@ -37,11 +37,12 @@ regulations:
     ingredients:
     - Darbepoetin Alfa (如 Aranesp)
     - Hu-Erythropoietin (如 Eprex)
-    - Mcg (如 Aranesp)
     - Methoxy Polyethylene Glycol-Epoetin Beta (如 Mircera solution for injection in
       pre-filled syringe)
+    - Mcg (如 Aranesp)
   conditions_of_payment:
     indications:
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
     - Chronic Kidney Disease (慢性腎臟病)
     - Anemia (貧血)
     laboratory_criteria:
@@ -263,8 +264,12 @@ regulations:
     - Filgrastim
   conditions_of_payment:
     indications:
-    - Fungal Infection / Mycosis (黴菌感染)
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
+    - Fungal Infection / Mycosis (Aspergillosis / Mucormycosis / Candidiasis) (黴菌感染)
     - Anemia (貧血)
+    - Neutropenia / Leukopenia (嗜中性白血球低下)
+    - Pneumonia / Respiratory & ENT Infection (肺炎)
+    - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria:
     - 血壓
     - 白血球
@@ -368,7 +373,8 @@ regulations:
     ingredients:
     - Pegfilgrastim
   conditions_of_payment:
-    indications: []
+    indications:
+    - Neutropenia / Leukopenia (嗜中性白血球低下)
     laboratory_criteria:
     - 白血球
     summary: 規範【. 長效型注射劑(如pegfilgrastim)：】之健保給付條件。 規範重點：1.限非骨髓性癌症病人(不限合併有骨髓侵犯)，在骨髓抑制性抗癌藥物治療後，且曾經發生白血球少於1000/cumm，或嗜中性白血球(ANC)少於500/cumm者使用。
@@ -463,6 +469,8 @@ regulations:
     - Protein
   conditions_of_payment:
     indications:
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Hemophilia (血友病)
     laboratory_criteria: []
     summary: 適用於【Hemophilia】之健保給付。 規範重點：1.門診之血友病人得攜回二~三劑量繞徑治療藥物備用(施打rVIIa 270μg/kg
@@ -532,9 +540,10 @@ regulations:
     drug_classes: []
     ingredients:
     - Emicizumab
-    - Immune
   conditions_of_payment:
     indications:
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Hemophilia (血友病)
     laboratory_criteria: []
     summary: 適用於【Hemophilia】之健保給付。 主要條件包含：使用前須經事前審查核准。
@@ -657,6 +666,8 @@ regulations:
     - Tranexamic
   conditions_of_payment:
     indications:
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Hemophilia (血友病)
     laboratory_criteria:
     - 血小板
@@ -714,6 +725,8 @@ regulations:
     indications:
     - Liver Cirrhosis (肝硬化)
     - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     laboratory_criteria: []
     summary: 適用於【Liver Cirrhosis、Hepatitis B / Hepatitis C】之健保給付。 規範重點：限用於下列情況以矯正凝血因子缺乏，且須同時針對出血原因進行處置：
       1.在缺乏單一的凝血因子製劑可使用的情況，因先天性單一或多重缺乏第二、第七、第九或第十凝血因子，有出血或接受侵犯性處理及手術時的預防出血性治療。
@@ -762,6 +775,8 @@ regulations:
     - Human Plasma Coagulation Factor Xiii (如 Fibrogammin)
   conditions_of_payment:
     indications:
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Hemophilia (血友病)
     laboratory_criteria: []
     summary: 適用於【Hemophilia】之健保給付。 主要條件包含：使用前須經事前審查核准。
@@ -811,6 +826,8 @@ regulations:
     - Fitusiran (費妥斯蘭)
   conditions_of_payment:
     indications:
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Hemophilia (血友病)
     laboratory_criteria: []
     summary: 適用於【Hemophilia】之健保給付。 主要條件包含：使用前須經事前審查核准。
@@ -853,10 +870,12 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Emicizumab
     - Fitusiran (費妥斯蘭)
+    - Emicizumab
   conditions_of_payment:
     indications:
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Thrombosis / Pulmonary Embolism (血栓)
     - Hemophilia (血友病)
     laboratory_criteria: []
@@ -1121,7 +1140,8 @@ regulations:
   - (108/6/1、115/3/1)
   - (112/1/1、115/3/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - HIV抗病毒藥物複方製劑 (人類免疫缺乏病毒)
     ingredients:
     - Eltrombopag (如 Revolade)
     - Romiplostim
@@ -1129,6 +1149,7 @@ regulations:
     indications:
     - Liver Cirrhosis (肝硬化)
     - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
     - Anemia (貧血)
     - Immune Thrombocytopenia (ITP) (特發性血小板減少性紫斑症)
     laboratory_criteria:
@@ -1390,12 +1411,14 @@ regulations:
   - (112/1/1)
   - (112/1/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - HIV抗病毒藥物複方製劑 (人類免疫缺乏病毒)
     ingredients:
-    - Eltrombopag
     - Romiplostim (如 Romiplate)
+    - Eltrombopag
   conditions_of_payment:
     indications:
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
     - Anemia (貧血)
     - Immune Thrombocytopenia (ITP) (特發性血小板減少性紫斑症)
     laboratory_criteria:
@@ -1529,7 +1552,8 @@ regulations:
     ingredients:
     - Anagrelide (如 Agrylin)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Myelofibrosis / Essential Thrombocythemia / Polycythemia Vera (骨髓纖維化)
     laboratory_criteria:
     - 血小板
     - MPN_Mutations
@@ -1600,7 +1624,8 @@ regulations:
     - C1 Esterase Inhibitor (如 Berinert)
     - Icatibant (如 Firazyr)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Hereditary Angioedema (HAE) (遺傳性血管性水腫)
     laboratory_criteria: []
     summary: 規範【. Icatibant（如Firazyr）、C1 esterase inhibitor（如Berinert）：】之健保給付條件。 規範重點：1.須經主管機關認定具遺傳性血管性水腫(heeditary
       angioedema，HAE)罕見疾病者。
@@ -1658,6 +1683,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Thrombosis / Pulmonary Embolism (血栓)
+    - Myelofibrosis / Essential Thrombocythemia / Polycythemia Vera (骨髓纖維化)
     laboratory_criteria:
     - 白血球
     - 血小板
@@ -1765,10 +1791,12 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Icatibant
     - Lanadelumab (如 Takhzyro)
+    - Icatibant
   conditions_of_payment:
-    indications: []
+    indications:
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
+    - Hereditary Angioedema (HAE) (遺傳性血管性水腫)
     laboratory_criteria: []
     summary: 規範【. Lanadelumab(如Takhzyro)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:

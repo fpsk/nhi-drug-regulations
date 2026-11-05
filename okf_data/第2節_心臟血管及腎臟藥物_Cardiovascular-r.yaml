@@ -60,8 +60,8 @@ regulations:
     drug_classes: []
     ingredients:
     - Acetylsalicylic
-    - Aspirin
     - Ticlopidine
+    - Aspirin
   conditions_of_payment:
     indications: []
     laboratory_criteria:
@@ -99,8 +99,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Heparin
     - Tirofiban (如 Aggrastat)
+    - Heparin
   conditions_of_payment:
     indications:
     - Myocardial Infarction (心肌梗塞)
@@ -168,13 +168,17 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Acetylsalicylic
     - Cilostazol (如 Pletaal)
+    - Acetylsalicylic
   conditions_of_payment:
     indications:
     - Peptic Ulcer Disease (消化性潰瘍)
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Stroke / Cerebrovascular Accident (腦中風)
     - Thrombosis / Pulmonary Embolism (血栓)
+    - Peripheral Arterial Disease (PAD) (周邊動脈疾病)
+    - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     laboratory_criteria: []
     summary: 適用於【Peptic Ulcer Disease、Stroke / Cerebrovascular Accident、Thrombosis
       / Pulmonary Embolism】之健保給付。 規範重點：1.使用於無休息時疼痛及周邊組織壞死之間歇性跛行病人（周邊動脈疾病Fontaine stage
@@ -233,11 +237,12 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Acetylsalicylic Acid (如 Aspirin)
     - Clopidogrel (如 Plavix)
+    - Acetylsalicylic Acid (如 Aspirin)
   conditions_of_payment:
     indications:
     - Peptic Ulcer Disease (消化性潰瘍)
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
     - Stroke / Cerebrovascular Accident (腦中風)
     - Myocardial Infarction (心肌梗塞)
     laboratory_criteria: []
@@ -374,8 +379,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Acetylsalicylic Acid (如 Aspirin)
     - Ticagrelor (如 Brilinta)
+    - Acetylsalicylic Acid (如 Aspirin)
   conditions_of_payment:
     indications:
     - Myocardial Infarction (心肌梗塞)
@@ -410,8 +415,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Acetylsalicylic Acid (如 Aspirin)
     - Prasugrel (如 Efient)
+    - Acetylsalicylic Acid (如 Aspirin)
   conditions_of_payment:
     indications:
     - Myocardial Infarction (心肌梗塞)
@@ -453,6 +458,7 @@ regulations:
     - Tenecteplase (如 Metalyse)
   conditions_of_payment:
     indications:
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
     - Myocardial Infarction (心肌梗塞)
     - Thrombosis / Pulmonary Embolism (血栓)
     laboratory_criteria:
@@ -555,6 +561,7 @@ regulations:
     - Tinzaparin (如 Innohep)
   conditions_of_payment:
     indications:
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Thrombosis / Pulmonary Embolism (血栓)
     laboratory_criteria: []
     summary: 適用於【Thrombosis / Pulmonary Embolism】之健保給付。 規範重點：1.用於治療深層靜脈栓塞，每療程以二瓶為限。
@@ -590,6 +597,7 @@ regulations:
     - Enoxaparin (如 Clexane)
   conditions_of_payment:
     indications:
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Thrombosis / Pulmonary Embolism (血栓)
     laboratory_criteria: []
     summary: "適用於【Thrombosis / Pulmonary Embolism】之健保給付。 規範重點：依下列情形使用： 1.\t治療深部靜脈栓塞(DVT)：每次療程使用小於10天。"
@@ -625,6 +633,7 @@ regulations:
     - Fondaparinux (如 Arixtra)
   conditions_of_payment:
     indications:
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Myocardial Infarction (心肌梗塞)
     - Thrombosis / Pulmonary Embolism (血栓)
     laboratory_criteria:
@@ -680,15 +689,17 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Rivaroxaban (利伐沙班)
     - Aspirin
     - Cilostazol
     - Clopidogrel
     - Prasugrel
-    - Rivaroxaban (利伐沙班)
     - Ticagrelor
     - Warfarin
   conditions_of_payment:
     indications:
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Heart Failure (心臟衰竭)
     - Stroke / Cerebrovascular Accident (腦中風)
     - Myocardial Infarction (心肌梗塞)
@@ -696,6 +707,7 @@ regulations:
     - Thrombosis / Pulmonary Embolism (血栓)
     - Hypertension (高血壓)
     - Diabetes Mellitus (糖尿病)
+    - Peripheral Arterial Disease (PAD) (周邊動脈疾病)
     laboratory_criteria:
     - eGFR
     - 血壓
@@ -1015,6 +1027,8 @@ regulations:
     - Apixaban (阿哌沙班)
   conditions_of_payment:
     indications:
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Heart Failure (心臟衰竭)
     - Stroke / Cerebrovascular Accident (腦中風)
     - Myocardial Infarction (心肌梗塞)
@@ -1138,6 +1152,7 @@ regulations:
     - Edoxaban (艾多沙班)
   conditions_of_payment:
     indications:
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
     - Heart Failure (心臟衰竭)
     - Stroke / Cerebrovascular Accident (腦中風)
     - Myocardial Infarction (心肌梗塞)
@@ -1262,6 +1277,8 @@ regulations:
     - Dabigatran (達比加群)
   conditions_of_payment:
     indications:
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Heart Failure (心臟衰竭)
     - Stroke / Cerebrovascular Accident (腦中風)
     - Myocardial Infarction (心肌梗塞)
@@ -1344,7 +1361,10 @@ regulations:
     ingredients:
     - Nimodipine Inj (如 Nimotop)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
+    - Spasticity / ALS / Spinal Muscular Atrophy (SMA) (痙攣)
     laboratory_criteria: []
     summary: 規範【. Nimodipine inj（如Nimotop）：】之健保給付條件。 規範重點：預防、治療因動膜瘤引起之蜘蛛膜下出血後，腦血管痙攣所引起的缺血性神經缺損，可使用二星期，需附電腦斷層掃描（CT
       Scan）報告。
@@ -1403,14 +1423,17 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Ergotamine
     - Rizatriptan
     - Sumatriptan Succinate (如 Imigran)
+    - Ergotamine
   conditions_of_payment:
     indications:
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
+    - Nausea and Vomiting (CINV / Antiemetic) (止吐)
     - Myocardial Infarction (心肌梗塞)
     - Hypertension (高血壓)
     - Migraine (偏頭痛)
+    - Spasticity / ALS / Spinal Muscular Atrophy (SMA) (痙攣)
     laboratory_criteria:
     - 血壓
     summary: 適用於【Myocardial Infarction、Hypertension、Migraine】之健保給付。 規範重點：1.限符合國際頭痛協會
@@ -1462,7 +1485,8 @@ regulations:
     ingredients:
     - Alprostadil
   conditions_of_payment:
-    indications: []
+    indications:
+    - BPH / Overactive Bladder / Interstitial Cystitis / Urolithiasis (前列腺增生)
     laboratory_criteria: []
     summary: 規範【. Alprostadil：】之健保給付條件。 規範重點：如用於勃起機能障礙之治療，不予給付。
     clinical_rules:
@@ -1492,7 +1516,8 @@ regulations:
     ingredients:
     - Potassium Citrate (如 Urocit-K tab)
   conditions_of_payment:
-    indications: []
+    indications:
+    - BPH / Overactive Bladder / Interstitial Cystitis / Urolithiasis (前列腺增生)
     laboratory_criteria: []
     summary: 規範【. Potassium citrate（如Urocit-K tab）：】之健保給付條件。 規範重點：限泌尿道結石或腎小管性酸毒症病人使用。
     clinical_rules:
@@ -1522,7 +1547,10 @@ regulations:
     ingredients:
     - Pentosan Polysulfate Sodium (如 Elmiron Cap)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
+    - Chronic / Breakthrough / Neuropathic Pain (疼痛)
+    - BPH / Overactive Bladder / Interstitial Cystitis / Urolithiasis (前列腺增生)
     laboratory_criteria: []
     summary: 規範【. Pentosan Polysulfate Sodium (如Elmiron Cap)】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -1575,16 +1603,16 @@ regulations:
     drug_classes:
     - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
     ingredients:
-    - Amlodipine
     - Atorvastatin (阿托伐他汀)
+    - Pravastatin (普伐他汀)
+    - Rosuvastatin (瑞舒伐他汀)
+    - Simvastatin (辛伐他汀)
+    - Amlodipine
     - Ezetimibe
     - Fenofibrate
     - Fluvastatin
     - Lovastatin
     - Pitavastatin
-    - Pravastatin (普伐他汀)
-    - Rosuvastatin (瑞舒伐他汀)
-    - Simvastatin (辛伐他汀)
   conditions_of_payment:
     indications:
     - Stroke / Cerebrovascular Accident (腦中風)
@@ -1593,6 +1621,7 @@ regulations:
     - Hyperlipidemia / Hypercholesterolemia (高脂血症)
     - Chronic Kidney Disease (慢性腎臟病)
     - Diabetes Mellitus (糖尿病)
+    - Peripheral Arterial Disease (PAD) (周邊動脈疾病)
     laboratory_criteria:
     - HbA1c
     - eGFR
@@ -5650,8 +5679,8 @@ regulations:
     drug_classes:
     - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
     ingredients:
-    - Atorvastatin (阿托伐他汀)
     - Evolocumab (如 Repatha)
+    - Atorvastatin (阿托伐他汀)
     - Ezetimibe
     - Rosuvastatin (瑞舒伐他汀)
   conditions_of_payment:
@@ -6012,6 +6041,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Hypertension (高血壓)
+    - Pulmonary Arterial Hypertension (PAH) (肺動脈高血壓)
     laboratory_criteria:
     - 血壓
     summary: 適用於【Hypertension】之健保給付。 主要條件包含：使用前須經事前審查核准。
@@ -6051,6 +6081,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Hypertension (高血壓)
+    - Pulmonary Arterial Hypertension (PAH) (肺動脈高血壓)
     laboratory_criteria:
     - 血壓
     summary: 適用於【Hypertension】之健保給付。 主要條件包含：使用前須經事前審查核准。
@@ -6091,6 +6122,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Hypertension (高血壓)
+    - Pulmonary Arterial Hypertension (PAH) (肺動脈高血壓)
     laboratory_criteria:
     - 血壓
     summary: 適用於【Hypertension】之健保給付。 規範重點：1.用於原發性肺動脈高血壓、結締組織病變導致之肺動脈高血壓或先天性心臟病併發之肺動脈高血壓(Eisenmenger
@@ -6127,6 +6159,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Hypertension (高血壓)
+    - Pulmonary Arterial Hypertension (PAH) (肺動脈高血壓)
     laboratory_criteria:
     - 血壓
     summary: 適用於【Hypertension】之健保給付。 主要條件包含：使用前須經事前審查核准。
@@ -6167,6 +6200,7 @@ regulations:
     indications:
     - Thrombosis / Pulmonary Embolism (血栓)
     - Hypertension (高血壓)
+    - Pulmonary Arterial Hypertension (PAH) (肺動脈高血壓)
     laboratory_criteria:
     - 血壓
     summary: 適用於【Thrombosis / Pulmonary Embolism、Hypertension】之健保給付。 主要條件包含：使用前須經事前審查核准。
@@ -6217,6 +6251,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Hypertension (高血壓)
+    - Pulmonary Arterial Hypertension (PAH) (肺動脈高血壓)
     laboratory_criteria:
     - 血壓
     summary: 適用於【Hypertension】之健保給付。 主要條件包含：使用前須經事前審查核准。
@@ -6261,6 +6296,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Hypertension (高血壓)
+    - Pulmonary Arterial Hypertension (PAH) (肺動脈高血壓)
     laboratory_criteria:
     - 血壓
     summary: 適用於【Hypertension】之健保給付。 主要條件包含：使用前須經事前審查核准。
@@ -6318,12 +6354,13 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Macitentan
     - Selexipag (如 UPTRAVI)
+    - Macitentan
     - Sildenafil
   conditions_of_payment:
     indications:
     - Hypertension (高血壓)
+    - Pulmonary Arterial Hypertension (PAH) (肺動脈高血壓)
     laboratory_criteria:
     - 血壓
     summary: 適用於【Hypertension】之健保給付。 主要條件包含：使用前須經事前審查核准。
@@ -6371,6 +6408,7 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Treprostinil (如 Remodulin inj.)
     - Ambrisentan
     - Bosentan
     - Iloprost
@@ -6378,10 +6416,10 @@ regulations:
     - Riociguat
     - Selexipag
     - Sildenafil
-    - Treprostinil (如 Remodulin inj.)
   conditions_of_payment:
     indications:
     - Hypertension (高血壓)
+    - Pulmonary Arterial Hypertension (PAH) (肺動脈高血壓)
     laboratory_criteria:
     - 血壓
     summary: 適用於【Hypertension】之健保給付。 主要條件包含：使用前須經事前審查核准。
@@ -6422,12 +6460,13 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Tadalafil (如 Adcirca)
     - Isosorbide
     - Nitroglycerin
-    - Tadalafil (如 Adcirca)
   conditions_of_payment:
     indications:
     - Hypertension (高血壓)
+    - Pulmonary Arterial Hypertension (PAH) (肺動脈高血壓)
     laboratory_criteria:
     - 血壓
     summary: 適用於【Hypertension】之健保給付。 規範重點：1.限用於原發性肺動脈高血壓、結締組織病變導致之肺動脈高血壓或先天性心臟病併發之肺動脈高血壓（Eisenmenger
@@ -6461,11 +6500,12 @@ regulations:
     drug_classes: []
     ingredients:
     - Macitentan
-    - Sildenafil
     - Tadalafil
+    - Sildenafil
   conditions_of_payment:
     indications:
     - Hypertension (高血壓)
+    - Pulmonary Arterial Hypertension (PAH) (肺動脈高血壓)
     laboratory_criteria:
     - 血壓
     summary: 適用於【Hypertension】之健保給付。 主要條件包含：使用前須經事前審查核准。
@@ -6518,7 +6558,8 @@ regulations:
     ingredients:
     - Sotatercept (如 Winrevair)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Pulmonary Arterial Hypertension (PAH) (肺動脈高血壓)
     laboratory_criteria: []
     summary: 規範【. Sotatercept（如Winrevair）：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -6753,8 +6794,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Benzbromarone
     - Febuxostat (如 Feburic)
+    - Benzbromarone
   conditions_of_payment:
     indications:
     - Liver Cirrhosis (肝硬化)
@@ -6862,7 +6903,8 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients:
     - Allopurinol
   conditions_of_payment:
@@ -7041,6 +7083,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Chronic Kidney Disease (慢性腎臟病)
+    - Glaucoma / Ocular Hypertension (青光眼)
     laboratory_criteria: []
     summary: 適用於【Chronic Kidney Disease】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -7102,6 +7145,8 @@ regulations:
   - (111/5/1)
   medications:
     drug_classes:
+    - ACEi類 (血管收縮素轉化酶抑制劑)
+    - ARB類 (血管收縮素受體阻斷劑)
     - SGLT2 抑制劑 (鈉-葡萄糖共同輸送器-2 抑制劑 / 排糖藥)
     ingredients:
     - Sacubitril+Valsartan (如 Entresto)
@@ -7110,6 +7155,7 @@ regulations:
     indications:
     - Heart Failure (心臟衰竭)
     - Myocardial Infarction (心肌梗塞)
+    - Hereditary Angioedema (HAE) (遺傳性血管性水腫)
     laboratory_criteria:
     - LVEF
     summary: 適用於【Heart Failure、Myocardial Infarction】之健保給付。 規範重點：1.限符合下列各項條件之慢性收縮性心衰竭患者使用：
@@ -7185,7 +7231,9 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - ACEi類 (血管收縮素轉化酶抑制劑)
+    - ARB類 (血管收縮素受體阻斷劑)
     ingredients:
     - Dapagliflozin (達格列淨)
     - Empagliflozin (恩格列淨)
@@ -7198,6 +7246,7 @@ regulations:
     - Myocardial Infarction (心肌梗塞)
     - Chronic Kidney Disease (慢性腎臟病)
     - Diabetes Mellitus (糖尿病)
+    - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria:
     - LVEF
     - eGFR
@@ -7759,6 +7808,8 @@ regulations:
   conditions_of_payment:
     indications:
     - Heart Failure (心臟衰竭)
+    - Hypertrophic Cardiomyopathy (HCM) (肥厚性心肌病變)
+    - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria:
     - eGFR
     - LVEF
@@ -7932,11 +7983,12 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Diltiazem
     - Mavacamten (如 Camzyos)
+    - Diltiazem
     - Verapamil
   conditions_of_payment:
-    indications: []
+    indications:
+    - Hypertrophic Cardiomyopathy (HCM) (肥厚性心肌病變)
     laboratory_criteria:
     - LVEF
     summary: 規範【. Mavacamten（如Camzyos）：】之健保給付條件。 主要條件包含：臨床檢驗需符合 LVEF >= 55%, LVEF

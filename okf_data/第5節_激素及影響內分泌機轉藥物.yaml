@@ -160,11 +160,11 @@ regulations:
     - DPP-4 抑制劑 (二基勝肽酶-4 抑制劑)
     ingredients:
     - Dulaglutide (度拉糖肽)
-    - Insulin
     - Liraglutide (利拉魯肽)
     - Lixisenatide (如 Lyxumia)
-    - Metformin
     - Semaglutide (司美格魯肽)
+    - Insulin
+    - Metformin
   conditions_of_payment:
     indications:
     - Stroke / Cerebrovascular Accident (腦中風)
@@ -359,8 +359,8 @@ regulations:
     drug_classes: []
     ingredients:
     - Dapagliflozin (達格列淨)
-    - Metformin
     - Saxagliptin (沙格列汀)
+    - Metformin
   conditions_of_payment:
     indications: []
     laboratory_criteria:
@@ -394,8 +394,8 @@ regulations:
     drug_classes: []
     ingredients:
     - Ertugliflozin (埃爾格列淨)
-    - Metformin
     - Sitagliptin (西格列汀)
+    - Metformin
   conditions_of_payment:
     indications: []
     laboratory_criteria:
@@ -430,7 +430,8 @@ regulations:
     ingredients:
     - Danazol
   conditions_of_payment:
-    indications: []
+    indications:
+    - Endometriosis / Uterine Fibroids / Hyperprolactinemia (子宮內膜異位)
     laboratory_criteria: []
     summary: 規範【. Danazol限下列病例使用】之健保給付條件。
     clinical_rules:
@@ -464,7 +465,8 @@ regulations:
     - Dutasteride (如 Avodart)
     - Finasteride (如 Proscar)
   conditions_of_payment:
-    indications: []
+    indications:
+    - BPH / Overactive Bladder / Interstitial Cystitis / Urolithiasis (前列腺增生)
     laboratory_criteria: []
     summary: 規範【. Finasteride（如Proscar）; dutasteride (如Avodart) ：】之健保給付條件。 規範重點：限前列腺增生且有阻塞症狀，使用經直腸超音波前列腺掃描
       (TRUS of prostate) 或使用腹部超音波測量(僅限無法實施直腸超音波前列腺掃描者)為原則，前列腺大於30mL或最大尿流速 (Qmax) 小於15
@@ -498,7 +500,8 @@ regulations:
     ingredients:
     - Dutasteride + Tamsulosin (如 Duodart)
   conditions_of_payment:
-    indications: []
+    indications:
+    - BPH / Overactive Bladder / Interstitial Cystitis / Urolithiasis (前列腺增生)
     laboratory_criteria: []
     summary: 規範【. Dutasteride + tamsulosin (如Duodart) ：】之健保給付條件。 規範重點：限前列腺增生且有阻塞症狀，經直腸超音波前列腺掃描
       (TRUS of prostate) 或使用腹部超音波測量(僅限無法實施直腸超音波前列腺掃描者)為原則，前列腺大於30mL或最大尿流速 (Qmax) 小於15
@@ -620,7 +623,10 @@ regulations:
     ingredients:
     - Megestrol
   conditions_of_payment:
-    indications: []
+    indications:
+    - HIV / AIDS (人類免疫缺乏病毒)
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria:
     - BMI
     summary: 規範【. Megestrol口服液劑：】之健保給付條件。 主要條件包含：臨床檢驗需符合 BMI < 20kg/m²。
@@ -691,13 +697,15 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Somatropin
     - Arginine
     - Clonidine
     - Glucagon
     - Insulin
-    - Somatropin
   conditions_of_payment:
-    indications: []
+    indications:
+    - Hypertrophic Cardiomyopathy (HCM) (肥厚性心肌病變)
+    - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria:
     - 血糖
     summary: 規範【. 生長激素 (Somatropin) ：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
@@ -868,11 +876,13 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
     ingredients: []
   conditions_of_payment:
     indications:
     - Diabetes Mellitus (糖尿病)
+    - Pneumonia / Respiratory & ENT Infection (肺炎)
     laboratory_criteria:
     - 血糖
     summary: 適用於【Diabetes Mellitus】之健保給付。 規範重點：1.限用於經由醫學中心或區域醫院小兒或內分泌專科醫師具小兒遺傳或小兒內分泌專長醫師診斷確認，且患者之骨齡男性≦16歲、女性≦14歲之病患。
@@ -914,7 +924,8 @@ regulations:
     ingredients:
     - Bromocriptine
   conditions_of_payment:
-    indications: []
+    indications:
+    - Endometriosis / Uterine Fibroids / Hyperprolactinemia (子宮內膜異位)
     laboratory_criteria: []
     summary: 規範【. Bromocriptine：】之健保給付條件。 規範重點：如用於產後正常性泌乳之抑制，不予給付。
     clinical_rules:
@@ -940,13 +951,14 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes:
-    - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
+    drug_classes: []
     ingredients:
-    - Dopamine
     - Octreotide Inj (如 Sandostatin inj)
+    - Dopamine
   conditions_of_payment:
     indications:
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Acromegaly (肢端肥大症)
     laboratory_criteria: []
     summary: 適用於【Acromegaly】之健保給付。 規範重點：1.對手術、放射線療法或dopamine作用劑療法控制無效的肢端肥大症患者。
@@ -979,11 +991,10 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes:
-    - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
+    drug_classes: []
     ingredients:
-    - Dopamine
     - Octreotide
+    - Dopamine
   conditions_of_payment:
     indications:
     - Acromegaly (肢端肥大症)
@@ -1026,13 +1037,15 @@ regulations:
   effective_dates: []
   medications:
     drug_classes:
+    - H2受體阻斷劑 (乙型組織胺受體阻斷劑)
     - PPI類 (氫離子幫浦抑制劑)
-    - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
     ingredients:
     - Somatostatin
   conditions_of_payment:
     indications:
     - Peptic Ulcer Disease (消化性潰瘍)
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     laboratory_criteria: []
     summary: 適用於【Peptic Ulcer Disease】之健保給付。 規範重點：1.預防胰臟手術後的併發症，最長使用五天。
     clinical_rules:
@@ -1064,11 +1077,10 @@ regulations:
   - (93/12/1、106/8/1)
   - (106/8/1)
   medications:
-    drug_classes:
-    - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
+    drug_classes: []
     ingredients:
-    - Dopamine
     - Lanreotide (如 Somatuline)
+    - Dopamine
     - Somatostatin
   conditions_of_payment:
     indications:
@@ -1132,7 +1144,8 @@ regulations:
     ingredients:
     - Cabergoline (如 Dostinex Tab.)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Endometriosis / Uterine Fibroids / Hyperprolactinemia (子宮內膜異位)
     laboratory_criteria: []
     summary: 規範【. Cabergoline (如 Dostinex Tab.)：】之健保給付條件。 規範重點：1.限用於高乳促素血症引起之狀況。
     clinical_rules:
@@ -1164,7 +1177,8 @@ regulations:
     ingredients:
     - Pasireotide
   conditions_of_payment:
-    indications: []
+    indications:
+    - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria: []
     summary: 規範【. Pasireotide：(如Signifor) (103/7/1、106/10/1）】之健保給付條件。 規範重點：1.限用於治療無法接受腦下垂體手術或已接受此手術未能治療的庫欣氏病
       (Cushing's disease)患者。
@@ -1193,8 +1207,7 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes:
-    - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
+    drug_classes: []
     ingredients:
     - Pasireotide
     - Somatostatin
@@ -1250,12 +1263,14 @@ regulations:
     - Gn-Rh Analogue (如 Buserelin)
     - Goserelin
     - Leuprorelin
-    - Tamoxifen
     - Triptorelin
+    - Tamoxifen
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
     - Prostate Cancer (前列腺癌)
+    - Pulmonary Arterial Hypertension (PAH) (肺動脈高血壓)
+    - Endometriosis / Uterine Fibroids / Hyperprolactinemia (子宮內膜異位)
     laboratory_criteria: []
     summary: 適用於【Breast Cancer、Prostate Cancer】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -1341,7 +1356,8 @@ regulations:
     ingredients:
     - Calcitonin
   conditions_of_payment:
-    indications: []
+    indications:
+    - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria: []
     summary: 規範【. 抑鈣激素製劑 (Salmon calcitonin injection)】之健保給付條件。 規範重點：用於惡性疾病之高血鈣症或變形性骨炎
       ( Paget's disease)（85/10/1、93/8/1、100/1/1、103/2/1）。
@@ -1424,6 +1440,8 @@ regulations:
     indications:
     - Breast Cancer (乳癌)
     - Multiple Myeloma (多發性骨髓瘤)
+    - Hypertrophic Cardiomyopathy (HCM) (肥厚性心肌病變)
+    - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria: []
     summary: 適用於【Breast Cancer、Multiple Myeloma】之健保給付。 規範重點：限符合下列條件之一患者使用： 1.用於治療惡性腫瘤之高血鈣併發症
       (HCM)，且限用於血清鈣濃度超過2.75 mmol/L  (11.0mg/dL) 或游離鈣大於5.6 mg/dL (93/6/1)。
@@ -1467,7 +1485,8 @@ regulations:
     ingredients:
     - Zoledronic Acid (如 Aclasta 5mg/100mL Solution for infusion)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria: []
     summary: 規範【. Zoledronic acid 5mg】之健保給付條件。 規範重點：用於變形性骨炎(Paget's disease)。
     clinical_rules:
@@ -1499,7 +1518,8 @@ regulations:
     ingredients:
     - Etidronate (如 Etibon)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria: []
     summary: 規範【. Etidronate（如Etibon）：】之健保給付條件。 規範重點：限用於Paget’s disease之症狀治療及異位性骨化症之治療。
     clinical_rules:
@@ -1531,7 +1551,8 @@ regulations:
     - Ibandronic
     - Mg/6Ml (如 Bondronat concentrate for solution for infusion)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria: []
     summary: 規範【. Ibandronic acid 2mg/2mL；6mg/6mL（如Bondronat concentrate for solution
       for infusion）】之健保給付條件。 規範重點：限符合下列條件之一患者使用： (1)限用於治療惡性腫瘤之高血鈣併發症，且限用於血清鈣濃度超過2.75
@@ -1577,6 +1598,8 @@ regulations:
     - Urothelial Carcinoma / Bladder Cancer (尿路上皮癌)
     - Colorectal Cancer (大腸直腸癌)
     - Multiple Myeloma (多發性骨髓瘤)
+    - Gastric / Esophageal Cancer (胃癌)
+    - Endometrial / Cervical Cancer (子宮內膜癌)
     laboratory_criteria: []
     summary: 適用於【Breast Cancer、Lung Cancer、Prostate Cancer】之健保給付。 規範重點：限用於： 多發性骨髓瘤病人與乳癌、前列腺癌、肺癌、結腸直腸癌、膀胱癌、腎癌、子宮頸癌、卵巢癌、食道癌、胃癌及胰癌併有蝕骨性骨轉移之病人。
     clinical_rules:
@@ -1642,11 +1665,12 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Allopurinol
     - Rasburicase (如 Fasturtec注射劑)
+    - Allopurinol
   conditions_of_payment:
     indications:
     - Leukemia (白血病)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
     laboratory_criteria: []
     summary: 適用於【Leukemia】之健保給付。 規範重點：1.限用於血液腫瘤（急性白血病和high grade淋巴瘤）患者之下列情形： (1)治療前或療程開始後，血清尿酸值高於10mg/dL；兒童高於8mg/dL者。
     clinical_rules:
@@ -1687,13 +1711,14 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Mecasermin (如 Increlex注射劑)
     - Arginine
     - Clonidine
     - Glucagon
     - Insulin
-    - Mecasermin (如 Increlex注射劑)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria: []
     summary: 規範【. Mecasermin（如Increlex注射劑）】之健保給付條件。 規範重點：1.限由醫學中心或區域醫院小兒內分泌或新陳代謝專科醫師實施。
     clinical_rules:
@@ -1733,7 +1758,8 @@ regulations:
     ingredients:
     - Vosoritide (如 Voxzogo)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria:
     - 血壓
     - FGFR
@@ -1832,7 +1858,9 @@ regulations:
   - (101/5/1、102/8/1、103/10/1、104/8/1、106/12/1、114/3/1、115/7/1、115/8/1、115/9/1)
   - (114/3/1、115/7/1、115/8/1、115/9/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 副甲狀腺素及類似劑 / 骨質疏鬆症治療藥物
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients:
     - Alendronate (如 Fosamax)
     - Bazedoxifene (如 Viviant)
@@ -1955,8 +1983,8 @@ regulations:
     drug_classes:
     - 副甲狀腺素及類似劑 / 骨質疏鬆症治療藥物
     ingredients:
-    - Romosozumab
     - Teriparatide (特立帕肽 (副甲狀腺素))
+    - Romosozumab
   conditions_of_payment:
     indications:
     - Osteoporosis (骨質疏鬆症)

@@ -28,7 +28,10 @@ regulations:
     ingredients:
     - Flumazenil (如 Anexate inj)
   conditions_of_payment:
-    indications: []
+    indications:
+    - ICU Sedation / Anesthesia / Mechanical Ventilation (鎮靜)
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria: []
     summary: 規範【. Flumazenil (如Anexate inj )限使用於：】之健保給付條件。 規範重點：1.全身麻醉病例 2.Benzodiazepine類藥物中毒之鑑別診斷與治療病例。
     clinical_rules:
@@ -60,7 +63,8 @@ regulations:
     ingredients:
     - Edrophonium Chloride (如 Enlon)
   conditions_of_payment:
-    indications: []
+    indications:
+    - ICU Sedation / Anesthesia / Mechanical Ventilation (鎮靜)
     laboratory_criteria: []
     summary: 規範【. Edrophonium chloride（如Enlon）：】之健保給付條件。 規範重點：限使用於手術麻醉病例，作為神經肌肉阻斷劑之拮抗劑。
     clinical_rules:
@@ -90,7 +94,8 @@ regulations:
     ingredients:
     - Mesna (如 Uromitexan inj)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria: []
     summary: 規範【. Mesna（如Uromitexan inj）：】之健保給付條件。 規範重點：限癌症或骨髓移植病例使用大量Endoxan；Ifosphamide類藥物時使用。
     clinical_rules:
@@ -118,10 +123,12 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Penicillamine
     - Trientine
+    - Penicillamine
   conditions_of_payment:
-    indications: []
+    indications:
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria: []
     summary: 規範【. Trientine dihydrochloride (104/1/1）】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -156,7 +163,9 @@ regulations:
     ingredients:
     - Fomepizole (如 Fomeject)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria: []
     summary: "規範【. Fomepizole (如Fomeject)：】之健保給付條件。 規範重點：1.限下列病例使用： (1)甲醇中毒： Ⅰ.\t\
       確認甲醇服用病史。"

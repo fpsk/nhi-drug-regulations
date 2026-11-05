@@ -147,7 +147,8 @@ regulations:
     ingredients:
     - Surfactant (如 Survanta)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Neonatal Respiratory Distress Syndrome (RDS) (呼吸窘迫症候群)
     laboratory_criteria: []
     summary: 規範【. Surfactant (如Survanta、Curosurf)：】之健保給付條件。 規範重點：1.用於新生兒(包含早產兒)因表面張力素不足引起的呼吸窘迫症候群
       (respiratory distress syndrome, RDS)。
@@ -322,8 +323,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Beclomethasone
     - Omalizumab (如 Xolair)
+    - Beclomethasone
     - Theophylline
   conditions_of_payment:
     indications:
@@ -454,12 +455,12 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Nintedanib (如 Ofev)
+    - Pirfenidone (如 Pirespa)
     - Azathioprine
     - Carbon
     - Cyclophosphamide
     - Mycophenolate
-    - Nintedanib (如 Ofev)
-    - Pirfenidone (如 Pirespa)
   conditions_of_payment:
     indications:
     - Idiopathic Pulmonary Fibrosis (IPF) (特發性肺纖維化)
@@ -714,6 +715,7 @@ regulations:
     indications:
     - Atopic Dermatitis (異位性皮膚炎)
     - Asthma (氣喘)
+    - Pneumonia / Respiratory & ENT Infection (肺炎)
     laboratory_criteria:
     - 白血球
     - WBC

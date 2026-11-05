@@ -34,12 +34,22 @@ regulations:
   - (114/6/1)
   - (114/6/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 青光眼及高眼壓眼用製劑 (前列腺素衍生物 / β-阻斷劑 / 碳酸酐酶抑制劑)
     ingredients:
+    - Bimatoprost (比馬前列素 (如 Lumigan 盧美根))
+    - Brimonidine (溴莫尼定 (如 Alphagan 艾弗目))
+    - Brinzolamide (布林佐胺 (如 Azopt 派頓))
+    - Carteolol (卡替洛爾 (如 Mikelan 美開朗))
+    - Dorzolamide (多佐胺 (如 Trusopt 舒露達))
+    - Latanoprost (拉坦前列素 (如 Xalatan 舒而坦))
+    - Tafluprost (他氟前列素 (如 Tapros 泰普羅斯))
+    - Timolol (噻嗎洛爾 (如 Timoptol 青眼露))
+    - Travoprost (曲伏前列素 (如 Travatan 舒壓坦))
     - Omidenepag (如 Eybelis)
-    - Timolol
   conditions_of_payment:
-    indications: []
+    indications:
+    - Glaucoma / Ocular Hypertension (青光眼)
     laboratory_criteria: []
     summary: "規範【. 高眼壓及青光眼眼用製劑】之健保給付條件。 規範重點：1.本類藥物療程劑量如下：(106/2/1、111/7/1) (1)多次使用包裝(規格量≧2.5mL):\
       \ Ⅰ.\t規格量≦3mL：一天點一次者(如Mikelan、Xalatan、Travatan、Lumigan，Taflotan、Eybelis等)，單眼每4週處方為1瓶；雙眼得每3週處方1瓶，3個月處方4瓶。"
@@ -76,11 +86,22 @@ regulations:
   - (111/7/1)
   - (111/7/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 青光眼及高眼壓眼用製劑 (前列腺素衍生物 / β-阻斷劑 / 碳酸酐酶抑制劑)
     ingredients:
+    - Bimatoprost (比馬前列素 (如 Lumigan 盧美根))
+    - Brimonidine (溴莫尼定 (如 Alphagan 艾弗目))
+    - Brinzolamide (布林佐胺 (如 Azopt 派頓))
+    - Carteolol (卡替洛爾 (如 Mikelan 美開朗))
+    - Dorzolamide (多佐胺 (如 Trusopt 舒露達))
+    - Latanoprost (拉坦前列素 (如 Xalatan 舒而坦))
+    - Tafluprost (他氟前列素 (如 Tapros 泰普羅斯))
+    - Timolol (噻嗎洛爾 (如 Timoptol 青眼露))
+    - Travoprost (曲伏前列素 (如 Travatan 舒壓坦))
     - Omidenepag (如 Eybelis)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Glaucoma / Ocular Hypertension (青光眼)
     laboratory_criteria: []
     summary: '規範【. 單方製劑:】之健保給付條件。 規範重點：1.β-交感神經阻斷劑(β-blockers ) 2.碳酸酐酶抑制劑(Carbonic
       anhydrase inhibitor) : 限對β-blockers有禁忌、不適或使用效果不佳之病患使用。'
@@ -126,10 +147,21 @@ regulations:
   effective_dates:
   - (91/12/1、97/8/1、97/9/1、101/12/1)
   medications:
-    drug_classes: []
-    ingredients: []
+    drug_classes:
+    - 青光眼及高眼壓眼用製劑 (前列腺素衍生物 / β-阻斷劑 / 碳酸酐酶抑制劑)
+    ingredients:
+    - Bimatoprost (比馬前列素 (如 Lumigan 盧美根))
+    - Brimonidine (溴莫尼定 (如 Alphagan 艾弗目))
+    - Brinzolamide (布林佐胺 (如 Azopt 派頓))
+    - Carteolol (卡替洛爾 (如 Mikelan 美開朗))
+    - Dorzolamide (多佐胺 (如 Trusopt 舒露達))
+    - Latanoprost (拉坦前列素 (如 Xalatan 舒而坦))
+    - Tafluprost (他氟前列素 (如 Tapros 泰普羅斯))
+    - Timolol (噻嗎洛爾 (如 Timoptol 青眼露))
+    - Travoprost (曲伏前列素 (如 Travatan 舒壓坦))
   conditions_of_payment:
-    indications: []
+    indications:
+    - Glaucoma / Ocular Hypertension (青光眼)
     laboratory_criteria: []
     summary: 規範【. 複方製劑：】之健保給付條件。 規範重點：限經單一降眼壓藥物治療後，眼壓仍控制不良之患者第二線(含)以上用藥。
     clinical_rules:
@@ -159,7 +191,10 @@ regulations:
     ingredients:
     - Acyclovir
   conditions_of_payment:
-    indications: []
+    indications:
+    - Herpes Simplex / Herpes Zoster / CMV Infection (疱疹)
+    - Dry Eye Syndrome / Keratitis / Conjunctivitis (乾眼症)
+    - Macular Degeneration (AMD / DME) / Retinopathy / Uveitis (黃斑部病變)
     laboratory_criteria: []
     summary: 規範【. Acyclovir眼用製劑：限下列病例使用】之健保給付條件。 規範重點：1.帶狀疱疹或單純性疱疹侵犯三叉神經第一分枝V1皮節，可能危及眼角膜者。
     clinical_rules:
@@ -226,8 +261,10 @@ regulations:
     - Levofloxacin
     - Moxifloxacin
     - Norfloxacin
+    - Ofloxacin
   conditions_of_payment:
-    indications: []
+    indications:
+    - Dry Eye Syndrome / Keratitis / Conjunctivitis (乾眼症)
     laboratory_criteria: []
     summary: 規範【. Ofloxacin, norfloxacin, ciprofloxacin, moxifloxacin, levofloxacin眼用製劑：】之健保給付條件。
       規範重點：1.限用於角膜潰瘍或嚴重角膜炎病例。
@@ -261,7 +298,8 @@ regulations:
     ingredients:
     - Lomefloxacin
   conditions_of_payment:
-    indications: []
+    indications:
+    - Dry Eye Syndrome / Keratitis / Conjunctivitis (乾眼症)
     laboratory_criteria: []
     summary: 規範【. Lomefloxacin (Okacin)：(90/12/1、93/2/1）】之健保給付條件。 規範重點：1.對lomefloxacin
       hydrochloride易感性細菌所造成之結膜炎、眼瞼炎等之第二線用藥。
@@ -291,10 +329,15 @@ regulations:
   effective_dates:
   - (93/2/1)
   medications:
-    drug_classes: []
-    ingredients: []
+    drug_classes:
+    - 人工淚液 / 乾眼症眼用製劑
+    ingredients:
+    - Carbomer (卡波姆眼用凝膠 (如 Vidisic 維蒂斯))
+    - Hypromellose / Carboxymethylcellulose (纖維素類人工淚液 (如 Refresh / Tears Naturale))
+    - Sodium Hyaluronate (玻尿酸鈉人工淚液 (如 Hialid 愛麗點眼液))
   conditions_of_payment:
-    indications: []
+    indications:
+    - Dry Eye Syndrome / Keratitis / Conjunctivitis (乾眼症)
     laboratory_criteria: []
     summary: 規範【. 人工淚液：】之健保給付條件。 規範重點：1. 初次使用限經眼科醫師診斷且符合下列條件之一者使用，病歷上應附相關紀錄、照片或影片備查：(113/7/1）
       (1)乾眼症病患經淚液分泌機能檢查(basal Schirmer test)至少單眼淚液分泌＜5 mm者或淚膜檢查淚膜破裂時間(TBUT)＜5秒。
@@ -331,7 +374,8 @@ regulations:
     ingredients:
     - Ketorolac Tromethamine (如 Acular Ophthalmic Solution)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Dry Eye Syndrome / Keratitis / Conjunctivitis (乾眼症)
     laboratory_criteria: []
     summary: 規範【. Ketorolac tromethamine（如Acular Ophthalmic Solution）：】之健保給付條件。
     clinical_rules:
@@ -409,14 +453,17 @@ regulations:
     drug_classes: []
     ingredients:
     - Aflibercept (如 Eylea)
-    - Dexamethasone
     - Faricimab (如 Vabysmo)
     - Ranibizumab (如 Lucentis)
+    - Dexamethasone
     - Verteporfin
   conditions_of_payment:
     indications:
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
     - Stroke / Cerebrovascular Accident (腦中風)
     - Diabetes Mellitus (糖尿病)
+    - Organ / Stem Cell Transplantation (腎臟移植)
+    - Macular Degeneration (AMD / DME) / Retinopathy / Uveitis (黃斑部病變)
     laboratory_criteria:
     - HbA1c
     - eGFR
@@ -736,11 +783,14 @@ regulations:
   - (105/5/1)
   - (105/5/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 人工淚液 / 乾眼症眼用製劑
     ingredients:
     - Cyclosporine (如 Restasis)
   conditions_of_payment:
-    indications: []
+    indications:
+    - ICU Sedation / Anesthesia / Mechanical Ventilation (鎮靜)
+    - Dry Eye Syndrome / Keratitis / Conjunctivitis (乾眼症)
     laboratory_criteria: []
     summary: 規範【. Cyclosporine眼用製劑 (如Restasis)   (附表二十七)】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -815,12 +865,16 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Aflibercept
     - Dexamethasone Intravitreal Implant (如 Ozurdex)
+    - Aflibercept
     - Ranibizumab
   conditions_of_payment:
     indications:
     - Diabetes Mellitus (糖尿病)
+    - UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection (泌尿道感染)
+    - Tuberculosis (TB) (結核病)
+    - Glaucoma / Ocular Hypertension (青光眼)
+    - Macular Degeneration (AMD / DME) / Retinopathy / Uveitis (黃斑部病變)
     laboratory_criteria:
     - HbA1c
     - eGFR
@@ -1075,7 +1129,8 @@ regulations:
     ingredients:
     - Verteporfin (如 Visudyne)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Macular Degeneration (AMD / DME) / Retinopathy / Uveitis (黃斑部病變)
     laboratory_criteria: []
     summary: 規範【. Verteporfin(如Visudyne)】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -1163,7 +1218,8 @@ regulations:
     - Bevacizumab (如 Avastin)
     - Ranibizumab (如 Lucentis)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Macular Degeneration (AMD / DME) / Retinopathy / Uveitis (黃斑部病變)
     laboratory_criteria: []
     summary: '規範【. 新生血管抑制劑 (Anti-angiogenic agents) : ranibizumab (如Lucentis)、aflibercept
       (如Eylea)、bevacizumab (如Avastin) ：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。'
@@ -1237,7 +1293,8 @@ regulations:
     ingredients:
     - Idebenone (如 Raxone)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Macular Degeneration (AMD / DME) / Retinopathy / Uveitis (黃斑部病變)
     laboratory_criteria: []
     summary: 規範【. Idebenone(如Raxone)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -1312,7 +1369,9 @@ regulations:
     ingredients:
     - Cysteamine (如 Cystadrops)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria: []
     summary: 規範【. Cysteamine（如Cystadrops）：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:

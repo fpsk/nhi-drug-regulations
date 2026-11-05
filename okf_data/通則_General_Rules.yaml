@@ -49,8 +49,9 @@ regulations:
   medications:
     drug_classes:
     - GLP-1 受體促效劑 (腸泌素 / 瘦瘦針)
-    - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
     - 副甲狀腺素及類似劑 / 骨質疏鬆症治療藥物
+    - 核苷及核苷酸反轉錄酶抑制劑 / B型肝炎口服抗病毒藥物
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients:
     - Abatacept
     - Adalimumab (阿達木單抗)
@@ -80,8 +81,10 @@ regulations:
     indications:
     - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     - Crohn's Disease (CD) (克隆氏症)
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Leukemia (白血病)
     - Psoriasis / Psoriatic Arthritis (乾癬)
+    - Rheumatoid Arthritis / Juvenile Idiopathic Arthritis (JIA) (類風濕性關節炎)
     - Ankylosing Spondylitis (僵直性脊椎炎)
     - Thrombosis / Pulmonary Embolism (血栓)
     - Chronic Kidney Disease (慢性腎臟病)
@@ -89,6 +92,9 @@ regulations:
     - Acromegaly (肢端肥大症)
     - Hemophilia (血友病)
     - Anemia (貧血)
+    - Tuberculosis (TB) (結核病)
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria: []
     summary: 適用於【Hepatitis B / Hepatitis C、Crohn's Disease、Leukemia】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:

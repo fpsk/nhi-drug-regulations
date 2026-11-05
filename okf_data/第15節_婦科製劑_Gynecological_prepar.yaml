@@ -28,7 +28,8 @@ regulations:
     ingredients:
     - Prostaglandin E (如 Prostin E VT)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Endometriosis / Uterine Fibroids / Hyperprolactinemia (子宮內膜異位)
     laboratory_criteria: []
     summary: 規範【. Prostaglandin E 栓劑 (如Prostin E VT )：】之健保給付條件。
     clinical_rules:

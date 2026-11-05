@@ -27,8 +27,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Estrogen
     - Exemestane (如 Aromasin Sugar Coated Tablets)
+    - Estrogen
     - Tamoxifen
   conditions_of_payment:
     indications:
@@ -73,6 +73,7 @@ regulations:
     - Tamoxifen
   conditions_of_payment:
     indications:
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
     - Breast Cancer (乳癌)
     - Thrombosis / Pulmonary Embolism (血栓)
     laboratory_criteria: []
@@ -178,10 +179,10 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Carboplatin (如 Paraplatin)
     - Amivantamab
     - Atezolizumab (阿特珠單抗)
     - Bevacizumab
-    - Carboplatin (如 Paraplatin)
     - Durvalumab (度伐利尤單抗)
     - Etoposide
     - Nivolumab (納武單抗)
@@ -194,6 +195,7 @@ regulations:
     - Breast Cancer (乳癌)
     - Lung Cancer (肺癌)
     - Ovarian Cancer (卵巢癌)
+    - Endometrial / Cervical Cancer (子宮內膜癌)
     laboratory_criteria:
     - MSI-H/dMMR
     summary: 適用於【Triple-Negative Breast Cancer、Breast Cancer、Lung Cancer】之健保給付。 主要條件包含：臨床檢驗需符合
@@ -418,10 +420,10 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Docetaxel
     - Cisplatin
     - Cyclophosphamide
     - Darolutamide
-    - Docetaxel
     - Doxorubicin
     - Fluorouracil
   conditions_of_payment:
@@ -429,6 +431,7 @@ regulations:
     - Breast Cancer (乳癌)
     - Lung Cancer (肺癌)
     - Prostate Cancer (前列腺癌)
+    - Gastric / Esophageal Cancer (胃癌)
     laboratory_criteria: []
     summary: 適用於【Breast Cancer、Lung Cancer、Prostate Cancer】之健保給付。 規範重點：1.本類藥品(除Doce之外)依藥品許可證登載之適應症範圍內給付於乳癌、非小細胞肺癌、前列腺癌、頭頸癌及胃腺癌之病例；倘併用其他標靶治療、免疫檢查點抑制劑等藥品時，病人須符合該併用藥品之藥品給付規定。
     clinical_rules:
@@ -498,6 +501,7 @@ regulations:
     - Ovarian Cancer (卵巢癌)
     - Urothelial Carcinoma / Bladder Cancer (尿路上皮癌)
     - Pancreatic Cancer (胰臟癌)
+    - Cholangiocarcinoma / Biliary Tract Cancer (膽管癌)
     laboratory_criteria: []
     summary: 適用於【Breast Cancer、Lung Cancer、Ovarian Cancer】之健保給付。 規範重點：1.本類藥品依藥品許可證登載之適應症範圍內給付於非小細胞肺癌、胰臟癌、膀胱癌、乳癌、卵巢癌及膽道癌之病例；倘併用其他標靶治療、免疫檢查點抑制劑等藥品時，病人須符合該併用藥品之藥品給付規定。
     clinical_rules:
@@ -554,12 +558,12 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Paclitaxel
     - Atezolizumab (阿特珠單抗)
     - Bevacizumab
     - Carboplatin
     - Cisplatin
     - Doxorubicin
-    - Paclitaxel
     - Pembrolizumab (派姆單抗)
   conditions_of_payment:
     indications:
@@ -567,6 +571,8 @@ regulations:
     - Breast Cancer (乳癌)
     - Lung Cancer (肺癌)
     - Ovarian Cancer (卵巢癌)
+    - Endometrial / Cervical Cancer (子宮內膜癌)
+    - Soft Tissue Sarcoma / Osteosarcoma (肉瘤)
     laboratory_criteria:
     - MSI-H/dMMR
     summary: 適用於【Triple-Negative Breast Cancer、Breast Cancer、Lung Cancer】之健保給付。 主要條件包含：臨床檢驗需符合
@@ -855,8 +861,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Estrogen
     - Toremifene (如 Fareston)
+    - Estrogen
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
@@ -937,16 +943,17 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Oxaliplatin
     - Capecitabine
     - Fluorouracil
     - Irinotecan (如 Campto)
     - Leucovorin
     - Nivolumab (納武單抗)
-    - Oxaliplatin
   conditions_of_payment:
     indications:
     - Colorectal Cancer (大腸直腸癌)
     - Pancreatic Cancer (胰臟癌)
+    - Gastric / Esophageal Cancer (胃癌)
     laboratory_criteria:
     - HER2
     summary: 適用於【Colorectal Cancer、Pancreatic Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 HER2 =
@@ -1048,13 +1055,14 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Cisplatin
     - Tegafur
+    - Cisplatin
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
     - Lung Cancer (肺癌)
     - Colorectal Cancer (大腸直腸癌)
+    - Gastric / Esophageal Cancer (胃癌)
     laboratory_criteria: []
     summary: 適用於【Breast Cancer、Lung Cancer、Colorectal Cancer】之健保給付。 規範重點：1.限轉移性胃癌、轉移性直腸癌、轉移性結腸癌、轉移性乳癌之病患使用（89/10/1、97/12/1）。
     clinical_rules:
@@ -1107,8 +1115,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Fluorouracil
     - Irinotecan (如 Campto injection)
+    - Fluorouracil
     - Leucovorin
     - Oxaliplatin
   conditions_of_payment:
@@ -1164,8 +1172,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Gemcitabine
     - Irinotecan
+    - Gemcitabine
     - Leucovorin
     - Oxaliplatin
   conditions_of_payment:
@@ -1320,12 +1328,13 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Cisplatin
     - Topotecan
+    - Cisplatin
   conditions_of_payment:
     indications:
     - Lung Cancer (肺癌)
     - Ovarian Cancer (卵巢癌)
+    - Endometrial / Cervical Cancer (子宮內膜癌)
     laboratory_criteria: []
     summary: 適用於【Lung Cancer、Ovarian Cancer】之健保給付。 規範重點：1.限卵巢癌及小細胞肺癌之第二線化學治療（第一線治療應包括白金化合物）。
     clinical_rules:
@@ -1411,6 +1420,7 @@ regulations:
     indications:
     - Breast Cancer (乳癌)
     - Colorectal Cancer (大腸直腸癌)
+    - Gastric / Esophageal Cancer (胃癌)
     laboratory_criteria:
     - HER2
     summary: 適用於【Breast Cancer、Colorectal Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 HER2 = 過度表現。
@@ -1529,16 +1539,17 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Trastuzumab (如 Herceptin)
     - Capecitabine
     - Cisplatin
     - Docetaxel
     - Fluorouracil
     - Paclitaxel
     - Pertuzumab
-    - Trastuzumab (如 Herceptin)
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
+    - Gastric / Esophageal Cancer (胃癌)
     laboratory_criteria:
     - HER2
     summary: 適用於【Breast Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 HER2 = 過度表現, HER2 = 過度表現, HER2
@@ -1831,16 +1842,18 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Rituximab (如 Mabthera)
     - Bendamustine
     - Cyclophosphamide
     - Fludarabine
     - Lenalidomide
     - Polatuzumab
-    - Rituximab (如 Mabthera)
   conditions_of_payment:
     indications:
     - Leukemia (白血病)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
     - Vasculitis / Dermatomyositis (血管炎)
+    - Neutropenia / Leukopenia (嗜中性白血球低下)
     laboratory_criteria:
     - 白血球
     - 血小板
@@ -2415,6 +2428,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Leukemia (白血病)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
     laboratory_criteria:
     - 血小板
     summary: 適用於【Leukemia】之健保給付。 規範重點：1.用於B-細胞慢性淋巴性白血病（CLL）病患的起始治療及CLL與低惡性度B細胞非何杰金氏淋巴瘤(Indolent
@@ -2460,12 +2474,13 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Hydroxyurea
     - Imatinib (如 Glivec)
+    - Hydroxyurea
   conditions_of_payment:
     indications:
     - Gastrointestinal Stromal Tumor (GIST) (胃腸基質瘤)
     - Leukemia (白血病)
+    - Soft Tissue Sarcoma / Osteosarcoma (肉瘤)
     laboratory_criteria:
     - 白血球
     - 血小板
@@ -2748,12 +2763,12 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Gefitinib (吉非替尼)
     - Afatinib (阿法替尼)
     - Aumolertinib (阿美替尼)
     - Bevacizumab
     - Dacomitinib
     - Erlotinib (厄洛替尼)
-    - Gefitinib (吉非替尼)
     - Osimertinib (奧希替尼)
   conditions_of_payment:
     indications:
@@ -2877,7 +2892,8 @@ regulations:
     ingredients:
     - Temozolomide (如 Temodal)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Glioblastoma / Malignant Glioma / Brain Tumor (多形神經膠母細胞瘤)
     laboratory_criteria: []
     summary: 規範【. Temozolomide(如Temodal)：附表八之二】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -2928,12 +2944,12 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Pemetrexed (如 Alimta)
     - Amivantamab
     - Carboplatin
     - Cisplatin
     - Nivolumab (納武單抗)
     - Pembrolizumab (派姆單抗)
-    - Pemetrexed (如 Alimta)
   conditions_of_payment:
     indications:
     - Lung Cancer (肺癌)
@@ -3021,8 +3037,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Bevacizumab
     - Cetuximab (如 Erbitux)
+    - Bevacizumab
     - Encorafenib
     - Fluorouracil
     - Irinotecan
@@ -3315,8 +3331,9 @@ regulations:
   conditions_of_payment:
     indications:
     - Multiple Myeloma (多發性骨髓瘤)
-    - Lymphoma (淋巴腫瘤)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
     - Anemia (貧血)
+    - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria:
     - eGFR
     summary: 適用於【Multiple Myeloma、Lymphoma、Anemia】之健保給付。 主要條件包含：使用前須經事前審查核准。
@@ -3407,6 +3424,7 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Erlotinib (厄洛替尼)
     - Afatinib (阿法替尼)
     - Aumolertinib (阿美替尼)
     - Bevacizumab
@@ -3414,7 +3432,6 @@ regulations:
     - Cisplatin
     - Dacomitinib
     - Docetaxel
-    - Erlotinib (厄洛替尼)
     - Gefitinib (吉非替尼)
     - Osimertinib (奧希替尼)
     - Paclitaxel
@@ -3535,8 +3552,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Bosutinib
     - Dasatinib (如 Sprycel)
+    - Bosutinib
     - Imatinib
     - Nilotinib
   conditions_of_payment:
@@ -3705,10 +3722,11 @@ regulations:
   - (99/2/1)
   - (104/12/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 蛋白激酶抑制劑 / 標靶抗癌藥物 (VEGFR/TKI 標靶藥物)
     ingredients:
-    - Imatinib
     - Sunitinib (舒尼替尼)
+    - Imatinib
     - Temsirolimus
   conditions_of_payment:
     indications:
@@ -3787,10 +3805,10 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Nilotinib (如 Tasigna 200mg)
     - Bosutinib
     - Dasatinib
     - Imatinib
-    - Nilotinib (如 Tasigna 200mg)
   conditions_of_payment:
     indications:
     - Leukemia (白血病)
@@ -3893,12 +3911,13 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Thalidomide (如 Thado)
     - Melphalan
     - Prednisolone
-    - Thalidomide (如 Thado)
   conditions_of_payment:
     indications:
     - Multiple Myeloma (多發性骨髓瘤)
+    - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria: []
     summary: 適用於【Multiple Myeloma】之健保給付。
     clinical_rules:
@@ -3934,12 +3953,12 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Sorafenib (索拉非尼)
     - Atezolizumab (阿特珠單抗)
     - Bevacizumab
     - Durvalumab (度伐利尤單抗)
     - Interferon
     - Lenvatinib (樂伐替尼)
-    - Sorafenib (索拉非尼)
     - Temsirolimus
     - Tremelimumab
   conditions_of_payment:
@@ -4131,7 +4150,8 @@ regulations:
     - Carmustine (如 Gliadel Wafer)
     - Temozolomide
   conditions_of_payment:
-    indications: []
+    indications:
+    - Glioblastoma / Malignant Glioma / Brain Tumor (多形神經膠母細胞瘤)
     laboratory_criteria: []
     summary: 規範【. carmustine植入劑(如Gliadel Wafer)：附表八之四】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -4163,7 +4183,8 @@ regulations:
   effective_dates:
   - (104/12/1、108/10/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 蛋白激酶抑制劑 / 標靶抗癌藥物 (VEGFR/TKI 標靶藥物)
     ingredients:
     - Everolimus
     - Exemestane
@@ -4255,6 +4276,8 @@ regulations:
     - Everolimus
   conditions_of_payment:
     indications:
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
+    - Glioblastoma / Malignant Glioma / Brain Tumor (多形神經膠母細胞瘤)
     - Thrombosis / Pulmonary Embolism (血栓)
     laboratory_criteria: []
     summary: 適用於【Thrombosis / Pulmonary Embolism】之健保給付。 主要條件包含：使用前須經事前審查核准。
@@ -4329,9 +4352,9 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Bevacizumab (如 Avastin)
     - Afatinib (阿法替尼)
     - Atezolizumab (阿特珠單抗)
-    - Bevacizumab (如 Avastin)
     - Carboplatin
     - Cisplatin
     - Erlotinib (厄洛替尼)
@@ -4353,6 +4376,8 @@ regulations:
     - Lung Cancer (肺癌)
     - Ovarian Cancer (卵巢癌)
     - Colorectal Cancer (大腸直腸癌)
+    - Glioblastoma / Malignant Glioma / Brain Tumor (多形神經膠母細胞瘤)
+    - Endometrial / Cervical Cancer (子宮內膜癌)
     laboratory_criteria:
     - RAS
     - Child-Pugh
@@ -4797,13 +4822,15 @@ regulations:
   effective_dates:
   - (106/3/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 蛋白激酶抑制劑 / 標靶抗癌藥物 (VEGFR/TKI 標靶藥物)
     ingredients:
     - Pazopanib (如 Votrient)
     - Temsirolimus
   conditions_of_payment:
     indications:
     - Renal Cell Carcinoma (RCC) (腎細胞癌)
+    - Soft Tissue Sarcoma / Osteosarcoma (肉瘤)
     laboratory_criteria: []
     summary: 適用於【Renal Cell Carcinoma】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -4870,6 +4897,8 @@ regulations:
   conditions_of_payment:
     indications:
     - Leukemia (白血病)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
+    - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria:
     - 血小板
     - CD20
@@ -4950,9 +4979,9 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Lenalidomide (如 Revlimid)
     - Calcium
     - Dexamethasone
-    - Lenalidomide (如 Revlimid)
     - Plasma
     - Protein
     - Rituximab
@@ -4960,7 +4989,10 @@ regulations:
   conditions_of_payment:
     indications:
     - Multiple Myeloma (多發性骨髓瘤)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
     - Anemia (貧血)
+    - Organ / Stem Cell Transplantation (腎臟移植)
+    - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria:
     - eGFR
     - CD20
@@ -5444,6 +5476,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Leukemia (白血病)
+    - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria:
     - Bone_Marrow_Blasts
     summary: 適用於【Leukemia】之健保給付。 主要條件包含：臨床檢驗需符合 Bone_Marrow_Blasts > 5%；使用前須經事前審查核准。
@@ -5647,12 +5680,14 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Gemcitabine
     - Tegafur
+    - Gemcitabine
   conditions_of_payment:
     indications:
     - Lung Cancer (肺癌)
     - Pancreatic Cancer (胰臟癌)
+    - Gastric / Esophageal Cancer (胃癌)
+    - Cholangiocarcinoma / Biliary Tract Cancer (膽管癌)
     laboratory_criteria: []
     summary: 適用於【Lung Cancer、Pancreatic Cancer】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -5708,8 +5743,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Capecitabine
     - Lapatinib (如 Tykerb)
+    - Capecitabine
     - Trastuzumab
   conditions_of_payment:
     indications:
@@ -5782,6 +5817,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
+    - Soft Tissue Sarcoma / Osteosarcoma (肉瘤)
     laboratory_criteria: []
     summary: 適用於【Breast Cancer】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -5826,7 +5862,8 @@ regulations:
   - (112/9/1、114/6/1)
   - (108/3/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients:
     - Abiraterone (如 Zytiga)
     - Apalutamide
@@ -5974,10 +6011,10 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Crizotinib (如 Xalkori)
     - Alectinib
     - Brigatinib
     - Ceritinib
-    - Crizotinib (如 Xalkori)
     - Entrectinib
     - Lorlatinib
   conditions_of_payment:
@@ -6152,12 +6189,12 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Regorafenib (瑞戈非尼)
     - Imatinib
     - Irinotecan
     - Nivolumab (納武單抗)
     - Oxaliplatin
     - Ramucirumab
-    - Regorafenib (瑞戈非尼)
     - Sorafenib (索拉非尼)
     - Sunitinib (舒尼替尼)
     - Trifluridine
@@ -6367,9 +6404,9 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Vemurafenib (如 Zelboraf)
     - Dabrafenib
     - Trametinib
-    - Vemurafenib (如 Zelboraf)
   conditions_of_payment:
     indications:
     - Melanoma (黑色素瘤)
@@ -6503,11 +6540,11 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Panitumumab (如 Vectibix)
     - Bevacizumab
     - Fluorouracil
     - Irinotecan
     - Oxaliplatin
-    - Panitumumab (如 Vectibix)
   conditions_of_payment:
     indications: []
     laboratory_criteria:
@@ -6688,13 +6725,14 @@ regulations:
   - (112/9/1、114/6/1)
   - (108/3/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients:
+    - Enzalutamide (如 Xtandi)
     - Abiraterone
     - Apalutamide
     - Darolutamide
     - Docetaxel
-    - Enzalutamide (如 Xtandi)
     - Olaparib
   conditions_of_payment:
     indications:
@@ -6880,13 +6918,14 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Ruxolitinib (如 Jakavi)
     - Fedratinib
     - Methylprednisolone
     - Momelotinib
-    - Ruxolitinib (如 Jakavi)
   conditions_of_payment:
     indications:
     - Leukemia (白血病)
+    - Myelofibrosis / Essential Thrombocythemia / Polycythemia Vera (骨髓纖維化)
     laboratory_criteria:
     - 血小板
     - FEV1
@@ -7219,7 +7258,7 @@ regulations:
     - Vinblastine
   conditions_of_payment:
     indications:
-    - Lymphoma (淋巴腫瘤)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
     laboratory_criteria:
     - CD30
     summary: 適用於【Lymphoma】之健保給付。 主要條件包含：臨床檢驗需符合 CD30 = +, CD30 = +, CD30 = +；使用前須經事前審查核准。
@@ -7478,11 +7517,12 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Blinatumomab
     - Clofarabine (如 Evoltra)
+    - Blinatumomab
   conditions_of_payment:
     indications:
     - Leukemia (白血病)
+    - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria: []
     summary: 適用於【Leukemia】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -7568,9 +7608,9 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Ceritinib (如 Zykadia)
     - Alectinib
     - Brigatinib
-    - Ceritinib (如 Zykadia)
     - Crizotinib
     - Lorlatinib
   conditions_of_payment:
@@ -7803,16 +7843,17 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Ibrutinib (如 Imbruvica)
     - Acalabrutinib
     - Anti-Cd20 (如 R-CVP)
     - Bendamustine
-    - Ibrutinib (如 Imbruvica)
     - Rituximab
     - Venetoclax
     - Zanubrutinib
   conditions_of_payment:
     indications:
     - Leukemia (白血病)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
     laboratory_criteria:
     - Hemoglobin
     summary: 適用於【Leukemia】之健保給付。 主要條件包含：臨床檢驗需符合 Hemoglobin < 10.0g/dL；使用前須經事前審查核准。
@@ -7921,18 +7962,19 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Pomalidomide (如 Pomalyst)
     - Bortezomib
     - Calcium
     - Dexamethasone
     - Elotuzumab
     - Lenalidomide
     - Plasma
-    - Pomalidomide (如 Pomalyst)
     - Protein
   conditions_of_payment:
     indications:
     - Multiple Myeloma (多發性骨髓瘤)
     - Anemia (貧血)
+    - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria: []
     summary: 適用於【Multiple Myeloma、Anemia】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -8022,10 +8064,10 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Lenvatinib (樂伐替尼)
     - Atezolizumab (阿特珠單抗)
     - Bevacizumab
     - Durvalumab (度伐利尤單抗)
-    - Lenvatinib (樂伐替尼)
     - Ramucirumab
     - Regorafenib (瑞戈非尼)
     - Sorafenib (索拉非尼)
@@ -8155,6 +8197,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Leukemia (白血病)
+    - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria:
     - Bone_Marrow_Blasts
     - MRD
@@ -8256,7 +8299,9 @@ regulations:
     ingredients:
     - Pralatrexate (如 Folotyn)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
+    - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria: []
     summary: 規範【. Pralatrexate(如Folotyn)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -8296,16 +8341,17 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Trifluridine/Tipiracil (如 Lonsurf)
     - Fruquintinib (芙奎替尼 (呋喹替尼))
     - Fruquintinib (芙奎替尼)
     - Irinotecan
     - Oxaliplatin
     - Platinum
     - Regorafenib (瑞戈非尼)
-    - Trifluridine/Tipiracil (如 Lonsurf)
   conditions_of_payment:
     indications:
     - Colorectal Cancer (大腸直腸癌)
+    - Gastric / Esophageal Cancer (胃癌)
     laboratory_criteria:
     - RAS
     summary: 適用於【Colorectal Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 RAS = 突變。
@@ -8374,11 +8420,11 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Ponatinib (如 Iclusig)
     - Bosutinib
     - Dasatinib
     - Imatinib
     - Nilotinib
-    - Ponatinib (如 Iclusig)
   conditions_of_payment:
     indications:
     - Leukemia (白血病)
@@ -8455,12 +8501,13 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients:
+    - Radium-223 (如 Xofigo)
     - Abiraterone
     - Denosumab
     - Enzalutamide
-    - Radium-223 (如 Xofigo)
   conditions_of_payment:
     indications:
     - Prostate Cancer (前列腺癌)
@@ -8544,41 +8591,43 @@ regulations:
   - (114/6/1)
   - (109/11/1、114/1/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 蛋白激酶抑制劑 / 標靶抗癌藥物 (VEGFR/TKI 標靶藥物)
     ingredients:
     - Atezolizumab (阿特珠單抗)
     - Avelumab
+    - Cemiplimab
+    - Durvalumab (度伐利尤單抗)
+    - Ipilimumab
+    - Nivolumab (納武單抗)
+    - Pembrolizumab (派姆單抗)
+    - Tremelimumab
     - Bevacizumab
     - Brentuximab
     - Capecitabine
     - Carboplatin
-    - Cemiplimab
     - Cisplatin
     - Cyclophosphamide
     - Docetaxel
     - Doxorubicin
-    - Durvalumab (度伐利尤單抗)
     - Enfortumab
     - Epirubicin
     - Etoposide
     - Gemcitabine
-    - Ipilimumab
     - Lenvatinib (樂伐替尼)
-    - Nivolumab (納武單抗)
     - Olaparib
     - Oxaliplatin
     - Paclitaxel
-    - Pembrolizumab (派姆單抗)
     - Pemetrexed
     - Platinum
     - Ramucirumab
     - Regorafenib (瑞戈非尼)
     - Sorafenib (索拉非尼)
-    - Tremelimumab
     - Zolbetuximab
   conditions_of_payment:
     indications:
     - Liver Cancer / Hepatocellular Carcinoma (肝癌)
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
     - Triple-Negative Breast Cancer (TNBC) (三陰性乳癌)
     - Breast Cancer (乳癌)
     - Lung Cancer (肺癌)
@@ -8588,7 +8637,12 @@ regulations:
     - Neuroendocrine Tumor (NET) (神經內分泌腫瘤)
     - Renal Cell Carcinoma (RCC) (腎細胞癌)
     - Colorectal Cancer (大腸直腸癌)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
+    - Gastric / Esophageal Cancer (胃癌)
+    - Cholangiocarcinoma / Biliary Tract Cancer (膽管癌)
+    - Endometrial / Cervical Cancer (子宮內膜癌)
     - Thrombosis / Pulmonary Embolism (血栓)
+    - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria:
     - eGFR
     - HER2
@@ -16751,8 +16805,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Docetaxel
     - Pertuzumab (如 Perjeta)
+    - Docetaxel
     - Trastuzumab
   conditions_of_payment:
     indications:
@@ -16876,6 +16930,7 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Venetoclax (如 Venclexta)
     - Acalabrutinib
     - Anti-Cd20 (如 R-CVP)
     - Azacitidine
@@ -16883,7 +16938,6 @@ regulations:
     - Cytarabine
     - Ibrutinib
     - Rituximab
-    - Venetoclax (如 Venclexta)
     - Zanubrutinib
   conditions_of_payment:
     indications:
@@ -17064,12 +17118,12 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Palbociclib (帕博西尼)
+    - Ribociclib
     - Abemaciclib
     - Estradiol
     - Everolimus
     - Fulvestrant
-    - Palbociclib (帕博西尼)
-    - Ribociclib
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
@@ -17160,14 +17214,15 @@ regulations:
     drug_classes:
     - 蛋白激酶抑制劑 / 標靶抗癌藥物 (VEGFR/TKI 標靶藥物)
     ingredients:
+    - Inotuzumab Ozogamicin (如 Besponsa)
     - Blinatumomab (如 Blincyto)
     - Dasatinib
     - Imatinib
-    - Inotuzumab Ozogamicin (如 Besponsa)
     - Ponatinib
   conditions_of_payment:
     indications:
     - Leukemia (白血病)
+    - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria:
     - BCR-ABL
     - CD22
@@ -17265,7 +17320,8 @@ regulations:
   - (108/12/1、110/12/1)
   - (114/8/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 蛋白激酶抑制劑 / 標靶抗癌藥物 (VEGFR/TKI 標靶藥物)
     ingredients:
     - Cabozantinib (卡博替尼)
     - Temsirolimus
@@ -17341,9 +17397,9 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Carfilzomib (如 Kyprolis)
     - Bortezomib
     - Calcium
-    - Carfilzomib (如 Kyprolis)
     - Daratumumab
     - Dexamethasone
     - Isatuximab
@@ -17354,6 +17410,7 @@ regulations:
     indications:
     - Multiple Myeloma (多發性骨髓瘤)
     - Anemia (貧血)
+    - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria:
     - ECOG
     summary: 適用於【Multiple Myeloma、Anemia】之健保給付。 主要條件包含：臨床檢驗需符合 ECOG = < 2Score, ECOG
@@ -17528,6 +17585,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Leukemia (白血病)
+    - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria:
     - FLT3
     summary: 適用於【Leukemia】之健保給付。 主要條件包含：臨床檢驗需符合 FLT3 = 突變, FLT3 = 突變；使用前須經事前審查核准。
@@ -17620,10 +17678,10 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Ixazomib (如 Ninlaro)
     - Bortezomib
     - Calcium
     - Dexamethasone
-    - Ixazomib (如 Ninlaro)
     - Lenalidomide
     - Plasma
     - Protein
@@ -17631,6 +17689,7 @@ regulations:
     indications:
     - Multiple Myeloma (多發性骨髓瘤)
     - Anemia (貧血)
+    - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria: []
     summary: 適用於【Multiple Myeloma、Anemia】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -17721,9 +17780,9 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Daratumumab (如 Darzalex靜脈注射劑與皮下注射劑)
     - Bortezomib
     - Calcium
-    - Daratumumab (如 Darzalex靜脈注射劑與皮下注射劑)
     - Dexamethasone
     - Isatuximab
     - Lenalidomide
@@ -17734,6 +17793,8 @@ regulations:
     indications:
     - Multiple Myeloma (多發性骨髓瘤)
     - Anemia (貧血)
+    - Organ / Stem Cell Transplantation (腎臟移植)
+    - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria:
     - eGFR
     - ECOG
@@ -17896,17 +17957,17 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Obinutuzumab (如 Gazyva)
     - Bendamustine
     - Chlorambucil
     - Fludarabine
     - Glofitamab
-    - Obinutuzumab (如 Gazyva)
     - Rituximab
     - Zanubrutinib
   conditions_of_payment:
     indications:
     - Leukemia (白血病)
-    - Lymphoma (淋巴腫瘤)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
     laboratory_criteria:
     - 血小板
     - CD20
@@ -18172,14 +18233,15 @@ regulations:
   - (109/6/1、111/4/1、113/10/1、115/8/1)
   - (109/10/1、113/10/1、115/8/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 蛋白激酶抑制劑 / 標靶抗癌藥物 (VEGFR/TKI 標靶藥物)
     ingredients:
+    - Osimertinib (奧希替尼)
     - Afatinib (阿法替尼)
     - Aumolertinib (阿美替尼)
     - Dacomitinib
     - Erlotinib (厄洛替尼)
     - Gefitinib (吉非替尼)
-    - Osimertinib (奧希替尼)
   conditions_of_payment:
     indications:
     - Lung Cancer (肺癌)
@@ -18359,11 +18421,11 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Lorlatinib (如 Lorviqua)
     - Alectinib
     - Brigatinib
     - Ceritinib
     - Crizotinib
-    - Lorlatinib (如 Lorviqua)
   conditions_of_payment:
     indications:
     - Lung Cancer (肺癌)
@@ -18509,8 +18571,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Alectinib
     - Brigatinib (如 Alunbrig)
+    - Alectinib
     - Ceritinib
     - Crizotinib
     - Lorlatinib
@@ -18659,9 +18721,9 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Dacomitinib (如 Vizimpro)
     - Afatinib (阿法替尼)
     - Aumolertinib (阿美替尼)
-    - Dacomitinib (如 Vizimpro)
     - Erlotinib (厄洛替尼)
     - Gefitinib (吉非替尼)
     - Osimertinib (奧希替尼)
@@ -18728,16 +18790,16 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Niraparib
+    - Olaparib
+    - Talazoparib
     - Abiraterone
     - Apalutamide
     - Bevacizumab
     - Darolutamide
     - Enzalutamide
-    - Niraparib
-    - Olaparib
     - Pembrolizumab (派姆單抗)
     - Prednisolone
-    - Talazoparib
   conditions_of_payment:
     indications:
     - Triple-Negative Breast Cancer (TNBC) (三陰性乳癌)
@@ -19210,8 +19272,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Pertuzumab
     - Trastuzumab Emtansine (如 Kadcyla)
+    - Pertuzumab
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
@@ -19337,9 +19399,9 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Ixabepilone (如 Ixempra)
     - Capecitabine
     - Eribulin
-    - Ixabepilone (如 Ixempra)
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
@@ -19380,8 +19442,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Abiraterone
     - Apalutamide (如 Erleada)
+    - Abiraterone
     - Darolutamide
     - Enzalutamide
     - Olaparib
@@ -19816,8 +19878,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Nivolumab (納武單抗)
     - Ramucirumab (如 Cyramza)
+    - Nivolumab (納武單抗)
     - Regorafenib (瑞戈非尼)
     - Sorafenib (索拉非尼)
   conditions_of_payment:
@@ -19922,8 +19984,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Crizotinib
     - Entrectinib (如 Rozlytrek)
+    - Crizotinib
   conditions_of_payment:
     indications:
     - Lung Cancer (肺癌)
@@ -20023,9 +20085,9 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Darolutamide (如 Nubeqa)
     - Abiraterone
     - Apalutamide
-    - Darolutamide (如 Nubeqa)
     - Docetaxel
     - Enzalutamide
     - Olaparib
@@ -20302,10 +20364,10 @@ regulations:
     drug_classes:
     - 蛋白激酶抑制劑 / 標靶抗癌藥物 (VEGFR/TKI 標靶藥物)
     ingredients:
+    - Larotrectinib (如 Vitrakvi)
     - Docetaxel
     - Fluorouracil
     - Irinotecan
-    - Larotrectinib (如 Vitrakvi)
     - Oxaliplatin
     - Paclitaxel
     - Platinum
@@ -20317,6 +20379,9 @@ regulations:
     - Thyroid Cancer (甲狀腺癌)
     - Colorectal Cancer (大腸直腸癌)
     - Pancreatic Cancer (胰臟癌)
+    - Cholangiocarcinoma / Biliary Tract Cancer (膽管癌)
+    - Glioblastoma / Malignant Glioma / Brain Tumor (多形神經膠母細胞瘤)
+    - Soft Tissue Sarcoma / Osteosarcoma (肉瘤)
     laboratory_criteria:
     - EGFR
     - NTRK
@@ -20893,8 +20958,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Azacitidine
     - Decitabine
+    - Azacitidine
   conditions_of_payment:
     indications:
     - Leukemia (白血病)
@@ -20990,7 +21055,8 @@ regulations:
     ingredients:
     - Avapritinib (如 Ayvakit)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Gastrointestinal Stromal Tumor (GIST) (胃腸基質瘤)
     laboratory_criteria:
     - 血小板
     summary: 規範【. Avapritinib (如Ayvakit)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
@@ -21033,7 +21099,8 @@ regulations:
     ingredients:
     - Pemigatinib (如 Pemazyre)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Cholangiocarcinoma / Biliary Tract Cancer (膽管癌)
     laboratory_criteria:
     - FGFR
     summary: 規範【. Pemigatinib (如Pemazyre)：】之健保給付條件。 主要條件包含：臨床檢驗需符合 FGFR = 融合, FGFR
@@ -21138,6 +21205,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Leukemia (白血病)
+    - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria:
     - FLT3
     summary: 適用於【Leukemia】之健保給付。 主要條件包含：臨床檢驗需符合 FLT3 = 突變, FLT3 = 突變；使用前須經事前審查核准。
@@ -21280,6 +21348,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Leukemia (白血病)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
     laboratory_criteria:
     - Hemoglobin
     summary: 適用於【Leukemia】之健保給付。 主要條件包含：臨床檢驗需符合 Hemoglobin < 10.0g/dL；使用前須經事前審查核准。
@@ -21442,7 +21511,8 @@ regulations:
     ingredients:
     - Dinutuximab Beta (如 Qarziba)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Neuroblastoma (神經母細胞瘤)
     laboratory_criteria: []
     summary: 規範【. Dinutuximab beta (如Qarziba)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -21486,19 +21556,22 @@ regulations:
   - (112/11/1、114/8/1)
   - (112/11/1、114/8/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - HIV抗病毒藥物複方製劑 (人類免疫缺乏病毒)
+    - 蛋白激酶抑制劑 / 標靶抗癌藥物 (VEGFR/TKI 標靶藥物)
     ingredients:
-    - Hepatitis
     - Tisagenlecleucel (如 Kymriah)
+    - Hepatitis
     - Tocilizumab
   conditions_of_payment:
     indications:
     - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     - Breast Cancer (乳癌)
     - Leukemia (白血病)
-    - Lymphoma (淋巴腫瘤)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
     - Stroke / Cerebrovascular Accident (腦中風)
     - Myocardial Infarction (心肌梗塞)
+    - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria:
     - eGFR
     - ALT
@@ -22099,6 +22172,7 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Zanubrutinib (如 Brukinsa)
     - Acalabrutinib
     - Anti-Cd20 (如 R-CVP)
     - Bendamustine
@@ -22106,10 +22180,10 @@ regulations:
     - Obinutuzumab
     - Rituximab
     - Venetoclax
-    - Zanubrutinib (如 Brukinsa)
   conditions_of_payment:
     indications:
     - Leukemia (白血病)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
     laboratory_criteria:
     - 血小板
     - Platelet
@@ -22362,6 +22436,7 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Polatuzumab Vedotin (如 Polivy)
     - Bendamustine
     - Carboplatin
     - Cisplatin
@@ -22369,10 +22444,11 @@ regulations:
     - Glofitamab
     - Oxaliplatin
     - Plerixafor
-    - Polatuzumab Vedotin (如 Polivy)
     - Rituximab
   conditions_of_payment:
-    indications: []
+    indications:
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
+    - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria:
     - ECOG
     summary: 規範【. Polatuzumab vedotin (如Polivy)：】之健保給付條件。 主要條件包含：臨床檢驗需符合 ECOG <= 2Score；使用前須經事前審查核准。
@@ -22622,12 +22698,12 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Isatuximab (如 Sarclisa)
     - Bortezomib
     - Calcium
     - Carfilzomib
     - Daratumumab
     - Dexamethasone
-    - Isatuximab (如 Sarclisa)
     - Lenalidomide
     - Plasma
     - Protein
@@ -22635,6 +22711,7 @@ regulations:
     indications:
     - Multiple Myeloma (多發性骨髓瘤)
     - Anemia (貧血)
+    - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria:
     - ECOG
     summary: 適用於【Multiple Myeloma、Anemia】之健保給付。 主要條件包含：臨床檢驗需符合 ECOG = <2Score；使用前須經事前審查核准。
@@ -22756,11 +22833,12 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - 蛋白激酶抑制劑 / 標靶抗癌藥物 (VEGFR/TKI 標靶藥物)
     ingredients:
+    - Enfortumab Vedotin (如 Padcev)
     - Atezolizumab (阿特珠單抗)
     - Avelumab
-    - Enfortumab Vedotin (如 Padcev)
     - Ipilimumab
     - Nivolumab (納武單抗)
     - Pembrolizumab (派姆單抗)
@@ -23028,11 +23106,13 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - HIV抗病毒藥物複方製劑 (人類免疫缺乏病毒)
     ingredients:
     - Tirabrutinib (如 Velexbru)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
     laboratory_criteria: []
     summary: 規範【. Tirabrutinib】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -23081,11 +23161,11 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Elotuzumab (如 Empliciti)
     - Bortezomib
     - Calcium
     - Carfilzomib
     - Dexamethasone
-    - Elotuzumab (如 Empliciti)
     - Lenalidomide
     - Plasma
     - Pomalidomide
@@ -23094,6 +23174,7 @@ regulations:
     indications:
     - Multiple Myeloma (多發性骨髓瘤)
     - Anemia (貧血)
+    - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria:
     - ECOG
     summary: 適用於【Multiple Myeloma、Anemia】之健保給付。 主要條件包含：臨床檢驗需符合 ECOG = < 2Score；使用前須經事前審查核准。
@@ -23220,9 +23301,9 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Docetaxel
     - Pertuzumab
     - Trastuzumab
+    - Docetaxel
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
@@ -23400,6 +23481,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Leukemia (白血病)
+    - Myelofibrosis / Essential Thrombocythemia / Polycythemia Vera (骨髓纖維化)
     laboratory_criteria:
     - 血小板
     - Bone_Marrow_Blasts
@@ -23627,9 +23709,9 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Trastuzumab Deruxtecan (如 Enhertu)
     - Pertuzumab
     - Sacituzumab
-    - Trastuzumab Deruxtecan (如 Enhertu)
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
@@ -23749,7 +23831,10 @@ regulations:
     ingredients:
     - Selumetinib (如 Koselugo)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
+    - Neurofibromatosis (NF1) (神經纖維瘤)
+    - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     laboratory_criteria: []
     summary: 規範【. Selumetinib (如Koselugo)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -23819,15 +23904,16 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Selinexor (如 Xpovio)
     - Bortezomib
     - Dexamethasone
     - Plasma
     - Protein
-    - Selinexor (如 Xpovio)
   conditions_of_payment:
     indications:
     - Multiple Myeloma (多發性骨髓瘤)
     - Anemia (貧血)
+    - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria:
     - ECOG
     summary: 適用於【Multiple Myeloma、Anemia】之健保給付。 主要條件包含：臨床檢驗需符合 ECOG = <2Score；使用前須經事前審查核准。
@@ -23945,8 +24031,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Calcium
     - Elranatamab (如 Elrexfio)
+    - Calcium
     - Plasma
     - Protein
     - Teclistamab
@@ -23954,6 +24040,8 @@ regulations:
     indications:
     - Multiple Myeloma (多發性骨髓瘤)
     - Anemia (貧血)
+    - Organ / Stem Cell Transplantation (腎臟移植)
+    - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria:
     - ECOG
     summary: 適用於【Multiple Myeloma、Anemia】之健保給付。 主要條件包含：臨床檢驗需符合 ECOG <= 2Score；使用前須經事前審查核准。
@@ -24079,15 +24167,17 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Teclistamab (如 Tecvayli)
     - Calcium
     - Elranatamab
     - Plasma
     - Protein
-    - Teclistamab (如 Tecvayli)
   conditions_of_payment:
     indications:
     - Multiple Myeloma (多發性骨髓瘤)
     - Anemia (貧血)
+    - Organ / Stem Cell Transplantation (腎臟移植)
+    - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria:
     - ECOG
     summary: 適用於【Multiple Myeloma、Anemia】之健保給付。 主要條件包含：臨床檢驗需符合 ECOG <= 2Score；使用前須經事前審查核准。
@@ -24213,13 +24303,15 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Epcoritamab
     - Glofitamab (如 Columvi)
+    - Epcoritamab
     - Obinutuzumab
     - Polatuzumab
     - Rituximab
   conditions_of_payment:
-    indications: []
+    indications:
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
+    - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria:
     - ECOG
     - CD20
@@ -24321,7 +24413,9 @@ regulations:
     - Polatuzumab
     - Rituximab
   conditions_of_payment:
-    indications: []
+    indications:
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
+    - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria:
     - ECOG
     - CD20
@@ -24512,8 +24606,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Imatinib
     - Ripretinib (如 Qinlock)
+    - Imatinib
   conditions_of_payment:
     indications:
     - Gastrointestinal Stromal Tumor (GIST) (胃腸基質瘤)
@@ -24555,11 +24649,13 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Tafasitamab (如 Minjuvi)
     - Lenalidomide
     - Rituximab
-    - Tafasitamab (如 Minjuvi)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
+    - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria:
     - ECOG
     - CD19
@@ -24671,13 +24767,14 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Quizartinib (如 Vanflyta)
     - Azacitidine
     - Cytarabine
     - Midostaurin
-    - Quizartinib (如 Vanflyta)
   conditions_of_payment:
     indications:
     - Leukemia (白血病)
+    - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria:
     - FLT3
     summary: 適用於【Leukemia】之健保給付。 主要條件包含：臨床檢驗需符合 FLT3 = 突變；使用前須經事前審查核准。
@@ -24795,13 +24892,14 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Fedratinib
     - Momelotinib (如 Omjjara)
+    - Fedratinib
     - Ruxolitinib
   conditions_of_payment:
     indications:
     - Leukemia (白血病)
     - Anemia (貧血)
+    - Myelofibrosis / Essential Thrombocythemia / Polycythemia Vera (骨髓纖維化)
     laboratory_criteria:
     - 血小板
     - Bone_Marrow_Blasts
@@ -25123,9 +25221,9 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Tucidinostat (如 Kepida)
     - Everolimus
     - Exemestane
-    - Tucidinostat (如 Kepida)
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
@@ -25222,9 +25320,9 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Fulvestrant (如 Fustron)
     - Alpelisib
     - Capivasertib
-    - Fulvestrant (如 Fustron)
     - Palbociclib (帕博西尼)
   conditions_of_payment:
     indications:
@@ -25260,9 +25358,9 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Repotrectinib (如 Augtyro)
     - Crizotinib
     - Entrectinib
-    - Repotrectinib (如 Augtyro)
   conditions_of_payment:
     indications:
     - Lung Cancer (肺癌)
@@ -25546,8 +25644,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Bevacizumab
     - Encorafenib (如 Braftovi)
+    - Bevacizumab
     - Fluorouracil
     - Irinotecan
     - Leucovorin
@@ -25690,8 +25788,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Alpelisib
     - Capivasertib (如 Truqap)
+    - Alpelisib
     - Fulvestrant
   conditions_of_payment:
     indications:
@@ -25817,9 +25915,9 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Cabazitaxel (卡巴他賽)
     - Abiraterone
     - Apalutamide
-    - Cabazitaxel (卡巴他賽)
     - Darolutamide
     - Docetaxel
     - Enzalutamide
@@ -25932,10 +26030,11 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - 蛋白激酶抑制劑 / 標靶抗癌藥物 (VEGFR/TKI 標靶藥物)
     ingredients:
-    - Afatinib (阿法替尼)
     - Aumolertinib (阿美替尼)
+    - Afatinib (阿法替尼)
     - Dacomitinib
     - Erlotinib (厄洛替尼)
     - Gefitinib (吉非替尼)

@@ -77,7 +77,9 @@ regulations:
     ingredients:
     - Ketorolac
   conditions_of_payment:
-    indications: []
+    indications:
+    - Pneumonia / Respiratory & ENT Infection (肺炎)
+    - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     laboratory_criteria: []
     summary: 規範【. 非類固醇抗發炎劑 (NSAIDs) 之注射劑：】之健保給付條件。 規範重點：1.非類固醇抗發炎劑 (NSAIDs) 之注射劑（ketorolac成分之注射劑除外）：
       (1)限不能口服，且不能使用肛門栓劑之病患使用。
@@ -118,7 +120,8 @@ regulations:
     ingredients:
     - Tramadol
   conditions_of_payment:
-    indications: []
+    indications:
+    - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     laboratory_criteria: []
     summary: 規範【. Tramadol】之健保給付條件。
     clinical_rules:
@@ -149,12 +152,14 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients:
     - Acetaminophen (如 Ultracet Tablets)
     - Tramadol
   conditions_of_payment:
-    indications: []
+    indications:
+    - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     laboratory_criteria: []
     summary: 規範【. Tramadol HCl＋acetaminophen (如Ultracet Tablets)】之健保給付條件。 規範重點：限用於中度至嚴重性疼痛之病人，需符合下述條件：
       1.經其他止痛藥、或非類固醇抗發炎藥物（NSAIDs）治療後仍無法控制疼痛或有嚴重副作用者。
@@ -195,6 +200,7 @@ regulations:
   - (101/10/1)
   medications:
     drug_classes:
+    - H2受體阻斷劑 (乙型組織胺受體阻斷劑)
     - PPI類 (氫離子幫浦抑制劑)
     - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients:
@@ -203,18 +209,21 @@ regulations:
     - Etodolac
     - Etoricoxib
     - Meloxicam
-    - Misoprostol
     - Nabumetone
     - Naproxen
     - Nimesulide
     - Omeprazole (歐美拉唑)
+    - Misoprostol
   conditions_of_payment:
     indications:
     - Liver Cirrhosis (肝硬化)
     - Peptic Ulcer Disease (消化性潰瘍)
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Psoriasis / Psoriatic Arthritis (乾癬)
-    - Rheumatoid Arthritis (類風濕性關節炎)
+    - Rheumatoid Arthritis / Juvenile Idiopathic Arthritis (JIA) (類風濕性關節炎)
     - Stroke / Cerebrovascular Accident (腦中風)
+    - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     laboratory_criteria: []
     summary: 適用於【Liver Cirrhosis、Peptic Ulcer Disease、Psoriasis / Psoriatic Arthritis】之健保給付。
       規範重點：1.本類製劑之使用需符合下列條件之一者(99/10/1、111/7/1)： (1)骨關節炎病患。
@@ -309,7 +318,9 @@ regulations:
     - Lidocaine
     - Pregabalin
   conditions_of_payment:
-    indications: []
+    indications:
+    - Herpes Simplex / Herpes Zoster / CMV Infection (疱疹)
+    - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     laboratory_criteria: []
     summary: 規範【. Gabapentin、lidocaine貼片劑】之健保給付條件。 規範重點：限使用於帶狀疱疹皮膚病灶後神經痛，並符合下列條件：
       1.使用其他止痛劑或非類固醇抗發炎劑（NSAIDs）藥品治療後仍無法控制疼痛或有嚴重副作用者。
@@ -360,6 +371,8 @@ regulations:
   conditions_of_payment:
     indications:
     - Diabetes Mellitus (糖尿病)
+    - Herpes Simplex / Herpes Zoster / CMV Infection (疱疹)
+    - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     laboratory_criteria: []
     summary: 適用於【Diabetes Mellitus】之健保給付。 規範重點：1.使用於帶狀疱疹皮膚病灶後神經痛，並符合下列條件： (1)經使用其他止痛劑或非類固醇抗發炎劑（NSAIDs）藥品治療後仍無法控制疼痛或有嚴重副作用者。
     clinical_rules:
@@ -450,10 +463,11 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Duloxetine (如 Cymbalta)
+    - Duloxetine (度洛西汀 (如 Cymbalta 千憂解))
   conditions_of_payment:
     indications:
     - Diabetes Mellitus (糖尿病)
+    - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     laboratory_criteria: []
     summary: '適用於【Diabetes Mellitus】之健保給付。 規範重點：1.使用於糖尿病併發周邊神經病變並具有臨床神經疼痛 (neuropathic
       pain)，且符合以下條件: (1)經神經科專科醫師診斷或經神經傳導(NCV) 檢查證實之多發性神經病變(polyneuropathy)。'
@@ -528,7 +542,8 @@ regulations:
     - Morphine
     - Oxycodone
   conditions_of_payment:
-    indications: []
+    indications:
+    - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     laboratory_criteria: []
     summary: 規範【. Fentanyl citrate口頰溶片或口頰錠】之健保給付條件。 規範重點：1.限用於突發性疼痛(breakthrough pain)，並已接受過口服morphine至少60mg/day、oxycodone至少30mg/day、hydromorphone至少8mg/day、或fentanyl貼片劑至少25/mcg/hr或其他等止痛劑量之類鴉片藥物達一星期(含)以上之18歲以上癌症患者(111/2/1)。
     clinical_rules:
@@ -557,18 +572,19 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - 抗憂鬱劑 (SSRI / SNRI / 選擇性血清促進素再吸收抑制劑)
     ingredients:
     - Agomelatine
-    - Citalopram
-    - Escitalopram
-    - Fluoxetine
+    - Duloxetine (度洛西汀 (如 Cymbalta 千憂解))
+    - Escitalopram (艾司西酞普蘭 (如 Lexapro 立普能))
+    - Fluoxetine (氟西汀 (如 Prozac 百憂解))
     - Fluvoxamine
     - Milnacipran
     - Mirtazapine
-    - Paroxetine
-    - Sertraline
-    - Venlafaxine
+    - Paroxetine (帕羅西汀 (如 Seroxat 克憂果))
+    - Sertraline (捨曲林 (如 Zoloft 樂復得))
+    - Venlafaxine (文拉法辛 (如 Efexor 速悅))
     - Vortioxetine
   conditions_of_payment:
     indications: []
@@ -678,23 +694,25 @@ regulations:
   - (95/10/1、109/6/1)
   - (95/10/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 第二代抗精神病藥品 (非典型抗精神病藥物)
     ingredients:
     - Amisulpride
-    - Aripiprazole
+    - Aripiprazole (阿立哌唑 (如 Abilify 安立復))
     - Brexpiprazole
-    - Carbamazepine
     - Clozapine
-    - Lithium
-    - Lurasidone
-    - Olanzapine
-    - Paliperidone
-    - Quetiapine
-    - Risperidone
-    - Valproate
+    - Lurasidone (魯拉西酮 (如 Latuda 樂途達))
+    - Olanzapine (奧氮平 (如 Zyprexa 金普薩))
+    - Paliperidone (帕利哌酮 (如 Invega 思維佳))
+    - Quetiapine (喹硫平 (如 Seroquel 思樂康))
+    - Risperidone (利培酮 (如 Risperdal 理思必妥))
     - Ziprasidone
+    - Carbamazepine
+    - Lithium
+    - Valproate
   conditions_of_payment:
-    indications: []
+    indications:
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     laboratory_criteria: []
     summary: 規範【. Second generation antipsychotics(簡稱第二代抗精神病藥品，如clozapine、olanzapine、risperidone、quetiapine、amisulpride、ziprasidone、aripiprazole、paliperidone、lurasidone、brexpiprazole等)：】之健保給付條件。
       規範重點：1. 本類製劑之使用需符合下列條件(95/10/1、97/5/1、99/10/1、106/1/1、109/1/1、112/7/1)： (1)
@@ -763,7 +781,8 @@ regulations:
     - Zolpidem
     - Zopiclone
   conditions_of_payment:
-    indications: []
+    indications:
+    - Insomnia / Sleep Disorder / Narcolepsy (失眠)
     laboratory_criteria: []
     summary: 規範【. Zaleplon、zolpidem、zopiclone及eszopiclone】之健保給付條件。 規範重點：1.使用安眠藥物，病歷應詳載病人發生睡眠障礙的情形，並作適當的評估和診斷，探討可能的原因，並提供衛教建立良好睡眠習慣。
     clinical_rules:
@@ -806,7 +825,9 @@ regulations:
     ingredients:
     - Tizanidine Hcl (如 Sirdalud tab)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Chronic / Breakthrough / Neuropathic Pain (疼痛)
+    - Spasticity / ALS / Spinal Muscular Atrophy (SMA) (痙攣)
     laboratory_criteria: []
     summary: 規範【. Tizanidine HCl (如Sirdalud tab)：】之健保給付條件。 規範重點：限下列病患使用 1.神經系統疾病引起痙攣症狀之病例。
     clinical_rules:
@@ -838,8 +859,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Phenytoin
     - Sodium Valproate (如 Depakine Lyophilized Injection)
+    - Phenytoin
     - Valproic
   conditions_of_payment:
     indications:
@@ -916,6 +937,7 @@ regulations:
     - Topiramate (如 Topamax)
   conditions_of_payment:
     indications:
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Migraine (偏頭痛)
     - Epilepsy (癲癇)
     laboratory_criteria: []
@@ -1024,11 +1046,12 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Carbamazepine
     - Lamotrigine (如 Lamictal)
+    - Carbamazepine
     - Valproate
   conditions_of_payment:
     indications:
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Epilepsy (癲癇)
     laboratory_criteria: []
     summary: 適用於【Epilepsy】之健保給付。 規範重點：限下列病患使用： 1.限用於其他抗癲癇藥物無法有效控制之局部癲癇發作之輔助性治療(add
@@ -1109,8 +1132,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Lamotrigine
     - Rufinamide (如 Inovelon)
+    - Lamotrigine
     - Topiramate
   conditions_of_payment:
     indications:
@@ -1309,12 +1332,13 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Clobazam
     - Stiripentol (如 Diacomit)
+    - Clobazam
     - Valproate
   conditions_of_payment:
     indications:
     - Epilepsy (癲癇)
+    - Spasticity / ALS / Spinal Muscular Atrophy (SMA) (痙攣)
     laboratory_criteria: []
     summary: 適用於【Epilepsy】之健保給付。 規範重點：1.限用於經衛生福利部國民健康署認定之嬰兒期嚴重肌痙攣性癲癇(SMEI,Dravet syndrome)病人，並且合併服用clobazam及valproate兩種藥物無法充分控制癲癇發作時，併用本藥品作為輔助治療難治的全身性強直陣攣性發作(generalized
       tonic-clonic seizure)。
@@ -1732,6 +1756,7 @@ regulations:
     - Schizophrenia (思覺失調症)
     - Bipolar Disorder (雙相情緒障礙症)
     - Major Depressive Disorder (憂鬱症)
+    - Attention-Deficit / Hyperactivity Disorder (ADHD) (注意力不足過動症)
     laboratory_criteria: []
     summary: 適用於【Alzheimer's Disease / Dementia、Schizophrenia、Bipolar Disorder】之健保給付。
       主要條件包含：使用前須經事前審查核准。
@@ -1841,7 +1866,8 @@ regulations:
     - Modafinil (如 Provigil)
     - Pitolisant (如 Wakix)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Insomnia / Sleep Disorder / Narcolepsy (失眠)
     laboratory_criteria: []
     summary: 規範【. Modafinil(如Provigil)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -1911,10 +1937,11 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Modafinil (如 Provigil)
     - Pitolisant (如 Wakix)
+    - Modafinil (如 Provigil)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Insomnia / Sleep Disorder / Narcolepsy (失眠)
     laboratory_criteria: []
     summary: 規範【. Pitolisant (如Wakix)：（112/3/1)】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -1990,7 +2017,9 @@ regulations:
     ingredients:
     - Propofol
   conditions_of_payment:
-    indications: []
+    indications:
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
+    - ICU Sedation / Anesthesia / Mechanical Ventilation (鎮靜)
     laboratory_criteria: []
     summary: 規範【. Propofol：】之健保給付條件。 規範重點：1.限使用人工呼吸器治療且需要每日進行神智評估之病例使用(100/7/1)。
     clinical_rules:
@@ -2022,7 +2051,8 @@ regulations:
     ingredients:
     - Atracurium
   conditions_of_payment:
-    indications: []
+    indications:
+    - ICU Sedation / Anesthesia / Mechanical Ventilation (鎮靜)
     laboratory_criteria: []
     summary: 規範【. Cis-atracurium、atracurium：】之健保給付條件。 規範重點：1.限使用人工呼吸器治療且肝或腎功能衰竭之病患使用(100/7/1)。
     clinical_rules:
@@ -2057,7 +2087,8 @@ regulations:
     ingredients:
     - Vecuronium
   conditions_of_payment:
-    indications: []
+    indications:
+    - ICU Sedation / Anesthesia / Mechanical Ventilation (鎮靜)
     laboratory_criteria: []
     summary: 規範【. Vecuronium、rocuronium：】之健保給付條件。 規範重點：1.限使用人工呼吸器治療之血液動力學不穩定之重症病患，且具有下述情形者(100/7/1)：
       (1)心臟功能不穩定者。
@@ -2095,7 +2126,8 @@ regulations:
     drug_classes: []
     ingredients: []
   conditions_of_payment:
-    indications: []
+    indications:
+    - ICU Sedation / Anesthesia / Mechanical Ventilation (鎮靜)
     laboratory_criteria: []
     summary: 規範【. 局部麻醉劑（local anesthetics）】之健保給付條件。 規範重點：Xylocaine 2 % jelly： 限直腸外科人工肛門造口病例需居家定期插入導管或脊椎畸型合併有神經功能障礙之病童需長期居家間歇導尿病例使用。
     clinical_rules:
@@ -2127,7 +2159,8 @@ regulations:
     ingredients:
     - Dexmedetomidine (如 Precedex)
   conditions_of_payment:
-    indications: []
+    indications:
+    - ICU Sedation / Anesthesia / Mechanical Ventilation (鎮靜)
     laboratory_criteria: []
     summary: 規範【. Dexmedetomidine（如Precedex）：】之健保給付條件。 規範重點：1.限用於短期可拔管需鎮靜之18歲以上加護病房病人使用，連續使用不得超過24小時，再次使用需間隔6小時以上，每次住院最多使用3次。
     clinical_rules:
@@ -2155,12 +2188,15 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - 人工淚液 / 乾眼症眼用製劑
     ingredients:
     - Pilocarpine
   conditions_of_payment:
     indications:
     - Head and Neck Cancer (頭頸部癌)
+    - Sjögren's Syndrome (Xerostomia) (修格蘭氏症候群)
+    - Dry Eye Syndrome / Keratitis / Conjunctivitis (乾眼症)
     laboratory_criteria: []
     summary: 適用於【Head and Neck Cancer】之健保給付。 規範重點：1.使用於修格蘭氏症候群 (Sjogren's syndrome)
       病人： (1)使用對象：需符合修格蘭氏症候群之診斷標準。
@@ -2262,7 +2298,8 @@ regulations:
     ingredients:
     - Cevimeline Hydrochloride (如 Evoxac Capsules)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Sjögren's Syndrome (Xerostomia) (修格蘭氏症候群)
     laboratory_criteria: []
     summary: 規範【. Cevimeline hydrochloride（如Evoxac Capsules）（97/5/1、102/2/1)】之健保給付條件。
       規範重點：1.使用對象：需符合修格蘭氏症候群之診斷標準。
@@ -2302,7 +2339,9 @@ regulations:
     ingredients:
     - Riluzole (如 Rilutek)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Spasticity / ALS / Spinal Muscular Atrophy (SMA) (痙攣)
+    - ICU Sedation / Anesthesia / Mechanical Ventilation (鎮靜)
     laboratory_criteria: []
     summary: 規範【. Riluzole (如Rilutek、Teglutik)】之健保給付條件。 規範重點：1.經兩位神經科專科醫師診斷為運動神經元疾病
       (ALS/MND)，且未氣管切開或未使用人工呼吸器之病患。
@@ -2387,8 +2426,12 @@ regulations:
     - Topiramate
   conditions_of_payment:
     indications:
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Stroke / Cerebrovascular Accident (腦中風)
     - Migraine (偏頭痛)
+    - Spasticity / ALS / Spinal Muscular Atrophy (SMA) (痙攣)
+    - Attention-Deficit / Hyperactivity Disorder (ADHD) (注意力不足過動症)
+    - BPH / Overactive Bladder / Interstitial Cystitis / Urolithiasis (前列腺增生)
     laboratory_criteria: []
     summary: 適用於【Stroke / Cerebrovascular Accident、Migraine】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -2533,6 +2576,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Stroke / Cerebrovascular Accident (腦中風)
+    - Spasticity / ALS / Spinal Muscular Atrophy (SMA) (痙攣)
     laboratory_criteria: []
     summary: 適用於【Stroke / Cerebrovascular Accident】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -2586,7 +2630,8 @@ regulations:
     - Solifenacin Succinate (如 Vesicare)
     - Tolterodine L-Tartrate (如 Detrusitol)
   conditions_of_payment:
-    indications: []
+    indications:
+    - BPH / Overactive Bladder / Interstitial Cystitis / Urolithiasis (前列腺增生)
     laboratory_criteria: []
     summary: 規範【. Tolterodine L-tartrate  (如Detrusitol) ; solifenacin succinate  (如Vesicare)；mirabegron
       (如Betmiga):】之健保給付條件。 規範重點：1.限符合下列診斷標準條件之一者： (1)頻尿：每天（24小時）排尿次數超過八次，並有詳實病歷紀錄。
@@ -2639,10 +2684,11 @@ regulations:
     drug_classes: []
     ingredients:
     - Nusinersen (如 Spinraza)
-    - Onasemnogene
     - Risdiplam (如 Evrysdi)
+    - Onasemnogene
   conditions_of_payment:
-    indications: []
+    indications:
+    - Spasticity / ALS / Spinal Muscular Atrophy (SMA) (痙攣)
     laboratory_criteria: []
     summary: 規範【. Nusinersen(如 Spinraza)、risdiplam（如Evrysdi）：】之健保給付條件。
     clinical_rules:
@@ -2738,12 +2784,13 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Calcitonin
     - Fremanezumab (如 Ajovy)
     - Galcanezumab (如 Emgality)
+    - Calcitonin
     - Topiramate
   conditions_of_payment:
     indications:
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Migraine (偏頭痛)
     laboratory_criteria: []
     summary: 適用於【Migraine】之健保給付。 主要條件包含：使用前須經事前審查核准。
@@ -2908,11 +2955,12 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Nusinersen
     - Onasemnogene Abeparvovec (如 Zolgensma suspension for Intravenous Infusion)
+    - Nusinersen
     - Risdiplam
   conditions_of_payment:
-    indications: []
+    indications:
+    - Spasticity / ALS / Spinal Muscular Atrophy (SMA) (痙攣)
     laboratory_criteria:
     - SMN2
     - SpO2
@@ -3247,10 +3295,14 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Amino
     - Eladocagene Exuparvovec (如 Upstaza)
+    - Amino
   conditions_of_payment:
-    indications: []
+    indications:
+    - Glioblastoma / Malignant Glioma / Brain Tumor (多形神經膠母細胞瘤)
+    - ICU Sedation / Anesthesia / Mechanical Ventilation (鎮靜)
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria: []
     summary: 規範【. Eladocagene exuparvovec(如Upstaza)：（114/12/1)】之健保給付條件。
     clinical_rules:
@@ -3353,7 +3405,8 @@ regulations:
     ingredients:
     - Baclofen (如 Gablofen)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Spasticity / ALS / Spinal Muscular Atrophy (SMA) (痙攣)
     laboratory_criteria: []
     summary: 規範【. Baclofen注射劑 (如Gablofen)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:

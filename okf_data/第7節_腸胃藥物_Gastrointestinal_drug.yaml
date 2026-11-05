@@ -39,37 +39,43 @@ regulations:
   - (92/10/1)
   medications:
     drug_classes:
+    - H2受體阻斷劑 (乙型組織胺受體阻斷劑)
     - PPI類 (氫離子幫浦抑制劑)
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients:
-    - Apixaban (阿哌沙班)
-    - Aspirin
+    - Cimetidine (西咪替丁)
+    - Dexlansoprazole (右蘭索拉唑)
+    - Esomeprazole (埃索美拉唑)
+    - Famotidine (法莫替丁)
+    - Lansoprazole (蘭索拉唑)
+    - Nizatidine (尼扎替丁)
+    - Omeprazole (歐美拉唑)
+    - Pantoprazole (潘托拉唑)
+    - Rabeprazole (雷貝拉唑)
+    - Ranitidine (雷尼替丁)
+    - Vonoprazan (沃諾拉贊)
     - Carbenoxolone
     - Cetraxate
-    - Cilostazol
-    - Dabigatran (達比加群)
-    - Edoxaban (艾多沙班)
     - Gefarnate
     - Misoprostol
-    - P2Y12 Inhibitor (如 clopidogrel)
     - Pirenzepine
-    - Prasugrel
     - Proglumide
-    - Rivaroxaban (利伐沙班)
     - Sucralfate
-    - Ticagrelor
-    - Ticlopidine
-    - Tirofiban
-    - Warfarin
   conditions_of_payment:
     indications:
     - Peptic Ulcer Disease (消化性潰瘍)
     - Gastroesophageal Reflux Disease (逆流性食道炎)
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
+    - Helicobacter pylori Infection (幽門螺旋桿菌)
+    - Pancreatitis / Pancreatic Insufficiency / Short Bowel Syndrome (胰臟炎)
     - Systemic Lupus Erythematosus (紅斑性狼瘡)
-    - Rheumatoid Arthritis (類風濕性關節炎)
+    - Rheumatoid Arthritis / Juvenile Idiopathic Arthritis (JIA) (類風濕性關節炎)
     - Ankylosing Spondylitis (僵直性脊椎炎)
     - Stroke / Cerebrovascular Accident (腦中風)
     - Myocardial Infarction (心肌梗塞)
     - Chronic Kidney Disease (慢性腎臟病)
+    - Peripheral Arterial Disease (PAD) (周邊動脈疾病)
     laboratory_criteria:
     - eGFR
     - 血小板
@@ -459,19 +465,20 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Dexamethasone
     - Granisetron
-    - Metoclopramide
     - Palonosetron
-    - Prochlorperazine
     - Ramosetron
     - Serotonin Antagonists (如 ondansetron)
     - Tropisetron
+    - Dexamethasone
+    - Metoclopramide
+    - Prochlorperazine
     - Fosaprepitant
     - Neurokinin-1 Receptor Antagonist (如 aprepitant)
     - Netupitant
   conditions_of_payment:
-    indications: []
+    indications:
+    - Nausea and Vomiting (CINV / Antiemetic) (止吐)
     laboratory_criteria: []
     summary: 規範【. 止吐劑  Antiemetic drugs】之健保給付條件。 規範重點：靜脈注射癌症化療藥品之致吐性風險與劑量標準，依NCCN
       (National Comprehensive Cancer Network)最新版治療指引內容。
@@ -503,20 +510,23 @@ regulations:
   - (93/9/1)
   - (102/9/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients:
-    - Dexamethasone
     - Granisetron
-    - Metoclopramide
     - Palonosetron
-    - Prochlorperazine
     - Ramosetron
     - Serotonin Antagonists (如 ondansetron)
     - Tropisetron
+    - Dexamethasone
+    - Metoclopramide
+    - Prochlorperazine
   conditions_of_payment:
     indications:
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
+    - Nausea and Vomiting (CINV / Antiemetic) (止吐)
     - Systemic Lupus Erythematosus (紅斑性狼瘡)
-    - Rheumatoid Arthritis (類風濕性關節炎)
+    - Rheumatoid Arthritis / Juvenile Idiopathic Arthritis (JIA) (類風濕性關節炎)
     - Vasculitis / Dermatomyositis (血管炎)
     laboratory_criteria: []
     summary: 適用於【Systemic Lupus Erythematosus、Rheumatoid Arthritis、Vasculitis / Dermatomyositis】之健保給付。
@@ -588,7 +598,8 @@ regulations:
     - Fosaprepitant
     - Neurokinin-1 Receptor Antagonist (如 aprepitant)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Nausea and Vomiting (CINV / Antiemetic) (止吐)
     laboratory_criteria: []
     summary: 規範【. Neurokinin-1 receptor antagonist （如aprepitant、fosaprepitant）】之健保給付條件。
       規範重點：1.與其他止吐藥劑併用，以防止由高致吐性癌症化療藥物在初次或重覆使用時所引起的急性或延遲性噁心與嘔吐。
@@ -627,7 +638,9 @@ regulations:
     - Netupitant
     - Palonosetron
   conditions_of_payment:
-    indications: []
+    indications:
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
+    - Nausea and Vomiting (CINV / Antiemetic) (止吐)
     laboratory_criteria: []
     summary: 規範【. 含palonosetron及netupitant之複方製劑(如Akynzeo)】之健保給付條件。 規範重點：1.限用於 (1)防止由高致吐性癌症化療藥物在初次或重覆使用時所引起的急性或延遲性噁心與嘔吐。
     clinical_rules:
@@ -696,7 +709,8 @@ regulations:
     drug_classes: []
     ingredients: []
   conditions_of_payment:
-    indications: []
+    indications:
+    - Diarrhea (腹瀉)
     laboratory_criteria: []
     summary: 規範【. 益生菌類藥物Antidiarrheal microorganisms：】之健保給付條件。 規範重點：限用於接受放射治療、化學療法患者，治療期間造成的腹瀉。
     clinical_rules:
@@ -754,11 +768,13 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Cholic Acid (如 Cholbam)
     - Alanine
     - Aspartate
-    - Cholic Acid (如 Cholbam)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria:
     - ALT
     - AST
@@ -806,8 +822,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Aminosalicylate
     - Budesonide (如 Cortiment MMX)
+    - Aminosalicylate
   conditions_of_payment:
     indications:
     - Ulcerative Colitis (UC) (潰瘍性結腸炎)
@@ -848,7 +864,8 @@ regulations:
     - Lipase
     - Protase
   conditions_of_payment:
-    indications: []
+    indications:
+    - Pancreatitis / Pancreatic Insufficiency / Short Bowel Syndrome (胰臟炎)
     laboratory_criteria: []
     summary: 規範【. 含amylase+lipase+protease複方製劑(如Protase、Creon)：】之健保給付條件。 規範重點：1.適用因疾病所導致之胰液分泌不全：如囊狀性纖維化疾病、慢性胰臟炎、胰臟切除手術、胃腸繞道手術，或其他因腫瘤引發之胰管膽管阻塞之情形。
     clinical_rules:
@@ -916,7 +933,10 @@ regulations:
     ingredients:
     - Teduglutide (如 Revestive)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Pancreatitis / Pancreatic Insufficiency / Short Bowel Syndrome (胰臟炎)
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria: []
     summary: 規範【. Teduglutide (如Revestive)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:

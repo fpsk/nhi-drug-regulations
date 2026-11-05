@@ -87,13 +87,48 @@ DISEASE_DATABASE = {
     },
     "peptic_ulcer": {
         "en": "Peptic Ulcer Disease",
-        "tc_terms": ["消化性潰瘍", "胃潰瘍", "十二指腸潰瘍"],
-        "aliases": ["peptic ulcer", "pud", "gastric ulcer", "duodenal ulcer"]
+        "tc_terms": ["消化性潰瘍", "胃潰瘍", "十二指腸潰瘍", "潰瘍穿孔"],
+        "aliases": ["peptic ulcer", "pud", "gastric ulcer", "duodenal ulcer", "ulcer"]
     },
     "gerd": {
         "en": "Gastroesophageal Reflux Disease",
-        "tc_terms": ["逆流性食道炎", "胃食道逆流症", "胃食道逆流"],
-        "aliases": ["gerd", "reflux esophagitis", "reflux"]
+        "tc_terms": ["逆流性食道炎", "胃食道逆流症", "胃食道逆流", "Barrett"],
+        "aliases": ["gerd", "reflux esophagitis", "reflux", "barrett's esophagus"]
+    },
+    "gi_bleeding": {
+        "en": "Gastrointestinal Bleeding / Hemorrhage",
+        "tc_terms": ["消化道出血", "上消化道出血", "胃腸道出血", "出血", "蜘蛛膜下出血"],
+        "aliases": ["bleeding", "gi bleeding", "upper gi bleeding", "ugib", "hemorrhage", "haemorrhage", "subarachnoid hemorrhage"]
+    },
+    "prophylaxis_prevention": {
+        "en": "Disease / Ulcer / Bleeding Prevention & Prophylaxis",
+        "tc_terms": ["預防", "復發預防", "壓力性潰瘍"],
+        "aliases": ["prevention", "prophylaxis", "prevent", "stress ulcer"]
+    },
+    "h_pylori": {
+        "en": "Helicobacter pylori Infection",
+        "tc_terms": ["幽門螺旋桿菌"],
+        "aliases": ["h. pylori", "h pylori", "helicobacter pylori"]
+    },
+    "nausea_vomiting": {
+        "en": "Nausea and Vomiting (CINV / Antiemetic)",
+        "tc_terms": ["止吐", "噁心", "嘔吐"],
+        "aliases": ["nausea", "vomiting", "emesis", "antiemetic", "cinv"]
+    },
+    "diarrhea": {
+        "en": "Diarrhea",
+        "tc_terms": ["腹瀉", "止瀉"],
+        "aliases": ["diarrhea", "diarrhoea", "antidiarrheal"]
+    },
+    "constipation": {
+        "en": "Constipation",
+        "tc_terms": ["便祕", "便秘", "瀉劑"],
+        "aliases": ["constipation", "laxative"]
+    },
+    "pancreatitis_short_bowel": {
+        "en": "Pancreatitis / Pancreatic Insufficiency / Short Bowel Syndrome",
+        "tc_terms": ["胰臟炎", "慢性胰臟炎", "嚴重胰臟炎", "胰液分泌不全", "囊狀性纖維化", "短腸症"],
+        "aliases": ["pancreatitis", "pancreatic insufficiency", "cystic fibrosis", "short bowel syndrome"]
     },
 
     # Oncology (癌症與腫瘤)
@@ -124,7 +159,7 @@ DISEASE_DATABASE = {
     },
     "gist": {
         "en": "Gastrointestinal Stromal Tumor (GIST)",
-        "tc_terms": ["胃腸基質瘤", "胃腸道基質腫瘤"],
+        "tc_terms": ["胃腸基質瘤", "胃腸道基質腫瘤", "腸胃道間質瘤"],
         "aliases": ["gastrointestinal stromal tumor", "gist"]
     },
     "nasopharyngeal_carcinoma": {
@@ -183,9 +218,44 @@ DISEASE_DATABASE = {
         "aliases": ["leukemia", "aml", "cml", "all", "cll"]
     },
     "lymphoma": {
-        "en": "Lymphoma",
-        "tc_terms": ["淋巴腫瘤", "淋巴癌", "霍奇金淋巴瘤", "非霍奇金淋巴瘤"],
-        "aliases": ["lymphoma"]
+        "en": "Lymphoma (NHL / DLBCL / PTCL / HL)",
+        "tc_terms": ["淋巴瘤", "淋巴腫瘤", "淋巴癌", "霍奇金淋巴瘤", "非霍奇金淋巴瘤", "瀰漫性大B細胞淋巴瘤", "周邊T細胞淋巴瘤"],
+        "aliases": ["lymphoma", "dlbcl", "ptcl", "nhl", "hodgkin lymphoma"]
+    },
+    "gastric_esophageal_cancer": {
+        "en": "Gastric / Esophageal Cancer",
+        "tc_terms": ["胃癌", "胃食道接合處腺癌", "胃食道接合處", "食道癌", "食道鱗狀細胞癌"],
+        "aliases": ["gastric cancer", "stomach cancer", "esophageal cancer", "gej cancer"]
+    },
+    "cholangiocarcinoma": {
+        "en": "Cholangiocarcinoma / Biliary Tract Cancer",
+        "tc_terms": ["膽管癌", "肝內膽管癌", "膽道癌"],
+        "aliases": ["cholangiocarcinoma", "biliary tract cancer", "bile duct cancer"]
+    },
+    "glioblastoma_brain_tumor": {
+        "en": "Glioblastoma / Malignant Glioma / Brain Tumor",
+        "tc_terms": ["多形神經膠母細胞瘤", "神經膠母細胞瘤", "星狀細胞瘤", "惡性神經膠質瘤", "腦瘤"],
+        "aliases": ["glioblastoma", "gbm", "astrocytoma", "glioma", "brain tumor"]
+    },
+    "endometrial_cervical_cancer": {
+        "en": "Endometrial / Cervical Cancer",
+        "tc_terms": ["子宮內膜癌", "子宮頸癌"],
+        "aliases": ["endometrial cancer", "uterine cancer", "cervical cancer"]
+    },
+    "neuroblastoma": {
+        "en": "Neuroblastoma",
+        "tc_terms": ["神經母細胞瘤"],
+        "aliases": ["neuroblastoma"]
+    },
+    "neurofibromatosis": {
+        "en": "Neurofibromatosis (NF1)",
+        "tc_terms": ["神經纖維瘤", "叢狀神經纖維瘤"],
+        "aliases": ["neurofibromatosis", "nf1", "plexiform neurofibroma"]
+    },
+    "sarcoma": {
+        "en": "Soft Tissue Sarcoma / Osteosarcoma",
+        "tc_terms": ["肉瘤", "軟組織肉瘤", "骨肉瘤"],
+        "aliases": ["sarcoma", "soft tissue sarcoma", "osteosarcoma"]
     },
 
     # Dermatology & Infections (皮膚與真菌感染)
@@ -200,9 +270,9 @@ DISEASE_DATABASE = {
         "aliases": ["tinea", "ringworm", "tinea corporis", "tinea cruris", "tinea capitis", "tinea pedis"]
     },
     "fungal_infection": {
-        "en": "Fungal Infection / Mycosis",
-        "tc_terms": ["黴菌感染", "真菌感染", "念珠菌感染", "念珠性陰道炎", "汗斑"],
-        "aliases": ["fungal infection", "mycosis", "candidiasis", "tinea versicolor"]
+        "en": "Fungal Infection / Mycosis (Aspergillosis / Mucormycosis / Candidiasis)",
+        "tc_terms": ["黴菌感染", "真菌感染", "念珠菌感染", "念珠性陰道炎", "汗斑", "麴菌症", "白黴菌病", "隱球菌", "Cryptococcus"],
+        "aliases": ["fungal infection", "mycosis", "candidiasis", "tinea versicolor", "aspergillosis", "mucormycosis", "cryptococcus"]
     },
     "hidradenitis_suppurativa": {
         "en": "Hidradenitis Suppurativa",
@@ -237,9 +307,9 @@ DISEASE_DATABASE = {
         "aliases": ["systemic lupus erythematosus", "sle", "lupus"]
     },
     "ra": {
-        "en": "Rheumatoid Arthritis",
-        "tc_terms": ["類風濕性關節炎"],
-        "aliases": ["rheumatoid arthritis"]
+        "en": "Rheumatoid Arthritis / Juvenile Idiopathic Arthritis (JIA)",
+        "tc_terms": ["類風濕性關節炎", "類風濕關節炎", "幼年型慢性關節炎", "幼年型特異性關節炎"],
+        "aliases": ["rheumatoid arthritis", "jia", "juvenile idiopathic arthritis", "juvenile arthritis"]
     },
     "ankylosing_spondylitis": {
         "en": "Ankylosing Spondylitis",
@@ -401,6 +471,171 @@ DISEASE_DATABASE = {
         "en": "Immune Thrombocytopenia (ITP)",
         "tc_terms": ["特發性血小板減少性紫斑症", "血小板減少症"],
         "aliases": ["immune thrombocytopenia", "itp"]
+    },
+    "pah": {
+        "en": "Pulmonary Arterial Hypertension (PAH)",
+        "tc_terms": ["肺動脈高血壓", "肺動脈高壓", "肺高壓"],
+        "aliases": ["pulmonary arterial hypertension", "pulmonary hypertension", "pah"]
+    },
+    "pad": {
+        "en": "Peripheral Arterial Disease (PAD)",
+        "tc_terms": ["周邊動脈疾病", "周邊血管疾病", "間歇性跛行"],
+        "aliases": ["peripheral arterial disease", "peripheral vascular disease", "pad", "pvd", "intermittent claudication", "claudication"]
+    },
+    "cardiomyopathy": {
+        "en": "Hypertrophic Cardiomyopathy (HCM)",
+        "tc_terms": ["肥厚性心肌病變", "心肌病變", "心室肥大"],
+        "aliases": ["hypertrophic cardiomyopathy", "cardiomyopathy", "hcm"]
+    },
+    "neutropenia": {
+        "en": "Neutropenia / Leukopenia",
+        "tc_terms": ["嗜中性白血球低下", "嗜中性白血球", "白血球低下", "骨髓抑制"],
+        "aliases": ["neutropenia", "febrile neutropenia", "leukopenia", "myelosuppression"]
+    },
+    "mpn_myelofibrosis": {
+        "en": "Myelofibrosis / Essential Thrombocythemia / Polycythemia Vera",
+        "tc_terms": ["骨髓纖維化", "原發性血小板過多症", "血小板過多症", "真性紅血球增多症"],
+        "aliases": ["myelofibrosis", "essential thrombocythemia", "thrombocythemia", "polycythemia vera"]
+    },
+    "pnh": {
+        "en": "Paroxysmal Nocturnal Hemoglobinuria (PNH)",
+        "tc_terms": ["陣發性夜間血紅素尿症"],
+        "aliases": ["paroxysmal nocturnal hemoglobinuria", "pnh"]
+    },
+    "hae": {
+        "en": "Hereditary Angioedema (HAE)",
+        "tc_terms": ["遺傳性血管性水腫"],
+        "aliases": ["hereditary angioedema", "hae", "angioedema"]
+    },
+    "pneumonia_respiratory_infection": {
+        "en": "Pneumonia / Respiratory & ENT Infection",
+        "tc_terms": ["肺炎", "社區性肺炎", "院內感染型肺炎", "急性下呼吸道感染", "呼吸道感染", "急性化膿性中耳炎", "急性化膿性鼻竇炎", "中耳炎", "外耳炎", "鼻竇炎"],
+        "aliases": ["pneumonia", "community-acquired pneumonia", "nosocomial pneumonia", "respiratory tract infection", "otitis media", "otitis externa", "sinusitis"]
+    },
+    "uti_intraabdominal_sepsis": {
+        "en": "UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection",
+        "tc_terms": ["泌尿道感染", "複雜性泌尿道感染", "腎盂腎炎", "腹腔內感染", "複雜性腹內感染", "敗血症", "菌血症", "骨盆感染", "皮膚組織感染", "細菌感染", "多重抗藥性", "革蘭氏陰性菌", "革蘭氏陽性菌", "淋病尿道炎", "軟性下疳"],
+        "aliases": ["urinary tract infection", "uti", "pyelonephritis", "intra-abdominal infection", "sepsis", "bacteremia", "bacterial infection", "mrsa", "gonorrhea"]
+    },
+    "c_difficile": {
+        "en": "Clostridioides difficile Infection / Pseudomembranous Colitis",
+        "tc_terms": ["困難梭狀桿菌", "梭狀桿菌", "假膜性結腸炎", "抗生素引起之腸炎"],
+        "aliases": ["c. difficile", "clostridioides difficile", "clostridium difficile", "pseudomembranous colitis", "cdad"]
+    },
+    "herpes_cmv": {
+        "en": "Herpes Simplex / Herpes Zoster / CMV Infection",
+        "tc_terms": ["疱疹", "單純性疱疹", "帶狀疱疹", "巨細胞病毒"],
+        "aliases": ["herpes", "hsv", "herpes simplex", "shingles", "herpes zoster", "zoster", "cmv", "cytomegalovirus"]
+    },
+    "hiv_aids": {
+        "en": "HIV / AIDS",
+        "tc_terms": ["人類免疫缺乏病毒", "後天免疫缺乏症候群", "愛滋病"],
+        "aliases": ["hiv", "aids", "human immunodeficiency virus"]
+    },
+    "covid19_influenza": {
+        "en": "COVID-19 / Influenza",
+        "tc_terms": ["新型冠狀病毒", "新型冠狀病毒", "流感", "流行性感冒", "狂犬病", "破傷風"],
+        "aliases": ["covid-19", "covid", "sars-cov-2", "coronavirus", "influenza", "flu", "rabies", "tetanus"]
+    },
+    "tuberculosis": {
+        "en": "Tuberculosis (TB)",
+        "tc_terms": ["結核病", "肺結核"],
+        "aliases": ["tuberculosis", "tb"]
+    },
+    "pain_neuralgia": {
+        "en": "Chronic / Breakthrough / Neuropathic Pain",
+        "tc_terms": ["疼痛", "慢性頑固性疼痛", "突發性疼痛", "神經痛", "帶狀疱疹皮膚病灶後神經痛", "纖維肌痛症", "口腔潰爛"],
+        "aliases": ["pain", "chronic pain", "breakthrough pain", "neuropathic pain", "neuralgia", "postherpetic neuralgia", "phn", "fibromyalgia", "mucositis"]
+    },
+    "insomnia_narcolepsy": {
+        "en": "Insomnia / Sleep Disorder / Narcolepsy",
+        "tc_terms": ["失眠", "睡眠障礙", "安眠藥物", "猝睡症"],
+        "aliases": ["insomnia", "sleep disorder", "narcolepsy"]
+    },
+    "spasticity_als_sma": {
+        "en": "Spasticity / ALS / Spinal Muscular Atrophy (SMA)",
+        "tc_terms": ["痙攣", "肌肉痙攣", "運動神經元疾病", "肌萎縮性脊髓側索硬化症", "脊髓性肌肉萎縮症", "SMN1"],
+        "aliases": ["spasticity", "muscle spasm", "als", "amyotrophic lateral sclerosis", "motor neuron disease", "mnd", "sma", "spinal muscular atrophy"]
+    },
+    "adhd": {
+        "en": "Attention-Deficit / Hyperactivity Disorder (ADHD)",
+        "tc_terms": ["注意力不足過動症", "過動症"],
+        "aliases": ["adhd", "attention deficit hyperactivity disorder"]
+    },
+    "sedation_anesthesia": {
+        "en": "ICU Sedation / Anesthesia / Mechanical Ventilation",
+        "tc_terms": ["鎮靜", "全身麻醉", "手術麻醉", "人工呼吸器", "神經肌肉阻斷劑", "局部麻醉"],
+        "aliases": ["sedation", "anesthesia", "anaesthesia", "mechanical ventilation", "ventilator"]
+    },
+    "sjogren": {
+        "en": "Sjögren's Syndrome (Xerostomia)",
+        "tc_terms": ["修格蘭氏症候群", "口乾燥症", "口腔乾燥"],
+        "aliases": ["sjogren", "sjogren's syndrome", "xerostomia", "dry mouth"]
+    },
+    "nmosd": {
+        "en": "Neuromyelitis Optica Spectrum Disorder (NMOSD)",
+        "tc_terms": ["泛視神經脊髓炎"],
+        "aliases": ["neuromyelitis optica", "nmosd"]
+    },
+    "organ_transplant": {
+        "en": "Organ / Stem Cell Transplantation",
+        "tc_terms": ["腎臟移植", "肝臟移植", "心臟移植", "肝、腎移植", "骨髓移植", "造血幹細胞移植", "器官移植"],
+        "aliases": ["organ transplant", "kidney transplant", "renal transplant", "liver transplant", "heart transplant", "stem cell transplant", "hsct", "bone marrow transplant"]
+    },
+    "kawasaki": {
+        "en": "Kawasaki Disease",
+        "tc_terms": ["川崎病", "川崎氏症"],
+        "aliases": ["kawasaki disease", "kawasaki"]
+    },
+    "ppp": {
+        "en": "Palmoplantar Pustulosis (PPP) / Leprosy ENL",
+        "tc_terms": ["掌蹠膿皰症", "痲瘋性結節性紅斑"],
+        "aliases": ["palmoplantar pustulosis", "ppp", "erythema nodosum leprosum"]
+    },
+    "bph_oab_urology": {
+        "en": "BPH / Overactive Bladder / Interstitial Cystitis / Urolithiasis",
+        "tc_terms": ["前列腺增生", "攝護腺肥大", "良性前列腺肥大", "頻尿", "急尿", "尿失禁", "膀胱過動症", "間質性膀胱炎", "泌尿道結石", "腎小管性酸毒症", "勃起機能障礙"],
+        "aliases": ["bph", "benign prostatic hyperplasia", "prostate hyperplasia", "overactive bladder", "oab", "urinary incontinence", "interstitial cystitis", "urolithiasis", "kidney stones", "renal tubular acidosis"]
+    },
+    "endometriosis_gynecology": {
+        "en": "Endometriosis / Uterine Fibroids / Hyperprolactinemia",
+        "tc_terms": ["子宮內膜異位", "子宮內膜異位症", "子宮肌瘤", "高乳促素血症", "泌乳", "性早熟", "引產", "纖維性囊腫乳房"],
+        "aliases": ["endometriosis", "uterine fibroids", "hyperprolactinemia", "precocious puberty", "labor induction"]
+    },
+    "endocrine_growth_bone": {
+        "en": "Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia",
+        "tc_terms": ["生長激素缺乏症", "透納氏症候群", "努南氏症候群", "庫欣氏病", "庫欣氏症候群", "高血鈣", "高血鈣症", "變形性骨炎", "異位性骨化症", "軟骨發育不全症", "低磷酸鹽佝僂症", "IGF-I"],
+        "aliases": ["growth hormone deficiency", "turner syndrome", "noonan syndrome", "cushing's disease", "cushing syndrome", "hypercalcemia", "paget's disease", "paget disease", "achondroplasia", "xlh"]
+    },
+    "rare_metabolic": {
+        "en": "Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson, Porphyria)",
+        "tc_terms": ["黏多醣症", "高雪氏症", "龐貝氏症", "法布瑞氏症", "威爾森氏", "紫質症", "急性肝紫質症", "高血氨", "血氨症", "尿素循環代謝障礙", "進行性家族性肝內膽汁滯留症", "阿拉吉歐症候群", "芳香族L-胺基酸類脫羧基酶缺乏症", "胱胺酸血症", "膽酸合成障礙", "代謝性酸中毒", "先天性代謝異常", "低血磷", "靜脈營養", "惡病質", "甲醇中毒", "藥物中毒"],
+        "aliases": ["mucopolysaccharidosis", "mps", "gaucher disease", "gaucher", "pompe disease", "pompe", "fabry disease", "fabry", "wilson's disease", "wilson disease", "porphyria", "hyperammonemia", "urea cycle disorder", "pfic", "alagille syndrome", "aadc deficiency", "cystinosis", "metabolic acidosis", "parenteral nutrition", "cachexia"]
+    },
+    "glaucoma": {
+        "en": "Glaucoma / Ocular Hypertension",
+        "tc_terms": ["青光眼", "高眼壓", "降眼壓"],
+        "aliases": ["glaucoma", "ocular hypertension", "intraocular pressure"]
+    },
+    "dry_eye_cornea": {
+        "en": "Dry Eye Syndrome / Keratitis / Conjunctivitis",
+        "tc_terms": ["乾眼症", "人工淚液", "角膜炎", "角膜潰瘍", "結膜炎", "眼瞼炎", "白內障"],
+        "aliases": ["dry eye", "artificial tears", "keratitis", "corneal ulcer", "conjunctivitis", "blepharitis", "cataract"]
+    },
+    "retinal_macular_uveitis": {
+        "en": "Macular Degeneration (AMD / DME) / Retinopathy / Uveitis",
+        "tc_terms": ["黃斑部病變", "多足型脈絡膜血管病變", "視網膜病變", "早產兒視網膜病變", "視網膜靜脈阻塞", "雷伯氏遺傳視神經病變", "急性視網膜壞死症", "葡萄膜炎"],
+        "aliases": ["macular degeneration", "amd", "wamd", "diabetic macular edema", "dme", "retinal vein occlusion", "rvo", "pcv", "retinopathy of prematurity", "rop", "lhon", "uveitis", "retinitis"]
+    },
+    "dermatology_other": {
+        "en": "Acne / Scabies / Genital Warts / Actinic Keratosis",
+        "tc_terms": ["痤瘡", "青春痘", "疥瘡", "生殖器疣", "光化性角化症", "毛囊炎", "尋常性鬚瘡", "慢性腿部潰瘍", "潰瘍傷口"],
+        "aliases": ["acne", "isotretinoin", "scabies", "genital warts", "condyloma", "actinic keratosis", "folliculitis", "leg ulcer"]
+    },
+    "rds_neonatal": {
+        "en": "Neonatal Respiratory Distress Syndrome (RDS)",
+        "tc_terms": ["呼吸窘迫症候群"],
+        "aliases": ["respiratory distress syndrome", "rds", "surfactant"]
     }
 }
 

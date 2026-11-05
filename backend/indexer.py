@@ -354,16 +354,23 @@ class NHIIndexer:
                 disease_expansions.extend(self.disease_engine.expand_query('hbv'))
 
         seen_disease_keys = set()
+        unique_disease_groups = []
         for de in disease_expansions:
             if de["disease_key"] not in seen_disease_keys:
                 seen_disease_keys.add(de["disease_key"])
                 expanded_terms.add(de["english_name"].lower())
                 matched_disease_names.add(de["english_name"].lower())
+                grp_terms = []
                 for alias in de["aliases"]:
                     expanded_terms.add(alias.lower())
+                    if len(alias) >= 3:
+                        grp_terms.append(alias.lower())
                 for tc in de["chinese_terms"]:
                     expanded_terms.add(tc.lower())
                     matched_disease_names.add(tc.lower())
+                    grp_terms.append(tc.lower())
+                if grp_terms:
+                    unique_disease_groups.append(grp_terms)
 
         primary_regulations = set([exp["primary_regulation"] for exp in atc_expansions if exp.get("primary_regulation")])
 
@@ -391,9 +398,9 @@ class NHIIndexer:
             if is_pure_section_query:
                 q_sec = query_clean.strip('.').lower()
                 if sec_clean == q_sec:
-                    results.append((reg, 10000))
+                    results.append((reg, 10000, 0))
                 elif sec_clean.startswith(q_sec + '.'):
-                    results.append((reg, 5000))
+                    results.append((reg, 5000, 0))
                 continue
 
             # Exact section number check
@@ -442,6 +449,14 @@ class NHIIndexer:
                 occ = body_lower.count(mdn)
                 if occ > 0:
                     score += min(occ, 8) * 35
+
+            matched_disease_group_count = 0
+            if unique_disease_groups:
+                for grp in unique_disease_groups:
+                    if any(check_match(gt, full_text) for gt in grp):
+                        matched_disease_group_count += 1
+                if len(unique_disease_groups) >= 2 and matched_disease_group_count >= 2:
+                    score += matched_disease_group_count * 700
 
             for mc in matched_class_names:
                 if any(mc in rc or rc in mc for rc in reg_classes):
@@ -520,9 +535,14 @@ class NHIIndexer:
                             score += 5
 
             if score >= min_score_threshold:
-                results.append((reg, score))
+                results.append((reg, score, matched_disease_group_count))
 
-        return results
+        if len(unique_disease_groups) >= 2 and not atc_expansions and results:
+            max_grp = max(r[2] for r in results)
+            if max_grp >= 2:
+                results = [r for r in results if r[2] >= 2]
+
+        return [(r[0], r[1]) for r in results]
 
 
 if __name__ == "__main__":

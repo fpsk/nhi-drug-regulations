@@ -30,7 +30,9 @@ regulations:
     - Amino
     - Glucose
   conditions_of_payment:
-    indications: []
+    indications:
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria: []
     summary: 規範【. Fat emulsion：或含Fat emulsion之靜脈營養輸液(如含glucose、lipid、amino acid及electrolytes三合一靜脈營養輸液)：限】之健保給付條件。
       規範重點：1.嚴重燒傷病人，為靜脈營養補充。
@@ -67,7 +69,9 @@ regulations:
     ingredients:
     - Sodium Glycerophosphate (如 Glycophos)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria: []
     summary: 規範【. Sodium glycerophosphate(如Glycophos)：】之健保給付條件。 規範重點：1.限用於接受靜脈營養補充，且臨床上有低血磷及相關症狀的病人使用。
     clinical_rules:
@@ -99,7 +103,8 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
     ingredients:
     - Phenytoin
     - Thiamine
@@ -112,7 +117,13 @@ regulations:
     - Megaloblastic Anemia (Vitamin B12 / Folic Acid Deficiency) (巨球性貧血)
     - Thiamine Deficiency / Malabsorption Syndrome (Vitamin B1) (維生素B1缺乏症)
     - Angular Cheilitis (Vitamin B2 Deficiency) (口角炎)
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
+    - Nausea and Vomiting (CINV / Antiemetic) (止吐)
+    - Pancreatitis / Pancreatic Insufficiency / Short Bowel Syndrome (胰臟炎)
     - Anemia (貧血)
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria: []
     summary: 適用於【Scurvy、Rickets / Osteomalacia、Night Blindness / Xerophthalmia】之健保給付。
     clinical_rules:
@@ -205,7 +216,8 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
     ingredients:
     - Mecobalamin
     - Phenytoin
@@ -219,8 +231,14 @@ regulations:
     - Megaloblastic Anemia (Vitamin B12 / Folic Acid Deficiency) (巨球性貧血)
     - Thiamine Deficiency / Malabsorption Syndrome (Vitamin B1) (維生素B1缺乏症)
     - Angular Cheilitis (Vitamin B2 Deficiency) (口角炎)
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
+    - Nausea and Vomiting (CINV / Antiemetic) (止吐)
+    - Pancreatitis / Pancreatic Insufficiency / Short Bowel Syndrome (胰臟炎)
     - Diabetes Mellitus (糖尿病)
     - Anemia (貧血)
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria: []
     summary: 適用於【Scurvy、Rickets / Osteomalacia、Night Blindness / Xerophthalmia】之健保給付。
       規範重點：限符合以下條件之一使用： 1.糖尿病併發周邊神經病變並具有臨床神經學病徵 (須於處方上敘明)。
@@ -324,7 +342,8 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
     ingredients:
     - Alfacalcidol
     - Calcitriol
@@ -339,9 +358,15 @@ regulations:
     - Megaloblastic Anemia (Vitamin B12 / Folic Acid Deficiency) (巨球性貧血)
     - Thiamine Deficiency / Malabsorption Syndrome (Vitamin B1) (維生素B1缺乏症)
     - Angular Cheilitis (Vitamin B2 Deficiency) (口角炎)
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
+    - Nausea and Vomiting (CINV / Antiemetic) (止吐)
+    - Pancreatitis / Pancreatic Insufficiency / Short Bowel Syndrome (胰臟炎)
     - Chronic Kidney Disease (慢性腎臟病)
     - Hypoparathyroidism (副甲狀腺機能低下症)
     - Anemia (貧血)
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria:
     - Ca_x_P
     - Calcium
@@ -896,12 +921,19 @@ regulations:
   medications:
     drug_classes:
     - 肝臟治療劑 / 肝庇護劑 (保肝劑)
-    ingredients: []
+    ingredients:
+    - Glycyrrhizin (甘草甜素)
+    - L-Ornithine L-Aspartate (L-鳥氨酸-L-門冬氨酸)
+    - Silybin (水飛薊賓)
+    - Silymarin (水飛薊素)
+    - Ursodeoxycholic Acid (熊去氧膽酸)
   conditions_of_payment:
     indications:
     - Hepatoprotectants / Liver Protective Agents (肝庇護劑)
     - Liver Cirrhosis (肝硬化)
     - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria: []
     summary: 適用於【Hepatoprotectants / Liver Protective Agents、Liver Cirrhosis、Hepatitis
       B / Hepatitis C】之健保給付。 規範重點：1.肝硬化、肝炎患者，限下列情形之一者，得由醫師依肝功能和影像檢查或病理切片檢查確實診斷後，視病情需要處方之。
@@ -1092,8 +1124,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Albumin
     - Amino
+    - Albumin
     - Nitrogen
     - Protein
   conditions_of_payment:
@@ -1230,7 +1262,9 @@ regulations:
     drug_classes: []
     ingredients: []
   conditions_of_payment:
-    indications: []
+    indications:
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria: []
     summary: 規範【. Sodium bicarbonate成分之口服製劑給付規定：】之健保給付條件。
     clinical_rules:
@@ -1267,7 +1301,9 @@ regulations:
     ingredients:
     - Idursulfase (如 Elaprase)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria:
     - 白血球
     summary: 規範【. Idursulfase(如Elaprase)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
@@ -1365,14 +1401,17 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Biomarkers (如 chitotriosidase或lysoGL1)
     - Imiglucerase (如 Cerezyme inj.)
     - Taliglucerase Alfa (如 Elelyso注射劑)
     - Velaglucerase Alfa (如 VPRIV凍晶注射劑)
+    - Biomarkers (如 chitotriosidase或lysoGL1)
   conditions_of_payment:
     indications:
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Anemia (貧血)
     - Immune Thrombocytopenia (ITP) (特發性血小板減少性紫斑症)
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria:
     - 血小板
     summary: 適用於【Anemia、Immune Thrombocytopenia】之健保給付。 主要條件包含：使用前須經事前審查核准。
@@ -1456,7 +1495,10 @@ regulations:
     ingredients:
     - Laronidase (如 Aldurazyme)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Organ / Stem Cell Transplantation (腎臟移植)
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria: []
     summary: 規範【. Laronidase (如Aldurazyme)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -1553,7 +1595,9 @@ regulations:
     ingredients:
     - Miglustat (如 Zavesca)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria: []
     summary: 規範【. Miglustat（如Zavesca）】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -1613,7 +1657,9 @@ regulations:
     ingredients:
     - Sodium Benzoate (如 Ammonul inj)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria: []
     summary: 規範【. Sodium phenylacetate＋Sodium benzoate（如Ammonul inj）：】之健保給付條件。 規範重點：限用於先天性尿素循環代謝障礙之急性血氨症及伴隨腦部病變。
     clinical_rules:
@@ -1650,12 +1696,17 @@ regulations:
     - Pegunigalsidase Alfa (如 Elfabrio)
   conditions_of_payment:
     indications:
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Heart Failure (心臟衰竭)
     - Stroke / Cerebrovascular Accident (腦中風)
     - Myocardial Infarction (心肌梗塞)
     - Hypertension (高血壓)
     - Alzheimer's Disease / Dementia (阿茲海默症)
     - Diabetes Mellitus (糖尿病)
+    - Hypertrophic Cardiomyopathy (HCM) (肥厚性心肌病變)
+    - Chronic / Breakthrough / Neuropathic Pain (疼痛)
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria:
     - eGFR
     - 血壓
@@ -1971,7 +2022,9 @@ regulations:
     ingredients:
     - Carglumic Acid (如 Carbaglu Tablets)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria: []
     summary: 規範【. Carglumic acid (如Carbaglu Tablets)：】之健保給付條件。 規範重點：1.限下列病例使用： (1)N-乙醯麩胺酸合成酶缺乏症(以下稱NAGS
       缺乏症)。
@@ -2037,7 +2090,9 @@ regulations:
     ingredients:
     - Galsulfase (如 Naglazyme)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria:
     - 白血球
     summary: 規範【. Galsulfase (如Naglazyme)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
@@ -2134,7 +2189,9 @@ regulations:
     ingredients:
     - Elosulfase Alfa (如 Vimizim)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria:
     - 白血球
     summary: 規範【. Elosulfase alfa (如Vimizim) Elosulfase alfa (如Vimizim)】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
@@ -2214,7 +2271,9 @@ regulations:
     ingredients:
     - Eliglustat Capsules (如 Cerdelga)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria: []
     summary: 規範【. Eliglustat Capsules (如Cerdelga )】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -2274,7 +2333,9 @@ regulations:
     - Oxitriptan
     - Phenylalanine
   conditions_of_payment:
-    indications: []
+    indications:
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria:
     - 血糖
     - Blood Glucose
@@ -2633,7 +2694,10 @@ regulations:
     - Alpha-Glucosidase (如 Myozyme)
     - Avalglucosidase
   conditions_of_payment:
-    indications: []
+    indications:
+    - Hypertrophic Cardiomyopathy (HCM) (肥厚性心肌病變)
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria: []
     summary: 規範【. alpha-glucosidase (如Myozyme)】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -2784,7 +2848,9 @@ regulations:
     ingredients:
     - Chenodeoxycholic
   conditions_of_payment:
-    indications: []
+    indications:
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria: []
     summary: 規範【. Chenodeoxycholic acid】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -2831,7 +2897,10 @@ regulations:
     ingredients:
     - Alfa-Avalglucosidase (如 Nexviazyme)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Hypertrophic Cardiomyopathy (HCM) (肥厚性心肌病變)
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria: []
     summary: 規範【. Alfa-avalglucosidase（如 Nexviazyme）】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -2894,7 +2963,8 @@ regulations:
     ingredients:
     - H2O (如 PhosAdd Tab.)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria: []
     summary: 規範【. KH2PO4+Na2HPO4+NaH2PO4．H2O（如PhosAdd Tab.）：】之健保給付條件。 規範重點：限用於確診為主管機關認定之性聯遺傳型低磷酸鹽佝僂症患者。
     clinical_rules:
@@ -2922,17 +2992,22 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Agalsidase
     - Migalastat Hydrochloride (如 Galafold)
+    - Agalsidase
     - Pegunigalsidase
   conditions_of_payment:
     indications:
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Heart Failure (心臟衰竭)
     - Stroke / Cerebrovascular Accident (腦中風)
     - Myocardial Infarction (心肌梗塞)
     - Hypertension (高血壓)
     - Alzheimer's Disease / Dementia (阿茲海默症)
     - Diabetes Mellitus (糖尿病)
+    - Hypertrophic Cardiomyopathy (HCM) (肥厚性心肌病變)
+    - Chronic / Breakthrough / Neuropathic Pain (疼痛)
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria:
     - eGFR
     - 血壓
@@ -3346,6 +3421,8 @@ regulations:
   conditions_of_payment:
     indications:
     - Rickets / Osteomalacia (Vitamin D Deficiency) (佝僂病)
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria:
     - Scr
     summary: 適用於【Rickets / Osteomalacia】之健保給付。 主要條件包含：使用前須經事前審查核准。
@@ -3413,13 +3490,15 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Glycerol Phenylbutyrate (如 Ravicti)
     - Arginine
     - Citrulline
-    - Glycerol Phenylbutyrate (如 Ravicti)
     - Ornithine
   conditions_of_payment:
     indications:
     - Hepatoprotectants / Liver Protective Agents (肝庇護劑)
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria: []
     summary: 適用於【Hepatoprotectants / Liver Protective Agents】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -3468,7 +3547,11 @@ regulations:
     ingredients:
     - Givosiran (如 Givlaari)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
+    - UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection (泌尿道感染)
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria:
     - Scr
     summary: 規範【. Givosiran(如Givlaari)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
@@ -3567,7 +3650,10 @@ regulations:
     - Maralixibat (馬拉利西巴)
     - Maralixibat Chloride (如 Livmarli)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Organ / Stem Cell Transplantation (腎臟移植)
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria: []
     summary: 規範【. Maralixibat chloride（如 Livmarli）：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:

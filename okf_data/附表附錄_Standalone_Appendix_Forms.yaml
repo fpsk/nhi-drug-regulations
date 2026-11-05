@@ -36,7 +36,8 @@ regulations:
     - Renal Cell Carcinoma (RCC) (腎細胞癌)
     - Multiple Myeloma (多發性骨髓瘤)
     - Leukemia (白血病)
-    - Lymphoma (淋巴腫瘤)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
+    - Soft Tissue Sarcoma / Osteosarcoma (肉瘤)
     laboratory_criteria: []
     summary: 適用於【Hepatitis B / Hepatitis C、Renal Cell Carcinoma、Multiple Myeloma】之健保給付。
     clinical_rules:
@@ -109,13 +110,14 @@ regulations:
   effective_dates:
   - (109/11/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients:
-    - Prednisolone
     - Rituximab
+    - Prednisolone
   conditions_of_payment:
     indications:
-    - Rheumatoid Arthritis (類風濕性關節炎)
+    - Rheumatoid Arthritis / Juvenile Idiopathic Arthritis (JIA) (類風濕性關節炎)
     laboratory_criteria: []
     summary: 適用於【Rheumatoid Arthritis】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -175,11 +177,11 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Cobalamin
     - Crovalimab
     - Eculizumab
-    - Liver
     - Ravulizumab
+    - Cobalamin
+    - Liver
   conditions_of_payment:
     indications:
     - Heart Failure (心臟衰竭)
@@ -188,6 +190,9 @@ regulations:
     - Hypertension (高血壓)
     - Chronic Kidney Disease (慢性腎臟病)
     - Anemia (貧血)
+    - Paroxysmal Nocturnal Hemoglobinuria (PNH) (陣發性夜間血紅素尿症)
+    - Pneumonia / Respiratory & ENT Infection (肺炎)
+    - COVID-19 / Influenza (新型冠狀病毒)
     laboratory_criteria:
     - Scr
     - 血壓
@@ -356,22 +361,25 @@ regulations:
   - (114/2/1)
   - (114/2/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients:
-    - Azathioprine
     - Belimumab
+    - Azathioprine
     - Cyclophosphamide
     - Hydroxychloroquine
     - Methotrexate
     - Methylprednisolone
     - Mycophenolate
     - Mycophenolic
+    - Prednisolone
   conditions_of_payment:
     indications:
     - Systemic Lupus Erythematosus (紅斑性狼瘡)
     - Vasculitis / Dermatomyositis (血管炎)
     - Thrombosis / Pulmonary Embolism (血栓)
     - Epilepsy (癲癇)
+    - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     laboratory_criteria:
     - CRP
     - ESR
@@ -1426,6 +1434,8 @@ regulations:
     indications:
     - Liver Cirrhosis (肝硬化)
     - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
+    - Pancreatitis / Pancreatic Insufficiency / Short Bowel Syndrome (胰臟炎)
     - Heart Failure (心臟衰竭)
     - Stroke / Cerebrovascular Accident (腦中風)
     - Myocardial Infarction (心肌梗塞)
@@ -1433,6 +1443,7 @@ regulations:
     - Hypertension (高血壓)
     - Epilepsy (癲癇)
     - Diabetes Mellitus (糖尿病)
+    - Macular Degeneration (AMD / DME) / Retinopathy / Uveitis (黃斑部病變)
     laboratory_criteria:
     - 血糖
     - 血壓
@@ -2404,7 +2415,8 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
     ingredients: []
   conditions_of_payment:
     indications: []
@@ -2499,7 +2511,8 @@ regulations:
     drug_classes: []
     ingredients: []
   conditions_of_payment:
-    indications: []
+    indications:
+    - Kawasaki Disease (川崎病)
     laboratory_criteria:
     - 血小板
     summary: 規範【附表六 全民健康保險使用IntravenousImmuneGlobulin(IVIG)】之健保給付條件。
@@ -2570,13 +2583,15 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
     ingredients:
+    - Pazopanib
     - Acitretin
     - Isotretinoin
-    - Pazopanib
   conditions_of_payment:
-    indications: []
+    indications:
+    - Acne / Scabies / Genital Warts / Actinic Keratosis (痤瘡)
     laboratory_criteria: []
     summary: "規範【附表九之十三：全民健康保險使用抗癌藥品pazopanib申請表】之健保給付條件。 規範重點：病歷號碼： 茲證明本人\t\t\t\t\
       \t年齡\t\t出生日期\t\t年\t\t月\t\t日 身分證號碼: 地址: 確認經由\t\t\t\t\t醫院\t\t\t\t\t醫師詳細告知服用 isotretinoin口服製劑之主要可能副作用和處置方式。"
@@ -2616,10 +2631,12 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients: []
   conditions_of_payment:
-    indications: []
+    indications:
+    - Rheumatoid Arthritis / Juvenile Idiopathic Arthritis (JIA) (類風濕性關節炎)
     laboratory_criteria: []
     summary: 規範【附表十三：全民健康保險類風濕關節炎病患28處關節疾病活動度評估表】之健保給付條件。 規範重點：MCP關節：掌骨與指骨間的關節(MCP:Metacarpophalangeal)
       PIP關節：近側的指骨間關節(PIP:ProximalInterphalangeal) 整體健康狀態評估：即在100mm圖像模擬量表中所呈現的整體健康狀態。
@@ -2681,10 +2698,12 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients: []
   conditions_of_payment:
-    indications: []
+    indications:
+    - Rheumatoid Arthritis / Juvenile Idiopathic Arthritis (JIA) (類風濕性關節炎)
     laboratory_criteria: []
     summary: 規範【附表十六：全民健康保險活動性多關節幼年型慢性關節炎使用藥品申請表】之健保給付條件。 規範重點：申請醫師(簽名蓋章)： 內科專科醫師證書：內專醫字第號
       風濕病專科醫師證書：中僂專醫字第號醫事機構章戳： 小兒科專科醫師證書：兒專醫字第號 小兒過敏免疫專科醫師證書:專醫字第號。
@@ -2753,6 +2772,7 @@ regulations:
     ingredients: []
   conditions_of_payment:
     indications:
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
     - Hemophilia (血友病)
     laboratory_criteria: []
     summary: 適用於【Hemophilia】之健保給付。
@@ -2797,6 +2817,7 @@ regulations:
     ingredients: []
   conditions_of_payment:
     indications:
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
     - Hemophilia (血友病)
     laboratory_criteria: []
     summary: 適用於【Hemophilia】之健保給付。
@@ -2873,6 +2894,7 @@ regulations:
     ingredients: []
   conditions_of_payment:
     indications:
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
     - Hemophilia (血友病)
     laboratory_criteria: []
     summary: 適用於【Hemophilia】之健保給付。 主要條件包含：使用前須經事前審查核准。
@@ -2922,11 +2944,11 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Factor
     - Fitusiran (費妥斯蘭)
-    - Recombinant
   conditions_of_payment:
     indications:
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Hemophilia (血友病)
     laboratory_criteria: []
     summary: '適用於【Hemophilia】之健保給付。 規範重點：病人本人至少需於3個月回診時由醫師填寫一次醫療評估追蹤紀錄表 基本資料: 姓名:
@@ -2978,6 +3000,7 @@ regulations:
     ingredients: []
   conditions_of_payment:
     indications:
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
     - Hemophilia (血友病)
     laboratory_criteria: []
     summary: 適用於【Hemophilia】之健保給付。
@@ -3023,7 +3046,8 @@ regulations:
     drug_classes: []
     ingredients: []
   conditions_of_payment:
-    indications: []
+    indications:
+    - Sjögren's Syndrome (Xerostomia) (修格蘭氏症候群)
     laboratory_criteria: []
     summary: 規範【附表十九全民健康保險使用Pilocarpinehydrochloride口服劑型治療後，】之健保給付條件。
     clinical_rules:
@@ -3110,7 +3134,8 @@ regulations:
     drug_classes: []
     ingredients: []
   conditions_of_payment:
-    indications: []
+    indications:
+    - Sjögren's Syndrome (Xerostomia) (修格蘭氏症候群)
     laboratory_criteria: []
     summary: 規範【附表二十全民健康保險使用Cevimelinehydrochloride治療後，】之健保給付條件。
     clinical_rules:
@@ -3192,7 +3217,8 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients: []
   conditions_of_payment:
     indications:
@@ -3231,7 +3257,8 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients:
     - Ixekizumab
     - Ustekinumab (烏司他單抗)
@@ -3263,7 +3290,8 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients:
     - Cyclosporine
     - Leflunomide
@@ -3314,11 +3342,13 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients: []
   conditions_of_payment:
     indications:
     - Psoriasis / Psoriatic Arthritis (乾癬)
+    - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     laboratory_criteria: []
     summary: 適用於【Psoriasis / Psoriatic Arthritis】之健保給付。 規範重點：有78個可能疼痛及76個可能腫脹關節，應記錄其症狀；有症狀為1分，沒症狀為0分。
     clinical_rules:
@@ -3358,7 +3388,8 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients: []
   conditions_of_payment:
     indications:
@@ -3397,7 +3428,8 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients:
     - Guselkumab
     - Risankizumab
@@ -3430,7 +3462,8 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients:
     - Guselkumab
     - Risankizumab
@@ -3567,7 +3600,9 @@ regulations:
     drug_classes: []
     ingredients: []
   conditions_of_payment:
-    indications: []
+    indications:
+    - Spasticity / ALS / Spinal Muscular Atrophy (SMA) (痙攣)
+    - Palmoplantar Pustulosis (PPP) / Leprosy ENL (掌蹠膿皰症)
     laboratory_criteria:
     - PASI
     summary: 規範【附表二十四之五：掌蹠膿皰症面積暨嚴重度指數【Palmoplantar Pustulosis Area Severity Index
@@ -3706,7 +3741,8 @@ regulations:
     - Eculizumab
     - Ravulizumab
   conditions_of_payment:
-    indications: []
+    indications:
+    - Paroxysmal Nocturnal Hemoglobinuria (PNH) (陣發性夜間血紅素尿症)
     laboratory_criteria: []
     summary: 規範【附表三十之二 陣發性夜間血紅素尿症患者特殊專案審查申請Soliris(eculizumab)、Ultomiris(ravulizumab)、Piasky(crovalimab)用藥檢附資料查檢表】之健保給付條件。
     clinical_rules:
@@ -3739,7 +3775,8 @@ regulations:
     - Eculizumab
     - Ravulizumab
   conditions_of_payment:
-    indications: []
+    indications:
+    - Paroxysmal Nocturnal Hemoglobinuria (PNH) (陣發性夜間血紅素尿症)
     laboratory_criteria: []
     summary: 規範【附表三十之四 陣發性夜間血紅素尿症患者第二線治療藥品特殊專案審查申請Voydeya(Danicopan)+Soliris(eculizumab)/Ultomiris(ravulizumab)
       或Fabhalta (iptacopan)用藥檢附資料查檢表】之健保給付條件。
@@ -3949,7 +3986,9 @@ regulations:
     ingredients:
     - Icatibant
   conditions_of_payment:
-    indications: []
+    indications:
+    - Hereditary Angioedema (HAE) (遺傳性血管性水腫)
+    - COVID-19 / Influenza (新型冠狀病毒)
     laboratory_criteria: []
     summary: 規範【附表三十三 全民健康保險遺傳性血管性水腫患者使用Icatibant/Human C1 esterase inhibitor治療紀錄表】之健保給付條件。
     clinical_rules:
@@ -4026,6 +4065,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Stroke / Cerebrovascular Accident (腦中風)
+    - Spasticity / ALS / Spinal Muscular Atrophy (SMA) (痙攣)
     laboratory_criteria: []
     summary: 適用於【Stroke / Cerebrovascular Accident】之健保給付。 規範重點：肉毒桿菌素再次申請治療效果評估表 姓名                           病歷號碼                                       一年施打總劑量：
       手臂      units, 下肢       units 注射部位 □左側 □右側 □上肢 □下肢    注射藥物 □ Botox   □ Dysport。
@@ -4131,7 +4171,10 @@ regulations:
     - Eladocagene
     - Onasemnogene
   conditions_of_payment:
-    indications: []
+    indications:
+    - Spasticity / ALS / Spinal Muscular Atrophy (SMA) (痙攣)
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria: []
     summary: 規範【附表三十六之二SELENA SLEDAI積分表】之健保給付條件。
     clinical_rules:

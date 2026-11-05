@@ -28,7 +28,8 @@ regulations:
     ingredients:
     - Cadexomer Iodine (如 Iodosorb powder)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Acne / Scabies / Genital Warts / Actinic Keratosis (痤瘡)
     laboratory_criteria: []
     summary: 規範【. Cadexomer iodine（如Iodosorb powder）：】之健保給付條件。 規範重點：限慢性腿部潰瘍病例及慢性感染性潰瘍傷口使用，每日用量超過一包時，需檢附傷口照片以利審查。
     clinical_rules:
@@ -255,9 +256,9 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Tazarotene
     - Calcipotriol
     - Calcitriol
-    - Tazarotene
   conditions_of_payment:
     indications:
     - Psoriasis / Psoriatic Arthritis (乾癬)
@@ -335,8 +336,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Pimecrolimus
     - Tacrolimus (如 Protopic Ointment)
+    - Pimecrolimus
   conditions_of_payment:
     indications:
     - Atopic Dermatitis (異位性皮膚炎)
@@ -491,7 +492,8 @@ regulations:
     ingredients:
     - Podophyllotoxin (如 Wart Del Cream)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Acne / Scabies / Genital Warts / Actinic Keratosis (痤瘡)
     laboratory_criteria: []
     summary: 規範【. Podophyllotoxin (如Wart Del Cream)：】之健保給付條件。 規範重點：1.限皮膚、泌尿、婦產專科醫師或經病理診斷確認，使用於生殖器疣
       (包括外生殖器及肛門附近)之治療。
@@ -526,7 +528,8 @@ regulations:
     ingredients:
     - Ingenol (如 Picato)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Acne / Scabies / Genital Warts / Actinic Keratosis (痤瘡)
     laboratory_criteria: []
     summary: 規範【. Ingenol (如Picato) ：】之健保給付條件。 規範重點：限用於治療局部性、非過度角化 (non-hyperkeratotic)、非肥厚型(non-hypertrophic)光化性角化症
       1.限用於局部性治療25cm2的連續治療面積內，4個(含)以上病灶數量。
@@ -601,7 +604,8 @@ regulations:
     ingredients:
     - Ivermectin (如 Stromectol)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Acne / Scabies / Genital Warts / Actinic Keratosis (痤瘡)
     laboratory_criteria: []
     summary: 規範【. Ivermectin (如Stromectol)：】之健保給付條件。 規範重點：1.限鏡檢呈陽性之確診的疥瘡病患使用，須附照片備查。
     clinical_rules:
@@ -645,14 +649,15 @@ regulations:
   - (111/8/1、114/6/1、115/6/1)
   - (111/8/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 核苷及核苷酸反轉錄酶抑制劑 / B型肝炎口服抗病毒藥物
     ingredients:
     - Abrocitinib (如 Cibinqo)
-    - Azathioprine
     - Dupilumab (杜匹魯單抗)
     - Lebrikizumab (如 Ebglyss)
-    - Methotrexate
     - Upadacitinib (如 Rinvoq)
+    - Azathioprine
+    - Methotrexate
   conditions_of_payment:
     indications:
     - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
@@ -662,6 +667,8 @@ regulations:
     - Systemic Lupus Erythematosus (紅斑性狼瘡)
     - Vasculitis / Dermatomyositis (血管炎)
     - Hypertension (高血壓)
+    - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
+      Porphyria) (黏多醣症)
     laboratory_criteria:
     - ALT
     - 血壓
@@ -1436,14 +1443,15 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Azathioprine
     - Dupilumab (杜匹魯單抗)
+    - Azathioprine
     - Methotrexate
   conditions_of_payment:
     indications:
     - Atopic Dermatitis (異位性皮膚炎)
     - Psoriasis / Psoriatic Arthritis (乾癬)
     - Hypertension (高血壓)
+    - Neutropenia / Leukopenia (嗜中性白血球低下)
     laboratory_criteria:
     - 血壓
     - 白血球
@@ -1729,7 +1737,8 @@ regulations:
     ingredients:
     - Nadifloxacin (如 Nadixa)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Acne / Scabies / Genital Warts / Actinic Keratosis (痤瘡)
     laboratory_criteria: []
     summary: 規範【. Nadifloxacin外用製劑(如Nadixa)】之健保給付條件。 規範重點：1.限用於傳統外用抗生素治療無效之毛囊炎及尋常性鬚瘡，不得合併其他局部抗生素藥膏使用。
     clinical_rules:
@@ -1760,12 +1769,13 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Albumin
     - Centella
     - Plectranthus Amboinicus Extract (如 Fespixon cream)
+    - Albumin
   conditions_of_payment:
     indications:
     - Diabetes Mellitus (糖尿病)
+    - Peripheral Arterial Disease (PAD) (周邊動脈疾病)
     laboratory_criteria:
     - HbA1c
     - 血糖

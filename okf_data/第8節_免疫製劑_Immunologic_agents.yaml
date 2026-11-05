@@ -27,7 +27,6 @@ regulations:
     drug_classes: []
     ingredients:
     - Hepatitis
-    - Immune
   conditions_of_payment:
     indications:
     - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
@@ -70,11 +69,13 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Immune
     - Prednisolone
   conditions_of_payment:
     indications:
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Immune Thrombocytopenia (ITP) (特發性血小板減少性紫斑症)
+    - Kawasaki Disease (川崎病)
     laboratory_criteria:
     - 血小板
     summary: 適用於【Immune Thrombocytopenia】之健保給付。 主要條件包含：使用前須經事前審查核准。
@@ -146,7 +147,9 @@ regulations:
     - Immunoglobulin (如 Thymoglobuline inj)
   conditions_of_payment:
     indications:
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Anemia (貧血)
+    - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria: []
     summary: 適用於【Anemia】之健保給付。 規範重點：1.限符合下列適應症病患檢附病歷摘要（註明診斷、相關檢查報告及數據、體重、年齡、性別、病史)
       (1)嚴重再生不良性貧血經傳統方法治療無效且不適合作骨髓移植之病例。
@@ -190,7 +193,8 @@ regulations:
     drug_classes: []
     ingredients: []
   conditions_of_payment:
-    indications: []
+    indications:
+    - COVID-19 / Influenza (新型冠狀病毒)
     laboratory_criteria: []
     summary: 規範【. 人用狂犬病疫苗及免疫球蛋白(如Rabipur)：】之健保給付條件。 規範重點：1.本類藥品使用於遭疑似狂犬病或麗沙病毒感染動物咬傷暴露後之接種，其使用對象及使用方式應依衛生福利部疾病管制署最新版「疑似狂犬病或麗沙病毒感染動物抓咬傷臨床處置指引」之接種建議辦理(請參閱疾病管制署狂犬病專區網頁http://www.cdc.gov.tw)。
     clinical_rules:
@@ -222,7 +226,8 @@ regulations:
     ingredients:
     - Tetanus
   conditions_of_payment:
-    indications: []
+    indications:
+    - COVID-19 / Influenza (新型冠狀病毒)
     laboratory_criteria: []
     summary: 規範【. 破傷風類毒素Tetanus toxoid：】之健保給付條件。
     clinical_rules:
@@ -248,7 +253,8 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients:
     - Cyclosporin (如 Sandimmun)
     - Gelatin
@@ -256,8 +262,10 @@ regulations:
     indications:
     - Atopic Dermatitis (異位性皮膚炎)
     - Psoriasis / Psoriatic Arthritis (乾癬)
-    - Rheumatoid Arthritis (類風濕性關節炎)
+    - Rheumatoid Arthritis / Juvenile Idiopathic Arthritis (JIA) (類風濕性關節炎)
     - Anemia (貧血)
+    - Organ / Stem Cell Transplantation (腎臟移植)
+    - Macular Degeneration (AMD / DME) / Retinopathy / Uveitis (黃斑部病變)
     laboratory_criteria: []
     summary: 適用於【Atopic Dermatitis、Psoriasis / Psoriatic Arthritis、Rheumatoid Arthritis】之健保給付。
     clinical_rules:
@@ -320,7 +328,8 @@ regulations:
     ingredients:
     - Tacrolimus
   conditions_of_payment:
-    indications: []
+    indications:
+    - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria: []
     summary: 規範【. Tacrolimus持續性口服製劑：】之健保給付條件。
     clinical_rules:
@@ -354,7 +363,8 @@ regulations:
     ingredients:
     - Tacrolimus
   conditions_of_payment:
-    indications: []
+    indications:
+    - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria: []
     summary: 規範【. Tacrolimus 注射劑及其他非持續性口服製劑：】之健保給付條件。 規範重點：1.肝臟及腎臟移植之第一線用藥或肝腎移植cyclosporin無效之第二線用藥。
     clinical_rules:
@@ -394,14 +404,15 @@ regulations:
     ingredients:
     - Cladribine (如 Mavenclad)
     - Dimethyl Fumarate (如 Tecfidera)
-    - Fingolimod
     - Interferon Beta-La (如 Rebif)
     - Ozanimod (如 Zeposia)
     - Peginterferon Beta-1A (如 Plegridy)
     - Teriflunomide (如 Aubagio)
+    - Fingolimod
   conditions_of_payment:
     indications:
     - Multiple Sclerosis (多發性硬化症)
+    - Neuromyelitis Optica Spectrum Disorder (NMOSD) (泛視神經脊髓炎)
     laboratory_criteria:
     - EDSS
     - AQP4/NMO
@@ -507,6 +518,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Multiple Sclerosis (多發性硬化症)
+    - Neuromyelitis Optica Spectrum Disorder (NMOSD) (泛視神經脊髓炎)
     laboratory_criteria:
     - AQP4/NMO
     summary: 適用於【Multiple Sclerosis】之健保給付。 主要條件包含：臨床檢驗需符合 AQP4/NMO = 陽性。
@@ -614,12 +626,13 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Natalizumab (如 Tysabri)
     - Glatiramer
     - Interferon
-    - Natalizumab (如 Tysabri)
   conditions_of_payment:
     indications:
     - Multiple Sclerosis (多發性硬化症)
+    - Neuromyelitis Optica Spectrum Disorder (NMOSD) (泛視神經脊髓炎)
     laboratory_criteria: []
     summary: 適用於【Multiple Sclerosis】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -672,6 +685,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Multiple Sclerosis (多發性硬化症)
+    - Neuromyelitis Optica Spectrum Disorder (NMOSD) (泛視神經脊髓炎)
     laboratory_criteria:
     - EDSS
     - AQP4/NMO
@@ -773,6 +787,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Multiple Sclerosis (多發性硬化症)
+    - Neuromyelitis Optica Spectrum Disorder (NMOSD) (泛視神經脊髓炎)
     laboratory_criteria:
     - EDSS
     - AQP4/NMO
@@ -1120,6 +1135,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+    - Tuberculosis (TB) (結核病)
     laboratory_criteria: []
     summary: 適用於【Hepatitis B / Hepatitis C】之健保給付。 規範重點：使用本類藥品之醫事機構應注意監測病患用藥後之不良反應及可能發生的重大安全事件(如肺結核及病毒性肝炎)。
     clinical_rules:
@@ -1149,19 +1165,23 @@ regulations:
   - (102/1/1)
   - (102/10/1、113/10/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients:
     - Adalimumab (阿達木單抗)
     - Etanercept (恩博)
-    - Methotrexate
-    - Prednisolone
     - Secukinumab (蘇金單抗)
-    - Sulfasalazine
     - Tocilizumab (如 Actemra)
     - Tofacitinib (托法替尼)
+    - Methotrexate
+    - Prednisolone
+    - Sulfasalazine
   conditions_of_payment:
     indications:
-    - Rheumatoid Arthritis (類風濕性關節炎)
+    - Rheumatoid Arthritis / Juvenile Idiopathic Arthritis (JIA) (類風濕性關節炎)
+    - UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection (泌尿道感染)
+    - Tuberculosis (TB) (結核病)
+    - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     laboratory_criteria: []
     summary: 適用於【Rheumatoid Arthritis】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -1305,32 +1325,36 @@ regulations:
   - (102/1/1)
   - (102/4/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients:
     - Abatacept (如 Orencia)
     - Adalimumab (阿達木單抗)
-    - Azathioprine
     - Baricitinib (如 Olumiant)
     - Certolizumab
-    - Cyclosporine
     - Etanercept (恩博)
     - Filgotinib (如 Jyseleca)
     - Golimumab (如 Simponi)
-    - Hydroxychloroquine
     - Infliximab (如 Remicade)
-    - Leflunomide
-    - Methotrexate
     - Opinercept (如 Tunex)
     - Peficitinib (如 Smyraf)
-    - Penicillamine
-    - Prednisolone
-    - Sulfasalazine
     - Tocilizumab (如 Actemra)
     - Tofacitinib (托法替尼)
     - Upadacitinib (如 Rinvoq)
+    - Azathioprine
+    - Cyclosporine
+    - Hydroxychloroquine
+    - Leflunomide
+    - Methotrexate
+    - Penicillamine
+    - Prednisolone
+    - Sulfasalazine
   conditions_of_payment:
     indications:
+    - Rheumatoid Arthritis / Juvenile Idiopathic Arthritis (JIA) (類風濕性關節炎)
     - Multiple Sclerosis (多發性硬化症)
+    - Tuberculosis (TB) (結核病)
+    - Acne / Scabies / Genital Warts / Actinic Keratosis (痤瘡)
     laboratory_criteria:
     - DAS28
     summary: 適用於【Multiple Sclerosis】之健保給付。 主要條件包含：臨床檢驗需符合 DAS28 = 0.56Score；使用前須經事前審查核准。
@@ -1543,27 +1567,30 @@ regulations:
   - (102/1/1)
   - (110/7/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients:
     - Adalimumab (阿達木單抗)
-    - Azathioprine
     - Bimekizumab (如 Bimzelx)
     - Brodalumab (如 Lumicef)
     - Certolizumab (如 Cimzia)
-    - Cyclosporine
     - Etanercept (恩博)
     - Golimumab (如 Simponi)
     - Infliximab (如 Remicade靜脈注射)
     - Ixekizumab (如 Taltz)
     - Secukinumab (蘇金單抗)
-    - Sulfasalazine
     - Tofacitinib (托法替尼)
     - Upadacitinib (如 Rinvoq)
+    - Azathioprine
+    - Cyclosporine
+    - Sulfasalazine
   conditions_of_payment:
     indications:
     - Ankylosing Spondylitis (僵直性脊椎炎)
     - Thrombosis / Pulmonary Embolism (血栓)
     - Multiple Sclerosis (多發性硬化症)
+    - Tuberculosis (TB) (結核病)
+    - Acne / Scabies / Genital Warts / Actinic Keratosis (痤瘡)
     laboratory_criteria:
     - BASDAI
     - CRP
@@ -1896,30 +1923,34 @@ regulations:
   - (102/1/1)
   - (110/7/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients:
     - Adalimumab (阿達木單抗)
-    - Apremilast
     - Bimekizumab (如 Bimzelx)
     - Brodalumab (如 Lumicef)
     - Certolizumab (如 Cimzia)
-    - Cyclosporine
     - Etanercept (恩博)
     - Golimumab (如 Simponi)
     - Guselkumab (如 Tremfya)
     - Ixekizumab (如 Taltz)
-    - Leflunomide
-    - Methotrexate
     - Risankizumab (如 Skyrizi)
     - Secukinumab (蘇金單抗)
-    - Sulfasalazine
     - Tofacitinib (托法替尼)
     - Upadacitinib (如 Rinvoq)
     - Ustekinumab (烏司他單抗)
+    - Apremilast
+    - Cyclosporine
+    - Leflunomide
+    - Methotrexate
+    - Sulfasalazine
   conditions_of_payment:
     indications:
     - Psoriasis / Psoriatic Arthritis (乾癬)
     - Multiple Sclerosis (多發性硬化症)
+    - Tuberculosis (TB) (結核病)
+    - Chronic / Breakthrough / Neuropathic Pain (疼痛)
+    - Acne / Scabies / Genital Warts / Actinic Keratosis (痤瘡)
     laboratory_criteria: []
     summary: 適用於【Psoriasis / Psoriatic Arthritis、Multiple Sclerosis】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -2097,7 +2128,8 @@ regulations:
   - (102/1/1)
   - (110/7/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients:
     - Adalimumab (阿達木單抗)
     - Bimekizumab (如 Bimzelx)
@@ -2115,6 +2147,8 @@ regulations:
     indications:
     - Psoriasis / Psoriatic Arthritis (乾癬)
     - Multiple Sclerosis (多發性硬化症)
+    - Tuberculosis (TB) (結核病)
+    - Acne / Scabies / Genital Warts / Actinic Keratosis (痤瘡)
     laboratory_criteria:
     - BASDAI
     - CRP
@@ -2392,28 +2426,31 @@ regulations:
   - (110/5/1)
   - (110/5/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
     ingredients:
-    - Acitretin
     - Adalimumab (阿達木單抗)
-    - Apremilast
     - Bimekizumab (如 Bimzelx)
     - Brodalumab (如 Lumicef)
     - Certolizumab (如 Cimzia)
-    - Cyclosporine
-    - Deucravacitinib
     - Etanercept (恩博)
     - Guselkumab (如 Tremfya)
     - Ixekizumab (如 Taltz)
-    - Methotrexate
     - Risankizumab (如 Skyrizi)
     - Secukinumab (蘇金單抗)
     - Ustekinumab (烏司他單抗)
+    - Acitretin
+    - Apremilast
+    - Cyclosporine
+    - Deucravacitinib
+    - Methotrexate
   conditions_of_payment:
     indications:
     - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     - Generalized Pustular Psoriasis (GPP) (全身型急性發作膿疱性乾癬)
     - Psoriasis / Psoriatic Arthritis (乾癬)
+    - UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection (泌尿道感染)
+    - Tuberculosis (TB) (結核病)
     laboratory_criteria:
     - 白血球
     - PASI
@@ -3204,21 +3241,23 @@ regulations:
     drug_classes: []
     ingredients:
     - Adalimumab (阿達木單抗)
-    - Azathioprine
-    - Balsalazide
     - Infliximab (如 Remicade)
-    - Mercaptopurine
-    - Methotrexate
     - Risankizumab (如 Skyrizi)
-    - Sulfasalazine
     - Upadacitinib (如 Rinvoq)
     - Ustekinumab (烏司他單抗)
     - Vedolizumab (如 Entyvio)
+    - Azathioprine
+    - Balsalazide
+    - Mercaptopurine
+    - Methotrexate
+    - Sulfasalazine
   conditions_of_payment:
     indications:
     - Crohn's Disease (CD) (克隆氏症)
     - Thrombosis / Pulmonary Embolism (血栓)
     - Multiple Sclerosis (多發性硬化症)
+    - Tuberculosis (TB) (結核病)
+    - Acne / Scabies / Genital Warts / Actinic Keratosis (痤瘡)
     laboratory_criteria:
     - 白血球
     - CDAI
@@ -3692,15 +3731,17 @@ regulations:
     drug_classes: []
     ingredients:
     - Adalimumab (阿達木單抗)
-    - Azathioprine
     - Infliximab (如 Remicade靜脈注射)
+    - Risankizumab (如 Skyrizi)
+    - Azathioprine
     - Mercaptopurine
     - Methotrexate
-    - Risankizumab (如 Skyrizi)
   conditions_of_payment:
     indications:
     - Crohn's Disease (CD) (克隆氏症)
     - Multiple Sclerosis (多發性硬化症)
+    - Tuberculosis (TB) (結核病)
+    - Acne / Scabies / Genital Warts / Actinic Keratosis (痤瘡)
     laboratory_criteria:
     - 白血球
     - CDAI
@@ -3877,13 +3918,17 @@ regulations:
   effective_dates:
   - (102/1/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients:
     - Abatacept
     - Etanercept (恩博)
     - Methotrexate
   conditions_of_payment:
-    indications: []
+    indications:
+    - Rheumatoid Arthritis / Juvenile Idiopathic Arthritis (JIA) (類風濕性關節炎)
+    - UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection (泌尿道感染)
+    - Tuberculosis (TB) (結核病)
     laboratory_criteria: []
     summary: 規範【. Abatacept靜脈注射劑（如Orencia IV）：用於幼年型慢性關節炎治療部分】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -3993,24 +4038,29 @@ regulations:
     drug_classes: []
     ingredients:
     - Adalimumab (阿達木單抗)
-    - Azathioprine
-    - Balsalazide
-    - Cyclosporine
     - Golimumab (如 Simponi)
     - Infliximab (如 Remicade)
-    - Mercaptopurine
-    - Methylprednisolone
-    - Sulfasalazine
     - Tofacitinib (托法替尼)
     - Upadacitinib (如 Rinvoq)
     - Ustekinumab (烏司他單抗)
     - Vedolizumab (如 Entyvio)
+    - Azathioprine
+    - Balsalazide
+    - Cyclosporine
+    - Mercaptopurine
+    - Methylprednisolone
+    - Sulfasalazine
   conditions_of_payment:
     indications:
     - Ulcerative Colitis (UC) (潰瘍性結腸炎)
-    - Lymphoma (淋巴腫瘤)
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
     - Thrombosis / Pulmonary Embolism (血栓)
     - Multiple Sclerosis (多發性硬化症)
+    - Clostridioides difficile Infection / Pseudomembranous Colitis (困難梭狀桿菌)
+    - Herpes Simplex / Herpes Zoster / CMV Infection (疱疹)
+    - Tuberculosis (TB) (結核病)
+    - Acne / Scabies / Genital Warts / Actinic Keratosis (痤瘡)
     laboratory_criteria:
     - 白血球
     - Mayo
@@ -4415,17 +4465,22 @@ regulations:
     drug_classes: []
     ingredients:
     - Adalimumab (阿達木單抗)
+    - Infliximab (如 Remicade靜脈注射)
     - Azathioprine
     - Balsalazide
-    - Infliximab (如 Remicade靜脈注射)
     - Mercaptopurine
     - Methylprednisolone
+    - Prednisolone
     - Sulfasalazine
   conditions_of_payment:
     indications:
     - Ulcerative Colitis (UC) (潰瘍性結腸炎)
-    - Lymphoma (淋巴腫瘤)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
     - Multiple Sclerosis (多發性硬化症)
+    - Clostridioides difficile Infection / Pseudomembranous Colitis (困難梭狀桿菌)
+    - Herpes Simplex / Herpes Zoster / CMV Infection (疱疹)
+    - Tuberculosis (TB) (結核病)
+    - Acne / Scabies / Genital Warts / Actinic Keratosis (痤瘡)
     laboratory_criteria:
     - 白血球
     summary: 適用於【Ulcerative Colitis、Lymphoma、Multiple Sclerosis】之健保給付。 主要條件包含：使用前須經事前審查核准。
@@ -4552,7 +4607,10 @@ regulations:
     - Adalimumab (阿達木單抗)
     - Methotrexate
   conditions_of_payment:
-    indications: []
+    indications:
+    - UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection (泌尿道感染)
+    - Tuberculosis (TB) (結核病)
+    - Macular Degeneration (AMD / DME) / Retinopathy / Uveitis (黃斑部病變)
     laboratory_criteria: []
     summary: 規範【. Adalimumab（如Humira） 用於小兒葡萄膜炎治療部分】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -4637,14 +4695,18 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - Statins類 (HMG-CoA還原酶抑制劑 / 降血脂藥)
     ingredients:
-    - Acitretin
     - Guselkumab (如 Tremfya)
+    - Acitretin
     - Methotrexate
   conditions_of_payment:
     indications:
     - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+    - UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection (泌尿道感染)
+    - Tuberculosis (TB) (結核病)
+    - Palmoplantar Pustulosis (PPP) / Leprosy ENL (掌蹠膿皰症)
     laboratory_criteria:
     - PASI
     summary: 適用於【Hepatitis B / Hepatitis C】之健保給付。 主要條件包含：臨床檢驗需符合 PASI < 12Score；使用前須經事前審查核准。
@@ -4774,10 +4836,12 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Dexamethasone
     - Tocilizumab (如 Actemra)
+    - Dexamethasone
   conditions_of_payment:
-    indications: []
+    indications:
+    - Pneumonia / Respiratory & ENT Infection (肺炎)
+    - COVID-19 / Influenza (新型冠狀病毒)
     laboratory_criteria:
     - SpO2
     summary: 規範【. Tocilizumab(如Actemra)：】之健保給付條件。 主要條件包含：臨床檢驗需符合 SpO2 <= 94%, SpO2
@@ -4873,7 +4937,8 @@ regulations:
     - Baricitinib
     - Dexamethasone
   conditions_of_payment:
-    indications: []
+    indications:
+    - COVID-19 / Influenza (新型冠狀病毒)
     laboratory_criteria:
     - SpO2
     summary: 規範【. Baricitinib (Olumiant)：】之健保給付條件。 主要條件包含：臨床檢驗需符合 SpO2 <= 94%。
@@ -4940,15 +5005,16 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
+    - Secukinumab (蘇金單抗)
     - Acitretin
     - Clindamycin
     - Doxycycline
     - Minocycline
-    - Secukinumab (蘇金單抗)
     - Tetracycline
   conditions_of_payment:
     indications:
     - Hidradenitis Suppurativa (化膿性汗腺炎)
+    - Tuberculosis (TB) (結核病)
     laboratory_criteria: []
     summary: 適用於【Hidradenitis Suppurativa】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -5029,14 +5095,15 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients:
     - Leflunomide (如 Arava)
     - Methotrexate
   conditions_of_payment:
     indications:
     - Psoriasis / Psoriatic Arthritis (乾癬)
-    - Rheumatoid Arthritis (類風濕性關節炎)
+    - Rheumatoid Arthritis / Juvenile Idiopathic Arthritis (JIA) (類風濕性關節炎)
     laboratory_criteria: []
     summary: 適用於【Psoriasis / Psoriatic Arthritis、Rheumatoid Arthritis】之健保給付。 規範重點：1.限治療成人類風濕性關節炎，且用於methotrexate治療無效，或無法忍受methotrexate副作用時使用。
     clinical_rules:
@@ -5073,13 +5140,14 @@ regulations:
   - (109/7/1)
   medications:
     drug_classes:
+    - HIV抗病毒藥物複方製劑 (人類免疫缺乏病毒)
     - 核苷及核苷酸反轉錄酶抑制劑 / B型肝炎口服抗病毒藥物
     ingredients:
-    - Entecavir (恩替卡韋)
     - Interferon Alpha-2A (如 Roferon-A)
     - Interferon Alpha-2B (如 Intron A)
-    - Lamivudine (拉米夫定)
     - Peginterferon Alfa-2A (如 Pegasys)
+    - Entecavir (恩替卡韋)
+    - Lamivudine (拉米夫定)
     - Ribavirin
     - Telbivudine
     - Tenofovir alafenamide (替諾福韋丙酚酚胺)
@@ -5088,6 +5156,8 @@ regulations:
     indications:
     - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     - Hemophilia (血友病)
+    - HIV / AIDS (人類免疫缺乏病毒)
+    - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria:
     - ALT
     - HBV DNA
@@ -5449,7 +5519,8 @@ regulations:
   effective_dates:
   - (109/7/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - HIV抗病毒藥物複方製劑 (人類免疫缺乏病毒)
     ingredients:
     - Interferon Alfacon-1 (如 Infergen)
     - Peginterferon Alpha-2B (如 Peg-Intron)
@@ -5458,6 +5529,8 @@ regulations:
     indications:
     - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     - Hemophilia (血友病)
+    - HIV / AIDS (人類免疫缺乏病毒)
+    - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria:
     - Anti-HCV
     - HCV RNA
@@ -5607,17 +5680,19 @@ regulations:
   effective_dates:
   - (102/1/1)
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients:
+    - Rituximab (如 Mabthera)
     - Adalimumab (阿達木單抗)
     - Etanercept (恩博)
     - Golimumab
     - Methotrexate
-    - Rituximab (如 Mabthera)
   conditions_of_payment:
     indications:
-    - Rheumatoid Arthritis (類風濕性關節炎)
+    - Rheumatoid Arthritis / Juvenile Idiopathic Arthritis (JIA) (類風濕性關節炎)
     - Heart Failure (心臟衰竭)
+    - Tuberculosis (TB) (結核病)
     laboratory_criteria: []
     summary: 適用於【Rheumatoid Arthritis】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -5761,7 +5836,9 @@ regulations:
     ingredients:
     - Thalidomide (如 Thado)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
+    - Palmoplantar Pustulosis (PPP) / Leprosy ENL (掌蹠膿皰症)
     laboratory_criteria: []
     summary: 規範【. Thalidomide（如Thado）】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
@@ -5806,8 +5883,10 @@ regulations:
     - Ravulizumab (如 Ultomiris)
   conditions_of_payment:
     indications:
+    - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
     - Thrombosis / Pulmonary Embolism (血栓)
     - Anemia (貧血)
+    - Paroxysmal Nocturnal Hemoglobinuria (PNH) (陣發性夜間血紅素尿症)
     laboratory_criteria:
     - 白血球
     - 血小板
@@ -5919,6 +5998,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Chronic Urticaria (蕁麻疹)
+    - Macular Degeneration (AMD / DME) / Retinopathy / Uveitis (黃斑部病變)
     laboratory_criteria:
     - CRP
     - ESR
@@ -6038,8 +6118,8 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Azathioprine
     - Belimumab (如 Benlysta)
+    - Azathioprine
     - Cyclophosphamide
     - Mycophenolate
     - Mycophenolic
@@ -6168,12 +6248,13 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Azathioprine
     - Inebilizumab (如 Uplizna)
-    - Mycophenolate
     - Satralizumab (如 Enspryng)
+    - Azathioprine
+    - Mycophenolate
   conditions_of_payment:
-    indications: []
+    indications:
+    - Neuromyelitis Optica Spectrum Disorder (NMOSD) (泛視神經脊髓炎)
     laboratory_criteria:
     - EDSS
     summary: 規範【. Satralizumab(如Enspryng)、inebilizumab(如Uplizna)：】之健保給付條件。 主要條件包含：臨床檢驗需符合
@@ -6301,12 +6382,16 @@ regulations:
     drug_classes:
     - HIV抗病毒藥物複方製劑 (人類免疫缺乏病毒)
     ingredients:
-    - Albumin
     - Siltuximab (如 Sylvant)
+    - Albumin
   conditions_of_payment:
     indications:
     - Anemia (貧血)
     - Immune Thrombocytopenia (ITP) (特發性血小板減少性紫斑症)
+    - Pneumonia / Respiratory & ENT Infection (肺炎)
+    - Herpes Simplex / Herpes Zoster / CMV Infection (疱疹)
+    - HIV / AIDS (人類免疫缺乏病毒)
+    - Tuberculosis (TB) (結核病)
     laboratory_criteria:
     - eGFR
     - 血小板
@@ -6476,8 +6561,8 @@ regulations:
     drug_classes: []
     ingredients:
     - Apremilast (如 Otezla)
-    - Cyclosporine
     - Deucravacitinib (如 Sotyktu)
+    - Cyclosporine
     - Methotrexate
     - Tofacitinib (托法替尼)
   conditions_of_payment:
@@ -6766,10 +6851,10 @@ regulations:
   medications:
     drug_classes: []
     ingredients:
-    - Azathioprine
     - Benralizumab (如 Fasenra)
-    - Cyclophosphamide
     - Mepolizumab (如 Nucala)
+    - Azathioprine
+    - Cyclophosphamide
     - Methotrexate
     - Mycophenolate
     - Prednisolone
@@ -6833,7 +6918,8 @@ regulations:
   source_file: 完整給付規定1150821.docx
   effective_dates: []
   medications:
-    drug_classes: []
+    drug_classes:
+    - 選擇性COX-2抑制劑 (非類固醇抗發炎劑)
     ingredients:
     - Anifrolumab (如 Saphnelo)
     - Azathioprine
@@ -6842,12 +6928,14 @@ regulations:
     - Methylprednisolone
     - Mycophenolate
     - Mycophenolic
+    - Prednisolone
   conditions_of_payment:
     indications:
     - Systemic Lupus Erythematosus (紅斑性狼瘡)
     - Vasculitis / Dermatomyositis (血管炎)
     - Thrombosis / Pulmonary Embolism (血栓)
     - Epilepsy (癲癇)
+    - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     laboratory_criteria:
     - CRP
     - ESR
@@ -7552,12 +7640,13 @@ regulations:
     drug_classes: []
     ingredients:
     - Danicopan (如 Voydeya)
-    - Eculizumab
     - Iptacopan (如 Fabhalta)
+    - Eculizumab
     - Ravulizumab
   conditions_of_payment:
     indications:
     - Anemia (貧血)
+    - Paroxysmal Nocturnal Hemoglobinuria (PNH) (陣發性夜間血紅素尿症)
     laboratory_criteria:
     - 白血球
     - 血小板

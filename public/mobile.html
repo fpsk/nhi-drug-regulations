@@ -12,7 +12,8 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <link rel="stylesheet" href="mobile.css?v=4">
+    <link rel="stylesheet" href="shared.css?v=5">
+    <link rel="stylesheet" href="mobile.css?v=5">
 </head>
 <body>
     <!-- Background Glow Effects -->
@@ -127,7 +128,7 @@
                 <button id="closeSheetBtn" class="btn-sheet-close"><i class="fa-solid fa-xmark"></i></button>
             </div>
             <div class="sheet-body">
-                <div id="sAnnotateTab" class="sheet-tab-content active">
+                <div>
                     <div class="sheet-meta">
                         <div class="meta-item">
                             <i class="fa-solid fa-folder"></i> <span id="sheetChapter"></span>
@@ -144,7 +145,7 @@
                             <span><i class="fa-solid fa-microscope"></i> 結構化臨床門檻 (點選定位)</span>
                             <span id="sheetPriorAuthBadge"></span>
                         </div>
-                        <div id="sheetStructuredChips" style="display: flex; flex-wrap: wrap; gap: 0.4rem;"></div>
+                        <div id="sheetStructuredChips" class="criteria-chip-list"></div>
                     </div>
                     <div class="sheet-text-box">
                         <div id="sheetFullText" class="sheet-full-text"></div>
@@ -187,6 +188,7 @@
         </div>
     </div>
 
-    <script src="mobile.js?v=12"></script>
+    <script src="shared.js?v=14"></script>
+    <script src="mobile.js?v=14"></script>
 </body>
 </html>

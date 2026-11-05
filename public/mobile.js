@@ -1,4 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const {
+        escapeHtml,
+        cleanTitleForDisplay,
+        formatDatesForDisplay,
+        cleanSummaryText,
+        renderFormattedText,
+        resolveActiveHighlights,
+        autoScrollToFirstMatch,
+        populateModalDrugs,
+        buildCardBadgesHtml,
+        renderStructuredCriteria,
+        fetchSearch,
+        submitUpload,
+    } = window.NHIShared;
+
     // Elements
     const mobileSearchInput = document.getElementById('mobileSearchInput');
     const mobileClearBtn = document.getElementById('mobileClearBtn');
@@ -32,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileUploadStatus = document.getElementById('mobileUploadStatus');
 
     let currentOffset = 0;
-    let currentLimit = 6;
+    const currentLimit = 6;
     let currentChapter = '';
     let currentRegulations = [];
     let currentHighlightTerms = [];
@@ -47,10 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
         themeToggleBtn.innerHTML = isDark ? '<i class="fa-solid fa-moon"></i>' : '<i class="fa-solid fa-sun"></i>';
     });
 
-    // Initialize
     performMobileSearch();
 
-    // Search input event
     mobileSearchInput.addEventListener('input', () => {
         mobileClearBtn.classList.toggle('hidden', !mobileSearchInput.value);
         clearTimeout(debounceTimer);
@@ -68,7 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
         performMobileSearch();
     });
 
-    // Category pills event
     categoryPills.querySelectorAll('.pill').forEach(pill => {
         pill.addEventListener('click', (e) => {
             categoryPills.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
@@ -79,7 +91,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Bottom Navigation
     navHomeBtn.addEventListener('click', () => {
         setActiveNav(navHomeBtn);
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -98,13 +109,10 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.classList.add('active');
     }
 
-    // Load More event
     mobileLoadMoreBtn.addEventListener('click', loadMoreMobileResults);
-
     closeSheetBtn.addEventListener('click', () => mobileDetailSheet.classList.add('hidden'));
     closeUploadSheetBtn.addEventListener('click', () => mobileUploadSheet.classList.add('hidden'));
 
-    // Upload zone
     mobileDropZone.addEventListener('click', () => mobileFileInput.click());
     mobileFileInput.addEventListener('change', () => {
         if (mobileFileInput.files[0]) {
@@ -113,33 +121,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    mobileUploadForm.addEventListener('submit', async (e) => {
+    mobileUploadForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        if (!mobileFileInput.files[0]) return;
-        const formData = new FormData();
-        formData.append('file', mobileFileInput.files[0]);
-        formData.append('password', mobileUploadPassword ? mobileUploadPassword.value : '');
-
-        mobileUploadStatus.innerHTML = '<span style="color:#38bdf8;"><i class="fa-solid fa-spinner fa-spin"></i> 正在驗證密碼與解析檔...</span>';
-        try {
-            const res = await fetch('/api/upload', { method: 'POST', body: formData });
-            const data = await res.json();
-            if (data.status === 'success') {
-                mobileUploadStatus.innerHTML = `<span style="color:#4ade80;"><i class="fa-solid fa-circle-check"></i> ${data.message}</span>`;
-                setTimeout(() => {
-                    mobileUploadSheet.classList.add('hidden');
-                    mobileUploadStatus.innerHTML = '';
-                    if (mobileUploadPassword) mobileUploadPassword.value = '';
-                    mobileFileSelected.classList.add('hidden');
-                    currentOffset = 0;
-                    performMobileSearch();
-                }, 1500);
-            } else {
-                mobileUploadStatus.innerHTML = `<span style="color:#f43f5e;">錯誤：${data.message}</span>`;
-            }
-        } catch (err) {
-            mobileUploadStatus.innerHTML = `<span style="color:#f43f5e;">上傳失敗：${err.message}</span>`;
-        }
+        submitUpload({
+            file: mobileFileInput.files[0],
+            password: mobileUploadPassword ? mobileUploadPassword.value : '',
+            statusEl: mobileUploadStatus,
+            onSuccess: () => {
+                mobileUploadSheet.classList.add('hidden');
+                mobileUploadStatus.innerHTML = '';
+                if (mobileUploadPassword) mobileUploadPassword.value = '';
+                mobileFileSelected.classList.add('hidden');
+                currentOffset = 0;
+                performMobileSearch();
+            },
+        });
     });
 
     function renderMobileATC(expansions) {
@@ -193,21 +189,23 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileAtcExpansion.classList.remove('hidden');
     }
 
-
     async function performMobileSearch() {
         const q = mobileSearchInput.value.trim();
-        
         mobileStatsCounter.textContent = '搜尋中...';
 
         if (searchAbortController) {
             searchAbortController.abort();
         }
         searchAbortController = new AbortController();
-        const signal = searchAbortController.signal;
 
         try {
-            const res = await fetch(`/api/search?q=${encodeURIComponent(q)}&chapter=${encodeURIComponent(currentChapter)}&limit=${currentLimit}&offset=${currentOffset}`, { signal });
-            const data = await res.json();
+            const data = await fetchSearch({
+                q,
+                chapter: currentChapter,
+                limit: currentLimit,
+                offset: currentOffset,
+                signal: searchAbortController.signal,
+            });
 
             if (data.status === 'success') {
                 currentRegulations = data.results;
@@ -235,13 +233,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function loadMoreMobileResults() {
         const q = mobileSearchInput.value.trim();
-        
         currentOffset += currentLimit;
         mobileLoadMoreBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> 載入更多中...';
 
         try {
-            const res = await fetch(`/api/search?q=${encodeURIComponent(q)}&chapter=${encodeURIComponent(currentChapter)}&limit=${currentLimit}&offset=${currentOffset}`);
-            const data = await res.json();
+            const data = await fetchSearch({
+                q,
+                chapter: currentChapter,
+                limit: currentLimit,
+                offset: currentOffset,
+            });
 
             if (data.status === 'success') {
                 currentRegulations = currentRegulations.concat(data.results);
@@ -270,56 +271,26 @@ document.addEventListener('DOMContentLoaded', () => {
             const card = document.createElement('div');
             card.className = 'm-card';
 
-            const structuredBios = reg.conditions_of_payment.structured_biomarkers || [];
-            let labBadges = '';
-            if (structuredBios.length > 0) {
-                const seenBios = new Set();
-                const uniqueBios = [];
-                structuredBios.forEach(b => {
-                    const key = `${b.biomarker}${b.operator}${b.value}`;
-                    if (!seenBios.has(key)) {
-                        seenBios.add(key);
-                        uniqueBios.push(b);
-                    }
-                });
-                labBadges = uniqueBios.slice(0, 4).map(b => {
-                    const opStr = b.operator === 'status' ? '' : escapeHtml(b.operator);
-                    const valStr = escapeHtml(String(b.value));
-                    const unitStr = b.unit ? ' ' + escapeHtml(b.unit) : '';
-                    return `<span class="badge-biomarker"><i class="fa-solid fa-vial-circle-check"></i> ${escapeHtml(b.biomarker)} ${opStr}${valStr}${unitStr}</span>`;
-                }).join(' ');
-            } else {
-                const labs = reg.conditions_of_payment.laboratory_criteria || [];
-                labBadges = labs.map(l => `<span class="m-tag-lab"><i class="fa-solid fa-flask"></i> ${escapeHtml(l)}</span>`).join(' ');
-            }
-
-            const priorAuthBadge = reg.conditions_of_payment.prior_authorization_required 
-                ? `<span class="badge-prior-auth"><i class="fa-solid fa-stamp"></i> 事前審查</span>` 
-                : '';
-
-            const indications = reg.conditions_of_payment.indications || [];
-            const indicationBadges = indications.map(ind => `<span class="m-tag-ind"><i class="fa-solid fa-notes-medical"></i> ${escapeHtml(ind)}</span>`).join(' ');
-
-            const displayTitle = cleanTitleForDisplay(reg.section_title);
-            const ingredients = (reg.medications && reg.medications.ingredients) ? reg.medications.ingredients : [];
-            let drugBadges = '';
-            if (ingredients.length > 0 && !/[A-Za-z]{4,}/.test(displayTitle)) {
-                drugBadges = ingredients.slice(0, 4).map(ing => `<span class="m-tag-lab" style="border-color:rgba(56,189,248,0.35); color:#38bdf8;"><i class="fa-solid fa-pills"></i> ${escapeHtml(ing)}</span>`).join(' ');
-            }
+            const { displayTitle, priorAuthBadge, drugBadges, indicationBadges, labBadges } = buildCardBadgesHtml(reg, {
+                maxBios: 4,
+                maxDrugs: 4,
+                labClass: 'm-tag-lab',
+                indClass: 'm-tag-ind',
+            });
 
             card.innerHTML = `
                 <div class="m-card-header">
-                    <span class="m-badge">#${existingCount + idx + 1} ${reg.section_number}</span>
+                    <span class="m-badge">#${existingCount + idx + 1} ${escapeHtml(reg.section_number)}</span>
                     <div style="display:flex; gap:0.35rem; align-items:center;">
                         ${priorAuthBadge}
-                        <span class="m-chapter">${reg.chapter.split(' ')[0]}</span>
+                        <span class="m-chapter">${escapeHtml(reg.chapter.split(' ')[0])}</span>
                     </div>
                 </div>
-                <h3 class="m-title">${displayTitle}</h3>
+                <h3 class="m-title">${escapeHtml(displayTitle)}</h3>
                 <div class="m-tags-group">${drugBadges} ${indicationBadges} ${labBadges}</div>
-                <p class="m-summary">${cleanSummaryText(reg.conditions_of_payment.summary)}</p>
+                <p class="m-summary">${escapeHtml(cleanSummaryText(reg.conditions_of_payment.summary, 200))}</p>
                 <div class="m-card-footer">
-                    <button class="btn-m-detail" data-id="${reg.regulation_id}">
+                    <button class="btn-m-detail" data-id="${escapeHtml(reg.regulation_id)}">
                         <i class="fa-solid fa-circle-info"></i> 給付條件標註
                     </button>
                 </div>
@@ -330,303 +301,41 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    function cleanTitleForDisplay(title) {
-        if (!title) return '';
-        return title.replace(/（[^）]*\d+[^）]*）/g, '')
-                    .replace(/\([^)]*\d+[^)]*\)/g, '')
-                    .trim();
-    }
-
-    function formatDatesForDisplay(dates) {
-        if (!dates || dates.length === 0) return '未特別標註';
-        if (dates.length <= 2) return dates.join(', ');
-        return `${dates[0]} ... ${dates[dates.length - 1]} (共 ${dates.length} 次修訂)`;
-    }
-
-    function cleanSummaryText(text) {
-        if (!text) return '';
-        return text.replace(/【給付與評估表格.*?】:\s*/g, '').replace(/\|/g, ' - ').substring(0, 200) + '...';
-    }
-
     function openMobileSheet(reg) {
         document.getElementById('sheetSecBadge').textContent = reg.section_number;
         document.getElementById('sheetTitle').textContent = cleanTitleForDisplay(reg.section_title);
         document.getElementById('sheetChapter').textContent = reg.chapter;
         document.getElementById('sheetDates').textContent = formatDatesForDisplay(reg.effective_dates);
 
-        const sheetDrugsBox = document.getElementById('sheetDrugsBox');
-        const sheetDrugsList = document.getElementById('sheetDrugsList');
-        if (sheetDrugsBox && sheetDrugsList) {
-            const ings = (reg.medications && reg.medications.ingredients) ? reg.medications.ingredients : [];
-            const classes = (reg.medications && reg.medications.drug_classes) ? reg.medications.drug_classes : [];
-            const combined = ings.length > 0 ? ings : classes;
-            if (combined.length > 0) {
-                sheetDrugsList.textContent = combined.join(', ');
-                sheetDrugsBox.classList.remove('hidden');
-            } else {
-                sheetDrugsBox.classList.add('hidden');
-            }
-        }
+        populateModalDrugs(
+            document.getElementById('sheetDrugsBox'),
+            document.getElementById('sheetDrugsList'),
+            reg
+        );
 
-        const criteriaSection = document.getElementById('sheetStructuredCriteriaSection');
-        const chipsContainer = document.getElementById('sheetStructuredChips');
-        const priorAuthEl = document.getElementById('sheetPriorAuthBadge');
         const sheetFullText = document.getElementById('sheetFullText');
+        renderStructuredCriteria({
+            reg,
+            criteriaSection: document.getElementById('sheetStructuredCriteriaSection'),
+            chipsContainer: document.getElementById('sheetStructuredChips'),
+            priorAuthEl: document.getElementById('sheetPriorAuthBadge'),
+            fullTextContainer: sheetFullText,
+            anchorPrefix: 'm-clause-sec',
+            maxRuleLen: 22,
+        });
 
-        if (criteriaSection && chipsContainer) {
-            chipsContainer.innerHTML = '';
-            const bios = reg.conditions_of_payment.structured_biomarkers || [];
-            const steps = reg.conditions_of_payment.step_therapy || [];
-            const stops = reg.conditions_of_payment.stopping_rules || [];
-            const evals = reg.conditions_of_payment.evaluation_intervals || [];
-            const priorAuth = reg.conditions_of_payment.prior_authorization_required;
-            const priorAuthGrounding = reg.conditions_of_payment.prior_authorization_grounding;
-
-            if (priorAuth && priorAuthEl) {
-                priorAuthEl.innerHTML = `<span class="badge-prior-auth" style="cursor:pointer;"><i class="fa-solid fa-stamp"></i> 事前審查</span>`;
-                const paMatch = priorAuthGrounding ? (priorAuthGrounding.snippet || priorAuthGrounding.matched_text || '') : '事前審查';
-                priorAuthEl.onclick = () => scrollToMobileHighlight(reg.reference_annotations.full_text, paMatch);
-            } else if (priorAuthEl) {
-                priorAuthEl.innerHTML = '';
-            }
-
-            const chipStyle = 'background:rgba(30,41,59,0.9); border:1px solid rgba(56,189,248,0.3); border-radius:6px; padding:0.25rem 0.55rem; font-size:0.75rem; color:#e2e8f0; cursor:pointer;';
-            if (bios.length > 0 || steps.length > 0 || stops.length > 0 || evals.length > 0 || priorAuth) {
-                criteriaSection.classList.remove('hidden');
-
-                const groupedBios = [];
-                const bioMap = new Map();
-                bios.forEach((b) => {
-                    const key = `${b.biomarker}|${b.operator}|${b.value}|${b.unit || ''}`;
-                    const snippetText = b.source_grounding ? (b.source_grounding.snippet || b.source_grounding.matched_text || '') : '';
-                    if (!bioMap.has(key)) {
-                        const entry = { ...b, snippets: snippetText ? [snippetText] : [], clickIdx: 0 };
-                        bioMap.set(key, entry);
-                        groupedBios.push(entry);
-                    } else if (snippetText) {
-                        bioMap.get(key).snippets.push(snippetText);
-                    }
-                });
-
-                groupedBios.forEach((b) => {
-                    const chip = document.createElement('button');
-                    chip.style.cssText = chipStyle;
-                    const countBadge = b.snippets.length > 1 ? ` <span style="opacity:0.75; font-size:0.7rem;">(×${b.snippets.length})</span>` : '';
-                    chip.innerHTML = `<i class="fa-solid fa-vial" style="color:#10b981;"></i> <strong>${escapeHtml(b.biomarker)}</strong> ${escapeHtml(b.operator === 'status' ? '' : b.operator)} ${escapeHtml(String(b.value))}${b.unit ? ' ' + escapeHtml(b.unit) : ''}${countBadge}`;
-                    chip.addEventListener('click', () => {
-                        if (b.snippets.length > 0) {
-                            const idx = b.clickIdx % b.snippets.length;
-                            const targetSnippet = b.snippets[idx];
-                            let sameSnippetOcc = 0;
-                            for (let i = 0; i < idx; i++) {
-                                if (b.snippets[i] === targetSnippet) sameSnippetOcc++;
-                            }
-                            b.clickIdx++;
-                            scrollToMobileHighlight(reg.reference_annotations.full_text, targetSnippet, sameSnippetOcc);
-                        }
-                    });
-                    chipsContainer.appendChild(chip);
-                });
-
-                evals.forEach((ev) => {
-                    const chip = document.createElement('button');
-                    chip.style.cssText = chipStyle;
-                    const evLabel = typeof ev === 'string' ? ev : (ev.schedule || ev.frequency || '');
-                    const evSnippet = typeof ev === 'string' ? ev : (ev.source_grounding ? (ev.source_grounding.snippet || ev.source_grounding.matched_text) : evLabel);
-                    chip.innerHTML = `<i class="fa-regular fa-clock" style="color:#38bdf8;"></i> 評估/續用: ${escapeHtml(evLabel)}`;
-                    chip.addEventListener('click', () => {
-                        if (evSnippet) scrollToMobileHighlight(reg.reference_annotations.full_text, evSnippet);
-                    });
-                    chipsContainer.appendChild(chip);
-                });
-
-                steps.slice(0, 3).forEach((st) => {
-                    const chip = document.createElement('button');
-                    chip.style.cssText = chipStyle;
-                    const stLabel = typeof st === 'string' ? st : (st.rule || st.requirement || '');
-                    const stSnippet = typeof st === 'string' ? st : (st.source_grounding ? (st.source_grounding.snippet || st.source_grounding.matched_text) : stLabel);
-                    const shortRule = stLabel.length > 22 ? stLabel.substring(0, 22) + '...' : stLabel;
-                    chip.innerHTML = `<i class="fa-solid fa-stairs" style="color:#f59e0b;"></i> 二線/轉換: ${escapeHtml(shortRule)}`;
-                    chip.addEventListener('click', () => {
-                        if (stSnippet) scrollToMobileHighlight(reg.reference_annotations.full_text, stSnippet);
-                    });
-                    chipsContainer.appendChild(chip);
-                });
-
-                stops.slice(0, 3).forEach((sp) => {
-                    const chip = document.createElement('button');
-                    chip.style.cssText = chipStyle;
-                    const spLabel = typeof sp === 'string' ? sp : (sp.rule || sp.condition || '');
-                    const spSnippet = typeof sp === 'string' ? sp : (sp.source_grounding ? (sp.source_grounding.snippet || sp.source_grounding.matched_text) : spLabel);
-                    const shortRule = spLabel.length > 22 ? spLabel.substring(0, 22) + '...' : spLabel;
-                    chip.innerHTML = `<i class="fa-solid fa-ban" style="color:#ef4444;"></i> 停藥/排除: ${escapeHtml(shortRule)}`;
-                    chip.addEventListener('click', () => {
-                        if (spSnippet) scrollToMobileHighlight(reg.reference_annotations.full_text, spSnippet);
-                    });
-                    chipsContainer.appendChild(chip);
-                });
-            } else {
-                criteriaSection.classList.add('hidden');
-            }
-        }
-
-        const rawSegments = mobileSearchInput.value.trim().split(/[,，;；]+/).map(s => s.trim()).filter(s => s.length >= 2);
-        const activeHighlights = (mobileSearchInput.value.trim() && currentHighlightTerms.length > 0) ? currentHighlightTerms : rawSegments;
-        renderFormattedText(sheetFullText, reg.reference_annotations.full_text, activeHighlights.length > 0 ? activeHighlights : null);
+        const activeHighlights = resolveActiveHighlights(mobileSearchInput.value, currentHighlightTerms);
+        renderFormattedText(
+            sheetFullText,
+            reg.reference_annotations.full_text,
+            activeHighlights.length > 0 ? activeHighlights : null,
+            'm-clause-sec'
+        );
 
         mobileDetailSheet.classList.remove('hidden');
 
         if (activeHighlights.length > 0) {
-            setTimeout(() => {
-                const targetEl = sheetFullText.querySelector('.clause-header-matched') || sheetFullText.querySelector('.grounding-highlight');
-                if (targetEl) targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            }, 80);
+            autoScrollToFirstMatch(sheetFullText, 80);
         }
-    }
-
-    function scrollToMobileHighlight(fullText, highlightSnippet, occurrenceIdx = 0) {
-        const sheetFullText = document.getElementById('sheetFullText');
-        renderFormattedText(sheetFullText, fullText, highlightSnippet);
-        setTimeout(() => {
-            const marks = sheetFullText.querySelectorAll('.grounding-highlight');
-            if (marks.length > 0) {
-                const target = marks[Math.min(occurrenceIdx, marks.length - 1)];
-                target.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            }
-        }, 60);
-    }
-
-    function escapeRegExp(string) {
-        return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    }
-
-    function createHighlightRegex(highlightTarget) {
-        if (!highlightTarget) return null;
-        if (Array.isArray(highlightTarget)) {
-            const patterns = highlightTarget
-                .map(t => escapeHtml(String(t).trim()))
-                .filter(t => t.length >= 2)
-                .sort((a, b) => b.length - a.length)
-                .map(t => {
-                    const parts = t.split(/\s+/).filter(Boolean).map(p => escapeRegExp(p));
-                    return parts.join('[\\s\\u3000]*');
-                })
-                .filter(Boolean);
-            if (patterns.length === 0) return null;
-            return new RegExp(`(${patterns.join('|')})`, 'gi');
-        }
-        const escaped = escapeHtml(String(highlightTarget).trim());
-        const parts = escaped.split(/\s+/).filter(Boolean).map(p => escapeRegExp(p));
-        if (parts.length === 0) return null;
-        return new RegExp(`(${parts.join('[\\s\\u3000]*')})`, 'gi');
-    }
-
-    function renderFormattedText(container, text, highlightSnippet = null) {
-        if (!text) { container.innerHTML = ''; return; }
-
-        let lines = text.split('\n');
-        let htmlParts = [];
-        let inTable = false;
-        let tableRows = [];
-        let clauseNavItems = [];
-        const regex = createHighlightRegex(highlightSnippet);
-        const primaryTerm = Array.isArray(highlightSnippet) && highlightSnippet.length > 0 ? highlightSnippet[0].toLowerCase() : null;
-        const clauseHeaderRe = /^[（\(](\d+)[）\)]\s*([^：:\n]{2,32}?)[：:](.*)$/;
-
-        lines.forEach((line, lineIdx) => {
-            let trimmed = line.trim();
-            if (trimmed.includes('|')) {
-                if (!inTable) {
-                    inTable = true;
-                    tableRows = [];
-                }
-                tableRows.push(trimmed);
-            } else {
-                if (inTable) {
-                    inTable = false;
-                    htmlParts.push(buildTableHtml(tableRows, highlightSnippet));
-                    tableRows = [];
-                }
-                if (trimmed) {
-                    const clauseMatch = trimmed.match(clauseHeaderRe);
-                    let safeLine = escapeHtml(trimmed);
-                    if (regex) {
-                        safeLine = safeLine.replace(regex, `<mark class="grounding-highlight">$1</mark>`);
-                    }
-                    if (clauseMatch) {
-                        const cNum = clauseMatch[1];
-                        const cTitle = clauseMatch[2].trim();
-                        const anchorId = `m-clause-sec-${cNum}-${lineIdx}`;
-                        const isMatched = Boolean(
-                            (primaryTerm && cTitle.toLowerCase().includes(primaryTerm)) ||
-                            (regex && cTitle.match(createHighlightRegex(highlightSnippet)))
-                        );
-                        clauseNavItems.push({ num: cNum, title: cTitle, anchorId, matched: isMatched });
-                        htmlParts.push(`<div id="${anchorId}" class="clause-header ${isMatched ? 'clause-header-matched' : ''}">${safeLine}</div>`);
-                    } else if (trimmed.startsWith('【')) {
-                        htmlParts.push(`<h4 style="color:#38bdf8; margin-top:1rem;"><i class="fa-solid fa-table-list"></i> ${safeLine}</h4>`);
-                    } else {
-                        htmlParts.push(`<p style="margin-bottom:0.5rem;">${safeLine}</p>`);
-                    }
-                }
-            }
-        });
-
-        if (inTable) {
-            htmlParts.push(buildTableHtml(tableRows, highlightSnippet));
-        }
-
-        let navHtml = '';
-        if (clauseNavItems.length >= 2) {
-            const pillsHtml = clauseNavItems.map(item =>
-                `<button type="button" class="clause-jump-pill ${item.matched ? 'matched' : ''}" data-target="${item.anchorId}">(${escapeHtml(item.num)}) ${escapeHtml(item.title)}</button>`
-            ).join('');
-            navHtml = `
-                <div class="clause-jump-bar">
-                    <span class="clause-jump-label"><i class="fa-solid fa-compass"></i> 條文段落快速跳轉：</span>
-                    <div class="clause-jump-pills">${pillsHtml}</div>
-                </div>
-            `;
-        }
-
-        container.innerHTML = navHtml + htmlParts.join('');
-
-        container.querySelectorAll('.clause-jump-pill').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const targetId = btn.getAttribute('data-target');
-                const targetEl = document.getElementById(targetId);
-                if (targetEl) {
-                    targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    targetEl.classList.add('clause-header-matched');
-                }
-            });
-        });
-    }
-
-    function buildTableHtml(rows, highlightSnippet = null) {
-        if (!rows.length) return '';
-        let html = '<div class="table-responsive"><table class="clinical-table">';
-        rows.forEach((rowStr, idx) => {
-            let cells = rowStr.split('|').map(c => c.trim());
-            const formatCell = (c) => {
-                let s = escapeHtml(c);
-                if (highlightSnippet) {
-                    const regex = createHighlightRegex(highlightSnippet);
-                    if (regex) s = s.replace(regex, `<mark class="grounding-highlight">$1</mark>`);
-                }
-                return s;
-            };
-            if (idx === 0) {
-                html += '<thead><tr>' + cells.map(c => `<th>${formatCell(c)}</th>`).join('') + '</tr></thead><tbody>';
-            } else {
-                html += '<tr>' + cells.map(c => `<td>${formatCell(c)}</td>`).join('') + '</tr>';
-            }
-        });
-        html += '</tbody></table></div>';
-        return html;
-    }
-
-    function escapeHtml(str) {
-        return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
     }
 });

@@ -16,6 +16,28 @@ class NoAliasDumper(yaml.SafeDumper):
 
 
 class NHIRegulationParser:
+    CHAP_PATTERN = re.compile(r'^第\s*(\d+)\s*節\s*(.*)')
+    SEC_PATTERN = re.compile(r'^(\d+\.\d+[\d\.]*)\s*(.*)')
+    FALSE_SEC_PREFIX = re.compile(r'^[歲年個週天日小~～至項\*]')
+    APPENDIX_PATTERN = re.compile(r'^(?:◎\s*附表|附表[一二三四五六七八九十0-9]+|全民健康保險保險對象使用.*協議書)')
+    EFFECTIVE_DATE_PATTERN = re.compile(r'\(\d{2,3}/\d{1,2}/\d{1,2}(?:[、,]\d{2,3}/\d{1,2}/\d{1,2})*\)')
+
+    LAB_PATTERNS = (
+        (r'\bHbA1c\b', 'HbA1c'),
+        (r'\beGFR\b', 'eGFR'),
+        (r'\bALT\b', 'ALT'),
+        (r'\bAST\b', 'AST'),
+        (r'\bLVEF\b', 'LVEF'),
+        (r'\bScr\b|血清肌酸酐', 'Scr'),
+        (r'血糖', '血糖'),
+        (r'血壓', '血壓'),
+        (r'\bBMI\b', 'BMI'),
+        (r'白血球', '白血球'),
+        (r'血小板', '血小板'),
+    )
+
+    GENERIC_SUBSECTION_HEADERS = ("單方製劑", "複方製劑", "全身性抗疱疹病毒劑")
+
     def __init__(self, output_dir="okf_data"):
         self.output_dir = output_dir
         os.makedirs(self.output_dir, exist_ok=True)
@@ -38,35 +60,27 @@ class NHIRegulationParser:
                         paragraphs.append(line.strip())
         return self._structure_paragraphs(paragraphs, source_file=os.path.basename(file_path))
 
+    @staticmethod
+    def _extract_table_rows(table):
+        rows = []
+        for i, row in enumerate(table.rows):
+            cell_texts = [cell.text.strip().replace('\n', ' ') for cell in row.cells]
+            if any(cell_texts):
+                if i == 0 and not cell_texts[0]:
+                    cell_texts[0] = "對象類別 (Target Group)"
+                rows.append(" | ".join(cell_texts))
+        return rows
+
     def _build_record(self, rec_index, current_section_num, current_section_title, current_chapter, source_file, full_text):
-        effective_dates = re.findall(r'\(\d{2,3}/\d{1,2}/\d{1,2}(?:[、,]\d{2,3}/\d{1,2}/\d{1,2})*\)', full_text)
+        effective_dates = self.EFFECTIVE_DATE_PATTERN.findall(full_text)
         combined_text = f"{current_section_title}\n{full_text}"
         atc_classes, ingredients = self.atc_engine.find_related_terms(combined_text)
 
-        # Extract diseases / indications
         extracted_diseases = self.disease_engine.extract_diseases_from_text(combined_text)
         bilingual_indications = [f"{d['english']} ({d['chinese']})" for d in extracted_diseases]
 
-        # Precise lab criteria extraction
-        labs = []
-        lab_patterns = [
-            (r'\bHbA1c\b', 'HbA1c'),
-            (r'\beGFR\b', 'eGFR'),
-            (r'\bALT\b', 'ALT'),
-            (r'\bAST\b', 'AST'),
-            (r'\bLVEF\b', 'LVEF'),
-            (r'\bScr\b|血清肌酸酐', 'Scr'),
-            (r'血糖', '血糖'),
-            (r'血壓', '血壓'),
-            (r'\bBMI\b', 'BMI'),
-            (r'白血球', '白血球'),
-            (r'血小板', '血小板')
-        ]
-        for pat, label in lab_patterns:
-            if re.search(pat, full_text):
-                labs.append(label)
+        labs = [label for pat, label in self.LAB_PATTERNS if re.search(pat, full_text)]
 
-        # Deep clinical criteria extraction via LangExtract (OKF v0.2)
         le_res = self.langextract_engine.extract_section_rules(
             section_number=current_section_num,
             section_title=current_section_title,
@@ -116,21 +130,9 @@ class NHIRegulationParser:
         current_buffer = []
         section_title_map = {}
 
-        chap_pattern = re.compile(r'^第\s*(\d+)\s*節\s*(.*)')
-        sec_pattern = re.compile(r'^(\d+\.\d+[\d\.]*)\s*(.*)')
-        false_sec_prefix = re.compile(r'^[歲年個週天日小~～至項\*]')
-        appendix_pattern = re.compile(r'^(?:◎\s*附表|附表[一二三四五六七八九十0-9]+|全民健康保險保險對象使用.*協議書)')
-
-        # Dictionary of specific attached appendix tables
         specific_attached_tables = {}
         for t in doc.tables:
-            t_rows = []
-            for i, row in enumerate(t.rows):
-                cell_texts = [cell.text.strip().replace('\n', ' ') for cell in row.cells]
-                if any(cell_texts):
-                    if i == 0 and not cell_texts[0]:
-                        cell_texts[0] = "對象類別 (Target Group)"
-                    t_rows.append(" | ".join(cell_texts))
+            t_rows = self._extract_table_rows(t)
             t_text = "\n".join(t_rows)
             if "維生素A" in t_text and "維生素B1" in t_text:
                 specific_attached_tables["附表三-A"] = t_text
@@ -143,22 +145,18 @@ class NHIRegulationParser:
             nonlocal current_buffer, records
             if not current_buffer:
                 return
-
             full_text = "\n".join(current_buffer)
-
-            # Check if this specific section references any specific attached table
             if current_section_num.startswith("3.2") and "附表三-A" in specific_attached_tables:
                 full_text = full_text + "\n\n【附表詳細內容 / Attached Table Details】:\n" + specific_attached_tables["附表三-A"]
 
-            record = self._build_record(
+            records.append(self._build_record(
                 rec_index=len(records) + 1,
                 current_section_num=current_section_num,
                 current_section_title=current_section_title,
                 current_chapter=current_chapter,
                 source_file=source_file,
                 full_text=full_text
-            )
-            records.append(record)
+            ))
             current_buffer = []
 
         for element in doc.element.body:
@@ -169,7 +167,7 @@ class NHIRegulationParser:
                 if not text:
                     continue
 
-                chap_match = chap_pattern.match(text)
+                chap_match = self.CHAP_PATTERN.match(text)
                 if chap_match:
                     flush_buffer()
                     chap_num, chap_name = chap_match.groups()
@@ -180,13 +178,13 @@ class NHIRegulationParser:
                     current_section_title = current_chapter
                     continue
 
-                sec_match = sec_pattern.match(text)
+                sec_match = self.SEC_PATTERN.match(text)
                 if sec_match:
                     s_num, s_title = sec_match.groups()
                     first_num = s_num.split('.')[0]
                     is_valid_sec = (
                         first_num == active_chap_num
-                        and not false_sec_prefix.match(s_title)
+                        and not self.FALSE_SEC_PREFIX.match(s_title)
                         and not (s_num == "13.3.3" and s_title.startswith("與tazarotene"))
                     )
                     if is_valid_sec:
@@ -198,8 +196,7 @@ class NHIRegulationParser:
                         clean_t = re.sub(r'[（\(][^）\)]*\d+[^）\)]*[）\)]', '', s_title).strip(' ：:。')
                         section_title_map[clean_sec] = clean_t
 
-                        # Prepend parent section context for generic subsection headers (e.g. 單方製劑 / 複方製劑)
-                        if clean_t in ("單方製劑", "複方製劑", "全身性抗疱疹病毒劑"):
+                        if clean_t in self.GENERIC_SUBSECTION_HEADERS:
                             parent_sec = ".".join(clean_sec.split(".")[:-1])
                             parent_t = section_title_map.get(parent_sec, "")
                             if parent_t:
@@ -210,7 +207,7 @@ class NHIRegulationParser:
                         current_section_title = f"{s_num_norm} {s_title}".strip()
                         continue
 
-                if appendix_pattern.match(text):
+                if self.APPENDIX_PATTERN.match(text):
                     flush_buffer()
                     current_chapter = "附表附錄 Standalone Appendix Forms"
                     current_section_num = "APP"
@@ -220,18 +217,9 @@ class NHIRegulationParser:
                 current_buffer.append(text)
 
             elif tag == 'tbl':
-                tbl = Table(element, doc)
-                tbl_rows = []
-                for i, row in enumerate(tbl.rows):
-                    cell_texts = [cell.text.strip().replace('\n', ' ') for cell in row.cells]
-                    if any(cell_texts):
-                        if i == 0 and not cell_texts[0]:
-                            cell_texts[0] = "對象類別 (Target Group)"
-                        tbl_rows.append(" | ".join(cell_texts))
-                if tbl_rows:
-                    tbl_formatted = "\n【給付與評估表格 / Clinical Assessment Table】:\n" + "\n".join(tbl_rows)
-                    if current_section_num != "APP":
-                        current_buffer.append(tbl_formatted)
+                tbl_rows = self._extract_table_rows(Table(element, doc))
+                if tbl_rows and current_section_num != "APP":
+                    current_buffer.append("\n【給付與評估表格 / Clinical Assessment Table】:\n" + "\n".join(tbl_rows))
 
         flush_buffer()
         self._enrich_parent_ingredients(records)
@@ -266,28 +254,22 @@ class NHIRegulationParser:
         current_section_title = "通則 General Rules"
         current_buffer = []
 
-        chap_pattern = re.compile(r'^第\s*(\d+)\s*節\s*(.*)')
-        sec_pattern = re.compile(r'^(\d+\.\d+[\d\.]*)\s*(.*)')
-        false_sec_prefix = re.compile(r'^[歲年個週天日小~～至項\*]')
-
         def flush_buffer():
             nonlocal current_buffer, records
             if not current_buffer:
                 return
-            full_text = "\n".join(current_buffer)
-            record = self._build_record(
+            records.append(self._build_record(
                 rec_index=len(records) + 1,
                 current_section_num=current_section_num,
                 current_section_title=current_section_title,
                 current_chapter=current_chapter,
                 source_file=source_file,
-                full_text=full_text
-            )
-            records.append(record)
+                full_text="\n".join(current_buffer)
+            ))
             current_buffer = []
 
         for p in paragraphs:
-            chap_match = chap_pattern.match(p)
+            chap_match = self.CHAP_PATTERN.match(p)
             if chap_match:
                 flush_buffer()
                 chap_num, chap_name = chap_match.groups()
@@ -298,11 +280,11 @@ class NHIRegulationParser:
                 current_section_title = current_chapter
                 continue
 
-            sec_match = sec_pattern.match(p)
+            sec_match = self.SEC_PATTERN.match(p)
             if sec_match:
                 s_num, s_title = sec_match.groups()
                 first_num = s_num.split('.')[0]
-                if first_num == active_chap_num and not false_sec_prefix.match(s_title):
+                if first_num == active_chap_num and not self.FALSE_SEC_PREFIX.match(s_title):
                     flush_buffer()
                     if s_title.startswith('.'):
                         s_title = s_title.lstrip('.').strip()
@@ -321,16 +303,12 @@ class NHIRegulationParser:
     def save_to_okf_yaml(self, records, source_doc="完整給付規定1150821.docx"):
         grouped = {}
         for r in records:
-            chap = r["chapter"]
-            if chap not in grouped:
-                grouped[chap] = []
-            grouped[chap].append(r)
+            grouped.setdefault(r["chapter"], []).append(r)
 
         generated_files = []
         for chap, items in grouped.items():
             clean_name = re.sub(r'[^\w\-_]', '_', chap)[:30].strip('_')
-            file_name = f"{clean_name}.yaml"
-            file_path = os.path.join(self.output_dir, file_name)
+            file_path = os.path.join(self.output_dir, f"{clean_name}.yaml")
 
             okf_payload = {
                 "okf_version": "0.2",

@@ -61,6 +61,24 @@ class NHIIndexer:
         'easi': 'EASI',
     }
 
+    LAB_FILTER_GROUP_MAP = {
+        "bnp/nt-probnp": {"nt-probnp", "bnp", "probnp"},
+        "uacr": {"uacr", "upcr"},
+        "alt": {"alt", "ast", "gpt", "got"},
+        "braf": {"braf", "ras", "kras", "nras", "ros1"},
+        "psa": {"psa", "afp"},
+        "pasi": {"pasi", "easi"},
+        "mmse": {"mmse", "cdr"},
+        "dexa/bmd": {"t-score", "bmd", "dexa"},
+        "hbv dna": {"hbv dna", "hbsag", "hbeag"},
+        "hcv rna": {"hcv rna", "anti-hcv"},
+        "hb": {"hb", "hemoglobin", "血色素", "血紅素"},
+        "anc": {"anc", "wbc", "白血球"},
+        "platelet": {"platelet", "血小板"},
+    }
+
+    PRIOR_AUTH_KEYWORDS = ('事前審查', '事前核准', '專案申請', '事前申請')
+
     def __init__(self, data_dir="okf_data"):
         self.data_dir = data_dir
         self.atc_engine = ATCEngine()
@@ -77,21 +95,10 @@ class NHIIndexer:
             self._compiled_word_regex[term] = pat
         return pat
 
-    LAB_FILTER_GROUP_MAP = {
-        "bnp/nt-probnp": {"nt-probnp", "bnp", "probnp"},
-        "uacr": {"uacr", "upcr"},
-        "alt": {"alt", "ast", "gpt", "got"},
-        "braf": {"braf", "ras", "kras", "nras", "ros1"},
-        "psa": {"psa", "afp"},
-        "pasi": {"pasi", "easi"},
-        "mmse": {"mmse", "cdr"},
-        "dexa/bmd": {"t-score", "bmd", "dexa"},
-        "hbv dna": {"hbv dna", "hbsag", "hbeag"},
-        "hcv rna": {"hcv rna", "anti-hcv"},
-        "hb": {"hb", "hemoglobin", "血色素", "血紅素"},
-        "anc": {"anc", "wbc", "白血球"},
-        "platelet": {"platelet", "血小板"},
-    }
+    def _matches_term(self, term, text):
+        if re.match(r'^[a-z0-9\-]+$', term):
+            return bool(self._get_word_regex(term).search(text))
+        return term in text
 
     def load_and_index(self):
         self.regulations = []
@@ -113,7 +120,7 @@ class NHIIndexer:
                 print(f"Error loading {yf}: {e}")
 
     def _index_record(self, reg):
-        # Drop duplicate per-indication clinical_rules list from memory (all biomarkers/rules are already on conditions_of_payment)
+        # Drop duplicate per-indication clinical_rules list from memory
         reg.get("conditions_of_payment", {}).pop("clinical_rules", None)
 
         title_str = reg.get("section_title", "")
@@ -129,6 +136,7 @@ class NHIIndexer:
         reg["_classes_lower"] = [c.lower() for c in reg.get("medications", {}).get("drug_classes", [])]
         reg["_ingredients_lower"] = [i.lower() for i in reg.get("medications", {}).get("ingredients", [])]
         reg["_indications_lower"] = [ind.lower() for ind in reg.get("conditions_of_payment", {}).get("indications", [])]
+
         lab_tokens = {l.lower() for l in reg.get("conditions_of_payment", {}).get("laboratory_criteria", [])}
         for b in reg.get("conditions_of_payment", {}).get("structured_biomarkers", []):
             bio_name = b.get("biomarker", "").lower()
@@ -142,14 +150,11 @@ class NHIIndexer:
         sec_num = reg.get("section_number", "")
         self.index["by_section"][sec_num] = reg_id
 
-        tokens = set(re.findall(r'\w+', full_text_lower))
-        for t in tokens:
+        for t in set(re.findall(r'\w+', full_text_lower)):
             self.index["by_keyword"].setdefault(t, set()).add(reg_id)
 
-        labs = reg.get("conditions_of_payment", {}).get("laboratory_criteria", [])
-        for lab in labs:
-            l_key = lab.lower()
-            self.index["by_lab"].setdefault(l_key, set()).add(reg_id)
+        for lab in reg.get("conditions_of_payment", {}).get("laboratory_criteria", []):
+            self.index["by_lab"].setdefault(lab.lower(), set()).add(reg_id)
 
         for bio in reg.get("conditions_of_payment", {}).get("structured_biomarkers", []):
             b_name = bio.get("biomarker", "").lower()
@@ -207,9 +212,8 @@ class NHIIndexer:
                 if lab_filter_lower == "prior_auth":
                     if not reg.get("conditions_of_payment", {}).get("prior_authorization_required"):
                         continue
-                else:
-                    if not (reg["_lab_tokens_lower"] & lab_filter_targets):
-                        continue
+                elif not (reg["_lab_tokens_lower"] & lab_filter_targets):
+                    continue
             candidate_regs.append(reg)
 
         if not segments:
@@ -237,12 +241,11 @@ class NHIIndexer:
         current_candidates.sort(key=lambda r: score_map[r["regulation_id"]], reverse=True)
         return current_candidates
 
-    def _score_single_segment(self, seg_query, candidate_regs, full_query_context="", is_multi_segment=False):
+    def _expand_segment_context(self, seg_query, full_query_context=""):
         query_clean = seg_query.strip()
         original_query = full_query_context or query_clean
         is_pure_section_query = bool(re.match(r'^\d+(\.\d+)+\.?$', query_clean))
 
-        # Disambiguate renal eGFR vs oncology EGFR using full query context
         renal_egfr_intent = False
         oncology_egfr_intent = False
         if 'egfr' in query_clean.lower():
@@ -258,7 +261,6 @@ class NHIIndexer:
         exact_target_terms = set()
         matched_class_names = set()
         matched_disease_names = set()
-        matched_ingredients = set()
 
         q_part_lower = query_clean.lower()
         direct_terms.add(q_part_lower)
@@ -266,8 +268,7 @@ class NHIIndexer:
         exact_target_terms.add(q_part_lower)
 
         if not is_pure_section_query:
-            sec_tokens = re.findall(r'\b\d+(?:\.\d+)+\.?\b', q_part_lower)
-            for st in sec_tokens:
+            for st in re.findall(r'\b\d+(?:\.\d+)+\.?\b', q_part_lower):
                 exact_target_terms.add(st.strip('.'))
 
             if parsed_bio_constraint:
@@ -283,7 +284,6 @@ class NHIIndexer:
                             direct_terms.add(t_clean)
                             expanded_terms.add(t_clean)
 
-        # Universal Alphanumeric Normalization for Lab Criteria & Medical Acronyms
         norm_q = re.sub(r'[\s\-_/]+', '', q_part_lower)
         if norm_q in ['hbvdna', 'hbv', 'b型肝炎病毒量', '血清hbvdna']:
             direct_terms.update(['hbv dna', 'hbv-dna', 'hbvdna', 'hbv', 'b型肝炎'])
@@ -293,15 +293,13 @@ class NHIIndexer:
         if 'gene' in norm_q or 'genetic' in norm_q:
             direct_terms.add('基因')
             expanded_terms.add('基因')
-        if 'test' in norm_q or 'detect' in norm_q or 'check' in norm_q or 'report' in norm_q:
+        if any(k in norm_q for k in ('test', 'detect', 'check', 'report')):
             direct_terms.update(['檢測', '檢查', '報告'])
             expanded_terms.update(['檢測', '檢查', '報告'])
 
-        # ATC Expansion
         atc_expansions = []
         if query_clean and not is_pure_section_query and not parsed_bio_constraint:
             atc_expansions = self.atc_engine.expand_query(query_clean)
-            q_clean_low = query_clean.lower()
             for exp in atc_expansions:
                 expanded_terms.add(exp["atc_code"].lower())
                 expanded_terms.add(exp["class_code"].lower())
@@ -319,20 +317,17 @@ class NHIIndexer:
                 brand_tc = [b.lower() for b in exp.get("brand_tc", [])]
 
                 if ing_en:
-                    matched_ingredients.add(ing_en)
                     direct_terms.add(ing_en)
                 if ing_tc:
-                    matched_ingredients.add(ing_tc)
                     direct_terms.add(ing_tc)
 
                 is_matching_specific = (
-                    q_clean_low in ing_en or
-                    q_clean_low in ing_tc or
-                    (brand_en and q_clean_low in brand_en) or
-                    any(q_clean_low in b for b in brand_tc) or
-                    q_clean_low == exp["atc_code"].lower()
+                    q_part_lower in ing_en or
+                    q_part_lower in ing_tc or
+                    (brand_en and q_part_lower in brand_en) or
+                    any(q_part_lower in b for b in brand_tc) or
+                    q_part_lower == exp["atc_code"].lower()
                 )
-
                 if is_matching_specific:
                     if ing_en:
                         exact_target_terms.add(ing_en)
@@ -346,7 +341,6 @@ class NHIIndexer:
                     for b in brand_tc:
                         exact_target_terms.add(b)
 
-        # Disease Expansion
         disease_expansions = []
         if not is_pure_section_query:
             disease_expansions.extend(self.disease_engine.expand_query(query_clean))
@@ -372,14 +366,28 @@ class NHIIndexer:
                 if grp_terms:
                     unique_disease_groups.append(grp_terms)
 
-        primary_regulations = set([exp["primary_regulation"] for exp in atc_expansions if exp.get("primary_regulation")])
+        primary_regulations = {exp["primary_regulation"] for exp in atc_expansions if exp.get("primary_regulation")}
 
-        def check_match(term, text):
-            if re.match(r'^[a-z0-9\-]+$', term):
-                return bool(self._get_word_regex(term).search(text))
-            return term in text
+        return {
+            "query_clean": query_clean,
+            "norm_q": norm_q,
+            "is_pure_section_query": is_pure_section_query,
+            "renal_egfr_intent": renal_egfr_intent,
+            "oncology_egfr_intent": oncology_egfr_intent,
+            "parsed_bio_constraint": parsed_bio_constraint,
+            "direct_terms": direct_terms,
+            "expanded_terms": expanded_terms,
+            "exact_target_terms": exact_target_terms,
+            "matched_class_names": matched_class_names,
+            "matched_disease_names": matched_disease_names,
+            "unique_disease_groups": unique_disease_groups,
+            "atc_expansions": atc_expansions,
+            "primary_regulations": primary_regulations,
+        }
 
-        min_score_threshold = 30 if (is_multi_segment and atc_expansions and not matched_disease_names) else 1
+    def _score_single_segment(self, seg_query, candidate_regs, full_query_context="", is_multi_segment=False):
+        ctx = self._expand_segment_context(seg_query, full_query_context=full_query_context)
+        min_score_threshold = 30 if (is_multi_segment and ctx["atc_expansions"] and not ctx["matched_disease_names"]) else 1
         results = []
 
         for reg in candidate_regs:
@@ -392,23 +400,20 @@ class NHIIndexer:
             reg_indications = reg["_indications_lower"]
             sec_clean = reg["section_number"].strip('.').lower()
 
-            score = 0
-
-            # If pure section query (e.g. "9.138" or "9.124."), only return exact or subsection matches!
-            if is_pure_section_query:
-                q_sec = query_clean.strip('.').lower()
+            if ctx["is_pure_section_query"]:
+                q_sec = ctx["query_clean"].strip('.').lower()
                 if sec_clean == q_sec:
                     results.append((reg, 10000, 0))
                 elif sec_clean.startswith(q_sec + '.'):
                     results.append((reg, 5000, 0))
                 continue
 
-            # Exact section number check
-            if query_clean and query_clean.lower().strip('.') == sec_clean:
+            score = 0
+
+            if ctx["query_clean"] and ctx["query_clean"].lower().strip('.') == sec_clean:
                 score += 5000
 
-            # Direct section number token matching boost
-            for term in exact_target_terms:
+            for term in ctx["exact_target_terms"]:
                 if re.match(r'^\d+(\.\d+)+\.?$', term):
                     term_clean = term.strip('.')
                     if sec_clean == term_clean:
@@ -416,29 +421,27 @@ class NHIIndexer:
                     elif sec_clean.startswith(term_clean + '.'):
                         score += 3000
 
-            # Primary regulation mapping boost
-            for pr in primary_regulations:
+            for pr in ctx["primary_regulations"]:
                 pr_clean = pr.strip('.').lower()
                 if sec_clean == pr_clean or sec_clean.startswith(pr_clean + '.'):
                     score += 1500
                     break
 
-            # Priority boost for exact isolated brand/molecule matches in title or text
-            for et in exact_target_terms:
+            for et in ctx["exact_target_terms"]:
                 if et and len(et) > 1:
-                    if check_match(et, title_lower):
+                    if self._matches_term(et, title_lower):
                         score += 1800
-                    elif check_match(et, full_text):
+                    elif self._matches_term(et, full_text):
                         score += 500
 
-            for dt in direct_terms:
+            for dt in ctx["direct_terms"]:
                 if dt and len(dt) > 1:
-                    if check_match(dt, title_lower):
+                    if self._matches_term(dt, title_lower):
                         score += 100
-                    elif check_match(dt, full_text):
+                    elif self._matches_term(dt, full_text):
                         score += 40
 
-            for mdn in matched_disease_names:
+            for mdn in ctx["matched_disease_names"]:
                 if any(mdn in ind for ind in reg_indications):
                     score += 100
                 if mdn in title_lower:
@@ -451,54 +454,51 @@ class NHIIndexer:
                     score += min(occ, 8) * 35
 
             matched_disease_group_count = 0
-            if unique_disease_groups:
-                for grp in unique_disease_groups:
-                    if any(check_match(gt, full_text) for gt in grp):
+            if ctx["unique_disease_groups"]:
+                for grp in ctx["unique_disease_groups"]:
+                    if any(self._matches_term(gt, full_text) for gt in grp):
                         matched_disease_group_count += 1
-                if len(unique_disease_groups) >= 2 and matched_disease_group_count >= 2:
+                if len(ctx["unique_disease_groups"]) >= 2 and matched_disease_group_count >= 2:
                     score += matched_disease_group_count * 700
 
-            for mc in matched_class_names:
+            for mc in ctx["matched_class_names"]:
                 if any(mc in rc or rc in mc for rc in reg_classes):
                     score += 50
 
-            for dt in direct_terms:
-                if dt and len(dt) > 1:
-                    if any(check_match(dt, ing) for ing in reg_ingredients):
-                        score += 1000
-                        break
+            for dt in ctx["direct_terms"]:
+                if dt and len(dt) > 1 and any(self._matches_term(dt, ing) for ing in reg_ingredients):
+                    score += 1000
+                    break
 
-            for dt in direct_terms:
-                if dt and len(dt) > 1:
-                    if any(check_match(dt, cls) for cls in reg_classes):
-                        score += 800
-                        break
+            for dt in ctx["direct_terms"]:
+                if dt and len(dt) > 1 and any(self._matches_term(dt, cls) for cls in reg_classes):
+                    score += 800
+                    break
 
-            if len(norm_q) >= 3 and norm_q in norm_full_text:
+            if len(ctx["norm_q"]) >= 3 and ctx["norm_q"] in norm_full_text:
                 score += 40
 
-            # Match on prior authorization intent
-            if any(pa_kw in direct_terms for pa_kw in ['事前審查', '事前核准', '專案申請', '事前申請']):
+            if any(pa_kw in ctx["direct_terms"] for pa_kw in self.PRIOR_AUTH_KEYWORDS):
                 if reg.get("conditions_of_payment", {}).get("prior_authorization_required"):
                     score += 600
 
-            # Structured biomarker & quantitative constraint scoring
             struct_bios = reg.get("conditions_of_payment", {}).get("structured_biomarkers", [])
             bio_names_exact = {b.get("biomarker", "") for b in struct_bios}
 
-            if renal_egfr_intent:
+            if ctx["renal_egfr_intent"]:
                 if "eGFR" in bio_names_exact or "腎絲球過濾率" in full_text or "慢性腎臟病" in full_text:
                     score += 900
                 elif "EGFR" in bio_names_exact and "eGFR" not in bio_names_exact:
                     score -= 400
-            elif oncology_egfr_intent:
+            elif ctx["oncology_egfr_intent"]:
                 if "EGFR" in bio_names_exact:
                     score += 900
 
-            if parsed_bio_constraint:
-                target_bio = parsed_bio_constraint["biomarker"]
-                target_val = parsed_bio_constraint["value_num"]
-                target_str = parsed_bio_constraint["value_str"]
+            parsed_bio = ctx["parsed_bio_constraint"]
+            if parsed_bio:
+                target_bio = parsed_bio["biomarker"]
+                target_val = parsed_bio["value_num"]
+                target_str = parsed_bio["value_str"]
                 matched_bio_in_reg = False
                 for b in struct_bios:
                     if b.get("biomarker", "").lower() == target_bio.lower():
@@ -521,23 +521,19 @@ class NHIIndexer:
             for bio in struct_bios:
                 b_name = bio.get("biomarker", "").lower()
                 b_val = str(bio.get("value", "")).lower()
-                if b_name and any(b_name in dt for dt in direct_terms):
+                if b_name and any(b_name in dt for dt in ctx["direct_terms"]):
                     score += 80
-                if b_val and any(b_val == dt for dt in direct_terms):
+                if b_val and any(b_val == dt for dt in ctx["direct_terms"]):
                     score += 60
 
-            for term in expanded_terms:
-                if term and len(term) > 1:
-                    if check_match(term, full_text):
-                        if check_match(term, title_lower):
-                            score += 30
-                        else:
-                            score += 5
+            for term in ctx["expanded_terms"]:
+                if term and len(term) > 1 and self._matches_term(term, full_text):
+                    score += 30 if self._matches_term(term, title_lower) else 5
 
             if score >= min_score_threshold:
                 results.append((reg, score, matched_disease_group_count))
 
-        if len(unique_disease_groups) >= 2 and not atc_expansions and results:
+        if len(ctx["unique_disease_groups"]) >= 2 and not ctx["atc_expansions"] and results:
             max_grp = max(r[2] for r in results)
             if max_grp >= 2:
                 results = [r for r in results if r[2] >= 2]
@@ -572,7 +568,6 @@ class NHIIndexer:
             if not seg_clean or re.match(r'^\d+(\.\d+)+\.?$', seg_clean):
                 continue
 
-            # 1. Disease & clinical condition terms (put specific disease terms before stage/action modifiers)
             for de in self.disease_engine.expand_query(seg_clean):
                 if de["disease_key"] == "metastatic_advanced":
                     s_low = seg_clean.lower()
@@ -590,7 +585,6 @@ class NHIIndexer:
                 for tc in de["chinese_terms"]:
                     add_term(tc, is_modifier=is_mod)
 
-            # 2. ATC / Drug generic & brand terms
             for exp in self.atc_engine.expand_query(seg_clean):
                 ing_en = exp.get("ingredient_en", "")
                 ing_tc = exp.get("ingredient_tc", "")
@@ -605,12 +599,10 @@ class NHIIndexer:
                 for btc in exp.get("brand_tc", []):
                     add_term(btc)
 
-            # 3. Biomarker constraint terms
             bio_c = self._parse_biomarker_constraint(seg_clean)
             if bio_c:
                 add_term(bio_c["biomarker"])
 
-            # 4. Raw segment if Chinese or single medical token
             if any(ord(c) > 127 for c in seg_clean) or len(seg_clean.split()) <= 2:
                 add_term(seg_clean)
 

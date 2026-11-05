@@ -150,7 +150,7 @@ regulations:
     indications:
     - Neonatal Respiratory Distress Syndrome (RDS) (呼吸窘迫症候群)
     laboratory_criteria: []
-    summary: 規範【. Surfactant (如Survanta、Curosurf)：】之健保給付條件。 規範重點：1.用於新生兒(包含早產兒)因表面張力素不足引起的呼吸窘迫症候群
+    summary: 適用於【Neonatal Respiratory Distress Syndrome】之健保給付。 規範重點：1.用於新生兒(包含早產兒)因表面張力素不足引起的呼吸窘迫症候群
       (respiratory distress syndrome, RDS)。
     clinical_rules:
     - indication: 6.2.1. Surfactant (如Survanta、Curosurf)：(85/1/1、113/9/1)
@@ -610,12 +610,14 @@ regulations:
     - Prednisolone
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Asthma (氣喘)
     laboratory_criteria:
     - 白血球
     - WBC
     - Eosinophil
-    summary: 適用於【Asthma】之健保給付。 主要條件包含：臨床檢驗需符合 WBC >= 300/μL, Eosinophil >= 300cells/mcL；使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Asthma】之健保給付。
+      主要條件包含：臨床檢驗需符合 WBC >= 300/μL, Eosinophil >= 300cells/mcL；使用前須經事前審查核准。
     clinical_rules:
     - indication: Asthma (氣喘)
       biomarkers:
@@ -713,6 +715,7 @@ regulations:
     - Prednisolone
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Atopic Dermatitis (異位性皮膚炎)
     - Asthma (氣喘)
     - Pneumonia / Respiratory & ENT Infection (肺炎)
@@ -720,8 +723,8 @@ regulations:
     - 白血球
     - WBC
     - Eosinophil
-    summary: 適用於【Atopic Dermatitis、Asthma】之健保給付。 主要條件包含：臨床檢驗需符合 WBC >= 300/μL, Eosinophil
-      >= 300cells/mcL；使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Atopic Dermatitis、Asthma】之健保給付。
+      主要條件包含：臨床檢驗需符合 WBC >= 300/μL, Eosinophil >= 300cells/mcL；使用前須經事前審查核准。
     clinical_rules:
     - indication: Atopic Dermatitis (異位性皮膚炎)
       biomarkers:

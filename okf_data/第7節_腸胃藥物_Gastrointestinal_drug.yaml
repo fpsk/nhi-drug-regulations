@@ -80,8 +80,8 @@ regulations:
     - eGFR
     - 血小板
     - INR
-    summary: 適用於【Peptic Ulcer Disease、Gastroesophageal Reflux Disease、Systemic Lupus
-      Erythematosus】之健保給付。 主要條件包含：臨床檢驗需符合 eGFR < 15mL/min/1.73M2, INR > 1.7。
+    summary: 適用於【Peptic Ulcer Disease、Gastroesophageal Reflux Disease、Gastrointestinal
+      Bleeding / Hemorrhage】之健保給付。 主要條件包含：臨床檢驗需符合 eGFR < 15mL/min/1.73M2, INR > 1.7。
     clinical_rules:
     - indication: Peptic Ulcer Disease (消化性潰瘍)
       biomarkers:
@@ -480,8 +480,8 @@ regulations:
     indications:
     - Nausea and Vomiting (CINV / Antiemetic) (止吐)
     laboratory_criteria: []
-    summary: 規範【. 止吐劑  Antiemetic drugs】之健保給付條件。 規範重點：靜脈注射癌症化療藥品之致吐性風險與劑量標準，依NCCN
-      (National Comprehensive Cancer Network)最新版治療指引內容。
+    summary: 適用於【Nausea and Vomiting】之健保給付。 規範重點：靜脈注射癌症化療藥品之致吐性風險與劑量標準，依NCCN (National
+      Comprehensive Cancer Network)最新版治療指引內容。
     clinical_rules:
     - indication: 7.2. 止吐劑  Antiemetic drugs
       biomarkers: []
@@ -529,8 +529,8 @@ regulations:
     - Rheumatoid Arthritis / Juvenile Idiopathic Arthritis (JIA) (類風濕性關節炎)
     - Vasculitis / Dermatomyositis (血管炎)
     laboratory_criteria: []
-    summary: 適用於【Systemic Lupus Erythematosus、Rheumatoid Arthritis、Vasculitis / Dermatomyositis】之健保給付。
-      規範重點：1.血液幹細胞移植患者接受高劑量化學治療時。
+    summary: 適用於【Disease / Ulcer / Bleeding Prevention & Prophylaxis、Nausea and Vomiting、Systemic
+      Lupus Erythematosus】之健保給付。 規範重點：1.血液幹細胞移植患者接受高劑量化學治療時。
     clinical_rules:
     - indication: Systemic Lupus Erythematosus (紅斑性狼瘡)
       biomarkers: []
@@ -601,8 +601,7 @@ regulations:
     indications:
     - Nausea and Vomiting (CINV / Antiemetic) (止吐)
     laboratory_criteria: []
-    summary: 規範【. Neurokinin-1 receptor antagonist （如aprepitant、fosaprepitant）】之健保給付條件。
-      規範重點：1.與其他止吐藥劑併用，以防止由高致吐性癌症化療藥物在初次或重覆使用時所引起的急性或延遲性噁心與嘔吐。
+    summary: 適用於【Nausea and Vomiting】之健保給付。 規範重點：1.與其他止吐藥劑併用，以防止由高致吐性癌症化療藥物在初次或重覆使用時所引起的急性或延遲性噁心與嘔吐。
     clinical_rules:
     - indication: 7.2.2. Neurokinin-1 receptor antagonist （如aprepitant、fosaprepitant）(94/10/1、101/02/1、101/4/1、101/12/1、102/8/1)
       biomarkers: []
@@ -642,7 +641,8 @@ regulations:
     - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Nausea and Vomiting (CINV / Antiemetic) (止吐)
     laboratory_criteria: []
-    summary: 規範【. 含palonosetron及netupitant之複方製劑(如Akynzeo)】之健保給付條件。 規範重點：1.限用於 (1)防止由高致吐性癌症化療藥物在初次或重覆使用時所引起的急性或延遲性噁心與嘔吐。
+    summary: 適用於【Disease / Ulcer / Bleeding Prevention & Prophylaxis、Nausea and Vomiting】之健保給付。
+      規範重點：1.限用於 (1)防止由高致吐性癌症化療藥物在初次或重覆使用時所引起的急性或延遲性噁心與嘔吐。
     clinical_rules:
     - indication: 7.2.3. 含palonosetron及netupitant之複方製劑(如Akynzeo)(108/1/1、114/8/1)
       biomarkers: []
@@ -712,7 +712,7 @@ regulations:
     indications:
     - Diarrhea (腹瀉)
     laboratory_criteria: []
-    summary: 規範【. 益生菌類藥物Antidiarrheal microorganisms：】之健保給付條件。 規範重點：限用於接受放射治療、化學療法患者，治療期間造成的腹瀉。
+    summary: 適用於【Diarrhea】之健保給付。 規範重點：限用於接受放射治療、化學療法患者，治療期間造成的腹瀉。
     clinical_rules:
     - indication: 7.3.2. 益生菌類藥物Antidiarrheal microorganisms：
       biomarkers: []
@@ -778,7 +778,7 @@ regulations:
     laboratory_criteria:
     - ALT
     - AST
-    summary: 規範【. Cholic acid（如Cholbam）：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Rare Metabolic & Lysosomal Storage Diseases】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 7.3.4. Cholic acid（如Cholbam）（108/7/1）：
       biomarkers: []
@@ -867,7 +867,8 @@ regulations:
     indications:
     - Pancreatitis / Pancreatic Insufficiency / Short Bowel Syndrome (胰臟炎)
     laboratory_criteria: []
-    summary: 規範【. 含amylase+lipase+protease複方製劑(如Protase、Creon)：】之健保給付條件。 規範重點：1.適用因疾病所導致之胰液分泌不全：如囊狀性纖維化疾病、慢性胰臟炎、胰臟切除手術、胃腸繞道手術，或其他因腫瘤引發之胰管膽管阻塞之情形。
+    summary: 適用於【Pancreatitis / Pancreatic Insufficiency / Short Bowel Syndrome】之健保給付。
+      規範重點：1.適用因疾病所導致之胰液分泌不全：如囊狀性纖維化疾病、慢性胰臟炎、胰臟切除手術、胃腸繞道手術，或其他因腫瘤引發之胰管膽管阻塞之情形。
     clinical_rules:
     - indication: 7.3.6. 含amylase+lipase+protease複方製劑(如Protase、Creon)：(110/1/1)
       biomarkers: []
@@ -938,7 +939,8 @@ regulations:
     - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
       Porphyria) (黏多醣症)
     laboratory_criteria: []
-    summary: 規範【. Teduglutide (如Revestive)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Pancreatitis / Pancreatic Insufficiency / Short Bowel Syndrome、Rare
+      Metabolic & Lysosomal Storage Diseases】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 7.3.8. Teduglutide (如Revestive)：(114/8/1)
       biomarkers: []

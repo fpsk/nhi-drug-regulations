@@ -80,7 +80,16 @@ class LangExtractEngine:
         if os.path.exists(cache_file):
             try:
                 with open(cache_file, "r", encoding="utf-8") as f:
-                    return json.load(f)
+                    cached = json.load(f)
+                cached["summary"] = self._generate_clean_clinical_summary(
+                    section_number,
+                    section_title,
+                    full_text,
+                    known_indications or [],
+                    cached.get("structured_biomarkers", []),
+                    cached.get("prior_authorization_required", False)
+                )
+                return cached
             except Exception:
                 pass
 

@@ -180,9 +180,9 @@ regulations:
     - Peripheral Arterial Disease (PAD) (周邊動脈疾病)
     - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     laboratory_criteria: []
-    summary: 適用於【Peptic Ulcer Disease、Stroke / Cerebrovascular Accident、Thrombosis
-      / Pulmonary Embolism】之健保給付。 規範重點：1.使用於無休息時疼痛及周邊組織壞死之間歇性跛行病人（周邊動脈疾病Fontaine stage
-      II），用於增加最大及無痛行走距離。
+    summary: 適用於【Peptic Ulcer Disease、Gastrointestinal Bleeding / Hemorrhage、Disease
+      / Ulcer / Bleeding Prevention & Prophylaxis】之健保給付。 規範重點：1.使用於無休息時疼痛及周邊組織壞死之間歇性跛行病人（周邊動脈疾病Fontaine
+      stage II），用於增加最大及無痛行走距離。
     clinical_rules:
     - indication: Peptic Ulcer Disease (消化性潰瘍)
       biomarkers: []
@@ -246,8 +246,8 @@ regulations:
     - Stroke / Cerebrovascular Accident (腦中風)
     - Myocardial Infarction (心肌梗塞)
     laboratory_criteria: []
-    summary: 適用於【Peptic Ulcer Disease、Stroke / Cerebrovascular Accident、Myocardial
-      Infarction】之健保給付。 規範重點：1.限近期發生中風、心肌梗塞或週邊動脈血管疾病的粥狀動脈硬化病人，並符合下列條件之一者使用。
+    summary: 適用於【Peptic Ulcer Disease、Gastrointestinal Bleeding / Hemorrhage、Stroke
+      / Cerebrovascular Accident】之健保給付。 規範重點：1.限近期發生中風、心肌梗塞或週邊動脈血管疾病的粥狀動脈硬化病人，並符合下列條件之一者使用。
     clinical_rules:
     - indication: Peptic Ulcer Disease (消化性潰瘍)
       biomarkers: []
@@ -463,8 +463,8 @@ regulations:
     - Thrombosis / Pulmonary Embolism (血栓)
     laboratory_criteria:
     - 血小板
-    summary: 適用於【Myocardial Infarction、Thrombosis / Pulmonary Embolism】之健保給付。 規範重點：用於血管（不含腦血管）血栓時：(91/12/1、100/7/1、107/11/1)
-      1.限具有心臟專科醫師之醫院使用。
+    summary: 適用於【Gastrointestinal Bleeding / Hemorrhage、Myocardial Infarction、Thrombosis
+      / Pulmonary Embolism】之健保給付。 規範重點：用於血管（不含腦血管）血栓時：(91/12/1、100/7/1、107/11/1) 1.限具有心臟專科醫師之醫院使用。
     clinical_rules:
     - indication: Myocardial Infarction (心肌梗塞)
       biomarkers: []
@@ -564,7 +564,8 @@ regulations:
     - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Thrombosis / Pulmonary Embolism (血栓)
     laboratory_criteria: []
-    summary: 適用於【Thrombosis / Pulmonary Embolism】之健保給付。 規範重點：1.用於治療深層靜脈栓塞，每療程以二瓶為限。
+    summary: 適用於【Disease / Ulcer / Bleeding Prevention & Prophylaxis、Thrombosis /
+      Pulmonary Embolism】之健保給付。 規範重點：1.用於治療深層靜脈栓塞，每療程以二瓶為限。
     clinical_rules:
     - indication: Thrombosis / Pulmonary Embolism (血栓)
       biomarkers: []
@@ -600,7 +601,8 @@ regulations:
     - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Thrombosis / Pulmonary Embolism (血栓)
     laboratory_criteria: []
-    summary: "適用於【Thrombosis / Pulmonary Embolism】之健保給付。 規範重點：依下列情形使用： 1.\t治療深部靜脈栓塞(DVT)：每次療程使用小於10天。"
+    summary: "適用於【Disease / Ulcer / Bleeding Prevention & Prophylaxis、Thrombosis /\
+      \ Pulmonary Embolism】之健保給付。 規範重點：依下列情形使用： 1.\t治療深部靜脈栓塞(DVT)：每次療程使用小於10天。"
     clinical_rules:
     - indication: Thrombosis / Pulmonary Embolism (血栓)
       biomarkers: []
@@ -638,8 +640,8 @@ regulations:
     - Thrombosis / Pulmonary Embolism (血栓)
     laboratory_criteria:
     - Scr
-    summary: 適用於【Myocardial Infarction、Thrombosis / Pulmonary Embolism】之健保給付。 規範重點：限用於
-      1.治療ST段升高型心肌梗塞(STEMI)的急性冠狀症候群之病患，藉以預防使用血栓溶解劑治療或原先即不準備接受任何其它型式之再灌流治療的患者發生死亡和心肌再度梗塞。
+    summary: 適用於【Disease / Ulcer / Bleeding Prevention & Prophylaxis、Myocardial Infarction、Thrombosis
+      / Pulmonary Embolism】之健保給付。 規範重點：限用於 1.治療ST段升高型心肌梗塞(STEMI)的急性冠狀症候群之病患，藉以預防使用血栓溶解劑治療或原先即不準備接受任何其它型式之再灌流治療的患者發生死亡和心肌再度梗塞。
     clinical_rules:
     - indication: Myocardial Infarction (心肌梗塞)
       biomarkers: []
@@ -713,8 +715,9 @@ regulations:
     - 血壓
     - 血小板
     - Scr
-    summary: 適用於【Heart Failure、Stroke / Cerebrovascular Accident、Myocardial Infarction】之健保給付。
-      主要條件包含：臨床檢驗需符合 eGFR < 45mL/min/1.73m2, Scr >= 1.5mg/dL。
+    summary: 適用於【Gastrointestinal Bleeding / Hemorrhage、Disease / Ulcer / Bleeding
+      Prevention & Prophylaxis、Heart Failure】之健保給付。 主要條件包含：臨床檢驗需符合 eGFR < 45mL/min/1.73m2,
+      Scr >= 1.5mg/dL。
     clinical_rules:
     - indication: Heart Failure (心臟衰竭)
       biomarkers:
@@ -1038,8 +1041,9 @@ regulations:
     - Diabetes Mellitus (糖尿病)
     laboratory_criteria:
     - 血壓
-    summary: 適用於【Heart Failure、Stroke / Cerebrovascular Accident、Myocardial Infarction】之健保給付。
-      規範重點：限用於 1.非瓣膜性心房纖維顫動病患： (1)須符合下列條件之一： Ⅰ.曾發生中風或全身性栓塞。
+    summary: 適用於【Gastrointestinal Bleeding / Hemorrhage、Disease / Ulcer / Bleeding
+      Prevention & Prophylaxis、Heart Failure】之健保給付。 規範重點：限用於 1.非瓣膜性心房纖維顫動病患： (1)須符合下列條件之一：
+      Ⅰ.曾發生中風或全身性栓塞。
     clinical_rules:
     - indication: Heart Failure (心臟衰竭)
       biomarkers: []
@@ -1162,8 +1166,8 @@ regulations:
     - Diabetes Mellitus (糖尿病)
     laboratory_criteria:
     - 血壓
-    summary: 適用於【Heart Failure、Stroke / Cerebrovascular Accident、Myocardial Infarction】之健保給付。
-      規範重點：限用於 1.非瓣膜性心房纖維顫動病患： (1)須符合下列條件之一： Ⅰ.曾發生中風或全身性栓塞。
+    summary: 適用於【Gastrointestinal Bleeding / Hemorrhage、Heart Failure、Stroke / Cerebrovascular
+      Accident】之健保給付。 規範重點：限用於 1.非瓣膜性心房纖維顫動病患： (1)須符合下列條件之一： Ⅰ.曾發生中風或全身性栓塞。
     clinical_rules:
     - indication: Heart Failure (心臟衰竭)
       biomarkers: []
@@ -1288,8 +1292,9 @@ regulations:
     - Diabetes Mellitus (糖尿病)
     laboratory_criteria:
     - 血壓
-    summary: "適用於【Heart Failure、Stroke / Cerebrovascular Accident、Myocardial Infarction】之健保給付。\
-      \ 規範重點：1.用於非瓣膜性心房纖維顫動病患： (1)\t須符合下列條件之一： 曾發生中風或全身性栓塞。"
+    summary: "適用於【Gastrointestinal Bleeding / Hemorrhage、Disease / Ulcer / Bleeding\
+      \ Prevention & Prophylaxis、Heart Failure】之健保給付。 規範重點：1.用於非瓣膜性心房纖維顫動病患： (1)\t\
+      須符合下列條件之一： 曾發生中風或全身性栓塞。"
     clinical_rules:
     - indication: Heart Failure (心臟衰竭)
       biomarkers: []
@@ -1366,7 +1371,8 @@ regulations:
     - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Spasticity / ALS / Spinal Muscular Atrophy (SMA) (痙攣)
     laboratory_criteria: []
-    summary: 規範【. Nimodipine inj（如Nimotop）：】之健保給付條件。 規範重點：預防、治療因動膜瘤引起之蜘蛛膜下出血後，腦血管痙攣所引起的缺血性神經缺損，可使用二星期，需附電腦斷層掃描（CT
+    summary: 適用於【Gastrointestinal Bleeding / Hemorrhage、Disease / Ulcer / Bleeding
+      Prevention & Prophylaxis、Spasticity / ALS / Spinal Muscular Atrophy】之健保給付。 規範重點：預防、治療因動膜瘤引起之蜘蛛膜下出血後，腦血管痙攣所引起的缺血性神經缺損，可使用二星期，需附電腦斷層掃描（CT
       Scan）報告。
     clinical_rules:
     - indication: 2.2.2. Nimodipine inj（如Nimotop）：(87/4/1、93/2/1)
@@ -1436,8 +1442,9 @@ regulations:
     - Spasticity / ALS / Spinal Muscular Atrophy (SMA) (痙攣)
     laboratory_criteria:
     - 血壓
-    summary: 適用於【Myocardial Infarction、Hypertension、Migraine】之健保給付。 規範重點：1.限符合國際頭痛協會
-      (International Headache Society) 最新版「偏頭痛」診斷標準者：（97/9/1、108/5/1） (1)至少有五次能符合(2)至(4)項的發作。
+    summary: 適用於【Disease / Ulcer / Bleeding Prevention & Prophylaxis、Nausea and Vomiting、Myocardial
+      Infarction】之健保給付。 規範重點：1.限符合國際頭痛協會 (International Headache Society) 最新版「偏頭痛」診斷標準者：（97/9/1、108/5/1）
+      (1)至少有五次能符合(2)至(4)項的發作。
     clinical_rules:
     - indication: Myocardial Infarction (心肌梗塞)
       biomarkers: []
@@ -1488,7 +1495,8 @@ regulations:
     indications:
     - BPH / Overactive Bladder / Interstitial Cystitis / Urolithiasis (前列腺增生)
     laboratory_criteria: []
-    summary: 規範【. Alprostadil：】之健保給付條件。 規範重點：如用於勃起機能障礙之治療，不予給付。
+    summary: 適用於【BPH / Overactive Bladder / Interstitial Cystitis / Urolithiasis】之健保給付。
+      規範重點：如用於勃起機能障礙之治療，不予給付。
     clinical_rules:
     - indication: 2.4.1. Alprostadil：(86/9/1)
       biomarkers: []
@@ -1519,7 +1527,8 @@ regulations:
     indications:
     - BPH / Overactive Bladder / Interstitial Cystitis / Urolithiasis (前列腺增生)
     laboratory_criteria: []
-    summary: 規範【. Potassium citrate（如Urocit-K tab）：】之健保給付條件。 規範重點：限泌尿道結石或腎小管性酸毒症病人使用。
+    summary: 適用於【BPH / Overactive Bladder / Interstitial Cystitis / Urolithiasis】之健保給付。
+      規範重點：限泌尿道結石或腎小管性酸毒症病人使用。
     clinical_rules:
     - indication: 2.4.2. Potassium citrate（如Urocit-K tab）：
       biomarkers: []
@@ -1552,7 +1561,9 @@ regulations:
     - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     - BPH / Overactive Bladder / Interstitial Cystitis / Urolithiasis (前列腺增生)
     laboratory_criteria: []
-    summary: 規範【. Pentosan Polysulfate Sodium (如Elmiron Cap)】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Gastrointestinal Bleeding / Hemorrhage、Chronic / Breakthrough / Neuropathic
+      Pain、BPH / Overactive Bladder / Interstitial Cystitis / Urolithiasis】之健保給付。
+      主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 2.4.3. Pentosan Polysulfate Sodium (如Elmiron Cap)(92/12/1)
       biomarkers: []
@@ -5969,7 +5980,7 @@ regulations:
     indications:
     - Heart Failure (心臟衰竭)
     laboratory_criteria: []
-    summary: 規範【. 乙型擬交感神經阻斷劑Beta blocking agents：metoprolol succinate 23.75mg】之健保給付條件。
+    summary: 適用於【Heart Failure】之健保給付。
     clinical_rules:
     - indication: 2.7. 乙型擬交感神經阻斷劑Beta blocking agents：metoprolol succinate 23.75mg（如Betaloc
         ZOK 25mg）(93/5/1)
@@ -6044,7 +6055,7 @@ regulations:
     - Pulmonary Arterial Hypertension (PAH) (肺動脈高血壓)
     laboratory_criteria:
     - 血壓
-    summary: 適用於【Hypertension】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Hypertension、Pulmonary Arterial Hypertension】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Hypertension (高血壓)
       biomarkers: []
@@ -6084,7 +6095,7 @@ regulations:
     - Pulmonary Arterial Hypertension (PAH) (肺動脈高血壓)
     laboratory_criteria:
     - 血壓
-    summary: 適用於【Hypertension】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Hypertension、Pulmonary Arterial Hypertension】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Hypertension (高血壓)
       biomarkers: []
@@ -6125,7 +6136,7 @@ regulations:
     - Pulmonary Arterial Hypertension (PAH) (肺動脈高血壓)
     laboratory_criteria:
     - 血壓
-    summary: 適用於【Hypertension】之健保給付。 規範重點：1.用於原發性肺動脈高血壓、結締組織病變導致之肺動脈高血壓或先天性心臟病併發之肺動脈高血壓(Eisenmenger
+    summary: 適用於【Hypertension、Pulmonary Arterial Hypertension】之健保給付。 規範重點：1.用於原發性肺動脈高血壓、結締組織病變導致之肺動脈高血壓或先天性心臟病併發之肺動脈高血壓(Eisenmenger
       症候群)運動能力差 (WHO Functional Class III及IV) 患者。
     clinical_rules:
     - indication: Hypertension (高血壓)
@@ -6162,7 +6173,7 @@ regulations:
     - Pulmonary Arterial Hypertension (PAH) (肺動脈高血壓)
     laboratory_criteria:
     - 血壓
-    summary: 適用於【Hypertension】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Hypertension、Pulmonary Arterial Hypertension】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Hypertension (高血壓)
       biomarkers: []
@@ -6203,7 +6214,8 @@ regulations:
     - Pulmonary Arterial Hypertension (PAH) (肺動脈高血壓)
     laboratory_criteria:
     - 血壓
-    summary: 適用於【Thrombosis / Pulmonary Embolism、Hypertension】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Thrombosis / Pulmonary Embolism、Hypertension、Pulmonary Arterial Hypertension】之健保給付。
+      主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Thrombosis / Pulmonary Embolism (血栓)
       biomarkers: []
@@ -6254,7 +6266,7 @@ regulations:
     - Pulmonary Arterial Hypertension (PAH) (肺動脈高血壓)
     laboratory_criteria:
     - 血壓
-    summary: 適用於【Hypertension】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Hypertension、Pulmonary Arterial Hypertension】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Hypertension (高血壓)
       biomarkers: []
@@ -6299,7 +6311,7 @@ regulations:
     - Pulmonary Arterial Hypertension (PAH) (肺動脈高血壓)
     laboratory_criteria:
     - 血壓
-    summary: 適用於【Hypertension】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Hypertension、Pulmonary Arterial Hypertension】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Hypertension (高血壓)
       biomarkers: []
@@ -6363,7 +6375,7 @@ regulations:
     - Pulmonary Arterial Hypertension (PAH) (肺動脈高血壓)
     laboratory_criteria:
     - 血壓
-    summary: 適用於【Hypertension】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Hypertension、Pulmonary Arterial Hypertension】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Hypertension (高血壓)
       biomarkers: []
@@ -6422,7 +6434,7 @@ regulations:
     - Pulmonary Arterial Hypertension (PAH) (肺動脈高血壓)
     laboratory_criteria:
     - 血壓
-    summary: 適用於【Hypertension】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Hypertension、Pulmonary Arterial Hypertension】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Hypertension (高血壓)
       biomarkers: []
@@ -6469,7 +6481,7 @@ regulations:
     - Pulmonary Arterial Hypertension (PAH) (肺動脈高血壓)
     laboratory_criteria:
     - 血壓
-    summary: 適用於【Hypertension】之健保給付。 規範重點：1.限用於原發性肺動脈高血壓、結締組織病變導致之肺動脈高血壓或先天性心臟病併發之肺動脈高血壓（Eisenmenger
+    summary: 適用於【Hypertension、Pulmonary Arterial Hypertension】之健保給付。 規範重點：1.限用於原發性肺動脈高血壓、結締組織病變導致之肺動脈高血壓或先天性心臟病併發之肺動脈高血壓（Eisenmenger
       症候群）運動能力差（WHO Functional Class Ⅲ及Ⅳ）之成人病人。
     clinical_rules:
     - indication: Hypertension (高血壓)
@@ -6508,7 +6520,7 @@ regulations:
     - Pulmonary Arterial Hypertension (PAH) (肺動脈高血壓)
     laboratory_criteria:
     - 血壓
-    summary: 適用於【Hypertension】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Hypertension、Pulmonary Arterial Hypertension】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Hypertension (高血壓)
       biomarkers: []
@@ -6561,7 +6573,7 @@ regulations:
     indications:
     - Pulmonary Arterial Hypertension (PAH) (肺動脈高血壓)
     laboratory_criteria: []
-    summary: 規範【. Sotatercept（如Winrevair）：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Pulmonary Arterial Hypertension】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 2.8.2.11. Sotatercept（如Winrevair）：（115/6/1）
       biomarkers: []
@@ -6612,7 +6624,8 @@ regulations:
     - Myocardial Infarction (心肌梗塞)
     laboratory_criteria:
     - LVEF
-    summary: 適用於【Myocardial Infarction】之健保給付。 主要條件包含：臨床檢驗需符合 LVEF <= 30%。
+    summary: 適用於【Heart Failure、Myocardial Infarction】之健保給付。 主要條件包含：臨床檢驗需符合 LVEF <=
+      30%。
     clinical_rules:
     - indication: Myocardial Infarction (心肌梗塞)
       biomarkers:
@@ -6750,7 +6763,7 @@ regulations:
     - Diabetes Mellitus (糖尿病)
     laboratory_criteria:
     - 血壓
-    summary: 適用於【Atrial Fibrillation、Hypertension、Diabetes Mellitus】之健保給付。
+    summary: 適用於【Heart Failure、Atrial Fibrillation、Hypertension】之健保給付。
     clinical_rules:
     - indication: Atrial Fibrillation (心房顫動)
       biomarkers: []
@@ -6946,7 +6959,7 @@ regulations:
     indications:
     - Heart Failure (心臟衰竭)
     laboratory_criteria: []
-    summary: '規範【. Ivabradine(如Coralan)】之健保給付條件。 規範重點：1.限符合下列所有條件之慢性心衰竭患者使用: (1)依紐約心臟協會(NYHA)衰竭功能分級為第二級至第四級。'
+    summary: '適用於【Heart Failure】之健保給付。 規範重點：1.限符合下列所有條件之慢性心衰竭患者使用: (1)依紐約心臟協會(NYHA)衰竭功能分級為第二級至第四級。'
     clinical_rules:
     - indication: 2.12. Ivabradine(如Coralan) (103/5/1、106/10/1)
       biomarkers: []
@@ -7085,7 +7098,7 @@ regulations:
     - Chronic Kidney Disease (慢性腎臟病)
     - Glaucoma / Ocular Hypertension (青光眼)
     laboratory_criteria: []
-    summary: 適用於【Chronic Kidney Disease】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Chronic Kidney Disease、Glaucoma / Ocular Hypertension】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Chronic Kidney Disease (慢性腎臟病)
       biomarkers: []
@@ -7158,8 +7171,8 @@ regulations:
     - Hereditary Angioedema (HAE) (遺傳性血管性水腫)
     laboratory_criteria:
     - LVEF
-    summary: 適用於【Heart Failure、Myocardial Infarction】之健保給付。 規範重點：1.限符合下列各項條件之慢性收縮性心衰竭患者使用：
-      (1)依紐約心臟協會(NYHA)心衰竭功能分級為第二級至第四級。
+    summary: 適用於【Heart Failure、Myocardial Infarction、Hereditary Angioedema】之健保給付。
+      規範重點：1.限符合下列各項條件之慢性收縮性心衰竭患者使用： (1)依紐約心臟協會(NYHA)心衰竭功能分級為第二級至第四級。
     clinical_rules:
     - indication: Heart Failure (心臟衰竭)
       biomarkers: []
@@ -7814,8 +7827,8 @@ regulations:
     - eGFR
     - LVEF
     - NT-proBNP
-    summary: 規範【. Tafamidis（如Vyndamax）：】之健保給付條件。 主要條件包含：臨床檢驗需符合 NT-proBNP >= 600pg/ml,
-      NT-proBNP >= 100pg/ml；使用前須經事前審查核准。
+    summary: 適用於【Heart Failure、Hypertrophic Cardiomyopathy、Organ / Stem Cell Transplantation】之健保給付。
+      主要條件包含：臨床檢驗需符合 NT-proBNP >= 600pg/ml, NT-proBNP >= 100pg/ml；使用前須經事前審查核准。
     clinical_rules:
     - indication: 2.17. Tafamidis（如Vyndamax）：(113/2/1)
       biomarkers:
@@ -7991,7 +8004,7 @@ regulations:
     - Hypertrophic Cardiomyopathy (HCM) (肥厚性心肌病變)
     laboratory_criteria:
     - LVEF
-    summary: 規範【. Mavacamten（如Camzyos）：】之健保給付條件。 主要條件包含：臨床檢驗需符合 LVEF >= 55%, LVEF
+    summary: 適用於【Hypertrophic Cardiomyopathy】之健保給付。 主要條件包含：臨床檢驗需符合 LVEF >= 55%, LVEF
       >= 55%, LVEF < 50%；使用前須經事前審查核准。
     clinical_rules:
     - indication: 2.19. Mavacamten（如Camzyos）：(115/4/1)

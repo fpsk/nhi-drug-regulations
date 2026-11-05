@@ -43,7 +43,8 @@ regulations:
     - Tuberculosis (TB) (結核病)
     laboratory_criteria:
     - 白血球
-    summary: 適用於【Diabetes Mellitus】之健保給付。 規範重點：1.凡醫師診斷為感染症，確有臨床需要者得適當使用抗微生物製劑。
+    summary: 適用於【Disease / Ulcer / Bleeding Prevention & Prophylaxis、Diabetes Mellitus、Pneumonia
+      / Respiratory & ENT Infection】之健保給付。 規範重點：1.凡醫師診斷為感染症，確有臨床需要者得適當使用抗微生物製劑。
     clinical_rules:
     - indication: Diabetes Mellitus (糖尿病)
       biomarkers: []
@@ -152,7 +153,8 @@ regulations:
     - Pneumonia / Respiratory & ENT Infection (肺炎)
     - UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection (泌尿道感染)
     laboratory_criteria: []
-    summary: 規範【. Amoxicillin + clavulanic acid（如Augmentin tab）：】之健保給付條件。 規範重點：用於急性化膿性中耳炎或急性化膿性鼻竇炎、急性下呼吸道感染、厭氧性細菌感染、菌血症等適應症，得免附細菌敏感試驗報告，惟以十日為限。
+    summary: 適用於【Pneumonia / Respiratory & ENT Infection、UTI / Intra-abdominal Infection
+      / Sepsis / Bacterial Infection】之健保給付。 規範重點：用於急性化膿性中耳炎或急性化膿性鼻竇炎、急性下呼吸道感染、厭氧性細菌感染、菌血症等適應症，得免附細菌敏感試驗報告，惟以十日為限。
     clinical_rules:
     - indication: 10.2.1. Amoxicillin + clavulanic acid（如Augmentin tab）：(85/1/1、109/10/1)
       biomarkers: []
@@ -216,7 +218,8 @@ regulations:
     - Pneumonia / Respiratory & ENT Infection (肺炎)
     - UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection (泌尿道感染)
     laboratory_criteria: []
-    summary: 規範【. Cefaclor：】之健保給付條件。 規範重點：用於急性化膿性中耳炎或急性化膿性鼻竇炎、急性下呼吸道感染、敗血症等適應症，得免附細菌敏感試驗報告，惟以十日為限。
+    summary: 適用於【Pneumonia / Respiratory & ENT Infection、UTI / Intra-abdominal Infection
+      / Sepsis / Bacterial Infection】之健保給付。 規範重點：用於急性化膿性中耳炎或急性化膿性鼻竇炎、急性下呼吸道感染、敗血症等適應症，得免附細菌敏感試驗報告，惟以十日為限。
     clinical_rules:
     - indication: 10.3.1. Cefaclor：（85/1/1、89/7/1、109/10/1）
       biomarkers: []
@@ -250,7 +253,8 @@ regulations:
     - Pneumonia / Respiratory & ENT Infection (肺炎)
     - UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection (泌尿道感染)
     laboratory_criteria: []
-    summary: 規範【. Cefuroxime tab：】之健保給付條件。 規範重點：用於急性化膿性中耳炎或急性化膿性鼻竇炎、急性下呼吸道感染、敗血症等適應症，得免附細菌敏感試驗報告，惟以十日為限。
+    summary: 適用於【Pneumonia / Respiratory & ENT Infection、UTI / Intra-abdominal Infection
+      / Sepsis / Bacterial Infection】之健保給付。 規範重點：用於急性化膿性中耳炎或急性化膿性鼻竇炎、急性下呼吸道感染、敗血症等適應症，得免附細菌敏感試驗報告，惟以十日為限。
     clinical_rules:
     - indication: 10.3.2. Cefuroxime tab：（87/4/1、109/10/1）
       biomarkers: []
@@ -283,7 +287,8 @@ regulations:
     indications:
     - UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection (泌尿道感染)
     laboratory_criteria: []
-    summary: 規範【. Ceftriaxone：】之健保給付條件。 規範重點：用於疑似或證實為淋病尿道炎、子宮頸炎、軟性下疳時，可第一線單一劑量使用。
+    summary: 適用於【UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection】之健保給付。
+      規範重點：用於疑似或證實為淋病尿道炎、子宮頸炎、軟性下疳時，可第一線單一劑量使用。
     clinical_rules:
     - indication: 10.3.3. Ceftriaxone：（95/6/1）
       biomarkers: []
@@ -314,7 +319,8 @@ regulations:
     indications:
     - UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection (泌尿道感染)
     laboratory_criteria: []
-    summary: 規範【. Cefixime：】之健保給付條件。 規範重點：用於疑似或證實為淋病尿道炎、子宮頸炎、軟性下疳時，可第一線單一劑量使用。
+    summary: 適用於【UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection】之健保給付。
+      規範重點：用於疑似或證實為淋病尿道炎、子宮頸炎、軟性下疳時，可第一線單一劑量使用。
     clinical_rules:
     - indication: 10.3.4. Cefixime：（95/6/1）
       biomarkers: []
@@ -346,8 +352,8 @@ regulations:
     - Pneumonia / Respiratory & ENT Infection (肺炎)
     laboratory_criteria:
     - 白血球
-    summary: '規範【. Ceftaroline fosamil (如Zinforo)：(108/2/1、108/12/1、110/11/1）】之健保給付條件。
-      規範重點：1.限下列條件之一且經感染症專科醫師會診確認需使用者: (1)社區性肺炎，經使用第一線社區性肺炎抗生素(如盤尼西林類抗生素、第三代頭孢子菌素、quinolone類抗生素)治療失敗或致病菌對第一線抗生素不具感受性。'
+    summary: '適用於【Pneumonia / Respiratory & ENT Infection】之健保給付。 規範重點：1.限下列條件之一且經感染症專科醫師會診確認需使用者:
+      (1)社區性肺炎，經使用第一線社區性肺炎抗生素(如盤尼西林類抗生素、第三代頭孢子菌素、quinolone類抗生素)治療失敗或致病菌對第一線抗生素不具感受性。'
     clinical_rules:
     - indication: 10.3.5. Ceftaroline fosamil (如Zinforo)：(108/2/1、108/12/1、110/11/1）
       biomarkers: []
@@ -389,9 +395,9 @@ regulations:
     - Pneumonia / Respiratory & ENT Infection (肺炎)
     - UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection (泌尿道感染)
     laboratory_criteria: []
-    summary: '規範【. Ceftazidime+avibactam sodium(如Zavicefta): (109/6/1、113/4/1）】之健保給付條件。
-      規範重點：1.限使用於病人有下列條件之一，且經感染症專科醫師會診，確認有carbapenem抗藥性革蘭氏陰性菌感染之可能或明確證據而需使用者；申報費用時需檢附會診紀錄及相關之病歷資料：(109/6/1、113/4/1）
-      (1)複雜性腹腔內感染 (2)複雜性泌尿道感染 (3)院內感染型肺炎 (4)其他臨床感染症懷疑為對carbapenem具抗藥性之感染。'
+    summary: 適用於【Pneumonia / Respiratory & ENT Infection、UTI / Intra-abdominal Infection
+      / Sepsis / Bacterial Infection】之健保給付。 規範重點：1.限使用於病人有下列條件之一，且經感染症專科醫師會診，確認有carbapenem抗藥性革蘭氏陰性菌感染之可能或明確證據而需使用者；申報費用時需檢附會診紀錄及相關之病歷資料：(109/6/1、113/4/1）
+      (1)複雜性腹腔內感染 (2)複雜性泌尿道感染 (3)院內感染型肺炎 (4)其他臨床感染症懷疑為對carbapenem具抗藥性之感染。
     clinical_rules:
     - indication: '10.3.6. Ceftazidime+avibactam sodium(如Zavicefta): (109/6/1、113/4/1）'
       biomarkers: []
@@ -436,7 +442,8 @@ regulations:
     - Pneumonia / Respiratory & ENT Infection (肺炎)
     - UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection (泌尿道感染)
     laboratory_criteria: []
-    summary: '規範【. ceftolozane+tazobactam (如Zerbaxa):】之健保給付條件。 規範重點：1.治療18歲以上成人，患有對ceftolozane/tazobactam有感受性的致病菌引起的以下感染症:
+    summary: '適用於【Pneumonia / Respiratory & ENT Infection、UTI / Intra-abdominal Infection
+      / Sepsis / Bacterial Infection】之健保給付。 規範重點：1.治療18歲以上成人，患有對ceftolozane/tazobactam有感受性的致病菌引起的以下感染症:
       (1)複雜性腹內感染，需與metronidazole併用。'
     clinical_rules:
     - indication: 10.3.7. ceftolozane+tazobactam (如Zerbaxa):(110/3/1)
@@ -477,7 +484,8 @@ regulations:
     - Pneumonia / Respiratory & ENT Infection (肺炎)
     - UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection (泌尿道感染)
     laboratory_criteria: []
-    summary: 規範【. Cefiderocol(如Fetroja)：】之健保給付條件。 規範重點：1.限使用於18歲以上成人病人，對cefiderocol具感受性之多重抗藥性革蘭氏陰性菌所引起之以下任一感染症：
+    summary: 適用於【Pneumonia / Respiratory & ENT Infection、UTI / Intra-abdominal Infection
+      / Sepsis / Bacterial Infection】之健保給付。 規範重點：1.限使用於18歲以上成人病人，對cefiderocol具感受性之多重抗藥性革蘭氏陰性菌所引起之以下任一感染症：
       (1)複雜性泌尿道感染，包含腎盂腎炎。
     clinical_rules:
     - indication: 10.3.8. Cefiderocol(如Fetroja)：(115/8/1)
@@ -599,8 +607,8 @@ regulations:
     indications:
     - UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection (泌尿道感染)
     laboratory_criteria: []
-    summary: 規範【. Imipenem + cilastatin（如Tienam）；meropenem（如Mepem）：】之健保給付條件。 規範重點：1.經細菌培養證實有意義之致病菌且對其他抗微生物製劑均具抗藥性，而對carbapenem具有感受性
-      (sensitivity)。
+    summary: 適用於【UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection】之健保給付。
+      規範重點：1.經細菌培養證實有意義之致病菌且對其他抗微生物製劑均具抗藥性，而對carbapenem具有感受性 (sensitivity)。
     clinical_rules:
     - indication: 10.5.1. Imipenem + cilastatin（如Tienam）；meropenem（如Mepem）：(87/11/1、93/2/1、93/5/1、99/5/1、99/8/1)
       biomarkers: []
@@ -638,7 +646,8 @@ regulations:
     - Pneumonia / Respiratory & ENT Infection (肺炎)
     - UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection (泌尿道感染)
     laboratory_criteria: []
-    summary: 規範【. Ertapenem（如Invanz inj.）：】之健保給付條件。 規範重點：1.臨床上為中、重度細菌感染，且經其他抗微生物製劑治療仍無法控制病情者，但限用於：
+    summary: 適用於【Pneumonia / Respiratory & ENT Infection、UTI / Intra-abdominal Infection
+      / Sepsis / Bacterial Infection】之健保給付。 規範重點：1.臨床上為中、重度細菌感染，且經其他抗微生物製劑治療仍無法控制病情者，但限用於：
       (1)複雜的腹腔內感染 (2)感染性肺炎 (3)急性骨盆感染 2.經感染症專科醫師會診，確認有感染症需使用者（申報費用時需檢附會診紀錄及相關之病歷資料）。
     clinical_rules:
     - indication: 10.5.2. Ertapenem（如Invanz inj.）：(93/5/1、96/12/1)
@@ -678,7 +687,8 @@ regulations:
     indications:
     - UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection (泌尿道感染)
     laboratory_criteria: []
-    summary: 規範【. Doripenem (如Finibax)：】之健保給付條件。 規範重點：1.經細菌培養證實有意義之致病菌且對其他抗微生物製劑均具抗藥性或對其他具有感受性抗微生物製劑過敏，而對carbapenem具有感受性(sensitivity)之複雜性泌尿道感染(包括腎盂腎炎)及複雜性腹腔內感染。
+    summary: 適用於【UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection】之健保給付。
+      規範重點：1.經細菌培養證實有意義之致病菌且對其他抗微生物製劑均具抗藥性或對其他具有感受性抗微生物製劑過敏，而對carbapenem具有感受性(sensitivity)之複雜性泌尿道感染(包括腎盂腎炎)及複雜性腹腔內感染。
     clinical_rules:
     - indication: 10.5.3. Doripenem (如Finibax)：(99/8/1)
       biomarkers: []
@@ -715,7 +725,8 @@ regulations:
     - Pneumonia / Respiratory & ENT Infection (肺炎)
     - UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection (泌尿道感染)
     laboratory_criteria: []
-    summary: 規範【. Imipenem＋cilastatin＋relebactam (如Recarbrio)：(114/1/1）】之健保給付條件。 規範重點：1.治療18歲以上成人，患有對carbapenem有抗藥性且對imipenem/cilastatin/relebactam有感受性的致病菌引起的以下感染症：
+    summary: 適用於【Pneumonia / Respiratory & ENT Infection、UTI / Intra-abdominal Infection
+      / Sepsis / Bacterial Infection】之健保給付。 規範重點：1.治療18歲以上成人，患有對carbapenem有抗藥性且對imipenem/cilastatin/relebactam有感受性的致病菌引起的以下感染症：
       (1)複雜性腹腔內感染。
     clinical_rules:
     - indication: 10.5.4. Imipenem＋cilastatin＋relebactam (如Recarbrio)：(114/1/1）
@@ -758,7 +769,8 @@ regulations:
     - Fungal Infection / Mycosis (Aspergillosis / Mucormycosis / Candidiasis) (黴菌感染)
     - HIV / AIDS (人類免疫缺乏病毒)
     laboratory_criteria: []
-    summary: 適用於【Fungal Infection / Mycosis】之健保給付。
+    summary: 適用於【Disease / Ulcer / Bleeding Prevention & Prophylaxis、Fungal Infection
+      / Mycosis、HIV / AIDS】之健保給付。
     clinical_rules:
     - indication: Fungal Infection / Mycosis (黴菌感染)
       biomarkers: []
@@ -799,7 +811,7 @@ regulations:
     - Fungal Infection / Mycosis (Aspergillosis / Mucormycosis / Candidiasis) (黴菌感染)
     - HIV / AIDS (人類免疫缺乏病毒)
     laboratory_criteria: []
-    summary: 適用於【Fungal Infection / Mycosis】之健保給付。 規範重點：限 1.已證實為全身性黴菌感染(經組織或培養證實)病例使用。
+    summary: 適用於【Fungal Infection / Mycosis、HIV / AIDS】之健保給付。 規範重點：限 1.已證實為全身性黴菌感染(經組織或培養證實)病例使用。
     clinical_rules:
     - indication: Fungal Infection / Mycosis (黴菌感染)
       biomarkers: []
@@ -836,8 +848,8 @@ regulations:
     - Fungal Infection / Mycosis (Aspergillosis / Mucormycosis / Candidiasis) (黴菌感染)
     - HIV / AIDS (人類免疫缺乏病毒)
     laboratory_criteria: []
-    summary: 適用於【Fungal Infection / Mycosis】之健保給付。 規範重點：1. 限用於12歲以下或吞嚥困難患者，併下列條件之一使用(111/2/1）：
-      念珠球菌局部或全身感染、囊珠菌感染。
+    summary: 適用於【Disease / Ulcer / Bleeding Prevention & Prophylaxis、Fungal Infection
+      / Mycosis、HIV / AIDS】之健保給付。 規範重點：1. 限用於12歲以下或吞嚥困難患者，併下列條件之一使用(111/2/1）： 念珠球菌局部或全身感染、囊珠菌感染。
     clinical_rules:
     - indication: Fungal Infection / Mycosis (黴菌感染)
       biomarkers: []
@@ -875,11 +887,13 @@ regulations:
     - Itraconazole
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Onychomycosis / Tinea Unguium (足趾甲癬)
     - Tinea (Ringworm / Dermatophytosis) (體癬)
     - Fungal Infection / Mycosis (Aspergillosis / Mucormycosis / Candidiasis) (黴菌感染)
     laboratory_criteria: []
-    summary: 適用於【Onychomycosis / Tinea Unguium、Tinea、Fungal Infection / Mycosis】之健保給付。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Onychomycosis
+      / Tinea Unguium、Tinea】之健保給付。
     clinical_rules:
     - indication: Onychomycosis / Tinea Unguium (足趾甲癬)
       biomarkers: []
@@ -1136,7 +1150,9 @@ regulations:
     - UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection (泌尿道感染)
     - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria: []
-    summary: 適用於【Fungal Infection / Mycosis】之健保給付。 規範重點：限用於 1.治療16歲以上的食道念珠菌感染(111/2/1)。
+    summary: 適用於【Disease / Ulcer / Bleeding Prevention & Prophylaxis、Fungal Infection
+      / Mycosis、UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection】之健保給付。
+      規範重點：限用於 1.治療16歲以上的食道念珠菌感染(111/2/1)。
     clinical_rules:
     - indication: Fungal Infection / Mycosis (黴菌感染)
       biomarkers: []
@@ -1173,7 +1189,7 @@ regulations:
     indications:
     - Fungal Infection / Mycosis (Aspergillosis / Mucormycosis / Candidiasis) (黴菌感染)
     laboratory_criteria: []
-    summary: 規範【. Flucytosine (如Flusine Tablets)】之健保給付條件。 規範重點：限用於Cryptococcus infection的病患。
+    summary: 適用於【Fungal Infection / Mycosis】之健保給付。 規範重點：限用於Cryptococcus infection的病患。
     clinical_rules:
     - indication: 10.6.8. Flucytosine (如Flusine Tablets)(96/6/1)
       biomarkers: []
@@ -1253,8 +1269,9 @@ regulations:
     - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria:
     - 白血球
-    summary: 適用於【Leukemia、Fungal Infection / Mycosis】之健保給付。 規範重點：1.限下列條件之一使用： (1)對amphotericin
-      B或itraconazole或voriconazole治療無效或不能忍受之成人侵入性麴菌病（invasive aspergillosis）的第二線用藥。
+    summary: 適用於【Disease / Ulcer / Bleeding Prevention & Prophylaxis、Leukemia、Fungal
+      Infection / Mycosis】之健保給付。 規範重點：1.限下列條件之一使用： (1)對amphotericin B或itraconazole或voriconazole治療無效或不能忍受之成人侵入性麴菌病（invasive
+      aspergillosis）的第二線用藥。
     clinical_rules:
     - indication: Leukemia (白血病)
       biomarkers: []
@@ -1323,7 +1340,7 @@ regulations:
     indications:
     - Fungal Infection / Mycosis (Aspergillosis / Mucormycosis / Candidiasis) (黴菌感染)
     laboratory_criteria: []
-    summary: '規範【. Isavuconazole (如Cresemba)：】之健保給付條件。 規範重點：1.限用於: (1)侵犯性麴菌症（invasive
+    summary: '適用於【Fungal Infection / Mycosis】之健保給付。 規範重點：1.限用於: (1)侵犯性麴菌症（invasive
       aspergillosis） (2)使用於不適合接受 amphotericin B 的病人治療白黴菌病（mucormycosis） 2.使用本藥須經感染症專科醫師會診確認需要使用，申報費用時需檢附會診紀錄及相關之病歷資料。'
     clinical_rules:
     - indication: 10.6.11. Isavuconazole (如Cresemba)：(110/2/1)
@@ -1370,14 +1387,16 @@ regulations:
   conditions_of_payment:
     indications:
     - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Pneumonia / Respiratory & ENT Infection (肺炎)
     - Herpes Simplex / Herpes Zoster / CMV Infection (疱疹)
     - Organ / Stem Cell Transplantation (腎臟移植)
     - Dry Eye Syndrome / Keratitis / Conjunctivitis (乾眼症)
     - Macular Degeneration (AMD / DME) / Retinopathy / Uveitis (黃斑部病變)
     laboratory_criteria: []
-    summary: 規範【. 全身性抗疱疹病毒劑】之健保給付條件。 規範重點：1.Acyclovir：(98/11/1、100/7/1、107/12/1、108/3/1、108/6/1)
-      (1)使用本類製劑，除200mg(限Deherp)、400mg及800mg(限Virless)規格量口服錠劑外，應以下列條件為限：(107/12/1、108/3/1、108/6/1)
+    summary: 適用於【Disease / Ulcer / Bleeding Prevention & Prophylaxis、Metastatic /
+      Locally Advanced / Unresectable / Recurrent、Pneumonia / Respiratory & ENT Infection】之健保給付。
+      規範重點：1.Acyclovir：(98/11/1、100/7/1、107/12/1、108/3/1、108/6/1) (1)使用本類製劑，除200mg(限Deherp)、400mg及800mg(限Virless)規格量口服錠劑外，應以下列條件為限：(107/12/1、108/3/1、108/6/1)
       I.疱疹性腦炎。
     clinical_rules:
     - indication: 10.7.1.1. 全身性抗疱疹病毒劑
@@ -1468,10 +1487,11 @@ regulations:
     - Tromantadine
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Herpes Simplex / Herpes Zoster / CMV Infection (疱疹)
     laboratory_criteria: []
-    summary: 規範【. 局部抗疱疹病毒劑（如Acyclovir外用製劑；tromantadine外用製劑；penciclovir外用製劑）：(97/12/1、98/11/1、100/7/1、102/7/1）】之健保給付條件。
-      規範重點：1.單純性疱疹(感染部位在頭頸部、生殖器周圍、嘴唇、口腔、陰部)3日內可使用acyclovir或tromantadine藥膏，每次給予藥量限5公克以內(100/7/1）。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Herpes Simplex
+      / Herpes Zoster / CMV Infection】之健保給付。 規範重點：1.單純性疱疹(感染部位在頭頸部、生殖器周圍、嘴唇、口腔、陰部)3日內可使用acyclovir或tromantadine藥膏，每次給予藥量限5公克以內(100/7/1）。
     clinical_rules:
     - indication: 10.7.1.2. 局部抗疱疹病毒劑（如Acyclovir外用製劑；tromantadine外用製劑；penciclovir外用製劑）：(97/12/1、98/11/1、100/7/1、102/7/1）
       biomarkers: []
@@ -1504,7 +1524,6 @@ regulations:
     - HIV抗病毒藥物複方製劑 (人類免疫缺乏病毒)
     ingredients:
     - Ribavirin
-    - Interferon
     - Peginterferon
   conditions_of_payment:
     indications:
@@ -1514,8 +1533,8 @@ regulations:
     laboratory_criteria:
     - Anti-HCV
     - HCV RNA
-    summary: 適用於【Hepatitis B / Hepatitis C】之健保給付。 主要條件包含：臨床檢驗需符合 Anti-HCV = 陽性, HCV
-      RNA = 陽性。
+    summary: 適用於【Hepatitis B / Hepatitis C、HIV / AIDS、Organ / Stem Cell Transplantation】之健保給付。
+      主要條件包含：臨床檢驗需符合 Anti-HCV = 陽性, HCV RNA = 陽性。
     clinical_rules:
     - indication: Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
       biomarkers:
@@ -1657,7 +1676,7 @@ regulations:
     indications:
     - Liver Cirrhosis (肝硬化)
     - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
-    - Liver Cancer / Hepatocellular Carcinoma (肝癌)
+    - Liver Cancer / Hepatocellular Carcinoma (肝細胞癌)
     - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - HIV / AIDS (人類免疫缺乏病毒)
     - Organ / Stem Cell Transplantation (腎臟移植)
@@ -2694,7 +2713,8 @@ regulations:
     - HIV / AIDS (人類免疫缺乏病毒)
     - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria: []
-    summary: 適用於【Liver Cirrhosis、Hepatitis B / Hepatitis C】之健保給付。
+    summary: 適用於【Liver Cirrhosis、Hepatitis B / Hepatitis C、Disease / Ulcer / Bleeding
+      Prevention & Prophylaxis】之健保給付。
     clinical_rules:
     - indication: Liver Cirrhosis (肝硬化)
       biomarkers: []
@@ -2899,7 +2919,7 @@ regulations:
     - HIV / AIDS (人類免疫缺乏病毒)
     - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria: []
-    summary: 適用於【Liver Cirrhosis、Hepatitis B / Hepatitis C】之健保給付。 規範重點：1.限用於慢性病毒性C型肝炎患者，並依據「C型肝炎全口服新藥健保給付執行計畫」辦理。
+    summary: 適用於【Liver Cirrhosis、Hepatitis B / Hepatitis C、HIV / AIDS】之健保給付。 規範重點：1.限用於慢性病毒性C型肝炎患者，並依據「C型肝炎全口服新藥健保給付執行計畫」辦理。
     clinical_rules:
     - indication: Liver Cirrhosis (肝硬化)
       biomarkers: []
@@ -3030,7 +3050,7 @@ regulations:
     - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     - HIV / AIDS (人類免疫缺乏病毒)
     laboratory_criteria: []
-    summary: 適用於【Liver Cirrhosis、Hepatitis B / Hepatitis C】之健保給付。 規範重點：1.限用於成人慢性病毒性C型肝炎患者，並依據「C型肝炎全口服新藥健保給付執行計畫」辦理。
+    summary: 適用於【Liver Cirrhosis、Hepatitis B / Hepatitis C、HIV / AIDS】之健保給付。 規範重點：1.限用於成人慢性病毒性C型肝炎患者，並依據「C型肝炎全口服新藥健保給付執行計畫」辦理。
     clinical_rules:
     - indication: Liver Cirrhosis (肝硬化)
       biomarkers: []
@@ -3124,8 +3144,8 @@ regulations:
     - HIV / AIDS (人類免疫缺乏病毒)
     laboratory_criteria:
     - Child-Pugh
-    summary: 適用於【Liver Cirrhosis、Hepatitis B / Hepatitis C】之健保給付。 主要條件包含：臨床檢驗需符合 Child-Pugh
-      = BClass。
+    summary: 適用於【Liver Cirrhosis、Hepatitis B / Hepatitis C、HIV / AIDS】之健保給付。 主要條件包含：臨床檢驗需符合
+      Child-Pugh = BClass。
     clinical_rules:
     - indication: Liver Cirrhosis (肝硬化)
       biomarkers:
@@ -3241,7 +3261,8 @@ regulations:
     - Herpes Simplex / Herpes Zoster / CMV Infection (疱疹)
     - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria: []
-    summary: 規範【. Letermovir（如Prevymis）：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Disease / Ulcer / Bleeding Prevention & Prophylaxis、Herpes Simplex
+      / Herpes Zoster / CMV Infection、Organ / Stem Cell Transplantation】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 10.7.12. Letermovir（如Prevymis）：（109/6/1）
       biomarkers: []
@@ -3282,8 +3303,8 @@ regulations:
     - HIV / AIDS (人類免疫缺乏病毒)
     laboratory_criteria:
     - Child-Pugh
-    summary: 適用於【Liver Cirrhosis、Hepatitis B / Hepatitis C】之健保給付。 主要條件包含：臨床檢驗需符合 Child-Pugh
-      = AClass。
+    summary: 適用於【Liver Cirrhosis、Hepatitis B / Hepatitis C、HIV / AIDS】之健保給付。 主要條件包含：臨床檢驗需符合
+      Child-Pugh = AClass。
     clinical_rules:
     - indication: Liver Cirrhosis (肝硬化)
       biomarkers:
@@ -3388,7 +3409,8 @@ regulations:
     - Herpes Simplex / Herpes Zoster / CMV Infection (疱疹)
     - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria: []
-    summary: 規範【. Maribavir（如Livtencity）：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Herpes Simplex / Herpes Zoster / CMV Infection、Organ / Stem Cell
+      Transplantation】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 10.7.14. Maribavir（如Livtencity）：（113/11/1）
       biomarkers: []
@@ -3447,7 +3469,9 @@ regulations:
     - Clostridioides difficile Infection / Pseudomembranous Colitis (困難梭狀桿菌)
     - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria: []
-    summary: 規範【. Teicoplanin及vancomycin注射劑：】之健保給付條件。 規範重點：1.對其他抗生素有抗藥性之革蘭氏陽性菌感染。
+    summary: 適用於【UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection、Clostridioides
+      difficile Infection / Pseudomembranous Colitis、Organ / Stem Cell Transplantation】之健保給付。
+      規範重點：1.對其他抗生素有抗藥性之革蘭氏陽性菌感染。
     clinical_rules:
     - indication: 10.8.1.1. Teicoplanin及vancomycin注射劑：(88/3/1、110/7/1)
       biomarkers: []
@@ -3487,8 +3511,8 @@ regulations:
     - Diarrhea (腹瀉)
     - Clostridioides difficile Infection / Pseudomembranous Colitis (困難梭狀桿菌)
     laboratory_criteria: []
-    summary: "規範【. Vancomycin口服製劑】之健保給付條件。 規範重點：1.\t限用於梭狀桿菌引起之假膜性結腸炎，且需符合下列診斷方法之一：\
-      \ (1)內視鏡檢查證實有假膜性結腸炎之病理變化。"
+    summary: "適用於【Diarrhea、Clostridioides difficile Infection / Pseudomembranous Colitis】之健保給付。\
+      \ 規範重點：1.\t限用於梭狀桿菌引起之假膜性結腸炎，且需符合下列診斷方法之一： (1)內視鏡檢查證實有假膜性結腸炎之病理變化。"
     clinical_rules:
     - indication: 10.8.1.2. Vancomycin口服製劑(110/7/1)
       biomarkers: []
@@ -3525,7 +3549,7 @@ regulations:
     indications:
     - Tuberculosis (TB) (結核病)
     laboratory_criteria: []
-    summary: 規範【. Quinolone類：】之健保給付條件。 規範重點：限使用於下列疾病，若使用於結核病不予給付，請向衛生福利部疾病管制署申請並依最新版「結核病診治指引」辦理。
+    summary: 適用於【Tuberculosis】之健保給付。 規範重點：限使用於下列疾病，若使用於結核病不予給付，請向衛生福利部疾病管制署申請並依最新版「結核病診治指引」辦理。
     clinical_rules:
     - indication: 10.8.2. Quinolone類：（96/9/1、97/9/1、107/1/1、108/12/1）
       biomarkers: []
@@ -3558,8 +3582,9 @@ regulations:
     - Pneumonia / Respiratory & ENT Infection (肺炎)
     - UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection (泌尿道感染)
     laboratory_criteria: []
-    summary: 適用於【Chronic Obstructive Pulmonary Disease】之健保給付。 規範重點：限用於成人(18歲以上)之下列感染症：
-      1.慢性支氣管炎的急性惡化、社區性肺炎、複雜性腹腔內感染。
+    summary: 適用於【Chronic Obstructive Pulmonary Disease、Pneumonia / Respiratory & ENT
+      Infection、UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection】之健保給付。
+      規範重點：限用於成人(18歲以上)之下列感染症： 1.慢性支氣管炎的急性惡化、社區性肺炎、複雜性腹腔內感染。
     clinical_rules:
     - indication: Chronic Obstructive Pulmonary Disease (慢性阻塞性肺病)
       biomarkers: []
@@ -3595,7 +3620,8 @@ regulations:
     - Chronic Obstructive Pulmonary Disease (慢性阻塞性肺病)
     - Pneumonia / Respiratory & ENT Infection (肺炎)
     laboratory_criteria: []
-    summary: 適用於【Chronic Obstructive Pulmonary Disease】之健保給付。 規範重點：限用於成人(18歲以上)之慢性支氣管炎的急性惡化、社區性肺炎。
+    summary: 適用於【Chronic Obstructive Pulmonary Disease、Pneumonia / Respiratory & ENT
+      Infection】之健保給付。 規範重點：限用於成人(18歲以上)之慢性支氣管炎的急性惡化、社區性肺炎。
     clinical_rules:
     - indication: Chronic Obstructive Pulmonary Disease (慢性阻塞性肺病)
       biomarkers: []
@@ -3628,7 +3654,9 @@ regulations:
     - Pneumonia / Respiratory & ENT Infection (肺炎)
     - UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection (泌尿道感染)
     laboratory_criteria: []
-    summary: 適用於【Chronic Obstructive Pulmonary Disease】之健保給付。 規範重點：限用於成人(18歲以上)之慢性支氣管炎的急性惡化、社區性肺炎、複雜性泌尿道感染。
+    summary: 適用於【Chronic Obstructive Pulmonary Disease、Pneumonia / Respiratory & ENT
+      Infection、UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection】之健保給付。
+      規範重點：限用於成人(18歲以上)之慢性支氣管炎的急性惡化、社區性肺炎、複雜性泌尿道感染。
     clinical_rules:
     - indication: Chronic Obstructive Pulmonary Disease (慢性阻塞性肺病)
       biomarkers: []
@@ -3660,7 +3688,7 @@ regulations:
     indications:
     - Pneumonia / Respiratory & ENT Infection (肺炎)
     laboratory_criteria: []
-    summary: 規範【. Nemonoxacin膠囊劑及注射劑(如Taigexyn)：】之健保給付條件。 規範重點：1.膠囊劑限用於18歲以上適合於門診治療之輕度社區性肺炎。
+    summary: 適用於【Pneumonia / Respiratory & ENT Infection】之健保給付。 規範重點：1.膠囊劑限用於18歲以上適合於門診治療之輕度社區性肺炎。
     clinical_rules:
     - indication: 10.8.2.4. Nemonoxacin膠囊劑及注射劑(如Taigexyn)：(107/1/1、111/3/1)
       biomarkers: []
@@ -3698,8 +3726,8 @@ regulations:
     laboratory_criteria:
     - BMI
     - 白血球
-    summary: 規範【. Linezolid（如Zyvox Injection及Tablets）：】之健保給付條件。 主要條件包含：臨床檢驗需符合 BMI
-      >= 30kg/m²。
+    summary: 適用於【Pneumonia / Respiratory & ENT Infection、UTI / Intra-abdominal Infection
+      / Sepsis / Bacterial Infection】之健保給付。 主要條件包含：臨床檢驗需符合 BMI >= 30kg/m²。
     clinical_rules:
     - indication: 10.8.3. Linezolid（如Zyvox Injection及Tablets）：（91/4/1、100/7/1、105/2/1、108/4/1）
       biomarkers:
@@ -3788,7 +3816,8 @@ regulations:
     - Pneumonia / Respiratory & ENT Infection (肺炎)
     - UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection (泌尿道感染)
     laboratory_criteria: []
-    summary: 規範【. Tigecycline（如Tygacil）：】之健保給付條件。 規範重點：1.限下列條件之一使用： (1)經細菌培養證實有意義之致病菌且對其他抗微生物製劑均具抗藥性或對其他具有感受性抗微生物製劑過敏，而對tigecycline具有感受性(sensitivity)之複雜性皮膚及皮膚結構感染或複雜性腹腔內感染症使用。
+    summary: 適用於【Pneumonia / Respiratory & ENT Infection、UTI / Intra-abdominal Infection
+      / Sepsis / Bacterial Infection】之健保給付。 規範重點：1.限下列條件之一使用： (1)經細菌培養證實有意義之致病菌且對其他抗微生物製劑均具抗藥性或對其他具有感受性抗微生物製劑過敏，而對tigecycline具有感受性(sensitivity)之複雜性皮膚及皮膚結構感染或複雜性腹腔內感染症使用。
     clinical_rules:
     - indication: 10.8.5. Tigecycline（如Tygacil）：(95/12/1、100/7/1)
       biomarkers: []
@@ -3825,7 +3854,8 @@ regulations:
     indications:
     - UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection (泌尿道感染)
     laboratory_criteria: []
-    summary: 規範【. Colistin可用於靜脈注射劑】之健保給付條件。 規範重點：限經感染症專科醫師會診，確定使用於一般抗生素無效，且具多重抗藥性之革蘭氏陰性菌之嚴重感染。
+    summary: 適用於【UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection】之健保給付。
+      規範重點：限經感染症專科醫師會診，確定使用於一般抗生素無效，且具多重抗藥性之革蘭氏陰性菌之嚴重感染。
     clinical_rules:
     - indication: 10.8.6. Colistin可用於靜脈注射劑(97/9/1、98/9/1、99/2/1)
       biomarkers: []
@@ -3858,8 +3888,8 @@ regulations:
     indications:
     - UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection (泌尿道感染)
     laboratory_criteria: []
-    summary: 規範【. Daptomycin注射劑：】之健保給付條件。 規範重點：1.證實為MRSA (methicillin-resistant staphylococcus
-      aureus)複雜皮膚和皮膚組織感染，且證明為vancomycin抗藥菌株或使用vancomycin、teicoplanin治療失敗者或對vancomycin、teicoplanin治療無法耐受者。
+    summary: 適用於【UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection】之健保給付。
+      規範重點：1.證實為MRSA (methicillin-resistant staphylococcus aureus)複雜皮膚和皮膚組織感染，且證明為vancomycin抗藥菌株或使用vancomycin、teicoplanin治療失敗者或對vancomycin、teicoplanin治療無法耐受者。
     clinical_rules:
     - indication: 10.8.7. Daptomycin注射劑：(98/1/1)
       biomarkers: []
@@ -3895,8 +3925,9 @@ regulations:
     - Diarrhea (腹瀉)
     - Clostridioides difficile Infection / Pseudomembranous Colitis (困難梭狀桿菌)
     laboratory_criteria: []
-    summary: 規範【. Fidaxomicin(如Dificid)：】之健保給付條件。 規範重點：1.限用於經第一線藥物metronidazole及vancomycin治療無效或復發，且細菌培養或毒素分析(toxin
-      assay)報告證實為困難梭狀桿菌相關腹瀉(C. difficile-associated diarrhoea, CDAD)，並經感染症專科醫師會診，確認有感染症需使用者。
+    summary: 適用於【Diarrhea、Clostridioides difficile Infection / Pseudomembranous Colitis】之健保給付。
+      規範重點：1.限用於經第一線藥物metronidazole及vancomycin治療無效或復發，且細菌培養或毒素分析(toxin assay)報告證實為困難梭狀桿菌相關腹瀉(C.
+      difficile-associated diarrhoea, CDAD)，並經感染症專科醫師會診，確認有感染症需使用者。
     clinical_rules:
     - indication: 10.8.8. Fidaxomicin(如Dificid)：(103/9/1)
       biomarkers: []
@@ -3964,8 +3995,8 @@ regulations:
     indications:
     - UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection (泌尿道感染)
     laboratory_criteria: []
-    summary: "規範【. Polymyxin B sulfate靜脈注射劑：】之健保給付條件。 規範重點：1.\t確定使用於一般抗生素無效，用於患有對Polymyxin\
-      \ B 具感受性且具多重抗藥性之革蘭氏陰性菌引起之嚴重感染成人病人，不適合用於治療泌尿道感染。"
+    summary: "適用於【UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection】之健保給付。\
+      \ 規範重點：1.\t確定使用於一般抗生素無效，用於患有對Polymyxin B 具感受性且具多重抗藥性之革蘭氏陰性菌引起之嚴重感染成人病人，不適合用於治療泌尿道感染。"
     clinical_rules:
     - indication: 10.8.10. Polymyxin B sulfate靜脈注射劑：(113/12/1)
       biomarkers: []
@@ -4001,7 +4032,7 @@ regulations:
     indications:
     - HIV / AIDS (人類免疫缺乏病毒)
     laboratory_criteria: []
-    summary: 規範【. 抗人類免疫缺乏病毒藥品使用規定】之健保給付條件。 規範重點：1.限在台灣地區確診且服藥兩年以上之病患使用。
+    summary: 適用於【HIV / AIDS】之健保給付。 規範重點：1.限在台灣地區確診且服藥兩年以上之病患使用。
     clinical_rules:
     - indication: 10.9. 抗人類免疫缺乏病毒藥品使用規定(106/2/4)
       biomarkers: []

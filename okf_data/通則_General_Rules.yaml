@@ -96,7 +96,8 @@ regulations:
     - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
       Porphyria) (黏多醣症)
     laboratory_criteria: []
-    summary: 適用於【Hepatitis B / Hepatitis C、Crohn's Disease、Leukemia】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Hepatitis B / Hepatitis C、Crohn's Disease、Disease / Ulcer / Bleeding
+      Prevention & Prophylaxis】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
       biomarkers: []

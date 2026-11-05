@@ -51,8 +51,8 @@ regulations:
     indications:
     - Glaucoma / Ocular Hypertension (青光眼)
     laboratory_criteria: []
-    summary: "規範【. 高眼壓及青光眼眼用製劑】之健保給付條件。 規範重點：1.本類藥物療程劑量如下：(106/2/1、111/7/1) (1)多次使用包裝(規格量≧2.5mL):\
-      \ Ⅰ.\t規格量≦3mL：一天點一次者(如Mikelan、Xalatan、Travatan、Lumigan，Taflotan、Eybelis等)，單眼每4週處方為1瓶；雙眼得每3週處方1瓶，3個月處方4瓶。"
+    summary: "適用於【Glaucoma / Ocular Hypertension】之健保給付。 規範重點：1.本類藥物療程劑量如下：(106/2/1、111/7/1)\
+      \ (1)多次使用包裝(規格量≧2.5mL): Ⅰ.\t規格量≦3mL：一天點一次者(如Mikelan、Xalatan、Travatan、Lumigan，Taflotan、Eybelis等)，單眼每4週處方為1瓶；雙眼得每3週處方1瓶，3個月處方4瓶。"
     clinical_rules:
     - indication: 14.1. 高眼壓及青光眼眼用製劑(101/12/1、102/8/1、104/4/1、106/2/1、110/5/1、111/7/1、114/6/1)
       biomarkers: []
@@ -103,8 +103,8 @@ regulations:
     indications:
     - Glaucoma / Ocular Hypertension (青光眼)
     laboratory_criteria: []
-    summary: '規範【. 單方製劑:】之健保給付條件。 規範重點：1.β-交感神經阻斷劑(β-blockers ) 2.碳酸酐酶抑制劑(Carbonic
-      anhydrase inhibitor) : 限對β-blockers有禁忌、不適或使用效果不佳之病患使用。'
+    summary: '適用於【Glaucoma / Ocular Hypertension】之健保給付。 規範重點：1.β-交感神經阻斷劑(β-blockers
+      ) 2.碳酸酐酶抑制劑(Carbonic anhydrase inhibitor) : 限對β-blockers有禁忌、不適或使用效果不佳之病患使用。'
     clinical_rules:
     - indication: '14.1.1. 單方製劑(90/10/1、101/12/1、104/4/1、106/2/1、111/7/1):'
       biomarkers: []
@@ -163,7 +163,7 @@ regulations:
     indications:
     - Glaucoma / Ocular Hypertension (青光眼)
     laboratory_criteria: []
-    summary: 規範【. 複方製劑：】之健保給付條件。 規範重點：限經單一降眼壓藥物治療後，眼壓仍控制不良之患者第二線(含)以上用藥。
+    summary: 適用於【Glaucoma / Ocular Hypertension】之健保給付。 規範重點：限經單一降眼壓藥物治療後，眼壓仍控制不良之患者第二線(含)以上用藥。
     clinical_rules:
     - indication: 14.1.2. 複方製劑：(92/2/1、101/12/1、104/4/1、106/2/1)
       biomarkers: []
@@ -196,7 +196,8 @@ regulations:
     - Dry Eye Syndrome / Keratitis / Conjunctivitis (乾眼症)
     - Macular Degeneration (AMD / DME) / Retinopathy / Uveitis (黃斑部病變)
     laboratory_criteria: []
-    summary: 規範【. Acyclovir眼用製劑：限下列病例使用】之健保給付條件。 規範重點：1.帶狀疱疹或單純性疱疹侵犯三叉神經第一分枝V1皮節，可能危及眼角膜者。
+    summary: 適用於【Herpes Simplex / Herpes Zoster / CMV Infection、Dry Eye Syndrome /
+      Keratitis / Conjunctivitis、Macular Degeneration】之健保給付。 規範重點：1.帶狀疱疹或單純性疱疹侵犯三叉神經第一分枝V1皮節，可能危及眼角膜者。
     clinical_rules:
     - indication: 14.2. Acyclovir眼用製劑：限下列病例使用
       biomarkers: []
@@ -261,13 +262,11 @@ regulations:
     - Levofloxacin
     - Moxifloxacin
     - Norfloxacin
-    - Ofloxacin
   conditions_of_payment:
     indications:
     - Dry Eye Syndrome / Keratitis / Conjunctivitis (乾眼症)
     laboratory_criteria: []
-    summary: 規範【. Ofloxacin, norfloxacin, ciprofloxacin, moxifloxacin, levofloxacin眼用製劑：】之健保給付條件。
-      規範重點：1.限用於角膜潰瘍或嚴重角膜炎病例。
+    summary: 適用於【Dry Eye Syndrome / Keratitis / Conjunctivitis】之健保給付。 規範重點：1.限用於角膜潰瘍或嚴重角膜炎病例。
     clinical_rules:
     - indication: 14.4.1. Ofloxacin, norfloxacin, ciprofloxacin, moxifloxacin, levofloxacin眼用製劑：（87/4/1、93/2/1、94/7/1、96/5/1）
       biomarkers: []
@@ -301,7 +300,7 @@ regulations:
     indications:
     - Dry Eye Syndrome / Keratitis / Conjunctivitis (乾眼症)
     laboratory_criteria: []
-    summary: 規範【. Lomefloxacin (Okacin)：(90/12/1、93/2/1）】之健保給付條件。 規範重點：1.對lomefloxacin
+    summary: 適用於【Dry Eye Syndrome / Keratitis / Conjunctivitis】之健保給付。 規範重點：1.對lomefloxacin
       hydrochloride易感性細菌所造成之結膜炎、眼瞼炎等之第二線用藥。
     clinical_rules:
     - indication: 14.4.2. Lomefloxacin (Okacin)：(90/12/1、93/2/1）
@@ -339,7 +338,7 @@ regulations:
     indications:
     - Dry Eye Syndrome / Keratitis / Conjunctivitis (乾眼症)
     laboratory_criteria: []
-    summary: 規範【. 人工淚液：】之健保給付條件。 規範重點：1. 初次使用限經眼科醫師診斷且符合下列條件之一者使用，病歷上應附相關紀錄、照片或影片備查：(113/7/1）
+    summary: 適用於【Dry Eye Syndrome / Keratitis / Conjunctivitis】之健保給付。 規範重點：1. 初次使用限經眼科醫師診斷且符合下列條件之一者使用，病歷上應附相關紀錄、照片或影片備查：(113/7/1）
       (1)乾眼症病患經淚液分泌機能檢查(basal Schirmer test)至少單眼淚液分泌＜5 mm者或淚膜檢查淚膜破裂時間(TBUT)＜5秒。
     clinical_rules:
     - indication: 14.5. 人工淚液：（87/7/1、93/2/1、113/7/1）
@@ -377,7 +376,7 @@ regulations:
     indications:
     - Dry Eye Syndrome / Keratitis / Conjunctivitis (乾眼症)
     laboratory_criteria: []
-    summary: 規範【. Ketorolac tromethamine（如Acular Ophthalmic Solution）：】之健保給付條件。
+    summary: 適用於【Dry Eye Syndrome / Keratitis / Conjunctivitis】之健保給付。
     clinical_rules:
     - indication: 14.8. Ketorolac tromethamine（如Acular Ophthalmic Solution）：(89/11/1)
       biomarkers: []
@@ -468,8 +467,8 @@ regulations:
     - HbA1c
     - eGFR
     - Scr
-    summary: 適用於【Stroke / Cerebrovascular Accident、Diabetes Mellitus】之健保給付。 主要條件包含：臨床檢驗需符合
-      Scr >= 1.5mg/dL, Scr >= 1.5mg/dL, Scr >= 1.5mg/dL；使用前須經事前審查核准。
+    summary: 適用於【Gastrointestinal Bleeding / Hemorrhage、Stroke / Cerebrovascular Accident、Diabetes
+      Mellitus】之健保給付。 主要條件包含：臨床檢驗需符合 Scr >= 1.5mg/dL, Scr >= 1.5mg/dL, Scr >= 1.5mg/dL；使用前須經事前審查核准。
     clinical_rules:
     - indication: Stroke / Cerebrovascular Accident (腦中風)
       biomarkers:
@@ -792,7 +791,8 @@ regulations:
     - ICU Sedation / Anesthesia / Mechanical Ventilation (鎮靜)
     - Dry Eye Syndrome / Keratitis / Conjunctivitis (乾眼症)
     laboratory_criteria: []
-    summary: 規範【. Cyclosporine眼用製劑 (如Restasis)   (附表二十七)】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【ICU Sedation / Anesthesia / Mechanical Ventilation、Dry Eye Syndrome
+      / Keratitis / Conjunctivitis】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 14.9.3. Cyclosporine眼用製劑 (如Restasis)  (100/08/1、103/4/1、105/5/1)
         (附表二十七)
@@ -881,7 +881,8 @@ regulations:
     - Scr
     - CRT
     - BCVA
-    summary: 適用於【Diabetes Mellitus】之健保給付。 主要條件包含：臨床檢驗需符合 Scr >= 1.5mg/dL, CRT >= 300μm,
+    summary: 適用於【Diabetes Mellitus、UTI / Intra-abdominal Infection / Sepsis / Bacterial
+      Infection、Tuberculosis】之健保給付。 主要條件包含：臨床檢驗需符合 Scr >= 1.5mg/dL, CRT >= 300μm,
       BCVA range 0.05~0.5；使用前須經事前審查核准。
     clinical_rules:
     - indication: Diabetes Mellitus (糖尿病)
@@ -1132,7 +1133,7 @@ regulations:
     indications:
     - Macular Degeneration (AMD / DME) / Retinopathy / Uveitis (黃斑部病變)
     laboratory_criteria: []
-    summary: 規範【. Verteporfin(如Visudyne)】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Macular Degeneration】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 14.9.5. Verteporfin(如Visudyne)(109/2/1)
       biomarkers: []
@@ -1221,8 +1222,7 @@ regulations:
     indications:
     - Macular Degeneration (AMD / DME) / Retinopathy / Uveitis (黃斑部病變)
     laboratory_criteria: []
-    summary: '規範【. 新生血管抑制劑 (Anti-angiogenic agents) : ranibizumab (如Lucentis)、aflibercept
-      (如Eylea)、bevacizumab (如Avastin) ：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。'
+    summary: 適用於【Macular Degeneration】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: '14.9.7. 新生血管抑制劑 (Anti-angiogenic agents) : ranibizumab (如Lucentis)、aflibercept
         (如Eylea)、bevacizumab (如Avastin) (114/3/1)：'
@@ -1296,7 +1296,7 @@ regulations:
     indications:
     - Macular Degeneration (AMD / DME) / Retinopathy / Uveitis (黃斑部病變)
     laboratory_criteria: []
-    summary: 規範【. Idebenone(如Raxone)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Macular Degeneration】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 14.9.8. Idebenone(如Raxone)：（114/6/1）
       biomarkers: []
@@ -1373,7 +1373,7 @@ regulations:
     - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
       Porphyria) (黏多醣症)
     laboratory_criteria: []
-    summary: 規範【. Cysteamine（如Cystadrops）：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Rare Metabolic & Lysosomal Storage Diseases】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 14.9.9. Cysteamine（如Cystadrops）：（114/7/1）
       biomarkers: []

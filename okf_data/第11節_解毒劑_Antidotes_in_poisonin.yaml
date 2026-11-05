@@ -33,7 +33,8 @@ regulations:
     - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
       Porphyria) (黏多醣症)
     laboratory_criteria: []
-    summary: 規範【. Flumazenil (如Anexate inj )限使用於：】之健保給付條件。 規範重點：1.全身麻醉病例 2.Benzodiazepine類藥物中毒之鑑別診斷與治療病例。
+    summary: 適用於【ICU Sedation / Anesthesia / Mechanical Ventilation、Rare Metabolic
+      & Lysosomal Storage Diseases】之健保給付。 規範重點：1.全身麻醉病例 2.Benzodiazepine類藥物中毒之鑑別診斷與治療病例。
     clinical_rules:
     - indication: 11.2.1. Flumazenil (如Anexate inj )限使用於：
       biomarkers: []
@@ -66,7 +67,7 @@ regulations:
     indications:
     - ICU Sedation / Anesthesia / Mechanical Ventilation (鎮靜)
     laboratory_criteria: []
-    summary: 規範【. Edrophonium chloride（如Enlon）：】之健保給付條件。 規範重點：限使用於手術麻醉病例，作為神經肌肉阻斷劑之拮抗劑。
+    summary: 適用於【ICU Sedation / Anesthesia / Mechanical Ventilation】之健保給付。 規範重點：限使用於手術麻醉病例，作為神經肌肉阻斷劑之拮抗劑。
     clinical_rules:
     - indication: 11.2.2. Edrophonium chloride（如Enlon）：
       biomarkers: []
@@ -97,7 +98,7 @@ regulations:
     indications:
     - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria: []
-    summary: 規範【. Mesna（如Uromitexan inj）：】之健保給付條件。 規範重點：限癌症或骨髓移植病例使用大量Endoxan；Ifosphamide類藥物時使用。
+    summary: 適用於【Organ / Stem Cell Transplantation】之健保給付。 規範重點：限癌症或骨髓移植病例使用大量Endoxan；Ifosphamide類藥物時使用。
     clinical_rules:
     - indication: 11.2.3. Mesna（如Uromitexan inj）：
       biomarkers: []
@@ -130,7 +131,7 @@ regulations:
     - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
       Porphyria) (黏多醣症)
     laboratory_criteria: []
-    summary: 規範【. Trientine dihydrochloride (104/1/1）】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Rare Metabolic & Lysosomal Storage Diseases】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 11.2.4. Trientine dihydrochloride (104/1/1）
       biomarkers: []
@@ -167,8 +168,8 @@ regulations:
     - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
       Porphyria) (黏多醣症)
     laboratory_criteria: []
-    summary: "規範【. Fomepizole (如Fomeject)：】之健保給付條件。 規範重點：1.限下列病例使用： (1)甲醇中毒： Ⅰ.\t\
-      確認甲醇服用病史。"
+    summary: "適用於【Rare Metabolic & Lysosomal Storage Diseases】之健保給付。 規範重點：1.限下列病例使用：\
+      \ (1)甲醇中毒： Ⅰ.\t確認甲醇服用病史。"
     clinical_rules:
     - indication: 11.2.5. Fomepizole (如Fomeject)：（107/11/1）
       biomarkers: []

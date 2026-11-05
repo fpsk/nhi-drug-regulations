@@ -75,6 +75,27 @@ class TestNHIEngineRefactoring(unittest.TestCase):
         self.assertIn("心臟衰竭", combo_terms)
         self.assertTrue(any("dapagliflozin" in t.lower() or "forxiga" in t.lower() for t in combo_terms))
 
+    def test_adenocarcinoma_of_lung_and_histologic_subtypes(self):
+        hits = self.indexer.search("adenocarcinoma of lung")
+        self.assertTrue(len(hits) >= 6)
+        returned_secs = [r["section_number"] for r in hits]
+        for expected_sec in ("9.24.", "9.29.", "9.45.", "9.80.", "9.83.", "9.138.", "9.69.", "9.26."):
+            self.assertIn(expected_sec, returned_secs)
+        # Ensure loose "lung" token does not pull in unrelated pulmonary fibrosis (6.2.7.) or RSV/heart failure (8.2.8.)
+        self.assertNotIn("6.2.7.", returned_secs)
+        self.assertNotIn("8.2.8.", returned_secs)
+
+        hl = self.indexer.get_highlight_terms("adenocarcinoma of lung")
+        self.assertEqual(hl[0], "肺腺癌")
+        self.assertIn("非鱗狀非小細胞肺癌", hl)
+        self.assertIn("Lung Adenocarcinoma", hl)
+
+        # Verify Chinese negation guard: "small cell lung cancer" matches SCLC (小細胞肺癌), not NSCLC (非小細胞肺癌)
+        sclc_hits = self.indexer.search("small cell lung cancer")
+        sclc_secs = [r["section_number"] for r in sclc_hits]
+        self.assertIn("9.69.", sclc_secs)
+        self.assertNotIn("9.24.", sclc_secs)
+
     def test_api_endpoints_and_shared_assets(self):
         res_ver = self.client.get("/api/version")
         self.assertEqual(res_ver.status_code, 200)

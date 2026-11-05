@@ -266,16 +266,19 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileNoResults.classList.add('hidden');
 
         const existingCount = isAppend ? mobileResultsList.children.length : 0;
+        const activeHighlights = resolveActiveHighlights(mobileSearchInput.value, currentHighlightTerms);
 
         regulations.forEach((reg, idx) => {
             const card = document.createElement('div');
             card.className = 'm-card';
 
-            const { displayTitle, priorAuthBadge, drugBadges, indicationBadges, labBadges } = buildCardBadgesHtml(reg, {
+            const { displayTitleHtml, priorAuthBadge, drugBadges, indicationBadges, labBadges, summaryHtml } = buildCardBadgesHtml(reg, {
                 maxBios: 4,
                 maxDrugs: 4,
                 labClass: 'm-tag-lab',
                 indClass: 'm-tag-ind',
+                highlightTarget: activeHighlights.length > 0 ? activeHighlights : null,
+                summaryMaxLen: 200,
             });
 
             card.innerHTML = `
@@ -286,9 +289,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         <span class="m-chapter">${escapeHtml(reg.chapter.split(' ')[0])}</span>
                     </div>
                 </div>
-                <h3 class="m-title">${escapeHtml(displayTitle)}</h3>
+                <h3 class="m-title">${displayTitleHtml}</h3>
                 <div class="m-tags-group">${drugBadges} ${indicationBadges} ${labBadges}</div>
-                <p class="m-summary">${escapeHtml(cleanSummaryText(reg.conditions_of_payment.summary, 200))}</p>
+                <p class="m-summary">${summaryHtml}</p>
                 <div class="m-card-footer">
                     <button class="btn-m-detail" data-id="${escapeHtml(reg.regulation_id)}">
                         <i class="fa-solid fa-circle-info"></i> 給付條件標註

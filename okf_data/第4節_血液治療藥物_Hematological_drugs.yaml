@@ -48,8 +48,8 @@ regulations:
     laboratory_criteria:
     - eGFR
     - Hemoglobin
-    summary: 適用於【Chronic Kidney Disease、Anemia】之健保給付。 主要條件包含：臨床檢驗需符合 eGFR < 15mL/min,
-      Hemoglobin < 9g/dL, Hemoglobin < 9g/dL。
+    summary: 適用於【Gastrointestinal Bleeding / Hemorrhage、Chronic Kidney Disease、Anemia】之健保給付。
+      主要條件包含：臨床檢驗需符合 eGFR < 15mL/min, Hemoglobin < 9g/dL, Hemoglobin < 9g/dL。
     clinical_rules:
     - indication: Chronic Kidney Disease (慢性腎臟病)
       biomarkers:
@@ -274,7 +274,8 @@ regulations:
     - 血壓
     - 白血球
     - ANC
-    summary: 適用於【Fungal Infection / Mycosis、Anemia】之健保給付。 主要條件包含：臨床檢驗需符合 ANC < 500/cumm。
+    summary: 適用於【Disease / Ulcer / Bleeding Prevention & Prophylaxis、Fungal Infection
+      / Mycosis、Anemia】之健保給付。 主要條件包含：臨床檢驗需符合 ANC < 500/cumm。
     clinical_rules:
     - indication: Fungal Infection / Mycosis (黴菌感染)
       biomarkers:
@@ -377,7 +378,7 @@ regulations:
     - Neutropenia / Leukopenia (嗜中性白血球低下)
     laboratory_criteria:
     - 白血球
-    summary: 規範【. 長效型注射劑(如pegfilgrastim)：】之健保給付條件。 規範重點：1.限非骨髓性癌症病人(不限合併有骨髓侵犯)，在骨髓抑制性抗癌藥物治療後，且曾經發生白血球少於1000/cumm，或嗜中性白血球(ANC)少於500/cumm者使用。
+    summary: 適用於【Neutropenia / Leukopenia】之健保給付。 規範重點：1.限非骨髓性癌症病人(不限合併有骨髓侵犯)，在骨髓抑制性抗癌藥物治療後，且曾經發生白血球少於1000/cumm，或嗜中性白血球(ANC)少於500/cumm者使用。
     clinical_rules:
     - indication: 4.1.2.2. 長效型注射劑(如pegfilgrastim)：(101/6/1、112/10/1、113/11/1、114/9/1)
       biomarkers: []
@@ -413,7 +414,7 @@ regulations:
     - Liver Cirrhosis (肝硬化)
     - Heart Failure (心臟衰竭)
     laboratory_criteria: []
-    summary: 適用於【Liver Cirrhosis】之健保給付。
+    summary: 適用於【Liver Cirrhosis、Heart Failure】之健保給付。
     clinical_rules:
     - indication: Liver Cirrhosis (肝硬化)
       biomarkers: []
@@ -473,8 +474,9 @@ regulations:
     - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Hemophilia (血友病)
     laboratory_criteria: []
-    summary: 適用於【Hemophilia】之健保給付。 規範重點：1.門診之血友病人得攜回二~三劑量繞徑治療藥物備用(施打rVIIa 270μg/kg
-      IV單次注射劑量除外)，繼續治療時，比照化療以「療程」方式處理，並查驗上次治療紀錄（如附表十八之二─全民健康保險血友病患者使用「繞徑治療藥物」在家治療紀錄）及登錄醫療評估追蹤紀錄表(附表十八之五)。
+    summary: 適用於【Gastrointestinal Bleeding / Hemorrhage、Disease / Ulcer / Bleeding
+      Prevention & Prophylaxis、Hemophilia】之健保給付。 規範重點：1.門診之血友病人得攜回二~三劑量繞徑治療藥物備用(施打rVIIa
+      270μg/kg IV單次注射劑量除外)，繼續治療時，比照化療以「療程」方式處理，並查驗上次治療紀錄（如附表十八之二─全民健康保險血友病患者使用「繞徑治療藥物」在家治療紀錄）及登錄醫療評估追蹤紀錄表(附表十八之五)。
     clinical_rules:
     - indication: Hemophilia (血友病)
       biomarkers: []
@@ -546,7 +548,8 @@ regulations:
     - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Hemophilia (血友病)
     laboratory_criteria: []
-    summary: 適用於【Hemophilia】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Gastrointestinal Bleeding / Hemorrhage、Disease / Ulcer / Bleeding
+      Prevention & Prophylaxis、Hemophilia】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Hemophilia (血友病)
       biomarkers: []
@@ -671,8 +674,9 @@ regulations:
     - Hemophilia (血友病)
     laboratory_criteria:
     - 血小板
-    summary: 適用於【Hemophilia】之健保給付。 規範重點：1.各分型類血友病治療規定： (1)第一型類血友病(Type 1 von-Willebrand
-      Disease)： Ⅰ.以DDAVP治療為原則，如患者VWF:RCo ＜10 IU/dL，則不建議使用DDAVP。
+    summary: 適用於【Gastrointestinal Bleeding / Hemorrhage、Disease / Ulcer / Bleeding
+      Prevention & Prophylaxis、Hemophilia】之健保給付。 規範重點：1.各分型類血友病治療規定： (1)第一型類血友病(Type
+      1 von-Willebrand Disease)： Ⅰ.以DDAVP治療為原則，如患者VWF:RCo ＜10 IU/dL，則不建議使用DDAVP。
     clinical_rules:
     - indication: Hemophilia (血友病)
       biomarkers: []
@@ -728,8 +732,8 @@ regulations:
     - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
     - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     laboratory_criteria: []
-    summary: 適用於【Liver Cirrhosis、Hepatitis B / Hepatitis C】之健保給付。 規範重點：限用於下列情況以矯正凝血因子缺乏，且須同時針對出血原因進行處置：
-      1.在缺乏單一的凝血因子製劑可使用的情況，因先天性單一或多重缺乏第二、第七、第九或第十凝血因子，有出血或接受侵犯性處理及手術時的預防出血性治療。
+    summary: 適用於【Liver Cirrhosis、Hepatitis B / Hepatitis C、Gastrointestinal Bleeding
+      / Hemorrhage】之健保給付。 規範重點：限用於下列情況以矯正凝血因子缺乏，且須同時針對出血原因進行處置： 1.在缺乏單一的凝血因子製劑可使用的情況，因先天性單一或多重缺乏第二、第七、第九或第十凝血因子，有出血或接受侵犯性處理及手術時的預防出血性治療。
     clinical_rules:
     - indication: Liver Cirrhosis (肝硬化)
       biomarkers: []
@@ -779,7 +783,8 @@ regulations:
     - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Hemophilia (血友病)
     laboratory_criteria: []
-    summary: 適用於【Hemophilia】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Gastrointestinal Bleeding / Hemorrhage、Disease / Ulcer / Bleeding
+      Prevention & Prophylaxis、Hemophilia】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Hemophilia (血友病)
       biomarkers: []
@@ -830,7 +835,8 @@ regulations:
     - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Hemophilia (血友病)
     laboratory_criteria: []
-    summary: 適用於【Hemophilia】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Gastrointestinal Bleeding / Hemorrhage、Disease / Ulcer / Bleeding
+      Prevention & Prophylaxis、Hemophilia】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Hemophilia (血友病)
       biomarkers: []
@@ -879,7 +885,8 @@ regulations:
     - Thrombosis / Pulmonary Embolism (血栓)
     - Hemophilia (血友病)
     laboratory_criteria: []
-    summary: 適用於【Thrombosis / Pulmonary Embolism、Hemophilia】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Gastrointestinal Bleeding / Hemorrhage、Disease / Ulcer / Bleeding
+      Prevention & Prophylaxis、Thrombosis / Pulmonary Embolism】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Thrombosis / Pulmonary Embolism (血栓)
       biomarkers: []
@@ -1156,8 +1163,8 @@ regulations:
     - 血小板
     - Platelet
     - ANC
-    summary: 適用於【Liver Cirrhosis、Hepatitis B / Hepatitis C、Anemia】之健保給付。 主要條件包含：臨床檢驗需符合
-      Platelet < 20/μL, ANC < 500/μL；使用前須經事前審查核准。
+    summary: 適用於【Liver Cirrhosis、Hepatitis B / Hepatitis C、Gastrointestinal Bleeding
+      / Hemorrhage】之健保給付。 主要條件包含：臨床檢驗需符合 Platelet < 20/μL, ANC < 500/μL；使用前須經事前審查核准。
     clinical_rules:
     - indication: Liver Cirrhosis (肝硬化)
       biomarkers:
@@ -1424,7 +1431,8 @@ regulations:
     laboratory_criteria:
     - 血小板
     - Platelet
-    summary: 適用於【Anemia、Immune Thrombocytopenia】之健保給付。 主要條件包含：臨床檢驗需符合 Platelet > 50/μL；使用前須經事前審查核准。
+    summary: 適用於【Gastrointestinal Bleeding / Hemorrhage、Anemia、Immune Thrombocytopenia】之健保給付。
+      主要條件包含：臨床檢驗需符合 Platelet > 50/μL；使用前須經事前審查核准。
     clinical_rules:
     - indication: Anemia (貧血)
       biomarkers:
@@ -1557,8 +1565,8 @@ regulations:
     laboratory_criteria:
     - 血小板
     - MPN_Mutations
-    summary: 規範【. Anagrelide (如Agrylin)：(107/6/1）】之健保給付條件。 主要條件包含：臨床檢驗需符合 MPN_Mutations
-      = 突變；使用前須經事前審查核准。
+    summary: 適用於【Myelofibrosis / Essential Thrombocythemia / Polycythemia Vera】之健保給付。
+      主要條件包含：臨床檢驗需符合 MPN_Mutations = 突變；使用前須經事前審查核准。
     clinical_rules:
     - indication: 4.3.3. Anagrelide (如Agrylin)：(107/6/1）
       biomarkers:
@@ -1627,8 +1635,7 @@ regulations:
     indications:
     - Hereditary Angioedema (HAE) (遺傳性血管性水腫)
     laboratory_criteria: []
-    summary: 規範【. Icatibant（如Firazyr）、C1 esterase inhibitor（如Berinert）：】之健保給付條件。 規範重點：1.須經主管機關認定具遺傳性血管性水腫(heeditary
-      angioedema，HAE)罕見疾病者。
+    summary: 適用於【Hereditary Angioedema】之健保給付。 規範重點：1.須經主管機關認定具遺傳性血管性水腫(heeditary angioedema，HAE)罕見疾病者。
     clinical_rules:
     - indication: 4.3.4. Icatibant（如Firazyr）、C1 esterase inhibitor（如Berinert）：（109/6/1、111/2/1、111/6/1）
       biomarkers: []
@@ -1687,7 +1694,8 @@ regulations:
     laboratory_criteria:
     - 白血球
     - 血小板
-    summary: 適用於【Thrombosis / Pulmonary Embolism】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Thrombosis / Pulmonary Embolism、Myelofibrosis / Essential Thrombocythemia
+      / Polycythemia Vera】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Thrombosis / Pulmonary Embolism (血栓)
       biomarkers: []
@@ -1798,7 +1806,8 @@ regulations:
     - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Hereditary Angioedema (HAE) (遺傳性血管性水腫)
     laboratory_criteria: []
-    summary: 規範【. Lanadelumab(如Takhzyro)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Disease / Ulcer / Bleeding Prevention & Prophylaxis、Hereditary Angioedema】之健保給付。
+      主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 4.3.7. Lanadelumab(如Takhzyro)：(113/3/1)
       biomarkers: []

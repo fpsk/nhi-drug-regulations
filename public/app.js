@@ -306,16 +306,19 @@ document.addEventListener('DOMContentLoaded', () => {
         noResults.classList.add('hidden');
 
         const existingCount = isAppend ? resultsGrid.children.length : 0;
+        const activeHighlights = resolveActiveHighlights(searchInput.value, currentHighlightTerms);
 
         regulations.forEach((reg, idx) => {
             const card = document.createElement('div');
             card.className = 'card';
 
-            const { displayTitle, priorAuthBadge, drugBadges, indicationBadges, labBadges } = buildCardBadgesHtml(reg, {
+            const { displayTitleHtml, priorAuthBadge, drugBadges, indicationBadges, labBadges, summaryHtml } = buildCardBadgesHtml(reg, {
                 maxBios: 5,
                 maxDrugs: 5,
                 labClass: 'badge-lab',
                 indClass: 'badge-indication',
+                highlightTarget: activeHighlights.length > 0 ? activeHighlights : null,
+                summaryMaxLen: 360,
             });
 
             card.innerHTML = `
@@ -327,9 +330,9 @@ document.addEventListener('DOMContentLoaded', () => {
                             <span class="chapter-tag">${escapeHtml(reg.chapter.split(' ')[0])}</span>
                         </div>
                     </div>
-                    <h3 class="card-title">${escapeHtml(displayTitle)}</h3>
+                    <h3 class="card-title">${displayTitleHtml}</h3>
                     <div class="badge-group">${drugBadges} ${indicationBadges} ${labBadges}</div>
-                    <p class="card-summary">${escapeHtml(cleanSummaryText(reg.conditions_of_payment.summary, 360))}</p>
+                    <p class="card-summary">${summaryHtml}</p>
                 </div>
                 <div class="card-footer">
                     <button class="btn btn-secondary btn-detail" data-id="${escapeHtml(reg.regulation_id)}">

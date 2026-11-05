@@ -34,8 +34,7 @@ regulations:
     - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
       Porphyria) (黏多醣症)
     laboratory_criteria: []
-    summary: 規範【. Fat emulsion：或含Fat emulsion之靜脈營養輸液(如含glucose、lipid、amino acid及electrolytes三合一靜脈營養輸液)：限】之健保給付條件。
-      規範重點：1.嚴重燒傷病人，為靜脈營養補充。
+    summary: 適用於【Rare Metabolic & Lysosomal Storage Diseases】之健保給付。 規範重點：1.嚴重燒傷病人，為靜脈營養補充。
     clinical_rules:
     - indication: 3.1.1. Fat emulsion：或含Fat emulsion之靜脈營養輸液(如含glucose、lipid、amino
         acid及electrolytes三合一靜脈營養輸液)：(97/11/1、98/7/1、98/12/1)限
@@ -73,7 +72,7 @@ regulations:
     - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
       Porphyria) (黏多醣症)
     laboratory_criteria: []
-    summary: 規範【. Sodium glycerophosphate(如Glycophos)：】之健保給付條件。 規範重點：1.限用於接受靜脈營養補充，且臨床上有低血磷及相關症狀的病人使用。
+    summary: 適用於【Rare Metabolic & Lysosomal Storage Diseases】之健保給付。 規範重點：1.限用於接受靜脈營養補充，且臨床上有低血磷及相關症狀的病人使用。
     clinical_rules:
     - indication: 3.1.2. Sodium glycerophosphate(如Glycophos)：（111/1/1）
       biomarkers: []
@@ -1266,7 +1265,7 @@ regulations:
     - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
       Porphyria) (黏多醣症)
     laboratory_criteria: []
-    summary: 規範【. Sodium bicarbonate成分之口服製劑給付規定：】之健保給付條件。
+    summary: 適用於【Rare Metabolic & Lysosomal Storage Diseases】之健保給付。
     clinical_rules:
     - indication: 3.3.7. Sodium bicarbonate成分之口服製劑給付規定：(95/8/1、96/12/1)
       biomarkers: []
@@ -1306,7 +1305,7 @@ regulations:
       Porphyria) (黏多醣症)
     laboratory_criteria:
     - 白血球
-    summary: 規範【. Idursulfase(如Elaprase)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Rare Metabolic & Lysosomal Storage Diseases】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 3.3.8. Idursulfase(如Elaprase)：(96/7/1、99/8/1、106/10/1)
       biomarkers: []
@@ -1414,7 +1413,8 @@ regulations:
       Porphyria) (黏多醣症)
     laboratory_criteria:
     - 血小板
-    summary: 適用於【Anemia、Immune Thrombocytopenia】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Disease / Ulcer / Bleeding Prevention & Prophylaxis、Anemia、Immune
+      Thrombocytopenia】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Anemia (貧血)
       biomarkers: []
@@ -1500,7 +1500,8 @@ regulations:
     - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
       Porphyria) (黏多醣症)
     laboratory_criteria: []
-    summary: 規範【. Laronidase (如Aldurazyme)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Organ / Stem Cell Transplantation、Rare Metabolic & Lysosomal Storage
+      Diseases】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 3.3.10. Laronidase (如Aldurazyme)：(97/7/1、106/10/1)
       biomarkers: []
@@ -1599,7 +1600,7 @@ regulations:
     - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
       Porphyria) (黏多醣症)
     laboratory_criteria: []
-    summary: 規範【. Miglustat（如Zavesca）】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Rare Metabolic & Lysosomal Storage Diseases】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 3.3.11. Miglustat（如Zavesca）(98/8/1、108/5/1)
       biomarkers: []
@@ -1661,7 +1662,7 @@ regulations:
     - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
       Porphyria) (黏多醣症)
     laboratory_criteria: []
-    summary: 規範【. Sodium phenylacetate＋Sodium benzoate（如Ammonul inj）：】之健保給付條件。 規範重點：限用於先天性尿素循環代謝障礙之急性血氨症及伴隨腦部病變。
+    summary: 適用於【Rare Metabolic & Lysosomal Storage Diseases】之健保給付。 規範重點：限用於先天性尿素循環代謝障礙之急性血氨症及伴隨腦部病變。
     clinical_rules:
     - indication: 3.3.12. Sodium phenylacetate＋Sodium benzoate（如Ammonul inj）： (99/2
         /1)
@@ -1711,8 +1712,8 @@ regulations:
     - eGFR
     - 血壓
     - NYHA
-    summary: 適用於【Heart Failure、Stroke / Cerebrovascular Accident、Myocardial Infarction】之健保給付。
-      主要條件包含：臨床檢驗需符合 NYHA = IVClass, NYHA = IVClass；使用前須經事前審查核准。
+    summary: 適用於【Disease / Ulcer / Bleeding Prevention & Prophylaxis、Heart Failure、Stroke
+      / Cerebrovascular Accident】之健保給付。 主要條件包含：臨床檢驗需符合 NYHA = IVClass, NYHA = IVClass；使用前須經事前審查核准。
     clinical_rules:
     - indication: Heart Failure (心臟衰竭)
       biomarkers:
@@ -2026,8 +2027,8 @@ regulations:
     - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
       Porphyria) (黏多醣症)
     laboratory_criteria: []
-    summary: 規範【. Carglumic acid (如Carbaglu Tablets)：】之健保給付條件。 規範重點：1.限下列病例使用： (1)N-乙醯麩胺酸合成酶缺乏症(以下稱NAGS
-      缺乏症)。
+    summary: 適用於【Rare Metabolic & Lysosomal Storage Diseases】之健保給付。 規範重點：1.限下列病例使用：
+      (1)N-乙醯麩胺酸合成酶缺乏症(以下稱NAGS 缺乏症)。
     clinical_rules:
     - indication: 3.3.14. Carglumic acid (如Carbaglu Tablets)：（102/9/1、106/7/1）
       biomarkers: []
@@ -2095,7 +2096,7 @@ regulations:
       Porphyria) (黏多醣症)
     laboratory_criteria:
     - 白血球
-    summary: 規範【. Galsulfase (如Naglazyme)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Rare Metabolic & Lysosomal Storage Diseases】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 3.3.15. Galsulfase (如Naglazyme)：(106/10/1、107/12/1)
       biomarkers: []
@@ -2194,7 +2195,7 @@ regulations:
       Porphyria) (黏多醣症)
     laboratory_criteria:
     - 白血球
-    summary: 規範【. Elosulfase alfa (如Vimizim) Elosulfase alfa (如Vimizim)】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Rare Metabolic & Lysosomal Storage Diseases】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 3.3.17. Elosulfase alfa (如Vimizim) Elosulfase alfa (如Vimizim) (107/4/1、112/7/1)
       biomarkers: []
@@ -2275,7 +2276,7 @@ regulations:
     - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
       Porphyria) (黏多醣症)
     laboratory_criteria: []
-    summary: 規範【. Eliglustat Capsules (如Cerdelga )】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Rare Metabolic & Lysosomal Storage Diseases】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 3.3.18. Eliglustat Capsules (如Cerdelga ) (108/5/1)
       biomarkers: []
@@ -2343,8 +2344,8 @@ regulations:
     - Phenylalanine
     - Carnitine
     - tHcy
-    summary: 規範【. 先天性代謝異常之罕見疾病藥品】之健保給付條件。 主要條件包含：臨床檢驗需符合 Blood Glucose < 50mg/mL,
-      Ammonia > 150μ mol/L, Ammonia > 150μmol/L；使用前須經事前審查核准。
+    summary: 適用於【Rare Metabolic & Lysosomal Storage Diseases】之健保給付。 主要條件包含：臨床檢驗需符合
+      Blood Glucose < 50mg/mL, Ammonia > 150μ mol/L, Ammonia > 150μmol/L；使用前須經事前審查核准。
     clinical_rules:
     - indication: 3.3.19. 先天性代謝異常之罕見疾病藥品(108/9/1、108/12/1、111/9/1、113/11/1)
       biomarkers:
@@ -2699,7 +2700,8 @@ regulations:
     - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
       Porphyria) (黏多醣症)
     laboratory_criteria: []
-    summary: 規範【. alpha-glucosidase (如Myozyme)】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Hypertrophic Cardiomyopathy、Rare Metabolic & Lysosomal Storage Diseases】之健保給付。
+      主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 3.3.21. alpha-glucosidase (如Myozyme)(110/12/1、115/6/1)
       biomarkers: []
@@ -2852,7 +2854,7 @@ regulations:
     - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
       Porphyria) (黏多醣症)
     laboratory_criteria: []
-    summary: 規範【. Chenodeoxycholic acid】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Rare Metabolic & Lysosomal Storage Diseases】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 3.3.25. Chenodeoxycholic acid (111/6/1)
       biomarkers: []
@@ -2902,7 +2904,8 @@ regulations:
     - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
       Porphyria) (黏多醣症)
     laboratory_criteria: []
-    summary: 規範【. Alfa-avalglucosidase（如 Nexviazyme）】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Hypertrophic Cardiomyopathy、Rare Metabolic & Lysosomal Storage Diseases】之健保給付。
+      主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 3.3.26. Alfa-avalglucosidase（如 Nexviazyme）（112/4/1）
       biomarkers: []
@@ -2966,7 +2969,8 @@ regulations:
     indications:
     - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria: []
-    summary: 規範【. KH2PO4+Na2HPO4+NaH2PO4．H2O（如PhosAdd Tab.）：】之健保給付條件。 規範重點：限用於確診為主管機關認定之性聯遺傳型低磷酸鹽佝僂症患者。
+    summary: 適用於【Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia】之健保給付。
+      規範重點：限用於確診為主管機關認定之性聯遺傳型低磷酸鹽佝僂症患者。
     clinical_rules:
     - indication: 3.3.27. KH2PO4+Na2HPO4+NaH2PO4．H2O（如PhosAdd Tab.）：（112/5/1）
       biomarkers: []
@@ -3012,8 +3016,9 @@ regulations:
     - eGFR
     - 血壓
     - NYHA
-    summary: 適用於【Heart Failure、Stroke / Cerebrovascular Accident、Myocardial Infarction】之健保給付。
-      主要條件包含：臨床檢驗需符合 eGFR < 30mL/min/1.73m2, NYHA = IVClass, NYHA = IVClass；使用前須經事前審查核准。
+    summary: 適用於【Disease / Ulcer / Bleeding Prevention & Prophylaxis、Heart Failure、Stroke
+      / Cerebrovascular Accident】之健保給付。 主要條件包含：臨床檢驗需符合 eGFR < 30mL/min/1.73m2, NYHA
+      = IVClass, NYHA = IVClass；使用前須經事前審查核准。
     clinical_rules:
     - indication: Heart Failure (心臟衰竭)
       biomarkers:
@@ -3425,7 +3430,8 @@ regulations:
       Porphyria) (黏多醣症)
     laboratory_criteria:
     - Scr
-    summary: 適用於【Rickets / Osteomalacia】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Rickets / Osteomalacia、Rare Metabolic & Lysosomal Storage Diseases】之健保給付。
+      主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Rickets / Osteomalacia (Vitamin D Deficiency) (佝僂病)
       biomarkers: []
@@ -3500,7 +3506,8 @@ regulations:
     - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
       Porphyria) (黏多醣症)
     laboratory_criteria: []
-    summary: 適用於【Hepatoprotectants / Liver Protective Agents】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Hepatoprotectants / Liver Protective Agents、Rare Metabolic & Lysosomal
+      Storage Diseases】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Hepatoprotectants / Liver Protective Agents (肝庇護劑)
       biomarkers: []
@@ -3554,7 +3561,9 @@ regulations:
       Porphyria) (黏多醣症)
     laboratory_criteria:
     - Scr
-    summary: 規範【. Givosiran(如Givlaari)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Disease / Ulcer / Bleeding Prevention & Prophylaxis、UTI / Intra-abdominal
+      Infection / Sepsis / Bacterial Infection、Rare Metabolic & Lysosomal Storage
+      Diseases】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 3.3.31. Givosiran(如Givlaari)：(114/1/1)
       biomarkers: []
@@ -3655,7 +3664,8 @@ regulations:
     - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
       Porphyria) (黏多醣症)
     laboratory_criteria: []
-    summary: 規範【. Maralixibat chloride（如 Livmarli）：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Organ / Stem Cell Transplantation、Rare Metabolic & Lysosomal Storage
+      Diseases】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 3.3.32. Maralixibat chloride（如 Livmarli）：(115/9/1)
       biomarkers: []

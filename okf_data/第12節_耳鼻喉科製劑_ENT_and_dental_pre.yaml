@@ -31,7 +31,7 @@ regulations:
     indications:
     - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     laboratory_criteria: []
-    summary: 規範【. Beclomethasone cap. for spray (如Salcoat)：】之健保給付條件。 規範重點：限因口腔放射線治療或化學治療產生大面積口腔潰爛之病人使用。
+    summary: 適用於【Chronic / Breakthrough / Neuropathic Pain】之健保給付。 規範重點：限因口腔放射線治療或化學治療產生大面積口腔潰爛之病人使用。
     clinical_rules:
     - indication: 12.1. Beclomethasone cap. for spray (如Salcoat)（87/10/1）：
       biomarkers: []
@@ -61,10 +61,11 @@ regulations:
   conditions_of_payment:
     indications:
     - Nasopharyngeal Carcinoma (鼻咽癌)
-    - Head and Neck Cancer (頭頸部癌)
+    - Head and Neck Squamous Cell Carcinoma (HNSCC) (頭頸部鱗狀細胞癌)
     - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria: []
-    summary: 適用於【Nasopharyngeal Carcinoma、Head and Neck Cancer】之健保給付。 規範重點：限住院治療及門診追蹤複查之口腔癌病例，以及放射治療之鼻咽癌或骨髓移植病例使用。
+    summary: 適用於【Nasopharyngeal Carcinoma、Head and Neck Squamous Cell Carcinoma、Organ
+      / Stem Cell Transplantation】之健保給付。 規範重點：限住院治療及門診追蹤複查之口腔癌病例，以及放射治療之鼻咽癌或骨髓移植病例使用。
     clinical_rules:
     - indication: Nasopharyngeal Carcinoma (鼻咽癌)
       biomarkers: []
@@ -102,7 +103,7 @@ regulations:
     indications:
     - Pneumonia / Respiratory & ENT Infection (肺炎)
     laboratory_criteria: []
-    summary: 規範【. Ofloxacin (如Tarivid Otic Solution)：】之健保給付條件。 規範重點：1.有耳膜穿孔之急慢性中耳炎病患，每次處方以一瓶(十日)為原則。
+    summary: 適用於【Pneumonia / Respiratory & ENT Infection】之健保給付。 規範重點：1.有耳膜穿孔之急慢性中耳炎病患，每次處方以一瓶(十日)為原則。
     clinical_rules:
     - indication: 12.3. Ofloxacin (如Tarivid Otic Solution)：(88/8/1)
       biomarkers: []
@@ -135,7 +136,7 @@ regulations:
     indications:
     - Pneumonia / Respiratory & ENT Infection (肺炎)
     laboratory_criteria: []
-    summary: 規範【. Ciprofloxacin +hydrocortisone (如Siproxan Otic Drops)】之健保給付條件。 規範重點：1.耳部感染症如外耳炎等，若經使用第一線抗微生物製劑無效，且有病歷詳細記載者方得使用
+    summary: 適用於【Pneumonia / Respiratory & ENT Infection】之健保給付。 規範重點：1.耳部感染症如外耳炎等，若經使用第一線抗微生物製劑無效，且有病歷詳細記載者方得使用
       2.每次處方以一瓶為原則。
     clinical_rules:
     - indication: 12.4. Ciprofloxacin +hydrocortisone (如Siproxan Otic Drops)(97/4/1)

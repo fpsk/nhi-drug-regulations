@@ -98,7 +98,7 @@ class NHIIndexer:
     def _matches_term(self, term, text):
         if re.match(r'^[a-z0-9\-]+$', term):
             return bool(self._get_word_regex(term).search(text))
-        return term in text
+        return self.disease_engine.matches_chinese_term(term, text)
 
     def load_and_index(self):
         self.regulations = []
@@ -267,6 +267,20 @@ class NHIIndexer:
         expanded_terms.add(q_part_lower)
         exact_target_terms.add(q_part_lower)
 
+        norm_q = re.sub(r'[\s\-_/]+', '', q_part_lower)
+
+        disease_expansions = []
+        if not is_pure_section_query:
+            disease_expansions.extend(self.disease_engine.expand_query(query_clean))
+            if norm_q in ['hbvdna', 'hbvdna量']:
+                disease_expansions.extend(self.disease_engine.expand_query('hbv'))
+
+        consumed_disease_tokens = set()
+        for de in disease_expansions:
+            for phrase in [de["english_name"]] + de.get("aliases", []):
+                consumed_disease_tokens.update(self.disease_engine._tokenize_english(phrase, normalize_synonyms=False))
+                consumed_disease_tokens.update(self.disease_engine._tokenize_english(phrase, normalize_synonyms=True))
+
         if not is_pure_section_query:
             for st in re.findall(r'\b\d+(?:\.\d+)+\.?\b', q_part_lower):
                 exact_target_terms.add(st.strip('.'))
@@ -281,10 +295,12 @@ class NHIIndexer:
                     for token in sub_tokens:
                         t_clean = token.strip('.-')
                         if len(t_clean) > 1 and t_clean not in self.STOPWORDS and not t_clean.isdigit():
+                            # Do not pollute direct_terms with individual English words (e.g. "lung") already consumed by a matched disease
+                            if t_clean in consumed_disease_tokens:
+                                continue
                             direct_terms.add(t_clean)
                             expanded_terms.add(t_clean)
 
-        norm_q = re.sub(r'[\s\-_/]+', '', q_part_lower)
         if norm_q in ['hbvdna', 'hbv', 'b型肝炎病毒量', '血清hbvdna']:
             direct_terms.update(['hbv dna', 'hbv-dna', 'hbvdna', 'hbv', 'b型肝炎'])
         elif norm_q in ['hcvrna', 'hcv', 'c型肝炎病毒量']:
@@ -340,12 +356,6 @@ class NHIIndexer:
                                 exact_target_terms.add(b_p)
                     for b in brand_tc:
                         exact_target_terms.add(b)
-
-        disease_expansions = []
-        if not is_pure_section_query:
-            disease_expansions.extend(self.disease_engine.expand_query(query_clean))
-            if norm_q in ['hbvdna', 'hbvdna量']:
-                disease_expansions.extend(self.disease_engine.expand_query('hbv'))
 
         seen_disease_keys = set()
         unique_disease_groups = []
@@ -442,16 +452,17 @@ class NHIIndexer:
                         score += 40
 
             for mdn in ctx["matched_disease_names"]:
-                if any(mdn in ind for ind in reg_indications):
+                if any(self._matches_term(mdn, ind) for ind in reg_indications):
                     score += 100
-                if mdn in title_lower:
+                if self._matches_term(mdn, title_lower):
                     score += 350
                 first_lines_lower = "\n".join(body_lower.split('\n', 2)[:2])
-                if mdn in first_lines_lower:
+                if self._matches_term(mdn, first_lines_lower):
                     score += 260
-                occ = body_lower.count(mdn)
-                if occ > 0:
-                    score += min(occ, 8) * 35
+                if self._matches_term(mdn, body_lower):
+                    occ = len(re.findall(r'(?<!非)' + re.escape(mdn), body_lower)) if mdn in self.disease_engine.NEGATED_TC_TERMS else body_lower.count(mdn)
+                    if occ > 0:
+                        score += min(occ, 8) * 35
 
             matched_disease_group_count = 0
             if ctx["unique_disease_groups"]:
@@ -584,6 +595,7 @@ class NHIIndexer:
                 is_mod = de["disease_key"] in modifier_keys
                 for tc in de["chinese_terms"]:
                     add_term(tc, is_modifier=is_mod)
+                add_term(de["english_name"], is_modifier=is_mod)
 
             for exp in self.atc_engine.expand_query(seg_clean):
                 ing_en = exp.get("ingredient_en", "")

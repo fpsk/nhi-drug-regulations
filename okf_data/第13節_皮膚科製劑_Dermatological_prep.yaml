@@ -31,7 +31,7 @@ regulations:
     indications:
     - Acne / Scabies / Genital Warts / Actinic Keratosis (痤瘡)
     laboratory_criteria: []
-    summary: 規範【. Cadexomer iodine（如Iodosorb powder）：】之健保給付條件。 規範重點：限慢性腿部潰瘍病例及慢性感染性潰瘍傷口使用，每日用量超過一包時，需檢附傷口照片以利審查。
+    summary: 適用於【Acne / Scabies / Genital Warts / Actinic Keratosis】之健保給付。 規範重點：限慢性腿部潰瘍病例及慢性感染性潰瘍傷口使用，每日用量超過一包時，需檢附傷口照片以利審查。
     clinical_rules:
     - indication: 13.2. Cadexomer iodine（如Iodosorb powder）：（87/4/1）
       biomarkers: []
@@ -495,7 +495,7 @@ regulations:
     indications:
     - Acne / Scabies / Genital Warts / Actinic Keratosis (痤瘡)
     laboratory_criteria: []
-    summary: 規範【. Podophyllotoxin (如Wart Del Cream)：】之健保給付條件。 規範重點：1.限皮膚、泌尿、婦產專科醫師或經病理診斷確認，使用於生殖器疣
+    summary: 適用於【Acne / Scabies / Genital Warts / Actinic Keratosis】之健保給付。 規範重點：1.限皮膚、泌尿、婦產專科醫師或經病理診斷確認，使用於生殖器疣
       (包括外生殖器及肛門附近)之治療。
     clinical_rules:
     - indication: 13.13. Podophyllotoxin (如Wart Del Cream)：(102/9/1)
@@ -531,8 +531,8 @@ regulations:
     indications:
     - Acne / Scabies / Genital Warts / Actinic Keratosis (痤瘡)
     laboratory_criteria: []
-    summary: 規範【. Ingenol (如Picato) ：】之健保給付條件。 規範重點：限用於治療局部性、非過度角化 (non-hyperkeratotic)、非肥厚型(non-hypertrophic)光化性角化症
-      1.限用於局部性治療25cm2的連續治療面積內，4個(含)以上病灶數量。
+    summary: 適用於【Acne / Scabies / Genital Warts / Actinic Keratosis】之健保給付。 規範重點：限用於治療局部性、非過度角化
+      (non-hyperkeratotic)、非肥厚型(non-hypertrophic)光化性角化症 1.限用於局部性治療25cm2的連續治療面積內，4個(含)以上病灶數量。
     clinical_rules:
     - indication: 13.14. Ingenol (如Picato) ：(105/11/1)
       biomarkers: []
@@ -607,7 +607,7 @@ regulations:
     indications:
     - Acne / Scabies / Genital Warts / Actinic Keratosis (痤瘡)
     laboratory_criteria: []
-    summary: 規範【. Ivermectin (如Stromectol)：】之健保給付條件。 規範重點：1.限鏡檢呈陽性之確診的疥瘡病患使用，須附照片備查。
+    summary: 適用於【Acne / Scabies / Genital Warts / Actinic Keratosis】之健保給付。 規範重點：1.限鏡檢呈陽性之確診的疥瘡病患使用，須附照片備查。
     clinical_rules:
     - indication: 13.16. Ivermectin (如Stromectol)：（107/8/1、112/12/1、113/4/1）
       biomarkers: []
@@ -1740,7 +1740,7 @@ regulations:
     indications:
     - Acne / Scabies / Genital Warts / Actinic Keratosis (痤瘡)
     laboratory_criteria: []
-    summary: 規範【. Nadifloxacin外用製劑(如Nadixa)】之健保給付條件。 規範重點：1.限用於傳統外用抗生素治療無效之毛囊炎及尋常性鬚瘡，不得合併其他局部抗生素藥膏使用。
+    summary: 適用於【Acne / Scabies / Genital Warts / Actinic Keratosis】之健保給付。 規範重點：1.限用於傳統外用抗生素治療無效之毛囊炎及尋常性鬚瘡，不得合併其他局部抗生素藥膏使用。
     clinical_rules:
     - indication: 13.18. Nadifloxacin外用製劑(如Nadixa) (110/6/1)
       biomarkers: []
@@ -1780,8 +1780,8 @@ regulations:
     - HbA1c
     - 血糖
     - Albumin
-    summary: 適用於【Diabetes Mellitus】之健保給付。 主要條件包含：臨床檢驗需符合 HbA1c < 8.5%, Albumin >=
-      3.0g/dL；使用前須經事前審查核准。
+    summary: 適用於【Diabetes Mellitus、Peripheral Arterial Disease】之健保給付。 主要條件包含：臨床檢驗需符合
+      HbA1c < 8.5%, Albumin >= 3.0g/dL；使用前須經事前審查核准。
     clinical_rules:
     - indication: Diabetes Mellitus (糖尿病)
       biomarkers:

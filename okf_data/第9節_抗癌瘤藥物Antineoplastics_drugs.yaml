@@ -75,9 +75,11 @@ regulations:
     indications:
     - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
     - Breast Cancer (乳癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Thrombosis / Pulmonary Embolism (血栓)
     laboratory_criteria: []
-    summary: 適用於【Breast Cancer、Thrombosis / Pulmonary Embolism】之健保給付。 規範重點：1.停經後雌激素接受器為陽性或不清楚之局部晚期或轉移性乳癌第一線治療。
+    summary: 適用於【Gastrointestinal Bleeding / Hemorrhage、Breast Cancer、Metastatic /
+      Locally Advanced / Unresectable / Recurrent】之健保給付。 規範重點：1.停經後雌激素接受器為陽性或不清楚之局部晚期或轉移性乳癌第一線治療。
     clinical_rules:
     - indication: Breast Cancer (乳癌)
       biomarkers: []
@@ -130,8 +132,10 @@ regulations:
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     laboratory_criteria: []
-    summary: 適用於【Breast Cancer】之健保給付。 規範重點：1.接受抗動情激素治療失敗的自然或人工停經後之末期乳癌病人之治療、停經後之局部晚期或轉移性乳癌婦女患者之第一線治療用藥。
+    summary: 適用於【Breast Cancer、Metastatic / Locally Advanced / Unresectable / Recurrent】之健保給付。
+      規範重點：1.接受抗動情激素治療失敗的自然或人工停經後之末期乳癌病人之治療、停經後之局部晚期或轉移性乳癌婦女患者之第一線治療用藥。
     clinical_rules:
     - indication: Breast Cancer (乳癌)
       biomarkers: []
@@ -193,13 +197,18 @@ regulations:
     indications:
     - Triple-Negative Breast Cancer (TNBC) (三陰性乳癌)
     - Breast Cancer (乳癌)
-    - Lung Cancer (肺癌)
+    - Lung Adenocarcinoma (肺腺癌)
+    - Squamous Non-Small Cell Lung Cancer (鱗狀非小細胞肺癌)
+    - Non-Small Cell Lung Cancer (NSCLC) (非小細胞肺癌)
+    - Small Cell Lung Cancer (SCLC) (小細胞肺癌)
+    - Lung Cancer (非小細胞肺癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Ovarian Cancer (卵巢癌)
     - Endometrial / Cervical Cancer (子宮內膜癌)
     laboratory_criteria:
     - MSI-H/dMMR
-    summary: 適用於【Triple-Negative Breast Cancer、Breast Cancer、Lung Cancer】之健保給付。 主要條件包含：臨床檢驗需符合
-      MSI-H/dMMR = dMMR, MSI-H/dMMR = MSI-H。
+    summary: 適用於【Triple-Negative Breast Cancer、Breast Cancer、Lung Adenocarcinoma】之健保給付。
+      主要條件包含：臨床檢驗需符合 MSI-H/dMMR = dMMR, MSI-H/dMMR = MSI-H。
     clinical_rules:
     - indication: Triple-Negative Breast Cancer (TNBC) (三陰性乳癌)
       biomarkers:
@@ -429,11 +438,14 @@ regulations:
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
-    - Lung Cancer (肺癌)
+    - Non-Small Cell Lung Cancer (NSCLC) (非小細胞肺癌)
+    - Lung Cancer (非小細胞肺癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Prostate Cancer (前列腺癌)
+    - Head and Neck Squamous Cell Carcinoma (HNSCC) (頭頸部鱗狀細胞癌)
     - Gastric / Esophageal Cancer (胃癌)
     laboratory_criteria: []
-    summary: 適用於【Breast Cancer、Lung Cancer、Prostate Cancer】之健保給付。 規範重點：1.本類藥品(除Doce之外)依藥品許可證登載之適應症範圍內給付於乳癌、非小細胞肺癌、前列腺癌、頭頸癌及胃腺癌之病例；倘併用其他標靶治療、免疫檢查點抑制劑等藥品時，病人須符合該併用藥品之藥品給付規定。
+    summary: 適用於【Breast Cancer、Non-Small Cell Lung Cancer、Lung Cancer】之健保給付。 規範重點：1.本類藥品(除Doce之外)依藥品許可證登載之適應症範圍內給付於乳癌、非小細胞肺癌、前列腺癌、頭頸癌及胃腺癌之病例；倘併用其他標靶治療、免疫檢查點抑制劑等藥品時，病人須符合該併用藥品之藥品給付規定。
     clinical_rules:
     - indication: Breast Cancer (乳癌)
       biomarkers: []
@@ -497,13 +509,14 @@ regulations:
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
-    - Lung Cancer (肺癌)
+    - Non-Small Cell Lung Cancer (NSCLC) (非小細胞肺癌)
+    - Lung Cancer (非小細胞肺癌)
     - Ovarian Cancer (卵巢癌)
-    - Urothelial Carcinoma / Bladder Cancer (尿路上皮癌)
+    - Urothelial Carcinoma / Bladder Cancer (泌尿道上皮癌)
     - Pancreatic Cancer (胰臟癌)
     - Cholangiocarcinoma / Biliary Tract Cancer (膽管癌)
     laboratory_criteria: []
-    summary: 適用於【Breast Cancer、Lung Cancer、Ovarian Cancer】之健保給付。 規範重點：1.本類藥品依藥品許可證登載之適應症範圍內給付於非小細胞肺癌、胰臟癌、膀胱癌、乳癌、卵巢癌及膽道癌之病例；倘併用其他標靶治療、免疫檢查點抑制劑等藥品時，病人須符合該併用藥品之藥品給付規定。
+    summary: 適用於【Breast Cancer、Non-Small Cell Lung Cancer、Lung Cancer】之健保給付。 規範重點：1.本類藥品依藥品許可證登載之適應症範圍內給付於非小細胞肺癌、胰臟癌、膀胱癌、乳癌、卵巢癌及膽道癌之病例；倘併用其他標靶治療、免疫檢查點抑制劑等藥品時，病人須符合該併用藥品之藥品給付規定。
     clinical_rules:
     - indication: Breast Cancer (乳癌)
       biomarkers: []
@@ -569,14 +582,17 @@ regulations:
     indications:
     - Triple-Negative Breast Cancer (TNBC) (三陰性乳癌)
     - Breast Cancer (乳癌)
-    - Lung Cancer (肺癌)
+    - Squamous Non-Small Cell Lung Cancer (鱗狀非小細胞肺癌)
+    - Non-Small Cell Lung Cancer (NSCLC) (非小細胞肺癌)
+    - Lung Cancer (非小細胞肺癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Ovarian Cancer (卵巢癌)
     - Endometrial / Cervical Cancer (子宮內膜癌)
     - Soft Tissue Sarcoma / Osteosarcoma (肉瘤)
     laboratory_criteria:
     - MSI-H/dMMR
-    summary: 適用於【Triple-Negative Breast Cancer、Breast Cancer、Lung Cancer】之健保給付。 主要條件包含：臨床檢驗需符合
-      MSI-H/dMMR = dMMR, MSI-H/dMMR = MSI-H。
+    summary: 適用於【Triple-Negative Breast Cancer、Breast Cancer、Squamous Non-Small Cell
+      Lung Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 MSI-H/dMMR = dMMR, MSI-H/dMMR = MSI-H。
     clinical_rules:
     - indication: Triple-Negative Breast Cancer (TNBC) (三陰性乳癌)
       biomarkers:
@@ -801,9 +817,11 @@ regulations:
     - Gemcitabine
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Pancreatic Cancer (胰臟癌)
     laboratory_criteria: []
-    summary: 適用於【Pancreatic Cancer】之健保給付。 規範重點：限併用gemcitabine，做為轉移性胰腺癌患者之第一線治療。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Pancreatic
+      Cancer】之健保給付。 規範重點：限併用gemcitabine，做為轉移性胰腺癌患者之第一線治療。
     clinical_rules:
     - indication: Pancreatic Cancer (胰臟癌)
       biomarkers: []
@@ -866,8 +884,10 @@ regulations:
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     laboratory_criteria: []
-    summary: 適用於【Breast Cancer】之健保給付。 規範重點：限用於停經後，且女性荷爾蒙接受體(estrogen receptor)為陽性之轉移性乳癌病患。
+    summary: 適用於【Breast Cancer、Metastatic / Locally Advanced / Unresectable / Recurrent】之健保給付。
+      規範重點：限用於停經後，且女性荷爾蒙接受體(estrogen receptor)為陽性之轉移性乳癌病患。
     clinical_rules:
     - indication: Breast Cancer (乳癌)
       biomarkers: []
@@ -898,9 +918,12 @@ regulations:
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
-    - Lung Cancer (肺癌)
+    - Non-Small Cell Lung Cancer (NSCLC) (非小細胞肺癌)
+    - Lung Cancer (非小細胞肺癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     laboratory_criteria: []
-    summary: 適用於【Breast Cancer、Lung Cancer】之健保給付。 規範重點：1.限用於： (1)晚期或無法手術切除之非小細胞肺癌及轉移性乳癌病患。
+    summary: 適用於【Breast Cancer、Non-Small Cell Lung Cancer、Lung Cancer】之健保給付。 規範重點：1.限用於：
+      (1)晚期或無法手術切除之非小細胞肺癌及轉移性乳癌病患。
     clinical_rules:
     - indication: Breast Cancer (乳癌)
       biomarkers: []
@@ -951,13 +974,14 @@ regulations:
     - Nivolumab (納武單抗)
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Colorectal Cancer (大腸直腸癌)
     - Pancreatic Cancer (胰臟癌)
     - Gastric / Esophageal Cancer (胃癌)
     laboratory_criteria:
     - HER2
-    summary: 適用於【Colorectal Cancer、Pancreatic Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 HER2 =
-      過度表現。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Colorectal
+      Cancer、Pancreatic Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 HER2 = 過度表現。
     clinical_rules:
     - indication: Colorectal Cancer (大腸直腸癌)
       biomarkers:
@@ -1060,11 +1084,15 @@ regulations:
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
-    - Lung Cancer (肺癌)
+    - Lung Adenocarcinoma (肺腺癌)
+    - Non-Small Cell Lung Cancer (NSCLC) (非小細胞肺癌)
+    - Lung Cancer (非小細胞肺癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Colorectal Cancer (大腸直腸癌)
     - Gastric / Esophageal Cancer (胃癌)
     laboratory_criteria: []
-    summary: 適用於【Breast Cancer、Lung Cancer、Colorectal Cancer】之健保給付。 規範重點：1.限轉移性胃癌、轉移性直腸癌、轉移性結腸癌、轉移性乳癌之病患使用（89/10/1、97/12/1）。
+    summary: 適用於【Breast Cancer、Lung Adenocarcinoma、Non-Small Cell Lung Cancer】之健保給付。
+      規範重點：1.限轉移性胃癌、轉移性直腸癌、轉移性結腸癌、轉移性乳癌之病患使用（89/10/1、97/12/1）。
     clinical_rules:
     - indication: Breast Cancer (乳癌)
       biomarkers: []
@@ -1121,11 +1149,12 @@ regulations:
     - Oxaliplatin
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Colorectal Cancer (大腸直腸癌)
     - Pancreatic Cancer (胰臟癌)
     laboratory_criteria: []
-    summary: '適用於【Colorectal Cancer、Pancreatic Cancer】之健保給付。 規範重點：1.限轉移性大腸直腸癌之第一線治療藥物:
-      (1)與5-FU及folinic acid合併，使用於未曾接受過化學治療之患者。'
+    summary: '適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Colorectal
+      Cancer、Pancreatic Cancer】之健保給付。 規範重點：1.限轉移性大腸直腸癌之第一線治療藥物: (1)與5-FU及folinic acid合併，使用於未曾接受過化學治療之患者。'
     clinical_rules:
     - indication: Colorectal Cancer (大腸直腸癌)
       biomarkers: []
@@ -1178,9 +1207,11 @@ regulations:
     - Oxaliplatin
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Pancreatic Cancer (胰臟癌)
     laboratory_criteria: []
-    summary: 適用於【Pancreatic Cancer】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Pancreatic
+      Cancer】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Pancreatic Cancer (胰臟癌)
       biomarkers: []
@@ -1218,9 +1249,11 @@ regulations:
     - Aldesleukin (如 Proleukin for Injection)
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Renal Cell Carcinoma (RCC) (腎細胞癌)
     laboratory_criteria: []
-    summary: 適用於【Renal Cell Carcinoma】之健保給付。 規範重點：限轉移性腎細胞癌及惡性黑色素癌病患使用。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Renal Cell
+      Carcinoma】之健保給付。 規範重點：限轉移性腎細胞癌及惡性黑色素癌病患使用。
     clinical_rules:
     - indication: Renal Cell Carcinoma (RCC) (腎細胞癌)
       biomarkers: []
@@ -1257,9 +1290,11 @@ regulations:
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Ovarian Cancer (卵巢癌)
     laboratory_criteria: []
-    summary: 適用於【Breast Cancer、Ovarian Cancer】之健保給付。 規範重點：限用於下列適應症:(99/10/1) 1.用於治療曾接受第一線含platinum及paclitaxel化學治療而失敗者或再復發之進行性或轉移性卵巢癌病人。
+    summary: 適用於【Breast Cancer、Metastatic / Locally Advanced / Unresectable / Recurrent、Ovarian
+      Cancer】之健保給付。 規範重點：限用於下列適應症:(99/10/1) 1.用於治療曾接受第一線含platinum及paclitaxel化學治療而失敗者或再復發之進行性或轉移性卵巢癌病人。
     clinical_rules:
     - indication: Breast Cancer (乳癌)
       biomarkers: []
@@ -1332,11 +1367,14 @@ regulations:
     - Cisplatin
   conditions_of_payment:
     indications:
-    - Lung Cancer (肺癌)
+    - Small Cell Lung Cancer (SCLC) (小細胞肺癌)
+    - Lung Cancer (非小細胞肺癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Ovarian Cancer (卵巢癌)
     - Endometrial / Cervical Cancer (子宮內膜癌)
     laboratory_criteria: []
-    summary: 適用於【Lung Cancer、Ovarian Cancer】之健保給付。 規範重點：1.限卵巢癌及小細胞肺癌之第二線化學治療（第一線治療應包括白金化合物）。
+    summary: 適用於【Small Cell Lung Cancer、Lung Cancer、Metastatic / Locally Advanced
+      / Unresectable / Recurrent】之健保給付。 規範重點：1.限卵巢癌及小細胞肺癌之第二線化學治療（第一線治療應包括白金化合物）。
     clinical_rules:
     - indication: Lung Cancer (肺癌)
       biomarkers: []
@@ -1376,9 +1414,10 @@ regulations:
     - Topotecan
   conditions_of_payment:
     indications:
-    - Lung Cancer (肺癌)
+    - Small Cell Lung Cancer (SCLC) (小細胞肺癌)
+    - Lung Cancer (非小細胞肺癌)
     laboratory_criteria: []
-    summary: 適用於【Lung Cancer】之健保給付。 規範重點：限用於小細胞肺癌之第二線化學治療（第一線治療應包括白金化合物）。
+    summary: 適用於【Small Cell Lung Cancer、Lung Cancer】之健保給付。 規範重點：限用於小細胞肺癌之第二線化學治療（第一線治療應包括白金化合物）。
     clinical_rules:
     - indication: Lung Cancer (肺癌)
       biomarkers: []
@@ -1419,11 +1458,13 @@ regulations:
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Colorectal Cancer (大腸直腸癌)
     - Gastric / Esophageal Cancer (胃癌)
     laboratory_criteria:
     - HER2
-    summary: 適用於【Breast Cancer、Colorectal Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 HER2 = 過度表現。
+    summary: 適用於【Breast Cancer、Metastatic / Locally Advanced / Unresectable / Recurrent、Colorectal
+      Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 HER2 = 過度表現。
     clinical_rules:
     - indication: Breast Cancer (乳癌)
       biomarkers:
@@ -1549,11 +1590,12 @@ regulations:
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Gastric / Esophageal Cancer (胃癌)
     laboratory_criteria:
     - HER2
-    summary: 適用於【Breast Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 HER2 = 過度表現, HER2 = 過度表現, HER2
-      = 過度表現；使用前須經事前審查核准。
+    summary: 適用於【Breast Cancer、Metastatic / Locally Advanced / Unresectable / Recurrent、Gastric
+      / Esophageal Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 HER2 = 過度表現, HER2 = 過度表現, HER2 = 過度表現；使用前須經事前審查核准。
     clinical_rules:
     - indication: Breast Cancer (乳癌)
       biomarkers:
@@ -1850,8 +1892,9 @@ regulations:
     - Polatuzumab
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Leukemia (白血病)
-    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (典型何杰金氏淋巴瘤)
     - Vasculitis / Dermatomyositis (血管炎)
     - Neutropenia / Leukopenia (嗜中性白血球低下)
     laboratory_criteria:
@@ -1860,8 +1903,8 @@ regulations:
     - CD20
     - Platelet
     - Hemoglobin
-    summary: 適用於【Leukemia、Vasculitis / Dermatomyositis】之健保給付。 主要條件包含：臨床檢驗需符合 CD20
-      = 陽性, CD20 = 陽性, CD20 = 陽性；使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Leukemia、Lymphoma】之健保給付。
+      主要條件包含：臨床檢驗需符合 CD20 = 陽性, CD20 = 陽性, CD20 = 陽性；使用前須經事前審查核准。
     clinical_rules:
     - indication: Leukemia (白血病)
       biomarkers:
@@ -2428,10 +2471,10 @@ regulations:
   conditions_of_payment:
     indications:
     - Leukemia (白血病)
-    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (典型何杰金氏淋巴瘤)
     laboratory_criteria:
     - 血小板
-    summary: 適用於【Leukemia】之健保給付。 規範重點：1.用於B-細胞慢性淋巴性白血病（CLL）病患的起始治療及CLL與低惡性度B細胞非何杰金氏淋巴瘤(Indolent
+    summary: 適用於【Leukemia、Lymphoma】之健保給付。 規範重點：1.用於B-細胞慢性淋巴性白血病（CLL）病患的起始治療及CLL與低惡性度B細胞非何杰金氏淋巴瘤(Indolent
       B-Cell NHL)病患，歷經至少一種標準內容的烷化基藥劑（alkylating agent）的治療方法都無效，或治療後雖有效但隨後疾病又繼續惡化的病人。
     clinical_rules:
     - indication: Leukemia (白血病)
@@ -2478,6 +2521,7 @@ regulations:
     - Hydroxyurea
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Gastrointestinal Stromal Tumor (GIST) (胃腸基質瘤)
     - Leukemia (白血病)
     - Soft Tissue Sarcoma / Osteosarcoma (肉瘤)
@@ -2486,8 +2530,9 @@ regulations:
     - 血小板
     - BCR-ABL
     - Mitotic Index
-    summary: 適用於【Gastrointestinal Stromal Tumor、Leukemia】之健保給付。 主要條件包含：臨床檢驗需符合 BCR-ABL
-      = 陽性, BCR-ABL = 陽性, Mitotic Index > 10/50 HPFHPF；使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Gastrointestinal
+      Stromal Tumor、Leukemia】之健保給付。 主要條件包含：臨床檢驗需符合 BCR-ABL = 陽性, BCR-ABL = 陽性, Mitotic
+      Index > 10/50 HPFHPF；使用前須經事前審查核准。
     clinical_rules:
     - indication: Gastrointestinal Stromal Tumor (GIST) (胃腸基質瘤)
       biomarkers:
@@ -2772,11 +2817,14 @@ regulations:
     - Osimertinib (奧希替尼)
   conditions_of_payment:
     indications:
-    - Lung Cancer (肺癌)
+    - Lung Adenocarcinoma (肺腺癌)
+    - Non-Small Cell Lung Cancer (NSCLC) (非小細胞肺癌)
+    - Lung Cancer (非小細胞肺癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     laboratory_criteria:
     - EGFR
-    summary: 適用於【Lung Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 EGFR = Exon 19 Del, EGFR = Exon
-      21。
+    summary: 適用於【Lung Adenocarcinoma、Non-Small Cell Lung Cancer、Lung Cancer】之健保給付。
+      主要條件包含：臨床檢驗需符合 EGFR = Exon 19 Del, EGFR = Exon 21。
     clinical_rules:
     - indication: Lung Cancer (肺癌)
       biomarkers:
@@ -2895,7 +2943,7 @@ regulations:
     indications:
     - Glioblastoma / Malignant Glioma / Brain Tumor (多形神經膠母細胞瘤)
     laboratory_criteria: []
-    summary: 規範【. Temozolomide(如Temodal)：附表八之二】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Glioblastoma / Malignant Glioma / Brain Tumor】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 9.25. Temozolomide(如Temodal)：(94/3/1、97/1/1、98/9/1、111/9/1)附表八之二
       biomarkers: []
@@ -2952,10 +3000,14 @@ regulations:
     - Pembrolizumab (派姆單抗)
   conditions_of_payment:
     indications:
-    - Lung Cancer (肺癌)
+    - Lung Adenocarcinoma (肺腺癌)
+    - Non-Small Cell Lung Cancer (NSCLC) (非小細胞肺癌)
+    - Lung Cancer (非小細胞肺癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     laboratory_criteria:
     - ECOG
-    summary: 適用於【Lung Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 ECOG = 0~1Score。
+    summary: 適用於【Lung Adenocarcinoma、Non-Small Cell Lung Cancer、Lung Cancer】之健保給付。
+      主要條件包含：臨床檢驗需符合 ECOG = 0~1Score。
     clinical_rules:
     - indication: Lung Cancer (肺癌)
       biomarkers:
@@ -3047,13 +3099,15 @@ regulations:
     - Platinum
   conditions_of_payment:
     indications:
-    - Head and Neck Cancer (頭頸部癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
+    - Head and Neck Squamous Cell Carcinoma (HNSCC) (頭頸部鱗狀細胞癌)
     - Colorectal Cancer (大腸直腸癌)
     laboratory_criteria:
     - BRAF
     - RAS
-    summary: 適用於【Head and Neck Cancer、Colorectal Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 BRAF
-      = V600E, RAS = 原生型, RAS = 突變；使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Head and
+      Neck Squamous Cell Carcinoma、Colorectal Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 BRAF =
+      V600E, RAS = 原生型, RAS = 突變；使用前須經事前審查核准。
     clinical_rules:
     - indication: Head and Neck Cancer (頭頸部癌)
       biomarkers:
@@ -3331,7 +3385,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Multiple Myeloma (多發性骨髓瘤)
-    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (典型何杰金氏淋巴瘤)
     - Anemia (貧血)
     - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria:
@@ -3438,10 +3492,14 @@ regulations:
     - Platinum
   conditions_of_payment:
     indications:
-    - Lung Cancer (肺癌)
+    - Lung Adenocarcinoma (肺腺癌)
+    - Non-Small Cell Lung Cancer (NSCLC) (非小細胞肺癌)
+    - Lung Cancer (非小細胞肺癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     laboratory_criteria:
     - EGFR
-    summary: 適用於【Lung Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 EGFR = Exon 19 Del。
+    summary: 適用於【Lung Adenocarcinoma、Non-Small Cell Lung Cancer、Lung Cancer】之健保給付。
+      主要條件包含：臨床檢驗需符合 EGFR = Exon 19 Del。
     clinical_rules:
     - indication: Lung Cancer (肺癌)
       biomarkers:
@@ -3730,10 +3788,12 @@ regulations:
     - Temsirolimus
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Neuroendocrine Tumor (NET) (神經內分泌腫瘤)
     - Renal Cell Carcinoma (RCC) (腎細胞癌)
     laboratory_criteria: []
-    summary: 適用於【Neuroendocrine Tumor、Renal Cell Carcinoma】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Neuroendocrine
+      Tumor、Renal Cell Carcinoma】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Neuroendocrine Tumor (NET) (神經內分泌腫瘤)
       biomarkers: []
@@ -3919,7 +3979,7 @@ regulations:
     - Multiple Myeloma (多發性骨髓瘤)
     - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria: []
-    summary: 適用於【Multiple Myeloma】之健保給付。
+    summary: 適用於【Multiple Myeloma、Organ / Stem Cell Transplantation】之健保給付。
     clinical_rules:
     - indication: Multiple Myeloma (多發性骨髓瘤)
       biomarkers: []
@@ -3963,14 +4023,16 @@ regulations:
     - Tremelimumab
   conditions_of_payment:
     indications:
-    - Liver Cancer / Hepatocellular Carcinoma (肝癌)
+    - Liver Cancer / Hepatocellular Carcinoma (肝細胞癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Thyroid Cancer (甲狀腺癌)
     - Renal Cell Carcinoma (RCC) (腎細胞癌)
     - Thrombosis / Pulmonary Embolism (血栓)
     laboratory_criteria:
     - Child-Pugh
-    summary: 適用於【Liver Cancer / Hepatocellular Carcinoma、Thyroid Cancer、Renal Cell
-      Carcinoma】之健保給付。 主要條件包含：臨床檢驗需符合 Child-Pugh = AClass；使用前須經事前審查核准。
+    summary: 適用於【Liver Cancer / Hepatocellular Carcinoma、Metastatic / Locally Advanced
+      / Unresectable / Recurrent、Thyroid Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 Child-Pugh =
+      AClass；使用前須經事前審查核准。
     clinical_rules:
     - indication: Liver Cancer / Hepatocellular Carcinoma (肝癌)
       biomarkers:
@@ -4151,9 +4213,11 @@ regulations:
     - Temozolomide
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Glioblastoma / Malignant Glioma / Brain Tumor (多形神經膠母細胞瘤)
     laboratory_criteria: []
-    summary: 規範【. carmustine植入劑(如Gliadel Wafer)：附表八之四】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Glioblastoma
+      / Malignant Glioma / Brain Tumor】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 9.35. carmustine植入劑(如Gliadel Wafer)：(100/2/1)附表八之四
       biomarkers: []
@@ -4193,10 +4257,12 @@ regulations:
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Neuroendocrine Tumor (NET) (神經內分泌腫瘤)
     - Renal Cell Carcinoma (RCC) (腎細胞癌)
     laboratory_criteria: []
-    summary: 適用於【Breast Cancer、Neuroendocrine Tumor、Renal Cell Carcinoma】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Breast Cancer、Metastatic / Locally Advanced / Unresectable / Recurrent、Neuroendocrine
+      Tumor】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Breast Cancer (乳癌)
       biomarkers: []
@@ -4280,7 +4346,8 @@ regulations:
     - Glioblastoma / Malignant Glioma / Brain Tumor (多形神經膠母細胞瘤)
     - Thrombosis / Pulmonary Embolism (血栓)
     laboratory_criteria: []
-    summary: 適用於【Thrombosis / Pulmonary Embolism】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Gastrointestinal Bleeding / Hemorrhage、Glioblastoma / Malignant Glioma
+      / Brain Tumor、Thrombosis / Pulmonary Embolism】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Thrombosis / Pulmonary Embolism (血栓)
       biomarkers: []
@@ -4372,8 +4439,11 @@ regulations:
     - Topotecan
   conditions_of_payment:
     indications:
-    - Liver Cancer / Hepatocellular Carcinoma (肝癌)
-    - Lung Cancer (肺癌)
+    - Liver Cancer / Hepatocellular Carcinoma (肝細胞癌)
+    - Lung Adenocarcinoma (肺腺癌)
+    - Non-Small Cell Lung Cancer (NSCLC) (非小細胞肺癌)
+    - Lung Cancer (非小細胞肺癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Ovarian Cancer (卵巢癌)
     - Colorectal Cancer (大腸直腸癌)
     - Glioblastoma / Malignant Glioma / Brain Tumor (多形神經膠母細胞瘤)
@@ -4381,8 +4451,8 @@ regulations:
     laboratory_criteria:
     - RAS
     - Child-Pugh
-    summary: 適用於【Liver Cancer / Hepatocellular Carcinoma、Lung Cancer、Ovarian Cancer】之健保給付。
-      主要條件包含：臨床檢驗需符合 RAS = 突變, Child-Pugh = AClass；使用前須經事前審查核准。
+    summary: 適用於【Liver Cancer / Hepatocellular Carcinoma、Lung Adenocarcinoma、Non-Small
+      Cell Lung Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 RAS = 突變, Child-Pugh = AClass；使用前須經事前審查核准。
     clinical_rules:
     - indication: Liver Cancer / Hepatocellular Carcinoma (肝癌)
       biomarkers:
@@ -4829,10 +4899,12 @@ regulations:
     - Temsirolimus
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Renal Cell Carcinoma (RCC) (腎細胞癌)
     - Soft Tissue Sarcoma / Osteosarcoma (肉瘤)
     laboratory_criteria: []
-    summary: 適用於【Renal Cell Carcinoma】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Renal Cell
+      Carcinoma、Soft Tissue Sarcoma / Osteosarcoma】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Renal Cell Carcinoma (RCC) (腎細胞癌)
       biomarkers: []
@@ -4896,13 +4968,15 @@ regulations:
     - Rituximab
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Leukemia (白血病)
-    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (典型何杰金氏淋巴瘤)
     - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria:
     - 血小板
     - CD20
-    summary: 適用於【Leukemia】之健保給付。 主要條件包含：臨床檢驗需符合 CD20 = 陽性；使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Leukemia、Lymphoma】之健保給付。
+      主要條件包含：臨床檢驗需符合 CD20 = 陽性；使用前須經事前審查核准。
     clinical_rules:
     - indication: Leukemia (白血病)
       biomarkers:
@@ -4988,8 +5062,9 @@ regulations:
     - Tafasitamab
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Multiple Myeloma (多發性骨髓瘤)
-    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (典型何杰金氏淋巴瘤)
     - Anemia (貧血)
     - Organ / Stem Cell Transplantation (腎臟移植)
     - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
@@ -4998,8 +5073,9 @@ regulations:
     - CD20
     - Platelet
     - Hemoglobin
-    summary: 適用於【Multiple Myeloma、Anemia】之健保給付。 主要條件包含：臨床檢驗需符合 CD20 = 陽性, Platelet
-      < 100/μL, Hemoglobin < 10g/dL；使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Multiple
+      Myeloma、Lymphoma】之健保給付。 主要條件包含：臨床檢驗需符合 CD20 = 陽性, Platelet < 100/μL, Hemoglobin
+      < 10g/dL；使用前須經事前審查核准。
     clinical_rules:
     - indication: Multiple Myeloma (多發性骨髓瘤)
       biomarkers:
@@ -5479,7 +5555,8 @@ regulations:
     - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria:
     - Bone_Marrow_Blasts
-    summary: 適用於【Leukemia】之健保給付。 主要條件包含：臨床檢驗需符合 Bone_Marrow_Blasts > 5%；使用前須經事前審查核准。
+    summary: 適用於【Leukemia、Organ / Stem Cell Transplantation】之健保給付。 主要條件包含：臨床檢驗需符合
+      Bone_Marrow_Blasts > 5%；使用前須經事前審查核准。
     clinical_rules:
     - indication: Leukemia (白血病)
       biomarkers:
@@ -5560,11 +5637,14 @@ regulations:
     - Tyrosine
   conditions_of_payment:
     indications:
-    - Lung Cancer (肺癌)
+    - Lung Adenocarcinoma (肺腺癌)
+    - Non-Small Cell Lung Cancer (NSCLC) (非小細胞肺癌)
+    - Lung Cancer (非小細胞肺癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     laboratory_criteria:
     - EGFR
-    summary: 適用於【Lung Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 EGFR = Exon 19 Del, EGFR = Exon
-      21。
+    summary: 適用於【Lung Adenocarcinoma、Non-Small Cell Lung Cancer、Lung Cancer】之健保給付。
+      主要條件包含：臨床檢驗需符合 EGFR = Exon 19 Del, EGFR = Exon 21。
     clinical_rules:
     - indication: Lung Cancer (肺癌)
       biomarkers:
@@ -5684,12 +5764,15 @@ regulations:
     - Gemcitabine
   conditions_of_payment:
     indications:
-    - Lung Cancer (肺癌)
+    - Non-Small Cell Lung Cancer (NSCLC) (非小細胞肺癌)
+    - Lung Cancer (非小細胞肺癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Pancreatic Cancer (胰臟癌)
     - Gastric / Esophageal Cancer (胃癌)
     - Cholangiocarcinoma / Biliary Tract Cancer (膽管癌)
     laboratory_criteria: []
-    summary: 適用於【Lung Cancer、Pancreatic Cancer】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Non-Small Cell Lung Cancer、Lung Cancer、Metastatic / Locally Advanced
+      / Unresectable / Recurrent】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Lung Cancer (肺癌)
       biomarkers: []
@@ -5749,9 +5832,11 @@ regulations:
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     laboratory_criteria:
     - HER2
-    summary: 適用於【Breast Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 HER2 = 過度表現。
+    summary: 適用於【Breast Cancer、Metastatic / Locally Advanced / Unresectable / Recurrent】之健保給付。
+      主要條件包含：臨床檢驗需符合 HER2 = 過度表現。
     clinical_rules:
     - indication: Breast Cancer (乳癌)
       biomarkers:
@@ -5817,9 +5902,11 @@ regulations:
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Soft Tissue Sarcoma / Osteosarcoma (肉瘤)
     laboratory_criteria: []
-    summary: 適用於【Breast Cancer】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Breast Cancer、Metastatic / Locally Advanced / Unresectable / Recurrent、Soft
+      Tissue Sarcoma / Osteosarcoma】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Breast Cancer (乳癌)
       biomarkers: []
@@ -5874,11 +5961,13 @@ regulations:
     - Prednisolone
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Prostate Cancer (前列腺癌)
     laboratory_criteria:
     - PSA
     - ECOG
-    summary: 適用於【Prostate Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 PSA >= 2ng/ml, ECOG = 0Score；使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Prostate
+      Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 PSA >= 2ng/ml, ECOG = 0Score；使用前須經事前審查核准。
     clinical_rules:
     - indication: Prostate Cancer (前列腺癌)
       biomarkers:
@@ -6019,11 +6108,13 @@ regulations:
     - Lorlatinib
   conditions_of_payment:
     indications:
-    - Lung Cancer (肺癌)
+    - Non-Small Cell Lung Cancer (NSCLC) (非小細胞肺癌)
+    - Lung Cancer (非小細胞肺癌)
     laboratory_criteria:
     - ALK
     - ROS1
-    summary: 適用於【Lung Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 ALK = 陽性, ALK = 陽性, ROS1 = 陽性；使用前須經事前審查核准。
+    summary: 適用於【Non-Small Cell Lung Cancer、Lung Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 ALK
+      = 陽性, ALK = 陽性, ROS1 = 陽性；使用前須經事前審查核准。
     clinical_rules:
     - indication: Lung Cancer (肺癌)
       biomarkers:
@@ -6200,14 +6291,16 @@ regulations:
     - Trifluridine
   conditions_of_payment:
     indications:
-    - Liver Cancer / Hepatocellular Carcinoma (肝癌)
+    - Liver Cancer / Hepatocellular Carcinoma (肝細胞癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Gastrointestinal Stromal Tumor (GIST) (胃腸基質瘤)
     - Colorectal Cancer (大腸直腸癌)
     laboratory_criteria:
     - RAS
     - Child-Pugh
-    summary: 適用於【Liver Cancer / Hepatocellular Carcinoma、Gastrointestinal Stromal
-      Tumor、Colorectal Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 RAS = 突變, Child-Pugh = AClass；使用前須經事前審查核准。
+    summary: 適用於【Liver Cancer / Hepatocellular Carcinoma、Metastatic / Locally Advanced
+      / Unresectable / Recurrent、Gastrointestinal Stromal Tumor】之健保給付。 主要條件包含：臨床檢驗需符合
+      RAS = 突變, Child-Pugh = AClass；使用前須經事前審查核准。
     clinical_rules:
     - indication: Liver Cancer / Hepatocellular Carcinoma (肝癌)
       biomarkers:
@@ -6409,12 +6502,13 @@ regulations:
     - Trametinib
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Melanoma (黑色素瘤)
     laboratory_criteria:
     - BRAF
     - ECOG
-    summary: 適用於【Melanoma】之健保給付。 主要條件包含：臨床檢驗需符合 BRAF = V600, BRAF = V600, ECOG <=
-      2Score；使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Melanoma】之健保給付。
+      主要條件包含：臨床檢驗需符合 BRAF = V600, BRAF = V600, ECOG <= 2Score；使用前須經事前審查核准。
     clinical_rules:
     - indication: Melanoma (黑色素瘤)
       biomarkers:
@@ -6546,11 +6640,12 @@ regulations:
     - Irinotecan
     - Oxaliplatin
   conditions_of_payment:
-    indications: []
+    indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     laboratory_criteria:
     - RAS
-    summary: 規範【. Panitumumab（如Vectibix）：】之健保給付條件。 主要條件包含：臨床檢驗需符合 RAS = 原生型, RAS =
-      突變, RAS = 原生型；使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent】之健保給付。 主要條件包含：臨床檢驗需符合
+      RAS = 原生型, RAS = 突變, RAS = 原生型；使用前須經事前審查核准。
     clinical_rules:
     - indication: 9.53. Panitumumab（如Vectibix）：(105/4/1、107/6/1、110/6/1、113/6/1、115/2/1)
       biomarkers:
@@ -6736,12 +6831,13 @@ regulations:
     - Olaparib
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Prostate Cancer (前列腺癌)
     laboratory_criteria:
     - PSA
     - ECOG
-    summary: 適用於【Prostate Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 PSA >= 2ng/mL, PSA >= 2ng/ml,
-      ECOG = 0Score；使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Prostate
+      Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 PSA >= 2ng/mL, PSA >= 2ng/ml, ECOG = 0Score；使用前須經事前審查核准。
     clinical_rules:
     - indication: Prostate Cancer (前列腺癌)
       biomarkers:
@@ -6930,8 +7026,9 @@ regulations:
     - 血小板
     - FEV1
     - Bone_Marrow_Blasts
-    summary: 適用於【Leukemia】之健保給付。 主要條件包含：臨床檢驗需符合 FEV1 < 80%, Bone_Marrow_Blasts >=
-      20%, Bone_Marrow_Blasts >= 20%；使用前須經事前審查核准。
+    summary: 適用於【Leukemia、Myelofibrosis / Essential Thrombocythemia / Polycythemia
+      Vera】之健保給付。 主要條件包含：臨床檢驗需符合 FEV1 < 80%, Bone_Marrow_Blasts >= 20%, Bone_Marrow_Blasts
+      >= 20%；使用前須經事前審查核准。
     clinical_rules:
     - indication: Leukemia (白血病)
       biomarkers:
@@ -7258,7 +7355,7 @@ regulations:
     - Vinblastine
   conditions_of_payment:
     indications:
-    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (典型何杰金氏淋巴瘤)
     laboratory_criteria:
     - CD30
     summary: 適用於【Lymphoma】之健保給付。 主要條件包含：臨床檢驗需符合 CD30 = +, CD30 = +, CD30 = +；使用前須經事前審查核准。
@@ -7524,7 +7621,7 @@ regulations:
     - Leukemia (白血病)
     - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria: []
-    summary: 適用於【Leukemia】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Leukemia、Organ / Stem Cell Transplantation】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Leukemia (白血病)
       biomarkers: []
@@ -7615,10 +7712,12 @@ regulations:
     - Lorlatinib
   conditions_of_payment:
     indications:
-    - Lung Cancer (肺癌)
+    - Non-Small Cell Lung Cancer (NSCLC) (非小細胞肺癌)
+    - Lung Cancer (非小細胞肺癌)
     laboratory_criteria:
     - ALK
-    summary: 適用於【Lung Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 ALK = 陽性, ALK = 陽性；使用前須經事前審查核准。
+    summary: 適用於【Non-Small Cell Lung Cancer、Lung Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 ALK
+      = 陽性, ALK = 陽性；使用前須經事前審查核准。
     clinical_rules:
     - indication: Lung Cancer (肺癌)
       biomarkers:
@@ -7733,10 +7832,12 @@ regulations:
     - Lorlatinib
   conditions_of_payment:
     indications:
-    - Lung Cancer (肺癌)
+    - Non-Small Cell Lung Cancer (NSCLC) (非小細胞肺癌)
+    - Lung Cancer (非小細胞肺癌)
     laboratory_criteria:
     - ALK
-    summary: 適用於【Lung Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 ALK = 陽性, ALK = 陽性；使用前須經事前審查核准。
+    summary: 適用於【Non-Small Cell Lung Cancer、Lung Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 ALK
+      = 陽性, ALK = 陽性；使用前須經事前審查核准。
     clinical_rules:
     - indication: Lung Cancer (肺癌)
       biomarkers:
@@ -7853,10 +7954,10 @@ regulations:
   conditions_of_payment:
     indications:
     - Leukemia (白血病)
-    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (典型何杰金氏淋巴瘤)
     laboratory_criteria:
     - Hemoglobin
-    summary: 適用於【Leukemia】之健保給付。 主要條件包含：臨床檢驗需符合 Hemoglobin < 10.0g/dL；使用前須經事前審查核准。
+    summary: 適用於【Leukemia、Lymphoma】之健保給付。 主要條件包含：臨床檢驗需符合 Hemoglobin < 10.0g/dL；使用前須經事前審查核准。
     clinical_rules:
     - indication: Leukemia (白血病)
       biomarkers:
@@ -7976,7 +8077,8 @@ regulations:
     - Anemia (貧血)
     - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria: []
-    summary: 適用於【Multiple Myeloma、Anemia】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Multiple Myeloma、Anemia、Growth Hormone Deficiency / Cushing's / Paget's
+      / Hypercalcemia】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Multiple Myeloma (多發性骨髓瘤)
       biomarkers: []
@@ -8074,12 +8176,14 @@ regulations:
     - Tremelimumab
   conditions_of_payment:
     indications:
-    - Liver Cancer / Hepatocellular Carcinoma (肝癌)
+    - Liver Cancer / Hepatocellular Carcinoma (肝細胞癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Thrombosis / Pulmonary Embolism (血栓)
     laboratory_criteria:
     - Child-Pugh
-    summary: 適用於【Liver Cancer / Hepatocellular Carcinoma、Thrombosis / Pulmonary Embolism】之健保給付。
-      主要條件包含：臨床檢驗需符合 Child-Pugh = AClass；使用前須經事前審查核准。
+    summary: 適用於【Liver Cancer / Hepatocellular Carcinoma、Metastatic / Locally Advanced
+      / Unresectable / Recurrent、Thrombosis / Pulmonary Embolism】之健保給付。 主要條件包含：臨床檢驗需符合
+      Child-Pugh = AClass；使用前須經事前審查核准。
     clinical_rules:
     - indication: Liver Cancer / Hepatocellular Carcinoma (肝癌)
       biomarkers:
@@ -8196,12 +8300,15 @@ regulations:
     - Ponatinib
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Leukemia (白血病)
     - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria:
     - Bone_Marrow_Blasts
     - MRD
-    summary: 適用於【Leukemia】之健保給付。 主要條件包含：臨床檢驗需符合 Bone_Marrow_Blasts > 5%, MRD = 陽性；使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Leukemia、Organ
+      / Stem Cell Transplantation】之健保給付。 主要條件包含：臨床檢驗需符合 Bone_Marrow_Blasts > 5%, MRD
+      = 陽性；使用前須經事前審查核准。
     clinical_rules:
     - indication: Leukemia (白血病)
       biomarkers:
@@ -8300,10 +8407,10 @@ regulations:
     - Pralatrexate (如 Folotyn)
   conditions_of_payment:
     indications:
-    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (典型何杰金氏淋巴瘤)
     - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria: []
-    summary: 規範【. Pralatrexate(如Folotyn)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Lymphoma、Organ / Stem Cell Transplantation】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 9.65. Pralatrexate(如Folotyn)：(107/10/1、110/5/1)
       biomarkers: []
@@ -8350,11 +8457,13 @@ regulations:
     - Regorafenib (瑞戈非尼)
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Colorectal Cancer (大腸直腸癌)
     - Gastric / Esophageal Cancer (胃癌)
     laboratory_criteria:
     - RAS
-    summary: 適用於【Colorectal Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 RAS = 突變。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Colorectal
+      Cancer、Gastric / Esophageal Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 RAS = 突變。
     clinical_rules:
     - indication: Colorectal Cancer (大腸直腸癌)
       biomarkers:
@@ -8626,18 +8735,25 @@ regulations:
     - Zolbetuximab
   conditions_of_payment:
     indications:
-    - Liver Cancer / Hepatocellular Carcinoma (肝癌)
+    - Liver Cancer / Hepatocellular Carcinoma (肝細胞癌)
     - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
     - Triple-Negative Breast Cancer (TNBC) (三陰性乳癌)
     - Breast Cancer (乳癌)
-    - Lung Cancer (肺癌)
+    - Lung Adenocarcinoma (肺腺癌)
+    - Squamous Non-Small Cell Lung Cancer (鱗狀非小細胞肺癌)
+    - Non-Small Cell Lung Cancer (NSCLC) (非小細胞肺癌)
+    - Small Cell Lung Cancer (SCLC) (小細胞肺癌)
+    - Lung Cancer (非小細胞肺癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Gastrointestinal Stromal Tumor (GIST) (胃腸基質瘤)
     - Nasopharyngeal Carcinoma (鼻咽癌)
+    - Head and Neck Squamous Cell Carcinoma (HNSCC) (頭頸部鱗狀細胞癌)
     - Melanoma (黑色素瘤)
     - Neuroendocrine Tumor (NET) (神經內分泌腫瘤)
     - Renal Cell Carcinoma (RCC) (腎細胞癌)
+    - Urothelial Carcinoma / Bladder Cancer (泌尿道上皮癌)
     - Colorectal Cancer (大腸直腸癌)
-    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (典型何杰金氏淋巴瘤)
     - Gastric / Esophageal Cancer (胃癌)
     - Cholangiocarcinoma / Biliary Tract Cancer (膽管癌)
     - Endometrial / Cervical Cancer (子宮內膜癌)
@@ -8653,8 +8769,9 @@ regulations:
     - ALT
     - AST
     - Total Bilirubin
-    summary: 適用於【Liver Cancer / Hepatocellular Carcinoma、Triple-Negative Breast Cancer、Breast
-      Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 HER2 = 過度表現, MSI-H/dMMR = MSI-H, MSI-H/dMMR = dMMR；使用前須經事前審查核准。
+    summary: 適用於【Liver Cancer / Hepatocellular Carcinoma、Gastrointestinal Bleeding
+      / Hemorrhage、Triple-Negative Breast Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 HER2 = 過度表現,
+      MSI-H/dMMR = MSI-H, MSI-H/dMMR = dMMR；使用前須經事前審查核准。
     clinical_rules:
     - indication: Liver Cancer / Hepatocellular Carcinoma (肝癌)
       biomarkers:
@@ -16811,9 +16928,11 @@ regulations:
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     laboratory_criteria:
     - HER2
-    summary: 適用於【Breast Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 HER2 = 過度表現, HER2 = 過度表現；使用前須經事前審查核准。
+    summary: 適用於【Breast Cancer、Metastatic / Locally Advanced / Unresectable / Recurrent】之健保給付。
+      主要條件包含：臨床檢驗需符合 HER2 = 過度表現, HER2 = 過度表現；使用前須經事前審查核准。
     clinical_rules:
     - indication: Breast Cancer (乳癌)
       biomarkers:
@@ -17127,8 +17246,10 @@ regulations:
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     laboratory_criteria: []
-    summary: 適用於【Breast Cancer】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Breast Cancer、Metastatic / Locally Advanced / Unresectable / Recurrent】之健保給付。
+      主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Breast Cancer (乳癌)
       biomarkers: []
@@ -17226,7 +17347,8 @@ regulations:
     laboratory_criteria:
     - BCR-ABL
     - CD22
-    summary: 適用於【Leukemia】之健保給付。 主要條件包含：臨床檢驗需符合 BCR-ABL = 陽性, CD22 = 陽性；使用前須經事前審查核准。
+    summary: 適用於【Leukemia、Organ / Stem Cell Transplantation】之健保給付。 主要條件包含：臨床檢驗需符合
+      BCR-ABL = 陽性, CD22 = 陽性；使用前須經事前審查核准。
     clinical_rules:
     - indication: Leukemia (白血病)
       biomarkers:
@@ -17327,10 +17449,12 @@ regulations:
     - Temsirolimus
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Thyroid Cancer (甲狀腺癌)
     - Renal Cell Carcinoma (RCC) (腎細胞癌)
     laboratory_criteria: []
-    summary: 適用於【Thyroid Cancer、Renal Cell Carcinoma】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Thyroid
+      Cancer、Renal Cell Carcinoma】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Thyroid Cancer (甲狀腺癌)
       biomarkers: []
@@ -17413,8 +17537,8 @@ regulations:
     - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria:
     - ECOG
-    summary: 適用於【Multiple Myeloma、Anemia】之健保給付。 主要條件包含：臨床檢驗需符合 ECOG = < 2Score, ECOG
-      = < 2Score；使用前須經事前審查核准。
+    summary: 適用於【Multiple Myeloma、Anemia、Growth Hormone Deficiency / Cushing's / Paget's
+      / Hypercalcemia】之健保給付。 主要條件包含：臨床檢驗需符合 ECOG = < 2Score, ECOG = < 2Score；使用前須經事前審查核准。
     clinical_rules:
     - indication: Multiple Myeloma (多發性骨髓瘤)
       biomarkers:
@@ -17588,7 +17712,8 @@ regulations:
     - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria:
     - FLT3
-    summary: 適用於【Leukemia】之健保給付。 主要條件包含：臨床檢驗需符合 FLT3 = 突變, FLT3 = 突變；使用前須經事前審查核准。
+    summary: 適用於【Leukemia、Organ / Stem Cell Transplantation】之健保給付。 主要條件包含：臨床檢驗需符合
+      FLT3 = 突變, FLT3 = 突變；使用前須經事前審查核准。
     clinical_rules:
     - indication: Leukemia (白血病)
       biomarkers:
@@ -17691,7 +17816,8 @@ regulations:
     - Anemia (貧血)
     - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria: []
-    summary: 適用於【Multiple Myeloma、Anemia】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Multiple Myeloma、Anemia、Growth Hormone Deficiency / Cushing's / Paget's
+      / Hypercalcemia】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Multiple Myeloma (多發性骨髓瘤)
       biomarkers: []
@@ -17798,7 +17924,8 @@ regulations:
     laboratory_criteria:
     - eGFR
     - ECOG
-    summary: 適用於【Multiple Myeloma、Anemia】之健保給付。 主要條件包含：臨床檢驗需符合 ECOG = < 2Score；使用前須經事前審查核准。
+    summary: 適用於【Multiple Myeloma、Anemia、Organ / Stem Cell Transplantation】之健保給付。
+      主要條件包含：臨床檢驗需符合 ECOG = < 2Score；使用前須經事前審查核准。
     clinical_rules:
     - indication: Multiple Myeloma (多發性骨髓瘤)
       biomarkers:
@@ -17966,15 +18093,16 @@ regulations:
     - Zanubrutinib
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Leukemia (白血病)
-    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (典型何杰金氏淋巴瘤)
     laboratory_criteria:
     - 血小板
     - CD20
     - Platelet
     - Hemoglobin
-    summary: 適用於【Leukemia、Lymphoma】之健保給付。 主要條件包含：臨床檢驗需符合 CD20 = 陽性, CD20 = 陽性, Platelet
-      < 100/μL；使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Leukemia、Lymphoma】之健保給付。
+      主要條件包含：臨床檢驗需符合 CD20 = 陽性, CD20 = 陽性, Platelet < 100/μL；使用前須經事前審查核准。
     clinical_rules:
     - indication: Leukemia (白血病)
       biomarkers:
@@ -18244,11 +18372,14 @@ regulations:
     - Gefitinib (吉非替尼)
   conditions_of_payment:
     indications:
-    - Lung Cancer (肺癌)
+    - Lung Adenocarcinoma (肺腺癌)
+    - Non-Small Cell Lung Cancer (NSCLC) (非小細胞肺癌)
+    - Lung Cancer (非小細胞肺癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     laboratory_criteria:
     - EGFR
-    summary: 適用於【Lung Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 EGFR = Exon 19 Del, EGFR = T790M,
-      EGFR = Exon 19 Del；使用前須經事前審查核准。
+    summary: 適用於【Lung Adenocarcinoma、Non-Small Cell Lung Cancer、Lung Cancer】之健保給付。
+      主要條件包含：臨床檢驗需符合 EGFR = Exon 19 Del, EGFR = T790M, EGFR = Exon 19 Del；使用前須經事前審查核准。
     clinical_rules:
     - indication: Lung Cancer (肺癌)
       biomarkers:
@@ -18428,10 +18559,12 @@ regulations:
     - Crizotinib
   conditions_of_payment:
     indications:
-    - Lung Cancer (肺癌)
+    - Non-Small Cell Lung Cancer (NSCLC) (非小細胞肺癌)
+    - Lung Cancer (非小細胞肺癌)
     laboratory_criteria:
     - ALK
-    summary: 適用於【Lung Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 ALK = 陽性, ALK = 陽性, ALK = 陽性；使用前須經事前審查核准。
+    summary: 適用於【Non-Small Cell Lung Cancer、Lung Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 ALK
+      = 陽性, ALK = 陽性, ALK = 陽性；使用前須經事前審查核准。
     clinical_rules:
     - indication: Lung Cancer (肺癌)
       biomarkers:
@@ -18578,10 +18711,12 @@ regulations:
     - Lorlatinib
   conditions_of_payment:
     indications:
-    - Lung Cancer (肺癌)
+    - Non-Small Cell Lung Cancer (NSCLC) (非小細胞肺癌)
+    - Lung Cancer (非小細胞肺癌)
     laboratory_criteria:
     - ALK
-    summary: 適用於【Lung Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 ALK = 陽性, ALK = 陽性, ALK = 陽性；使用前須經事前審查核准。
+    summary: 適用於【Non-Small Cell Lung Cancer、Lung Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 ALK
+      = 陽性, ALK = 陽性, ALK = 陽性；使用前須經事前審查核准。
     clinical_rules:
     - indication: Lung Cancer (肺癌)
       biomarkers:
@@ -18729,10 +18864,13 @@ regulations:
     - Osimertinib (奧希替尼)
   conditions_of_payment:
     indications:
-    - Lung Cancer (肺癌)
+    - Lung Adenocarcinoma (肺腺癌)
+    - Non-Small Cell Lung Cancer (NSCLC) (非小細胞肺癌)
+    - Lung Cancer (非小細胞肺癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     laboratory_criteria: []
-    summary: 適用於【Lung Cancer】之健保給付。 規範重點：1.限單獨使用具有EGFR-TK Exon 19 Del或Exon 21 L858R點突變，且無腦轉移
-      (non-CNS)之局部侵犯性或轉移性(即第ⅢB、ⅢC或第Ⅳ期)之肺腺癌病患之第一線治療，需檢附EGFR基因檢測結果報告，且需符合全民健康保險藥品給付規定之通則十二。
+    summary: 適用於【Lung Adenocarcinoma、Non-Small Cell Lung Cancer、Lung Cancer】之健保給付。
+      規範重點：1.限單獨使用具有EGFR-TK Exon 19 Del或Exon 21 L858R點突變，且無腦轉移 (non-CNS)之局部侵犯性或轉移性(即第ⅢB、ⅢC或第Ⅳ期)之肺腺癌病患之第一線治療，需檢附EGFR基因檢測結果報告，且需符合全民健康保險藥品給付規定之通則十二。
     clinical_rules:
     - indication: Lung Cancer (肺癌)
       biomarkers: []
@@ -18804,6 +18942,7 @@ regulations:
     indications:
     - Triple-Negative Breast Cancer (TNBC) (三陰性乳癌)
     - Breast Cancer (乳癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Prostate Cancer (前列腺癌)
     - Ovarian Cancer (卵巢癌)
     laboratory_criteria:
@@ -18811,8 +18950,9 @@ regulations:
     - BRCA
     - HRD
     - PSA
-    summary: 適用於【Triple-Negative Breast Cancer、Breast Cancer、Prostate Cancer】之健保給付。
-      主要條件包含：臨床檢驗需符合 BRCA = 突變, HRD = 陽性, PSA >= 2ng/ml；使用前須經事前審查核准。
+    summary: 適用於【Triple-Negative Breast Cancer、Breast Cancer、Metastatic / Locally
+      Advanced / Unresectable / Recurrent】之健保給付。 主要條件包含：臨床檢驗需符合 BRCA = 突變, HRD = 陽性,
+      PSA >= 2ng/ml；使用前須經事前審查核准。
     clinical_rules:
     - indication: Triple-Negative Breast Cancer (TNBC) (三陰性乳癌)
       biomarkers:
@@ -19228,9 +19368,12 @@ regulations:
     ingredients:
     - Vandetanib (如 Caprelsa)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
+    - Thyroid Cancer (甲狀腺癌)
     laboratory_criteria: []
-    summary: 規範【. Vandetanib (如Caprelsa)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Thyroid
+      Cancer】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 9.86. Vandetanib (如Caprelsa)：(109/11/1)
       biomarkers: []
@@ -19277,10 +19420,12 @@ regulations:
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Heart Failure (心臟衰竭)
     laboratory_criteria:
     - HER2
-    summary: 適用於【Breast Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 HER2 = 過度表現, HER2 = 過度表現；使用前須經事前審查核准。
+    summary: 適用於【Breast Cancer、Metastatic / Locally Advanced / Unresectable / Recurrent、Heart
+      Failure】之健保給付。 主要條件包含：臨床檢驗需符合 HER2 = 過度表現, HER2 = 過度表現；使用前須經事前審查核准。
     clinical_rules:
     - indication: Breast Cancer (乳癌)
       biomarkers:
@@ -19405,9 +19550,10 @@ regulations:
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     laboratory_criteria: []
-    summary: 適用於【Breast Cancer】之健保給付。 規範重點：1.限Ixabepilone合併capecitabine用於局部晚期或轉移性乳癌患者，需符合以下條件之一：
-      (1)對taxane有抗藥性且無法接受anthracycline治療者。
+    summary: 適用於【Breast Cancer、Metastatic / Locally Advanced / Unresectable / Recurrent】之健保給付。
+      規範重點：1.限Ixabepilone合併capecitabine用於局部晚期或轉移性乳癌患者，需符合以下條件之一： (1)對taxane有抗藥性且無法接受anthracycline治療者。
     clinical_rules:
     - indication: Breast Cancer (乳癌)
       biomarkers: []
@@ -19449,10 +19595,12 @@ regulations:
     - Olaparib
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Prostate Cancer (前列腺癌)
     laboratory_criteria:
     - PSA
-    summary: 適用於【Prostate Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 PSA >= 2ng/mL, PSA >= 2ng/mL；使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Prostate
+      Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 PSA >= 2ng/mL, PSA >= 2ng/mL；使用前須經事前審查核准。
     clinical_rules:
     - indication: Prostate Cancer (前列腺癌)
       biomarkers:
@@ -19587,13 +19735,16 @@ regulations:
     - Vemurafenib
   conditions_of_payment:
     indications:
-    - Lung Cancer (肺癌)
+    - Non-Small Cell Lung Cancer (NSCLC) (非小細胞肺癌)
+    - Lung Cancer (非小細胞肺癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Melanoma (黑色素瘤)
     laboratory_criteria:
     - BRAF
     - ECOG
-    summary: 適用於【Lung Cancer、Melanoma】之健保給付。 主要條件包含：臨床檢驗需符合 BRAF = V600, BRAF = V600,
-      BRAF = V600E；使用前須經事前審查核准。
+    summary: 適用於【Non-Small Cell Lung Cancer、Lung Cancer、Metastatic / Locally Advanced
+      / Unresectable / Recurrent】之健保給付。 主要條件包含：臨床檢驗需符合 BRAF = V600, BRAF = V600, BRAF
+      = V600E；使用前須經事前審查核准。
     clinical_rules:
     - indication: Lung Cancer (肺癌)
       biomarkers:
@@ -19884,12 +20035,14 @@ regulations:
     - Sorafenib (索拉非尼)
   conditions_of_payment:
     indications:
-    - Liver Cancer / Hepatocellular Carcinoma (肝癌)
+    - Liver Cancer / Hepatocellular Carcinoma (肝細胞癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     laboratory_criteria:
     - AFP
     - Child-Pugh
-    summary: 適用於【Liver Cancer / Hepatocellular Carcinoma】之健保給付。 主要條件包含：臨床檢驗需符合 AFP
-      >= 400ng/mL, Child-Pugh = AClass；使用前須經事前審查核准。
+    summary: 適用於【Liver Cancer / Hepatocellular Carcinoma、Metastatic / Locally Advanced
+      / Unresectable / Recurrent】之健保給付。 主要條件包含：臨床檢驗需符合 AFP >= 400ng/mL, Child-Pugh
+      = AClass；使用前須經事前審查核准。
     clinical_rules:
     - indication: Liver Cancer / Hepatocellular Carcinoma (肝癌)
       biomarkers:
@@ -19988,10 +20141,13 @@ regulations:
     - Crizotinib
   conditions_of_payment:
     indications:
-    - Lung Cancer (肺癌)
+    - Non-Small Cell Lung Cancer (NSCLC) (非小細胞肺癌)
+    - Lung Cancer (非小細胞肺癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     laboratory_criteria:
     - ROS1
-    summary: 適用於【Lung Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 ROS1 = 陽性, ROS1 = 陽性；使用前須經事前審查核准。
+    summary: 適用於【Non-Small Cell Lung Cancer、Lung Cancer、Metastatic / Locally Advanced
+      / Unresectable / Recurrent】之健保給付。 主要條件包含：臨床檢驗需符合 ROS1 = 陽性, ROS1 = 陽性；使用前須經事前審查核准。
     clinical_rules:
     - indication: Lung Cancer (肺癌)
       biomarkers:
@@ -20093,6 +20249,7 @@ regulations:
     - Olaparib
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Prostate Cancer (前列腺癌)
     laboratory_criteria:
     - eGFR
@@ -20101,8 +20258,8 @@ regulations:
     - ECOG
     - ALT
     - Platelet
-    summary: 適用於【Prostate Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 PSA >= 2ng/mL, PSA >= 2ng/mL,
-      ECOG <= 1Score；使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Prostate
+      Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 PSA >= 2ng/mL, PSA >= 2ng/mL, ECOG <= 1Score；使用前須經事前審查核准。
     clinical_rules:
     - indication: Prostate Cancer (前列腺癌)
       biomarkers:
@@ -20374,7 +20531,11 @@ regulations:
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
-    - Lung Cancer (肺癌)
+    - Lung Adenocarcinoma (肺腺癌)
+    - Squamous Non-Small Cell Lung Cancer (鱗狀非小細胞肺癌)
+    - Non-Small Cell Lung Cancer (NSCLC) (非小細胞肺癌)
+    - Lung Cancer (非小細胞肺癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Melanoma (黑色素瘤)
     - Thyroid Cancer (甲狀腺癌)
     - Colorectal Cancer (大腸直腸癌)
@@ -20385,8 +20546,8 @@ regulations:
     laboratory_criteria:
     - EGFR
     - NTRK
-    summary: 適用於【Breast Cancer、Lung Cancer、Melanoma】之健保給付。 主要條件包含：臨床檢驗需符合 EGFR = 突變,
-      NTRK = 融合, NTRK = 融合；使用前須經事前審查核准。
+    summary: 適用於【Breast Cancer、Lung Adenocarcinoma、Squamous Non-Small Cell Lung Cancer】之健保給付。
+      主要條件包含：臨床檢驗需符合 EGFR = 突變, NTRK = 融合, NTRK = 融合；使用前須經事前審查核准。
     clinical_rules:
     - indication: Breast Cancer (乳癌)
       biomarkers:
@@ -21056,10 +21217,12 @@ regulations:
     - Avapritinib (如 Ayvakit)
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Gastrointestinal Stromal Tumor (GIST) (胃腸基質瘤)
     laboratory_criteria:
     - 血小板
-    summary: 規範【. Avapritinib (如Ayvakit)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Gastrointestinal
+      Stromal Tumor】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 9.97. Avapritinib (如Ayvakit)：(111/6/1、113/6/1)
       biomarkers: []
@@ -21100,11 +21263,12 @@ regulations:
     - Pemigatinib (如 Pemazyre)
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Cholangiocarcinoma / Biliary Tract Cancer (膽管癌)
     laboratory_criteria:
     - FGFR
-    summary: 規範【. Pemigatinib (如Pemazyre)：】之健保給付條件。 主要條件包含：臨床檢驗需符合 FGFR = 融合, FGFR
-      = 融合；使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Cholangiocarcinoma
+      / Biliary Tract Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 FGFR = 融合, FGFR = 融合；使用前須經事前審查核准。
     clinical_rules:
     - indication: 9.98. Pemigatinib (如Pemazyre)：(112/5/1、113/6/1)
       biomarkers:
@@ -21208,7 +21372,8 @@ regulations:
     - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria:
     - FLT3
-    summary: 適用於【Leukemia】之健保給付。 主要條件包含：臨床檢驗需符合 FLT3 = 突變, FLT3 = 突變；使用前須經事前審查核准。
+    summary: 適用於【Leukemia、Organ / Stem Cell Transplantation】之健保給付。 主要條件包含：臨床檢驗需符合
+      FLT3 = 突變, FLT3 = 突變；使用前須經事前審查核准。
     clinical_rules:
     - indication: Leukemia (白血病)
       biomarkers:
@@ -21348,10 +21513,10 @@ regulations:
   conditions_of_payment:
     indications:
     - Leukemia (白血病)
-    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (典型何杰金氏淋巴瘤)
     laboratory_criteria:
     - Hemoglobin
-    summary: 適用於【Leukemia】之健保給付。 主要條件包含：臨床檢驗需符合 Hemoglobin < 10.0g/dL；使用前須經事前審查核准。
+    summary: 適用於【Leukemia、Lymphoma】之健保給付。 主要條件包含：臨床檢驗需符合 Hemoglobin < 10.0g/dL；使用前須經事前審查核准。
     clinical_rules:
     - indication: Leukemia (白血病)
       biomarkers:
@@ -21462,9 +21627,12 @@ regulations:
     - Tepotinib (如 Tepmetko)
   conditions_of_payment:
     indications:
-    - Lung Cancer (肺癌)
+    - Non-Small Cell Lung Cancer (NSCLC) (非小細胞肺癌)
+    - Lung Cancer (非小細胞肺癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     laboratory_criteria: []
-    summary: 適用於【Lung Cancer】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Non-Small Cell Lung Cancer、Lung Cancer、Metastatic / Locally Advanced
+      / Unresectable / Recurrent】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Lung Cancer (肺癌)
       biomarkers: []
@@ -21514,7 +21682,7 @@ regulations:
     indications:
     - Neuroblastoma (神經母細胞瘤)
     laboratory_criteria: []
-    summary: 規範【. Dinutuximab beta (如Qarziba)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Neuroblastoma】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 9.102. Dinutuximab beta (如Qarziba)：(112/8/1)
       biomarkers: []
@@ -21567,8 +21735,9 @@ regulations:
     indications:
     - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     - Breast Cancer (乳癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Leukemia (白血病)
-    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (典型何杰金氏淋巴瘤)
     - Stroke / Cerebrovascular Accident (腦中風)
     - Myocardial Infarction (心肌梗塞)
     - Organ / Stem Cell Transplantation (腎臟移植)
@@ -21578,8 +21747,9 @@ regulations:
     - ECOG
     - Total Bilirubin
     - ANC
-    summary: 適用於【Hepatitis B / Hepatitis C、Breast Cancer、Leukemia】之健保給付。 主要條件包含：臨床檢驗需符合
-      ECOG = < 2Score, ECOG = <2Score, Total Bilirubin < 2.5mg/dL；使用前須經事前審查核准。
+    summary: 適用於【Hepatitis B / Hepatitis C、Breast Cancer、Metastatic / Locally Advanced
+      / Unresectable / Recurrent】之健保給付。 主要條件包含：臨床檢驗需符合 ECOG = < 2Score, ECOG = <2Score,
+      Total Bilirubin < 2.5mg/dL；使用前須經事前審查核准。
     clinical_rules:
     - indication: Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
       biomarkers:
@@ -22183,13 +22353,13 @@ regulations:
   conditions_of_payment:
     indications:
     - Leukemia (白血病)
-    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (典型何杰金氏淋巴瘤)
     laboratory_criteria:
     - 血小板
     - Platelet
     - Hemoglobin
-    summary: 適用於【Leukemia】之健保給付。 主要條件包含：臨床檢驗需符合 Platelet <= 100/μL, Platelet < 100/μL,
-      Hemoglobin < 10g/dL；使用前須經事前審查核准。
+    summary: 適用於【Leukemia、Lymphoma】之健保給付。 主要條件包含：臨床檢驗需符合 Platelet <= 100/μL, Platelet
+      < 100/μL, Hemoglobin < 10g/dL；使用前須經事前審查核准。
     clinical_rules:
     - indication: Leukemia (白血病)
       biomarkers:
@@ -22447,11 +22617,13 @@ regulations:
     - Rituximab
   conditions_of_payment:
     indications:
-    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (典型何杰金氏淋巴瘤)
     - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria:
     - ECOG
-    summary: 規範【. Polatuzumab vedotin (如Polivy)：】之健保給付條件。 主要條件包含：臨床檢驗需符合 ECOG <= 2Score；使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Lymphoma、Organ
+      / Stem Cell Transplantation】之健保給付。 主要條件包含：臨床檢驗需符合 ECOG <= 2Score；使用前須經事前審查核准。
     clinical_rules:
     - indication: 9.105. Polatuzumab vedotin (如Polivy)：(113/2/1、114/8/1)
       biomarkers:
@@ -22528,10 +22700,11 @@ regulations:
     indications:
     - Triple-Negative Breast Cancer (TNBC) (三陰性乳癌)
     - Breast Cancer (乳癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     laboratory_criteria:
     - ECOG
-    summary: 適用於【Triple-Negative Breast Cancer、Breast Cancer】之健保給付。 主要條件包含：臨床檢驗需符合
-      ECOG <= 1Score；使用前須經事前審查核准。
+    summary: 適用於【Triple-Negative Breast Cancer、Breast Cancer、Metastatic / Locally
+      Advanced / Unresectable / Recurrent】之健保給付。 主要條件包含：臨床檢驗需符合 ECOG <= 1Score；使用前須經事前審查核准。
     clinical_rules:
     - indication: Triple-Negative Breast Cancer (TNBC) (三陰性乳癌)
       biomarkers:
@@ -22714,7 +22887,8 @@ regulations:
     - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria:
     - ECOG
-    summary: 適用於【Multiple Myeloma、Anemia】之健保給付。 主要條件包含：臨床檢驗需符合 ECOG = <2Score；使用前須經事前審查核准。
+    summary: 適用於【Multiple Myeloma、Anemia、Growth Hormone Deficiency / Cushing's / Paget's
+      / Hypercalcemia】之健保給付。 主要條件包含：臨床檢驗需符合 ECOG = <2Score；使用前須經事前審查核准。
     clinical_rules:
     - indication: Multiple Myeloma (多發性骨髓瘤)
       biomarkers:
@@ -22844,6 +23018,7 @@ regulations:
     - Pembrolizumab (派姆單抗)
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Diabetes Mellitus (糖尿病)
     laboratory_criteria:
     - HbA1c
@@ -22852,8 +23027,8 @@ regulations:
     - ALT
     - AST
     - Total Bilirubin
-    summary: 適用於【Diabetes Mellitus】之健保給付。 主要條件包含：臨床檢驗需符合 ECOG <= 2Score, ECOG <= 2Score,
-      HbA1c >= 8%；使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Diabetes
+      Mellitus】之健保給付。 主要條件包含：臨床檢驗需符合 ECOG <= 2Score, ECOG <= 2Score, HbA1c >= 8%；使用前須經事前審查核准。
     clinical_rules:
     - indication: Diabetes Mellitus (糖尿病)
       biomarkers:
@@ -23112,9 +23287,9 @@ regulations:
     - Tirabrutinib (如 Velexbru)
   conditions_of_payment:
     indications:
-    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (典型何杰金氏淋巴瘤)
     laboratory_criteria: []
-    summary: 規範【. Tirabrutinib】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Lymphoma】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 9.110. Tirabrutinib (如Velexbru）：(113/6/1)
       biomarkers: []
@@ -23177,7 +23352,8 @@ regulations:
     - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria:
     - ECOG
-    summary: 適用於【Multiple Myeloma、Anemia】之健保給付。 主要條件包含：臨床檢驗需符合 ECOG = < 2Score；使用前須經事前審查核准。
+    summary: 適用於【Multiple Myeloma、Anemia、Growth Hormone Deficiency / Cushing's / Paget's
+      / Hypercalcemia】之健保給付。 主要條件包含：臨床檢驗需符合 ECOG = < 2Score；使用前須經事前審查核准。
     clinical_rules:
     - indication: Multiple Myeloma (多發性骨髓瘤)
       biomarkers:
@@ -23307,9 +23483,11 @@ regulations:
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     laboratory_criteria:
     - HER2
-    summary: 適用於【Breast Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 HER2 = 過度表現, HER2 = 過度表現；使用前須經事前審查核准。
+    summary: 適用於【Breast Cancer、Metastatic / Locally Advanced / Unresectable / Recurrent】之健保給付。
+      主要條件包含：臨床檢驗需符合 HER2 = 過度表現, HER2 = 過度表現；使用前須經事前審查核准。
     clinical_rules:
     - indication: Breast Cancer (乳癌)
       biomarkers:
@@ -23485,8 +23663,9 @@ regulations:
     laboratory_criteria:
     - 血小板
     - Bone_Marrow_Blasts
-    summary: 適用於【Leukemia】之健保給付。 主要條件包含：臨床檢驗需符合 Bone_Marrow_Blasts >= 20%, Bone_Marrow_Blasts
-      >= 20%, Bone_Marrow_Blasts >= 20%；使用前須經事前審查核准。
+    summary: 適用於【Leukemia、Myelofibrosis / Essential Thrombocythemia / Polycythemia
+      Vera】之健保給付。 主要條件包含：臨床檢驗需符合 Bone_Marrow_Blasts >= 20%, Bone_Marrow_Blasts >=
+      20%, Bone_Marrow_Blasts >= 20%；使用前須經事前審查核准。
     clinical_rules:
     - indication: Leukemia (白血病)
       biomarkers:
@@ -23715,10 +23894,12 @@ regulations:
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     laboratory_criteria:
     - HER2
     - ECOG
-    summary: 適用於【Breast Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 HER2 = 過度表現, ECOG <= 1Score；使用前須經事前審查核准。
+    summary: 適用於【Breast Cancer、Metastatic / Locally Advanced / Unresectable / Recurrent】之健保給付。
+      主要條件包含：臨床檢驗需符合 HER2 = 過度表現, ECOG <= 1Score；使用前須經事前審查核准。
     clinical_rules:
     - indication: Breast Cancer (乳癌)
       biomarkers:
@@ -23833,10 +24014,12 @@ regulations:
   conditions_of_payment:
     indications:
     - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Neurofibromatosis (NF1) (神經纖維瘤)
     - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     laboratory_criteria: []
-    summary: 規範【. Selumetinib (如Koselugo)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Gastrointestinal Bleeding / Hemorrhage、Metastatic / Locally Advanced
+      / Unresectable / Recurrent、Neurofibromatosis】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 9.116. Selumetinib (如Koselugo)：(114/2/1)
       biomarkers: []
@@ -23916,7 +24099,8 @@ regulations:
     - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria:
     - ECOG
-    summary: 適用於【Multiple Myeloma、Anemia】之健保給付。 主要條件包含：臨床檢驗需符合 ECOG = <2Score；使用前須經事前審查核准。
+    summary: 適用於【Multiple Myeloma、Anemia、Growth Hormone Deficiency / Cushing's / Paget's
+      / Hypercalcemia】之健保給付。 主要條件包含：臨床檢驗需符合 ECOG = <2Score；使用前須經事前審查核准。
     clinical_rules:
     - indication: Multiple Myeloma (多發性骨髓瘤)
       biomarkers:
@@ -24044,7 +24228,8 @@ regulations:
     - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria:
     - ECOG
-    summary: 適用於【Multiple Myeloma、Anemia】之健保給付。 主要條件包含：臨床檢驗需符合 ECOG <= 2Score；使用前須經事前審查核准。
+    summary: 適用於【Multiple Myeloma、Anemia、Organ / Stem Cell Transplantation】之健保給付。
+      主要條件包含：臨床檢驗需符合 ECOG <= 2Score；使用前須經事前審查核准。
     clinical_rules:
     - indication: Multiple Myeloma (多發性骨髓瘤)
       biomarkers:
@@ -24180,7 +24365,8 @@ regulations:
     - Growth Hormone Deficiency / Cushing's / Paget's / Hypercalcemia (生長激素缺乏症)
     laboratory_criteria:
     - ECOG
-    summary: 適用於【Multiple Myeloma、Anemia】之健保給付。 主要條件包含：臨床檢驗需符合 ECOG <= 2Score；使用前須經事前審查核准。
+    summary: 適用於【Multiple Myeloma、Anemia、Organ / Stem Cell Transplantation】之健保給付。
+      主要條件包含：臨床檢驗需符合 ECOG <= 2Score；使用前須經事前審查核准。
     clinical_rules:
     - indication: Multiple Myeloma (多發性骨髓瘤)
       biomarkers:
@@ -24310,13 +24496,14 @@ regulations:
     - Rituximab
   conditions_of_payment:
     indications:
-    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (典型何杰金氏淋巴瘤)
     - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria:
     - ECOG
     - CD20
-    summary: 規範【. Glofitamab（如Columvi）：（114/8/1)】之健保給付條件。 主要條件包含：臨床檢驗需符合 ECOG = 0Score,
-      CD20 = 陽性；使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Lymphoma、Organ
+      / Stem Cell Transplantation】之健保給付。 主要條件包含：臨床檢驗需符合 ECOG = 0Score, CD20 = 陽性；使用前須經事前審查核准。
     clinical_rules:
     - indication: 9.120. Glofitamab（如Columvi）：（114/8/1)
       biomarkers:
@@ -24414,13 +24601,14 @@ regulations:
     - Rituximab
   conditions_of_payment:
     indications:
-    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (典型何杰金氏淋巴瘤)
     - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria:
     - ECOG
     - CD20
-    summary: 規範【. Epcoritamab (如Epkinly)：】之健保給付條件。 主要條件包含：臨床檢驗需符合 ECOG = 0Score, CD20
-      = 陽性；使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Lymphoma、Organ
+      / Stem Cell Transplantation】之健保給付。 主要條件包含：臨床檢驗需符合 ECOG = 0Score, CD20 = 陽性；使用前須經事前審查核准。
     clinical_rules:
     - indication: 9.121. Epcoritamab (如Epkinly)：(114/8/1)
       biomarkers:
@@ -24654,13 +24842,13 @@ regulations:
     - Rituximab
   conditions_of_payment:
     indications:
-    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (典型何杰金氏淋巴瘤)
     - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria:
     - ECOG
     - CD19
-    summary: 規範【. Tafasitamab（如Minjuvi）：】之健保給付條件。 主要條件包含：臨床檢驗需符合 ECOG = 0Score, CD19
-      = 陽性；使用前須經事前審查核准。
+    summary: 適用於【Lymphoma、Organ / Stem Cell Transplantation】之健保給付。 主要條件包含：臨床檢驗需符合
+      ECOG = 0Score, CD19 = 陽性；使用前須經事前審查核准。
     clinical_rules:
     - indication: 9.124. Tafasitamab（如Minjuvi）：（114/10/1、115/3/1、115/4/1）
       biomarkers:
@@ -24777,7 +24965,8 @@ regulations:
     - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria:
     - FLT3
-    summary: 適用於【Leukemia】之健保給付。 主要條件包含：臨床檢驗需符合 FLT3 = 突變；使用前須經事前審查核准。
+    summary: 適用於【Leukemia、Organ / Stem Cell Transplantation】之健保給付。 主要條件包含：臨床檢驗需符合
+      FLT3 = 突變；使用前須經事前審查核准。
     clinical_rules:
     - indication: Leukemia (白血病)
       biomarkers:
@@ -24851,9 +25040,12 @@ regulations:
     - Pemetrexed
   conditions_of_payment:
     indications:
-    - Lung Cancer (肺癌)
+    - Non-Small Cell Lung Cancer (NSCLC) (非小細胞肺癌)
+    - Lung Cancer (非小細胞肺癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     laboratory_criteria: []
-    summary: 適用於【Lung Cancer】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Non-Small Cell Lung Cancer、Lung Cancer、Metastatic / Locally Advanced
+      / Unresectable / Recurrent】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Lung Cancer (肺癌)
       biomarkers: []
@@ -24903,8 +25095,9 @@ regulations:
     laboratory_criteria:
     - 血小板
     - Bone_Marrow_Blasts
-    summary: 適用於【Leukemia、Anemia】之健保給付。 主要條件包含：臨床檢驗需符合 Bone_Marrow_Blasts >= 20%,
-      Bone_Marrow_Blasts >= 20%, Bone_Marrow_Blasts >= 20%；使用前須經事前審查核准。
+    summary: 適用於【Leukemia、Anemia、Myelofibrosis / Essential Thrombocythemia / Polycythemia
+      Vera】之健保給付。 主要條件包含：臨床檢驗需符合 Bone_Marrow_Blasts >= 20%, Bone_Marrow_Blasts >=
+      20%, Bone_Marrow_Blasts >= 20%；使用前須經事前審查核准。
     clinical_rules:
     - indication: Leukemia (白血病)
       biomarkers:
@@ -25227,8 +25420,10 @@ regulations:
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     laboratory_criteria: []
-    summary: 適用於【Breast Cancer】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Breast Cancer、Metastatic / Locally Advanced / Unresectable / Recurrent】之健保給付。
+      主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Breast Cancer (乳癌)
       biomarkers: []
@@ -25271,8 +25466,10 @@ regulations:
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     laboratory_criteria: []
-    summary: 適用於【Breast Cancer】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Breast Cancer、Metastatic / Locally Advanced / Unresectable / Recurrent】之健保給付。
+      主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Breast Cancer (乳癌)
       biomarkers: []
@@ -25327,8 +25524,10 @@ regulations:
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     laboratory_criteria: []
-    summary: 適用於【Breast Cancer】之健保給付。 規範重點：1.單獨使用於患有雌激素受體陽性的局部晚期或轉移性乳癌之停經病人，其已接受輔助抗雌激素療法但疾病仍復發，或使用抗雌激素療法但疾病仍惡化。
+    summary: 適用於【Breast Cancer、Metastatic / Locally Advanced / Unresectable / Recurrent】之健保給付。
+      規範重點：1.單獨使用於患有雌激素受體陽性的局部晚期或轉移性乳癌之停經病人，其已接受輔助抗雌激素療法但疾病仍復發，或使用抗雌激素療法但疾病仍惡化。
     clinical_rules:
     - indication: Breast Cancer (乳癌)
       biomarkers: []
@@ -25363,10 +25562,13 @@ regulations:
     - Entrectinib
   conditions_of_payment:
     indications:
-    - Lung Cancer (肺癌)
+    - Non-Small Cell Lung Cancer (NSCLC) (非小細胞肺癌)
+    - Lung Cancer (非小細胞肺癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     laboratory_criteria:
     - ROS1
-    summary: 適用於【Lung Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 ROS1 = 陽性；使用前須經事前審查核准。
+    summary: 適用於【Non-Small Cell Lung Cancer、Lung Cancer、Metastatic / Locally Advanced
+      / Unresectable / Recurrent】之健保給付。 主要條件包含：臨床檢驗需符合 ROS1 = 陽性；使用前須經事前審查核准。
     clinical_rules:
     - indication: Lung Cancer (肺癌)
       biomarkers:
@@ -25514,12 +25716,15 @@ regulations:
     ingredients:
     - Zolbetuximab (如 Vyloy)
   conditions_of_payment:
-    indications: []
+    indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
+    - Gastric / Esophageal Cancer (胃癌)
     laboratory_criteria:
     - ECOG
     - CLDN18.2
-    summary: 規範【. Zolbetuximab (如Vyloy)：】之健保給付條件。 主要條件包含：臨床檢驗需符合 ECOG <= 1Score, CLDN18.2
-      = 陽性, CLDN18.2 = 陽性；使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Gastric
+      / Esophageal Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 ECOG <= 1Score, CLDN18.2 = 陽性, CLDN18.2
+      = 陽性；使用前須經事前審查核准。
     clinical_rules:
     - indication: 9.133. Zolbetuximab (如Vyloy)：(115/4/1)
       biomarkers:
@@ -25652,12 +25857,13 @@ regulations:
     - Oxaliplatin
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Colorectal Cancer (大腸直腸癌)
     laboratory_criteria:
     - BRAF
     - ECOG
-    summary: 適用於【Colorectal Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 BRAF = V600E, BRAF = V600E,
-      ECOG <= 2Score；使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Colorectal
+      Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 BRAF = V600E, BRAF = V600E, ECOG <= 2Score；使用前須經事前審查核准。
     clinical_rules:
     - indication: Colorectal Cancer (大腸直腸癌)
       biomarkers:
@@ -25794,8 +26000,10 @@ regulations:
   conditions_of_payment:
     indications:
     - Breast Cancer (乳癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     laboratory_criteria: []
-    summary: 適用於【Breast Cancer】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Breast Cancer、Metastatic / Locally Advanced / Unresectable / Recurrent】之健保給付。
+      主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Breast Cancer (乳癌)
       biomarkers: []
@@ -25846,10 +26054,12 @@ regulations:
     - Oxaliplatin
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Colorectal Cancer (大腸直腸癌)
     laboratory_criteria:
     - RAS
-    summary: 適用於【Colorectal Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 RAS = 突變；使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Colorectal
+      Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 RAS = 突變；使用前須經事前審查核准。
     clinical_rules:
     - indication: Colorectal Cancer (大腸直腸癌)
       biomarkers:
@@ -25925,11 +26135,13 @@ regulations:
     - Prednisolone
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Prostate Cancer (前列腺癌)
     laboratory_criteria:
     - PSA
     - ECOG
-    summary: 適用於【Prostate Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 PSA >= 2ng/mL, ECOG <= 1Score；使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Prostate
+      Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 PSA >= 2ng/mL, ECOG <= 1Score；使用前須經事前審查核准。
     clinical_rules:
     - indication: Prostate Cancer (前列腺癌)
       biomarkers:
@@ -26041,11 +26253,14 @@ regulations:
     - Osimertinib (奧希替尼)
   conditions_of_payment:
     indications:
-    - Lung Cancer (肺癌)
+    - Lung Adenocarcinoma (肺腺癌)
+    - Non-Small Cell Lung Cancer (NSCLC) (非小細胞肺癌)
+    - Lung Cancer (非小細胞肺癌)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     laboratory_criteria:
     - EGFR
-    summary: 適用於【Lung Cancer】之健保給付。 主要條件包含：臨床檢驗需符合 EGFR = Exon 19 Del, EGFR = T790M,
-      EGFR = Exon 19 Del；使用前須經事前審查核准。
+    summary: 適用於【Lung Adenocarcinoma、Non-Small Cell Lung Cancer、Lung Cancer】之健保給付。
+      主要條件包含：臨床檢驗需符合 EGFR = Exon 19 Del, EGFR = T790M, EGFR = Exon 19 Del；使用前須經事前審查核准。
     clinical_rules:
     - indication: Lung Cancer (肺癌)
       biomarkers:

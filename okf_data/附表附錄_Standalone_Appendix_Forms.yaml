@@ -33,13 +33,15 @@ regulations:
   conditions_of_payment:
     indications:
     - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Renal Cell Carcinoma (RCC) (腎細胞癌)
     - Multiple Myeloma (多發性骨髓瘤)
     - Leukemia (白血病)
-    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (典型何杰金氏淋巴瘤)
     - Soft Tissue Sarcoma / Osteosarcoma (肉瘤)
     laboratory_criteria: []
-    summary: 適用於【Hepatitis B / Hepatitis C、Renal Cell Carcinoma、Multiple Myeloma】之健保給付。
+    summary: 適用於【Hepatitis B / Hepatitis C、Metastatic / Locally Advanced / Unresectable
+      / Recurrent、Renal Cell Carcinoma】之健保給付。
     clinical_rules:
     - indication: Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
       biomarkers: []
@@ -119,7 +121,7 @@ regulations:
     indications:
     - Rheumatoid Arthritis / Juvenile Idiopathic Arthritis (JIA) (類風濕性關節炎)
     laboratory_criteria: []
-    summary: 適用於【Rheumatoid Arthritis】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Rheumatoid Arthritis / Juvenile Idiopathic Arthritis】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Rheumatoid Arthritis (類風濕性關節炎)
       biomarkers: []
@@ -198,8 +200,8 @@ regulations:
     - 血壓
     - 血小板
     - PaO2/FiO2
-    summary: 適用於【Stroke / Cerebrovascular Accident、Thrombosis / Pulmonary Embolism、Hypertension】之健保給付。
-      主要條件包含：臨床檢驗需符合 PaO2/FiO2 <= 300mmHg。
+    summary: 適用於【Heart Failure、Stroke / Cerebrovascular Accident、Thrombosis / Pulmonary
+      Embolism】之健保給付。 主要條件包含：臨床檢驗需符合 PaO2/FiO2 <= 300mmHg。
     clinical_rules:
     - indication: Stroke / Cerebrovascular Accident (腦中風)
       biomarkers:
@@ -1398,7 +1400,7 @@ regulations:
     indications:
     - Stroke / Cerebrovascular Accident (腦中風)
     laboratory_criteria: []
-    summary: 適用於【Thrombosis / Pulmonary Embolism】之健保給付。 規範重點：申報醫師：                     本表請併醫療費用申報。
+    summary: 適用於【Stroke / Cerebrovascular Accident】之健保給付。 規範重點：申報醫師：                     本表請併醫療費用申報。
     clinical_rules:
     - indication: Thrombosis / Pulmonary Embolism (血栓)
       biomarkers: []
@@ -1453,9 +1455,9 @@ regulations:
     - Blood Glucose
     - NIHSS
     - Platelet
-    summary: 適用於【Liver Cirrhosis、Hepatitis B / Hepatitis C、Stroke / Cerebrovascular
-      Accident】之健保給付。 主要條件包含：臨床檢驗需符合 INR > 1.3, Blood Pressure > 185mmHg, Blood Pressure
-      > 110mmHg。
+    summary: 適用於【Liver Cirrhosis、Hepatitis B / Hepatitis C、Gastrointestinal Bleeding
+      / Hemorrhage】之健保給付。 主要條件包含：臨床檢驗需符合 INR > 1.3, Blood Pressure > 185mmHg, Blood
+      Pressure > 110mmHg。
     clinical_rules:
     - indication: Liver Cirrhosis (肝硬化)
       biomarkers:
@@ -2515,7 +2517,7 @@ regulations:
     - Kawasaki Disease (川崎病)
     laboratory_criteria:
     - 血小板
-    summary: 規範【附表六 全民健康保險使用IntravenousImmuneGlobulin(IVIG)】之健保給付條件。
+    summary: 適用於【Kawasaki Disease】之健保給付。
     clinical_rules:
     - indication: 附表六 全民健康保險使用IntravenousImmuneGlobulin(IVIG)
       biomarkers: []
@@ -2593,8 +2595,9 @@ regulations:
     indications:
     - Acne / Scabies / Genital Warts / Actinic Keratosis (痤瘡)
     laboratory_criteria: []
-    summary: "規範【附表九之十三：全民健康保險使用抗癌藥品pazopanib申請表】之健保給付條件。 規範重點：病歷號碼： 茲證明本人\t\t\t\t\
-      \t年齡\t\t出生日期\t\t年\t\t月\t\t日 身分證號碼: 地址: 確認經由\t\t\t\t\t醫院\t\t\t\t\t醫師詳細告知服用 isotretinoin口服製劑之主要可能副作用和處置方式。"
+    summary: "適用於【Acne / Scabies / Genital Warts / Actinic Keratosis】之健保給付。 規範重點：病歷號碼：\
+      \ 茲證明本人\t\t\t\t\t年齡\t\t出生日期\t\t年\t\t月\t\t日 身分證號碼: 地址: 確認經由\t\t\t\t\t醫院\t\t\t\
+      \t\t醫師詳細告知服用 isotretinoin口服製劑之主要可能副作用和處置方式。"
     clinical_rules:
     - indication: 附表九之十三：全民健康保險使用抗癌藥品pazopanib申請表
       biomarkers: []
@@ -2638,7 +2641,7 @@ regulations:
     indications:
     - Rheumatoid Arthritis / Juvenile Idiopathic Arthritis (JIA) (類風濕性關節炎)
     laboratory_criteria: []
-    summary: 規範【附表十三：全民健康保險類風濕關節炎病患28處關節疾病活動度評估表】之健保給付條件。 規範重點：MCP關節：掌骨與指骨間的關節(MCP:Metacarpophalangeal)
+    summary: 適用於【Rheumatoid Arthritis / Juvenile Idiopathic Arthritis】之健保給付。 規範重點：MCP關節：掌骨與指骨間的關節(MCP:Metacarpophalangeal)
       PIP關節：近側的指骨間關節(PIP:ProximalInterphalangeal) 整體健康狀態評估：即在100mm圖像模擬量表中所呈現的整體健康狀態。
     clinical_rules:
     - indication: 附表十三：全民健康保險類風濕關節炎病患28處關節疾病活動度(DiseaseActivityScore,DAS28)評估表
@@ -2705,8 +2708,8 @@ regulations:
     indications:
     - Rheumatoid Arthritis / Juvenile Idiopathic Arthritis (JIA) (類風濕性關節炎)
     laboratory_criteria: []
-    summary: 規範【附表十六：全民健康保險活動性多關節幼年型慢性關節炎使用藥品申請表】之健保給付條件。 規範重點：申請醫師(簽名蓋章)： 內科專科醫師證書：內專醫字第號
-      風濕病專科醫師證書：中僂專醫字第號醫事機構章戳： 小兒科專科醫師證書：兒專醫字第號 小兒過敏免疫專科醫師證書:專醫字第號。
+    summary: 適用於【Rheumatoid Arthritis / Juvenile Idiopathic Arthritis】之健保給付。 規範重點：申請醫師(簽名蓋章)：
+      內科專科醫師證書：內專醫字第號 風濕病專科醫師證書：中僂專醫字第號醫事機構章戳： 小兒科專科醫師證書：兒專醫字第號 小兒過敏免疫專科醫師證書:專醫字第號。
     clinical_rules:
     - indication: 附表十六：全民健康保險活動性多關節幼年型慢性關節炎使用藥品申請表
       biomarkers: []
@@ -2775,7 +2778,7 @@ regulations:
     - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
     - Hemophilia (血友病)
     laboratory_criteria: []
-    summary: 適用於【Hemophilia】之健保給付。
+    summary: 適用於【Gastrointestinal Bleeding / Hemorrhage、Hemophilia】之健保給付。
     clinical_rules:
     - indication: Hemophilia (血友病)
       biomarkers: []
@@ -2820,7 +2823,7 @@ regulations:
     - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
     - Hemophilia (血友病)
     laboratory_criteria: []
-    summary: 適用於【Hemophilia】之健保給付。
+    summary: 適用於【Gastrointestinal Bleeding / Hemorrhage、Hemophilia】之健保給付。
     clinical_rules:
     - indication: Hemophilia (血友病)
       biomarkers: []
@@ -2897,7 +2900,7 @@ regulations:
     - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
     - Hemophilia (血友病)
     laboratory_criteria: []
-    summary: 適用於【Hemophilia】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Gastrointestinal Bleeding / Hemorrhage、Hemophilia】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Hemophilia (血友病)
       biomarkers: []
@@ -2951,9 +2954,10 @@ regulations:
     - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Hemophilia (血友病)
     laboratory_criteria: []
-    summary: '適用於【Hemophilia】之健保給付。 規範重點：病人本人至少需於3個月回診時由醫師填寫一次醫療評估追蹤紀錄表 基本資料: 姓名:
-      ________病歷號碼:__________年齡:______ 歲 體重: _______ 公斤 身高: ______ 公分 血友病: □A型 □B型
-      □其他______ 回診分類: □ 預防性注射4歲及以下之病人，每2至4週應至少回診一次。'
+    summary: '適用於【Gastrointestinal Bleeding / Hemorrhage、Disease / Ulcer / Bleeding
+      Prevention & Prophylaxis、Hemophilia】之健保給付。 規範重點：病人本人至少需於3個月回診時由醫師填寫一次醫療評估追蹤紀錄表
+      基本資料: 姓名: ________病歷號碼:__________年齡:______ 歲 體重: _______ 公斤 身高: ______ 公分 血友病:
+      □A型 □B型 □其他______ 回診分類: □ 預防性注射4歲及以下之病人，每2至4週應至少回診一次。'
     clinical_rules:
     - indication: Hemophilia (血友病)
       biomarkers: []
@@ -3003,7 +3007,7 @@ regulations:
     - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
     - Hemophilia (血友病)
     laboratory_criteria: []
-    summary: 適用於【Hemophilia】之健保給付。
+    summary: 適用於【Gastrointestinal Bleeding / Hemorrhage、Hemophilia】之健保給付。
     clinical_rules:
     - indication: Hemophilia (血友病)
       biomarkers: []
@@ -3049,7 +3053,7 @@ regulations:
     indications:
     - Sjögren's Syndrome (Xerostomia) (修格蘭氏症候群)
     laboratory_criteria: []
-    summary: 規範【附表十九全民健康保險使用Pilocarpinehydrochloride口服劑型治療後，】之健保給付條件。
+    summary: 適用於【Sjögren's Syndrome】之健保給付。
     clinical_rules:
     - indication: 附表十九全民健康保險使用Pilocarpinehydrochloride口服劑型治療後，
       biomarkers: []
@@ -3137,7 +3141,7 @@ regulations:
     indications:
     - Sjögren's Syndrome (Xerostomia) (修格蘭氏症候群)
     laboratory_criteria: []
-    summary: 規範【附表二十全民健康保險使用Cevimelinehydrochloride治療後，】之健保給付條件。
+    summary: 適用於【Sjögren's Syndrome】之健保給付。
     clinical_rules:
     - indication: 附表二十全民健康保險使用Cevimelinehydrochloride治療後，
       biomarkers: []
@@ -3350,7 +3354,8 @@ regulations:
     - Psoriasis / Psoriatic Arthritis (乾癬)
     - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     laboratory_criteria: []
-    summary: 適用於【Psoriasis / Psoriatic Arthritis】之健保給付。 規範重點：有78個可能疼痛及76個可能腫脹關節，應記錄其症狀；有症狀為1分，沒症狀為0分。
+    summary: 適用於【Psoriasis / Psoriatic Arthritis、Chronic / Breakthrough / Neuropathic
+      Pain】之健保給付。 規範重點：有78個可能疼痛及76個可能腫脹關節，應記錄其症狀；有症狀為1分，沒症狀為0分。
     clinical_rules:
     - indication: Psoriasis / Psoriatic Arthritis (乾癬)
       biomarkers: []
@@ -3605,8 +3610,8 @@ regulations:
     - Palmoplantar Pustulosis (PPP) / Leprosy ENL (掌蹠膿皰症)
     laboratory_criteria:
     - PASI
-    summary: 規範【附表二十四之五：掌蹠膿皰症面積暨嚴重度指數【Palmoplantar Pustulosis Area Severity Index
-      (PPPASI)】】之健保給付條件。 主要條件包含：臨床檢驗需符合 PASI = 0.2Score。
+    summary: 適用於【Spasticity / ALS / Spinal Muscular Atrophy、Palmoplantar Pustulosis】之健保給付。
+      主要條件包含：臨床檢驗需符合 PASI = 0.2Score。
     clinical_rules:
     - indication: 附表二十四之五：掌蹠膿皰症面積暨嚴重度指數【Palmoplantar Pustulosis Area Severity Index
         (PPPASI)】
@@ -3744,7 +3749,7 @@ regulations:
     indications:
     - Paroxysmal Nocturnal Hemoglobinuria (PNH) (陣發性夜間血紅素尿症)
     laboratory_criteria: []
-    summary: 規範【附表三十之二 陣發性夜間血紅素尿症患者特殊專案審查申請Soliris(eculizumab)、Ultomiris(ravulizumab)、Piasky(crovalimab)用藥檢附資料查檢表】之健保給付條件。
+    summary: 適用於【Paroxysmal Nocturnal Hemoglobinuria】之健保給付。
     clinical_rules:
     - indication: 附表三十之二 陣發性夜間血紅素尿症患者特殊專案審查申請Soliris(eculizumab)、Ultomiris(ravulizumab)、Piasky(crovalimab)用藥檢附資料查檢表
       biomarkers: []
@@ -3778,8 +3783,7 @@ regulations:
     indications:
     - Paroxysmal Nocturnal Hemoglobinuria (PNH) (陣發性夜間血紅素尿症)
     laboratory_criteria: []
-    summary: 規範【附表三十之四 陣發性夜間血紅素尿症患者第二線治療藥品特殊專案審查申請Voydeya(Danicopan)+Soliris(eculizumab)/Ultomiris(ravulizumab)
-      或Fabhalta (iptacopan)用藥檢附資料查檢表】之健保給付條件。
+    summary: 適用於【Paroxysmal Nocturnal Hemoglobinuria】之健保給付。
     clinical_rules:
     - indication: 附表三十之四 陣發性夜間血紅素尿症患者第二線治療藥品特殊專案審查申請Voydeya(Danicopan)+Soliris(eculizumab)/Ultomiris(ravulizumab)
         或Fabhalta (iptacopan)用藥檢附資料查檢表
@@ -3990,7 +3994,7 @@ regulations:
     - Hereditary Angioedema (HAE) (遺傳性血管性水腫)
     - COVID-19 / Influenza (新型冠狀病毒)
     laboratory_criteria: []
-    summary: 規範【附表三十三 全民健康保險遺傳性血管性水腫患者使用Icatibant/Human C1 esterase inhibitor治療紀錄表】之健保給付條件。
+    summary: 適用於【Hereditary Angioedema、COVID-19 / Influenza】之健保給付。
     clinical_rules:
     - indication: 附表三十三 全民健康保險遺傳性血管性水腫患者使用Icatibant/Human C1 esterase inhibitor治療紀錄表
       biomarkers: []
@@ -4067,7 +4071,8 @@ regulations:
     - Stroke / Cerebrovascular Accident (腦中風)
     - Spasticity / ALS / Spinal Muscular Atrophy (SMA) (痙攣)
     laboratory_criteria: []
-    summary: 適用於【Stroke / Cerebrovascular Accident】之健保給付。 規範重點：肉毒桿菌素再次申請治療效果評估表 姓名                           病歷號碼                                       一年施打總劑量：
+    summary: 適用於【Stroke / Cerebrovascular Accident、Spasticity / ALS / Spinal Muscular
+      Atrophy】之健保給付。 規範重點：肉毒桿菌素再次申請治療效果評估表 姓名                           病歷號碼                                       一年施打總劑量：
       手臂      units, 下肢       units 注射部位 □左側 □右側 □上肢 □下肢    注射藥物 □ Botox   □ Dysport。
     clinical_rules:
     - indication: Stroke / Cerebrovascular Accident (腦中風)
@@ -4176,7 +4181,8 @@ regulations:
     - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
       Porphyria) (黏多醣症)
     laboratory_criteria: []
-    summary: 規範【附表三十六之二SELENA SLEDAI積分表】之健保給付條件。
+    summary: 適用於【Spasticity / ALS / Spinal Muscular Atrophy、Rare Metabolic & Lysosomal
+      Storage Diseases】之健保給付。
     clinical_rules:
     - indication: 附表三十六之二SELENA SLEDAI積分表
       biomarkers: []

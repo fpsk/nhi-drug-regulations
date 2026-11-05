@@ -78,7 +78,8 @@ regulations:
     - Kawasaki Disease (川崎病)
     laboratory_criteria:
     - 血小板
-    summary: 適用於【Immune Thrombocytopenia】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Gastrointestinal Bleeding / Hemorrhage、Disease / Ulcer / Bleeding
+      Prevention & Prophylaxis、Immune Thrombocytopenia】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Immune Thrombocytopenia (ITP) (特發性血小板減少性紫斑症)
       biomarkers: []
@@ -151,7 +152,8 @@ regulations:
     - Anemia (貧血)
     - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria: []
-    summary: 適用於【Anemia】之健保給付。 規範重點：1.限符合下列適應症病患檢附病歷摘要（註明診斷、相關檢查報告及數據、體重、年齡、性別、病史)
+    summary: 適用於【Disease / Ulcer / Bleeding Prevention & Prophylaxis、Anemia、Organ
+      / Stem Cell Transplantation】之健保給付。 規範重點：1.限符合下列適應症病患檢附病歷摘要（註明診斷、相關檢查報告及數據、體重、年齡、性別、病史)
       (1)嚴重再生不良性貧血經傳統方法治療無效且不適合作骨髓移植之病例。
     clinical_rules:
     - indication: Anemia (貧血)
@@ -196,7 +198,7 @@ regulations:
     indications:
     - COVID-19 / Influenza (新型冠狀病毒)
     laboratory_criteria: []
-    summary: 規範【. 人用狂犬病疫苗及免疫球蛋白(如Rabipur)：】之健保給付條件。 規範重點：1.本類藥品使用於遭疑似狂犬病或麗沙病毒感染動物咬傷暴露後之接種，其使用對象及使用方式應依衛生福利部疾病管制署最新版「疑似狂犬病或麗沙病毒感染動物抓咬傷臨床處置指引」之接種建議辦理(請參閱疾病管制署狂犬病專區網頁http://www.cdc.gov.tw)。
+    summary: 適用於【COVID-19 / Influenza】之健保給付。 規範重點：1.本類藥品使用於遭疑似狂犬病或麗沙病毒感染動物咬傷暴露後之接種，其使用對象及使用方式應依衛生福利部疾病管制署最新版「疑似狂犬病或麗沙病毒感染動物抓咬傷臨床處置指引」之接種建議辦理(請參閱疾病管制署狂犬病專區網頁http://www.cdc.gov.tw)。
     clinical_rules:
     - indication: 8.1.5. 人用狂犬病疫苗及免疫球蛋白(如Rabipur)：(103/1/1、103/5/1、106/3/1)
       biomarkers: []
@@ -229,7 +231,7 @@ regulations:
     indications:
     - COVID-19 / Influenza (新型冠狀病毒)
     laboratory_criteria: []
-    summary: 規範【. 破傷風類毒素Tetanus toxoid：】之健保給付條件。
+    summary: 適用於【COVID-19 / Influenza】之健保給付。
     clinical_rules:
     - indication: 8.1.6. 破傷風類毒素Tetanus toxoid：(112/11/12)
       biomarkers: []
@@ -267,7 +269,8 @@ regulations:
     - Organ / Stem Cell Transplantation (腎臟移植)
     - Macular Degeneration (AMD / DME) / Retinopathy / Uveitis (黃斑部病變)
     laboratory_criteria: []
-    summary: 適用於【Atopic Dermatitis、Psoriasis / Psoriatic Arthritis、Rheumatoid Arthritis】之健保給付。
+    summary: 適用於【Atopic Dermatitis、Psoriasis / Psoriatic Arthritis、Rheumatoid Arthritis
+      / Juvenile Idiopathic Arthritis】之健保給付。
     clinical_rules:
     - indication: Atopic Dermatitis (異位性皮膚炎)
       biomarkers: []
@@ -331,7 +334,7 @@ regulations:
     indications:
     - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria: []
-    summary: 規範【. Tacrolimus持續性口服製劑：】之健保給付條件。
+    summary: 適用於【Organ / Stem Cell Transplantation】之健保給付。
     clinical_rules:
     - indication: 8.2.2.1. Tacrolimus持續性口服製劑：(98/8/1)
       biomarkers: []
@@ -366,7 +369,7 @@ regulations:
     indications:
     - Organ / Stem Cell Transplantation (腎臟移植)
     laboratory_criteria: []
-    summary: 規範【. Tacrolimus 注射劑及其他非持續性口服製劑：】之健保給付條件。 規範重點：1.肝臟及腎臟移植之第一線用藥或肝腎移植cyclosporin無效之第二線用藥。
+    summary: 適用於【Organ / Stem Cell Transplantation】之健保給付。 規範重點：1.肝臟及腎臟移植之第一線用藥或肝腎移植cyclosporin無效之第二線用藥。
     clinical_rules:
     - indication: 8.2.2.2. Tacrolimus 注射劑及其他非持續性口服製劑： (88/8/1、93/12/1、102/7/1)
       biomarkers: []
@@ -416,8 +419,8 @@ regulations:
     laboratory_criteria:
     - EDSS
     - AQP4/NMO
-    summary: 適用於【Multiple Sclerosis】之健保給付。 主要條件包含：臨床檢驗需符合 EDSS > 5.5Score, AQP4/NMO
-      = 陽性；使用前須經事前審查核准。
+    summary: 適用於【Multiple Sclerosis、Neuromyelitis Optica Spectrum Disorder】之健保給付。
+      主要條件包含：臨床檢驗需符合 EDSS > 5.5Score, AQP4/NMO = 陽性；使用前須經事前審查核准。
     clinical_rules:
     - indication: Multiple Sclerosis (多發性硬化症)
       biomarkers:
@@ -521,7 +524,8 @@ regulations:
     - Neuromyelitis Optica Spectrum Disorder (NMOSD) (泛視神經脊髓炎)
     laboratory_criteria:
     - AQP4/NMO
-    summary: 適用於【Multiple Sclerosis】之健保給付。 主要條件包含：臨床檢驗需符合 AQP4/NMO = 陽性。
+    summary: 適用於【Multiple Sclerosis、Neuromyelitis Optica Spectrum Disorder】之健保給付。
+      主要條件包含：臨床檢驗需符合 AQP4/NMO = 陽性。
     clinical_rules:
     - indication: Multiple Sclerosis (多發性硬化症)
       biomarkers:
@@ -634,7 +638,8 @@ regulations:
     - Multiple Sclerosis (多發性硬化症)
     - Neuromyelitis Optica Spectrum Disorder (NMOSD) (泛視神經脊髓炎)
     laboratory_criteria: []
-    summary: 適用於【Multiple Sclerosis】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Multiple Sclerosis、Neuromyelitis Optica Spectrum Disorder】之健保給付。
+      主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Multiple Sclerosis (多發性硬化症)
       biomarkers: []
@@ -689,8 +694,8 @@ regulations:
     laboratory_criteria:
     - EDSS
     - AQP4/NMO
-    summary: 適用於【Multiple Sclerosis】之健保給付。 主要條件包含：臨床檢驗需符合 EDSS > 5.5Score, AQP4/NMO
-      = 陽性；使用前須經事前審查核准。
+    summary: 適用於【Multiple Sclerosis、Neuromyelitis Optica Spectrum Disorder】之健保給付。
+      主要條件包含：臨床檢驗需符合 EDSS > 5.5Score, AQP4/NMO = 陽性；使用前須經事前審查核准。
     clinical_rules:
     - indication: Multiple Sclerosis (多發性硬化症)
       biomarkers:
@@ -791,8 +796,8 @@ regulations:
     laboratory_criteria:
     - EDSS
     - AQP4/NMO
-    summary: 適用於【Multiple Sclerosis】之健保給付。 主要條件包含：臨床檢驗需符合 EDSS > 5.5Score, AQP4/NMO
-      = 陽性；使用前須經事前審查核准。
+    summary: 適用於【Multiple Sclerosis、Neuromyelitis Optica Spectrum Disorder】之健保給付。
+      主要條件包含：臨床檢驗需符合 EDSS > 5.5Score, AQP4/NMO = 陽性；使用前須經事前審查核准。
     clinical_rules:
     - indication: Multiple Sclerosis (多發性硬化症)
       biomarkers:
@@ -1137,7 +1142,7 @@ regulations:
     - Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
     - Tuberculosis (TB) (結核病)
     laboratory_criteria: []
-    summary: 適用於【Hepatitis B / Hepatitis C】之健保給付。 規範重點：使用本類藥品之醫事機構應注意監測病患用藥後之不良反應及可能發生的重大安全事件(如肺結核及病毒性肝炎)。
+    summary: 適用於【Hepatitis B / Hepatitis C、Tuberculosis】之健保給付。 規範重點：使用本類藥品之醫事機構應注意監測病患用藥後之不良反應及可能發生的重大安全事件(如肺結核及病毒性肝炎)。
     clinical_rules:
     - indication: Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
       biomarkers: []
@@ -1183,7 +1188,8 @@ regulations:
     - Tuberculosis (TB) (結核病)
     - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     laboratory_criteria: []
-    summary: 適用於【Rheumatoid Arthritis】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Rheumatoid Arthritis / Juvenile Idiopathic Arthritis、UTI / Intra-abdominal
+      Infection / Sepsis / Bacterial Infection、Tuberculosis】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Rheumatoid Arthritis (類風濕性關節炎)
       biomarkers: []
@@ -1351,13 +1357,16 @@ regulations:
     - Sulfasalazine
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Rheumatoid Arthritis / Juvenile Idiopathic Arthritis (JIA) (類風濕性關節炎)
     - Multiple Sclerosis (多發性硬化症)
     - Tuberculosis (TB) (結核病)
     - Acne / Scabies / Genital Warts / Actinic Keratosis (痤瘡)
     laboratory_criteria:
     - DAS28
-    summary: 適用於【Multiple Sclerosis】之健保給付。 主要條件包含：臨床檢驗需符合 DAS28 = 0.56Score；使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Rheumatoid
+      Arthritis / Juvenile Idiopathic Arthritis、Multiple Sclerosis】之健保給付。 主要條件包含：臨床檢驗需符合
+      DAS28 = 0.56Score；使用前須經事前審查核准。
     clinical_rules:
     - indication: Multiple Sclerosis (多發性硬化症)
       biomarkers:
@@ -1586,6 +1595,7 @@ regulations:
     - Sulfasalazine
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Ankylosing Spondylitis (僵直性脊椎炎)
     - Thrombosis / Pulmonary Embolism (血栓)
     - Multiple Sclerosis (多發性硬化症)
@@ -1595,8 +1605,9 @@ regulations:
     - BASDAI
     - CRP
     - ESR
-    summary: 適用於【Ankylosing Spondylitis、Thrombosis / Pulmonary Embolism、Multiple Sclerosis】之健保給付。
-      主要條件包含：臨床檢驗需符合 BASDAI >= 6Score, CRP > 1mg/dL, ESR > 28mm/hr；使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Ankylosing
+      Spondylitis、Thrombosis / Pulmonary Embolism】之健保給付。 主要條件包含：臨床檢驗需符合 BASDAI >=
+      6Score, CRP > 1mg/dL, ESR > 28mm/hr；使用前須經事前審查核准。
     clinical_rules:
     - indication: Ankylosing Spondylitis (僵直性脊椎炎)
       biomarkers:
@@ -1946,13 +1957,15 @@ regulations:
     - Sulfasalazine
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Psoriasis / Psoriatic Arthritis (乾癬)
     - Multiple Sclerosis (多發性硬化症)
     - Tuberculosis (TB) (結核病)
     - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     - Acne / Scabies / Genital Warts / Actinic Keratosis (痤瘡)
     laboratory_criteria: []
-    summary: 適用於【Psoriasis / Psoriatic Arthritis、Multiple Sclerosis】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Psoriasis
+      / Psoriatic Arthritis、Multiple Sclerosis】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Psoriasis / Psoriatic Arthritis (乾癬)
       biomarkers: []
@@ -2145,6 +2158,7 @@ regulations:
     - Upadacitinib (如 Rinvoq)
   conditions_of_payment:
     indications:
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Psoriasis / Psoriatic Arthritis (乾癬)
     - Multiple Sclerosis (多發性硬化症)
     - Tuberculosis (TB) (結核病)
@@ -2153,8 +2167,9 @@ regulations:
     - BASDAI
     - CRP
     - ESR
-    summary: 適用於【Psoriasis / Psoriatic Arthritis、Multiple Sclerosis】之健保給付。 主要條件包含：臨床檢驗需符合
-      BASDAI >= 6Score, CRP > 1mg/dL, ESR > 28mm/hr；使用前須經事前審查核准。
+    summary: 適用於【Metastatic / Locally Advanced / Unresectable / Recurrent、Psoriasis
+      / Psoriatic Arthritis、Multiple Sclerosis】之健保給付。 主要條件包含：臨床檢驗需符合 BASDAI >= 6Score,
+      CRP > 1mg/dL, ESR > 28mm/hr；使用前須經事前審查核准。
     clinical_rules:
     - indication: Psoriasis / Psoriatic Arthritis (乾癬)
       biomarkers:
@@ -3254,6 +3269,7 @@ regulations:
   conditions_of_payment:
     indications:
     - Crohn's Disease (CD) (克隆氏症)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Thrombosis / Pulmonary Embolism (血栓)
     - Multiple Sclerosis (多發性硬化症)
     - Tuberculosis (TB) (結核病)
@@ -3261,8 +3277,9 @@ regulations:
     laboratory_criteria:
     - 白血球
     - CDAI
-    summary: 適用於【Crohn's Disease、Thrombosis / Pulmonary Embolism、Multiple Sclerosis】之健保給付。
-      主要條件包含：臨床檢驗需符合 CDAI >= 300Score, CDAI >= 100Score, CDAI >= 100Score；使用前須經事前審查核准。
+    summary: 適用於【Crohn's Disease、Metastatic / Locally Advanced / Unresectable / Recurrent、Thrombosis
+      / Pulmonary Embolism】之健保給付。 主要條件包含：臨床檢驗需符合 CDAI >= 300Score, CDAI >= 100Score,
+      CDAI >= 100Score；使用前須經事前審查核准。
     clinical_rules:
     - indication: Crohn's Disease (CD) (克隆氏症)
       biomarkers:
@@ -3739,14 +3756,15 @@ regulations:
   conditions_of_payment:
     indications:
     - Crohn's Disease (CD) (克隆氏症)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
     - Multiple Sclerosis (多發性硬化症)
     - Tuberculosis (TB) (結核病)
     - Acne / Scabies / Genital Warts / Actinic Keratosis (痤瘡)
     laboratory_criteria:
     - 白血球
     - CDAI
-    summary: 適用於【Crohn's Disease、Multiple Sclerosis】之健保給付。 主要條件包含：臨床檢驗需符合 CDAI > 30Score,
-      CDAI < 10Score；使用前須經事前審查核准。
+    summary: 適用於【Crohn's Disease、Metastatic / Locally Advanced / Unresectable / Recurrent、Multiple
+      Sclerosis】之健保給付。 主要條件包含：臨床檢驗需符合 CDAI > 30Score, CDAI < 10Score；使用前須經事前審查核准。
     clinical_rules:
     - indication: Crohn's Disease (CD) (克隆氏症)
       biomarkers:
@@ -3930,7 +3948,8 @@ regulations:
     - UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection (泌尿道感染)
     - Tuberculosis (TB) (結核病)
     laboratory_criteria: []
-    summary: 規範【. Abatacept靜脈注射劑（如Orencia IV）：用於幼年型慢性關節炎治療部分】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Rheumatoid Arthritis / Juvenile Idiopathic Arthritis、UTI / Intra-abdominal
+      Infection / Sepsis / Bacterial Infection、Tuberculosis】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 8.2.4.8. Abatacept靜脈注射劑（如Orencia IV）（101/10/1、102/1/1、104/8/1、108/1/1、111/2/1）：用於幼年型慢性關節炎治療部分
       biomarkers: []
@@ -4054,7 +4073,8 @@ regulations:
     indications:
     - Ulcerative Colitis (UC) (潰瘍性結腸炎)
     - Gastrointestinal Bleeding / Hemorrhage (消化道出血)
-    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (典型何杰金氏淋巴瘤)
     - Thrombosis / Pulmonary Embolism (血栓)
     - Multiple Sclerosis (多發性硬化症)
     - Clostridioides difficile Infection / Pseudomembranous Colitis (困難梭狀桿菌)
@@ -4064,8 +4084,9 @@ regulations:
     laboratory_criteria:
     - 白血球
     - Mayo
-    summary: 適用於【Ulcerative Colitis、Lymphoma、Thrombosis / Pulmonary Embolism】之健保給付。
-      主要條件包含：臨床檢驗需符合 Mayo >= 9Score, Mayo <= 6Score, Mayo <= 6Score；使用前須經事前審查核准。
+    summary: 適用於【Ulcerative Colitis、Gastrointestinal Bleeding / Hemorrhage、Metastatic
+      / Locally Advanced / Unresectable / Recurrent】之健保給付。 主要條件包含：臨床檢驗需符合 Mayo >=
+      9Score, Mayo <= 6Score, Mayo <= 6Score；使用前須經事前審查核准。
     clinical_rules:
     - indication: Ulcerative Colitis (UC) (潰瘍性結腸炎)
       biomarkers:
@@ -4475,7 +4496,8 @@ regulations:
   conditions_of_payment:
     indications:
     - Ulcerative Colitis (UC) (潰瘍性結腸炎)
-    - Lymphoma (NHL / DLBCL / PTCL / HL) (淋巴瘤)
+    - Metastatic / Locally Advanced / Unresectable / Recurrent (轉移性)
+    - Lymphoma (NHL / DLBCL / PTCL / HL) (典型何杰金氏淋巴瘤)
     - Multiple Sclerosis (多發性硬化症)
     - Clostridioides difficile Infection / Pseudomembranous Colitis (困難梭狀桿菌)
     - Herpes Simplex / Herpes Zoster / CMV Infection (疱疹)
@@ -4483,7 +4505,8 @@ regulations:
     - Acne / Scabies / Genital Warts / Actinic Keratosis (痤瘡)
     laboratory_criteria:
     - 白血球
-    summary: 適用於【Ulcerative Colitis、Lymphoma、Multiple Sclerosis】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Ulcerative Colitis、Metastatic / Locally Advanced / Unresectable /
+      Recurrent、Lymphoma】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Ulcerative Colitis (UC) (潰瘍性結腸炎)
       biomarkers: []
@@ -4612,7 +4635,8 @@ regulations:
     - Tuberculosis (TB) (結核病)
     - Macular Degeneration (AMD / DME) / Retinopathy / Uveitis (黃斑部病變)
     laboratory_criteria: []
-    summary: 規範【. Adalimumab（如Humira） 用於小兒葡萄膜炎治療部分】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【UTI / Intra-abdominal Infection / Sepsis / Bacterial Infection、Tuberculosis、Macular
+      Degeneration】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 8.2.4.10. Adalimumab（如Humira）(109/9/1) 用於小兒葡萄膜炎治療部分
       biomarkers: []
@@ -4709,7 +4733,8 @@ regulations:
     - Palmoplantar Pustulosis (PPP) / Leprosy ENL (掌蹠膿皰症)
     laboratory_criteria:
     - PASI
-    summary: 適用於【Hepatitis B / Hepatitis C】之健保給付。 主要條件包含：臨床檢驗需符合 PASI < 12Score；使用前須經事前審查核准。
+    summary: 適用於【Hepatitis B / Hepatitis C、UTI / Intra-abdominal Infection / Sepsis
+      / Bacterial Infection、Tuberculosis】之健保給付。 主要條件包含：臨床檢驗需符合 PASI < 12Score；使用前須經事前審查核准。
     clinical_rules:
     - indication: Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
       biomarkers:
@@ -4844,8 +4869,8 @@ regulations:
     - COVID-19 / Influenza (新型冠狀病毒)
     laboratory_criteria:
     - SpO2
-    summary: 規範【. Tocilizumab(如Actemra)：】之健保給付條件。 主要條件包含：臨床檢驗需符合 SpO2 <= 94%, SpO2
-      <= 94%。
+    summary: 適用於【Pneumonia / Respiratory & ENT Infection、COVID-19 / Influenza】之健保給付。
+      主要條件包含：臨床檢驗需符合 SpO2 <= 94%, SpO2 <= 94%。
     clinical_rules:
     - indication: 8.2.4.12. Tocilizumab(如Actemra)：(113/1/1)
       biomarkers:
@@ -4941,7 +4966,7 @@ regulations:
     - COVID-19 / Influenza (新型冠狀病毒)
     laboratory_criteria:
     - SpO2
-    summary: 規範【. Baricitinib (Olumiant)：】之健保給付條件。 主要條件包含：臨床檢驗需符合 SpO2 <= 94%。
+    summary: 適用於【COVID-19 / Influenza】之健保給付。 主要條件包含：臨床檢驗需符合 SpO2 <= 94%。
     clinical_rules:
     - indication: 8.2.4.13. Baricitinib (Olumiant)：(113/1/1)
       biomarkers:
@@ -5016,7 +5041,7 @@ regulations:
     - Hidradenitis Suppurativa (化膿性汗腺炎)
     - Tuberculosis (TB) (結核病)
     laboratory_criteria: []
-    summary: 適用於【Hidradenitis Suppurativa】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Hidradenitis Suppurativa、Tuberculosis】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Hidradenitis Suppurativa (化膿性汗腺炎)
       biomarkers: []
@@ -5105,7 +5130,8 @@ regulations:
     - Psoriasis / Psoriatic Arthritis (乾癬)
     - Rheumatoid Arthritis / Juvenile Idiopathic Arthritis (JIA) (類風濕性關節炎)
     laboratory_criteria: []
-    summary: 適用於【Psoriasis / Psoriatic Arthritis、Rheumatoid Arthritis】之健保給付。 規範重點：1.限治療成人類風濕性關節炎，且用於methotrexate治療無效，或無法忍受methotrexate副作用時使用。
+    summary: 適用於【Psoriasis / Psoriatic Arthritis、Rheumatoid Arthritis / Juvenile Idiopathic
+      Arthritis】之健保給付。 規範重點：1.限治療成人類風濕性關節炎，且用於methotrexate治療無效，或無法忍受methotrexate副作用時使用。
     clinical_rules:
     - indication: Psoriasis / Psoriatic Arthritis (乾癬)
       biomarkers: []
@@ -5163,8 +5189,8 @@ regulations:
     - HBV DNA
     - Anti-HCV
     - HCV RNA
-    summary: 適用於【Hepatitis B / Hepatitis C、Hemophilia】之健保給付。 主要條件包含：臨床檢驗需符合 HBV DNA
-      >= 20000IU/mL, HBV DNA >= 2000IU/mL, Anti-HCV = 陽性。
+    summary: 適用於【Hepatitis B / Hepatitis C、Hemophilia、HIV / AIDS】之健保給付。 主要條件包含：臨床檢驗需符合
+      HBV DNA >= 20000IU/mL, HBV DNA >= 2000IU/mL, Anti-HCV = 陽性。
     clinical_rules:
     - indication: Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
       biomarkers:
@@ -5534,8 +5560,8 @@ regulations:
     laboratory_criteria:
     - Anti-HCV
     - HCV RNA
-    summary: 適用於【Hepatitis B / Hepatitis C、Hemophilia】之健保給付。 主要條件包含：臨床檢驗需符合 Anti-HCV
-      = 陽性, HCV RNA = 陽性。
+    summary: 適用於【Hepatitis B / Hepatitis C、Hemophilia、HIV / AIDS】之健保給付。 主要條件包含：臨床檢驗需符合
+      Anti-HCV = 陽性, HCV RNA = 陽性。
     clinical_rules:
     - indication: Hepatitis B / Hepatitis C (HBV DNA / HCV RNA) (肝炎)
       biomarkers:
@@ -5694,7 +5720,8 @@ regulations:
     - Heart Failure (心臟衰竭)
     - Tuberculosis (TB) (結核病)
     laboratory_criteria: []
-    summary: 適用於【Rheumatoid Arthritis】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Rheumatoid Arthritis / Juvenile Idiopathic Arthritis、Heart Failure、Tuberculosis】之健保給付。
+      主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Rheumatoid Arthritis (類風濕性關節炎)
       biomarkers: []
@@ -5840,7 +5867,8 @@ regulations:
     - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Palmoplantar Pustulosis (PPP) / Leprosy ENL (掌蹠膿皰症)
     laboratory_criteria: []
-    summary: 規範【. Thalidomide（如Thado）】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Disease / Ulcer / Bleeding Prevention & Prophylaxis、Palmoplantar
+      Pustulosis】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 8.2.9. Thalidomide（如Thado）(100/2/1)
       biomarkers: []
@@ -5890,7 +5918,7 @@ regulations:
     laboratory_criteria:
     - 白血球
     - 血小板
-    summary: 適用於【Thrombosis / Pulmonary Embolism、Anemia】之健保給付。
+    summary: 適用於【Gastrointestinal Bleeding / Hemorrhage、Thrombosis / Pulmonary Embolism、Anemia】之健保給付。
     clinical_rules:
     - indication: Thrombosis / Pulmonary Embolism (血栓)
       biomarkers: []
@@ -6002,7 +6030,8 @@ regulations:
     laboratory_criteria:
     - CRP
     - ESR
-    summary: 適用於【Chronic Urticaria】之健保給付。 主要條件包含：臨床檢驗需符合 CRP <= 1mg/dL, ESR <= 25mm/hr；使用前須經事前審查核准。
+    summary: 適用於【Chronic Urticaria、Macular Degeneration】之健保給付。 主要條件包含：臨床檢驗需符合 CRP
+      <= 1mg/dL, ESR <= 25mm/hr；使用前須經事前審查核准。
     clinical_rules:
     - indication: Chronic Urticaria (蕁麻疹)
       biomarkers:
@@ -6257,8 +6286,8 @@ regulations:
     - Neuromyelitis Optica Spectrum Disorder (NMOSD) (泛視神經脊髓炎)
     laboratory_criteria:
     - EDSS
-    summary: 規範【. Satralizumab(如Enspryng)、inebilizumab(如Uplizna)：】之健保給付條件。 主要條件包含：臨床檢驗需符合
-      EDSS > 0Score, EDSS >= 8分；使用前須經事前審查核准。
+    summary: 適用於【Neuromyelitis Optica Spectrum Disorder】之健保給付。 主要條件包含：臨床檢驗需符合 EDSS
+      > 0Score, EDSS >= 8分；使用前須經事前審查核准。
     clinical_rules:
     - indication: 8.2.14. Satralizumab(如Enspryng)、inebilizumab(如Uplizna)：(112/10/1、115/1/1、115/2/1)
       biomarkers:
@@ -6396,7 +6425,8 @@ regulations:
     - eGFR
     - 血小板
     - ECOG
-    summary: 適用於【Anemia、Immune Thrombocytopenia】之健保給付。 主要條件包含：臨床檢驗需符合 ECOG <= 2Score；使用前須經事前審查核准。
+    summary: 適用於【Anemia、Immune Thrombocytopenia、Pneumonia / Respiratory & ENT Infection】之健保給付。
+      主要條件包含：臨床檢驗需符合 ECOG <= 2Score；使用前須經事前審查核准。
     clinical_rules:
     - indication: Anemia (貧血)
       biomarkers:
@@ -7650,7 +7680,7 @@ regulations:
     laboratory_criteria:
     - 白血球
     - 血小板
-    summary: 適用於【Anemia】之健保給付。 規範重點：限用於經衛生福利部國民健康署認定之陣發性夜間血紅素尿症病人，並經特殊專案審查核准後使用，且符合下列條件：(115/3/1、115/9/1)
+    summary: 適用於【Anemia、Paroxysmal Nocturnal Hemoglobinuria】之健保給付。 規範重點：限用於經衛生福利部國民健康署認定之陣發性夜間血紅素尿症病人，並經特殊專案審查核准後使用，且符合下列條件：(115/3/1、115/9/1)
       (1)Danicopan限與eculizumab或ravulizumab併用；iptacopan限單用。
     clinical_rules:
     - indication: Anemia (貧血)

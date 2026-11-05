@@ -81,8 +81,8 @@ regulations:
     - Pneumonia / Respiratory & ENT Infection (肺炎)
     - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     laboratory_criteria: []
-    summary: 規範【. 非類固醇抗發炎劑 (NSAIDs) 之注射劑：】之健保給付條件。 規範重點：1.非類固醇抗發炎劑 (NSAIDs) 之注射劑（ketorolac成分之注射劑除外）：
-      (1)限不能口服，且不能使用肛門栓劑之病患使用。
+    summary: 適用於【Pneumonia / Respiratory & ENT Infection、Chronic / Breakthrough /
+      Neuropathic Pain】之健保給付。 規範重點：1.非類固醇抗發炎劑 (NSAIDs) 之注射劑（ketorolac成分之注射劑除外）： (1)限不能口服，且不能使用肛門栓劑之病患使用。
     clinical_rules:
     - indication: 1.1.2. 非類固醇抗發炎劑 (NSAIDs) 之注射劑：(88/12/1、97/7/1)
       biomarkers: []
@@ -123,7 +123,7 @@ regulations:
     indications:
     - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     laboratory_criteria: []
-    summary: 規範【. Tramadol】之健保給付條件。
+    summary: 適用於【Chronic / Breakthrough / Neuropathic Pain】之健保給付。
     clinical_rules:
     - indication: 1.1.3. Tramadol (87/4/1)
       biomarkers: []
@@ -161,7 +161,7 @@ regulations:
     indications:
     - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     laboratory_criteria: []
-    summary: 規範【. Tramadol HCl＋acetaminophen (如Ultracet Tablets)】之健保給付條件。 規範重點：限用於中度至嚴重性疼痛之病人，需符合下述條件：
+    summary: 適用於【Chronic / Breakthrough / Neuropathic Pain】之健保給付。 規範重點：限用於中度至嚴重性疼痛之病人，需符合下述條件：
       1.經其他止痛藥、或非類固醇抗發炎藥物（NSAIDs）治療後仍無法控制疼痛或有嚴重副作用者。
     clinical_rules:
     - indication: 1.1.4. Tramadol HCl＋acetaminophen (如Ultracet Tablets) (93/7/1、95/5/1)
@@ -225,8 +225,8 @@ regulations:
     - Stroke / Cerebrovascular Accident (腦中風)
     - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     laboratory_criteria: []
-    summary: 適用於【Liver Cirrhosis、Peptic Ulcer Disease、Psoriasis / Psoriatic Arthritis】之健保給付。
-      規範重點：1.本類製劑之使用需符合下列條件之一者(99/10/1、111/7/1)： (1)骨關節炎病患。
+    summary: 適用於【Liver Cirrhosis、Peptic Ulcer Disease、Gastrointestinal Bleeding /
+      Hemorrhage】之健保給付。 規範重點：1.本類製劑之使用需符合下列條件之一者(99/10/1、111/7/1)： (1)骨關節炎病患。
     clinical_rules:
     - indication: Liver Cirrhosis (肝硬化)
       biomarkers: []
@@ -322,8 +322,8 @@ regulations:
     - Herpes Simplex / Herpes Zoster / CMV Infection (疱疹)
     - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     laboratory_criteria: []
-    summary: 規範【. Gabapentin、lidocaine貼片劑】之健保給付條件。 規範重點：限使用於帶狀疱疹皮膚病灶後神經痛，並符合下列條件：
-      1.使用其他止痛劑或非類固醇抗發炎劑（NSAIDs）藥品治療後仍無法控制疼痛或有嚴重副作用者。
+    summary: 適用於【Herpes Simplex / Herpes Zoster / CMV Infection、Chronic / Breakthrough
+      / Neuropathic Pain】之健保給付。 規範重點：限使用於帶狀疱疹皮膚病灶後神經痛，並符合下列條件： 1.使用其他止痛劑或非類固醇抗發炎劑（NSAIDs）藥品治療後仍無法控制疼痛或有嚴重副作用者。
     clinical_rules:
     - indication: 1.1.6. Gabapentin、lidocaine貼片劑（97/12/1、98/4/1、98/9/1、101/2/1、101/5/1、102/2/1、110/5/1）
       biomarkers: []
@@ -374,7 +374,8 @@ regulations:
     - Herpes Simplex / Herpes Zoster / CMV Infection (疱疹)
     - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     laboratory_criteria: []
-    summary: 適用於【Diabetes Mellitus】之健保給付。 規範重點：1.使用於帶狀疱疹皮膚病灶後神經痛，並符合下列條件： (1)經使用其他止痛劑或非類固醇抗發炎劑（NSAIDs）藥品治療後仍無法控制疼痛或有嚴重副作用者。
+    summary: 適用於【Diabetes Mellitus、Herpes Simplex / Herpes Zoster / CMV Infection、Chronic
+      / Breakthrough / Neuropathic Pain】之健保給付。 規範重點：1.使用於帶狀疱疹皮膚病灶後神經痛，並符合下列條件： (1)經使用其他止痛劑或非類固醇抗發炎劑（NSAIDs）藥品治療後仍無法控制疼痛或有嚴重副作用者。
     clinical_rules:
     - indication: Diabetes Mellitus (糖尿病)
       biomarkers: []
@@ -469,8 +470,9 @@ regulations:
     - Diabetes Mellitus (糖尿病)
     - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     laboratory_criteria: []
-    summary: '適用於【Diabetes Mellitus】之健保給付。 規範重點：1.使用於糖尿病併發周邊神經病變並具有臨床神經疼痛 (neuropathic
-      pain)，且符合以下條件: (1)經神經科專科醫師診斷或經神經傳導(NCV) 檢查證實之多發性神經病變(polyneuropathy)。'
+    summary: '適用於【Diabetes Mellitus、Chronic / Breakthrough / Neuropathic Pain】之健保給付。
+      規範重點：1.使用於糖尿病併發周邊神經病變並具有臨床神經疼痛 (neuropathic pain)，且符合以下條件: (1)經神經科專科醫師診斷或經神經傳導(NCV)
+      檢查證實之多發性神經病變(polyneuropathy)。'
     clinical_rules:
     - indication: Diabetes Mellitus (糖尿病)
       biomarkers: []
@@ -545,7 +547,8 @@ regulations:
     indications:
     - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     laboratory_criteria: []
-    summary: 規範【. Fentanyl citrate口頰溶片或口頰錠】之健保給付條件。 規範重點：1.限用於突發性疼痛(breakthrough pain)，並已接受過口服morphine至少60mg/day、oxycodone至少30mg/day、hydromorphone至少8mg/day、或fentanyl貼片劑至少25/mcg/hr或其他等止痛劑量之類鴉片藥物達一星期(含)以上之18歲以上癌症患者(111/2/1)。
+    summary: 適用於【Chronic / Breakthrough / Neuropathic Pain】之健保給付。 規範重點：1.限用於突發性疼痛(breakthrough
+      pain)，並已接受過口服morphine至少60mg/day、oxycodone至少30mg/day、hydromorphone至少8mg/day、或fentanyl貼片劑至少25/mcg/hr或其他等止痛劑量之類鴉片藥物達一星期(含)以上之18歲以上癌症患者(111/2/1)。
     clinical_rules:
     - indication: 1.1.9. Fentanyl citrate口頰溶片或口頰錠(108/10/1、111/2/1)
       biomarkers: []
@@ -714,9 +717,8 @@ regulations:
     indications:
     - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     laboratory_criteria: []
-    summary: 規範【. Second generation antipsychotics(簡稱第二代抗精神病藥品，如clozapine、olanzapine、risperidone、quetiapine、amisulpride、ziprasidone、aripiprazole、paliperidone、lurasidone、brexpiprazole等)：】之健保給付條件。
-      規範重點：1. 本類製劑之使用需符合下列條件(95/10/1、97/5/1、99/10/1、106/1/1、109/1/1、112/7/1)： (1)
-      開始使用「第二代抗精神病藥品」時需於病歷記載：醫療理由或診斷。
+    summary: 適用於【Disease / Ulcer / Bleeding Prevention & Prophylaxis】之健保給付。 規範重點：1.
+      本類製劑之使用需符合下列條件(95/10/1、97/5/1、99/10/1、106/1/1、109/1/1、112/7/1)： (1) 開始使用「第二代抗精神病藥品」時需於病歷記載：醫療理由或診斷。
     clinical_rules:
     - indication: 1.2.2.2. Second generation antipsychotics(簡稱第二代抗精神病藥品，如clozapine、olanzapine、risperidone、quetiapine、amisulpride、ziprasidone、aripiprazole、paliperidone、lurasidone、brexpiprazole等)：(91/9/1、92/1/1、92/7/1、94/1/1、95/10/1、97/5/1、99/10/1、106/1/1、109/1/1、109/6/1、112/7/1)
       biomarkers: []
@@ -779,12 +781,11 @@ regulations:
     - Eszopiclone
     - Zaleplon
     - Zolpidem
-    - Zopiclone
   conditions_of_payment:
     indications:
     - Insomnia / Sleep Disorder / Narcolepsy (失眠)
     laboratory_criteria: []
-    summary: 規範【. Zaleplon、zolpidem、zopiclone及eszopiclone】之健保給付條件。 規範重點：1.使用安眠藥物，病歷應詳載病人發生睡眠障礙的情形，並作適當的評估和診斷，探討可能的原因，並提供衛教建立良好睡眠習慣。
+    summary: 適用於【Insomnia / Sleep Disorder / Narcolepsy】之健保給付。 規範重點：1.使用安眠藥物，病歷應詳載病人發生睡眠障礙的情形，並作適當的評估和診斷，探討可能的原因，並提供衛教建立良好睡眠習慣。
     clinical_rules:
     - indication: 1.2.3. Zaleplon、zolpidem、zopiclone及eszopiclone（98/1/1、98/5/1、98/10/1、102/11/1）
       biomarkers: []
@@ -829,7 +830,8 @@ regulations:
     - Chronic / Breakthrough / Neuropathic Pain (疼痛)
     - Spasticity / ALS / Spinal Muscular Atrophy (SMA) (痙攣)
     laboratory_criteria: []
-    summary: 規範【. Tizanidine HCl (如Sirdalud tab)：】之健保給付條件。 規範重點：限下列病患使用 1.神經系統疾病引起痙攣症狀之病例。
+    summary: 適用於【Chronic / Breakthrough / Neuropathic Pain、Spasticity / ALS / Spinal
+      Muscular Atrophy】之健保給付。 規範重點：限下列病患使用 1.神經系統疾病引起痙攣症狀之病例。
     clinical_rules:
     - indication: 1.3.1.1. Tizanidine HCl (如Sirdalud tab)：(90/10/1)
       biomarkers: []
@@ -941,8 +943,8 @@ regulations:
     - Migraine (偏頭痛)
     - Epilepsy (癲癇)
     laboratory_criteria: []
-    summary: 適用於【Migraine、Epilepsy】之健保給付。 規範重點：1.限用於其他抗癲癇藥物無法有效控制之局部癲癇發作之輔助治療(add
-      on therapy)或作為第二線之單一藥物治療。
+    summary: 適用於【Disease / Ulcer / Bleeding Prevention & Prophylaxis、Migraine、Epilepsy】之健保給付。
+      規範重點：1.限用於其他抗癲癇藥物無法有效控制之局部癲癇發作之輔助治療(add on therapy)或作為第二線之單一藥物治療。
     clinical_rules:
     - indication: Migraine (偏頭痛)
       biomarkers: []
@@ -1054,8 +1056,8 @@ regulations:
     - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Epilepsy (癲癇)
     laboratory_criteria: []
-    summary: 適用於【Epilepsy】之健保給付。 規範重點：限下列病患使用： 1.限用於其他抗癲癇藥物無法有效控制之局部癲癇發作之輔助性治療(add
-      on therapy)或作為第二線之單一藥物治療。
+    summary: 適用於【Disease / Ulcer / Bleeding Prevention & Prophylaxis、Epilepsy】之健保給付。
+      規範重點：限下列病患使用： 1.限用於其他抗癲癇藥物無法有效控制之局部癲癇發作之輔助性治療(add on therapy)或作為第二線之單一藥物治療。
     clinical_rules:
     - indication: Epilepsy (癲癇)
       biomarkers: []
@@ -1340,7 +1342,8 @@ regulations:
     - Epilepsy (癲癇)
     - Spasticity / ALS / Spinal Muscular Atrophy (SMA) (痙攣)
     laboratory_criteria: []
-    summary: 適用於【Epilepsy】之健保給付。 規範重點：1.限用於經衛生福利部國民健康署認定之嬰兒期嚴重肌痙攣性癲癇(SMEI,Dravet syndrome)病人，並且合併服用clobazam及valproate兩種藥物無法充分控制癲癇發作時，併用本藥品作為輔助治療難治的全身性強直陣攣性發作(generalized
+    summary: 適用於【Epilepsy、Spasticity / ALS / Spinal Muscular Atrophy】之健保給付。 規範重點：1.限用於經衛生福利部國民健康署認定之嬰兒期嚴重肌痙攣性癲癇(SMEI,Dravet
+      syndrome)病人，並且合併服用clobazam及valproate兩種藥物無法充分控制癲癇發作時，併用本藥品作為輔助治療難治的全身性強直陣攣性發作(generalized
       tonic-clonic seizure)。
     clinical_rules:
     - indication: Epilepsy (癲癇)
@@ -1869,7 +1872,7 @@ regulations:
     indications:
     - Insomnia / Sleep Disorder / Narcolepsy (失眠)
     laboratory_criteria: []
-    summary: 規範【. Modafinil(如Provigil)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Insomnia / Sleep Disorder / Narcolepsy】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 1.3.6.1. Modafinil(如Provigil)：(96/2/1、109/12/1、110/12/1、112/3/1)
       biomarkers: []
@@ -1943,7 +1946,7 @@ regulations:
     indications:
     - Insomnia / Sleep Disorder / Narcolepsy (失眠)
     laboratory_criteria: []
-    summary: 規範【. Pitolisant (如Wakix)：（112/3/1)】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Insomnia / Sleep Disorder / Narcolepsy】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 1.3.6.2. Pitolisant (如Wakix)：（112/3/1)
       biomarkers: []
@@ -2021,7 +2024,8 @@ regulations:
     - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - ICU Sedation / Anesthesia / Mechanical Ventilation (鎮靜)
     laboratory_criteria: []
-    summary: 規範【. Propofol：】之健保給付條件。 規範重點：1.限使用人工呼吸器治療且需要每日進行神智評估之病例使用(100/7/1)。
+    summary: 適用於【Disease / Ulcer / Bleeding Prevention & Prophylaxis、ICU Sedation
+      / Anesthesia / Mechanical Ventilation】之健保給付。 規範重點：1.限使用人工呼吸器治療且需要每日進行神智評估之病例使用(100/7/1)。
     clinical_rules:
     - indication: 1.4.1. Propofol：(91/2/1、100/7/1、109/2/1)
       biomarkers: []
@@ -2054,7 +2058,7 @@ regulations:
     indications:
     - ICU Sedation / Anesthesia / Mechanical Ventilation (鎮靜)
     laboratory_criteria: []
-    summary: 規範【. Cis-atracurium、atracurium：】之健保給付條件。 規範重點：1.限使用人工呼吸器治療且肝或腎功能衰竭之病患使用(100/7/1)。
+    summary: 適用於【ICU Sedation / Anesthesia / Mechanical Ventilation】之健保給付。 規範重點：1.限使用人工呼吸器治療且肝或腎功能衰竭之病患使用(100/7/1)。
     clinical_rules:
     - indication: 1.4.2. Cis-atracurium、atracurium：(91/2/1、100/7/1)
       biomarkers: []
@@ -2090,7 +2094,7 @@ regulations:
     indications:
     - ICU Sedation / Anesthesia / Mechanical Ventilation (鎮靜)
     laboratory_criteria: []
-    summary: 規範【. Vecuronium、rocuronium：】之健保給付條件。 規範重點：1.限使用人工呼吸器治療之血液動力學不穩定之重症病患，且具有下述情形者(100/7/1)：
+    summary: 適用於【ICU Sedation / Anesthesia / Mechanical Ventilation】之健保給付。 規範重點：1.限使用人工呼吸器治療之血液動力學不穩定之重症病患，且具有下述情形者(100/7/1)：
       (1)心臟功能不穩定者。
     clinical_rules:
     - indication: 1.4.3. Vecuronium、rocuronium：(91/2/1、100/7/1)
@@ -2129,7 +2133,8 @@ regulations:
     indications:
     - ICU Sedation / Anesthesia / Mechanical Ventilation (鎮靜)
     laboratory_criteria: []
-    summary: 規範【. 局部麻醉劑（local anesthetics）】之健保給付條件。 規範重點：Xylocaine 2 % jelly： 限直腸外科人工肛門造口病例需居家定期插入導管或脊椎畸型合併有神經功能障礙之病童需長期居家間歇導尿病例使用。
+    summary: 適用於【ICU Sedation / Anesthesia / Mechanical Ventilation】之健保給付。 規範重點：Xylocaine
+      2 % jelly： 限直腸外科人工肛門造口病例需居家定期插入導管或脊椎畸型合併有神經功能障礙之病童需長期居家間歇導尿病例使用。
     clinical_rules:
     - indication: 1.4.4. 局部麻醉劑（local anesthetics）
       biomarkers: []
@@ -2162,7 +2167,7 @@ regulations:
     indications:
     - ICU Sedation / Anesthesia / Mechanical Ventilation (鎮靜)
     laboratory_criteria: []
-    summary: 規範【. Dexmedetomidine（如Precedex）：】之健保給付條件。 規範重點：1.限用於短期可拔管需鎮靜之18歲以上加護病房病人使用，連續使用不得超過24小時，再次使用需間隔6小時以上，每次住院最多使用3次。
+    summary: 適用於【ICU Sedation / Anesthesia / Mechanical Ventilation】之健保給付。 規範重點：1.限用於短期可拔管需鎮靜之18歲以上加護病房病人使用，連續使用不得超過24小時，再次使用需間隔6小時以上，每次住院最多使用3次。
     clinical_rules:
     - indication: 1.4.5. Dexmedetomidine（如Precedex）：(96/8/1、108/3/1)
       biomarkers: []
@@ -2194,11 +2199,12 @@ regulations:
     - Pilocarpine
   conditions_of_payment:
     indications:
-    - Head and Neck Cancer (頭頸部癌)
+    - Head and Neck Squamous Cell Carcinoma (HNSCC) (頭頸部鱗狀細胞癌)
     - Sjögren's Syndrome (Xerostomia) (修格蘭氏症候群)
     - Dry Eye Syndrome / Keratitis / Conjunctivitis (乾眼症)
     laboratory_criteria: []
-    summary: 適用於【Head and Neck Cancer】之健保給付。 規範重點：1.使用於修格蘭氏症候群 (Sjogren's syndrome)
+    summary: 適用於【Head and Neck Squamous Cell Carcinoma、Sjögren's Syndrome、Dry Eye
+      Syndrome / Keratitis / Conjunctivitis】之健保給付。 規範重點：1.使用於修格蘭氏症候群 (Sjogren's syndrome)
       病人： (1)使用對象：需符合修格蘭氏症候群之診斷標準。
     clinical_rules:
     - indication: Head and Neck Cancer (頭頸部癌)
@@ -2301,8 +2307,7 @@ regulations:
     indications:
     - Sjögren's Syndrome (Xerostomia) (修格蘭氏症候群)
     laboratory_criteria: []
-    summary: 規範【. Cevimeline hydrochloride（如Evoxac Capsules）（97/5/1、102/2/1)】之健保給付條件。
-      規範重點：1.使用對象：需符合修格蘭氏症候群之診斷標準。
+    summary: 適用於【Sjögren's Syndrome】之健保給付。 規範重點：1.使用對象：需符合修格蘭氏症候群之診斷標準。
     clinical_rules:
     - indication: 1.5.2. Cevimeline hydrochloride（如Evoxac Capsules）（97/5/1、102/2/1)
       biomarkers: []
@@ -2343,8 +2348,8 @@ regulations:
     - Spasticity / ALS / Spinal Muscular Atrophy (SMA) (痙攣)
     - ICU Sedation / Anesthesia / Mechanical Ventilation (鎮靜)
     laboratory_criteria: []
-    summary: 規範【. Riluzole (如Rilutek、Teglutik)】之健保給付條件。 規範重點：1.經兩位神經科專科醫師診斷為運動神經元疾病
-      (ALS/MND)，且未氣管切開或未使用人工呼吸器之病患。
+    summary: 適用於【Spasticity / ALS / Spinal Muscular Atrophy、ICU Sedation / Anesthesia
+      / Mechanical Ventilation】之健保給付。 規範重點：1.經兩位神經科專科醫師診斷為運動神經元疾病 (ALS/MND)，且未氣管切開或未使用人工呼吸器之病患。
     clinical_rules:
     - indication: 1.6.1. Riluzole (如Rilutek、Teglutik) (87/4/1、92/11/1、95/4/1、112/7/1)
       biomarkers: []
@@ -2433,7 +2438,8 @@ regulations:
     - Attention-Deficit / Hyperactivity Disorder (ADHD) (注意力不足過動症)
     - BPH / Overactive Bladder / Interstitial Cystitis / Urolithiasis (前列腺增生)
     laboratory_criteria: []
-    summary: 適用於【Stroke / Cerebrovascular Accident、Migraine】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Disease / Ulcer / Bleeding Prevention & Prophylaxis、Stroke / Cerebrovascular
+      Accident、Migraine】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Stroke / Cerebrovascular Accident (腦中風)
       biomarkers: []
@@ -2578,7 +2584,8 @@ regulations:
     - Stroke / Cerebrovascular Accident (腦中風)
     - Spasticity / ALS / Spinal Muscular Atrophy (SMA) (痙攣)
     laboratory_criteria: []
-    summary: 適用於【Stroke / Cerebrovascular Accident】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Stroke / Cerebrovascular Accident、Spasticity / ALS / Spinal Muscular
+      Atrophy】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Stroke / Cerebrovascular Accident (腦中風)
       biomarkers: []
@@ -2633,8 +2640,8 @@ regulations:
     indications:
     - BPH / Overactive Bladder / Interstitial Cystitis / Urolithiasis (前列腺增生)
     laboratory_criteria: []
-    summary: 規範【. Tolterodine L-tartrate  (如Detrusitol) ; solifenacin succinate  (如Vesicare)；mirabegron
-      (如Betmiga):】之健保給付條件。 規範重點：1.限符合下列診斷標準條件之一者： (1)頻尿：每天（24小時）排尿次數超過八次，並有詳實病歷紀錄。
+    summary: 適用於【BPH / Overactive Bladder / Interstitial Cystitis / Urolithiasis】之健保給付。
+      規範重點：1.限符合下列診斷標準條件之一者： (1)頻尿：每天（24小時）排尿次數超過八次，並有詳實病歷紀錄。
     clinical_rules:
     - indication: 1.6.3. Tolterodine L-tartrate  (如Detrusitol) ; solifenacin succinate  (如Vesicare)；mirabegron
         (如Betmiga):(90/7/1、93/10/1、96/4/1、104/2/1)
@@ -2690,7 +2697,7 @@ regulations:
     indications:
     - Spasticity / ALS / Spinal Muscular Atrophy (SMA) (痙攣)
     laboratory_criteria: []
-    summary: 規範【. Nusinersen(如 Spinraza)、risdiplam（如Evrysdi）：】之健保給付條件。
+    summary: 適用於【Spasticity / ALS / Spinal Muscular Atrophy】之健保給付。
     clinical_rules:
     - indication: 1.6.4. Nusinersen(如 Spinraza)、risdiplam（如Evrysdi）：（109/7/1、109/10/1、112/4/1、112/6/1、112/8/1、113/8/1、115/6/1）
       biomarkers: []
@@ -2793,7 +2800,8 @@ regulations:
     - Disease / Ulcer / Bleeding Prevention & Prophylaxis (預防)
     - Migraine (偏頭痛)
     laboratory_criteria: []
-    summary: 適用於【Migraine】之健保給付。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Disease / Ulcer / Bleeding Prevention & Prophylaxis、Migraine】之健保給付。
+      主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: Migraine (偏頭痛)
       biomarkers: []
@@ -2850,7 +2858,7 @@ regulations:
     - Heart Failure (心臟衰竭)
     laboratory_criteria:
     - 血壓
-    summary: 規範【. Patisiran（如Onpattro）、vutrisiran（如Amvuttra）：】之健保給付條件。
+    summary: 適用於【Heart Failure】之健保給付。
     clinical_rules:
     - indication: 1.6.6. Patisiran（如Onpattro）、vutrisiran（如Amvuttra）：（112/5/1、114/5/1）
       biomarkers: []
@@ -2966,9 +2974,8 @@ regulations:
     - SpO2
     - Motor_Milestones
     - Anti-AAV9
-    summary: 規範【. Onasemnogene abeparvovec (如Zolgensma suspension for Intravenous
-      Infusion)：】之健保給付條件。 主要條件包含：臨床檢驗需符合 SMN2 <= 2copies, SMN2 <= 3copies, SpO2 <
-      95%。
+    summary: 適用於【Spasticity / ALS / Spinal Muscular Atrophy】之健保給付。 主要條件包含：臨床檢驗需符合
+      SMN2 <= 2copies, SMN2 <= 3copies, SpO2 < 95%。
     clinical_rules:
     - indication: 1.6.7. Onasemnogene abeparvovec (如Zolgensma suspension for Intravenous
         Infusion)：（112/8/1、112/10/1、113/4/1）
@@ -3304,7 +3311,8 @@ regulations:
     - Rare Metabolic & Lysosomal Storage Diseases (MPS, Gaucher, Pompe, Fabry, Wilson,
       Porphyria) (黏多醣症)
     laboratory_criteria: []
-    summary: 規範【. Eladocagene exuparvovec(如Upstaza)：（114/12/1)】之健保給付條件。
+    summary: 適用於【Glioblastoma / Malignant Glioma / Brain Tumor、ICU Sedation / Anesthesia
+      / Mechanical Ventilation、Rare Metabolic & Lysosomal Storage Diseases】之健保給付。
     clinical_rules:
     - indication: 1.6.8. Eladocagene exuparvovec(如Upstaza)：（114/12/1)
       biomarkers: []
@@ -3408,7 +3416,7 @@ regulations:
     indications:
     - Spasticity / ALS / Spinal Muscular Atrophy (SMA) (痙攣)
     laboratory_criteria: []
-    summary: 規範【. Baclofen注射劑 (如Gablofen)：】之健保給付條件。 主要條件包含：使用前須經事前審查核准。
+    summary: 適用於【Spasticity / ALS / Spinal Muscular Atrophy】之健保給付。 主要條件包含：使用前須經事前審查核准。
     clinical_rules:
     - indication: 1.6.9. Baclofen注射劑 (如Gablofen)：(115/7/1)
       biomarkers: []

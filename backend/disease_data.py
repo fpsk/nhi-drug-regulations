@@ -140,19 +140,45 @@ DISEASE_DATABASE = {
         "tc_terms": ["乳癌", "乳腺癌", "轉移性乳癌"],
         "aliases": ["breast cancer"]
     },
+    "lung_adenocarcinoma": {
+        "en": "Lung Adenocarcinoma",
+        "tc_terms": ["肺腺癌", "非鱗狀非小細胞肺癌"],
+        "aliases": [
+            "lung adenocarcinoma", "adenocarcinoma of lung", "adenocarcinoma of the lung",
+            "pulmonary adenocarcinoma", "non-squamous nsclc", "non squamous nsclc",
+            "non-squamous non-small cell lung cancer"
+        ]
+    },
+    "squamous_nsclc": {
+        "en": "Squamous Non-Small Cell Lung Cancer",
+        "tc_terms": ["鱗狀非小細胞肺癌"],
+        "aliases": [
+            "squamous cell lung cancer", "squamous cell lung carcinoma",
+            "squamous non-small cell lung cancer", "squamous nsclc",
+            "squamous cell carcinoma of lung", "squamous cell carcinoma of the lung"
+        ]
+    },
     "nsclc": {
         "en": "Non-Small Cell Lung Cancer (NSCLC)",
         "tc_terms": ["非小細胞肺癌", "鱗狀非小細胞肺癌", "非鱗狀非小細胞肺癌", "肺腺癌"],
         "aliases": [
             "nsclc", "non small cell lung cancer", "non-small cell lung cancer",
             "non small cell carcinoma", "non-small cell carcinoma",
-            "lung adenocarcinoma", "squamous cell lung cancer"
+            "non-small cell lung carcinoma", "non small cell lung carcinoma"
+        ]
+    },
+    "sclc": {
+        "en": "Small Cell Lung Cancer (SCLC)",
+        "tc_terms": ["小細胞肺癌"],
+        "aliases": [
+            "sclc", "small cell lung cancer", "small cell lung carcinoma",
+            "small cell carcinoma of lung", "small cell carcinoma of the lung"
         ]
     },
     "lung_cancer": {
         "en": "Lung Cancer",
         "tc_terms": ["非小細胞肺癌", "小細胞肺癌", "肺癌", "肺腺癌"],
-        "aliases": ["lung cancer", "sclc"]
+        "aliases": ["lung cancer", "lung carcinoma", "carcinoma of lung", "carcinoma of the lung", "pulmonary carcinoma"]
     },
     "metastatic_advanced": {
         "en": "Metastatic / Locally Advanced / Unresectable / Recurrent",
@@ -162,12 +188,12 @@ DISEASE_DATABASE = {
     "prostate_cancer": {
         "en": "Prostate Cancer",
         "tc_terms": ["前列腺癌", "攝護腺癌", "前列腺腺癌"],
-        "aliases": ["prostate cancer"]
+        "aliases": ["prostate cancer", "prostate adenocarcinoma", "adenocarcinoma of prostate", "prostate carcinoma"]
     },
     "ovarian_cancer": {
         "en": "Ovarian Cancer",
         "tc_terms": ["卵巢癌", "卵巢上皮癌", "輸卵管癌", "原發性腹膜癌"],
-        "aliases": ["ovarian cancer"]
+        "aliases": ["ovarian cancer", "ovarian carcinoma", "ovarian adenocarcinoma", "carcinoma of ovary"]
     },
     "gist": {
         "en": "Gastrointestinal Stromal Tumor (GIST)",
@@ -212,12 +238,12 @@ DISEASE_DATABASE = {
     "colorectal_cancer": {
         "en": "Colorectal Cancer",
         "tc_terms": ["大腸直腸癌", "結腸直腸癌", "大腸癌", "直腸癌"],
-        "aliases": ["colorectal cancer", "colon cancer", "rectal cancer", "crc"]
+        "aliases": ["colorectal cancer", "colon cancer", "rectal cancer", "crc", "colon adenocarcinoma", "rectal adenocarcinoma", "colorectal adenocarcinoma", "adenocarcinoma of colon", "adenocarcinoma of rectum"]
     },
     "pancreatic_cancer": {
         "en": "Pancreatic Cancer",
         "tc_terms": ["胰臟癌", "胰腺癌"],
-        "aliases": ["pancreatic cancer"]
+        "aliases": ["pancreatic cancer", "pancreatic adenocarcinoma", "adenocarcinoma of pancreas", "pancreatic carcinoma"]
     },
     "multiple_myeloma": {
         "en": "Multiple Myeloma",
@@ -236,8 +262,8 @@ DISEASE_DATABASE = {
     },
     "gastric_esophageal_cancer": {
         "en": "Gastric / Esophageal Cancer",
-        "tc_terms": ["胃癌", "胃食道接合處腺癌", "胃食道接合處", "食道癌", "食道鱗狀細胞癌"],
-        "aliases": ["gastric cancer", "stomach cancer", "esophageal cancer", "gej cancer"]
+        "tc_terms": ["胃癌", "胃腺癌", "胃食道接合處腺癌", "胃食道接合處", "食道癌", "食道鱗狀細胞癌"],
+        "aliases": ["gastric cancer", "stomach cancer", "esophageal cancer", "gej cancer", "gastric adenocarcinoma", "stomach adenocarcinoma", "adenocarcinoma of stomach", "esophageal adenocarcinoma", "gej adenocarcinoma"]
     },
     "cholangiocarcinoma": {
         "en": "Cholangiocarcinoma / Biliary Tract Cancer",

@@ -59,6 +59,41 @@ window.NHIShared = (() => {
         return new RegExp(`(${parts.join('[\\s\\u3000]*')})`, 'gi');
     }
 
+    function highlightEscapedText(escapedStr, highlightTarget) {
+        if (!escapedStr || !highlightTarget || (Array.isArray(highlightTarget) && highlightTarget.length === 0)) {
+            return escapedStr;
+        }
+        const regex = createHighlightRegex(highlightTarget);
+        if (!regex) return escapedStr;
+        return escapedStr.replace(regex, `<mark class="grounding-highlight">$1</mark>`);
+    }
+
+    function buildSummaryHtml(reg, maxLen = 360, highlightTarget = null) {
+        const baseSummary = cleanSummaryText(reg.conditions_of_payment.summary, maxLen);
+        const escapedSummary = escapeHtml(baseSummary);
+        if (!highlightTarget || (Array.isArray(highlightTarget) && highlightTarget.length === 0)) {
+            return escapedSummary;
+        }
+        const highlightedSummary = highlightEscapedText(escapedSummary, highlightTarget);
+        if (highlightedSummary.includes('grounding-highlight')) {
+            return highlightedSummary;
+        }
+        const fullText = (reg.reference_annotations && reg.reference_annotations.full_text) || '';
+        const regex = createHighlightRegex(highlightTarget);
+        if (fullText && regex) {
+            for (const rawLine of fullText.split('\n')) {
+                const line = rawLine.trim();
+                if (!line || line.includes('|') || line.startsWith('【')) continue;
+                const escLine = escapeHtml(line);
+                if (createHighlightRegex(highlightTarget).test(escLine)) {
+                    const snippet = line.length > 110 ? line.substring(0, 110) + '...' : line;
+                    return `${highlightedSummary}<br><span style="color:#cbd5e1; font-size:0.84em;">📌 條文匹配：${highlightEscapedText(escapeHtml(snippet), highlightTarget)}</span>`;
+                }
+            }
+        }
+        return highlightedSummary;
+    }
+
     function buildTableHtml(rows, highlightSnippet = null) {
         if (!rows || !rows.length) return '';
         const regex = highlightSnippet ? createHighlightRegex(highlightSnippet) : null;
@@ -225,7 +260,7 @@ window.NHIShared = (() => {
         return uniqueBios;
     }
 
-    function buildCardBadgesHtml(reg, { maxBios = 5, maxDrugs = 5, labClass = 'badge-lab', indClass = 'badge-indication' } = {}) {
+    function buildCardBadgesHtml(reg, { maxBios = 5, maxDrugs = 5, labClass = 'badge-lab', indClass = 'badge-indication', highlightTarget = null, summaryMaxLen = 360 } = {}) {
         const structuredBios = reg.conditions_of_payment.structured_biomarkers || [];
         let labBadges = '';
         if (structuredBios.length > 0) {
@@ -236,30 +271,42 @@ window.NHIShared = (() => {
                 const valStr = escapeHtml(String(b.value));
                 const unitStr = b.unit ? ' ' + escapeHtml(b.unit) : '';
                 const titleAttr = snippetText ? ` title="點擊內文可定位原始依據: ${escapeHtml(snippetText)}"` : '';
-                return `<span class="badge-biomarker"${titleAttr}><i class="fa-solid fa-vial-circle-check"></i> ${escapeHtml(b.biomarker)} ${opStr}${valStr}${unitStr}</span>`;
+                return `<span class="badge-biomarker"${titleAttr}><i class="fa-solid fa-vial-circle-check"></i> ${highlightEscapedText(escapeHtml(b.biomarker), highlightTarget)} ${opStr}${valStr}${unitStr}</span>`;
             }).join(' ');
         } else {
             const labs = reg.conditions_of_payment.laboratory_criteria || [];
-            labBadges = labs.map(l => `<span class="${labClass}"><i class="fa-solid fa-flask"></i> ${escapeHtml(l)}</span>`).join(' ');
+            labBadges = labs.map(l => `<span class="${labClass}"><i class="fa-solid fa-flask"></i> ${highlightEscapedText(escapeHtml(l), highlightTarget)}</span>`).join(' ');
         }
 
         const priorAuthBadge = reg.conditions_of_payment.prior_authorization_required
             ? `<span class="badge-prior-auth" title="本藥品需事前審查核准"><i class="fa-solid fa-stamp"></i> 事前審查</span>`
             : '';
 
-        const indications = reg.conditions_of_payment.indications || [];
-        const indicationBadges = indications.map(ind => `<span class="${indClass}"><i class="fa-solid fa-notes-medical"></i> ${escapeHtml(ind)}</span>`).join(' ');
+        const indications = (reg.conditions_of_payment.indications || []).slice();
+        if (highlightTarget && (!Array.isArray(highlightTarget) || highlightTarget.length > 0)) {
+            indications.sort((a, b) => {
+                const aMatch = Boolean(createHighlightRegex(highlightTarget)?.test(escapeHtml(a)));
+                const bMatch = Boolean(createHighlightRegex(highlightTarget)?.test(escapeHtml(b)));
+                return Number(bMatch) - Number(aMatch);
+            });
+        }
+        const indicationBadges = indications.map(ind =>
+            `<span class="${indClass}"><i class="fa-solid fa-notes-medical"></i> ${highlightEscapedText(escapeHtml(ind), highlightTarget)}</span>`
+        ).join(' ');
 
         const displayTitle = cleanTitleForDisplay(reg.section_title);
+        const displayTitleHtml = highlightEscapedText(escapeHtml(displayTitle), highlightTarget);
         const ingredients = (reg.medications && reg.medications.ingredients) ? reg.medications.ingredients : [];
         let drugBadges = '';
         if (ingredients.length > 0 && !/[A-Za-z]{4,}/.test(displayTitle)) {
             drugBadges = ingredients.slice(0, maxDrugs).map(ing =>
-                `<span class="${labClass}" style="border-color:rgba(56,189,248,0.35); color:#38bdf8;"><i class="fa-solid fa-pills"></i> ${escapeHtml(ing)}</span>`
+                `<span class="${labClass}" style="border-color:rgba(56,189,248,0.35); color:#38bdf8;"><i class="fa-solid fa-pills"></i> ${highlightEscapedText(escapeHtml(ing), highlightTarget)}</span>`
             ).join(' ');
         }
 
-        return { displayTitle, priorAuthBadge, drugBadges, indicationBadges, labBadges };
+        const summaryHtml = buildSummaryHtml(reg, summaryMaxLen, highlightTarget);
+
+        return { displayTitle, displayTitleHtml, priorAuthBadge, drugBadges, indicationBadges, labBadges, summaryHtml };
     }
 
     function renderStructuredCriteria({ reg, criteriaSection, chipsContainer, priorAuthEl, fullTextContainer, anchorPrefix = 'clause-sec', maxRuleLen = 28 }) {
@@ -418,6 +465,8 @@ window.NHIShared = (() => {
         formatDatesForDisplay,
         cleanSummaryText,
         createHighlightRegex,
+        highlightEscapedText,
+        buildSummaryHtml,
         buildTableHtml,
         renderFormattedText,
         scrollToHighlight,

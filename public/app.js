@@ -58,61 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
     chapterFilter.addEventListener('change', () => { currentOffset = 0; performSearch(); });
     labFilter.addEventListener('change', () => { currentOffset = 0; performSearch(); });
 
-    // Collapsible Advanced Search Listeners
-    const toggleAdvSearchBtn = document.getElementById('toggleAdvSearchBtn');
-    const advancedSearchPanel = document.getElementById('advancedSearchPanel');
-    const advDrugInput = document.getElementById('advDrugInput');
-    const advDiseaseInput = document.getElementById('advDiseaseInput');
-    const applyAdvSearchBtn = document.getElementById('applyAdvSearchBtn');
-    const clearAdvSearchBtn = document.getElementById('clearAdvSearchBtn');
-
-    if (toggleAdvSearchBtn && advancedSearchPanel) {
-        toggleAdvSearchBtn.addEventListener('click', () => {
-            const isHidden = advancedSearchPanel.classList.toggle('hidden');
-            if (!isHidden) {
-                searchInput.value = '';
-                clearSearch.style.display = 'none';
-                atcExpansion.classList.add('hidden');
-            }
-            currentOffset = 0;
-            performSearch();
-        });
-    }
-
-    if (applyAdvSearchBtn) {
-        applyAdvSearchBtn.addEventListener('click', () => {
-            currentOffset = 0;
-            performSearch();
-        });
-    }
-
-    if (clearAdvSearchBtn) {
-        clearAdvSearchBtn.addEventListener('click', () => {
-            if (advDrugInput) advDrugInput.value = '';
-            if (advDiseaseInput) advDiseaseInput.value = '';
-            currentOffset = 0;
-            performSearch();
-            atcExpansion.classList.add('hidden');
-        });
-    }
-
-    if (advDrugInput) {
-        advDrugInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
-                currentOffset = 0;
-                performSearch();
-            }
-        });
-    }
-    if (advDiseaseInput) {
-        advDiseaseInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
-                currentOffset = 0;
-                performSearch();
-            }
-        });
-    }
-
     loadMoreBtn.addEventListener('click', () => {
         loadMoreResults();
     });
@@ -284,21 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     async function performSearch() {
-        let q = '';
-        let disease = '';
-        
-        const advPanel = document.getElementById('advancedSearchPanel');
-        const isAdvActive = advPanel && !advPanel.classList.contains('hidden');
-        
-        if (isAdvActive) {
-            const advDrug = document.getElementById('advDrugInput');
-            const advDisease = document.getElementById('advDiseaseInput');
-            q = advDrug ? advDrug.value.trim() : '';
-            disease = advDisease ? advDisease.value.trim() : '';
-        } else {
-            q = searchInput.value.trim();
-        }
-        
+        const q = searchInput.value.trim();
         const chap = chapterFilter.value;
         const lab = labFilter.value;
 
@@ -311,7 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const signal = searchAbortController.signal;
 
         try {
-            const res = await fetch(`/api/search?q=${encodeURIComponent(q)}&disease=${encodeURIComponent(disease)}&chapter=${encodeURIComponent(chap)}&lab=${encodeURIComponent(lab)}&limit=${currentLimit}&offset=${currentOffset}`, { signal });
+            const res = await fetch(`/api/search?q=${encodeURIComponent(q)}&chapter=${encodeURIComponent(chap)}&lab=${encodeURIComponent(lab)}&limit=${currentLimit}&offset=${currentOffset}`, { signal });
             const data = await res.json();
             
             if (data.status === 'success') {
@@ -343,21 +274,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function loadMoreResults() {
-        let q = '';
-        let disease = '';
-        
-        const advPanel = document.getElementById('advancedSearchPanel');
-        const isAdvActive = advPanel && !advPanel.classList.contains('hidden');
-        
-        if (isAdvActive) {
-            const advDrug = document.getElementById('advDrugInput');
-            const advDisease = document.getElementById('advDiseaseInput');
-            q = advDrug ? advDrug.value.trim() : '';
-            disease = advDisease ? advDisease.value.trim() : '';
-        } else {
-            q = searchInput.value.trim();
-        }
-        
+        const q = searchInput.value.trim();
         const chap = chapterFilter.value;
         const lab = labFilter.value;
         
@@ -365,7 +282,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loadMoreBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> 載入更多中...';
 
         try {
-            const res = await fetch(`/api/search?q=${encodeURIComponent(q)}&disease=${encodeURIComponent(disease)}&chapter=${encodeURIComponent(chap)}&lab=${encodeURIComponent(lab)}&limit=${currentLimit}&offset=${currentOffset}`);
+            const res = await fetch(`/api/search?q=${encodeURIComponent(q)}&chapter=${encodeURIComponent(chap)}&lab=${encodeURIComponent(lab)}&limit=${currentLimit}&offset=${currentOffset}`);
             const data = await res.json();
             
             if (data.status === 'success') {

@@ -73,7 +73,7 @@ class NHIIndexer:
     def _get_word_regex(self, term):
         pat = self._compiled_word_regex.get(term)
         if pat is None:
-            pat = re.compile(r'\b' + re.escape(term) + r'\b')
+            pat = re.compile(r'(?<![a-z0-9])' + re.escape(term) + r'(?![a-z0-9])')
             self._compiled_word_regex[term] = pat
         return pat
 
@@ -187,32 +187,71 @@ class NHIIndexer:
         }
 
     def search(self, query, chapter_filter=None, lab_filter=None, disease_query=None):
-        query_clean = query.strip() if query else ""
-        original_query = query_clean
-        disease_query_clean = disease_query.strip() if disease_query else ""
+        q_str = query.strip() if query else ""
+        d_str = disease_query.strip() if disease_query else ""
+        combined_query = f"{q_str}, {d_str}".strip(", ") if (q_str and d_str) else (q_str or d_str)
 
-        # Smart compound query parsing for single search bar: e.g. "statins, hyperlipidemia"
-        if query_clean and not disease_query_clean:
-            parts = [p.strip() for p in re.split(r'[,，;；]+', query_clean) if p.strip()]
-            if len(parts) > 1:
-                query_clean = parts[0]
-                disease_query_clean = parts[1]
+        segments = [s.strip() for s in re.split(r'[,，;；]+', combined_query) if s.strip()] if combined_query else []
 
-        if not query_clean and not disease_query_clean and not chapter_filter and not lab_filter:
+        if not segments and not chapter_filter and not lab_filter:
             return self.regulations[:50]
 
-        is_pure_section_query = bool(re.match(r'^\d+(\.\d+)+\.?$', query_clean)) and not disease_query_clean
+        lab_filter_lower = lab_filter.lower() if lab_filter else None
+        lab_filter_targets = self.LAB_FILTER_GROUP_MAP.get(lab_filter_lower, {lab_filter_lower}) if lab_filter_lower else None
 
-        # Disambiguate renal eGFR vs oncology EGFR
+        candidate_regs = []
+        for reg in self.regulations:
+            if chapter_filter and chapter_filter not in reg["chapter"]:
+                continue
+            if lab_filter_lower:
+                if lab_filter_lower == "prior_auth":
+                    if not reg.get("conditions_of_payment", {}).get("prior_authorization_required"):
+                        continue
+                else:
+                    if not (reg["_lab_tokens_lower"] & lab_filter_targets):
+                        continue
+            candidate_regs.append(reg)
+
+        if not segments:
+            return candidate_regs
+
+        if len(segments) == 1:
+            scored = self._score_single_segment(segments[0], candidate_regs, full_query_context=combined_query, is_multi_segment=False)
+            scored.sort(key=lambda x: x[1], reverse=True)
+            return [r[0] for r in scored]
+
+        # Multi-segment comma-separated search: order-independent AND intersection across all segments
+        score_map = {}
+        current_candidates = candidate_regs
+        for seg in segments:
+            seg_scored = self._score_single_segment(seg, current_candidates, full_query_context=combined_query, is_multi_segment=True)
+            if not seg_scored:
+                return []
+            next_candidates = []
+            for reg, sc in seg_scored:
+                rid = reg["regulation_id"]
+                score_map[rid] = score_map.get(rid, 0) + sc
+                next_candidates.append(reg)
+            current_candidates = next_candidates
+
+        current_candidates.sort(key=lambda r: score_map[r["regulation_id"]], reverse=True)
+        return current_candidates
+
+    def _score_single_segment(self, seg_query, candidate_regs, full_query_context="", is_multi_segment=False):
+        query_clean = seg_query.strip()
+        original_query = full_query_context or query_clean
+        is_pure_section_query = bool(re.match(r'^\d+(\.\d+)+\.?$', query_clean))
+
+        # Disambiguate renal eGFR vs oncology EGFR using full query context
         renal_egfr_intent = False
         oncology_egfr_intent = False
-        if 'egfr' in original_query.lower():
-            if 'eGFR' in original_query or re.search(r'egfr\s*(?:[><=≧≦≥≤]|\d)|腎|ckd|ml/min|dapagliflozin|empagliflozin', original_query, re.I):
+        if 'egfr' in query_clean.lower():
+            if 'eGFR' in query_clean or re.search(r'egfr\s*(?:[><=≧≦≥≤]|\d)|腎|ckd|心衰竭|心臟衰竭|ml/min|dapagliflozin|empagliflozin|forxiga|jardiance', original_query, re.I):
                 renal_egfr_intent = True
-            elif 'EGFR' in original_query or re.search(r'突變|mutation|exon|tki|lung|肺癌|t790m|l858r', original_query, re.I):
+            elif 'EGFR' in query_clean or re.search(r'突變|mutation|exon|tki|lung|肺癌|t790m|l858r', original_query, re.I):
                 oncology_egfr_intent = True
 
-        parsed_bio_constraint = self._parse_biomarker_constraint(original_query)
+        parsed_bio_constraint = self._parse_biomarker_constraint(query_clean)
 
         direct_terms = set()
         expanded_terms = set()
@@ -221,57 +260,44 @@ class NHIIndexer:
         matched_disease_names = set()
         matched_ingredients = set()
 
-        for q_part in [original_query, query_clean, disease_query_clean]:
-            if not q_part:
-                continue
-            q_part_lower = q_part.lower()
-            direct_terms.add(q_part_lower)
-            expanded_terms.add(q_part_lower)
-            exact_target_terms.add(q_part_lower)
+        q_part_lower = query_clean.lower()
+        direct_terms.add(q_part_lower)
+        expanded_terms.add(q_part_lower)
+        exact_target_terms.add(q_part_lower)
 
-            # Do not split section numbers (e.g., "9.138") on dots into noisy integer tokens
-            if re.match(r'^\d+(\.\d+)+\.?$', q_part_lower):
-                continue
-
-            # Preserve section numbers inside multi-word queries before splitting
+        if not is_pure_section_query:
             sec_tokens = re.findall(r'\b\d+(?:\.\d+)+\.?\b', q_part_lower)
             for st in sec_tokens:
                 exact_target_terms.add(st.strip('.'))
 
-            if parsed_bio_constraint and q_part == original_query:
+            if parsed_bio_constraint:
                 canon_b = parsed_bio_constraint["biomarker"].lower()
                 direct_terms.add(canon_b)
                 expanded_terms.add(canon_b)
-                continue
-
-            sub_tokens = re.split(r'[\s,，。;；?？!！_/><=≧≦≥≤%]+', q_part_lower)
-            if len(sub_tokens) > 1:
-                for token in sub_tokens:
-                    t_clean = token.strip('.-')
-                    if parsed_bio_constraint and t_clean == parsed_bio_constraint["value_str"]:
-                        continue
-                    if len(t_clean) > 1 and t_clean not in self.STOPWORDS and not t_clean.isdigit():
-                        direct_terms.add(t_clean)
-                        expanded_terms.add(t_clean)
+            else:
+                sub_tokens = re.split(r'[\s,，。;；?？!！_/><=≧≦≥≤%]+', q_part_lower)
+                if len(sub_tokens) > 1:
+                    for token in sub_tokens:
+                        t_clean = token.strip('.-')
+                        if len(t_clean) > 1 and t_clean not in self.STOPWORDS and not t_clean.isdigit():
+                            direct_terms.add(t_clean)
+                            expanded_terms.add(t_clean)
 
         # Universal Alphanumeric Normalization for Lab Criteria & Medical Acronyms
-        for q_part in [original_query, query_clean, disease_query_clean]:
-            if not q_part:
-                continue
-            norm_q = re.sub(r'[\s\-_/]+', '', q_part.lower())
-            if norm_q in ['hbvdna', 'hbv', 'b型肝炎病毒量', '血清hbvdna']:
-                direct_terms.update(['hbv dna', 'hbv-dna', 'hbvdna', 'hbv', 'b型肝炎'])
-            elif norm_q in ['hcvrna', 'hcv', 'c型肝炎病毒量']:
-                direct_terms.update(['hcv rna', 'hcv-rna', 'hcvrna', 'c型肝炎'])
+        norm_q = re.sub(r'[\s\-_/]+', '', q_part_lower)
+        if norm_q in ['hbvdna', 'hbv', 'b型肝炎病毒量', '血清hbvdna']:
+            direct_terms.update(['hbv dna', 'hbv-dna', 'hbvdna', 'hbv', 'b型肝炎'])
+        elif norm_q in ['hcvrna', 'hcv', 'c型肝炎病毒量']:
+            direct_terms.update(['hcv rna', 'hcv-rna', 'hcvrna', 'c型肝炎'])
 
-            if 'gene' in norm_q or 'genetic' in norm_q:
-                direct_terms.add('基因')
-                expanded_terms.add('基因')
-            if 'test' in norm_q or 'detect' in norm_q or 'check' in norm_q or 'report' in norm_q:
-                direct_terms.update(['檢測', '檢查', '報告'])
-                expanded_terms.update(['檢測', '檢查', '報告'])
+        if 'gene' in norm_q or 'genetic' in norm_q:
+            direct_terms.add('基因')
+            expanded_terms.add('基因')
+        if 'test' in norm_q or 'detect' in norm_q or 'check' in norm_q or 'report' in norm_q:
+            direct_terms.update(['檢測', '檢查', '報告'])
+            expanded_terms.update(['檢測', '檢查', '報告'])
 
-        # ATC Expansion (run on drug/primary query unless it's a pure section number or biomarker constraint)
+        # ATC Expansion
         atc_expansions = []
         if query_clean and not is_pure_section_query and not parsed_bio_constraint:
             atc_expansions = self.atc_engine.expand_query(query_clean)
@@ -323,12 +349,9 @@ class NHIIndexer:
         # Disease Expansion
         disease_expansions = []
         if not is_pure_section_query:
-            for q_segment in [original_query, query_clean, disease_query_clean]:
-                if q_segment:
-                    disease_expansions.extend(self.disease_engine.expand_query(q_segment))
-                    norm_disease_q = re.sub(r'[\s\-_/]+', '', q_segment.lower())
-                    if norm_disease_q in ['hbvdna', 'hbvdna量']:
-                        disease_expansions.extend(self.disease_engine.expand_query('hbv'))
+            disease_expansions.extend(self.disease_engine.expand_query(query_clean))
+            if norm_q in ['hbvdna', 'hbvdna量']:
+                disease_expansions.extend(self.disease_engine.expand_query('hbv'))
 
         seen_disease_keys = set()
         for de in disease_expansions:
@@ -349,26 +372,10 @@ class NHIIndexer:
                 return bool(self._get_word_regex(term).search(text))
             return term in text
 
+        min_score_threshold = 30 if (is_multi_segment and atc_expansions and not matched_disease_names) else 1
         results = []
-        lab_filter_lower = lab_filter.lower() if lab_filter else None
-        lab_filter_targets = self.LAB_FILTER_GROUP_MAP.get(lab_filter_lower, {lab_filter_lower}) if lab_filter_lower else None
 
-        for reg in self.regulations:
-            if chapter_filter and chapter_filter not in reg["chapter"]:
-                continue
-
-            if lab_filter_lower:
-                if lab_filter_lower == "prior_auth":
-                    if not reg.get("conditions_of_payment", {}).get("prior_authorization_required"):
-                        continue
-                else:
-                    if not (reg["_lab_tokens_lower"] & lab_filter_targets):
-                        continue
-
-            if not query_clean and not disease_query_clean:
-                results.append((reg, 1.0))
-                continue
-
+        for reg in candidate_regs:
             title_lower = reg["_title_lower"]
             body_lower = reg["_body_lower"]
             full_text = reg["_full_text_lower"]
@@ -389,7 +396,7 @@ class NHIIndexer:
                     results.append((reg, 5000))
                 continue
 
-            # Exact section number check (from full query)
+            # Exact section number check
             if query_clean and query_clean.lower().strip('.') == sec_clean:
                 score += 5000
 
@@ -442,22 +449,18 @@ class NHIIndexer:
 
             for dt in direct_terms:
                 if dt and len(dt) > 1:
-                    if any(dt in ing for ing in reg_ingredients):
+                    if any(check_match(dt, ing) for ing in reg_ingredients):
                         score += 1000
                         break
 
             for dt in direct_terms:
                 if dt and len(dt) > 1:
-                    if any(dt in cls for cls in reg_classes):
+                    if any(check_match(dt, cls) for cls in reg_classes):
                         score += 800
                         break
 
-            for q_part in [query_clean, disease_query_clean]:
-                if not q_part:
-                    continue
-                norm_q = re.sub(r'[\s\-_/]+', '', q_part.lower())
-                if len(norm_q) >= 3 and norm_q in norm_full_text:
-                    score += 40
+            if len(norm_q) >= 3 and norm_q in norm_full_text:
+                score += 40
 
             # Match on prior authorization intent
             if any(pa_kw in direct_terms for pa_kw in ['事前審查', '事前核准', '專案申請', '事前申請']):
@@ -471,7 +474,7 @@ class NHIIndexer:
             if renal_egfr_intent:
                 if "eGFR" in bio_names_exact or "腎絲球過濾率" in full_text or "慢性腎臟病" in full_text:
                     score += 900
-                elif "EGFR" in bio_names_exact and "egfr" not in [b.get("biomarker", "") for b in struct_bios]:
+                elif "EGFR" in bio_names_exact and "eGFR" not in bio_names_exact:
                     score -= 400
             elif oncology_egfr_intent:
                 if "EGFR" in bio_names_exact:
@@ -484,7 +487,6 @@ class NHIIndexer:
                 matched_bio_in_reg = False
                 for b in struct_bios:
                     if b.get("biomarker", "").lower() == target_bio.lower():
-                        # Exact case check for eGFR vs EGFR
                         if target_bio == "eGFR" and b.get("biomarker") != "eGFR":
                             continue
                         matched_bio_in_reg = True
@@ -498,7 +500,7 @@ class NHIIndexer:
                                 score += 600
                             elif len(nums) == 1 and abs(nums[0] - target_val) <= 15:
                                 score += 350
-                if not matched_bio_in_reg and not disease_query_clean:
+                if not matched_bio_in_reg:
                     continue
 
             for bio in struct_bios:
@@ -517,11 +519,10 @@ class NHIIndexer:
                         else:
                             score += 5
 
-            if score > 0:
+            if score >= min_score_threshold:
                 results.append((reg, score))
 
-        results.sort(key=lambda x: x[1], reverse=True)
-        return [r[0] for r in results]
+        return results
 
 
 if __name__ == "__main__":

@@ -40,8 +40,11 @@
         <div class="search-sticky">
             <div class="mobile-search-box">
                 <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                <input type="search" id="mobileSearchInput" placeholder="查詢英文/ 繁體中文 藥物, 藥理作用, 疾病別, 章節代號 (2.5), ATC, 檢驗值" autocomplete="off">
+                <input type="search" id="mobileSearchInput" placeholder="藥品、適應症、檢驗值或條號，多條件以「,」分隔 (例：Forxiga, 心衰竭)" autocomplete="off">
                 <button id="mobileClearBtn" class="btn-clear-mobile hidden"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div style="font-size: 0.74rem; color: var(--text-muted); padding: 0 1rem 0.35rem;">
+                <i class="fa-solid fa-circle-info" style="color: var(--primary);"></i> 多條件請以逗號 <code>,</code> 分隔（例：<code>Forxiga, 心衰竭</code>）
             </div>
 
             <!-- Quick Category Pills -->
@@ -55,29 +58,6 @@
                     <button class="pill" data-chap="第1節">神經系統</button>
                     <button class="pill" data-chap="第8節">免疫製劑</button>
                     <button class="pill" data-chap="第3節">代謝營養</button>
-                </div>
-            </div>
-
-            <!-- Advanced Search Toggle (Mobile) -->
-            <div style="display: flex; justify-content: flex-end; padding: 0.25rem 1rem 0.5rem;">
-                <button id="mobileToggleAdvSearchBtn" style="font-size: 0.78rem; padding: 0.35rem 0.65rem; background: var(--bg-card); border: 1.5px solid var(--border-color); border-radius: 8px; color: var(--text-main); cursor: pointer; display: flex; align-items: center; gap: 0.3rem;">
-                    <i class="fa-solid fa-sliders" style="color: var(--primary);"></i> 進階搜尋
-                </button>
-            </div>
-
-            <!-- Collapsible Advanced Search Panel (Mobile) -->
-            <div id="mobileAdvancedSearchPanel" class="hidden" style="background: var(--bg-card); border: 1.5px solid var(--border-color); border-radius: 12px; padding: 0.85rem; margin: 0 1rem 0.75rem; display: flex; flex-direction: column; gap: 0.75rem;">
-                <div style="display: flex; flex-direction: column; gap: 0.35rem;">
-                    <label style="color: var(--text-muted); font-size: 0.78rem; font-weight: 600; text-align: left;"><i class="fa-solid fa-prescription-bottle-medical" style="color: var(--primary);"></i> 藥物/ATC碼 (Drug Name / ATC):</label>
-                    <input type="text" id="mobileAdvDrugInput" placeholder="如 Lipitor, Atorvastatin, A10BK" style="width: 100%; padding: 0.5rem 0.75rem; background: var(--bg-input); border: 1.5px solid var(--border-color); border-radius: 8px; color: var(--text-main); outline: none; font-size: 0.85rem;">
-                </div>
-                <div style="display: flex; flex-direction: column; gap: 0.35rem;">
-                    <label style="color: var(--text-muted); font-size: 0.78rem; font-weight: 600; text-align: left;"><i class="fa-solid fa-virus" style="color: var(--primary);"></i> 適應症/疾病別 (Disease / Indication):</label>
-                    <input type="text" id="mobileAdvDiseaseInput" placeholder="如 hyperlipidemia, 糖尿病, 氣喘" style="width: 100%; padding: 0.5rem 0.75rem; background: var(--bg-input); border: 1.5px solid var(--border-color); border-radius: 8px; color: var(--text-main); outline: none; font-size: 0.85rem;">
-                </div>
-                <div style="display: flex; justify-content: flex-end; gap: 0.4rem; margin-top: 0.15rem;">
-                    <button id="mobileClearAdvSearchBtn" style="font-size: 0.78rem; padding: 0.35rem 0.75rem; border: 1.5px solid var(--border-color); background: transparent; border-radius: 6px; color: var(--text-muted); cursor: pointer;"><i class="fa-solid fa-trash-can"></i> 清除</button>
-                    <button id="mobileApplyAdvSearchBtn" style="font-size: 0.78rem; padding: 0.35rem 1rem; border: none; background: var(--primary); border-radius: 6px; color: white; cursor: pointer; font-weight: 600;"><i class="fa-solid fa-magnifying-glass"></i> 篩選</button>
                 </div>
             </div>
         </div>
@@ -207,6 +187,6 @@
         </div>
     </div>
 
-    <script src="mobile.js?v=10"></script>
+    <script src="mobile.js?v=11"></script>
 </body>
 </html>

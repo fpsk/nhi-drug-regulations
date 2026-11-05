@@ -1,4 +1,5 @@
 import os
+import re
 from flask import Flask, request, jsonify, send_from_directory
 from werkzeug.utils import secure_filename
 from backend.indexer import NHIIndexer
@@ -83,8 +84,16 @@ def api_search():
         for r in display_results
     ]
 
-    primary_q = query.split(',')[0].split('，')[0].strip() if query else ''
-    expansions = atc_engine.expand_query(primary_q) if primary_q else []
+    expansions = []
+    if query:
+        seen_atc = set()
+        for seg in re.split(r'[,，;；]+', query):
+            seg_clean = seg.strip()
+            if seg_clean:
+                for exp in atc_engine.expand_query(seg_clean):
+                    if exp["atc_code"] not in seen_atc:
+                        seen_atc.add(exp["atc_code"])
+                        expansions.append(exp)
 
     return jsonify({
         "status": "success",

@@ -698,12 +698,67 @@ pre code {
 }
 
 .grounding-highlight {
-    background-color: rgba(250, 204, 21, 0.45);
+    background-color: #facc15 !important;
+    color: #0f172a !important;
+    font-weight: 800 !important;
+    padding: 0.1rem 0.3rem !important;
+    border-radius: 4px !important;
+    box-shadow: 0 0 10px rgba(250, 204, 21, 0.8) !important;
+}
+
+.clause-jump-bar {
+    background: rgba(15, 23, 42, 0.85);
+    border: 1px solid rgba(56, 189, 248, 0.28);
+    border-radius: 8px;
+    padding: 0.6rem 0.75rem;
+    margin-bottom: 0.85rem;
+}
+
+.clause-jump-label {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #38bdf8;
+    margin-bottom: 0.45rem;
+}
+
+.clause-jump-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+
+.clause-jump-pill {
+    background: rgba(30, 41, 59, 0.9);
+    border: 1px solid rgba(148, 163, 184, 0.3);
+    color: #cbd5e1;
+    border-radius: 6px;
+    padding: 0.25rem 0.55rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.clause-jump-pill.matched {
+    background: rgba(250, 204, 21, 0.22);
+    border: 1.5px solid #facc15;
     color: #fef08a;
     font-weight: 700;
-    padding: 0.1rem 0.25rem;
-    border-radius: 3px;
-    border-bottom: 2px solid #eab308;
+}
+
+.clause-header {
+    background: rgba(30, 41, 59, 0.75);
+    border-left: 4px solid #38bdf8;
+    border-radius: 6px;
+    padding: 0.45rem 0.7rem;
+    margin: 0.8rem 0 0.45rem 0;
+    font-weight: 700;
+    color: #f8fafc;
+}
+
+.clause-header.clause-header-matched {
+    background: rgba(250, 204, 21, 0.14);
+    border-left: 4px solid #facc15;
 }
 
 .hidden { display: none !important; }

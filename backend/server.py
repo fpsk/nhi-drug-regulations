@@ -104,6 +104,7 @@ def api_search():
         "has_more": has_more,
         "is_limited": is_limited,
         "atc_expansions": expansions,
+        "highlight_terms": indexer.get_highlight_terms(query),
         "results": clean_results
     })
 

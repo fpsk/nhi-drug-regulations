@@ -544,6 +544,78 @@ class NHIIndexer:
 
         return [(r[0], r[1]) for r in results]
 
+    def get_highlight_terms(self, query):
+        """Return ordered bilingual (Chinese + English) highlight terms for all comma-separated query segments."""
+        if not query or not query.strip():
+            return []
+        modifier_keys = {"metastatic_advanced", "prophylaxis_prevention"}
+        primary_terms = []
+        modifier_terms = []
+        seen = set()
+
+        def add_term(t, is_modifier=False):
+            if not t:
+                return
+            t_clean = t.strip()
+            if len(t_clean) < 2 or t_clean.lower() in self.STOPWORDS:
+                return
+            low = t_clean.lower()
+            if low not in seen:
+                seen.add(low)
+                if is_modifier:
+                    modifier_terms.append(t_clean)
+                else:
+                    primary_terms.append(t_clean)
+
+        for seg in re.split(r'[,，;；]+', query):
+            seg_clean = seg.strip()
+            if not seg_clean or re.match(r'^\d+(\.\d+)+\.?$', seg_clean):
+                continue
+
+            # 1. Disease & clinical condition terms (put specific disease terms before stage/action modifiers)
+            for de in self.disease_engine.expand_query(seg_clean):
+                if de["disease_key"] == "metastatic_advanced":
+                    s_low = seg_clean.lower()
+                    if "metastatic" in s_low or "轉移" in s_low:
+                        add_term("轉移性", is_modifier=True)
+                    if "locally advanced" in s_low or "局部晚期" in s_low:
+                        add_term("局部晚期", is_modifier=True)
+                    if "unresectable" in s_low or "無法切除" in s_low:
+                        add_term("無法切除", is_modifier=True)
+                        add_term("無法手術切除", is_modifier=True)
+                    if "recurrent" in s_low or "relapsed" in s_low or "復發" in s_low:
+                        add_term("復發性", is_modifier=True)
+                    continue
+                is_mod = de["disease_key"] in modifier_keys
+                for tc in de["chinese_terms"]:
+                    add_term(tc, is_modifier=is_mod)
+
+            # 2. ATC / Drug generic & brand terms
+            for exp in self.atc_engine.expand_query(seg_clean):
+                ing_en = exp.get("ingredient_en", "")
+                ing_tc = exp.get("ingredient_tc", "")
+                brand_en = exp.get("brand_en", "")
+                if ing_en:
+                    add_term(ing_en)
+                if ing_tc:
+                    add_term(ing_tc)
+                if brand_en:
+                    for b in brand_en.split(','):
+                        add_term(b.strip())
+                for btc in exp.get("brand_tc", []):
+                    add_term(btc)
+
+            # 3. Biomarker constraint terms
+            bio_c = self._parse_biomarker_constraint(seg_clean)
+            if bio_c:
+                add_term(bio_c["biomarker"])
+
+            # 4. Raw segment if Chinese or single medical token
+            if any(ord(c) > 127 for c in seg_clean) or len(seg_clean.split()) <= 2:
+                add_term(seg_clean)
+
+        return primary_terms + modifier_terms
+
 
 if __name__ == "__main__":
     indexer = NHIIndexer()

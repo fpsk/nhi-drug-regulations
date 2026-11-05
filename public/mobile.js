@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentLimit = 6;
     let currentChapter = '';
     let currentRegulations = [];
+    let currentHighlightTerms = [];
     let debounceTimer = null;
     let searchAbortController = null;
 
@@ -210,6 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (data.status === 'success') {
                 currentRegulations = data.results;
+                currentHighlightTerms = data.highlight_terms || [];
 
                 if (data.is_limited) {
                     mobileStatsCounter.textContent = `共 ${data.total_count} 筆依相關度排序，顯示前 ${data.count} 項`;
@@ -391,13 +393,37 @@ document.addEventListener('DOMContentLoaded', () => {
             const chipStyle = 'background:rgba(30,41,59,0.9); border:1px solid rgba(56,189,248,0.3); border-radius:6px; padding:0.25rem 0.55rem; font-size:0.75rem; color:#e2e8f0; cursor:pointer;';
             if (bios.length > 0 || steps.length > 0 || stops.length > 0 || evals.length > 0 || priorAuth) {
                 criteriaSection.classList.remove('hidden');
+
+                const groupedBios = [];
+                const bioMap = new Map();
                 bios.forEach((b) => {
+                    const key = `${b.biomarker}|${b.operator}|${b.value}|${b.unit || ''}`;
+                    const snippetText = b.source_grounding ? (b.source_grounding.snippet || b.source_grounding.matched_text || '') : '';
+                    if (!bioMap.has(key)) {
+                        const entry = { ...b, snippets: snippetText ? [snippetText] : [], clickIdx: 0 };
+                        bioMap.set(key, entry);
+                        groupedBios.push(entry);
+                    } else if (snippetText) {
+                        bioMap.get(key).snippets.push(snippetText);
+                    }
+                });
+
+                groupedBios.forEach((b) => {
                     const chip = document.createElement('button');
                     chip.style.cssText = chipStyle;
-                    const snippetText = b.source_grounding ? (b.source_grounding.snippet || b.source_grounding.matched_text || '') : '';
-                    chip.innerHTML = `<i class="fa-solid fa-vial" style="color:#10b981;"></i> <strong>${escapeHtml(b.biomarker)}</strong> ${escapeHtml(b.operator === 'status' ? '' : b.operator)} ${escapeHtml(String(b.value))}${b.unit ? ' ' + escapeHtml(b.unit) : ''}`;
+                    const countBadge = b.snippets.length > 1 ? ` <span style="opacity:0.75; font-size:0.7rem;">(×${b.snippets.length})</span>` : '';
+                    chip.innerHTML = `<i class="fa-solid fa-vial" style="color:#10b981;"></i> <strong>${escapeHtml(b.biomarker)}</strong> ${escapeHtml(b.operator === 'status' ? '' : b.operator)} ${escapeHtml(String(b.value))}${b.unit ? ' ' + escapeHtml(b.unit) : ''}${countBadge}`;
                     chip.addEventListener('click', () => {
-                        if (snippetText) scrollToMobileHighlight(reg.reference_annotations.full_text, snippetText);
+                        if (b.snippets.length > 0) {
+                            const idx = b.clickIdx % b.snippets.length;
+                            const targetSnippet = b.snippets[idx];
+                            let sameSnippetOcc = 0;
+                            for (let i = 0; i < idx; i++) {
+                                if (b.snippets[i] === targetSnippet) sameSnippetOcc++;
+                            }
+                            b.clickIdx++;
+                            scrollToMobileHighlight(reg.reference_annotations.full_text, targetSnippet, sameSnippetOcc);
+                        }
                     });
                     chipsContainer.appendChild(chip);
                 });
@@ -444,18 +470,29 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        const activeQuery = mobileSearchInput.value.trim().split(',')[0].split('，')[0].trim();
-        renderFormattedText(sheetFullText, reg.reference_annotations.full_text, activeQuery.length >= 2 ? activeQuery : null);
+        const rawSegments = mobileSearchInput.value.trim().split(/[,，;；]+/).map(s => s.trim()).filter(s => s.length >= 2);
+        const activeHighlights = (mobileSearchInput.value.trim() && currentHighlightTerms.length > 0) ? currentHighlightTerms : rawSegments;
+        renderFormattedText(sheetFullText, reg.reference_annotations.full_text, activeHighlights.length > 0 ? activeHighlights : null);
 
         mobileDetailSheet.classList.remove('hidden');
+
+        if (activeHighlights.length > 0) {
+            setTimeout(() => {
+                const targetEl = sheetFullText.querySelector('.clause-header-matched') || sheetFullText.querySelector('.grounding-highlight');
+                if (targetEl) targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 80);
+        }
     }
 
-    function scrollToMobileHighlight(fullText, highlightSnippet) {
+    function scrollToMobileHighlight(fullText, highlightSnippet, occurrenceIdx = 0) {
         const sheetFullText = document.getElementById('sheetFullText');
         renderFormattedText(sheetFullText, fullText, highlightSnippet);
         setTimeout(() => {
-            const mark = sheetFullText.querySelector('.grounding-highlight');
-            if (mark) mark.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            const marks = sheetFullText.querySelectorAll('.grounding-highlight');
+            if (marks.length > 0) {
+                const target = marks[Math.min(occurrenceIdx, marks.length - 1)];
+                target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
         }, 60);
     }
 
@@ -463,8 +500,22 @@ document.addEventListener('DOMContentLoaded', () => {
         return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     }
 
-    function createHighlightRegex(snippet) {
-        const escaped = escapeHtml(snippet.trim());
+    function createHighlightRegex(highlightTarget) {
+        if (!highlightTarget) return null;
+        if (Array.isArray(highlightTarget)) {
+            const patterns = highlightTarget
+                .map(t => escapeHtml(String(t).trim()))
+                .filter(t => t.length >= 2)
+                .sort((a, b) => b.length - a.length)
+                .map(t => {
+                    const parts = t.split(/\s+/).filter(Boolean).map(p => escapeRegExp(p));
+                    return parts.join('[\\s\\u3000]*');
+                })
+                .filter(Boolean);
+            if (patterns.length === 0) return null;
+            return new RegExp(`(${patterns.join('|')})`, 'gi');
+        }
+        const escaped = escapeHtml(String(highlightTarget).trim());
         const parts = escaped.split(/\s+/).filter(Boolean).map(p => escapeRegExp(p));
         if (parts.length === 0) return null;
         return new RegExp(`(${parts.join('[\\s\\u3000]*')})`, 'gi');
@@ -477,8 +528,12 @@ document.addEventListener('DOMContentLoaded', () => {
         let htmlParts = [];
         let inTable = false;
         let tableRows = [];
+        let clauseNavItems = [];
+        const regex = createHighlightRegex(highlightSnippet);
+        const primaryTerm = Array.isArray(highlightSnippet) && highlightSnippet.length > 0 ? highlightSnippet[0].toLowerCase() : null;
+        const clauseHeaderRe = /^[（\(](\d+)[）\)]\s*([^：:\n]{2,32}?)[：:](.*)$/;
 
-        lines.forEach(line => {
+        lines.forEach((line, lineIdx) => {
             let trimmed = line.trim();
             if (trimmed.includes('|')) {
                 if (!inTable) {
@@ -493,12 +548,22 @@ document.addEventListener('DOMContentLoaded', () => {
                     tableRows = [];
                 }
                 if (trimmed) {
+                    const clauseMatch = trimmed.match(clauseHeaderRe);
                     let safeLine = escapeHtml(trimmed);
-                    if (highlightSnippet) {
-                        const regex = createHighlightRegex(highlightSnippet);
-                        if (regex) safeLine = safeLine.replace(regex, `<mark class="grounding-highlight">$1</mark>`);
+                    if (regex) {
+                        safeLine = safeLine.replace(regex, `<mark class="grounding-highlight">$1</mark>`);
                     }
-                    if (trimmed.startsWith('【')) {
+                    if (clauseMatch) {
+                        const cNum = clauseMatch[1];
+                        const cTitle = clauseMatch[2].trim();
+                        const anchorId = `m-clause-sec-${cNum}-${lineIdx}`;
+                        const isMatched = Boolean(
+                            (primaryTerm && cTitle.toLowerCase().includes(primaryTerm)) ||
+                            (regex && cTitle.match(createHighlightRegex(highlightSnippet)))
+                        );
+                        clauseNavItems.push({ num: cNum, title: cTitle, anchorId, matched: isMatched });
+                        htmlParts.push(`<div id="${anchorId}" class="clause-header ${isMatched ? 'clause-header-matched' : ''}">${safeLine}</div>`);
+                    } else if (trimmed.startsWith('【')) {
                         htmlParts.push(`<h4 style="color:#38bdf8; margin-top:1rem;"><i class="fa-solid fa-table-list"></i> ${safeLine}</h4>`);
                     } else {
                         htmlParts.push(`<p style="margin-bottom:0.5rem;">${safeLine}</p>`);
@@ -511,7 +576,31 @@ document.addEventListener('DOMContentLoaded', () => {
             htmlParts.push(buildTableHtml(tableRows, highlightSnippet));
         }
 
-        container.innerHTML = htmlParts.join('');
+        let navHtml = '';
+        if (clauseNavItems.length >= 2) {
+            const pillsHtml = clauseNavItems.map(item =>
+                `<button type="button" class="clause-jump-pill ${item.matched ? 'matched' : ''}" data-target="${item.anchorId}">(${escapeHtml(item.num)}) ${escapeHtml(item.title)}</button>`
+            ).join('');
+            navHtml = `
+                <div class="clause-jump-bar">
+                    <span class="clause-jump-label"><i class="fa-solid fa-compass"></i> 條文段落快速跳轉：</span>
+                    <div class="clause-jump-pills">${pillsHtml}</div>
+                </div>
+            `;
+        }
+
+        container.innerHTML = navHtml + htmlParts.join('');
+
+        container.querySelectorAll('.clause-jump-pill').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const targetId = btn.getAttribute('data-target');
+                const targetEl = document.getElementById(targetId);
+                if (targetEl) {
+                    targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    targetEl.classList.add('clause-header-matched');
+                }
+            });
+        });
     }
 
     function buildTableHtml(rows, highlightSnippet = null) {

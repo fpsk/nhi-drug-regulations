@@ -67,8 +67,8 @@ DISEASE_DATABASE = {
     },
     "liver_cancer": {
         "en": "Liver Cancer / Hepatocellular Carcinoma",
-        "tc_terms": ["肝癌", "肝細胞癌"],
-        "aliases": ["liver cancer", "hcc"]
+        "tc_terms": ["肝細胞癌", "肝癌"],
+        "aliases": ["liver cancer", "hepatocellular carcinoma", "hcc"]
     },
     "ulcerative_colitis": {
         "en": "Ulcerative Colitis (UC)",
@@ -142,10 +142,24 @@ DISEASE_DATABASE = {
         "tc_terms": ["乳癌", "乳腺癌", "轉移性乳癌"],
         "aliases": ["breast cancer"]
     },
+    "nsclc": {
+        "en": "Non-Small Cell Lung Cancer (NSCLC)",
+        "tc_terms": ["非小細胞肺癌", "鱗狀非小細胞肺癌", "非鱗狀非小細胞肺癌", "肺腺癌"],
+        "aliases": [
+            "nsclc", "non small cell lung cancer", "non-small cell lung cancer",
+            "non small cell carcinoma", "non-small cell carcinoma",
+            "lung adenocarcinoma", "squamous cell lung cancer"
+        ]
+    },
     "lung_cancer": {
         "en": "Lung Cancer",
-        "tc_terms": ["肺癌", "非小細胞肺癌", "小細胞肺癌", "肺腺癌"],
-        "aliases": ["lung cancer", "nsclc", "sclc"]
+        "tc_terms": ["非小細胞肺癌", "小細胞肺癌", "肺癌", "肺腺癌"],
+        "aliases": ["lung cancer", "sclc"]
+    },
+    "metastatic_advanced": {
+        "en": "Metastatic / Locally Advanced / Unresectable / Recurrent",
+        "tc_terms": ["轉移性", "局部晚期", "無法切除", "無法手術切除", "復發性"],
+        "aliases": ["metastatic", "locally advanced", "unresectable", "recurrent", "relapsed", "refractory"]
     },
     "prostate_cancer": {
         "en": "Prostate Cancer",
@@ -168,9 +182,9 @@ DISEASE_DATABASE = {
         "aliases": ["nasopharyngeal carcinoma", "npc"]
     },
     "head_neck_cancer": {
-        "en": "Head and Neck Cancer",
-        "tc_terms": ["頭頸部癌", "下咽癌", "喉癌", "口腔癌"],
-        "aliases": ["head and neck cancer", "hnscc"]
+        "en": "Head and Neck Squamous Cell Carcinoma (HNSCC)",
+        "tc_terms": ["頭頸部鱗狀細胞癌", "頭頸部癌", "下咽癌", "喉癌", "口腔癌"],
+        "aliases": ["head and neck cancer", "head and neck squamous cell carcinoma", "hnscc"]
     },
     "melanoma": {
         "en": "Melanoma",
@@ -184,23 +198,23 @@ DISEASE_DATABASE = {
     },
     "thyroid_cancer": {
         "en": "Thyroid Cancer",
-        "tc_terms": ["甲狀腺癌", "分化型甲狀腺癌"],
-        "aliases": ["thyroid cancer"]
+        "tc_terms": ["甲狀腺癌", "分化型甲狀腺癌", "甲狀腺髓質癌"],
+        "aliases": ["thyroid cancer", "medullary thyroid cancer"]
     },
     "renal_cell_carcinoma": {
         "en": "Renal Cell Carcinoma (RCC)",
         "tc_terms": ["腎細胞癌", "轉移性腎細胞癌"],
-        "aliases": ["renal cell carcinoma", "rcc"]
+        "aliases": ["renal cell carcinoma", "rcc", "kidney cancer"]
     },
     "urothelial_carcinoma": {
         "en": "Urothelial Carcinoma / Bladder Cancer",
-        "tc_terms": ["尿路上皮癌", "膀胱癌"],
-        "aliases": ["urothelial carcinoma", "bladder cancer"]
+        "tc_terms": ["泌尿道上皮癌", "尿路上皮癌", "膀胱癌"],
+        "aliases": ["urothelial carcinoma", "bladder cancer", "transitional cell carcinoma"]
     },
     "colorectal_cancer": {
         "en": "Colorectal Cancer",
-        "tc_terms": ["大腸直腸癌", "大腸癌", "直腸癌"],
-        "aliases": ["colorectal cancer", "colon cancer"]
+        "tc_terms": ["大腸直腸癌", "結腸直腸癌", "大腸癌", "直腸癌"],
+        "aliases": ["colorectal cancer", "colon cancer", "rectal cancer", "crc"]
     },
     "pancreatic_cancer": {
         "en": "Pancreatic Cancer",
@@ -219,8 +233,8 @@ DISEASE_DATABASE = {
     },
     "lymphoma": {
         "en": "Lymphoma (NHL / DLBCL / PTCL / HL)",
-        "tc_terms": ["淋巴瘤", "淋巴腫瘤", "淋巴癌", "霍奇金淋巴瘤", "非霍奇金淋巴瘤", "瀰漫性大B細胞淋巴瘤", "周邊T細胞淋巴瘤"],
-        "aliases": ["lymphoma", "dlbcl", "ptcl", "nhl", "hodgkin lymphoma"]
+        "tc_terms": ["典型何杰金氏淋巴瘤", "何杰金氏淋巴瘤", "霍奇金淋巴瘤", "非霍奇金淋巴瘤", "瀰漫性大B細胞淋巴瘤", "周邊T細胞淋巴瘤", "淋巴瘤", "淋巴腫瘤", "淋巴癌"],
+        "aliases": ["lymphoma", "dlbcl", "ptcl", "nhl", "hodgkin lymphoma", "hodgkin's lymphoma", "classic hodgkin lymphoma"]
     },
     "gastric_esophageal_cancer": {
         "en": "Gastric / Esophageal Cancer",

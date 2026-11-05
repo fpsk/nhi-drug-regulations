@@ -634,7 +634,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     const clauseMatch = trimmed.match(clauseHeaderRe);
                     let safeLine = escapeHtml(trimmed);
                     if (regex) {
-                        safeLine = safeLine.replace(regex, `<mark class="grounding-highlight pulse">$1</mark>`);
+                        safeLine = safeLine.replace(regex, `<mark class="grounding-highlight">$1</mark>`);
                     }
                     if (clauseMatch) {
                         const cNum = clauseMatch[1];
@@ -696,7 +696,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (highlightSnippet) {
                     const regex = createHighlightRegex(highlightSnippet);
                     if (regex) {
-                        s = s.replace(regex, `<mark class="grounding-highlight pulse">$1</mark>`);
+                        s = s.replace(regex, `<mark class="grounding-highlight">$1</mark>`);
                     }
                 }
                 return s;

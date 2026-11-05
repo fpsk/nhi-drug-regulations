@@ -700,10 +700,9 @@ pre code {
 .grounding-highlight {
     background-color: #facc15 !important;
     color: #0f172a !important;
-    font-weight: 800 !important;
-    padding: 0.1rem 0.3rem !important;
+    font-weight: 700 !important;
+    padding: 0.08rem 0.28rem !important;
     border-radius: 4px !important;
-    box-shadow: 0 0 10px rgba(250, 204, 21, 0.8) !important;
 }
 
 .clause-jump-bar {
